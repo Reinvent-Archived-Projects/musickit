@@ -2,7 +2,7 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import "VMScoreElementView.h"
-#include "MeasureGeometry.h"
+#include "geometry/MeasureGeometry.h"
 
 @interface VMMeasureView : VMScoreElementView
 

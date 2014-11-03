@@ -2,7 +2,7 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import <UIKit/UIKit.h>
-#include "ScoreGeometry.h"
+#include "geometry/ScoreGeometry.h"
 
 extern NSString* const kMeasureReuseIdentifier;
 extern NSString* const kDirectionReuseIdentifier;

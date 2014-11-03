@@ -3,10 +3,10 @@
 
 #import <UIKit/UIKit.h>
 
-#include "ClefGeometry.h"
-#include "KeyGeometry.h"
-#include "PartGeometry.h"
-#include "TimeSignatureGeometry.h"
+#include "geometry/ClefGeometry.h"
+#include "geometry/KeyGeometry.h"
+#include "geometry/PartGeometry.h"
+#include "geometry/TimeSignatureGeometry.h"
 
 
 @class VMBraceView;

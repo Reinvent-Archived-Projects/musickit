@@ -2,7 +2,7 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import <UIKit/UIKit.h>
-#include "Geometry.h"
+#include "geometry/Geometry.h"
 
 
 @interface VMScoreElementView : UIView
