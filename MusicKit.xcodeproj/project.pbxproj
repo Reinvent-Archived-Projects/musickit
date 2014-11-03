@@ -964,16 +964,6 @@
 			path = src/parsing;
 			sourceTree = "<group>";
 		};
-		610DC55B1A082F0200BEEBFD /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				610DC5981A082FF000BEEBFD /* libxml2.dylib */,
-				610DC30D1A0828E000BEEBFD /* mxml */,
-				610DC55C1A082F0200BEEBFD /* AIImageCompare */,
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
 		610DC55C1A082F0200BEEBFD /* AIImageCompare */ = {
 			isa = PBXGroup;
 			children = (
@@ -1117,10 +1107,12 @@
 			isa = PBXGroup;
 			children = (
 				61402B261A08251D003AE7A7 /* MusicKit */,
-				610DC55B1A082F0200BEEBFD /* Libraries */,
+				610DC30D1A0828E000BEEBFD /* mxml */,
+				610DC55C1A082F0200BEEBFD /* AIImageCompare */,
 				610DC5A21A0831DF00BEEBFD /* MusicKitApp */,
 				610DC5BC1A0831DF00BEEBFD /* MusicKitAppTests */,
 				61402B251A08251D003AE7A7 /* Products */,
+				610DC5981A082FF000BEEBFD /* libxml2.dylib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1793,14 +1785,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/include/libxml2,
-					"$(SRCROOT)/Libraries/mxml/lxml/src",
+					"$(SRCROOT)/mxml/lxml/src",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Libraries/mxml/src";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/mxml/src";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1838,13 +1830,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/include/libxml2,
-					"$(SRCROOT)/Libraries/mxml/lxml/src",
+					"$(SRCROOT)/mxml/lxml/src",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Libraries/mxml/src";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/mxml/src";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
