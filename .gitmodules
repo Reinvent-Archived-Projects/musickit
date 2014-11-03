@@ -1,0 +1,9 @@
+[submodule "mxml"]
+	path = mxml
+	url = https://github.com/venturemedia/mxml.git
+[submodule "Libraries/AIImageCompare"]
+	path = Libraries/AIImageCompare
+	url = https://github.com/aleph7/AIImageCompare.git
+[submodule "Libraries/mxml"]
+	path = Libraries/mxml
+	url = https://github.com/venturemedia/mxml.git

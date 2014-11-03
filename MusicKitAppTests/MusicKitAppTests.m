@@ -1,6 +1,6 @@
 //
-//  MusicKitTests.m
-//  MusicKitTests
+//  MusicKitAppTests.m
+//  MusicKitAppTests
 //
 //  Created by Alejandro Isaza on 2014-11-03.
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface MusicKitTests : XCTestCase
+@interface MusicKitAppTests : XCTestCase
 
 @end
 
-@implementation MusicKitTests
+@implementation MusicKitAppTests
 
 - (void)setUp {
     [super setUp];
