@@ -7,86 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		610DC5091A08295E00BEEBFD /* DoubleHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3191A0828E000BEEBFD /* DoubleHandler.cpp */; };
-		610DC50A1A08295E00BEEBFD /* IntegerHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC31B1A0828E000BEEBFD /* IntegerHandler.cpp */; };
-		610DC50B1A08295E00BEEBFD /* lxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC31E1A0828E000BEEBFD /* lxml.cpp */; };
-		610DC50C1A08295E00BEEBFD /* RootRecursiveHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3231A0828E000BEEBFD /* RootRecursiveHandler.cpp */; };
-		610DC50D1A08295E00BEEBFD /* StringHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3261A0828E000BEEBFD /* StringHandler.cpp */; };
-		610DC50E1A08296100BEEBFD /* Identification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3401A0828E000BEEBFD /* Identification.cpp */; };
-		610DC50F1A08296100BEEBFD /* Measure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3451A0828E000BEEBFD /* Measure.cpp */; };
-		610DC5101A08296100BEEBFD /* Note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC34A1A0828E000BEEBFD /* Note.cpp */; };
-		610DC5111A08296100BEEBFD /* Part.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC34E1A0828E000BEEBFD /* Part.cpp */; };
-		610DC5121A08296500BEEBFD /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3631A0828E000BEEBFD /* Event.cpp */; };
-		610DC5131A08296500BEEBFD /* EventFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3651A0828E000BEEBFD /* EventFactory.cpp */; };
-		610DC5141A08296500BEEBFD /* EventSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3671A0828E000BEEBFD /* EventSequence.cpp */; };
-		610DC5151A08296900BEEBFD /* AccidentalGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC36A1A0828E000BEEBFD /* AccidentalGeometry.cpp */; };
-		610DC5161A08296900BEEBFD /* ArticulationGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC36C1A0828E000BEEBFD /* ArticulationGeometry.cpp */; };
-		610DC5171A08296900BEEBFD /* BarlineGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC36E1A0828E000BEEBFD /* BarlineGeometry.cpp */; };
-		610DC5181A08296900BEEBFD /* BeamGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3701A0828E000BEEBFD /* BeamGeometry.cpp */; };
-		610DC5191A08296900BEEBFD /* ChordGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3721A0828E000BEEBFD /* ChordGeometry.cpp */; };
-		610DC51A1A08296900BEEBFD /* ClefGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3741A0828E000BEEBFD /* ClefGeometry.cpp */; };
-		610DC51B1A08296900BEEBFD /* DirectionGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3761A0828E000BEEBFD /* DirectionGeometry.cpp */; };
-		610DC51C1A08296900BEEBFD /* DotGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3781A0828E000BEEBFD /* DotGeometry.cpp */; };
-		610DC51D1A08296900BEEBFD /* EndingGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC37A1A0828E000BEEBFD /* EndingGeometry.cpp */; };
-		610DC51E1A08296900BEEBFD /* FermataGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC37C1A0828E000BEEBFD /* FermataGeometry.cpp */; };
-		610DC51F1A08296900BEEBFD /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC37E1A0828E000BEEBFD /* Geometry.cpp */; };
-		610DC5201A08296900BEEBFD /* KeyGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3801A0828E000BEEBFD /* KeyGeometry.cpp */; };
-		610DC5211A08296900BEEBFD /* LyricGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3831A0828E000BEEBFD /* LyricGeometry.cpp */; };
-		610DC5221A08296900BEEBFD /* MeasureGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3861A0828E000BEEBFD /* MeasureGeometry.cpp */; };
-		610DC5231A08296900BEEBFD /* NoteGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3881A0828E000BEEBFD /* NoteGeometry.cpp */; };
-		610DC5241A08296900BEEBFD /* OrnamentsGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC38A1A0828E000BEEBFD /* OrnamentsGeometry.cpp */; };
-		610DC5251A08296900BEEBFD /* PartGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC38C1A0828E000BEEBFD /* PartGeometry.cpp */; };
-		610DC5261A08296900BEEBFD /* PedalGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC38E1A0828E000BEEBFD /* PedalGeometry.cpp */; };
-		610DC5271A08296900BEEBFD /* RestGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3921A0828E000BEEBFD /* RestGeometry.cpp */; };
-		610DC5281A08296900BEEBFD /* ScoreGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3941A0828E000BEEBFD /* ScoreGeometry.cpp */; };
-		610DC5291A08296900BEEBFD /* SpanDirectionGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3971A0828E000BEEBFD /* SpanDirectionGeometry.cpp */; };
-		610DC52A1A08296900BEEBFD /* SpanDirectionGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3991A0828E000BEEBFD /* SpanDirectionGeometryFactory.cpp */; };
-		610DC52B1A08296900BEEBFD /* StemGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC39B1A0828E000BEEBFD /* StemGeometry.cpp */; };
-		610DC52C1A08296900BEEBFD /* TieGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC39E1A0828E000BEEBFD /* TieGeometry.cpp */; };
-		610DC52D1A08296900BEEBFD /* TieGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3A01A0828E000BEEBFD /* TieGeometryFactory.cpp */; };
-		610DC52E1A08296900BEEBFD /* TimeSignatureGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3A21A0828E000BEEBFD /* TimeSignatureGeometry.cpp */; };
-		610DC52F1A08296F00BEEBFD /* ArticulationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3A51A0828E000BEEBFD /* ArticulationHandler.cpp */; };
-		610DC5301A08296F00BEEBFD /* AttributesHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3A71A0828E000BEEBFD /* AttributesHandler.cpp */; };
-		610DC5311A08296F00BEEBFD /* BackupHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3A91A0828E000BEEBFD /* BackupHandler.cpp */; };
-		610DC5321A08296F00BEEBFD /* BarlineHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3AB1A0828E000BEEBFD /* BarlineHandler.cpp */; };
-		610DC5331A08296F00BEEBFD /* BeamHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3AE1A0828E000BEEBFD /* BeamHandler.cpp */; };
-		610DC5341A08296F00BEEBFD /* ClefHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3B01A0828E000BEEBFD /* ClefHandler.cpp */; };
-		610DC5351A08296F00BEEBFD /* CreditHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3B21A0828E000BEEBFD /* CreditHandler.cpp */; };
-		610DC5361A08296F00BEEBFD /* CreditWordsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3B41A0828E000BEEBFD /* CreditWordsHandler.cpp */; };
-		610DC5371A08296F00BEEBFD /* DefaultsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3B61A0828E000BEEBFD /* DefaultsHandler.cpp */; };
-		610DC5381A08296F00BEEBFD /* DirectionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3B81A0828E000BEEBFD /* DirectionHandler.cpp */; };
-		610DC5391A08296F00BEEBFD /* DirectionTypeHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3BA1A0828E000BEEBFD /* DirectionTypeHandler.cpp */; };
-		610DC53A1A08296F00BEEBFD /* EmptyPlacementHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3BC1A0828E000BEEBFD /* EmptyPlacementHandler.cpp */; };
-		610DC53B1A08296F00BEEBFD /* EndingHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3BE1A0828E000BEEBFD /* EndingHandler.cpp */; };
-		610DC53C1A08296F00BEEBFD /* FermataHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3C01A0828E000BEEBFD /* FermataHandler.cpp */; };
-		610DC53D1A08296F00BEEBFD /* ForwardHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3C21A0828E000BEEBFD /* ForwardHandler.cpp */; };
-		610DC53E1A08296F00BEEBFD /* IdentificationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3C41A0828E000BEEBFD /* IdentificationHandler.cpp */; };
-		610DC53F1A08296F00BEEBFD /* KeyHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3C61A0828E000BEEBFD /* KeyHandler.cpp */; };
-		610DC5401A08296F00BEEBFD /* LyricHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3C81A0828E000BEEBFD /* LyricHandler.cpp */; };
-		610DC5411A08296F00BEEBFD /* MeasureHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3CA1A0828E000BEEBFD /* MeasureHandler.cpp */; };
-		610DC5421A08296F00BEEBFD /* MordentHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3CC1A0828E000BEEBFD /* MordentHandler.cpp */; };
-		610DC5431A08296F00BEEBFD /* NotationsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3CE1A0828E000BEEBFD /* NotationsHandler.cpp */; };
-		610DC5441A08296F00BEEBFD /* NoteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3D01A0828E000BEEBFD /* NoteHandler.cpp */; };
-		610DC5451A08296F00BEEBFD /* OrnamentsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3D21A0828E000BEEBFD /* OrnamentsHandler.cpp */; };
-		610DC5461A08296F00BEEBFD /* PartHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3D41A0828E000BEEBFD /* PartHandler.cpp */; };
-		610DC5471A08296F00BEEBFD /* PitchHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3D61A0828E000BEEBFD /* PitchHandler.cpp */; };
-		610DC5481A08296F00BEEBFD /* PrintHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3D81A0828E000BEEBFD /* PrintHandler.cpp */; };
-		610DC5491A08296F00BEEBFD /* RepeatHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3DA1A0828E000BEEBFD /* RepeatHandler.cpp */; };
-		610DC54A1A08296F00BEEBFD /* RestHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3DC1A0828E000BEEBFD /* RestHandler.cpp */; };
-		610DC54B1A08296F00BEEBFD /* ScalingHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3DE1A0828E000BEEBFD /* ScalingHandler.cpp */; };
-		610DC54C1A08296F00BEEBFD /* ScoreHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3E01A0828E000BEEBFD /* ScoreHandler.cpp */; };
-		610DC54D1A08296F00BEEBFD /* SlurHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3E21A0828E000BEEBFD /* SlurHandler.cpp */; };
-		610DC54E1A08296F00BEEBFD /* SoundHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3E41A0828E000BEEBFD /* SoundHandler.cpp */; };
-		610DC54F1A08296F00BEEBFD /* StaffLayoutHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3E61A0828E000BEEBFD /* StaffLayoutHandler.cpp */; };
-		610DC5501A08296F00BEEBFD /* SyllabicHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3E81A0828E000BEEBFD /* SyllabicHandler.cpp */; };
-		610DC5511A08296F00BEEBFD /* TiedHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3EA1A0828E000BEEBFD /* TiedHandler.cpp */; };
-		610DC5521A08296F00BEEBFD /* TieHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3EC1A0828E000BEEBFD /* TieHandler.cpp */; };
-		610DC5531A08296F00BEEBFD /* TimeHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3EE1A0828E000BEEBFD /* TimeHandler.cpp */; };
-		610DC5541A08296F00BEEBFD /* TurnHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3F01A0828E000BEEBFD /* TurnHandler.cpp */; };
-		610DC5551A08296F00BEEBFD /* UnpitchedHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3F21A0828E000BEEBFD /* UnpitchedHandler.cpp */; };
-		610DC5561A08297200BEEBFD /* SpanCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3F51A0828E000BEEBFD /* SpanCollection.cpp */; };
-		610DC5571A08297200BEEBFD /* SpanFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DC3F71A0828E000BEEBFD /* SpanFactory.cpp */; };
-		610DC55A1A0829B400BEEBFD /* libmxml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DC4F21A08293D00BEEBFD /* libmxml.a */; };
 		610DC5991A082FF000BEEBFD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DC5981A082FF000BEEBFD /* libxml2.dylib */; };
 		610DC5A61A0831DF00BEEBFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5A51A0831DF00BEEBFD /* main.m */; };
 		610DC5A91A0831DF00BEEBFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5A81A0831DF00BEEBFD /* AppDelegate.m */; };
@@ -175,13 +95,91 @@
 		610DC66E1A08322800BEEBFD /* VMChordViewTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61B1A08322800BEEBFD /* VMChordViewTests.mm */; };
 		610DC66F1A08322800BEEBFD /* VMViewTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61D1A08322800BEEBFD /* VMViewTestCase.mm */; };
 		610DC6701A08322800BEEBFD /* MusicKitAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61E1A08322800BEEBFD /* MusicKitAppTests.m */; };
-		610DC6721A08327700BEEBFD /* AIImageCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5601A082F0200BEEBFD /* AIImageCompare.m */; };
 		610DC6731A08329A00BEEBFD /* MusicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61402B241A08251D003AE7A7 /* MusicKit.framework */; };
-		610DC6791A0832DD00BEEBFD /* libmxml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DC4F21A08293D00BEEBFD /* libmxml.a */; };
 		610DC67A1A0832E700BEEBFD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DC5981A082FF000BEEBFD /* libxml2.dylib */; };
 		610DC67B1A08330700BEEBFD /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61402C591A082661003AE7A7 /* Symbols.xcassets */; };
 		610DC67C1A08330700BEEBFD /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61402C591A082661003AE7A7 /* Symbols.xcassets */; };
 		610DC67E1A08342900BEEBFD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610DC67D1A08342900BEEBFD /* Media.xcassets */; };
+		610DCE741A094A1700BEEBFD /* AIImageCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD931A094A0E00BEEBFD /* AIImageCompare.m */; };
+		610DCEC41A094B4500BEEBFD /* DoubleHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD961A094A0E00BEEBFD /* DoubleHandler.cpp */; };
+		610DCEC51A094B4500BEEBFD /* IntegerHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD981A094A0E00BEEBFD /* IntegerHandler.cpp */; };
+		610DCEC61A094B4500BEEBFD /* lxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD9B1A094A0E00BEEBFD /* lxml.cpp */; };
+		610DCEC71A094B4500BEEBFD /* RootRecursiveHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDA01A094A0E00BEEBFD /* RootRecursiveHandler.cpp */; };
+		610DCEC81A094B4500BEEBFD /* StringHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDA31A094A0E00BEEBFD /* StringHandler.cpp */; };
+		610DCEC91A094B4800BEEBFD /* Identification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDB91A094A0E00BEEBFD /* Identification.cpp */; };
+		610DCECA1A094B4800BEEBFD /* Measure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDBE1A094A0E00BEEBFD /* Measure.cpp */; };
+		610DCECB1A094B4800BEEBFD /* Note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDC31A094A0E00BEEBFD /* Note.cpp */; };
+		610DCECC1A094B4800BEEBFD /* Part.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDC71A094A0E00BEEBFD /* Part.cpp */; };
+		610DCECD1A094B4C00BEEBFD /* AccidentalGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE31A094A0E00BEEBFD /* AccidentalGeometry.cpp */; };
+		610DCECE1A094B4C00BEEBFD /* ArticulationGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE51A094A0E00BEEBFD /* ArticulationGeometry.cpp */; };
+		610DCECF1A094B4C00BEEBFD /* BarlineGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE71A094A0E00BEEBFD /* BarlineGeometry.cpp */; };
+		610DCED01A094B4C00BEEBFD /* BeamGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE91A094A0E00BEEBFD /* BeamGeometry.cpp */; };
+		610DCED11A094B4C00BEEBFD /* ChordGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDEB1A094A0E00BEEBFD /* ChordGeometry.cpp */; };
+		610DCED21A094B4C00BEEBFD /* ClefGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDED1A094A0E00BEEBFD /* ClefGeometry.cpp */; };
+		610DCED31A094B4C00BEEBFD /* DirectionGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDEF1A094A0E00BEEBFD /* DirectionGeometry.cpp */; };
+		610DCED41A094B4C00BEEBFD /* DotGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDF11A094A0E00BEEBFD /* DotGeometry.cpp */; };
+		610DCED51A094B4C00BEEBFD /* EndingGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDF31A094A0E00BEEBFD /* EndingGeometry.cpp */; };
+		610DCED61A094B4C00BEEBFD /* FermataGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDF51A094A0E00BEEBFD /* FermataGeometry.cpp */; };
+		610DCED71A094B4C00BEEBFD /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDF71A094A0E00BEEBFD /* Geometry.cpp */; };
+		610DCED81A094B4C00BEEBFD /* KeyGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDF91A094A0E00BEEBFD /* KeyGeometry.cpp */; };
+		610DCED91A094B4C00BEEBFD /* LyricGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDFC1A094A0E00BEEBFD /* LyricGeometry.cpp */; };
+		610DCEDA1A094B4C00BEEBFD /* MeasureGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDFF1A094A0E00BEEBFD /* MeasureGeometry.cpp */; };
+		610DCEDB1A094B4C00BEEBFD /* NoteGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE011A094A0E00BEEBFD /* NoteGeometry.cpp */; };
+		610DCEDC1A094B4C00BEEBFD /* OrnamentsGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE031A094A0E00BEEBFD /* OrnamentsGeometry.cpp */; };
+		610DCEDD1A094B4C00BEEBFD /* PartGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE051A094A0E00BEEBFD /* PartGeometry.cpp */; };
+		610DCEDE1A094B4C00BEEBFD /* PedalGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE071A094A0E00BEEBFD /* PedalGeometry.cpp */; };
+		610DCEDF1A094B4C00BEEBFD /* RestGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE0B1A094A0E00BEEBFD /* RestGeometry.cpp */; };
+		610DCEE01A094B4C00BEEBFD /* ScoreGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE0D1A094A0E00BEEBFD /* ScoreGeometry.cpp */; };
+		610DCEE11A094B4C00BEEBFD /* SpanDirectionGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE101A094A0E00BEEBFD /* SpanDirectionGeometry.cpp */; };
+		610DCEE21A094B4C00BEEBFD /* SpanDirectionGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE121A094A0E00BEEBFD /* SpanDirectionGeometryFactory.cpp */; };
+		610DCEE31A094B4C00BEEBFD /* StemGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE141A094A0E00BEEBFD /* StemGeometry.cpp */; };
+		610DCEE41A094B4C00BEEBFD /* TieGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE171A094A0E00BEEBFD /* TieGeometry.cpp */; };
+		610DCEE51A094B4C00BEEBFD /* TieGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE191A094A0E00BEEBFD /* TieGeometryFactory.cpp */; };
+		610DCEE61A094B4C00BEEBFD /* TimeSignatureGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE1B1A094A0E00BEEBFD /* TimeSignatureGeometry.cpp */; };
+		610DCEE71A094B5100BEEBFD /* ArticulationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE1F1A094A0E00BEEBFD /* ArticulationHandler.cpp */; };
+		610DCEE81A094B5100BEEBFD /* AttributesHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE211A094A0E00BEEBFD /* AttributesHandler.cpp */; };
+		610DCEE91A094B5100BEEBFD /* BackupHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE231A094A0E00BEEBFD /* BackupHandler.cpp */; };
+		610DCEEA1A094B5100BEEBFD /* BarlineHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE251A094A0E00BEEBFD /* BarlineHandler.cpp */; };
+		610DCEEB1A094B5100BEEBFD /* BeamHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE281A094A0E00BEEBFD /* BeamHandler.cpp */; };
+		610DCEEC1A094B5100BEEBFD /* ClefHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE2A1A094A0E00BEEBFD /* ClefHandler.cpp */; };
+		610DCEED1A094B5100BEEBFD /* CreditHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE2C1A094A0E00BEEBFD /* CreditHandler.cpp */; };
+		610DCEEE1A094B5100BEEBFD /* CreditWordsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE2E1A094A0E00BEEBFD /* CreditWordsHandler.cpp */; };
+		610DCEEF1A094B5100BEEBFD /* DefaultsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE301A094A0E00BEEBFD /* DefaultsHandler.cpp */; };
+		610DCEF01A094B5100BEEBFD /* DirectionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE321A094A0E00BEEBFD /* DirectionHandler.cpp */; };
+		610DCEF11A094B5100BEEBFD /* DirectionTypeHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE341A094A0E00BEEBFD /* DirectionTypeHandler.cpp */; };
+		610DCEF21A094B5100BEEBFD /* EmptyPlacementHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE361A094A0E00BEEBFD /* EmptyPlacementHandler.cpp */; };
+		610DCEF31A094B5100BEEBFD /* EndingHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE381A094A0E00BEEBFD /* EndingHandler.cpp */; };
+		610DCEF41A094B5100BEEBFD /* FermataHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE3A1A094A0E00BEEBFD /* FermataHandler.cpp */; };
+		610DCEF51A094B5100BEEBFD /* ForwardHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE3D1A094A0E00BEEBFD /* ForwardHandler.cpp */; };
+		610DCEF61A094B5100BEEBFD /* IdentificationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE3F1A094A0E00BEEBFD /* IdentificationHandler.cpp */; };
+		610DCEF71A094B5100BEEBFD /* KeyHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE411A094A0E00BEEBFD /* KeyHandler.cpp */; };
+		610DCEF81A094B5100BEEBFD /* LyricHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE431A094A0E00BEEBFD /* LyricHandler.cpp */; };
+		610DCEF91A094B5100BEEBFD /* MeasureHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE451A094A0E00BEEBFD /* MeasureHandler.cpp */; };
+		610DCEFA1A094B5100BEEBFD /* MordentHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE471A094A0E00BEEBFD /* MordentHandler.cpp */; };
+		610DCEFB1A094B5100BEEBFD /* NotationsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE491A094A0E00BEEBFD /* NotationsHandler.cpp */; };
+		610DCEFC1A094B5100BEEBFD /* NoteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE4B1A094A0E00BEEBFD /* NoteHandler.cpp */; };
+		610DCEFD1A094B5100BEEBFD /* OrnamentsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE4D1A094A0E00BEEBFD /* OrnamentsHandler.cpp */; };
+		610DCEFE1A094B5100BEEBFD /* PartHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE4F1A094A0E00BEEBFD /* PartHandler.cpp */; };
+		610DCEFF1A094B5100BEEBFD /* PitchHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE511A094A0E00BEEBFD /* PitchHandler.cpp */; };
+		610DCF001A094B5100BEEBFD /* PrintHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE531A094A0E00BEEBFD /* PrintHandler.cpp */; };
+		610DCF011A094B5100BEEBFD /* RepeatHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE551A094A0E00BEEBFD /* RepeatHandler.cpp */; };
+		610DCF021A094B5100BEEBFD /* RestHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE571A094A0E00BEEBFD /* RestHandler.cpp */; };
+		610DCF031A094B5100BEEBFD /* ScalingHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE591A094A0E00BEEBFD /* ScalingHandler.cpp */; };
+		610DCF041A094B5100BEEBFD /* ScoreHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE5B1A094A0E00BEEBFD /* ScoreHandler.cpp */; };
+		610DCF051A094B5100BEEBFD /* SlurHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE5D1A094A0E00BEEBFD /* SlurHandler.cpp */; };
+		610DCF061A094B5100BEEBFD /* SoundHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE5F1A094A0E00BEEBFD /* SoundHandler.cpp */; };
+		610DCF071A094B5100BEEBFD /* StaffLayoutHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE611A094A0E00BEEBFD /* StaffLayoutHandler.cpp */; };
+		610DCF081A094B5100BEEBFD /* SyllabicHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE631A094A0E00BEEBFD /* SyllabicHandler.cpp */; };
+		610DCF091A094B5100BEEBFD /* TiedHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE651A094A0E00BEEBFD /* TiedHandler.cpp */; };
+		610DCF0A1A094B5100BEEBFD /* TieHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE671A094A0E00BEEBFD /* TieHandler.cpp */; };
+		610DCF0B1A094B5100BEEBFD /* TimeHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE691A094A0E00BEEBFD /* TimeHandler.cpp */; };
+		610DCF0C1A094B5100BEEBFD /* TurnHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE6B1A094A0E00BEEBFD /* TurnHandler.cpp */; };
+		610DCF0D1A094B5100BEEBFD /* UnpitchedHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE6D1A094A0E00BEEBFD /* UnpitchedHandler.cpp */; };
+		610DCF0E1A094B5500BEEBFD /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDDC1A094A0E00BEEBFD /* Event.cpp */; };
+		610DCF0F1A094B5500BEEBFD /* EventFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDDE1A094A0E00BEEBFD /* EventFactory.cpp */; };
+		610DCF101A094B5500BEEBFD /* EventSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE01A094A0E00BEEBFD /* EventSequence.cpp */; };
+		610DCF111A094B5500BEEBFD /* SpanCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE701A094A0E00BEEBFD /* SpanCollection.cpp */; };
+		610DCF121A094B5500BEEBFD /* SpanFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */; };
 		61402B2A1A08251D003AE7A7 /* MusicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B291A08251D003AE7A7 /* MusicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61402B7A1A082562003AE7A7 /* VMScoreElementContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B401A082562003AE7A7 /* VMScoreElementContainerView.h */; };
 		61402B7B1A082562003AE7A7 /* VMCreditsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B411A082562003AE7A7 /* VMCreditsView.h */; };
@@ -245,13 +243,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		610DC5581A0829AF00BEEBFD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 61402B1B1A08251D003AE7A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 610DC4F11A08293D00BEEBFD;
-			remoteInfo = mxml;
-		};
 		610DC5BA1A0831DF00BEEBFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 61402B1B1A08251D003AE7A7 /* Project object */;
@@ -275,239 +266,7 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		610DC4F01A08293D00BEEBFD /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		610DC3181A0828E000BEEBFD /* BaseRecursiveHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseRecursiveHandler.h; path = src/BaseRecursiveHandler.h; sourceTree = "<group>"; };
-		610DC3191A0828E000BEEBFD /* DoubleHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DoubleHandler.cpp; path = src/DoubleHandler.cpp; sourceTree = "<group>"; };
-		610DC31A1A0828E000BEEBFD /* DoubleHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoubleHandler.h; path = src/DoubleHandler.h; sourceTree = "<group>"; };
-		610DC31B1A0828E000BEEBFD /* IntegerHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntegerHandler.cpp; path = src/IntegerHandler.cpp; sourceTree = "<group>"; };
-		610DC31C1A0828E000BEEBFD /* IntegerHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntegerHandler.h; path = src/IntegerHandler.h; sourceTree = "<group>"; };
-		610DC31D1A0828E000BEEBFD /* ListHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListHandler.h; path = src/ListHandler.h; sourceTree = "<group>"; };
-		610DC31E1A0828E000BEEBFD /* lxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lxml.cpp; path = src/lxml.cpp; sourceTree = "<group>"; };
-		610DC31F1A0828E000BEEBFD /* lxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lxml.h; path = src/lxml.h; sourceTree = "<group>"; };
-		610DC3201A0828E000BEEBFD /* PresenceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresenceHandler.h; path = src/PresenceHandler.h; sourceTree = "<group>"; };
-		610DC3211A0828E000BEEBFD /* QName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QName.h; path = src/QName.h; sourceTree = "<group>"; };
-		610DC3221A0828E000BEEBFD /* RecursiveHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecursiveHandler.h; path = src/RecursiveHandler.h; sourceTree = "<group>"; };
-		610DC3231A0828E000BEEBFD /* RootRecursiveHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RootRecursiveHandler.cpp; path = src/RootRecursiveHandler.cpp; sourceTree = "<group>"; };
-		610DC3241A0828E000BEEBFD /* RootRecursiveHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootRecursiveHandler.h; path = src/RootRecursiveHandler.h; sourceTree = "<group>"; };
-		610DC3251A0828E000BEEBFD /* SAXHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAXHandler.h; path = src/SAXHandler.h; sourceTree = "<group>"; };
-		610DC3261A0828E000BEEBFD /* StringHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StringHandler.cpp; path = src/StringHandler.cpp; sourceTree = "<group>"; };
-		610DC3271A0828E000BEEBFD /* StringHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StringHandler.h; path = src/StringHandler.h; sourceTree = "<group>"; };
-		610DC32E1A0828E000BEEBFD /* Accidental.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Accidental.h; sourceTree = "<group>"; };
-		610DC32F1A0828E000BEEBFD /* Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appearance.h; sourceTree = "<group>"; };
-		610DC3301A0828E000BEEBFD /* Articulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Articulation.h; sourceTree = "<group>"; };
-		610DC3311A0828E000BEEBFD /* Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attributes.h; sourceTree = "<group>"; };
-		610DC3321A0828E000BEEBFD /* Backup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Backup.h; sourceTree = "<group>"; };
-		610DC3331A0828E000BEEBFD /* Barline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Barline.h; sourceTree = "<group>"; };
-		610DC3341A0828E000BEEBFD /* Beam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beam.h; sourceTree = "<group>"; };
-		610DC3351A0828E000BEEBFD /* Chord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chord.h; sourceTree = "<group>"; };
-		610DC3361A0828E000BEEBFD /* Clef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clef.h; sourceTree = "<group>"; };
-		610DC3371A0828E000BEEBFD /* Credit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credit.h; sourceTree = "<group>"; };
-		610DC3381A0828E000BEEBFD /* CreditWords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditWords.h; sourceTree = "<group>"; };
-		610DC3391A0828E000BEEBFD /* Defaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defaults.h; sourceTree = "<group>"; };
-		610DC33A1A0828E000BEEBFD /* Direction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Direction.h; sourceTree = "<group>"; };
-		610DC33B1A0828E000BEEBFD /* DirectionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionType.h; sourceTree = "<group>"; };
-		610DC33C1A0828E000BEEBFD /* EmptyPlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyPlacement.h; sourceTree = "<group>"; };
-		610DC33D1A0828E000BEEBFD /* Ending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ending.h; sourceTree = "<group>"; };
-		610DC33E1A0828E000BEEBFD /* Fermata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fermata.h; sourceTree = "<group>"; };
-		610DC33F1A0828E000BEEBFD /* Forward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Forward.h; sourceTree = "<group>"; };
-		610DC3401A0828E000BEEBFD /* Identification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Identification.cpp; sourceTree = "<group>"; };
-		610DC3411A0828E000BEEBFD /* Identification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Identification.h; sourceTree = "<group>"; };
-		610DC3421A0828E000BEEBFD /* InvalidDataError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvalidDataError.h; sourceTree = "<group>"; };
-		610DC3431A0828E000BEEBFD /* Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Key.h; sourceTree = "<group>"; };
-		610DC3441A0828E000BEEBFD /* Lyric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lyric.h; sourceTree = "<group>"; };
-		610DC3451A0828E000BEEBFD /* Measure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Measure.cpp; sourceTree = "<group>"; };
-		610DC3461A0828E000BEEBFD /* Measure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Measure.h; sourceTree = "<group>"; };
-		610DC3471A0828E000BEEBFD /* Mordent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mordent.h; sourceTree = "<group>"; };
-		610DC3481A0828E000BEEBFD /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
-		610DC3491A0828E000BEEBFD /* Notations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notations.h; sourceTree = "<group>"; };
-		610DC34A1A0828E000BEEBFD /* Note.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Note.cpp; sourceTree = "<group>"; };
-		610DC34B1A0828E000BEEBFD /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
-		610DC34C1A0828E000BEEBFD /* Optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Optional.h; sourceTree = "<group>"; };
-		610DC34D1A0828E000BEEBFD /* Ornaments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ornaments.h; sourceTree = "<group>"; };
-		610DC34E1A0828E000BEEBFD /* Part.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Part.cpp; sourceTree = "<group>"; };
-		610DC34F1A0828E000BEEBFD /* Part.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Part.h; sourceTree = "<group>"; };
-		610DC3501A0828E000BEEBFD /* Pedal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pedal.h; sourceTree = "<group>"; };
-		610DC3511A0828E000BEEBFD /* Pitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pitch.h; sourceTree = "<group>"; };
-		610DC3521A0828E000BEEBFD /* Print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Print.h; sourceTree = "<group>"; };
-		610DC3531A0828E000BEEBFD /* Repeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repeat.h; sourceTree = "<group>"; };
-		610DC3541A0828E000BEEBFD /* Rest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rest.h; sourceTree = "<group>"; };
-		610DC3551A0828E000BEEBFD /* Scaling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scaling.h; sourceTree = "<group>"; };
-		610DC3561A0828E000BEEBFD /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
-		610DC3571A0828E000BEEBFD /* Slur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slur.h; sourceTree = "<group>"; };
-		610DC3581A0828E000BEEBFD /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sound.h; sourceTree = "<group>"; };
-		610DC3591A0828E000BEEBFD /* StaffLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffLayout.h; sourceTree = "<group>"; };
-		610DC35A1A0828E000BEEBFD /* Syllabic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Syllabic.h; sourceTree = "<group>"; };
-		610DC35B1A0828E000BEEBFD /* Tie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tie.h; sourceTree = "<group>"; };
-		610DC35C1A0828E000BEEBFD /* Tied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tied.h; sourceTree = "<group>"; };
-		610DC35D1A0828E000BEEBFD /* Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
-		610DC35E1A0828E000BEEBFD /* TimedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimedNode.h; sourceTree = "<group>"; };
-		610DC35F1A0828E000BEEBFD /* Turn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Turn.h; sourceTree = "<group>"; };
-		610DC3601A0828E000BEEBFD /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
-		610DC3611A0828E000BEEBFD /* Unpitched.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unpitched.h; sourceTree = "<group>"; };
-		610DC3621A0828E000BEEBFD /* Wedge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wedge.h; sourceTree = "<group>"; };
-		610DC3631A0828E000BEEBFD /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Event.cpp; path = src/Event.cpp; sourceTree = "<group>"; };
-		610DC3641A0828E000BEEBFD /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = src/Event.h; sourceTree = "<group>"; };
-		610DC3651A0828E000BEEBFD /* EventFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EventFactory.cpp; path = src/EventFactory.cpp; sourceTree = "<group>"; };
-		610DC3661A0828E000BEEBFD /* EventFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventFactory.h; path = src/EventFactory.h; sourceTree = "<group>"; };
-		610DC3671A0828E000BEEBFD /* EventSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EventSequence.cpp; path = src/EventSequence.cpp; sourceTree = "<group>"; };
-		610DC3681A0828E000BEEBFD /* EventSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventSequence.h; path = src/EventSequence.h; sourceTree = "<group>"; };
-		610DC36A1A0828E000BEEBFD /* AccidentalGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AccidentalGeometry.cpp; sourceTree = "<group>"; };
-		610DC36B1A0828E000BEEBFD /* AccidentalGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccidentalGeometry.h; sourceTree = "<group>"; };
-		610DC36C1A0828E000BEEBFD /* ArticulationGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArticulationGeometry.cpp; sourceTree = "<group>"; };
-		610DC36D1A0828E000BEEBFD /* ArticulationGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticulationGeometry.h; sourceTree = "<group>"; };
-		610DC36E1A0828E000BEEBFD /* BarlineGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BarlineGeometry.cpp; sourceTree = "<group>"; };
-		610DC36F1A0828E000BEEBFD /* BarlineGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarlineGeometry.h; sourceTree = "<group>"; };
-		610DC3701A0828E000BEEBFD /* BeamGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BeamGeometry.cpp; sourceTree = "<group>"; };
-		610DC3711A0828E000BEEBFD /* BeamGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeamGeometry.h; sourceTree = "<group>"; };
-		610DC3721A0828E000BEEBFD /* ChordGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChordGeometry.cpp; sourceTree = "<group>"; };
-		610DC3731A0828E000BEEBFD /* ChordGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChordGeometry.h; sourceTree = "<group>"; };
-		610DC3741A0828E000BEEBFD /* ClefGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClefGeometry.cpp; sourceTree = "<group>"; };
-		610DC3751A0828E000BEEBFD /* ClefGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClefGeometry.h; sourceTree = "<group>"; };
-		610DC3761A0828E000BEEBFD /* DirectionGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirectionGeometry.cpp; sourceTree = "<group>"; };
-		610DC3771A0828E000BEEBFD /* DirectionGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionGeometry.h; sourceTree = "<group>"; };
-		610DC3781A0828E000BEEBFD /* DotGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DotGeometry.cpp; sourceTree = "<group>"; };
-		610DC3791A0828E000BEEBFD /* DotGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotGeometry.h; sourceTree = "<group>"; };
-		610DC37A1A0828E000BEEBFD /* EndingGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EndingGeometry.cpp; sourceTree = "<group>"; };
-		610DC37B1A0828E000BEEBFD /* EndingGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndingGeometry.h; sourceTree = "<group>"; };
-		610DC37C1A0828E000BEEBFD /* FermataGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FermataGeometry.cpp; sourceTree = "<group>"; };
-		610DC37D1A0828E000BEEBFD /* FermataGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FermataGeometry.h; sourceTree = "<group>"; };
-		610DC37E1A0828E000BEEBFD /* Geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Geometry.cpp; sourceTree = "<group>"; };
-		610DC37F1A0828E000BEEBFD /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
-		610DC3801A0828E000BEEBFD /* KeyGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KeyGeometry.cpp; sourceTree = "<group>"; };
-		610DC3811A0828E000BEEBFD /* KeyGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyGeometry.h; sourceTree = "<group>"; };
-		610DC3821A0828E000BEEBFD /* LineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineSegment.h; sourceTree = "<group>"; };
-		610DC3831A0828E000BEEBFD /* LyricGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LyricGeometry.cpp; sourceTree = "<group>"; };
-		610DC3841A0828E000BEEBFD /* LyricGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricGeometry.h; sourceTree = "<group>"; };
-		610DC3851A0828E000BEEBFD /* MeasureElementGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureElementGeometry.h; sourceTree = "<group>"; };
-		610DC3861A0828E000BEEBFD /* MeasureGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeasureGeometry.cpp; sourceTree = "<group>"; };
-		610DC3871A0828E000BEEBFD /* MeasureGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureGeometry.h; sourceTree = "<group>"; };
-		610DC3881A0828E000BEEBFD /* NoteGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoteGeometry.cpp; sourceTree = "<group>"; };
-		610DC3891A0828E000BEEBFD /* NoteGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteGeometry.h; sourceTree = "<group>"; };
-		610DC38A1A0828E000BEEBFD /* OrnamentsGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrnamentsGeometry.cpp; sourceTree = "<group>"; };
-		610DC38B1A0828E000BEEBFD /* OrnamentsGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrnamentsGeometry.h; sourceTree = "<group>"; };
-		610DC38C1A0828E000BEEBFD /* PartGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PartGeometry.cpp; sourceTree = "<group>"; };
-		610DC38D1A0828E000BEEBFD /* PartGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartGeometry.h; sourceTree = "<group>"; };
-		610DC38E1A0828E000BEEBFD /* PedalGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PedalGeometry.cpp; sourceTree = "<group>"; };
-		610DC38F1A0828E000BEEBFD /* PedalGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PedalGeometry.h; sourceTree = "<group>"; };
-		610DC3901A0828E000BEEBFD /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
-		610DC3911A0828E000BEEBFD /* Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
-		610DC3921A0828E000BEEBFD /* RestGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RestGeometry.cpp; sourceTree = "<group>"; };
-		610DC3931A0828E000BEEBFD /* RestGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestGeometry.h; sourceTree = "<group>"; };
-		610DC3941A0828E000BEEBFD /* ScoreGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScoreGeometry.cpp; sourceTree = "<group>"; };
-		610DC3951A0828E000BEEBFD /* ScoreGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreGeometry.h; sourceTree = "<group>"; };
-		610DC3961A0828E000BEEBFD /* Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Size.h; sourceTree = "<group>"; };
-		610DC3971A0828E000BEEBFD /* SpanDirectionGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpanDirectionGeometry.cpp; sourceTree = "<group>"; };
-		610DC3981A0828E000BEEBFD /* SpanDirectionGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpanDirectionGeometry.h; sourceTree = "<group>"; };
-		610DC3991A0828E000BEEBFD /* SpanDirectionGeometryFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpanDirectionGeometryFactory.cpp; sourceTree = "<group>"; };
-		610DC39A1A0828E000BEEBFD /* SpanDirectionGeometryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpanDirectionGeometryFactory.h; sourceTree = "<group>"; };
-		610DC39B1A0828E000BEEBFD /* StemGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StemGeometry.cpp; sourceTree = "<group>"; };
-		610DC39C1A0828E000BEEBFD /* StemGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StemGeometry.h; sourceTree = "<group>"; };
-		610DC39D1A0828E000BEEBFD /* StreamOperators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamOperators.h; sourceTree = "<group>"; };
-		610DC39E1A0828E000BEEBFD /* TieGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TieGeometry.cpp; sourceTree = "<group>"; };
-		610DC39F1A0828E000BEEBFD /* TieGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TieGeometry.h; sourceTree = "<group>"; };
-		610DC3A01A0828E000BEEBFD /* TieGeometryFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TieGeometryFactory.cpp; sourceTree = "<group>"; };
-		610DC3A11A0828E000BEEBFD /* TieGeometryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TieGeometryFactory.h; sourceTree = "<group>"; };
-		610DC3A21A0828E000BEEBFD /* TimeSignatureGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeSignatureGeometry.cpp; sourceTree = "<group>"; };
-		610DC3A31A0828E000BEEBFD /* TimeSignatureGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSignatureGeometry.h; sourceTree = "<group>"; };
-		610DC3A51A0828E000BEEBFD /* ArticulationHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArticulationHandler.cpp; sourceTree = "<group>"; };
-		610DC3A61A0828E000BEEBFD /* ArticulationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticulationHandler.h; sourceTree = "<group>"; };
-		610DC3A71A0828E000BEEBFD /* AttributesHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AttributesHandler.cpp; sourceTree = "<group>"; };
-		610DC3A81A0828E000BEEBFD /* AttributesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributesHandler.h; sourceTree = "<group>"; };
-		610DC3A91A0828E000BEEBFD /* BackupHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BackupHandler.cpp; sourceTree = "<group>"; };
-		610DC3AA1A0828E000BEEBFD /* BackupHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackupHandler.h; sourceTree = "<group>"; };
-		610DC3AB1A0828E000BEEBFD /* BarlineHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BarlineHandler.cpp; sourceTree = "<group>"; };
-		610DC3AC1A0828E000BEEBFD /* BarlineHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarlineHandler.h; sourceTree = "<group>"; };
-		610DC3AD1A0828E000BEEBFD /* BaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHandler.h; sourceTree = "<group>"; };
-		610DC3AE1A0828E000BEEBFD /* BeamHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BeamHandler.cpp; sourceTree = "<group>"; };
-		610DC3AF1A0828E000BEEBFD /* BeamHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeamHandler.h; sourceTree = "<group>"; };
-		610DC3B01A0828E000BEEBFD /* ClefHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClefHandler.cpp; sourceTree = "<group>"; };
-		610DC3B11A0828E000BEEBFD /* ClefHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClefHandler.h; sourceTree = "<group>"; };
-		610DC3B21A0828E000BEEBFD /* CreditHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreditHandler.cpp; sourceTree = "<group>"; };
-		610DC3B31A0828E000BEEBFD /* CreditHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditHandler.h; sourceTree = "<group>"; };
-		610DC3B41A0828E000BEEBFD /* CreditWordsHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreditWordsHandler.cpp; sourceTree = "<group>"; };
-		610DC3B51A0828E000BEEBFD /* CreditWordsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditWordsHandler.h; sourceTree = "<group>"; };
-		610DC3B61A0828E000BEEBFD /* DefaultsHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DefaultsHandler.cpp; sourceTree = "<group>"; };
-		610DC3B71A0828E000BEEBFD /* DefaultsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultsHandler.h; sourceTree = "<group>"; };
-		610DC3B81A0828E000BEEBFD /* DirectionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirectionHandler.cpp; sourceTree = "<group>"; };
-		610DC3B91A0828E000BEEBFD /* DirectionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionHandler.h; sourceTree = "<group>"; };
-		610DC3BA1A0828E000BEEBFD /* DirectionTypeHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirectionTypeHandler.cpp; sourceTree = "<group>"; };
-		610DC3BB1A0828E000BEEBFD /* DirectionTypeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionTypeHandler.h; sourceTree = "<group>"; };
-		610DC3BC1A0828E000BEEBFD /* EmptyPlacementHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EmptyPlacementHandler.cpp; sourceTree = "<group>"; };
-		610DC3BD1A0828E000BEEBFD /* EmptyPlacementHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyPlacementHandler.h; sourceTree = "<group>"; };
-		610DC3BE1A0828E000BEEBFD /* EndingHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EndingHandler.cpp; sourceTree = "<group>"; };
-		610DC3BF1A0828E000BEEBFD /* EndingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndingHandler.h; sourceTree = "<group>"; };
-		610DC3C01A0828E000BEEBFD /* FermataHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FermataHandler.cpp; sourceTree = "<group>"; };
-		610DC3C11A0828E000BEEBFD /* FermataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FermataHandler.h; sourceTree = "<group>"; };
-		610DC3C21A0828E000BEEBFD /* ForwardHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ForwardHandler.cpp; sourceTree = "<group>"; };
-		610DC3C31A0828E000BEEBFD /* ForwardHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardHandler.h; sourceTree = "<group>"; };
-		610DC3C41A0828E000BEEBFD /* IdentificationHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IdentificationHandler.cpp; sourceTree = "<group>"; };
-		610DC3C51A0828E000BEEBFD /* IdentificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentificationHandler.h; sourceTree = "<group>"; };
-		610DC3C61A0828E000BEEBFD /* KeyHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KeyHandler.cpp; sourceTree = "<group>"; };
-		610DC3C71A0828E000BEEBFD /* KeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyHandler.h; sourceTree = "<group>"; };
-		610DC3C81A0828E000BEEBFD /* LyricHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LyricHandler.cpp; sourceTree = "<group>"; };
-		610DC3C91A0828E000BEEBFD /* LyricHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricHandler.h; sourceTree = "<group>"; };
-		610DC3CA1A0828E000BEEBFD /* MeasureHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeasureHandler.cpp; sourceTree = "<group>"; };
-		610DC3CB1A0828E000BEEBFD /* MeasureHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureHandler.h; sourceTree = "<group>"; };
-		610DC3CC1A0828E000BEEBFD /* MordentHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MordentHandler.cpp; sourceTree = "<group>"; };
-		610DC3CD1A0828E000BEEBFD /* MordentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MordentHandler.h; sourceTree = "<group>"; };
-		610DC3CE1A0828E000BEEBFD /* NotationsHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NotationsHandler.cpp; sourceTree = "<group>"; };
-		610DC3CF1A0828E000BEEBFD /* NotationsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotationsHandler.h; sourceTree = "<group>"; };
-		610DC3D01A0828E000BEEBFD /* NoteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoteHandler.cpp; sourceTree = "<group>"; };
-		610DC3D11A0828E000BEEBFD /* NoteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteHandler.h; sourceTree = "<group>"; };
-		610DC3D21A0828E000BEEBFD /* OrnamentsHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrnamentsHandler.cpp; sourceTree = "<group>"; };
-		610DC3D31A0828E000BEEBFD /* OrnamentsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrnamentsHandler.h; sourceTree = "<group>"; };
-		610DC3D41A0828E000BEEBFD /* PartHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PartHandler.cpp; sourceTree = "<group>"; };
-		610DC3D51A0828E000BEEBFD /* PartHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartHandler.h; sourceTree = "<group>"; };
-		610DC3D61A0828E000BEEBFD /* PitchHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PitchHandler.cpp; sourceTree = "<group>"; };
-		610DC3D71A0828E000BEEBFD /* PitchHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PitchHandler.h; sourceTree = "<group>"; };
-		610DC3D81A0828E000BEEBFD /* PrintHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PrintHandler.cpp; sourceTree = "<group>"; };
-		610DC3D91A0828E000BEEBFD /* PrintHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintHandler.h; sourceTree = "<group>"; };
-		610DC3DA1A0828E000BEEBFD /* RepeatHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RepeatHandler.cpp; sourceTree = "<group>"; };
-		610DC3DB1A0828E000BEEBFD /* RepeatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatHandler.h; sourceTree = "<group>"; };
-		610DC3DC1A0828E000BEEBFD /* RestHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RestHandler.cpp; sourceTree = "<group>"; };
-		610DC3DD1A0828E000BEEBFD /* RestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestHandler.h; sourceTree = "<group>"; };
-		610DC3DE1A0828E000BEEBFD /* ScalingHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScalingHandler.cpp; sourceTree = "<group>"; };
-		610DC3DF1A0828E000BEEBFD /* ScalingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalingHandler.h; sourceTree = "<group>"; };
-		610DC3E01A0828E000BEEBFD /* ScoreHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScoreHandler.cpp; sourceTree = "<group>"; };
-		610DC3E11A0828E000BEEBFD /* ScoreHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreHandler.h; sourceTree = "<group>"; };
-		610DC3E21A0828E000BEEBFD /* SlurHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SlurHandler.cpp; sourceTree = "<group>"; };
-		610DC3E31A0828E000BEEBFD /* SlurHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlurHandler.h; sourceTree = "<group>"; };
-		610DC3E41A0828E000BEEBFD /* SoundHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundHandler.cpp; sourceTree = "<group>"; };
-		610DC3E51A0828E000BEEBFD /* SoundHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundHandler.h; sourceTree = "<group>"; };
-		610DC3E61A0828E000BEEBFD /* StaffLayoutHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StaffLayoutHandler.cpp; sourceTree = "<group>"; };
-		610DC3E71A0828E000BEEBFD /* StaffLayoutHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffLayoutHandler.h; sourceTree = "<group>"; };
-		610DC3E81A0828E000BEEBFD /* SyllabicHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SyllabicHandler.cpp; sourceTree = "<group>"; };
-		610DC3E91A0828E000BEEBFD /* SyllabicHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyllabicHandler.h; sourceTree = "<group>"; };
-		610DC3EA1A0828E000BEEBFD /* TiedHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TiedHandler.cpp; sourceTree = "<group>"; };
-		610DC3EB1A0828E000BEEBFD /* TiedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiedHandler.h; sourceTree = "<group>"; };
-		610DC3EC1A0828E000BEEBFD /* TieHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TieHandler.cpp; sourceTree = "<group>"; };
-		610DC3ED1A0828E000BEEBFD /* TieHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TieHandler.h; sourceTree = "<group>"; };
-		610DC3EE1A0828E000BEEBFD /* TimeHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeHandler.cpp; sourceTree = "<group>"; };
-		610DC3EF1A0828E000BEEBFD /* TimeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeHandler.h; sourceTree = "<group>"; };
-		610DC3F01A0828E000BEEBFD /* TurnHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TurnHandler.cpp; sourceTree = "<group>"; };
-		610DC3F11A0828E000BEEBFD /* TurnHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurnHandler.h; sourceTree = "<group>"; };
-		610DC3F21A0828E000BEEBFD /* UnpitchedHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnpitchedHandler.cpp; sourceTree = "<group>"; };
-		610DC3F31A0828E000BEEBFD /* UnpitchedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnpitchedHandler.h; sourceTree = "<group>"; };
-		610DC3F41A0828E000BEEBFD /* Span.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Span.h; path = src/Span.h; sourceTree = "<group>"; };
-		610DC3F51A0828E000BEEBFD /* SpanCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpanCollection.cpp; path = src/SpanCollection.cpp; sourceTree = "<group>"; };
-		610DC3F61A0828E000BEEBFD /* SpanCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpanCollection.h; path = src/SpanCollection.h; sourceTree = "<group>"; };
-		610DC3F71A0828E000BEEBFD /* SpanFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpanFactory.cpp; path = src/SpanFactory.cpp; sourceTree = "<group>"; };
-		610DC3F81A0828E000BEEBFD /* SpanFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpanFactory.h; path = src/SpanFactory.h; sourceTree = "<group>"; };
-		610DC4F21A08293D00BEEBFD /* libmxml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmxml.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		610DC55F1A082F0200BEEBFD /* AIImageCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIImageCompare.h; path = AIImageCompare/AIImageCompare.h; sourceTree = "<group>"; };
-		610DC5601A082F0200BEEBFD /* AIImageCompare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AIImageCompare.m; path = AIImageCompare/AIImageCompare.m; sourceTree = "<group>"; };
 		610DC5981A082FF000BEEBFD /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		610DC5A11A0831DF00BEEBFD /* MusicKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		610DC5A41A0831DF00BEEBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -603,6 +362,226 @@
 		610DC61D1A08322800BEEBFD /* VMViewTestCase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMViewTestCase.mm; sourceTree = "<group>"; };
 		610DC61E1A08322800BEEBFD /* MusicKitAppTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicKitAppTests.m; sourceTree = "<group>"; };
 		610DC67D1A08342900BEEBFD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		610DCD921A094A0E00BEEBFD /* AIImageCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIImageCompare.h; sourceTree = "<group>"; };
+		610DCD931A094A0E00BEEBFD /* AIImageCompare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIImageCompare.m; sourceTree = "<group>"; };
+		610DCD951A094A0E00BEEBFD /* BaseRecursiveHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRecursiveHandler.h; sourceTree = "<group>"; };
+		610DCD961A094A0E00BEEBFD /* DoubleHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleHandler.cpp; sourceTree = "<group>"; };
+		610DCD971A094A0E00BEEBFD /* DoubleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleHandler.h; sourceTree = "<group>"; };
+		610DCD981A094A0E00BEEBFD /* IntegerHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IntegerHandler.cpp; sourceTree = "<group>"; };
+		610DCD991A094A0E00BEEBFD /* IntegerHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntegerHandler.h; sourceTree = "<group>"; };
+		610DCD9A1A094A0E00BEEBFD /* ListHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListHandler.h; sourceTree = "<group>"; };
+		610DCD9B1A094A0E00BEEBFD /* lxml.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lxml.cpp; sourceTree = "<group>"; };
+		610DCD9C1A094A0E00BEEBFD /* lxml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lxml.h; sourceTree = "<group>"; };
+		610DCD9D1A094A0E00BEEBFD /* PresenceHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresenceHandler.h; sourceTree = "<group>"; };
+		610DCD9E1A094A0E00BEEBFD /* QName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QName.h; sourceTree = "<group>"; };
+		610DCD9F1A094A0E00BEEBFD /* RecursiveHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecursiveHandler.h; sourceTree = "<group>"; };
+		610DCDA01A094A0E00BEEBFD /* RootRecursiveHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RootRecursiveHandler.cpp; sourceTree = "<group>"; };
+		610DCDA11A094A0E00BEEBFD /* RootRecursiveHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootRecursiveHandler.h; sourceTree = "<group>"; };
+		610DCDA21A094A0E00BEEBFD /* SAXHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAXHandler.h; sourceTree = "<group>"; };
+		610DCDA31A094A0E00BEEBFD /* StringHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StringHandler.cpp; sourceTree = "<group>"; };
+		610DCDA41A094A0E00BEEBFD /* StringHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringHandler.h; sourceTree = "<group>"; };
+		610DCDA71A094A0E00BEEBFD /* Accidental.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Accidental.h; sourceTree = "<group>"; };
+		610DCDA81A094A0E00BEEBFD /* Appearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appearance.h; sourceTree = "<group>"; };
+		610DCDA91A094A0E00BEEBFD /* Articulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Articulation.h; sourceTree = "<group>"; };
+		610DCDAA1A094A0E00BEEBFD /* Attributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Attributes.h; sourceTree = "<group>"; };
+		610DCDAB1A094A0E00BEEBFD /* Backup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Backup.h; sourceTree = "<group>"; };
+		610DCDAC1A094A0E00BEEBFD /* Barline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Barline.h; sourceTree = "<group>"; };
+		610DCDAD1A094A0E00BEEBFD /* Beam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Beam.h; sourceTree = "<group>"; };
+		610DCDAE1A094A0E00BEEBFD /* Chord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chord.h; sourceTree = "<group>"; };
+		610DCDAF1A094A0E00BEEBFD /* Clef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Clef.h; sourceTree = "<group>"; };
+		610DCDB01A094A0E00BEEBFD /* Credit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Credit.h; sourceTree = "<group>"; };
+		610DCDB11A094A0E00BEEBFD /* CreditWords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditWords.h; sourceTree = "<group>"; };
+		610DCDB21A094A0E00BEEBFD /* Defaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defaults.h; sourceTree = "<group>"; };
+		610DCDB31A094A0E00BEEBFD /* Direction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Direction.h; sourceTree = "<group>"; };
+		610DCDB41A094A0E00BEEBFD /* DirectionType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectionType.h; sourceTree = "<group>"; };
+		610DCDB51A094A0E00BEEBFD /* EmptyPlacement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyPlacement.h; sourceTree = "<group>"; };
+		610DCDB61A094A0E00BEEBFD /* Ending.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ending.h; sourceTree = "<group>"; };
+		610DCDB71A094A0E00BEEBFD /* Fermata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fermata.h; sourceTree = "<group>"; };
+		610DCDB81A094A0E00BEEBFD /* Forward.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Forward.h; sourceTree = "<group>"; };
+		610DCDB91A094A0E00BEEBFD /* Identification.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Identification.cpp; sourceTree = "<group>"; };
+		610DCDBA1A094A0E00BEEBFD /* Identification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Identification.h; sourceTree = "<group>"; };
+		610DCDBB1A094A0E00BEEBFD /* InvalidDataError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvalidDataError.h; sourceTree = "<group>"; };
+		610DCDBC1A094A0E00BEEBFD /* Key.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Key.h; sourceTree = "<group>"; };
+		610DCDBD1A094A0E00BEEBFD /* Lyric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lyric.h; sourceTree = "<group>"; };
+		610DCDBE1A094A0E00BEEBFD /* Measure.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Measure.cpp; sourceTree = "<group>"; };
+		610DCDBF1A094A0E00BEEBFD /* Measure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Measure.h; sourceTree = "<group>"; };
+		610DCDC01A094A0E00BEEBFD /* Mordent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mordent.h; sourceTree = "<group>"; };
+		610DCDC11A094A0E00BEEBFD /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		610DCDC21A094A0E00BEEBFD /* Notations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notations.h; sourceTree = "<group>"; };
+		610DCDC31A094A0E00BEEBFD /* Note.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Note.cpp; sourceTree = "<group>"; };
+		610DCDC41A094A0E00BEEBFD /* Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		610DCDC51A094A0E00BEEBFD /* Optional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Optional.h; sourceTree = "<group>"; };
+		610DCDC61A094A0E00BEEBFD /* Ornaments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ornaments.h; sourceTree = "<group>"; };
+		610DCDC71A094A0E00BEEBFD /* Part.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Part.cpp; sourceTree = "<group>"; };
+		610DCDC81A094A0E00BEEBFD /* Part.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Part.h; sourceTree = "<group>"; };
+		610DCDC91A094A0E00BEEBFD /* Pedal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pedal.h; sourceTree = "<group>"; };
+		610DCDCA1A094A0E00BEEBFD /* Pitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pitch.h; sourceTree = "<group>"; };
+		610DCDCB1A094A0E00BEEBFD /* Print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Print.h; sourceTree = "<group>"; };
+		610DCDCC1A094A0E00BEEBFD /* Repeat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repeat.h; sourceTree = "<group>"; };
+		610DCDCD1A094A0E00BEEBFD /* Rest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rest.h; sourceTree = "<group>"; };
+		610DCDCE1A094A0E00BEEBFD /* Scaling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scaling.h; sourceTree = "<group>"; };
+		610DCDCF1A094A0E00BEEBFD /* Score.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		610DCDD01A094A0E00BEEBFD /* Slur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Slur.h; sourceTree = "<group>"; };
+		610DCDD11A094A0E00BEEBFD /* Sound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sound.h; sourceTree = "<group>"; };
+		610DCDD21A094A0E00BEEBFD /* StaffLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaffLayout.h; sourceTree = "<group>"; };
+		610DCDD31A094A0E00BEEBFD /* Syllabic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Syllabic.h; sourceTree = "<group>"; };
+		610DCDD41A094A0E00BEEBFD /* Tie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tie.h; sourceTree = "<group>"; };
+		610DCDD51A094A0E00BEEBFD /* Tied.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tied.h; sourceTree = "<group>"; };
+		610DCDD61A094A0E00BEEBFD /* Time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
+		610DCDD71A094A0E00BEEBFD /* TimedNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimedNode.h; sourceTree = "<group>"; };
+		610DCDD81A094A0E00BEEBFD /* Turn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Turn.h; sourceTree = "<group>"; };
+		610DCDD91A094A0E00BEEBFD /* Types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		610DCDDA1A094A0E00BEEBFD /* Unpitched.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unpitched.h; sourceTree = "<group>"; };
+		610DCDDB1A094A0E00BEEBFD /* Wedge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wedge.h; sourceTree = "<group>"; };
+		610DCDDC1A094A0E00BEEBFD /* Event.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
+		610DCDDD1A094A0E00BEEBFD /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		610DCDDE1A094A0E00BEEBFD /* EventFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EventFactory.cpp; sourceTree = "<group>"; };
+		610DCDDF1A094A0E00BEEBFD /* EventFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventFactory.h; sourceTree = "<group>"; };
+		610DCDE01A094A0E00BEEBFD /* EventSequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EventSequence.cpp; sourceTree = "<group>"; };
+		610DCDE11A094A0E00BEEBFD /* EventSequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventSequence.h; sourceTree = "<group>"; };
+		610DCDE31A094A0E00BEEBFD /* AccidentalGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AccidentalGeometry.cpp; sourceTree = "<group>"; };
+		610DCDE41A094A0E00BEEBFD /* AccidentalGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccidentalGeometry.h; sourceTree = "<group>"; };
+		610DCDE51A094A0E00BEEBFD /* ArticulationGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArticulationGeometry.cpp; sourceTree = "<group>"; };
+		610DCDE61A094A0E00BEEBFD /* ArticulationGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticulationGeometry.h; sourceTree = "<group>"; };
+		610DCDE71A094A0E00BEEBFD /* BarlineGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BarlineGeometry.cpp; sourceTree = "<group>"; };
+		610DCDE81A094A0E00BEEBFD /* BarlineGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarlineGeometry.h; sourceTree = "<group>"; };
+		610DCDE91A094A0E00BEEBFD /* BeamGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BeamGeometry.cpp; sourceTree = "<group>"; };
+		610DCDEA1A094A0E00BEEBFD /* BeamGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeamGeometry.h; sourceTree = "<group>"; };
+		610DCDEB1A094A0E00BEEBFD /* ChordGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChordGeometry.cpp; sourceTree = "<group>"; };
+		610DCDEC1A094A0E00BEEBFD /* ChordGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChordGeometry.h; sourceTree = "<group>"; };
+		610DCDED1A094A0E00BEEBFD /* ClefGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClefGeometry.cpp; sourceTree = "<group>"; };
+		610DCDEE1A094A0E00BEEBFD /* ClefGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClefGeometry.h; sourceTree = "<group>"; };
+		610DCDEF1A094A0E00BEEBFD /* DirectionGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DirectionGeometry.cpp; sourceTree = "<group>"; };
+		610DCDF01A094A0E00BEEBFD /* DirectionGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectionGeometry.h; sourceTree = "<group>"; };
+		610DCDF11A094A0E00BEEBFD /* DotGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DotGeometry.cpp; sourceTree = "<group>"; };
+		610DCDF21A094A0E00BEEBFD /* DotGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DotGeometry.h; sourceTree = "<group>"; };
+		610DCDF31A094A0E00BEEBFD /* EndingGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EndingGeometry.cpp; sourceTree = "<group>"; };
+		610DCDF41A094A0E00BEEBFD /* EndingGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndingGeometry.h; sourceTree = "<group>"; };
+		610DCDF51A094A0E00BEEBFD /* FermataGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FermataGeometry.cpp; sourceTree = "<group>"; };
+		610DCDF61A094A0E00BEEBFD /* FermataGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FermataGeometry.h; sourceTree = "<group>"; };
+		610DCDF71A094A0E00BEEBFD /* Geometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Geometry.cpp; sourceTree = "<group>"; };
+		610DCDF81A094A0E00BEEBFD /* Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		610DCDF91A094A0E00BEEBFD /* KeyGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = KeyGeometry.cpp; sourceTree = "<group>"; };
+		610DCDFA1A094A0E00BEEBFD /* KeyGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyGeometry.h; sourceTree = "<group>"; };
+		610DCDFB1A094A0E00BEEBFD /* LineSegment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineSegment.h; sourceTree = "<group>"; };
+		610DCDFC1A094A0E00BEEBFD /* LyricGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LyricGeometry.cpp; sourceTree = "<group>"; };
+		610DCDFD1A094A0E00BEEBFD /* LyricGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LyricGeometry.h; sourceTree = "<group>"; };
+		610DCDFE1A094A0E00BEEBFD /* MeasureElementGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasureElementGeometry.h; sourceTree = "<group>"; };
+		610DCDFF1A094A0E00BEEBFD /* MeasureGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MeasureGeometry.cpp; sourceTree = "<group>"; };
+		610DCE001A094A0E00BEEBFD /* MeasureGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasureGeometry.h; sourceTree = "<group>"; };
+		610DCE011A094A0E00BEEBFD /* NoteGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NoteGeometry.cpp; sourceTree = "<group>"; };
+		610DCE021A094A0E00BEEBFD /* NoteGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteGeometry.h; sourceTree = "<group>"; };
+		610DCE031A094A0E00BEEBFD /* OrnamentsGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OrnamentsGeometry.cpp; sourceTree = "<group>"; };
+		610DCE041A094A0E00BEEBFD /* OrnamentsGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrnamentsGeometry.h; sourceTree = "<group>"; };
+		610DCE051A094A0E00BEEBFD /* PartGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PartGeometry.cpp; sourceTree = "<group>"; };
+		610DCE061A094A0E00BEEBFD /* PartGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartGeometry.h; sourceTree = "<group>"; };
+		610DCE071A094A0E00BEEBFD /* PedalGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PedalGeometry.cpp; sourceTree = "<group>"; };
+		610DCE081A094A0E00BEEBFD /* PedalGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PedalGeometry.h; sourceTree = "<group>"; };
+		610DCE091A094A0E00BEEBFD /* Point.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
+		610DCE0A1A094A0E00BEEBFD /* Rect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
+		610DCE0B1A094A0E00BEEBFD /* RestGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RestGeometry.cpp; sourceTree = "<group>"; };
+		610DCE0C1A094A0E00BEEBFD /* RestGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestGeometry.h; sourceTree = "<group>"; };
+		610DCE0D1A094A0E00BEEBFD /* ScoreGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScoreGeometry.cpp; sourceTree = "<group>"; };
+		610DCE0E1A094A0E00BEEBFD /* ScoreGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreGeometry.h; sourceTree = "<group>"; };
+		610DCE0F1A094A0E00BEEBFD /* Size.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Size.h; sourceTree = "<group>"; };
+		610DCE101A094A0E00BEEBFD /* SpanDirectionGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpanDirectionGeometry.cpp; sourceTree = "<group>"; };
+		610DCE111A094A0E00BEEBFD /* SpanDirectionGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpanDirectionGeometry.h; sourceTree = "<group>"; };
+		610DCE121A094A0E00BEEBFD /* SpanDirectionGeometryFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpanDirectionGeometryFactory.cpp; sourceTree = "<group>"; };
+		610DCE131A094A0E00BEEBFD /* SpanDirectionGeometryFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpanDirectionGeometryFactory.h; sourceTree = "<group>"; };
+		610DCE141A094A0E00BEEBFD /* StemGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StemGeometry.cpp; sourceTree = "<group>"; };
+		610DCE151A094A0E00BEEBFD /* StemGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StemGeometry.h; sourceTree = "<group>"; };
+		610DCE161A094A0E00BEEBFD /* StreamOperators.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamOperators.h; sourceTree = "<group>"; };
+		610DCE171A094A0E00BEEBFD /* TieGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TieGeometry.cpp; sourceTree = "<group>"; };
+		610DCE181A094A0E00BEEBFD /* TieGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TieGeometry.h; sourceTree = "<group>"; };
+		610DCE191A094A0E00BEEBFD /* TieGeometryFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TieGeometryFactory.cpp; sourceTree = "<group>"; };
+		610DCE1A1A094A0E00BEEBFD /* TieGeometryFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TieGeometryFactory.h; sourceTree = "<group>"; };
+		610DCE1B1A094A0E00BEEBFD /* TimeSignatureGeometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TimeSignatureGeometry.cpp; sourceTree = "<group>"; };
+		610DCE1C1A094A0E00BEEBFD /* TimeSignatureGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeSignatureGeometry.h; sourceTree = "<group>"; };
+		610DCE1F1A094A0E00BEEBFD /* ArticulationHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArticulationHandler.cpp; sourceTree = "<group>"; };
+		610DCE201A094A0E00BEEBFD /* ArticulationHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticulationHandler.h; sourceTree = "<group>"; };
+		610DCE211A094A0E00BEEBFD /* AttributesHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AttributesHandler.cpp; sourceTree = "<group>"; };
+		610DCE221A094A0E00BEEBFD /* AttributesHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributesHandler.h; sourceTree = "<group>"; };
+		610DCE231A094A0E00BEEBFD /* BackupHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BackupHandler.cpp; sourceTree = "<group>"; };
+		610DCE241A094A0E00BEEBFD /* BackupHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackupHandler.h; sourceTree = "<group>"; };
+		610DCE251A094A0E00BEEBFD /* BarlineHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BarlineHandler.cpp; sourceTree = "<group>"; };
+		610DCE261A094A0E00BEEBFD /* BarlineHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarlineHandler.h; sourceTree = "<group>"; };
+		610DCE271A094A0E00BEEBFD /* BaseHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseHandler.h; sourceTree = "<group>"; };
+		610DCE281A094A0E00BEEBFD /* BeamHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BeamHandler.cpp; sourceTree = "<group>"; };
+		610DCE291A094A0E00BEEBFD /* BeamHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeamHandler.h; sourceTree = "<group>"; };
+		610DCE2A1A094A0E00BEEBFD /* ClefHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClefHandler.cpp; sourceTree = "<group>"; };
+		610DCE2B1A094A0E00BEEBFD /* ClefHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClefHandler.h; sourceTree = "<group>"; };
+		610DCE2C1A094A0E00BEEBFD /* CreditHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CreditHandler.cpp; sourceTree = "<group>"; };
+		610DCE2D1A094A0E00BEEBFD /* CreditHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditHandler.h; sourceTree = "<group>"; };
+		610DCE2E1A094A0E00BEEBFD /* CreditWordsHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CreditWordsHandler.cpp; sourceTree = "<group>"; };
+		610DCE2F1A094A0E00BEEBFD /* CreditWordsHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditWordsHandler.h; sourceTree = "<group>"; };
+		610DCE301A094A0E00BEEBFD /* DefaultsHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DefaultsHandler.cpp; sourceTree = "<group>"; };
+		610DCE311A094A0E00BEEBFD /* DefaultsHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultsHandler.h; sourceTree = "<group>"; };
+		610DCE321A094A0E00BEEBFD /* DirectionHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DirectionHandler.cpp; sourceTree = "<group>"; };
+		610DCE331A094A0E00BEEBFD /* DirectionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectionHandler.h; sourceTree = "<group>"; };
+		610DCE341A094A0E00BEEBFD /* DirectionTypeHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DirectionTypeHandler.cpp; sourceTree = "<group>"; };
+		610DCE351A094A0E00BEEBFD /* DirectionTypeHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectionTypeHandler.h; sourceTree = "<group>"; };
+		610DCE361A094A0E00BEEBFD /* EmptyPlacementHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EmptyPlacementHandler.cpp; sourceTree = "<group>"; };
+		610DCE371A094A0E00BEEBFD /* EmptyPlacementHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyPlacementHandler.h; sourceTree = "<group>"; };
+		610DCE381A094A0E00BEEBFD /* EndingHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EndingHandler.cpp; sourceTree = "<group>"; };
+		610DCE391A094A0E00BEEBFD /* EndingHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndingHandler.h; sourceTree = "<group>"; };
+		610DCE3A1A094A0E00BEEBFD /* FermataHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FermataHandler.cpp; sourceTree = "<group>"; };
+		610DCE3B1A094A0E00BEEBFD /* FermataHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FermataHandler.h; sourceTree = "<group>"; };
+		610DCE3C1A094A0E00BEEBFD /* Find Results */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Find Results"; sourceTree = "<group>"; };
+		610DCE3D1A094A0E00BEEBFD /* ForwardHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ForwardHandler.cpp; sourceTree = "<group>"; };
+		610DCE3E1A094A0E00BEEBFD /* ForwardHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForwardHandler.h; sourceTree = "<group>"; };
+		610DCE3F1A094A0E00BEEBFD /* IdentificationHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IdentificationHandler.cpp; sourceTree = "<group>"; };
+		610DCE401A094A0E00BEEBFD /* IdentificationHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentificationHandler.h; sourceTree = "<group>"; };
+		610DCE411A094A0E00BEEBFD /* KeyHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = KeyHandler.cpp; sourceTree = "<group>"; };
+		610DCE421A094A0E00BEEBFD /* KeyHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyHandler.h; sourceTree = "<group>"; };
+		610DCE431A094A0E00BEEBFD /* LyricHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LyricHandler.cpp; sourceTree = "<group>"; };
+		610DCE441A094A0E00BEEBFD /* LyricHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LyricHandler.h; sourceTree = "<group>"; };
+		610DCE451A094A0E00BEEBFD /* MeasureHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MeasureHandler.cpp; sourceTree = "<group>"; };
+		610DCE461A094A0E00BEEBFD /* MeasureHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasureHandler.h; sourceTree = "<group>"; };
+		610DCE471A094A0E00BEEBFD /* MordentHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MordentHandler.cpp; sourceTree = "<group>"; };
+		610DCE481A094A0E00BEEBFD /* MordentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MordentHandler.h; sourceTree = "<group>"; };
+		610DCE491A094A0E00BEEBFD /* NotationsHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NotationsHandler.cpp; sourceTree = "<group>"; };
+		610DCE4A1A094A0E00BEEBFD /* NotationsHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotationsHandler.h; sourceTree = "<group>"; };
+		610DCE4B1A094A0E00BEEBFD /* NoteHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NoteHandler.cpp; sourceTree = "<group>"; };
+		610DCE4C1A094A0E00BEEBFD /* NoteHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteHandler.h; sourceTree = "<group>"; };
+		610DCE4D1A094A0E00BEEBFD /* OrnamentsHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OrnamentsHandler.cpp; sourceTree = "<group>"; };
+		610DCE4E1A094A0E00BEEBFD /* OrnamentsHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrnamentsHandler.h; sourceTree = "<group>"; };
+		610DCE4F1A094A0E00BEEBFD /* PartHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PartHandler.cpp; sourceTree = "<group>"; };
+		610DCE501A094A0E00BEEBFD /* PartHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartHandler.h; sourceTree = "<group>"; };
+		610DCE511A094A0E00BEEBFD /* PitchHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PitchHandler.cpp; sourceTree = "<group>"; };
+		610DCE521A094A0E00BEEBFD /* PitchHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PitchHandler.h; sourceTree = "<group>"; };
+		610DCE531A094A0E00BEEBFD /* PrintHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PrintHandler.cpp; sourceTree = "<group>"; };
+		610DCE541A094A0E00BEEBFD /* PrintHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintHandler.h; sourceTree = "<group>"; };
+		610DCE551A094A0E00BEEBFD /* RepeatHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RepeatHandler.cpp; sourceTree = "<group>"; };
+		610DCE561A094A0E00BEEBFD /* RepeatHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepeatHandler.h; sourceTree = "<group>"; };
+		610DCE571A094A0E00BEEBFD /* RestHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RestHandler.cpp; sourceTree = "<group>"; };
+		610DCE581A094A0E00BEEBFD /* RestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestHandler.h; sourceTree = "<group>"; };
+		610DCE591A094A0E00BEEBFD /* ScalingHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScalingHandler.cpp; sourceTree = "<group>"; };
+		610DCE5A1A094A0E00BEEBFD /* ScalingHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScalingHandler.h; sourceTree = "<group>"; };
+		610DCE5B1A094A0E00BEEBFD /* ScoreHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScoreHandler.cpp; sourceTree = "<group>"; };
+		610DCE5C1A094A0E00BEEBFD /* ScoreHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreHandler.h; sourceTree = "<group>"; };
+		610DCE5D1A094A0E00BEEBFD /* SlurHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SlurHandler.cpp; sourceTree = "<group>"; };
+		610DCE5E1A094A0E00BEEBFD /* SlurHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlurHandler.h; sourceTree = "<group>"; };
+		610DCE5F1A094A0E00BEEBFD /* SoundHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoundHandler.cpp; sourceTree = "<group>"; };
+		610DCE601A094A0E00BEEBFD /* SoundHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundHandler.h; sourceTree = "<group>"; };
+		610DCE611A094A0E00BEEBFD /* StaffLayoutHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StaffLayoutHandler.cpp; sourceTree = "<group>"; };
+		610DCE621A094A0E00BEEBFD /* StaffLayoutHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaffLayoutHandler.h; sourceTree = "<group>"; };
+		610DCE631A094A0E00BEEBFD /* SyllabicHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SyllabicHandler.cpp; sourceTree = "<group>"; };
+		610DCE641A094A0E00BEEBFD /* SyllabicHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyllabicHandler.h; sourceTree = "<group>"; };
+		610DCE651A094A0E00BEEBFD /* TiedHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TiedHandler.cpp; sourceTree = "<group>"; };
+		610DCE661A094A0E00BEEBFD /* TiedHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiedHandler.h; sourceTree = "<group>"; };
+		610DCE671A094A0E00BEEBFD /* TieHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TieHandler.cpp; sourceTree = "<group>"; };
+		610DCE681A094A0E00BEEBFD /* TieHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TieHandler.h; sourceTree = "<group>"; };
+		610DCE691A094A0E00BEEBFD /* TimeHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TimeHandler.cpp; sourceTree = "<group>"; };
+		610DCE6A1A094A0E00BEEBFD /* TimeHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeHandler.h; sourceTree = "<group>"; };
+		610DCE6B1A094A0E00BEEBFD /* TurnHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TurnHandler.cpp; sourceTree = "<group>"; };
+		610DCE6C1A094A0E00BEEBFD /* TurnHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TurnHandler.h; sourceTree = "<group>"; };
+		610DCE6D1A094A0E00BEEBFD /* UnpitchedHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UnpitchedHandler.cpp; sourceTree = "<group>"; };
+		610DCE6E1A094A0E00BEEBFD /* UnpitchedHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnpitchedHandler.h; sourceTree = "<group>"; };
+		610DCE6F1A094A0E00BEEBFD /* Span.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Span.h; sourceTree = "<group>"; };
+		610DCE701A094A0E00BEEBFD /* SpanCollection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpanCollection.cpp; sourceTree = "<group>"; };
+		610DCE711A094A0E00BEEBFD /* SpanCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpanCollection.h; sourceTree = "<group>"; };
+		610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpanFactory.cpp; sourceTree = "<group>"; };
+		610DCE731A094A0E00BEEBFD /* SpanFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpanFactory.h; sourceTree = "<group>"; };
 		61402B241A08251D003AE7A7 /* MusicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MusicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61402B281A08251D003AE7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61402B291A08251D003AE7A7 /* MusicKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicKit.h; sourceTree = "<group>"; };
@@ -668,13 +647,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		610DC4EF1A08293D00BEEBFD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		610DC59E1A0831DF00BEEBFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -688,7 +660,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				610DC67A1A0832E700BEEBFD /* libxml2.dylib in Frameworks */,
-				610DC6791A0832DD00BEEBFD /* libmxml.a in Frameworks */,
 				610DC6731A08329A00BEEBFD /* MusicKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,281 +669,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				610DC5991A082FF000BEEBFD /* libxml2.dylib in Frameworks */,
-				610DC55A1A0829B400BEEBFD /* libmxml.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		610DC30D1A0828E000BEEBFD /* mxml */ = {
-			isa = PBXGroup;
-			children = (
-				610DC3111A0828E000BEEBFD /* lxml */,
-				610DC32D1A0828E000BEEBFD /* dom */,
-				610DC3631A0828E000BEEBFD /* Event.cpp */,
-				610DC3641A0828E000BEEBFD /* Event.h */,
-				610DC3651A0828E000BEEBFD /* EventFactory.cpp */,
-				610DC3661A0828E000BEEBFD /* EventFactory.h */,
-				610DC3671A0828E000BEEBFD /* EventSequence.cpp */,
-				610DC3681A0828E000BEEBFD /* EventSequence.h */,
-				610DC3691A0828E000BEEBFD /* geometry */,
-				610DC3A41A0828E000BEEBFD /* parsing */,
-				610DC3F41A0828E000BEEBFD /* Span.h */,
-				610DC3F51A0828E000BEEBFD /* SpanCollection.cpp */,
-				610DC3F61A0828E000BEEBFD /* SpanCollection.h */,
-				610DC3F71A0828E000BEEBFD /* SpanFactory.cpp */,
-				610DC3F81A0828E000BEEBFD /* SpanFactory.h */,
-			);
-			path = mxml;
-			sourceTree = "<group>";
-		};
-		610DC3111A0828E000BEEBFD /* lxml */ = {
-			isa = PBXGroup;
-			children = (
-				610DC3181A0828E000BEEBFD /* BaseRecursiveHandler.h */,
-				610DC3191A0828E000BEEBFD /* DoubleHandler.cpp */,
-				610DC31A1A0828E000BEEBFD /* DoubleHandler.h */,
-				610DC31B1A0828E000BEEBFD /* IntegerHandler.cpp */,
-				610DC31C1A0828E000BEEBFD /* IntegerHandler.h */,
-				610DC31D1A0828E000BEEBFD /* ListHandler.h */,
-				610DC31E1A0828E000BEEBFD /* lxml.cpp */,
-				610DC31F1A0828E000BEEBFD /* lxml.h */,
-				610DC3201A0828E000BEEBFD /* PresenceHandler.h */,
-				610DC3211A0828E000BEEBFD /* QName.h */,
-				610DC3221A0828E000BEEBFD /* RecursiveHandler.h */,
-				610DC3231A0828E000BEEBFD /* RootRecursiveHandler.cpp */,
-				610DC3241A0828E000BEEBFD /* RootRecursiveHandler.h */,
-				610DC3251A0828E000BEEBFD /* SAXHandler.h */,
-				610DC3261A0828E000BEEBFD /* StringHandler.cpp */,
-				610DC3271A0828E000BEEBFD /* StringHandler.h */,
-			);
-			path = lxml;
-			sourceTree = "<group>";
-		};
-		610DC32D1A0828E000BEEBFD /* dom */ = {
-			isa = PBXGroup;
-			children = (
-				610DC32E1A0828E000BEEBFD /* Accidental.h */,
-				610DC32F1A0828E000BEEBFD /* Appearance.h */,
-				610DC3301A0828E000BEEBFD /* Articulation.h */,
-				610DC3311A0828E000BEEBFD /* Attributes.h */,
-				610DC3321A0828E000BEEBFD /* Backup.h */,
-				610DC3331A0828E000BEEBFD /* Barline.h */,
-				610DC3341A0828E000BEEBFD /* Beam.h */,
-				610DC3351A0828E000BEEBFD /* Chord.h */,
-				610DC3361A0828E000BEEBFD /* Clef.h */,
-				610DC3371A0828E000BEEBFD /* Credit.h */,
-				610DC3381A0828E000BEEBFD /* CreditWords.h */,
-				610DC3391A0828E000BEEBFD /* Defaults.h */,
-				610DC33A1A0828E000BEEBFD /* Direction.h */,
-				610DC33B1A0828E000BEEBFD /* DirectionType.h */,
-				610DC33C1A0828E000BEEBFD /* EmptyPlacement.h */,
-				610DC33D1A0828E000BEEBFD /* Ending.h */,
-				610DC33E1A0828E000BEEBFD /* Fermata.h */,
-				610DC33F1A0828E000BEEBFD /* Forward.h */,
-				610DC3401A0828E000BEEBFD /* Identification.cpp */,
-				610DC3411A0828E000BEEBFD /* Identification.h */,
-				610DC3421A0828E000BEEBFD /* InvalidDataError.h */,
-				610DC3431A0828E000BEEBFD /* Key.h */,
-				610DC3441A0828E000BEEBFD /* Lyric.h */,
-				610DC3451A0828E000BEEBFD /* Measure.cpp */,
-				610DC3461A0828E000BEEBFD /* Measure.h */,
-				610DC3471A0828E000BEEBFD /* Mordent.h */,
-				610DC3481A0828E000BEEBFD /* Node.h */,
-				610DC3491A0828E000BEEBFD /* Notations.h */,
-				610DC34A1A0828E000BEEBFD /* Note.cpp */,
-				610DC34B1A0828E000BEEBFD /* Note.h */,
-				610DC34C1A0828E000BEEBFD /* Optional.h */,
-				610DC34D1A0828E000BEEBFD /* Ornaments.h */,
-				610DC34E1A0828E000BEEBFD /* Part.cpp */,
-				610DC34F1A0828E000BEEBFD /* Part.h */,
-				610DC3501A0828E000BEEBFD /* Pedal.h */,
-				610DC3511A0828E000BEEBFD /* Pitch.h */,
-				610DC3521A0828E000BEEBFD /* Print.h */,
-				610DC3531A0828E000BEEBFD /* Repeat.h */,
-				610DC3541A0828E000BEEBFD /* Rest.h */,
-				610DC3551A0828E000BEEBFD /* Scaling.h */,
-				610DC3561A0828E000BEEBFD /* Score.h */,
-				610DC3571A0828E000BEEBFD /* Slur.h */,
-				610DC3581A0828E000BEEBFD /* Sound.h */,
-				610DC3591A0828E000BEEBFD /* StaffLayout.h */,
-				610DC35A1A0828E000BEEBFD /* Syllabic.h */,
-				610DC35B1A0828E000BEEBFD /* Tie.h */,
-				610DC35C1A0828E000BEEBFD /* Tied.h */,
-				610DC35D1A0828E000BEEBFD /* Time.h */,
-				610DC35E1A0828E000BEEBFD /* TimedNode.h */,
-				610DC35F1A0828E000BEEBFD /* Turn.h */,
-				610DC3601A0828E000BEEBFD /* Types.h */,
-				610DC3611A0828E000BEEBFD /* Unpitched.h */,
-				610DC3621A0828E000BEEBFD /* Wedge.h */,
-			);
-			name = dom;
-			path = src/dom;
-			sourceTree = "<group>";
-		};
-		610DC3691A0828E000BEEBFD /* geometry */ = {
-			isa = PBXGroup;
-			children = (
-				610DC36A1A0828E000BEEBFD /* AccidentalGeometry.cpp */,
-				610DC36B1A0828E000BEEBFD /* AccidentalGeometry.h */,
-				610DC36C1A0828E000BEEBFD /* ArticulationGeometry.cpp */,
-				610DC36D1A0828E000BEEBFD /* ArticulationGeometry.h */,
-				610DC36E1A0828E000BEEBFD /* BarlineGeometry.cpp */,
-				610DC36F1A0828E000BEEBFD /* BarlineGeometry.h */,
-				610DC3701A0828E000BEEBFD /* BeamGeometry.cpp */,
-				610DC3711A0828E000BEEBFD /* BeamGeometry.h */,
-				610DC3721A0828E000BEEBFD /* ChordGeometry.cpp */,
-				610DC3731A0828E000BEEBFD /* ChordGeometry.h */,
-				610DC3741A0828E000BEEBFD /* ClefGeometry.cpp */,
-				610DC3751A0828E000BEEBFD /* ClefGeometry.h */,
-				610DC3761A0828E000BEEBFD /* DirectionGeometry.cpp */,
-				610DC3771A0828E000BEEBFD /* DirectionGeometry.h */,
-				610DC3781A0828E000BEEBFD /* DotGeometry.cpp */,
-				610DC3791A0828E000BEEBFD /* DotGeometry.h */,
-				610DC37A1A0828E000BEEBFD /* EndingGeometry.cpp */,
-				610DC37B1A0828E000BEEBFD /* EndingGeometry.h */,
-				610DC37C1A0828E000BEEBFD /* FermataGeometry.cpp */,
-				610DC37D1A0828E000BEEBFD /* FermataGeometry.h */,
-				610DC37E1A0828E000BEEBFD /* Geometry.cpp */,
-				610DC37F1A0828E000BEEBFD /* Geometry.h */,
-				610DC3801A0828E000BEEBFD /* KeyGeometry.cpp */,
-				610DC3811A0828E000BEEBFD /* KeyGeometry.h */,
-				610DC3821A0828E000BEEBFD /* LineSegment.h */,
-				610DC3831A0828E000BEEBFD /* LyricGeometry.cpp */,
-				610DC3841A0828E000BEEBFD /* LyricGeometry.h */,
-				610DC3851A0828E000BEEBFD /* MeasureElementGeometry.h */,
-				610DC3861A0828E000BEEBFD /* MeasureGeometry.cpp */,
-				610DC3871A0828E000BEEBFD /* MeasureGeometry.h */,
-				610DC3881A0828E000BEEBFD /* NoteGeometry.cpp */,
-				610DC3891A0828E000BEEBFD /* NoteGeometry.h */,
-				610DC38A1A0828E000BEEBFD /* OrnamentsGeometry.cpp */,
-				610DC38B1A0828E000BEEBFD /* OrnamentsGeometry.h */,
-				610DC38C1A0828E000BEEBFD /* PartGeometry.cpp */,
-				610DC38D1A0828E000BEEBFD /* PartGeometry.h */,
-				610DC38E1A0828E000BEEBFD /* PedalGeometry.cpp */,
-				610DC38F1A0828E000BEEBFD /* PedalGeometry.h */,
-				610DC3901A0828E000BEEBFD /* Point.h */,
-				610DC3911A0828E000BEEBFD /* Rect.h */,
-				610DC3921A0828E000BEEBFD /* RestGeometry.cpp */,
-				610DC3931A0828E000BEEBFD /* RestGeometry.h */,
-				610DC3941A0828E000BEEBFD /* ScoreGeometry.cpp */,
-				610DC3951A0828E000BEEBFD /* ScoreGeometry.h */,
-				610DC3961A0828E000BEEBFD /* Size.h */,
-				610DC3971A0828E000BEEBFD /* SpanDirectionGeometry.cpp */,
-				610DC3981A0828E000BEEBFD /* SpanDirectionGeometry.h */,
-				610DC3991A0828E000BEEBFD /* SpanDirectionGeometryFactory.cpp */,
-				610DC39A1A0828E000BEEBFD /* SpanDirectionGeometryFactory.h */,
-				610DC39B1A0828E000BEEBFD /* StemGeometry.cpp */,
-				610DC39C1A0828E000BEEBFD /* StemGeometry.h */,
-				610DC39D1A0828E000BEEBFD /* StreamOperators.h */,
-				610DC39E1A0828E000BEEBFD /* TieGeometry.cpp */,
-				610DC39F1A0828E000BEEBFD /* TieGeometry.h */,
-				610DC3A01A0828E000BEEBFD /* TieGeometryFactory.cpp */,
-				610DC3A11A0828E000BEEBFD /* TieGeometryFactory.h */,
-				610DC3A21A0828E000BEEBFD /* TimeSignatureGeometry.cpp */,
-				610DC3A31A0828E000BEEBFD /* TimeSignatureGeometry.h */,
-			);
-			name = geometry;
-			path = src/geometry;
-			sourceTree = "<group>";
-		};
-		610DC3A41A0828E000BEEBFD /* parsing */ = {
-			isa = PBXGroup;
-			children = (
-				610DC3A51A0828E000BEEBFD /* ArticulationHandler.cpp */,
-				610DC3A61A0828E000BEEBFD /* ArticulationHandler.h */,
-				610DC3A71A0828E000BEEBFD /* AttributesHandler.cpp */,
-				610DC3A81A0828E000BEEBFD /* AttributesHandler.h */,
-				610DC3A91A0828E000BEEBFD /* BackupHandler.cpp */,
-				610DC3AA1A0828E000BEEBFD /* BackupHandler.h */,
-				610DC3AB1A0828E000BEEBFD /* BarlineHandler.cpp */,
-				610DC3AC1A0828E000BEEBFD /* BarlineHandler.h */,
-				610DC3AD1A0828E000BEEBFD /* BaseHandler.h */,
-				610DC3AE1A0828E000BEEBFD /* BeamHandler.cpp */,
-				610DC3AF1A0828E000BEEBFD /* BeamHandler.h */,
-				610DC3B01A0828E000BEEBFD /* ClefHandler.cpp */,
-				610DC3B11A0828E000BEEBFD /* ClefHandler.h */,
-				610DC3B21A0828E000BEEBFD /* CreditHandler.cpp */,
-				610DC3B31A0828E000BEEBFD /* CreditHandler.h */,
-				610DC3B41A0828E000BEEBFD /* CreditWordsHandler.cpp */,
-				610DC3B51A0828E000BEEBFD /* CreditWordsHandler.h */,
-				610DC3B61A0828E000BEEBFD /* DefaultsHandler.cpp */,
-				610DC3B71A0828E000BEEBFD /* DefaultsHandler.h */,
-				610DC3B81A0828E000BEEBFD /* DirectionHandler.cpp */,
-				610DC3B91A0828E000BEEBFD /* DirectionHandler.h */,
-				610DC3BA1A0828E000BEEBFD /* DirectionTypeHandler.cpp */,
-				610DC3BB1A0828E000BEEBFD /* DirectionTypeHandler.h */,
-				610DC3BC1A0828E000BEEBFD /* EmptyPlacementHandler.cpp */,
-				610DC3BD1A0828E000BEEBFD /* EmptyPlacementHandler.h */,
-				610DC3BE1A0828E000BEEBFD /* EndingHandler.cpp */,
-				610DC3BF1A0828E000BEEBFD /* EndingHandler.h */,
-				610DC3C01A0828E000BEEBFD /* FermataHandler.cpp */,
-				610DC3C11A0828E000BEEBFD /* FermataHandler.h */,
-				610DC3C21A0828E000BEEBFD /* ForwardHandler.cpp */,
-				610DC3C31A0828E000BEEBFD /* ForwardHandler.h */,
-				610DC3C41A0828E000BEEBFD /* IdentificationHandler.cpp */,
-				610DC3C51A0828E000BEEBFD /* IdentificationHandler.h */,
-				610DC3C61A0828E000BEEBFD /* KeyHandler.cpp */,
-				610DC3C71A0828E000BEEBFD /* KeyHandler.h */,
-				610DC3C81A0828E000BEEBFD /* LyricHandler.cpp */,
-				610DC3C91A0828E000BEEBFD /* LyricHandler.h */,
-				610DC3CA1A0828E000BEEBFD /* MeasureHandler.cpp */,
-				610DC3CB1A0828E000BEEBFD /* MeasureHandler.h */,
-				610DC3CC1A0828E000BEEBFD /* MordentHandler.cpp */,
-				610DC3CD1A0828E000BEEBFD /* MordentHandler.h */,
-				610DC3CE1A0828E000BEEBFD /* NotationsHandler.cpp */,
-				610DC3CF1A0828E000BEEBFD /* NotationsHandler.h */,
-				610DC3D01A0828E000BEEBFD /* NoteHandler.cpp */,
-				610DC3D11A0828E000BEEBFD /* NoteHandler.h */,
-				610DC3D21A0828E000BEEBFD /* OrnamentsHandler.cpp */,
-				610DC3D31A0828E000BEEBFD /* OrnamentsHandler.h */,
-				610DC3D41A0828E000BEEBFD /* PartHandler.cpp */,
-				610DC3D51A0828E000BEEBFD /* PartHandler.h */,
-				610DC3D61A0828E000BEEBFD /* PitchHandler.cpp */,
-				610DC3D71A0828E000BEEBFD /* PitchHandler.h */,
-				610DC3D81A0828E000BEEBFD /* PrintHandler.cpp */,
-				610DC3D91A0828E000BEEBFD /* PrintHandler.h */,
-				610DC3DA1A0828E000BEEBFD /* RepeatHandler.cpp */,
-				610DC3DB1A0828E000BEEBFD /* RepeatHandler.h */,
-				610DC3DC1A0828E000BEEBFD /* RestHandler.cpp */,
-				610DC3DD1A0828E000BEEBFD /* RestHandler.h */,
-				610DC3DE1A0828E000BEEBFD /* ScalingHandler.cpp */,
-				610DC3DF1A0828E000BEEBFD /* ScalingHandler.h */,
-				610DC3E01A0828E000BEEBFD /* ScoreHandler.cpp */,
-				610DC3E11A0828E000BEEBFD /* ScoreHandler.h */,
-				610DC3E21A0828E000BEEBFD /* SlurHandler.cpp */,
-				610DC3E31A0828E000BEEBFD /* SlurHandler.h */,
-				610DC3E41A0828E000BEEBFD /* SoundHandler.cpp */,
-				610DC3E51A0828E000BEEBFD /* SoundHandler.h */,
-				610DC3E61A0828E000BEEBFD /* StaffLayoutHandler.cpp */,
-				610DC3E71A0828E000BEEBFD /* StaffLayoutHandler.h */,
-				610DC3E81A0828E000BEEBFD /* SyllabicHandler.cpp */,
-				610DC3E91A0828E000BEEBFD /* SyllabicHandler.h */,
-				610DC3EA1A0828E000BEEBFD /* TiedHandler.cpp */,
-				610DC3EB1A0828E000BEEBFD /* TiedHandler.h */,
-				610DC3EC1A0828E000BEEBFD /* TieHandler.cpp */,
-				610DC3ED1A0828E000BEEBFD /* TieHandler.h */,
-				610DC3EE1A0828E000BEEBFD /* TimeHandler.cpp */,
-				610DC3EF1A0828E000BEEBFD /* TimeHandler.h */,
-				610DC3F01A0828E000BEEBFD /* TurnHandler.cpp */,
-				610DC3F11A0828E000BEEBFD /* TurnHandler.h */,
-				610DC3F21A0828E000BEEBFD /* UnpitchedHandler.cpp */,
-				610DC3F31A0828E000BEEBFD /* UnpitchedHandler.h */,
-			);
-			name = parsing;
-			path = src/parsing;
-			sourceTree = "<group>";
-		};
-		610DC55C1A082F0200BEEBFD /* AIImageCompare */ = {
-			isa = PBXGroup;
-			children = (
-				610DC55F1A082F0200BEEBFD /* AIImageCompare.h */,
-				610DC5601A082F0200BEEBFD /* AIImageCompare.m */,
-			);
-			path = AIImageCompare;
-			sourceTree = "<group>";
-		};
 		610DC5A21A0831DF00BEEBFD /* MusicKitApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -1103,12 +805,286 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		610DCD901A094A0E00BEEBFD /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				610DCD911A094A0E00BEEBFD /* AIImageCompare */,
+				610DCD941A094A0E00BEEBFD /* lxml */,
+				610DCDA51A094A0E00BEEBFD /* mxml */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		610DCD911A094A0E00BEEBFD /* AIImageCompare */ = {
+			isa = PBXGroup;
+			children = (
+				610DCD921A094A0E00BEEBFD /* AIImageCompare.h */,
+				610DCD931A094A0E00BEEBFD /* AIImageCompare.m */,
+			);
+			path = AIImageCompare;
+			sourceTree = "<group>";
+		};
+		610DCD941A094A0E00BEEBFD /* lxml */ = {
+			isa = PBXGroup;
+			children = (
+				610DCD951A094A0E00BEEBFD /* BaseRecursiveHandler.h */,
+				610DCD961A094A0E00BEEBFD /* DoubleHandler.cpp */,
+				610DCD971A094A0E00BEEBFD /* DoubleHandler.h */,
+				610DCD981A094A0E00BEEBFD /* IntegerHandler.cpp */,
+				610DCD991A094A0E00BEEBFD /* IntegerHandler.h */,
+				610DCD9A1A094A0E00BEEBFD /* ListHandler.h */,
+				610DCD9B1A094A0E00BEEBFD /* lxml.cpp */,
+				610DCD9C1A094A0E00BEEBFD /* lxml.h */,
+				610DCD9D1A094A0E00BEEBFD /* PresenceHandler.h */,
+				610DCD9E1A094A0E00BEEBFD /* QName.h */,
+				610DCD9F1A094A0E00BEEBFD /* RecursiveHandler.h */,
+				610DCDA01A094A0E00BEEBFD /* RootRecursiveHandler.cpp */,
+				610DCDA11A094A0E00BEEBFD /* RootRecursiveHandler.h */,
+				610DCDA21A094A0E00BEEBFD /* SAXHandler.h */,
+				610DCDA31A094A0E00BEEBFD /* StringHandler.cpp */,
+				610DCDA41A094A0E00BEEBFD /* StringHandler.h */,
+			);
+			path = lxml;
+			sourceTree = "<group>";
+		};
+		610DCDA51A094A0E00BEEBFD /* mxml */ = {
+			isa = PBXGroup;
+			children = (
+				610DCDA61A094A0E00BEEBFD /* dom */,
+				610DCDE21A094A0E00BEEBFD /* geometry */,
+				610DCE1E1A094A0E00BEEBFD /* parsing */,
+				610DCDDC1A094A0E00BEEBFD /* Event.cpp */,
+				610DCDDD1A094A0E00BEEBFD /* Event.h */,
+				610DCDDE1A094A0E00BEEBFD /* EventFactory.cpp */,
+				610DCDDF1A094A0E00BEEBFD /* EventFactory.h */,
+				610DCDE01A094A0E00BEEBFD /* EventSequence.cpp */,
+				610DCDE11A094A0E00BEEBFD /* EventSequence.h */,
+				610DCE6F1A094A0E00BEEBFD /* Span.h */,
+				610DCE701A094A0E00BEEBFD /* SpanCollection.cpp */,
+				610DCE711A094A0E00BEEBFD /* SpanCollection.h */,
+				610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */,
+				610DCE731A094A0E00BEEBFD /* SpanFactory.h */,
+			);
+			path = mxml;
+			sourceTree = "<group>";
+		};
+		610DCDA61A094A0E00BEEBFD /* dom */ = {
+			isa = PBXGroup;
+			children = (
+				610DCDA71A094A0E00BEEBFD /* Accidental.h */,
+				610DCDA81A094A0E00BEEBFD /* Appearance.h */,
+				610DCDA91A094A0E00BEEBFD /* Articulation.h */,
+				610DCDAA1A094A0E00BEEBFD /* Attributes.h */,
+				610DCDAB1A094A0E00BEEBFD /* Backup.h */,
+				610DCDAC1A094A0E00BEEBFD /* Barline.h */,
+				610DCDAD1A094A0E00BEEBFD /* Beam.h */,
+				610DCDAE1A094A0E00BEEBFD /* Chord.h */,
+				610DCDAF1A094A0E00BEEBFD /* Clef.h */,
+				610DCDB01A094A0E00BEEBFD /* Credit.h */,
+				610DCDB11A094A0E00BEEBFD /* CreditWords.h */,
+				610DCDB21A094A0E00BEEBFD /* Defaults.h */,
+				610DCDB31A094A0E00BEEBFD /* Direction.h */,
+				610DCDB41A094A0E00BEEBFD /* DirectionType.h */,
+				610DCDB51A094A0E00BEEBFD /* EmptyPlacement.h */,
+				610DCDB61A094A0E00BEEBFD /* Ending.h */,
+				610DCDB71A094A0E00BEEBFD /* Fermata.h */,
+				610DCDB81A094A0E00BEEBFD /* Forward.h */,
+				610DCDB91A094A0E00BEEBFD /* Identification.cpp */,
+				610DCDBA1A094A0E00BEEBFD /* Identification.h */,
+				610DCDBB1A094A0E00BEEBFD /* InvalidDataError.h */,
+				610DCDBC1A094A0E00BEEBFD /* Key.h */,
+				610DCDBD1A094A0E00BEEBFD /* Lyric.h */,
+				610DCDBE1A094A0E00BEEBFD /* Measure.cpp */,
+				610DCDBF1A094A0E00BEEBFD /* Measure.h */,
+				610DCDC01A094A0E00BEEBFD /* Mordent.h */,
+				610DCDC11A094A0E00BEEBFD /* Node.h */,
+				610DCDC21A094A0E00BEEBFD /* Notations.h */,
+				610DCDC31A094A0E00BEEBFD /* Note.cpp */,
+				610DCDC41A094A0E00BEEBFD /* Note.h */,
+				610DCDC51A094A0E00BEEBFD /* Optional.h */,
+				610DCDC61A094A0E00BEEBFD /* Ornaments.h */,
+				610DCDC71A094A0E00BEEBFD /* Part.cpp */,
+				610DCDC81A094A0E00BEEBFD /* Part.h */,
+				610DCDC91A094A0E00BEEBFD /* Pedal.h */,
+				610DCDCA1A094A0E00BEEBFD /* Pitch.h */,
+				610DCDCB1A094A0E00BEEBFD /* Print.h */,
+				610DCDCC1A094A0E00BEEBFD /* Repeat.h */,
+				610DCDCD1A094A0E00BEEBFD /* Rest.h */,
+				610DCDCE1A094A0E00BEEBFD /* Scaling.h */,
+				610DCDCF1A094A0E00BEEBFD /* Score.h */,
+				610DCDD01A094A0E00BEEBFD /* Slur.h */,
+				610DCDD11A094A0E00BEEBFD /* Sound.h */,
+				610DCDD21A094A0E00BEEBFD /* StaffLayout.h */,
+				610DCDD31A094A0E00BEEBFD /* Syllabic.h */,
+				610DCDD41A094A0E00BEEBFD /* Tie.h */,
+				610DCDD51A094A0E00BEEBFD /* Tied.h */,
+				610DCDD61A094A0E00BEEBFD /* Time.h */,
+				610DCDD71A094A0E00BEEBFD /* TimedNode.h */,
+				610DCDD81A094A0E00BEEBFD /* Turn.h */,
+				610DCDD91A094A0E00BEEBFD /* Types.h */,
+				610DCDDA1A094A0E00BEEBFD /* Unpitched.h */,
+				610DCDDB1A094A0E00BEEBFD /* Wedge.h */,
+			);
+			path = dom;
+			sourceTree = "<group>";
+		};
+		610DCDE21A094A0E00BEEBFD /* geometry */ = {
+			isa = PBXGroup;
+			children = (
+				610DCDE31A094A0E00BEEBFD /* AccidentalGeometry.cpp */,
+				610DCDE41A094A0E00BEEBFD /* AccidentalGeometry.h */,
+				610DCDE51A094A0E00BEEBFD /* ArticulationGeometry.cpp */,
+				610DCDE61A094A0E00BEEBFD /* ArticulationGeometry.h */,
+				610DCDE71A094A0E00BEEBFD /* BarlineGeometry.cpp */,
+				610DCDE81A094A0E00BEEBFD /* BarlineGeometry.h */,
+				610DCDE91A094A0E00BEEBFD /* BeamGeometry.cpp */,
+				610DCDEA1A094A0E00BEEBFD /* BeamGeometry.h */,
+				610DCDEB1A094A0E00BEEBFD /* ChordGeometry.cpp */,
+				610DCDEC1A094A0E00BEEBFD /* ChordGeometry.h */,
+				610DCDED1A094A0E00BEEBFD /* ClefGeometry.cpp */,
+				610DCDEE1A094A0E00BEEBFD /* ClefGeometry.h */,
+				610DCDEF1A094A0E00BEEBFD /* DirectionGeometry.cpp */,
+				610DCDF01A094A0E00BEEBFD /* DirectionGeometry.h */,
+				610DCDF11A094A0E00BEEBFD /* DotGeometry.cpp */,
+				610DCDF21A094A0E00BEEBFD /* DotGeometry.h */,
+				610DCDF31A094A0E00BEEBFD /* EndingGeometry.cpp */,
+				610DCDF41A094A0E00BEEBFD /* EndingGeometry.h */,
+				610DCDF51A094A0E00BEEBFD /* FermataGeometry.cpp */,
+				610DCDF61A094A0E00BEEBFD /* FermataGeometry.h */,
+				610DCDF71A094A0E00BEEBFD /* Geometry.cpp */,
+				610DCDF81A094A0E00BEEBFD /* Geometry.h */,
+				610DCDF91A094A0E00BEEBFD /* KeyGeometry.cpp */,
+				610DCDFA1A094A0E00BEEBFD /* KeyGeometry.h */,
+				610DCDFB1A094A0E00BEEBFD /* LineSegment.h */,
+				610DCDFC1A094A0E00BEEBFD /* LyricGeometry.cpp */,
+				610DCDFD1A094A0E00BEEBFD /* LyricGeometry.h */,
+				610DCDFE1A094A0E00BEEBFD /* MeasureElementGeometry.h */,
+				610DCDFF1A094A0E00BEEBFD /* MeasureGeometry.cpp */,
+				610DCE001A094A0E00BEEBFD /* MeasureGeometry.h */,
+				610DCE011A094A0E00BEEBFD /* NoteGeometry.cpp */,
+				610DCE021A094A0E00BEEBFD /* NoteGeometry.h */,
+				610DCE031A094A0E00BEEBFD /* OrnamentsGeometry.cpp */,
+				610DCE041A094A0E00BEEBFD /* OrnamentsGeometry.h */,
+				610DCE051A094A0E00BEEBFD /* PartGeometry.cpp */,
+				610DCE061A094A0E00BEEBFD /* PartGeometry.h */,
+				610DCE071A094A0E00BEEBFD /* PedalGeometry.cpp */,
+				610DCE081A094A0E00BEEBFD /* PedalGeometry.h */,
+				610DCE091A094A0E00BEEBFD /* Point.h */,
+				610DCE0A1A094A0E00BEEBFD /* Rect.h */,
+				610DCE0B1A094A0E00BEEBFD /* RestGeometry.cpp */,
+				610DCE0C1A094A0E00BEEBFD /* RestGeometry.h */,
+				610DCE0D1A094A0E00BEEBFD /* ScoreGeometry.cpp */,
+				610DCE0E1A094A0E00BEEBFD /* ScoreGeometry.h */,
+				610DCE0F1A094A0E00BEEBFD /* Size.h */,
+				610DCE101A094A0E00BEEBFD /* SpanDirectionGeometry.cpp */,
+				610DCE111A094A0E00BEEBFD /* SpanDirectionGeometry.h */,
+				610DCE121A094A0E00BEEBFD /* SpanDirectionGeometryFactory.cpp */,
+				610DCE131A094A0E00BEEBFD /* SpanDirectionGeometryFactory.h */,
+				610DCE141A094A0E00BEEBFD /* StemGeometry.cpp */,
+				610DCE151A094A0E00BEEBFD /* StemGeometry.h */,
+				610DCE161A094A0E00BEEBFD /* StreamOperators.h */,
+				610DCE171A094A0E00BEEBFD /* TieGeometry.cpp */,
+				610DCE181A094A0E00BEEBFD /* TieGeometry.h */,
+				610DCE191A094A0E00BEEBFD /* TieGeometryFactory.cpp */,
+				610DCE1A1A094A0E00BEEBFD /* TieGeometryFactory.h */,
+				610DCE1B1A094A0E00BEEBFD /* TimeSignatureGeometry.cpp */,
+				610DCE1C1A094A0E00BEEBFD /* TimeSignatureGeometry.h */,
+			);
+			path = geometry;
+			sourceTree = "<group>";
+		};
+		610DCE1E1A094A0E00BEEBFD /* parsing */ = {
+			isa = PBXGroup;
+			children = (
+				610DCE1F1A094A0E00BEEBFD /* ArticulationHandler.cpp */,
+				610DCE201A094A0E00BEEBFD /* ArticulationHandler.h */,
+				610DCE211A094A0E00BEEBFD /* AttributesHandler.cpp */,
+				610DCE221A094A0E00BEEBFD /* AttributesHandler.h */,
+				610DCE231A094A0E00BEEBFD /* BackupHandler.cpp */,
+				610DCE241A094A0E00BEEBFD /* BackupHandler.h */,
+				610DCE251A094A0E00BEEBFD /* BarlineHandler.cpp */,
+				610DCE261A094A0E00BEEBFD /* BarlineHandler.h */,
+				610DCE271A094A0E00BEEBFD /* BaseHandler.h */,
+				610DCE281A094A0E00BEEBFD /* BeamHandler.cpp */,
+				610DCE291A094A0E00BEEBFD /* BeamHandler.h */,
+				610DCE2A1A094A0E00BEEBFD /* ClefHandler.cpp */,
+				610DCE2B1A094A0E00BEEBFD /* ClefHandler.h */,
+				610DCE2C1A094A0E00BEEBFD /* CreditHandler.cpp */,
+				610DCE2D1A094A0E00BEEBFD /* CreditHandler.h */,
+				610DCE2E1A094A0E00BEEBFD /* CreditWordsHandler.cpp */,
+				610DCE2F1A094A0E00BEEBFD /* CreditWordsHandler.h */,
+				610DCE301A094A0E00BEEBFD /* DefaultsHandler.cpp */,
+				610DCE311A094A0E00BEEBFD /* DefaultsHandler.h */,
+				610DCE321A094A0E00BEEBFD /* DirectionHandler.cpp */,
+				610DCE331A094A0E00BEEBFD /* DirectionHandler.h */,
+				610DCE341A094A0E00BEEBFD /* DirectionTypeHandler.cpp */,
+				610DCE351A094A0E00BEEBFD /* DirectionTypeHandler.h */,
+				610DCE361A094A0E00BEEBFD /* EmptyPlacementHandler.cpp */,
+				610DCE371A094A0E00BEEBFD /* EmptyPlacementHandler.h */,
+				610DCE381A094A0E00BEEBFD /* EndingHandler.cpp */,
+				610DCE391A094A0E00BEEBFD /* EndingHandler.h */,
+				610DCE3A1A094A0E00BEEBFD /* FermataHandler.cpp */,
+				610DCE3B1A094A0E00BEEBFD /* FermataHandler.h */,
+				610DCE3C1A094A0E00BEEBFD /* Find Results */,
+				610DCE3D1A094A0E00BEEBFD /* ForwardHandler.cpp */,
+				610DCE3E1A094A0E00BEEBFD /* ForwardHandler.h */,
+				610DCE3F1A094A0E00BEEBFD /* IdentificationHandler.cpp */,
+				610DCE401A094A0E00BEEBFD /* IdentificationHandler.h */,
+				610DCE411A094A0E00BEEBFD /* KeyHandler.cpp */,
+				610DCE421A094A0E00BEEBFD /* KeyHandler.h */,
+				610DCE431A094A0E00BEEBFD /* LyricHandler.cpp */,
+				610DCE441A094A0E00BEEBFD /* LyricHandler.h */,
+				610DCE451A094A0E00BEEBFD /* MeasureHandler.cpp */,
+				610DCE461A094A0E00BEEBFD /* MeasureHandler.h */,
+				610DCE471A094A0E00BEEBFD /* MordentHandler.cpp */,
+				610DCE481A094A0E00BEEBFD /* MordentHandler.h */,
+				610DCE491A094A0E00BEEBFD /* NotationsHandler.cpp */,
+				610DCE4A1A094A0E00BEEBFD /* NotationsHandler.h */,
+				610DCE4B1A094A0E00BEEBFD /* NoteHandler.cpp */,
+				610DCE4C1A094A0E00BEEBFD /* NoteHandler.h */,
+				610DCE4D1A094A0E00BEEBFD /* OrnamentsHandler.cpp */,
+				610DCE4E1A094A0E00BEEBFD /* OrnamentsHandler.h */,
+				610DCE4F1A094A0E00BEEBFD /* PartHandler.cpp */,
+				610DCE501A094A0E00BEEBFD /* PartHandler.h */,
+				610DCE511A094A0E00BEEBFD /* PitchHandler.cpp */,
+				610DCE521A094A0E00BEEBFD /* PitchHandler.h */,
+				610DCE531A094A0E00BEEBFD /* PrintHandler.cpp */,
+				610DCE541A094A0E00BEEBFD /* PrintHandler.h */,
+				610DCE551A094A0E00BEEBFD /* RepeatHandler.cpp */,
+				610DCE561A094A0E00BEEBFD /* RepeatHandler.h */,
+				610DCE571A094A0E00BEEBFD /* RestHandler.cpp */,
+				610DCE581A094A0E00BEEBFD /* RestHandler.h */,
+				610DCE591A094A0E00BEEBFD /* ScalingHandler.cpp */,
+				610DCE5A1A094A0E00BEEBFD /* ScalingHandler.h */,
+				610DCE5B1A094A0E00BEEBFD /* ScoreHandler.cpp */,
+				610DCE5C1A094A0E00BEEBFD /* ScoreHandler.h */,
+				610DCE5D1A094A0E00BEEBFD /* SlurHandler.cpp */,
+				610DCE5E1A094A0E00BEEBFD /* SlurHandler.h */,
+				610DCE5F1A094A0E00BEEBFD /* SoundHandler.cpp */,
+				610DCE601A094A0E00BEEBFD /* SoundHandler.h */,
+				610DCE611A094A0E00BEEBFD /* StaffLayoutHandler.cpp */,
+				610DCE621A094A0E00BEEBFD /* StaffLayoutHandler.h */,
+				610DCE631A094A0E00BEEBFD /* SyllabicHandler.cpp */,
+				610DCE641A094A0E00BEEBFD /* SyllabicHandler.h */,
+				610DCE651A094A0E00BEEBFD /* TiedHandler.cpp */,
+				610DCE661A094A0E00BEEBFD /* TiedHandler.h */,
+				610DCE671A094A0E00BEEBFD /* TieHandler.cpp */,
+				610DCE681A094A0E00BEEBFD /* TieHandler.h */,
+				610DCE691A094A0E00BEEBFD /* TimeHandler.cpp */,
+				610DCE6A1A094A0E00BEEBFD /* TimeHandler.h */,
+				610DCE6B1A094A0E00BEEBFD /* TurnHandler.cpp */,
+				610DCE6C1A094A0E00BEEBFD /* TurnHandler.h */,
+				610DCE6D1A094A0E00BEEBFD /* UnpitchedHandler.cpp */,
+				610DCE6E1A094A0E00BEEBFD /* UnpitchedHandler.h */,
+			);
+			path = parsing;
+			sourceTree = "<group>";
+		};
 		61402B1A1A08251D003AE7A7 = {
 			isa = PBXGroup;
 			children = (
+				610DCD901A094A0E00BEEBFD /* Libraries */,
 				61402B261A08251D003AE7A7 /* MusicKit */,
-				610DC30D1A0828E000BEEBFD /* mxml */,
-				610DC55C1A082F0200BEEBFD /* AIImageCompare */,
 				610DC5A21A0831DF00BEEBFD /* MusicKitApp */,
 				610DC5BC1A0831DF00BEEBFD /* MusicKitAppTests */,
 				61402B251A08251D003AE7A7 /* Products */,
@@ -1120,7 +1096,6 @@
 			isa = PBXGroup;
 			children = (
 				61402B241A08251D003AE7A7 /* MusicKit.framework */,
-				610DC4F21A08293D00BEEBFD /* libmxml.a */,
 				610DC5A11A0831DF00BEEBFD /* MusicKitApp.app */,
 				610DC5B91A0831DF00BEEBFD /* MusicKitAppTests.xctest */,
 			);
@@ -1246,23 +1221,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		610DC4F11A08293D00BEEBFD /* mxml */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 610DC5031A08293D00BEEBFD /* Build configuration list for PBXNativeTarget "mxml" */;
-			buildPhases = (
-				610DC4EE1A08293D00BEEBFD /* Sources */,
-				610DC4EF1A08293D00BEEBFD /* Frameworks */,
-				610DC4F01A08293D00BEEBFD /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = mxml;
-			productName = mxml;
-			productReference = 610DC4F21A08293D00BEEBFD /* libmxml.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		610DC5A01A0831DF00BEEBFD /* MusicKitApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 610DC5C11A0831DF00BEEBFD /* Build configuration list for PBXNativeTarget "MusicKitApp" */;
@@ -1312,7 +1270,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				610DC5591A0829AF00BEEBFD /* PBXTargetDependency */,
 			);
 			name = MusicKit;
 			productName = MusicKit;
@@ -1328,9 +1285,6 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Venture Media Labs";
 				TargetAttributes = {
-					610DC4F11A08293D00BEEBFD = {
-						CreatedOnToolsVersion = 6.1;
-					};
 					610DC5A01A0831DF00BEEBFD = {
 						CreatedOnToolsVersion = 6.1;
 					};
@@ -1357,7 +1311,6 @@
 			projectRoot = "";
 			targets = (
 				61402B231A08251D003AE7A7 /* MusicKit */,
-				610DC4F11A08293D00BEEBFD /* mxml */,
 				610DC5A01A0831DF00BEEBFD /* MusicKitApp */,
 				610DC5B81A0831DF00BEEBFD /* MusicKitAppTests */,
 			);
@@ -1467,92 +1420,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		610DC4EE1A08293D00BEEBFD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				610DC52F1A08296F00BEEBFD /* ArticulationHandler.cpp in Sources */,
-				610DC5391A08296F00BEEBFD /* DirectionTypeHandler.cpp in Sources */,
-				610DC5221A08296900BEEBFD /* MeasureGeometry.cpp in Sources */,
-				610DC5321A08296F00BEEBFD /* BarlineHandler.cpp in Sources */,
-				610DC5441A08296F00BEEBFD /* NoteHandler.cpp in Sources */,
-				610DC5111A08296100BEEBFD /* Part.cpp in Sources */,
-				610DC5451A08296F00BEEBFD /* OrnamentsHandler.cpp in Sources */,
-				610DC5291A08296900BEEBFD /* SpanDirectionGeometry.cpp in Sources */,
-				610DC5331A08296F00BEEBFD /* BeamHandler.cpp in Sources */,
-				610DC51D1A08296900BEEBFD /* EndingGeometry.cpp in Sources */,
-				610DC5211A08296900BEEBFD /* LyricGeometry.cpp in Sources */,
-				610DC52E1A08296900BEEBFD /* TimeSignatureGeometry.cpp in Sources */,
-				610DC5481A08296F00BEEBFD /* PrintHandler.cpp in Sources */,
-				610DC5531A08296F00BEEBFD /* TimeHandler.cpp in Sources */,
-				610DC5401A08296F00BEEBFD /* LyricHandler.cpp in Sources */,
-				610DC51E1A08296900BEEBFD /* FermataGeometry.cpp in Sources */,
-				610DC5141A08296500BEEBFD /* EventSequence.cpp in Sources */,
-				610DC51B1A08296900BEEBFD /* DirectionGeometry.cpp in Sources */,
-				610DC5181A08296900BEEBFD /* BeamGeometry.cpp in Sources */,
-				610DC5261A08296900BEEBFD /* PedalGeometry.cpp in Sources */,
-				610DC54B1A08296F00BEEBFD /* ScalingHandler.cpp in Sources */,
-				610DC54F1A08296F00BEEBFD /* StaffLayoutHandler.cpp in Sources */,
-				610DC5131A08296500BEEBFD /* EventFactory.cpp in Sources */,
-				610DC5281A08296900BEEBFD /* ScoreGeometry.cpp in Sources */,
-				610DC53C1A08296F00BEEBFD /* FermataHandler.cpp in Sources */,
-				610DC5091A08295E00BEEBFD /* DoubleHandler.cpp in Sources */,
-				610DC51A1A08296900BEEBFD /* ClefGeometry.cpp in Sources */,
-				610DC5121A08296500BEEBFD /* Event.cpp in Sources */,
-				610DC5231A08296900BEEBFD /* NoteGeometry.cpp in Sources */,
-				610DC5461A08296F00BEEBFD /* PartHandler.cpp in Sources */,
-				610DC5511A08296F00BEEBFD /* TiedHandler.cpp in Sources */,
-				610DC5501A08296F00BEEBFD /* SyllabicHandler.cpp in Sources */,
-				610DC53B1A08296F00BEEBFD /* EndingHandler.cpp in Sources */,
-				610DC5381A08296F00BEEBFD /* DirectionHandler.cpp in Sources */,
-				610DC5241A08296900BEEBFD /* OrnamentsGeometry.cpp in Sources */,
-				610DC50D1A08295E00BEEBFD /* StringHandler.cpp in Sources */,
-				610DC53D1A08296F00BEEBFD /* ForwardHandler.cpp in Sources */,
-				610DC50A1A08295E00BEEBFD /* IntegerHandler.cpp in Sources */,
-				610DC53F1A08296F00BEEBFD /* KeyHandler.cpp in Sources */,
-				610DC5171A08296900BEEBFD /* BarlineGeometry.cpp in Sources */,
-				610DC5271A08296900BEEBFD /* RestGeometry.cpp in Sources */,
-				610DC54A1A08296F00BEEBFD /* RestHandler.cpp in Sources */,
-				610DC52D1A08296900BEEBFD /* TieGeometryFactory.cpp in Sources */,
-				610DC51C1A08296900BEEBFD /* DotGeometry.cpp in Sources */,
-				610DC50F1A08296100BEEBFD /* Measure.cpp in Sources */,
-				610DC5431A08296F00BEEBFD /* NotationsHandler.cpp in Sources */,
-				610DC5191A08296900BEEBFD /* ChordGeometry.cpp in Sources */,
-				610DC5151A08296900BEEBFD /* AccidentalGeometry.cpp in Sources */,
-				610DC50B1A08295E00BEEBFD /* lxml.cpp in Sources */,
-				610DC5561A08297200BEEBFD /* SpanCollection.cpp in Sources */,
-				610DC52C1A08296900BEEBFD /* TieGeometry.cpp in Sources */,
-				610DC52A1A08296900BEEBFD /* SpanDirectionGeometryFactory.cpp in Sources */,
-				610DC54C1A08296F00BEEBFD /* ScoreHandler.cpp in Sources */,
-				610DC54E1A08296F00BEEBFD /* SoundHandler.cpp in Sources */,
-				610DC54D1A08296F00BEEBFD /* SlurHandler.cpp in Sources */,
-				610DC5351A08296F00BEEBFD /* CreditHandler.cpp in Sources */,
-				610DC5161A08296900BEEBFD /* ArticulationGeometry.cpp in Sources */,
-				610DC5491A08296F00BEEBFD /* RepeatHandler.cpp in Sources */,
-				610DC50C1A08295E00BEEBFD /* RootRecursiveHandler.cpp in Sources */,
-				610DC5551A08296F00BEEBFD /* UnpitchedHandler.cpp in Sources */,
-				610DC5571A08297200BEEBFD /* SpanFactory.cpp in Sources */,
-				610DC50E1A08296100BEEBFD /* Identification.cpp in Sources */,
-				610DC53E1A08296F00BEEBFD /* IdentificationHandler.cpp in Sources */,
-				610DC5201A08296900BEEBFD /* KeyGeometry.cpp in Sources */,
-				610DC5311A08296F00BEEBFD /* BackupHandler.cpp in Sources */,
-				610DC5301A08296F00BEEBFD /* AttributesHandler.cpp in Sources */,
-				610DC51F1A08296900BEEBFD /* Geometry.cpp in Sources */,
-				610DC5471A08296F00BEEBFD /* PitchHandler.cpp in Sources */,
-				610DC5341A08296F00BEEBFD /* ClefHandler.cpp in Sources */,
-				610DC53A1A08296F00BEEBFD /* EmptyPlacementHandler.cpp in Sources */,
-				610DC5101A08296100BEEBFD /* Note.cpp in Sources */,
-				610DC5521A08296F00BEEBFD /* TieHandler.cpp in Sources */,
-				610DC5371A08296F00BEEBFD /* DefaultsHandler.cpp in Sources */,
-				610DC5361A08296F00BEEBFD /* CreditWordsHandler.cpp in Sources */,
-				610DC5541A08296F00BEEBFD /* TurnHandler.cpp in Sources */,
-				610DC5421A08296F00BEEBFD /* MordentHandler.cpp in Sources */,
-				610DC5251A08296900BEEBFD /* PartGeometry.cpp in Sources */,
-				610DC5411A08296F00BEEBFD /* MeasureHandler.cpp in Sources */,
-				610DC52B1A08296900BEEBFD /* StemGeometry.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		610DC59D1A0831DF00BEEBFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1567,7 +1434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				610DC66C1A08322800BEEBFD /* VMTieViewTests.mm in Sources */,
-				610DC6721A08327700BEEBFD /* AIImageCompare.m in Sources */,
+				610DCE741A094A1700BEEBFD /* AIImageCompare.m in Sources */,
 				610DC66A1A08322800BEEBFD /* VMBeamViewTests.mm in Sources */,
 				610DC66D1A08322800BEEBFD /* VMTimeSignatureViewTests.mm in Sources */,
 				610DC61F1A08322800BEEBFD /* VMAdHocScoreTestCase.mm in Sources */,
@@ -1584,33 +1451,112 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610DCEE71A094B5100BEEBFD /* ArticulationHandler.cpp in Sources */,
 				61402BA61A082562003AE7A7 /* VMLyricView.mm in Sources */,
+				610DCEF61A094B5100BEEBFD /* IdentificationHandler.cpp in Sources */,
+				610DCF0A1A094B5100BEEBFD /* TieHandler.cpp in Sources */,
+				610DCEE91A094B5100BEEBFD /* BackupHandler.cpp in Sources */,
 				61402BA91A082562003AE7A7 /* VMDrawing.mm in Sources */,
+				610DCF091A094B5100BEEBFD /* TiedHandler.cpp in Sources */,
+				610DCED31A094B4C00BEEBFD /* DirectionGeometry.cpp in Sources */,
+				610DCECA1A094B4800BEEBFD /* Measure.cpp in Sources */,
 				61402BAA1A082562003AE7A7 /* VMCreditsView.mm in Sources */,
+				610DCEEF1A094B5100BEEBFD /* DefaultsHandler.cpp in Sources */,
+				610DCEC51A094B4500BEEBFD /* IntegerHandler.cpp in Sources */,
 				61402BA11A082562003AE7A7 /* VMCollectionViewScoreLayout.mm in Sources */,
 				61402B961A082562003AE7A7 /* VMWedgeView.mm in Sources */,
+				610DCF001A094B5100BEEBFD /* PrintHandler.cpp in Sources */,
+				610DCEEC1A094B5100BEEBFD /* ClefHandler.cpp in Sources */,
 				61402B8C1A082562003AE7A7 /* VMNoteStemView.mm in Sources */,
 				61402B931A082562003AE7A7 /* VMTieView.mm in Sources */,
+				610DCF121A094B5500BEEBFD /* SpanFactory.cpp in Sources */,
 				61402B9F1A082562003AE7A7 /* VMTimeSignatureView.mm in Sources */,
+				610DCF071A094B5100BEEBFD /* StaffLayoutHandler.cpp in Sources */,
+				610DCEC81A094B4500BEEBFD /* StringHandler.cpp in Sources */,
+				610DCF0B1A094B5100BEEBFD /* TimeHandler.cpp in Sources */,
+				610DCEEE1A094B5100BEEBFD /* CreditWordsHandler.cpp in Sources */,
+				610DCEE31A094B4C00BEEBFD /* StemGeometry.cpp in Sources */,
 				61402BB01A082562003AE7A7 /* VMImageStore.m in Sources */,
 				61402B9C1A082562003AE7A7 /* VMRestView.mm in Sources */,
+				610DCF031A094B5100BEEBFD /* ScalingHandler.cpp in Sources */,
+				610DCEE01A094B4C00BEEBFD /* ScoreGeometry.cpp in Sources */,
 				61402BAE1A082562003AE7A7 /* VMMeasureView.mm in Sources */,
+				610DCEDB1A094B4C00BEEBFD /* NoteGeometry.cpp in Sources */,
 				61402B7C1A082562003AE7A7 /* NSIndexPath+VMScoreAdditions.m in Sources */,
+				610DCED61A094B4C00BEEBFD /* FermataGeometry.cpp in Sources */,
+				610DCEE81A094B5100BEEBFD /* AttributesHandler.cpp in Sources */,
+				610DCF041A094B5100BEEBFD /* ScoreHandler.cpp in Sources */,
+				610DCEED1A094B5100BEEBFD /* CreditHandler.cpp in Sources */,
+				610DCED21A094B4C00BEEBFD /* ClefGeometry.cpp in Sources */,
+				610DCEFE1A094B5100BEEBFD /* PartHandler.cpp in Sources */,
+				610DCED51A094B4C00BEEBFD /* EndingGeometry.cpp in Sources */,
 				61402BA31A082562003AE7A7 /* VMCursorView.m in Sources */,
+				610DCEE61A094B4C00BEEBFD /* TimeSignatureGeometry.cpp in Sources */,
 				61402B8E1A082562003AE7A7 /* VMPedalView.mm in Sources */,
 				61402B911A082562003AE7A7 /* VMScoreElementImageView.mm in Sources */,
+				610DCEFB1A094B5100BEEBFD /* NotationsHandler.cpp in Sources */,
+				610DCECB1A094B4800BEEBFD /* Note.cpp in Sources */,
+				610DCF0F1A094B5500BEEBFD /* EventFactory.cpp in Sources */,
 				61402B851A082562003AE7A7 /* VMDirectionView.mm in Sources */,
 				61402BB21A082562003AE7A7 /* VMAttributesView.mm in Sources */,
+				610DCED91A094B4C00BEEBFD /* LyricGeometry.cpp in Sources */,
+				610DCEDA1A094B4C00BEEBFD /* MeasureGeometry.cpp in Sources */,
+				610DCECD1A094B4C00BEEBFD /* AccidentalGeometry.cpp in Sources */,
 				61402B9E1A082562003AE7A7 /* VMBeamView.mm in Sources */,
+				610DCF101A094B5500BEEBFD /* EventSequence.cpp in Sources */,
 				61402BA41A082562003AE7A7 /* VMChordView.mm in Sources */,
+				610DCEF81A094B5100BEEBFD /* LyricHandler.cpp in Sources */,
 				61402BB31A082562003AE7A7 /* VMScoreElementView.mm in Sources */,
+				610DCEE41A094B4C00BEEBFD /* TieGeometry.cpp in Sources */,
+				610DCF081A094B5100BEEBFD /* SyllabicHandler.cpp in Sources */,
+				610DCEFF1A094B5100BEEBFD /* PitchHandler.cpp in Sources */,
+				610DCEC91A094B4800BEEBFD /* Identification.cpp in Sources */,
+				610DCEFD1A094B5100BEEBFD /* OrnamentsHandler.cpp in Sources */,
+				610DCED11A094B4C00BEEBFD /* ChordGeometry.cpp in Sources */,
+				610DCF0C1A094B5100BEEBFD /* TurnHandler.cpp in Sources */,
 				61402B8F1A082562003AE7A7 /* VMScoreElementContainerView.mm in Sources */,
+				610DCEE21A094B4C00BEEBFD /* SpanDirectionGeometryFactory.cpp in Sources */,
+				610DCEC61A094B4500BEEBFD /* lxml.cpp in Sources */,
 				61402B7E1A082562003AE7A7 /* VMAccidentalView.mm in Sources */,
+				610DCF021A094B5100BEEBFD /* RestHandler.cpp in Sources */,
+				610DCEDC1A094B4C00BEEBFD /* OrnamentsGeometry.cpp in Sources */,
+				610DCEF11A094B5100BEEBFD /* DirectionTypeHandler.cpp in Sources */,
 				61402B991A082562003AE7A7 /* VMBraceView.mm in Sources */,
+				610DCEF21A094B5100BEEBFD /* EmptyPlacementHandler.cpp in Sources */,
+				610DCEDD1A094B4C00BEEBFD /* PartGeometry.cpp in Sources */,
+				610DCEC41A094B4500BEEBFD /* DoubleHandler.cpp in Sources */,
+				610DCEE11A094B4C00BEEBFD /* SpanDirectionGeometry.cpp in Sources */,
+				610DCF051A094B5100BEEBFD /* SlurHandler.cpp in Sources */,
+				610DCF111A094B5500BEEBFD /* SpanCollection.cpp in Sources */,
+				610DCEEA1A094B5100BEEBFD /* BarlineHandler.cpp in Sources */,
+				610DCECC1A094B4800BEEBFD /* Part.cpp in Sources */,
+				610DCED81A094B4C00BEEBFD /* KeyGeometry.cpp in Sources */,
+				610DCEF71A094B5100BEEBFD /* KeyHandler.cpp in Sources */,
+				610DCEF51A094B5100BEEBFD /* ForwardHandler.cpp in Sources */,
+				610DCF061A094B5100BEEBFD /* SoundHandler.cpp in Sources */,
+				610DCEFC1A094B5100BEEBFD /* NoteHandler.cpp in Sources */,
+				610DCF0D1A094B5100BEEBFD /* UnpitchedHandler.cpp in Sources */,
 				61402B871A082562003AE7A7 /* VMEndingView.mm in Sources */,
+				610DCEE51A094B4C00BEEBFD /* TieGeometryFactory.cpp in Sources */,
 				61402B9D1A082562003AE7A7 /* VMBarlineView.mm in Sources */,
+				610DCEF01A094B5100BEEBFD /* DirectionHandler.cpp in Sources */,
 				61402B831A082562003AE7A7 /* VMClefView.mm in Sources */,
+				610DCEC71A094B4500BEEBFD /* RootRecursiveHandler.cpp in Sources */,
+				610DCEEB1A094B5100BEEBFD /* BeamHandler.cpp in Sources */,
+				610DCED01A094B4C00BEEBFD /* BeamGeometry.cpp in Sources */,
+				610DCECF1A094B4C00BEEBFD /* BarlineGeometry.cpp in Sources */,
+				610DCECE1A094B4C00BEEBFD /* ArticulationGeometry.cpp in Sources */,
+				610DCEF41A094B5100BEEBFD /* FermataHandler.cpp in Sources */,
+				610DCF0E1A094B5500BEEBFD /* Event.cpp in Sources */,
+				610DCEFA1A094B5100BEEBFD /* MordentHandler.cpp in Sources */,
 				61402B8A1A082562003AE7A7 /* VMNoteHeadView.mm in Sources */,
+				610DCED41A094B4C00BEEBFD /* DotGeometry.cpp in Sources */,
+				610DCEF91A094B5100BEEBFD /* MeasureHandler.cpp in Sources */,
+				610DCEDE1A094B4C00BEEBFD /* PedalGeometry.cpp in Sources */,
+				610DCEDF1A094B4C00BEEBFD /* RestGeometry.cpp in Sources */,
+				610DCF011A094B5100BEEBFD /* RepeatHandler.cpp in Sources */,
+				610DCED71A094B4C00BEEBFD /* Geometry.cpp in Sources */,
+				610DCEF31A094B5100BEEBFD /* EndingHandler.cpp in Sources */,
 				61402BAD1A082562003AE7A7 /* VMCollectionViewScoreDataSource.mm in Sources */,
 				61402BB11A082562003AE7A7 /* VMKeyView.mm in Sources */,
 			);
@@ -1619,11 +1565,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		610DC5591A0829AF00BEEBFD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 610DC4F11A08293D00BEEBFD /* mxml */;
-			targetProxy = 610DC5581A0829AF00BEEBFD /* PBXContainerItemProxy */;
-		};
 		610DC5BB1A0831DF00BEEBFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 610DC5A01A0831DF00BEEBFD /* MusicKitApp */;
@@ -1661,33 +1602,10 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		610DC5041A08293D00BEEBFD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		610DC5051A08293D00BEEBFD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		610DC5C21A0831DF00BEEBFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1703,7 +1621,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				INFOPLIST_FILE = MusicKitApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1715,7 +1632,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1735,7 +1651,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1785,14 +1700,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/include/libxml2,
-					"$(SRCROOT)/mxml/lxml/src",
+					"$(SRCROOT)/Libraries",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/mxml/src";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1830,13 +1744,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/include/libxml2,
-					"$(SRCROOT)/mxml/lxml/src",
+					"$(SRCROOT)/Libraries",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/mxml/src";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1876,14 +1789,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		610DC5031A08293D00BEEBFD /* Build configuration list for PBXNativeTarget "mxml" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				610DC5041A08293D00BEEBFD /* Debug */,
-				610DC5051A08293D00BEEBFD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		610DC5C11A0831DF00BEEBFD /* Build configuration list for PBXNativeTarget "MusicKitApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1891,6 +1796,7 @@
 				610DC5C31A0831DF00BEEBFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		610DC5C41A0831DF00BEEBFD /* Build configuration list for PBXNativeTarget "MusicKitAppTests" */ = {
 			isa = XCConfigurationList;
@@ -1899,6 +1805,7 @@
 				610DC5C61A0831DF00BEEBFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61402B1E1A08251D003AE7A7 /* Build configuration list for PBXProject "MusicKit" */ = {
 			isa = XCConfigurationList;

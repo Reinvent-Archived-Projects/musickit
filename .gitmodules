@@ -10,3 +10,9 @@
 [submodule "AIImageCompare"]
 	path = AIImageCompare
 	url = git@github.com:aleph7/AIImageCompare
+[submodule "Submodules/mxml"]
+	path = Submodules/mxml
+	url = git@github.com:venturemedia/mxml.git
+[submodule "Submodules/AIImageCompare"]
+	path = Submodules/AIImageCompare
+	url = git@github.com:aleph7/AIImageCompare

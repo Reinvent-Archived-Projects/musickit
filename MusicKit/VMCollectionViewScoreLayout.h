@@ -2,7 +2,7 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import <UIKit/UIKit.h>
-#include "geometry/ScoreGeometry.h"
+#include <mxml/geometry/ScoreGeometry.h>
 
 
 @interface VMCollectionViewScoreLayout : UICollectionViewLayout

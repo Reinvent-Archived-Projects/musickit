@@ -2,7 +2,7 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import <UIKit/UIKit.h>
-#include "dom/Credit.h"
+#include <mxml/dom/Credit.h>
 
 @interface VMCreditsView : UIView
 

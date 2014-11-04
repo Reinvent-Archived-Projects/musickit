@@ -2,9 +2,9 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import <CoreGraphics/CoreGraphics.h>
-#include "geometry/Point.h"
-#include "geometry/Size.h"
-#include "geometry/Rect.h"
+#include <mxml/geometry/Point.h>
+#include <mxml/geometry/Size.h>
+#include <mxml/geometry/Rect.h>
 
 CG_INLINE CGPoint CGPointFromPoint(const mxml::Point& point) {
     return CGPointMake(point.x, point.y);
