@@ -13,6 +13,9 @@ static NSString* const TEST_PREFIX = @"test";
 
 - (void)setUp {
     [VMImageStore sharedInstance].foregroundColor = [UIColor blackColor];
+
+    // Print the location of temporary directory for reference
+    NSLog(@"Image test results written to\n%@", NSTemporaryDirectory());
 }
 
 - (void)testView:(UIView*)view forSelector:(SEL)selector withAccuracy:(CGFloat)accuracy {
@@ -78,23 +81,23 @@ static NSString* const TEST_PREFIX = @"test";
 
 - (UIImage*)loadTestImage:(NSString*)imageName {
     NSBundle* bundle = [NSBundle bundleForClass:[self class]];
-    NSString* path = [bundle pathForResource:imageName ofType:@"png"];
-    if ([UIScreen mainScreen].scale == 2)
-        path = [bundle pathForResource:[imageName stringByAppendingString:@"@2x"] ofType:@"png"];
-    else
-        path = [bundle pathForResource:imageName ofType:@"png"];
+    NSString* fullName = [NSString stringWithFormat:@"%@%@", imageName, [self.class imageSuffix]];
+    NSString* path = [bundle pathForResource:fullName ofType:@"png"];
     return [UIImage imageWithContentsOfFile:path];
 }
 
 - (void)saveImage:(UIImage*)image withName:(NSString*)name {
-    NSString* fullName;
-    if ([UIScreen mainScreen].scale == 2)
-        fullName = [NSString stringWithFormat:@"%@@2x.png", name];
-    else
-        fullName = [NSString stringWithFormat:@"%@.png", name];
+    NSString* fullName = [NSString stringWithFormat:@"%@%@.png", name, [self.class imageSuffix]];
     NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:fullName];
     NSData* data = UIImagePNGRepresentation(image);
     [data writeToFile:filePath atomically:YES];
+}
+
++ (NSString*)imageSuffix {
+    CGFloat scale = [UIScreen mainScreen].scale;
+    if (scale != 1)
+        return [NSString stringWithFormat:@"@%.0fx", scale];
+    return @"";
 }
 
 @end
