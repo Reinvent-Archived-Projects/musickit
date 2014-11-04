@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+set -o pipefail
+
+# Check for xcpretty
+hash xcpretty 2>/dev/null || { gem install xcpretty; }
+
+xcodebuild \
+  -project MusicKit.xcodeproj \
+  -scheme MusicKit \
+  -destination 'platform=iOS Simulator,name=iPad Air,OS=latest' \
+  -destination 'platform=iOS Simulator,name=iPhone 6 Plus,OS=latest' \
+  -destination 'platform=iOS Simulator,name=iPad 2,OS=7.1' \
+  test | xcpretty -cs
