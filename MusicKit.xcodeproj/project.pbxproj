@@ -13,7 +13,7 @@
 		610DC5AF1A0831DF00BEEBFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5AD1A0831DF00BEEBFD /* Main.storyboard */; };
 		610DC5B41A0831DF00BEEBFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5B21A0831DF00BEEBFD /* LaunchScreen.xib */; };
 		610DC5C91A0831F100BEEBFD /* MusicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61402B241A08251D003AE7A7 /* MusicKit.framework */; };
-		610DC61F1A08322800BEEBFD /* VMAdHocScoreTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5CB1A08322800BEEBFD /* VMAdHocScoreTestCase.mm */; };
+		610DC61F1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5CB1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm */; };
 		610DC6201A08322800BEEBFD /* BeamView-AccidentalInBeamedSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5CD1A08322800BEEBFD /* BeamView-AccidentalInBeamedSet.png */; };
 		610DC6211A08322800BEEBFD /* BeamView-AccidentalInBeamedSet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5CE1A08322800BEEBFD /* BeamView-AccidentalInBeamedSet@2x.png */; };
 		610DC6221A08322800BEEBFD /* BeamView-BackwardHook.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5CF1A08322800BEEBFD /* BeamView-BackwardHook.png */; };
@@ -86,14 +86,14 @@
 		610DC6651A08322800BEEBFD /* TimeSignatureView-CommonTime@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6121A08322800BEEBFD /* TimeSignatureView-CommonTime@2x.png */; };
 		610DC6661A08322800BEEBFD /* TimeSignatureView-VerticalDigits.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6131A08322800BEEBFD /* TimeSignatureView-VerticalDigits.png */; };
 		610DC6671A08322800BEEBFD /* TimeSignatureView-VerticalDigits@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6141A08322800BEEBFD /* TimeSignatureView-VerticalDigits@2x.png */; };
-		610DC6681A08322800BEEBFD /* VMClefViewTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6151A08322800BEEBFD /* VMClefViewTestCase.mm */; };
-		610DC6691A08322800BEEBFD /* VMMeasureViewTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6161A08322800BEEBFD /* VMMeasureViewTests.mm */; };
-		610DC66A1A08322800BEEBFD /* VMBeamViewTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6171A08322800BEEBFD /* VMBeamViewTests.mm */; };
-		610DC66B1A08322800BEEBFD /* VMCollectionViewScoreLayoutTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6181A08322800BEEBFD /* VMCollectionViewScoreLayoutTests.mm */; };
-		610DC66C1A08322800BEEBFD /* VMTieViewTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6191A08322800BEEBFD /* VMTieViewTests.mm */; };
-		610DC66D1A08322800BEEBFD /* VMTimeSignatureViewTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61A1A08322800BEEBFD /* VMTimeSignatureViewTests.mm */; };
-		610DC66E1A08322800BEEBFD /* VMChordViewTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61B1A08322800BEEBFD /* VMChordViewTests.mm */; };
-		610DC66F1A08322800BEEBFD /* VMViewTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61D1A08322800BEEBFD /* VMViewTestCase.mm */; };
+		610DC6681A08322800BEEBFD /* VMKClefLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */; };
+		610DC6691A08322800BEEBFD /* VMKMeasureLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */; };
+		610DC66A1A08322800BEEBFD /* VMKBeamLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */; };
+		610DC66B1A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6181A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm */; };
+		610DC66C1A08322800BEEBFD /* VMKTieLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */; };
+		610DC66D1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */; };
+		610DC66E1A08322800BEEBFD /* VMKChordLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */; };
+		610DC66F1A08322800BEEBFD /* VMKLayerTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61D1A08322800BEEBFD /* VMKLayerTestCase.mm */; };
 		610DC6731A08329A00BEEBFD /* MusicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61402B241A08251D003AE7A7 /* MusicKit.framework */; };
 		610DC67A1A0832E700BEEBFD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DC5981A082FF000BEEBFD /* libxml2.dylib */; };
 		610DC67B1A08330700BEEBFD /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61402C591A082661003AE7A7 /* Symbols.xcassets */; };
@@ -213,66 +213,198 @@
 		610DCF541A097FAB00BEEBFD /* TieView-AngledUpBelow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF321A097FAB00BEEBFD /* TieView-AngledUpBelow@3x.png */; };
 		610DCF551A097FAB00BEEBFD /* TimeSignatureView-CommonTime@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF331A097FAB00BEEBFD /* TimeSignatureView-CommonTime@3x.png */; };
 		610DCF561A097FAB00BEEBFD /* TimeSignatureView-VerticalDigits@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF341A097FAB00BEEBFD /* TimeSignatureView-VerticalDigits@3x.png */; };
+		610DCF5E1A09A08E00BEEBFD /* VMKScoreElementLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF5C1A09A08E00BEEBFD /* VMKScoreElementLayer.h */; };
+		610DCF5F1A09A08E00BEEBFD /* VMKScoreElementLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DCF5D1A09A08E00BEEBFD /* VMKScoreElementLayer.mm */; };
+		610DCF631A09ACED00BEEBFD /* VMKAccidentalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF611A09ACED00BEEBFD /* VMKAccidentalLayer.h */; };
+		610DCF641A09ACED00BEEBFD /* VMKAccidentalLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DCF621A09ACED00BEEBFD /* VMKAccidentalLayer.mm */; };
 		61402B2A1A08251D003AE7A7 /* MusicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B291A08251D003AE7A7 /* MusicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61402B7A1A082562003AE7A7 /* VMScoreElementContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B401A082562003AE7A7 /* VMScoreElementContainerView.h */; };
-		61402B7B1A082562003AE7A7 /* VMCreditsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B411A082562003AE7A7 /* VMCreditsView.h */; };
-		61402B7C1A082562003AE7A7 /* NSIndexPath+VMScoreAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 61402B421A082562003AE7A7 /* NSIndexPath+VMScoreAdditions.m */; };
-		61402B7D1A082562003AE7A7 /* VMAccidentalView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B431A082562003AE7A7 /* VMAccidentalView.h */; };
-		61402B7E1A082562003AE7A7 /* VMAccidentalView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B441A082562003AE7A7 /* VMAccidentalView.mm */; };
-		61402B7F1A082562003AE7A7 /* VMBarlineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B451A082562003AE7A7 /* VMBarlineView.h */; };
-		61402B801A082562003AE7A7 /* VMBeamView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B461A082562003AE7A7 /* VMBeamView.h */; };
-		61402B811A082562003AE7A7 /* VMChordView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B471A082562003AE7A7 /* VMChordView.h */; };
-		61402B821A082562003AE7A7 /* VMClefView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B481A082562003AE7A7 /* VMClefView.h */; };
-		61402B831A082562003AE7A7 /* VMClefView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B491A082562003AE7A7 /* VMClefView.mm */; };
-		61402B841A082562003AE7A7 /* VMDirectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B4A1A082562003AE7A7 /* VMDirectionView.h */; };
-		61402B851A082562003AE7A7 /* VMDirectionView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B4B1A082562003AE7A7 /* VMDirectionView.mm */; };
-		61402B861A082562003AE7A7 /* VMEndingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B4C1A082562003AE7A7 /* VMEndingView.h */; };
-		61402B871A082562003AE7A7 /* VMEndingView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B4D1A082562003AE7A7 /* VMEndingView.mm */; };
-		61402B881A082562003AE7A7 /* VMKeyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B4E1A082562003AE7A7 /* VMKeyView.h */; };
-		61402B891A082562003AE7A7 /* VMNoteHeadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B4F1A082562003AE7A7 /* VMNoteHeadView.h */; };
-		61402B8A1A082562003AE7A7 /* VMNoteHeadView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B501A082562003AE7A7 /* VMNoteHeadView.mm */; };
-		61402B8B1A082562003AE7A7 /* VMNoteStemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B511A082562003AE7A7 /* VMNoteStemView.h */; };
-		61402B8C1A082562003AE7A7 /* VMNoteStemView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B521A082562003AE7A7 /* VMNoteStemView.mm */; };
-		61402B8D1A082562003AE7A7 /* VMPedalView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B531A082562003AE7A7 /* VMPedalView.h */; };
-		61402B8E1A082562003AE7A7 /* VMPedalView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B541A082562003AE7A7 /* VMPedalView.mm */; };
-		61402B8F1A082562003AE7A7 /* VMScoreElementContainerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B551A082562003AE7A7 /* VMScoreElementContainerView.mm */; };
-		61402B901A082562003AE7A7 /* VMScoreElementImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B561A082562003AE7A7 /* VMScoreElementImageView.h */; };
-		61402B911A082562003AE7A7 /* VMScoreElementImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B571A082562003AE7A7 /* VMScoreElementImageView.mm */; };
-		61402B921A082562003AE7A7 /* VMTieView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B581A082562003AE7A7 /* VMTieView.h */; };
-		61402B931A082562003AE7A7 /* VMTieView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B591A082562003AE7A7 /* VMTieView.mm */; };
-		61402B941A082562003AE7A7 /* VMTimeSignatureView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B5A1A082562003AE7A7 /* VMTimeSignatureView.h */; };
-		61402B951A082562003AE7A7 /* VMWedgeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B5B1A082562003AE7A7 /* VMWedgeView.h */; };
-		61402B961A082562003AE7A7 /* VMWedgeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B5C1A082562003AE7A7 /* VMWedgeView.mm */; };
-		61402B971A082562003AE7A7 /* VMAttributesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B5D1A082562003AE7A7 /* VMAttributesView.h */; };
-		61402B981A082562003AE7A7 /* VMBraceView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B5E1A082562003AE7A7 /* VMBraceView.h */; };
-		61402B991A082562003AE7A7 /* VMBraceView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B5F1A082562003AE7A7 /* VMBraceView.mm */; };
-		61402B9A1A082562003AE7A7 /* VMRestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B601A082562003AE7A7 /* VMRestView.h */; };
-		61402B9B1A082562003AE7A7 /* VMScoreElementView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B611A082562003AE7A7 /* VMScoreElementView.h */; };
-		61402B9C1A082562003AE7A7 /* VMRestView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B621A082562003AE7A7 /* VMRestView.mm */; };
-		61402B9D1A082562003AE7A7 /* VMBarlineView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B631A082562003AE7A7 /* VMBarlineView.mm */; };
-		61402B9E1A082562003AE7A7 /* VMBeamView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B641A082562003AE7A7 /* VMBeamView.mm */; };
-		61402B9F1A082562003AE7A7 /* VMTimeSignatureView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B651A082562003AE7A7 /* VMTimeSignatureView.mm */; };
-		61402BA01A082562003AE7A7 /* VMCollectionViewScoreLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B661A082562003AE7A7 /* VMCollectionViewScoreLayout.h */; };
-		61402BA11A082562003AE7A7 /* VMCollectionViewScoreLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B671A082562003AE7A7 /* VMCollectionViewScoreLayout.mm */; };
-		61402BA21A082562003AE7A7 /* VMCursorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B681A082562003AE7A7 /* VMCursorView.h */; };
-		61402BA31A082562003AE7A7 /* VMCursorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61402B691A082562003AE7A7 /* VMCursorView.m */; };
-		61402BA41A082562003AE7A7 /* VMChordView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B6A1A082562003AE7A7 /* VMChordView.mm */; };
-		61402BA51A082562003AE7A7 /* VMLyricView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B6B1A082562003AE7A7 /* VMLyricView.h */; };
-		61402BA61A082562003AE7A7 /* VMLyricView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B6C1A082562003AE7A7 /* VMLyricView.mm */; };
-		61402BA71A082562003AE7A7 /* NSIndexPath+VMScoreAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B6D1A082562003AE7A7 /* NSIndexPath+VMScoreAdditions.h */; };
-		61402BA81A082562003AE7A7 /* VMDrawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B6E1A082562003AE7A7 /* VMDrawing.h */; };
-		61402BA91A082562003AE7A7 /* VMDrawing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B6F1A082562003AE7A7 /* VMDrawing.mm */; };
-		61402BAA1A082562003AE7A7 /* VMCreditsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B701A082562003AE7A7 /* VMCreditsView.mm */; };
-		61402BAB1A082562003AE7A7 /* VMMeasureView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B711A082562003AE7A7 /* VMMeasureView.h */; };
-		61402BAC1A082562003AE7A7 /* VMCollectionViewScoreDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B721A082562003AE7A7 /* VMCollectionViewScoreDataSource.h */; };
-		61402BAD1A082562003AE7A7 /* VMCollectionViewScoreDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B731A082562003AE7A7 /* VMCollectionViewScoreDataSource.mm */; };
-		61402BAE1A082562003AE7A7 /* VMMeasureView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B741A082562003AE7A7 /* VMMeasureView.mm */; };
-		61402BAF1A082562003AE7A7 /* VMImageStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B751A082562003AE7A7 /* VMImageStore.h */; };
-		61402BB01A082562003AE7A7 /* VMImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 61402B761A082562003AE7A7 /* VMImageStore.m */; };
-		61402BB11A082562003AE7A7 /* VMKeyView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B771A082562003AE7A7 /* VMKeyView.mm */; };
-		61402BB21A082562003AE7A7 /* VMAttributesView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B781A082562003AE7A7 /* VMAttributesView.mm */; };
-		61402BB31A082562003AE7A7 /* VMScoreElementView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B791A082562003AE7A7 /* VMScoreElementView.mm */; };
+		61402BA81A082562003AE7A7 /* VMKGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B6E1A082562003AE7A7 /* VMKGeometry.h */; };
+		61402BA91A082562003AE7A7 /* VMKGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B6F1A082562003AE7A7 /* VMKGeometry.mm */; };
+		61402BAF1A082562003AE7A7 /* VMKImageStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B751A082562003AE7A7 /* VMKImageStore.h */; };
+		61402BB01A082562003AE7A7 /* VMKImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 61402B761A082562003AE7A7 /* VMKImageStore.m */; };
 		61402C5A1A082661003AE7A7 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61402C591A082661003AE7A7 /* Symbols.xcassets */; };
+		616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */; };
+		616C1A8E1A0A970F0020EAA8 /* VMKChordLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */; };
+		616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */; };
+		616C1A921A0A98B70020EAA8 /* VMKClefLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A901A0A98B70020EAA8 /* VMKClefLayer.mm */; };
+		616C1A951A0A99600020EAA8 /* VMKScoreElementImageLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A931A0A99600020EAA8 /* VMKScoreElementImageLayer.h */; };
+		616C1A961A0A99600020EAA8 /* VMKScoreElementImageLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A941A0A99600020EAA8 /* VMKScoreElementImageLayer.mm */; };
+		616C1A9A1A0A9DAE0020EAA8 /* VMKDirectionLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A981A0A9DAE0020EAA8 /* VMKDirectionLayer.h */; };
+		616C1A9B1A0A9DAE0020EAA8 /* VMKDirectionLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A991A0A9DAE0020EAA8 /* VMKDirectionLayer.mm */; };
+		616C1A9E1A0AA24E0020EAA8 /* VMKEndingLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A9C1A0AA24E0020EAA8 /* VMKEndingLayer.h */; };
+		616C1A9F1A0AA24E0020EAA8 /* VMKEndingLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A9D1A0AA24E0020EAA8 /* VMKEndingLayer.mm */; };
+		616C1AA21A0AA89B0020EAA8 /* VMKKeyLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AA01A0AA89B0020EAA8 /* VMKKeyLayer.h */; };
+		616C1AA31A0AA89B0020EAA8 /* VMKKeyLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AA11A0AA89B0020EAA8 /* VMKKeyLayer.mm */; };
+		616C1AA61A0AACE50020EAA8 /* VMKLyricLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AA41A0AACE50020EAA8 /* VMKLyricLayer.h */; };
+		616C1AA71A0AACE50020EAA8 /* VMKLyricLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AA51A0AACE50020EAA8 /* VMKLyricLayer.mm */; };
+		616C1AAA1A0AF9960020EAA8 /* VMKMeasureLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AA81A0AF9960020EAA8 /* VMKMeasureLayer.h */; };
+		616C1AAB1A0AF9960020EAA8 /* VMKMeasureLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AA91A0AF9960020EAA8 /* VMKMeasureLayer.mm */; };
+		616C1AAE1A0B01300020EAA8 /* VMKNoteHeadLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AAC1A0B01300020EAA8 /* VMKNoteHeadLayer.h */; };
+		616C1AAF1A0B01300020EAA8 /* VMKNoteHeadLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AAD1A0B01300020EAA8 /* VMKNoteHeadLayer.mm */; };
+		616C1AB21A0B01BB0020EAA8 /* VMKNoteStemLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AB01A0B01BB0020EAA8 /* VMKNoteStemLayer.h */; };
+		616C1AB31A0B01BB0020EAA8 /* VMKNoteStemLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AB11A0B01BB0020EAA8 /* VMKNoteStemLayer.mm */; };
+		616C1AB61A0B030B0020EAA8 /* VMKPedalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AB41A0B030B0020EAA8 /* VMKPedalLayer.h */; };
+		616C1AB71A0B030B0020EAA8 /* VMKPedalLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AB51A0B030B0020EAA8 /* VMKPedalLayer.mm */; };
+		616C1ABA1A0B03A30020EAA8 /* VMKRestLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AB81A0B03A30020EAA8 /* VMKRestLayer.h */; };
+		616C1ABB1A0B03A30020EAA8 /* VMKRestLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AB91A0B03A30020EAA8 /* VMKRestLayer.mm */; };
+		616C1ABE1A0B054C0020EAA8 /* VMKTieLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1ABC1A0B054C0020EAA8 /* VMKTieLayer.h */; };
+		616C1ABF1A0B054C0020EAA8 /* VMKTieLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1ABD1A0B054C0020EAA8 /* VMKTieLayer.mm */; };
+		616C1AC21A0B06280020EAA8 /* VMKTimeSignatureLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AC01A0B06280020EAA8 /* VMKTimeSignatureLayer.h */; };
+		616C1AC31A0B06280020EAA8 /* VMKTimeSignatureLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AC11A0B06280020EAA8 /* VMKTimeSignatureLayer.mm */; };
+		616C1AC61A0BFE2C0020EAA8 /* VMKWedgeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AC41A0BFE2C0020EAA8 /* VMKWedgeLayer.h */; };
+		616C1AC71A0BFE2C0020EAA8 /* VMKWedgeLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AC51A0BFE2C0020EAA8 /* VMKWedgeLayer.mm */; };
+		616C1AD81A0C055F0020EAA8 /* MusicKitOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616C1ACD1A0C055E0020EAA8 /* MusicKitOSX.framework */; };
+		616C1AE61A0C05980020EAA8 /* DoubleHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD961A094A0E00BEEBFD /* DoubleHandler.cpp */; };
+		616C1AE71A0C05980020EAA8 /* IntegerHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD981A094A0E00BEEBFD /* IntegerHandler.cpp */; };
+		616C1AE81A0C05980020EAA8 /* lxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD9B1A094A0E00BEEBFD /* lxml.cpp */; };
+		616C1AE91A0C05980020EAA8 /* RootRecursiveHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDA01A094A0E00BEEBFD /* RootRecursiveHandler.cpp */; };
+		616C1AEA1A0C05980020EAA8 /* StringHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDA31A094A0E00BEEBFD /* StringHandler.cpp */; };
+		616C1AEB1A0C059B0020EAA8 /* Identification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDB91A094A0E00BEEBFD /* Identification.cpp */; };
+		616C1AEC1A0C059B0020EAA8 /* Measure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDBE1A094A0E00BEEBFD /* Measure.cpp */; };
+		616C1AED1A0C059B0020EAA8 /* Note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDC31A094A0E00BEEBFD /* Note.cpp */; };
+		616C1AEE1A0C059B0020EAA8 /* Part.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDC71A094A0E00BEEBFD /* Part.cpp */; };
+		616C1AEF1A0C059E0020EAA8 /* AccidentalGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE31A094A0E00BEEBFD /* AccidentalGeometry.cpp */; };
+		616C1AF01A0C059E0020EAA8 /* ArticulationGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE51A094A0E00BEEBFD /* ArticulationGeometry.cpp */; };
+		616C1AF11A0C059E0020EAA8 /* BarlineGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE71A094A0E00BEEBFD /* BarlineGeometry.cpp */; };
+		616C1AF21A0C059E0020EAA8 /* BeamGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE91A094A0E00BEEBFD /* BeamGeometry.cpp */; };
+		616C1AF31A0C059E0020EAA8 /* ChordGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDEB1A094A0E00BEEBFD /* ChordGeometry.cpp */; };
+		616C1AF41A0C059E0020EAA8 /* ClefGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDED1A094A0E00BEEBFD /* ClefGeometry.cpp */; };
+		616C1AF51A0C059E0020EAA8 /* DirectionGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDEF1A094A0E00BEEBFD /* DirectionGeometry.cpp */; };
+		616C1AF61A0C059E0020EAA8 /* DotGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDF11A094A0E00BEEBFD /* DotGeometry.cpp */; };
+		616C1AF71A0C059E0020EAA8 /* EndingGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDF31A094A0E00BEEBFD /* EndingGeometry.cpp */; };
+		616C1AF81A0C059E0020EAA8 /* FermataGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDF51A094A0E00BEEBFD /* FermataGeometry.cpp */; };
+		616C1AF91A0C059E0020EAA8 /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDF71A094A0E00BEEBFD /* Geometry.cpp */; };
+		616C1AFA1A0C059E0020EAA8 /* KeyGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDF91A094A0E00BEEBFD /* KeyGeometry.cpp */; };
+		616C1AFB1A0C059E0020EAA8 /* LyricGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDFC1A094A0E00BEEBFD /* LyricGeometry.cpp */; };
+		616C1AFC1A0C059E0020EAA8 /* MeasureGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDFF1A094A0E00BEEBFD /* MeasureGeometry.cpp */; };
+		616C1AFD1A0C059E0020EAA8 /* NoteGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE011A094A0E00BEEBFD /* NoteGeometry.cpp */; };
+		616C1AFE1A0C059E0020EAA8 /* OrnamentsGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE031A094A0E00BEEBFD /* OrnamentsGeometry.cpp */; };
+		616C1AFF1A0C059E0020EAA8 /* PartGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE051A094A0E00BEEBFD /* PartGeometry.cpp */; };
+		616C1B001A0C059E0020EAA8 /* PedalGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE071A094A0E00BEEBFD /* PedalGeometry.cpp */; };
+		616C1B011A0C059E0020EAA8 /* RestGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE0B1A094A0E00BEEBFD /* RestGeometry.cpp */; };
+		616C1B021A0C059E0020EAA8 /* ScoreGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE0D1A094A0E00BEEBFD /* ScoreGeometry.cpp */; };
+		616C1B031A0C059E0020EAA8 /* SpanDirectionGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE101A094A0E00BEEBFD /* SpanDirectionGeometry.cpp */; };
+		616C1B041A0C059E0020EAA8 /* SpanDirectionGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE121A094A0E00BEEBFD /* SpanDirectionGeometryFactory.cpp */; };
+		616C1B051A0C059E0020EAA8 /* StemGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE141A094A0E00BEEBFD /* StemGeometry.cpp */; };
+		616C1B061A0C059E0020EAA8 /* TieGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE171A094A0E00BEEBFD /* TieGeometry.cpp */; };
+		616C1B071A0C059E0020EAA8 /* TieGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE191A094A0E00BEEBFD /* TieGeometryFactory.cpp */; };
+		616C1B081A0C059E0020EAA8 /* TimeSignatureGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE1B1A094A0E00BEEBFD /* TimeSignatureGeometry.cpp */; };
+		616C1B091A0C05A40020EAA8 /* ArticulationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE1F1A094A0E00BEEBFD /* ArticulationHandler.cpp */; };
+		616C1B0A1A0C05A40020EAA8 /* AttributesHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE211A094A0E00BEEBFD /* AttributesHandler.cpp */; };
+		616C1B0B1A0C05A40020EAA8 /* BackupHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE231A094A0E00BEEBFD /* BackupHandler.cpp */; };
+		616C1B0C1A0C05A40020EAA8 /* BarlineHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE251A094A0E00BEEBFD /* BarlineHandler.cpp */; };
+		616C1B0D1A0C05A40020EAA8 /* BeamHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE281A094A0E00BEEBFD /* BeamHandler.cpp */; };
+		616C1B0E1A0C05A40020EAA8 /* ClefHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE2A1A094A0E00BEEBFD /* ClefHandler.cpp */; };
+		616C1B0F1A0C05A40020EAA8 /* CreditHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE2C1A094A0E00BEEBFD /* CreditHandler.cpp */; };
+		616C1B101A0C05A40020EAA8 /* CreditWordsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE2E1A094A0E00BEEBFD /* CreditWordsHandler.cpp */; };
+		616C1B111A0C05A40020EAA8 /* DefaultsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE301A094A0E00BEEBFD /* DefaultsHandler.cpp */; };
+		616C1B121A0C05A40020EAA8 /* DirectionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE321A094A0E00BEEBFD /* DirectionHandler.cpp */; };
+		616C1B131A0C05A40020EAA8 /* DirectionTypeHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE341A094A0E00BEEBFD /* DirectionTypeHandler.cpp */; };
+		616C1B141A0C05A40020EAA8 /* EmptyPlacementHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE361A094A0E00BEEBFD /* EmptyPlacementHandler.cpp */; };
+		616C1B151A0C05A40020EAA8 /* EndingHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE381A094A0E00BEEBFD /* EndingHandler.cpp */; };
+		616C1B161A0C05A40020EAA8 /* FermataHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE3A1A094A0E00BEEBFD /* FermataHandler.cpp */; };
+		616C1B171A0C05A40020EAA8 /* ForwardHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE3D1A094A0E00BEEBFD /* ForwardHandler.cpp */; };
+		616C1B181A0C05A40020EAA8 /* IdentificationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE3F1A094A0E00BEEBFD /* IdentificationHandler.cpp */; };
+		616C1B191A0C05A40020EAA8 /* KeyHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE411A094A0E00BEEBFD /* KeyHandler.cpp */; };
+		616C1B1A1A0C05A40020EAA8 /* LyricHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE431A094A0E00BEEBFD /* LyricHandler.cpp */; };
+		616C1B1B1A0C05A40020EAA8 /* MeasureHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE451A094A0E00BEEBFD /* MeasureHandler.cpp */; };
+		616C1B1C1A0C05A40020EAA8 /* MordentHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE471A094A0E00BEEBFD /* MordentHandler.cpp */; };
+		616C1B1D1A0C05A40020EAA8 /* NotationsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE491A094A0E00BEEBFD /* NotationsHandler.cpp */; };
+		616C1B1E1A0C05A40020EAA8 /* NoteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE4B1A094A0E00BEEBFD /* NoteHandler.cpp */; };
+		616C1B1F1A0C05A40020EAA8 /* OrnamentsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE4D1A094A0E00BEEBFD /* OrnamentsHandler.cpp */; };
+		616C1B201A0C05A40020EAA8 /* PartHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE4F1A094A0E00BEEBFD /* PartHandler.cpp */; };
+		616C1B211A0C05A40020EAA8 /* PitchHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE511A094A0E00BEEBFD /* PitchHandler.cpp */; };
+		616C1B221A0C05A40020EAA8 /* PrintHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE531A094A0E00BEEBFD /* PrintHandler.cpp */; };
+		616C1B231A0C05A40020EAA8 /* RepeatHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE551A094A0E00BEEBFD /* RepeatHandler.cpp */; };
+		616C1B241A0C05A40020EAA8 /* RestHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE571A094A0E00BEEBFD /* RestHandler.cpp */; };
+		616C1B251A0C05A40020EAA8 /* ScalingHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE591A094A0E00BEEBFD /* ScalingHandler.cpp */; };
+		616C1B261A0C05A40020EAA8 /* ScoreHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE5B1A094A0E00BEEBFD /* ScoreHandler.cpp */; };
+		616C1B271A0C05A40020EAA8 /* SlurHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE5D1A094A0E00BEEBFD /* SlurHandler.cpp */; };
+		616C1B281A0C05A40020EAA8 /* SoundHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE5F1A094A0E00BEEBFD /* SoundHandler.cpp */; };
+		616C1B291A0C05A40020EAA8 /* StaffLayoutHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE611A094A0E00BEEBFD /* StaffLayoutHandler.cpp */; };
+		616C1B2A1A0C05A40020EAA8 /* SyllabicHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE631A094A0E00BEEBFD /* SyllabicHandler.cpp */; };
+		616C1B2B1A0C05A40020EAA8 /* TiedHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE651A094A0E00BEEBFD /* TiedHandler.cpp */; };
+		616C1B2C1A0C05A40020EAA8 /* TieHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE671A094A0E00BEEBFD /* TieHandler.cpp */; };
+		616C1B2D1A0C05A40020EAA8 /* TimeHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE691A094A0E00BEEBFD /* TimeHandler.cpp */; };
+		616C1B2E1A0C05A40020EAA8 /* TurnHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE6B1A094A0E00BEEBFD /* TurnHandler.cpp */; };
+		616C1B2F1A0C05A40020EAA8 /* UnpitchedHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE6D1A094A0E00BEEBFD /* UnpitchedHandler.cpp */; };
+		616C1B301A0C05A80020EAA8 /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDDC1A094A0E00BEEBFD /* Event.cpp */; };
+		616C1B311A0C05A80020EAA8 /* EventFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDDE1A094A0E00BEEBFD /* EventFactory.cpp */; };
+		616C1B321A0C05A80020EAA8 /* EventSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE01A094A0E00BEEBFD /* EventSequence.cpp */; };
+		616C1B331A0C05A80020EAA8 /* SpanCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE701A094A0E00BEEBFD /* SpanCollection.cpp */; };
+		616C1B341A0C05A80020EAA8 /* SpanFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */; };
+		616C1B351A0C05B10020EAA8 /* VMKGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B6F1A082562003AE7A7 /* VMKGeometry.mm */; };
+		616C1B361A0C05B50020EAA8 /* VMKScoreElementLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DCF5D1A09A08E00BEEBFD /* VMKScoreElementLayer.mm */; };
+		616C1B371A0C05B50020EAA8 /* VMKScoreElementImageLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A941A0A99600020EAA8 /* VMKScoreElementImageLayer.mm */; };
+		616C1B381A0C05B50020EAA8 /* VMKAccidentalLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DCF621A09ACED00BEEBFD /* VMKAccidentalLayer.mm */; };
+		616C1B391A0C05B50020EAA8 /* VMKBarlineLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618641501A09B0B900FAE9C9 /* VMKBarlineLayer.mm */; };
+		616C1B3A1A0C05B50020EAA8 /* VMKBeamLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618641541A09B23C00FAE9C9 /* VMKBeamLayer.mm */; };
+		616C1B3B1A0C05B50020EAA8 /* VMKChordLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */; };
+		616C1B3C1A0C05B50020EAA8 /* VMKClefLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A901A0A98B70020EAA8 /* VMKClefLayer.mm */; };
+		616C1B3D1A0C05B50020EAA8 /* VMKDirectionLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A991A0A9DAE0020EAA8 /* VMKDirectionLayer.mm */; };
+		616C1B3E1A0C05B50020EAA8 /* VMKEndingLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A9D1A0AA24E0020EAA8 /* VMKEndingLayer.mm */; };
+		616C1B3F1A0C05B50020EAA8 /* VMKKeyLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AA11A0AA89B0020EAA8 /* VMKKeyLayer.mm */; };
+		616C1B401A0C05B50020EAA8 /* VMKLyricLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AA51A0AACE50020EAA8 /* VMKLyricLayer.mm */; };
+		616C1B411A0C05B50020EAA8 /* VMKMeasureLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AA91A0AF9960020EAA8 /* VMKMeasureLayer.mm */; };
+		616C1B421A0C05B50020EAA8 /* VMKNoteHeadLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AAD1A0B01300020EAA8 /* VMKNoteHeadLayer.mm */; };
+		616C1B431A0C05B50020EAA8 /* VMKNoteStemLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AB11A0B01BB0020EAA8 /* VMKNoteStemLayer.mm */; };
+		616C1B441A0C05B50020EAA8 /* VMKPedalLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AB51A0B030B0020EAA8 /* VMKPedalLayer.mm */; };
+		616C1B451A0C05B50020EAA8 /* VMKRestLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AB91A0B03A30020EAA8 /* VMKRestLayer.mm */; };
+		616C1B461A0C05B50020EAA8 /* VMKTieLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1ABD1A0B054C0020EAA8 /* VMKTieLayer.mm */; };
+		616C1B471A0C05B50020EAA8 /* VMKTimeSignatureLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AC11A0B06280020EAA8 /* VMKTimeSignatureLayer.mm */; };
+		616C1B481A0C05B50020EAA8 /* VMKWedgeLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AC51A0BFE2C0020EAA8 /* VMKWedgeLayer.mm */; };
+		616C1B491A0C05C20020EAA8 /* VMKImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 61402B761A082562003AE7A7 /* VMKImageStore.m */; };
+		616C1B4B1A0C0B800020EAA8 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 616C1B4A1A0C0B800020EAA8 /* libxml2.dylib */; };
+		616C1B4E1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B4C1A0C0D0B0020EAA8 /* VMKBraceLayer.h */; };
+		616C1B4F1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B4C1A0C0D0B0020EAA8 /* VMKBraceLayer.h */; };
+		616C1B501A0C0D0B0020EAA8 /* VMKBraceLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B4D1A0C0D0B0020EAA8 /* VMKBraceLayer.mm */; };
+		616C1B511A0C0D0B0020EAA8 /* VMKBraceLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B4D1A0C0D0B0020EAA8 /* VMKBraceLayer.mm */; };
+		616C1B5D1A0C0E310020EAA8 /* VMKAttributesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B531A0C0E310020EAA8 /* VMKAttributesView.h */; };
+		616C1B5E1A0C0E310020EAA8 /* VMKAttributesView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B541A0C0E310020EAA8 /* VMKAttributesView.mm */; };
+		616C1B5F1A0C0E310020EAA8 /* VMKCreditsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B551A0C0E310020EAA8 /* VMKCreditsView.h */; };
+		616C1B601A0C0E310020EAA8 /* VMKCreditsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B561A0C0E310020EAA8 /* VMKCreditsView.mm */; };
+		616C1B611A0C0E310020EAA8 /* VMKCursorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B571A0C0E310020EAA8 /* VMKCursorView.h */; };
+		616C1B621A0C0E310020EAA8 /* VMKCursorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B581A0C0E310020EAA8 /* VMKCursorView.m */; };
+		616C1B631A0C0E310020EAA8 /* VMKMeasureView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B591A0C0E310020EAA8 /* VMKMeasureView.h */; };
+		616C1B641A0C0E310020EAA8 /* VMKMeasureView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B5A1A0C0E310020EAA8 /* VMKMeasureView.mm */; };
+		616C1B651A0C0E310020EAA8 /* VMKScoreElementContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B5B1A0C0E310020EAA8 /* VMKScoreElementContainerView.h */; };
+		616C1B661A0C0E310020EAA8 /* VMKScoreElementContainerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B5C1A0C0E310020EAA8 /* VMKScoreElementContainerView.mm */; };
+		616C1B6D1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B671A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h */; };
+		616C1B6E1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B681A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m */; };
+		616C1B6F1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B691A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.h */; };
+		616C1B701A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B6A1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h */; };
+		616C1B711A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B6B1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm */; };
+		616C1B721A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B6C1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm */; };
+		616C1B751A0C2C680020EAA8 /* VMKDirectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B731A0C2C680020EAA8 /* VMKDirectionView.h */; };
+		616C1B761A0C2C680020EAA8 /* VMKDirectionView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B741A0C2C680020EAA8 /* VMKDirectionView.mm */; };
+		616C1B791A0C2D7A0020EAA8 /* VMKEndingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B771A0C2D7A0020EAA8 /* VMKEndingView.h */; };
+		616C1B7A1A0C2D7A0020EAA8 /* VMKEndingView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B781A0C2D7A0020EAA8 /* VMKEndingView.mm */; };
+		616C1B7D1A0C2D8F0020EAA8 /* VMKLyricView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B7B1A0C2D8F0020EAA8 /* VMKLyricView.h */; };
+		616C1B7E1A0C2D8F0020EAA8 /* VMKLyricView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B7C1A0C2D8F0020EAA8 /* VMKLyricView.mm */; };
+		616C1B811A0C2DA40020EAA8 /* VMKPedalView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B7F1A0C2DA40020EAA8 /* VMKPedalView.h */; };
+		616C1B821A0C2DA40020EAA8 /* VMKPedalView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B801A0C2DA40020EAA8 /* VMKPedalView.mm */; };
+		616C1B851A0C2DDB0020EAA8 /* VMKTieView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B831A0C2DDB0020EAA8 /* VMKTieView.h */; };
+		616C1B861A0C2DDB0020EAA8 /* VMKTieView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B841A0C2DDB0020EAA8 /* VMKTieView.mm */; };
+		616C1B891A0C2DEA0020EAA8 /* VMKWedgeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B871A0C2DEA0020EAA8 /* VMKWedgeView.h */; };
+		616C1B8A1A0C2DEA0020EAA8 /* VMKWedgeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B881A0C2DEA0020EAA8 /* VMKWedgeView.mm */; };
+		616C1B8D1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B8B1A0C4B860020EAA8 /* VMKOrnamentLayer.h */; };
+		616C1B8E1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B8B1A0C4B860020EAA8 /* VMKOrnamentLayer.h */; };
+		616C1B8F1A0C4B860020EAA8 /* VMKOrnamentLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B8C1A0C4B860020EAA8 /* VMKOrnamentLayer.mm */; };
+		616C1B901A0C4B860020EAA8 /* VMKOrnamentLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B8C1A0C4B860020EAA8 /* VMKOrnamentLayer.mm */; };
+		616C1B931A0C4D790020EAA8 /* VMKOrnamentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B911A0C4D790020EAA8 /* VMKOrnamentView.h */; };
+		616C1B941A0C4D790020EAA8 /* VMKOrnamentView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B921A0C4D790020EAA8 /* VMKOrnamentView.mm */; };
+		616C1B951A0C524C0020EAA8 /* VMKLayerTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61D1A08322800BEEBFD /* VMKLayerTestCase.mm */; };
+		616C1B961A0C53AD0020EAA8 /* VMKTieLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */; };
+		616C1B971A0C53B10020EAA8 /* VMKTimeSignatureLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */; };
+		616C1B981A0C53FB0020EAA8 /* VMKBeamLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */; };
+		616C1B991A0C547C0020EAA8 /* VMKMeasureLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */; };
+		616C1B9A1A0C54BA0020EAA8 /* VMKClefLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */; };
+		616C1B9B1A0C54E50020EAA8 /* VMKChordLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */; };
+		616C1B9C1A0D38930020EAA8 /* VMKAdHocScoreTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5CB1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm */; };
+		618641511A09B0B900FAE9C9 /* VMKBarlineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6186414F1A09B0B900FAE9C9 /* VMKBarlineLayer.h */; };
+		618641521A09B0B900FAE9C9 /* VMKBarlineLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618641501A09B0B900FAE9C9 /* VMKBarlineLayer.mm */; };
+		618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */; };
+		618641561A09B23C00FAE9C9 /* VMKBeamLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618641541A09B23C00FAE9C9 /* VMKBeamLayer.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -297,6 +429,13 @@
 			remoteGlobalIDString = 61402B231A08251D003AE7A7;
 			remoteInfo = MusicKit;
 		};
+		616C1AD91A0C055F0020EAA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61402B1B1A08251D003AE7A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 616C1ACC1A0C055E0020EAA8;
+			remoteInfo = "MusicKit-OSX";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -310,8 +449,8 @@
 		610DC5B31A0831DF00BEEBFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		610DC5B91A0831DF00BEEBFD /* MusicKitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicKitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		610DC5BE1A0831DF00BEEBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		610DC5CA1A08322800BEEBFD /* VMAdHocScoreTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMAdHocScoreTestCase.h; sourceTree = "<group>"; };
-		610DC5CB1A08322800BEEBFD /* VMAdHocScoreTestCase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMAdHocScoreTestCase.mm; sourceTree = "<group>"; };
+		610DC5CA1A08322800BEEBFD /* VMKAdHocScoreTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKAdHocScoreTestCase.h; sourceTree = "<group>"; };
+		610DC5CB1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKAdHocScoreTestCase.mm; sourceTree = "<group>"; };
 		610DC5CD1A08322800BEEBFD /* BeamView-AccidentalInBeamedSet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-AccidentalInBeamedSet.png"; sourceTree = "<group>"; };
 		610DC5CE1A08322800BEEBFD /* BeamView-AccidentalInBeamedSet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-AccidentalInBeamedSet@2x.png"; sourceTree = "<group>"; };
 		610DC5CF1A08322800BEEBFD /* BeamView-BackwardHook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-BackwardHook.png"; sourceTree = "<group>"; };
@@ -384,15 +523,15 @@
 		610DC6121A08322800BEEBFD /* TimeSignatureView-CommonTime@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureView-CommonTime@2x.png"; sourceTree = "<group>"; };
 		610DC6131A08322800BEEBFD /* TimeSignatureView-VerticalDigits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureView-VerticalDigits.png"; sourceTree = "<group>"; };
 		610DC6141A08322800BEEBFD /* TimeSignatureView-VerticalDigits@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureView-VerticalDigits@2x.png"; sourceTree = "<group>"; };
-		610DC6151A08322800BEEBFD /* VMClefViewTestCase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMClefViewTestCase.mm; sourceTree = "<group>"; };
-		610DC6161A08322800BEEBFD /* VMMeasureViewTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMMeasureViewTests.mm; sourceTree = "<group>"; };
-		610DC6171A08322800BEEBFD /* VMBeamViewTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMBeamViewTests.mm; sourceTree = "<group>"; };
-		610DC6181A08322800BEEBFD /* VMCollectionViewScoreLayoutTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMCollectionViewScoreLayoutTests.mm; sourceTree = "<group>"; };
-		610DC6191A08322800BEEBFD /* VMTieViewTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMTieViewTests.mm; sourceTree = "<group>"; };
-		610DC61A1A08322800BEEBFD /* VMTimeSignatureViewTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMTimeSignatureViewTests.mm; sourceTree = "<group>"; };
-		610DC61B1A08322800BEEBFD /* VMChordViewTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMChordViewTests.mm; sourceTree = "<group>"; };
-		610DC61C1A08322800BEEBFD /* VMViewTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMViewTestCase.h; sourceTree = "<group>"; };
-		610DC61D1A08322800BEEBFD /* VMViewTestCase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMViewTestCase.mm; sourceTree = "<group>"; };
+		610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKClefLayerTests.mm; sourceTree = "<group>"; };
+		610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKMeasureLayerTests.mm; sourceTree = "<group>"; };
+		610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKBeamLayerTests.mm; sourceTree = "<group>"; };
+		610DC6181A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKCollectionViewScoreLayoutTests.mm; sourceTree = "<group>"; };
+		610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKTieLayerTests.mm; sourceTree = "<group>"; };
+		610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKTimeSignatureLayerTests.mm; sourceTree = "<group>"; };
+		610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKChordLayerTests.mm; sourceTree = "<group>"; };
+		610DC61C1A08322800BEEBFD /* VMKLayerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKLayerTestCase.h; sourceTree = "<group>"; };
+		610DC61D1A08322800BEEBFD /* VMKLayerTestCase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKLayerTestCase.mm; sourceTree = "<group>"; };
 		610DC67D1A08342900BEEBFD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		610DCD921A094A0E00BEEBFD /* AIImageCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIImageCompare.h; sourceTree = "<group>"; };
 		610DCD931A094A0E00BEEBFD /* AIImageCompare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIImageCompare.m; sourceTree = "<group>"; };
@@ -648,68 +787,92 @@
 		610DCF321A097FAB00BEEBFD /* TieView-AngledUpBelow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledUpBelow@3x.png"; sourceTree = "<group>"; };
 		610DCF331A097FAB00BEEBFD /* TimeSignatureView-CommonTime@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureView-CommonTime@3x.png"; sourceTree = "<group>"; };
 		610DCF341A097FAB00BEEBFD /* TimeSignatureView-VerticalDigits@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureView-VerticalDigits@3x.png"; sourceTree = "<group>"; };
+		610DCF5C1A09A08E00BEEBFD /* VMKScoreElementLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKScoreElementLayer.h; sourceTree = "<group>"; };
+		610DCF5D1A09A08E00BEEBFD /* VMKScoreElementLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKScoreElementLayer.mm; sourceTree = "<group>"; };
+		610DCF601A09A46900BEEBFD /* VMKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VMKColor.h; sourceTree = "<group>"; };
+		610DCF611A09ACED00BEEBFD /* VMKAccidentalLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKAccidentalLayer.h; sourceTree = "<group>"; };
+		610DCF621A09ACED00BEEBFD /* VMKAccidentalLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKAccidentalLayer.mm; sourceTree = "<group>"; };
 		61402B241A08251D003AE7A7 /* MusicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MusicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61402B281A08251D003AE7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61402B291A08251D003AE7A7 /* MusicKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicKit.h; sourceTree = "<group>"; };
-		61402B401A082562003AE7A7 /* VMScoreElementContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMScoreElementContainerView.h; sourceTree = "<group>"; };
-		61402B411A082562003AE7A7 /* VMCreditsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMCreditsView.h; sourceTree = "<group>"; };
-		61402B421A082562003AE7A7 /* NSIndexPath+VMScoreAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+VMScoreAdditions.m"; sourceTree = "<group>"; };
-		61402B431A082562003AE7A7 /* VMAccidentalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMAccidentalView.h; sourceTree = "<group>"; };
-		61402B441A082562003AE7A7 /* VMAccidentalView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMAccidentalView.mm; sourceTree = "<group>"; };
-		61402B451A082562003AE7A7 /* VMBarlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMBarlineView.h; sourceTree = "<group>"; };
-		61402B461A082562003AE7A7 /* VMBeamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMBeamView.h; sourceTree = "<group>"; };
-		61402B471A082562003AE7A7 /* VMChordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMChordView.h; sourceTree = "<group>"; };
-		61402B481A082562003AE7A7 /* VMClefView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMClefView.h; sourceTree = "<group>"; };
-		61402B491A082562003AE7A7 /* VMClefView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMClefView.mm; sourceTree = "<group>"; };
-		61402B4A1A082562003AE7A7 /* VMDirectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMDirectionView.h; sourceTree = "<group>"; };
-		61402B4B1A082562003AE7A7 /* VMDirectionView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMDirectionView.mm; sourceTree = "<group>"; };
-		61402B4C1A082562003AE7A7 /* VMEndingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMEndingView.h; sourceTree = "<group>"; };
-		61402B4D1A082562003AE7A7 /* VMEndingView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMEndingView.mm; sourceTree = "<group>"; };
-		61402B4E1A082562003AE7A7 /* VMKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKeyView.h; sourceTree = "<group>"; };
-		61402B4F1A082562003AE7A7 /* VMNoteHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMNoteHeadView.h; sourceTree = "<group>"; };
-		61402B501A082562003AE7A7 /* VMNoteHeadView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMNoteHeadView.mm; sourceTree = "<group>"; };
-		61402B511A082562003AE7A7 /* VMNoteStemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMNoteStemView.h; sourceTree = "<group>"; };
-		61402B521A082562003AE7A7 /* VMNoteStemView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMNoteStemView.mm; sourceTree = "<group>"; };
-		61402B531A082562003AE7A7 /* VMPedalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMPedalView.h; sourceTree = "<group>"; };
-		61402B541A082562003AE7A7 /* VMPedalView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMPedalView.mm; sourceTree = "<group>"; };
-		61402B551A082562003AE7A7 /* VMScoreElementContainerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMScoreElementContainerView.mm; sourceTree = "<group>"; };
-		61402B561A082562003AE7A7 /* VMScoreElementImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMScoreElementImageView.h; sourceTree = "<group>"; };
-		61402B571A082562003AE7A7 /* VMScoreElementImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMScoreElementImageView.mm; sourceTree = "<group>"; };
-		61402B581A082562003AE7A7 /* VMTieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMTieView.h; sourceTree = "<group>"; };
-		61402B591A082562003AE7A7 /* VMTieView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMTieView.mm; sourceTree = "<group>"; };
-		61402B5A1A082562003AE7A7 /* VMTimeSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMTimeSignatureView.h; sourceTree = "<group>"; };
-		61402B5B1A082562003AE7A7 /* VMWedgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMWedgeView.h; sourceTree = "<group>"; };
-		61402B5C1A082562003AE7A7 /* VMWedgeView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMWedgeView.mm; sourceTree = "<group>"; };
-		61402B5D1A082562003AE7A7 /* VMAttributesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMAttributesView.h; sourceTree = "<group>"; };
-		61402B5E1A082562003AE7A7 /* VMBraceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMBraceView.h; sourceTree = "<group>"; };
-		61402B5F1A082562003AE7A7 /* VMBraceView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMBraceView.mm; sourceTree = "<group>"; };
-		61402B601A082562003AE7A7 /* VMRestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMRestView.h; sourceTree = "<group>"; };
-		61402B611A082562003AE7A7 /* VMScoreElementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMScoreElementView.h; sourceTree = "<group>"; };
-		61402B621A082562003AE7A7 /* VMRestView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMRestView.mm; sourceTree = "<group>"; };
-		61402B631A082562003AE7A7 /* VMBarlineView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMBarlineView.mm; sourceTree = "<group>"; };
-		61402B641A082562003AE7A7 /* VMBeamView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMBeamView.mm; sourceTree = "<group>"; };
-		61402B651A082562003AE7A7 /* VMTimeSignatureView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMTimeSignatureView.mm; sourceTree = "<group>"; };
-		61402B661A082562003AE7A7 /* VMCollectionViewScoreLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMCollectionViewScoreLayout.h; sourceTree = "<group>"; };
-		61402B671A082562003AE7A7 /* VMCollectionViewScoreLayout.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMCollectionViewScoreLayout.mm; sourceTree = "<group>"; };
-		61402B681A082562003AE7A7 /* VMCursorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMCursorView.h; sourceTree = "<group>"; };
-		61402B691A082562003AE7A7 /* VMCursorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMCursorView.m; sourceTree = "<group>"; };
-		61402B6A1A082562003AE7A7 /* VMChordView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMChordView.mm; sourceTree = "<group>"; };
-		61402B6B1A082562003AE7A7 /* VMLyricView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMLyricView.h; sourceTree = "<group>"; };
-		61402B6C1A082562003AE7A7 /* VMLyricView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMLyricView.mm; sourceTree = "<group>"; };
-		61402B6D1A082562003AE7A7 /* NSIndexPath+VMScoreAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+VMScoreAdditions.h"; sourceTree = "<group>"; };
-		61402B6E1A082562003AE7A7 /* VMDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMDrawing.h; sourceTree = "<group>"; };
-		61402B6F1A082562003AE7A7 /* VMDrawing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMDrawing.mm; sourceTree = "<group>"; };
-		61402B701A082562003AE7A7 /* VMCreditsView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMCreditsView.mm; sourceTree = "<group>"; };
-		61402B711A082562003AE7A7 /* VMMeasureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMMeasureView.h; sourceTree = "<group>"; };
-		61402B721A082562003AE7A7 /* VMCollectionViewScoreDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMCollectionViewScoreDataSource.h; sourceTree = "<group>"; };
-		61402B731A082562003AE7A7 /* VMCollectionViewScoreDataSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMCollectionViewScoreDataSource.mm; sourceTree = "<group>"; };
-		61402B741A082562003AE7A7 /* VMMeasureView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMMeasureView.mm; sourceTree = "<group>"; };
-		61402B751A082562003AE7A7 /* VMImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMImageStore.h; sourceTree = "<group>"; };
-		61402B761A082562003AE7A7 /* VMImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMImageStore.m; sourceTree = "<group>"; };
-		61402B771A082562003AE7A7 /* VMKeyView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKeyView.mm; sourceTree = "<group>"; };
-		61402B781A082562003AE7A7 /* VMAttributesView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMAttributesView.mm; sourceTree = "<group>"; };
-		61402B791A082562003AE7A7 /* VMScoreElementView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMScoreElementView.mm; sourceTree = "<group>"; };
+		61402B6E1A082562003AE7A7 /* VMKGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKGeometry.h; sourceTree = "<group>"; };
+		61402B6F1A082562003AE7A7 /* VMKGeometry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKGeometry.mm; sourceTree = "<group>"; };
+		61402B751A082562003AE7A7 /* VMKImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKImageStore.h; sourceTree = "<group>"; };
+		61402B761A082562003AE7A7 /* VMKImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKImageStore.m; sourceTree = "<group>"; };
 		61402C591A082661003AE7A7 /* Symbols.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Symbols.xcassets; sourceTree = "<group>"; };
+		616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKChordLayer.h; sourceTree = "<group>"; };
+		616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKChordLayer.mm; sourceTree = "<group>"; };
+		616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKClefLayer.h; sourceTree = "<group>"; };
+		616C1A901A0A98B70020EAA8 /* VMKClefLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKClefLayer.mm; sourceTree = "<group>"; };
+		616C1A931A0A99600020EAA8 /* VMKScoreElementImageLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKScoreElementImageLayer.h; sourceTree = "<group>"; };
+		616C1A941A0A99600020EAA8 /* VMKScoreElementImageLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKScoreElementImageLayer.mm; sourceTree = "<group>"; };
+		616C1A971A0A9BDA0020EAA8 /* VMKImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VMKImage.h; sourceTree = "<group>"; };
+		616C1A981A0A9DAE0020EAA8 /* VMKDirectionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKDirectionLayer.h; sourceTree = "<group>"; };
+		616C1A991A0A9DAE0020EAA8 /* VMKDirectionLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKDirectionLayer.mm; sourceTree = "<group>"; };
+		616C1A9C1A0AA24E0020EAA8 /* VMKEndingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKEndingLayer.h; sourceTree = "<group>"; };
+		616C1A9D1A0AA24E0020EAA8 /* VMKEndingLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKEndingLayer.mm; sourceTree = "<group>"; };
+		616C1AA01A0AA89B0020EAA8 /* VMKKeyLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKKeyLayer.h; sourceTree = "<group>"; };
+		616C1AA11A0AA89B0020EAA8 /* VMKKeyLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKKeyLayer.mm; sourceTree = "<group>"; };
+		616C1AA41A0AACE50020EAA8 /* VMKLyricLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKLyricLayer.h; sourceTree = "<group>"; };
+		616C1AA51A0AACE50020EAA8 /* VMKLyricLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKLyricLayer.mm; sourceTree = "<group>"; };
+		616C1AA81A0AF9960020EAA8 /* VMKMeasureLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKMeasureLayer.h; sourceTree = "<group>"; };
+		616C1AA91A0AF9960020EAA8 /* VMKMeasureLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKMeasureLayer.mm; sourceTree = "<group>"; };
+		616C1AAC1A0B01300020EAA8 /* VMKNoteHeadLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKNoteHeadLayer.h; sourceTree = "<group>"; };
+		616C1AAD1A0B01300020EAA8 /* VMKNoteHeadLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKNoteHeadLayer.mm; sourceTree = "<group>"; };
+		616C1AB01A0B01BB0020EAA8 /* VMKNoteStemLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKNoteStemLayer.h; sourceTree = "<group>"; };
+		616C1AB11A0B01BB0020EAA8 /* VMKNoteStemLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKNoteStemLayer.mm; sourceTree = "<group>"; };
+		616C1AB41A0B030B0020EAA8 /* VMKPedalLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKPedalLayer.h; sourceTree = "<group>"; };
+		616C1AB51A0B030B0020EAA8 /* VMKPedalLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKPedalLayer.mm; sourceTree = "<group>"; };
+		616C1AB81A0B03A30020EAA8 /* VMKRestLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKRestLayer.h; sourceTree = "<group>"; };
+		616C1AB91A0B03A30020EAA8 /* VMKRestLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKRestLayer.mm; sourceTree = "<group>"; };
+		616C1ABC1A0B054C0020EAA8 /* VMKTieLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTieLayer.h; sourceTree = "<group>"; };
+		616C1ABD1A0B054C0020EAA8 /* VMKTieLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKTieLayer.mm; sourceTree = "<group>"; };
+		616C1AC01A0B06280020EAA8 /* VMKTimeSignatureLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTimeSignatureLayer.h; sourceTree = "<group>"; };
+		616C1AC11A0B06280020EAA8 /* VMKTimeSignatureLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKTimeSignatureLayer.mm; sourceTree = "<group>"; };
+		616C1AC41A0BFE2C0020EAA8 /* VMKWedgeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKWedgeLayer.h; sourceTree = "<group>"; };
+		616C1AC51A0BFE2C0020EAA8 /* VMKWedgeLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKWedgeLayer.mm; sourceTree = "<group>"; };
+		616C1ACD1A0C055E0020EAA8 /* MusicKitOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MusicKitOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		616C1AD71A0C055F0020EAA8 /* MusicKitOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicKitOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		616C1ADD1A0C055F0020EAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		616C1B4A1A0C0B800020EAA8 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
+		616C1B4C1A0C0D0B0020EAA8 /* VMKBraceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKBraceLayer.h; sourceTree = "<group>"; };
+		616C1B4D1A0C0D0B0020EAA8 /* VMKBraceLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKBraceLayer.mm; sourceTree = "<group>"; };
+		616C1B531A0C0E310020EAA8 /* VMKAttributesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKAttributesView.h; sourceTree = "<group>"; };
+		616C1B541A0C0E310020EAA8 /* VMKAttributesView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKAttributesView.mm; sourceTree = "<group>"; };
+		616C1B551A0C0E310020EAA8 /* VMKCreditsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCreditsView.h; sourceTree = "<group>"; };
+		616C1B561A0C0E310020EAA8 /* VMKCreditsView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKCreditsView.mm; sourceTree = "<group>"; };
+		616C1B571A0C0E310020EAA8 /* VMKCursorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCursorView.h; sourceTree = "<group>"; };
+		616C1B581A0C0E310020EAA8 /* VMKCursorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKCursorView.m; sourceTree = "<group>"; };
+		616C1B591A0C0E310020EAA8 /* VMKMeasureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKMeasureView.h; sourceTree = "<group>"; };
+		616C1B5A1A0C0E310020EAA8 /* VMKMeasureView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKMeasureView.mm; sourceTree = "<group>"; };
+		616C1B5B1A0C0E310020EAA8 /* VMKScoreElementContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKScoreElementContainerView.h; sourceTree = "<group>"; };
+		616C1B5C1A0C0E310020EAA8 /* VMKScoreElementContainerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKScoreElementContainerView.mm; sourceTree = "<group>"; };
+		616C1B671A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+VMKScoreAdditions.h"; sourceTree = "<group>"; };
+		616C1B681A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+VMKScoreAdditions.m"; sourceTree = "<group>"; };
+		616C1B691A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCollectionViewScoreDataSource.h; sourceTree = "<group>"; };
+		616C1B6A1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCollectionViewScoreLayout.h; sourceTree = "<group>"; };
+		616C1B6B1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKCollectionViewScoreLayout.mm; sourceTree = "<group>"; };
+		616C1B6C1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKCollectionViewScoreDataSource.mm; sourceTree = "<group>"; };
+		616C1B731A0C2C680020EAA8 /* VMKDirectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKDirectionView.h; sourceTree = "<group>"; };
+		616C1B741A0C2C680020EAA8 /* VMKDirectionView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKDirectionView.mm; sourceTree = "<group>"; };
+		616C1B771A0C2D7A0020EAA8 /* VMKEndingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKEndingView.h; sourceTree = "<group>"; };
+		616C1B781A0C2D7A0020EAA8 /* VMKEndingView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKEndingView.mm; sourceTree = "<group>"; };
+		616C1B7B1A0C2D8F0020EAA8 /* VMKLyricView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKLyricView.h; sourceTree = "<group>"; };
+		616C1B7C1A0C2D8F0020EAA8 /* VMKLyricView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKLyricView.mm; sourceTree = "<group>"; };
+		616C1B7F1A0C2DA40020EAA8 /* VMKPedalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKPedalView.h; sourceTree = "<group>"; };
+		616C1B801A0C2DA40020EAA8 /* VMKPedalView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKPedalView.mm; sourceTree = "<group>"; };
+		616C1B831A0C2DDB0020EAA8 /* VMKTieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTieView.h; sourceTree = "<group>"; };
+		616C1B841A0C2DDB0020EAA8 /* VMKTieView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKTieView.mm; sourceTree = "<group>"; };
+		616C1B871A0C2DEA0020EAA8 /* VMKWedgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKWedgeView.h; sourceTree = "<group>"; };
+		616C1B881A0C2DEA0020EAA8 /* VMKWedgeView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKWedgeView.mm; sourceTree = "<group>"; };
+		616C1B8B1A0C4B860020EAA8 /* VMKOrnamentLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKOrnamentLayer.h; sourceTree = "<group>"; };
+		616C1B8C1A0C4B860020EAA8 /* VMKOrnamentLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKOrnamentLayer.mm; sourceTree = "<group>"; };
+		616C1B911A0C4D790020EAA8 /* VMKOrnamentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKOrnamentView.h; sourceTree = "<group>"; };
+		616C1B921A0C4D790020EAA8 /* VMKOrnamentView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKOrnamentView.mm; sourceTree = "<group>"; };
+		6186414F1A09B0B900FAE9C9 /* VMKBarlineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKBarlineLayer.h; sourceTree = "<group>"; };
+		618641501A09B0B900FAE9C9 /* VMKBarlineLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKBarlineLayer.mm; sourceTree = "<group>"; };
+		618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKBeamLayer.h; sourceTree = "<group>"; };
+		618641541A09B23C00FAE9C9 /* VMKBeamLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKBeamLayer.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -735,6 +898,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				610DC5991A082FF000BEEBFD /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616C1AC91A0C055E0020EAA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616C1B4B1A0C0B800020EAA8 /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616C1AD41A0C055F0020EAA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616C1AD81A0C055F0020EAA8 /* MusicKitOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,17 +947,17 @@
 			children = (
 				610DC5BD1A0831DF00BEEBFD /* Supporting Files */,
 				610DC5CC1A08322800BEEBFD /* resources */,
-				610DC61C1A08322800BEEBFD /* VMViewTestCase.h */,
-				610DC61D1A08322800BEEBFD /* VMViewTestCase.mm */,
-				610DC5CA1A08322800BEEBFD /* VMAdHocScoreTestCase.h */,
-				610DC5CB1A08322800BEEBFD /* VMAdHocScoreTestCase.mm */,
-				610DC6151A08322800BEEBFD /* VMClefViewTestCase.mm */,
-				610DC6161A08322800BEEBFD /* VMMeasureViewTests.mm */,
-				610DC6171A08322800BEEBFD /* VMBeamViewTests.mm */,
-				610DC6181A08322800BEEBFD /* VMCollectionViewScoreLayoutTests.mm */,
-				610DC6191A08322800BEEBFD /* VMTieViewTests.mm */,
-				610DC61A1A08322800BEEBFD /* VMTimeSignatureViewTests.mm */,
-				610DC61B1A08322800BEEBFD /* VMChordViewTests.mm */,
+				610DC61C1A08322800BEEBFD /* VMKLayerTestCase.h */,
+				610DC61D1A08322800BEEBFD /* VMKLayerTestCase.mm */,
+				610DC5CA1A08322800BEEBFD /* VMKAdHocScoreTestCase.h */,
+				610DC5CB1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm */,
+				610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */,
+				610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */,
+				610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */,
+				610DC6181A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm */,
+				610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */,
+				610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */,
+				610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */,
 			);
 			path = MusicKitAppTests;
 			sourceTree = "<group>";
@@ -1179,13 +1358,64 @@
 			path = parsing;
 			sourceTree = "<group>";
 		};
+		610DCF571A099C0900BEEBFD /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				610DCF5C1A09A08E00BEEBFD /* VMKScoreElementLayer.h */,
+				610DCF5D1A09A08E00BEEBFD /* VMKScoreElementLayer.mm */,
+				616C1A931A0A99600020EAA8 /* VMKScoreElementImageLayer.h */,
+				616C1A941A0A99600020EAA8 /* VMKScoreElementImageLayer.mm */,
+				610DCF611A09ACED00BEEBFD /* VMKAccidentalLayer.h */,
+				610DCF621A09ACED00BEEBFD /* VMKAccidentalLayer.mm */,
+				6186414F1A09B0B900FAE9C9 /* VMKBarlineLayer.h */,
+				618641501A09B0B900FAE9C9 /* VMKBarlineLayer.mm */,
+				618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */,
+				618641541A09B23C00FAE9C9 /* VMKBeamLayer.mm */,
+				616C1B4C1A0C0D0B0020EAA8 /* VMKBraceLayer.h */,
+				616C1B4D1A0C0D0B0020EAA8 /* VMKBraceLayer.mm */,
+				616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */,
+				616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */,
+				616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */,
+				616C1A901A0A98B70020EAA8 /* VMKClefLayer.mm */,
+				616C1A981A0A9DAE0020EAA8 /* VMKDirectionLayer.h */,
+				616C1A991A0A9DAE0020EAA8 /* VMKDirectionLayer.mm */,
+				616C1A9C1A0AA24E0020EAA8 /* VMKEndingLayer.h */,
+				616C1A9D1A0AA24E0020EAA8 /* VMKEndingLayer.mm */,
+				616C1AA01A0AA89B0020EAA8 /* VMKKeyLayer.h */,
+				616C1AA11A0AA89B0020EAA8 /* VMKKeyLayer.mm */,
+				616C1AA41A0AACE50020EAA8 /* VMKLyricLayer.h */,
+				616C1AA51A0AACE50020EAA8 /* VMKLyricLayer.mm */,
+				616C1AA81A0AF9960020EAA8 /* VMKMeasureLayer.h */,
+				616C1AA91A0AF9960020EAA8 /* VMKMeasureLayer.mm */,
+				616C1AAC1A0B01300020EAA8 /* VMKNoteHeadLayer.h */,
+				616C1AAD1A0B01300020EAA8 /* VMKNoteHeadLayer.mm */,
+				616C1AB01A0B01BB0020EAA8 /* VMKNoteStemLayer.h */,
+				616C1AB11A0B01BB0020EAA8 /* VMKNoteStemLayer.mm */,
+				616C1B8B1A0C4B860020EAA8 /* VMKOrnamentLayer.h */,
+				616C1B8C1A0C4B860020EAA8 /* VMKOrnamentLayer.mm */,
+				616C1AB41A0B030B0020EAA8 /* VMKPedalLayer.h */,
+				616C1AB51A0B030B0020EAA8 /* VMKPedalLayer.mm */,
+				616C1AB81A0B03A30020EAA8 /* VMKRestLayer.h */,
+				616C1AB91A0B03A30020EAA8 /* VMKRestLayer.mm */,
+				616C1ABC1A0B054C0020EAA8 /* VMKTieLayer.h */,
+				616C1ABD1A0B054C0020EAA8 /* VMKTieLayer.mm */,
+				616C1AC01A0B06280020EAA8 /* VMKTimeSignatureLayer.h */,
+				616C1AC11A0B06280020EAA8 /* VMKTimeSignatureLayer.mm */,
+				616C1AC41A0BFE2C0020EAA8 /* VMKWedgeLayer.h */,
+				616C1AC51A0BFE2C0020EAA8 /* VMKWedgeLayer.mm */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
 		61402B1A1A08251D003AE7A7 = {
 			isa = PBXGroup;
 			children = (
+				616C1B4A1A0C0B800020EAA8 /* libxml2.dylib */,
 				610DCD901A094A0E00BEEBFD /* Libraries */,
 				61402B261A08251D003AE7A7 /* MusicKit */,
 				610DC5A21A0831DF00BEEBFD /* MusicKitApp */,
 				610DC5BC1A0831DF00BEEBFD /* MusicKitAppTests */,
+				616C1ADB1A0C055F0020EAA8 /* MusicKitOSXTests */,
 				61402B251A08251D003AE7A7 /* Products */,
 				610DC5981A082FF000BEEBFD /* libxml2.dylib */,
 			);
@@ -1197,6 +1427,8 @@
 				61402B241A08251D003AE7A7 /* MusicKit.framework */,
 				610DC5A11A0831DF00BEEBFD /* MusicKitApp.app */,
 				610DC5B91A0831DF00BEEBFD /* MusicKitAppTests.xctest */,
+				616C1ACD1A0C055E0020EAA8 /* MusicKitOSX.framework */,
+				616C1AD71A0C055F0020EAA8 /* MusicKitOSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1204,67 +1436,17 @@
 		61402B261A08251D003AE7A7 /* MusicKit */ = {
 			isa = PBXGroup;
 			children = (
-				61402B271A08251D003AE7A7 /* Supporting Files */,
-				61402C591A082661003AE7A7 /* Symbols.xcassets */,
 				61402B291A08251D003AE7A7 /* MusicKit.h */,
-				61402B6D1A082562003AE7A7 /* NSIndexPath+VMScoreAdditions.h */,
-				61402B421A082562003AE7A7 /* NSIndexPath+VMScoreAdditions.m */,
-				61402B431A082562003AE7A7 /* VMAccidentalView.h */,
-				61402B441A082562003AE7A7 /* VMAccidentalView.mm */,
-				61402B5D1A082562003AE7A7 /* VMAttributesView.h */,
-				61402B781A082562003AE7A7 /* VMAttributesView.mm */,
-				61402B451A082562003AE7A7 /* VMBarlineView.h */,
-				61402B631A082562003AE7A7 /* VMBarlineView.mm */,
-				61402B461A082562003AE7A7 /* VMBeamView.h */,
-				61402B641A082562003AE7A7 /* VMBeamView.mm */,
-				61402B5E1A082562003AE7A7 /* VMBraceView.h */,
-				61402B5F1A082562003AE7A7 /* VMBraceView.mm */,
-				61402B471A082562003AE7A7 /* VMChordView.h */,
-				61402B6A1A082562003AE7A7 /* VMChordView.mm */,
-				61402B481A082562003AE7A7 /* VMClefView.h */,
-				61402B491A082562003AE7A7 /* VMClefView.mm */,
-				61402B721A082562003AE7A7 /* VMCollectionViewScoreDataSource.h */,
-				61402B731A082562003AE7A7 /* VMCollectionViewScoreDataSource.mm */,
-				61402B661A082562003AE7A7 /* VMCollectionViewScoreLayout.h */,
-				61402B671A082562003AE7A7 /* VMCollectionViewScoreLayout.mm */,
-				61402B411A082562003AE7A7 /* VMCreditsView.h */,
-				61402B701A082562003AE7A7 /* VMCreditsView.mm */,
-				61402B681A082562003AE7A7 /* VMCursorView.h */,
-				61402B691A082562003AE7A7 /* VMCursorView.m */,
-				61402B4A1A082562003AE7A7 /* VMDirectionView.h */,
-				61402B4B1A082562003AE7A7 /* VMDirectionView.mm */,
-				61402B6E1A082562003AE7A7 /* VMDrawing.h */,
-				61402B6F1A082562003AE7A7 /* VMDrawing.mm */,
-				61402B4C1A082562003AE7A7 /* VMEndingView.h */,
-				61402B4D1A082562003AE7A7 /* VMEndingView.mm */,
-				61402B751A082562003AE7A7 /* VMImageStore.h */,
-				61402B761A082562003AE7A7 /* VMImageStore.m */,
-				61402B4E1A082562003AE7A7 /* VMKeyView.h */,
-				61402B771A082562003AE7A7 /* VMKeyView.mm */,
-				61402B6B1A082562003AE7A7 /* VMLyricView.h */,
-				61402B6C1A082562003AE7A7 /* VMLyricView.mm */,
-				61402B711A082562003AE7A7 /* VMMeasureView.h */,
-				61402B741A082562003AE7A7 /* VMMeasureView.mm */,
-				61402B4F1A082562003AE7A7 /* VMNoteHeadView.h */,
-				61402B501A082562003AE7A7 /* VMNoteHeadView.mm */,
-				61402B511A082562003AE7A7 /* VMNoteStemView.h */,
-				61402B521A082562003AE7A7 /* VMNoteStemView.mm */,
-				61402B531A082562003AE7A7 /* VMPedalView.h */,
-				61402B541A082562003AE7A7 /* VMPedalView.mm */,
-				61402B601A082562003AE7A7 /* VMRestView.h */,
-				61402B621A082562003AE7A7 /* VMRestView.mm */,
-				61402B401A082562003AE7A7 /* VMScoreElementContainerView.h */,
-				61402B551A082562003AE7A7 /* VMScoreElementContainerView.mm */,
-				61402B561A082562003AE7A7 /* VMScoreElementImageView.h */,
-				61402B571A082562003AE7A7 /* VMScoreElementImageView.mm */,
-				61402B611A082562003AE7A7 /* VMScoreElementView.h */,
-				61402B791A082562003AE7A7 /* VMScoreElementView.mm */,
-				61402B581A082562003AE7A7 /* VMTieView.h */,
-				61402B591A082562003AE7A7 /* VMTieView.mm */,
-				61402B5A1A082562003AE7A7 /* VMTimeSignatureView.h */,
-				61402B651A082562003AE7A7 /* VMTimeSignatureView.mm */,
-				61402B5B1A082562003AE7A7 /* VMWedgeView.h */,
-				61402B5C1A082562003AE7A7 /* VMWedgeView.mm */,
+				610DCF601A09A46900BEEBFD /* VMKColor.h */,
+				616C1A971A0A9BDA0020EAA8 /* VMKImage.h */,
+				61402B6E1A082562003AE7A7 /* VMKGeometry.h */,
+				61402B6F1A082562003AE7A7 /* VMKGeometry.mm */,
+				61402B751A082562003AE7A7 /* VMKImageStore.h */,
+				61402B761A082562003AE7A7 /* VMKImageStore.m */,
+				610DCF571A099C0900BEEBFD /* Layers */,
+				61402B271A08251D003AE7A7 /* Supporting Files */,
+				616C1B521A0C0E310020EAA8 /* UIKit */,
+				61402C591A082661003AE7A7 /* Symbols.xcassets */,
 			);
 			path = MusicKit;
 			sourceTree = "<group>";
@@ -1277,6 +1459,59 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		616C1ADB1A0C055F0020EAA8 /* MusicKitOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				616C1ADC1A0C055F0020EAA8 /* Supporting Files */,
+			);
+			path = MusicKitOSXTests;
+			sourceTree = "<group>";
+		};
+		616C1ADC1A0C055F0020EAA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				616C1ADD1A0C055F0020EAA8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		616C1B521A0C0E310020EAA8 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				616C1B671A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h */,
+				616C1B681A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m */,
+				616C1B531A0C0E310020EAA8 /* VMKAttributesView.h */,
+				616C1B541A0C0E310020EAA8 /* VMKAttributesView.mm */,
+				616C1B691A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.h */,
+				616C1B6C1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm */,
+				616C1B6A1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h */,
+				616C1B6B1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm */,
+				616C1B551A0C0E310020EAA8 /* VMKCreditsView.h */,
+				616C1B561A0C0E310020EAA8 /* VMKCreditsView.mm */,
+				616C1B571A0C0E310020EAA8 /* VMKCursorView.h */,
+				616C1B581A0C0E310020EAA8 /* VMKCursorView.m */,
+				616C1B731A0C2C680020EAA8 /* VMKDirectionView.h */,
+				616C1B741A0C2C680020EAA8 /* VMKDirectionView.mm */,
+				616C1B771A0C2D7A0020EAA8 /* VMKEndingView.h */,
+				616C1B781A0C2D7A0020EAA8 /* VMKEndingView.mm */,
+				616C1B7B1A0C2D8F0020EAA8 /* VMKLyricView.h */,
+				616C1B7C1A0C2D8F0020EAA8 /* VMKLyricView.mm */,
+				616C1B591A0C0E310020EAA8 /* VMKMeasureView.h */,
+				616C1B5A1A0C0E310020EAA8 /* VMKMeasureView.mm */,
+				616C1B911A0C4D790020EAA8 /* VMKOrnamentView.h */,
+				616C1B921A0C4D790020EAA8 /* VMKOrnamentView.mm */,
+				616C1B7F1A0C2DA40020EAA8 /* VMKPedalView.h */,
+				616C1B801A0C2DA40020EAA8 /* VMKPedalView.mm */,
+				616C1B5B1A0C0E310020EAA8 /* VMKScoreElementContainerView.h */,
+				616C1B5C1A0C0E310020EAA8 /* VMKScoreElementContainerView.mm */,
+				616C1B831A0C2DDB0020EAA8 /* VMKTieView.h */,
+				616C1B841A0C2DDB0020EAA8 /* VMKTieView.mm */,
+				616C1B871A0C2DEA0020EAA8 /* VMKWedgeView.h */,
+				616C1B881A0C2DEA0020EAA8 /* VMKWedgeView.mm */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1284,36 +1519,54 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61402B901A082562003AE7A7 /* VMScoreElementImageView.h in Headers */,
-				61402B921A082562003AE7A7 /* VMTieView.h in Headers */,
-				61402B971A082562003AE7A7 /* VMAttributesView.h in Headers */,
-				61402B841A082562003AE7A7 /* VMDirectionView.h in Headers */,
-				61402B951A082562003AE7A7 /* VMWedgeView.h in Headers */,
-				61402B7A1A082562003AE7A7 /* VMScoreElementContainerView.h in Headers */,
-				61402B981A082562003AE7A7 /* VMBraceView.h in Headers */,
-				61402B811A082562003AE7A7 /* VMChordView.h in Headers */,
-				61402B9B1A082562003AE7A7 /* VMScoreElementView.h in Headers */,
-				61402BA51A082562003AE7A7 /* VMLyricView.h in Headers */,
-				61402BAC1A082562003AE7A7 /* VMCollectionViewScoreDataSource.h in Headers */,
-				61402BA01A082562003AE7A7 /* VMCollectionViewScoreLayout.h in Headers */,
-				61402B821A082562003AE7A7 /* VMClefView.h in Headers */,
-				61402B891A082562003AE7A7 /* VMNoteHeadView.h in Headers */,
-				61402BAB1A082562003AE7A7 /* VMMeasureView.h in Headers */,
-				61402B8B1A082562003AE7A7 /* VMNoteStemView.h in Headers */,
-				61402B801A082562003AE7A7 /* VMBeamView.h in Headers */,
+				616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */,
+				618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */,
+				616C1B931A0C4D790020EAA8 /* VMKOrnamentView.h in Headers */,
+				616C1AAA1A0AF9960020EAA8 /* VMKMeasureLayer.h in Headers */,
+				616C1AC21A0B06280020EAA8 /* VMKTimeSignatureLayer.h in Headers */,
+				616C1ABA1A0B03A30020EAA8 /* VMKRestLayer.h in Headers */,
+				616C1AC61A0BFE2C0020EAA8 /* VMKWedgeLayer.h in Headers */,
+				616C1A9E1A0AA24E0020EAA8 /* VMKEndingLayer.h in Headers */,
+				616C1B6D1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h in Headers */,
+				616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */,
+				616C1B4E1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */,
+				618641511A09B0B900FAE9C9 /* VMKBarlineLayer.h in Headers */,
 				61402B2A1A08251D003AE7A7 /* MusicKit.h in Headers */,
-				61402B7D1A082562003AE7A7 /* VMAccidentalView.h in Headers */,
-				61402BA71A082562003AE7A7 /* NSIndexPath+VMScoreAdditions.h in Headers */,
-				61402BA21A082562003AE7A7 /* VMCursorView.h in Headers */,
-				61402B9A1A082562003AE7A7 /* VMRestView.h in Headers */,
-				61402B881A082562003AE7A7 /* VMKeyView.h in Headers */,
-				61402B7B1A082562003AE7A7 /* VMCreditsView.h in Headers */,
-				61402B7F1A082562003AE7A7 /* VMBarlineView.h in Headers */,
-				61402BAF1A082562003AE7A7 /* VMImageStore.h in Headers */,
-				61402B861A082562003AE7A7 /* VMEndingView.h in Headers */,
-				61402BA81A082562003AE7A7 /* VMDrawing.h in Headers */,
-				61402B941A082562003AE7A7 /* VMTimeSignatureView.h in Headers */,
-				61402B8D1A082562003AE7A7 /* VMPedalView.h in Headers */,
+				616C1A951A0A99600020EAA8 /* VMKScoreElementImageLayer.h in Headers */,
+				616C1AA61A0AACE50020EAA8 /* VMKLyricLayer.h in Headers */,
+				616C1A9A1A0A9DAE0020EAA8 /* VMKDirectionLayer.h in Headers */,
+				616C1B611A0C0E310020EAA8 /* VMKCursorView.h in Headers */,
+				616C1B6F1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.h in Headers */,
+				616C1B891A0C2DEA0020EAA8 /* VMKWedgeView.h in Headers */,
+				616C1AA21A0AA89B0020EAA8 /* VMKKeyLayer.h in Headers */,
+				616C1B7D1A0C2D8F0020EAA8 /* VMKLyricView.h in Headers */,
+				616C1B751A0C2C680020EAA8 /* VMKDirectionView.h in Headers */,
+				616C1B5D1A0C0E310020EAA8 /* VMKAttributesView.h in Headers */,
+				616C1AB61A0B030B0020EAA8 /* VMKPedalLayer.h in Headers */,
+				61402BAF1A082562003AE7A7 /* VMKImageStore.h in Headers */,
+				616C1B651A0C0E310020EAA8 /* VMKScoreElementContainerView.h in Headers */,
+				61402BA81A082562003AE7A7 /* VMKGeometry.h in Headers */,
+				616C1B791A0C2D7A0020EAA8 /* VMKEndingView.h in Headers */,
+				616C1ABE1A0B054C0020EAA8 /* VMKTieLayer.h in Headers */,
+				616C1B631A0C0E310020EAA8 /* VMKMeasureView.h in Headers */,
+				616C1B8D1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */,
+				616C1AAE1A0B01300020EAA8 /* VMKNoteHeadLayer.h in Headers */,
+				616C1AB21A0B01BB0020EAA8 /* VMKNoteStemLayer.h in Headers */,
+				616C1B811A0C2DA40020EAA8 /* VMKPedalView.h in Headers */,
+				616C1B701A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h in Headers */,
+				616C1B5F1A0C0E310020EAA8 /* VMKCreditsView.h in Headers */,
+				616C1B851A0C2DDB0020EAA8 /* VMKTieView.h in Headers */,
+				610DCF631A09ACED00BEEBFD /* VMKAccidentalLayer.h in Headers */,
+				610DCF5E1A09A08E00BEEBFD /* VMKScoreElementLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616C1ACA1A0C055E0020EAA8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616C1B4F1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */,
+				616C1B8E1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1375,6 +1628,42 @@
 			productReference = 61402B241A08251D003AE7A7 /* MusicKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		616C1ACC1A0C055E0020EAA8 /* MusicKitOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616C1AE01A0C055F0020EAA8 /* Build configuration list for PBXNativeTarget "MusicKitOSX" */;
+			buildPhases = (
+				616C1AC81A0C055E0020EAA8 /* Sources */,
+				616C1AC91A0C055E0020EAA8 /* Frameworks */,
+				616C1ACA1A0C055E0020EAA8 /* Headers */,
+				616C1ACB1A0C055E0020EAA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicKitOSX;
+			productName = "MusicKit-OSX";
+			productReference = 616C1ACD1A0C055E0020EAA8 /* MusicKitOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		616C1AD61A0C055F0020EAA8 /* MusicKitOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616C1AE31A0C055F0020EAA8 /* Build configuration list for PBXNativeTarget "MusicKitOSXTests" */;
+			buildPhases = (
+				616C1AD31A0C055F0020EAA8 /* Sources */,
+				616C1AD41A0C055F0020EAA8 /* Frameworks */,
+				616C1AD51A0C055F0020EAA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				616C1ADA1A0C055F0020EAA8 /* PBXTargetDependency */,
+			);
+			name = MusicKitOSXTests;
+			productName = "MusicKit-OSXTests";
+			productReference = 616C1AD71A0C055F0020EAA8 /* MusicKitOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1392,6 +1681,12 @@
 						TestTargetID = 610DC5A01A0831DF00BEEBFD;
 					};
 					61402B231A08251D003AE7A7 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					616C1ACC1A0C055E0020EAA8 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					616C1AD61A0C055F0020EAA8 = {
 						CreatedOnToolsVersion = 6.1;
 					};
 				};
@@ -1412,6 +1707,8 @@
 				61402B231A08251D003AE7A7 /* MusicKit */,
 				610DC5A01A0831DF00BEEBFD /* MusicKitApp */,
 				610DC5B81A0831DF00BEEBFD /* MusicKitAppTests */,
+				616C1ACC1A0C055E0020EAA8 /* MusicKitOSX */,
+				616C1AD61A0C055F0020EAA8 /* MusicKitOSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1550,6 +1847,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		616C1ACB1A0C055E0020EAA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616C1AD51A0C055F0020EAA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1566,16 +1877,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610DC66C1A08322800BEEBFD /* VMTieViewTests.mm in Sources */,
+				610DC66C1A08322800BEEBFD /* VMKTieLayerTests.mm in Sources */,
 				610DCE741A094A1700BEEBFD /* AIImageCompare.m in Sources */,
-				610DC66A1A08322800BEEBFD /* VMBeamViewTests.mm in Sources */,
-				610DC66D1A08322800BEEBFD /* VMTimeSignatureViewTests.mm in Sources */,
-				610DC61F1A08322800BEEBFD /* VMAdHocScoreTestCase.mm in Sources */,
-				610DC66E1A08322800BEEBFD /* VMChordViewTests.mm in Sources */,
-				610DC66F1A08322800BEEBFD /* VMViewTestCase.mm in Sources */,
-				610DC66B1A08322800BEEBFD /* VMCollectionViewScoreLayoutTests.mm in Sources */,
-				610DC6691A08322800BEEBFD /* VMMeasureViewTests.mm in Sources */,
-				610DC6681A08322800BEEBFD /* VMClefViewTestCase.mm in Sources */,
+				610DC66A1A08322800BEEBFD /* VMKBeamLayerTests.mm in Sources */,
+				610DC66D1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm in Sources */,
+				610DC61F1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm in Sources */,
+				610DC66E1A08322800BEEBFD /* VMKChordLayerTests.mm in Sources */,
+				610DC66F1A08322800BEEBFD /* VMKLayerTestCase.mm in Sources */,
+				610DC66B1A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm in Sources */,
+				610DC6691A08322800BEEBFD /* VMKMeasureLayerTests.mm in Sources */,
+				610DC6681A08322800BEEBFD /* VMKClefLayerTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1584,95 +1895,105 @@
 			buildActionMask = 2147483647;
 			files = (
 				610DCEE71A094B5100BEEBFD /* ArticulationHandler.cpp in Sources */,
-				61402BA61A082562003AE7A7 /* VMLyricView.mm in Sources */,
 				610DCEF61A094B5100BEEBFD /* IdentificationHandler.cpp in Sources */,
 				610DCF0A1A094B5100BEEBFD /* TieHandler.cpp in Sources */,
 				610DCEE91A094B5100BEEBFD /* BackupHandler.cpp in Sources */,
-				61402BA91A082562003AE7A7 /* VMDrawing.mm in Sources */,
+				616C1B8F1A0C4B860020EAA8 /* VMKOrnamentLayer.mm in Sources */,
+				61402BA91A082562003AE7A7 /* VMKGeometry.mm in Sources */,
+				610DCF641A09ACED00BEEBFD /* VMKAccidentalLayer.mm in Sources */,
 				610DCF091A094B5100BEEBFD /* TiedHandler.cpp in Sources */,
 				610DCED31A094B4C00BEEBFD /* DirectionGeometry.cpp in Sources */,
 				610DCECA1A094B4800BEEBFD /* Measure.cpp in Sources */,
-				61402BAA1A082562003AE7A7 /* VMCreditsView.mm in Sources */,
 				610DCEEF1A094B5100BEEBFD /* DefaultsHandler.cpp in Sources */,
 				610DCEC51A094B4500BEEBFD /* IntegerHandler.cpp in Sources */,
-				61402BA11A082562003AE7A7 /* VMCollectionViewScoreLayout.mm in Sources */,
-				61402B961A082562003AE7A7 /* VMWedgeView.mm in Sources */,
 				610DCF001A094B5100BEEBFD /* PrintHandler.cpp in Sources */,
+				616C1A8E1A0A970F0020EAA8 /* VMKChordLayer.mm in Sources */,
+				616C1AA31A0AA89B0020EAA8 /* VMKKeyLayer.mm in Sources */,
 				610DCEEC1A094B5100BEEBFD /* ClefHandler.cpp in Sources */,
-				61402B8C1A082562003AE7A7 /* VMNoteStemView.mm in Sources */,
-				61402B931A082562003AE7A7 /* VMTieView.mm in Sources */,
 				610DCF121A094B5500BEEBFD /* SpanFactory.cpp in Sources */,
-				61402B9F1A082562003AE7A7 /* VMTimeSignatureView.mm in Sources */,
 				610DCF071A094B5100BEEBFD /* StaffLayoutHandler.cpp in Sources */,
 				610DCEC81A094B4500BEEBFD /* StringHandler.cpp in Sources */,
 				610DCF0B1A094B5100BEEBFD /* TimeHandler.cpp in Sources */,
+				616C1B721A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm in Sources */,
+				616C1B641A0C0E310020EAA8 /* VMKMeasureView.mm in Sources */,
+				616C1B761A0C2C680020EAA8 /* VMKDirectionView.mm in Sources */,
 				610DCEEE1A094B5100BEEBFD /* CreditWordsHandler.cpp in Sources */,
 				610DCEE31A094B4C00BEEBFD /* StemGeometry.cpp in Sources */,
-				61402BB01A082562003AE7A7 /* VMImageStore.m in Sources */,
-				61402B9C1A082562003AE7A7 /* VMRestView.mm in Sources */,
+				61402BB01A082562003AE7A7 /* VMKImageStore.m in Sources */,
+				616C1B5E1A0C0E310020EAA8 /* VMKAttributesView.mm in Sources */,
 				610DCF031A094B5100BEEBFD /* ScalingHandler.cpp in Sources */,
+				616C1AB31A0B01BB0020EAA8 /* VMKNoteStemLayer.mm in Sources */,
 				610DCEE01A094B4C00BEEBFD /* ScoreGeometry.cpp in Sources */,
-				61402BAE1A082562003AE7A7 /* VMMeasureView.mm in Sources */,
 				610DCEDB1A094B4C00BEEBFD /* NoteGeometry.cpp in Sources */,
-				61402B7C1A082562003AE7A7 /* NSIndexPath+VMScoreAdditions.m in Sources */,
+				616C1ABF1A0B054C0020EAA8 /* VMKTieLayer.mm in Sources */,
+				616C1B501A0C0D0B0020EAA8 /* VMKBraceLayer.mm in Sources */,
 				610DCED61A094B4C00BEEBFD /* FermataGeometry.cpp in Sources */,
 				610DCEE81A094B5100BEEBFD /* AttributesHandler.cpp in Sources */,
+				616C1AC71A0BFE2C0020EAA8 /* VMKWedgeLayer.mm in Sources */,
 				610DCF041A094B5100BEEBFD /* ScoreHandler.cpp in Sources */,
 				610DCEED1A094B5100BEEBFD /* CreditHandler.cpp in Sources */,
 				610DCED21A094B4C00BEEBFD /* ClefGeometry.cpp in Sources */,
+				616C1ABB1A0B03A30020EAA8 /* VMKRestLayer.mm in Sources */,
 				610DCEFE1A094B5100BEEBFD /* PartHandler.cpp in Sources */,
 				610DCED51A094B4C00BEEBFD /* EndingGeometry.cpp in Sources */,
-				61402BA31A082562003AE7A7 /* VMCursorView.m in Sources */,
 				610DCEE61A094B4C00BEEBFD /* TimeSignatureGeometry.cpp in Sources */,
-				61402B8E1A082562003AE7A7 /* VMPedalView.mm in Sources */,
-				61402B911A082562003AE7A7 /* VMScoreElementImageView.mm in Sources */,
 				610DCEFB1A094B5100BEEBFD /* NotationsHandler.cpp in Sources */,
+				616C1A9F1A0AA24E0020EAA8 /* VMKEndingLayer.mm in Sources */,
+				616C1AB71A0B030B0020EAA8 /* VMKPedalLayer.mm in Sources */,
 				610DCECB1A094B4800BEEBFD /* Note.cpp in Sources */,
 				610DCF0F1A094B5500BEEBFD /* EventFactory.cpp in Sources */,
-				61402B851A082562003AE7A7 /* VMDirectionView.mm in Sources */,
-				61402BB21A082562003AE7A7 /* VMAttributesView.mm in Sources */,
+				616C1AC31A0B06280020EAA8 /* VMKTimeSignatureLayer.mm in Sources */,
 				610DCED91A094B4C00BEEBFD /* LyricGeometry.cpp in Sources */,
 				610DCEDA1A094B4C00BEEBFD /* MeasureGeometry.cpp in Sources */,
 				610DCECD1A094B4C00BEEBFD /* AccidentalGeometry.cpp in Sources */,
-				61402B9E1A082562003AE7A7 /* VMBeamView.mm in Sources */,
 				610DCF101A094B5500BEEBFD /* EventSequence.cpp in Sources */,
-				61402BA41A082562003AE7A7 /* VMChordView.mm in Sources */,
+				616C1B861A0C2DDB0020EAA8 /* VMKTieView.mm in Sources */,
+				616C1AAF1A0B01300020EAA8 /* VMKNoteHeadLayer.mm in Sources */,
 				610DCEF81A094B5100BEEBFD /* LyricHandler.cpp in Sources */,
-				61402BB31A082562003AE7A7 /* VMScoreElementView.mm in Sources */,
 				610DCEE41A094B4C00BEEBFD /* TieGeometry.cpp in Sources */,
 				610DCF081A094B5100BEEBFD /* SyllabicHandler.cpp in Sources */,
+				616C1B711A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm in Sources */,
+				616C1B7A1A0C2D7A0020EAA8 /* VMKEndingView.mm in Sources */,
 				610DCEFF1A094B5100BEEBFD /* PitchHandler.cpp in Sources */,
+				616C1B8A1A0C2DEA0020EAA8 /* VMKWedgeView.mm in Sources */,
 				610DCEC91A094B4800BEEBFD /* Identification.cpp in Sources */,
+				616C1B601A0C0E310020EAA8 /* VMKCreditsView.mm in Sources */,
+				616C1A9B1A0A9DAE0020EAA8 /* VMKDirectionLayer.mm in Sources */,
 				610DCEFD1A094B5100BEEBFD /* OrnamentsHandler.cpp in Sources */,
+				616C1A921A0A98B70020EAA8 /* VMKClefLayer.mm in Sources */,
 				610DCED11A094B4C00BEEBFD /* ChordGeometry.cpp in Sources */,
 				610DCF0C1A094B5100BEEBFD /* TurnHandler.cpp in Sources */,
-				61402B8F1A082562003AE7A7 /* VMScoreElementContainerView.mm in Sources */,
 				610DCEE21A094B4C00BEEBFD /* SpanDirectionGeometryFactory.cpp in Sources */,
 				610DCEC61A094B4500BEEBFD /* lxml.cpp in Sources */,
-				61402B7E1A082562003AE7A7 /* VMAccidentalView.mm in Sources */,
+				616C1B6E1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m in Sources */,
+				616C1B7E1A0C2D8F0020EAA8 /* VMKLyricView.mm in Sources */,
 				610DCF021A094B5100BEEBFD /* RestHandler.cpp in Sources */,
 				610DCEDC1A094B4C00BEEBFD /* OrnamentsGeometry.cpp in Sources */,
 				610DCEF11A094B5100BEEBFD /* DirectionTypeHandler.cpp in Sources */,
-				61402B991A082562003AE7A7 /* VMBraceView.mm in Sources */,
+				618641561A09B23C00FAE9C9 /* VMKBeamLayer.mm in Sources */,
+				610DCF5F1A09A08E00BEEBFD /* VMKScoreElementLayer.mm in Sources */,
+				616C1AAB1A0AF9960020EAA8 /* VMKMeasureLayer.mm in Sources */,
 				610DCEF21A094B5100BEEBFD /* EmptyPlacementHandler.cpp in Sources */,
 				610DCEDD1A094B4C00BEEBFD /* PartGeometry.cpp in Sources */,
 				610DCEC41A094B4500BEEBFD /* DoubleHandler.cpp in Sources */,
 				610DCEE11A094B4C00BEEBFD /* SpanDirectionGeometry.cpp in Sources */,
+				616C1A961A0A99600020EAA8 /* VMKScoreElementImageLayer.mm in Sources */,
 				610DCF051A094B5100BEEBFD /* SlurHandler.cpp in Sources */,
+				618641521A09B0B900FAE9C9 /* VMKBarlineLayer.mm in Sources */,
 				610DCF111A094B5500BEEBFD /* SpanCollection.cpp in Sources */,
 				610DCEEA1A094B5100BEEBFD /* BarlineHandler.cpp in Sources */,
 				610DCECC1A094B4800BEEBFD /* Part.cpp in Sources */,
+				616C1B941A0C4D790020EAA8 /* VMKOrnamentView.mm in Sources */,
 				610DCED81A094B4C00BEEBFD /* KeyGeometry.cpp in Sources */,
 				610DCEF71A094B5100BEEBFD /* KeyHandler.cpp in Sources */,
 				610DCEF51A094B5100BEEBFD /* ForwardHandler.cpp in Sources */,
 				610DCF061A094B5100BEEBFD /* SoundHandler.cpp in Sources */,
 				610DCEFC1A094B5100BEEBFD /* NoteHandler.cpp in Sources */,
 				610DCF0D1A094B5100BEEBFD /* UnpitchedHandler.cpp in Sources */,
-				61402B871A082562003AE7A7 /* VMEndingView.mm in Sources */,
+				616C1B821A0C2DA40020EAA8 /* VMKPedalView.mm in Sources */,
+				616C1B621A0C0E310020EAA8 /* VMKCursorView.m in Sources */,
 				610DCEE51A094B4C00BEEBFD /* TieGeometryFactory.cpp in Sources */,
-				61402B9D1A082562003AE7A7 /* VMBarlineView.mm in Sources */,
 				610DCEF01A094B5100BEEBFD /* DirectionHandler.cpp in Sources */,
-				61402B831A082562003AE7A7 /* VMClefView.mm in Sources */,
 				610DCEC71A094B4500BEEBFD /* RootRecursiveHandler.cpp in Sources */,
 				610DCEEB1A094B5100BEEBFD /* BeamHandler.cpp in Sources */,
 				610DCED01A094B4C00BEEBFD /* BeamGeometry.cpp in Sources */,
@@ -1681,16 +2002,139 @@
 				610DCEF41A094B5100BEEBFD /* FermataHandler.cpp in Sources */,
 				610DCF0E1A094B5500BEEBFD /* Event.cpp in Sources */,
 				610DCEFA1A094B5100BEEBFD /* MordentHandler.cpp in Sources */,
-				61402B8A1A082562003AE7A7 /* VMNoteHeadView.mm in Sources */,
 				610DCED41A094B4C00BEEBFD /* DotGeometry.cpp in Sources */,
 				610DCEF91A094B5100BEEBFD /* MeasureHandler.cpp in Sources */,
 				610DCEDE1A094B4C00BEEBFD /* PedalGeometry.cpp in Sources */,
+				616C1B661A0C0E310020EAA8 /* VMKScoreElementContainerView.mm in Sources */,
 				610DCEDF1A094B4C00BEEBFD /* RestGeometry.cpp in Sources */,
 				610DCF011A094B5100BEEBFD /* RepeatHandler.cpp in Sources */,
 				610DCED71A094B4C00BEEBFD /* Geometry.cpp in Sources */,
+				616C1AA71A0AACE50020EAA8 /* VMKLyricLayer.mm in Sources */,
 				610DCEF31A094B5100BEEBFD /* EndingHandler.cpp in Sources */,
-				61402BAD1A082562003AE7A7 /* VMCollectionViewScoreDataSource.mm in Sources */,
-				61402BB11A082562003AE7A7 /* VMKeyView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616C1AC81A0C055E0020EAA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616C1AFF1A0C059E0020EAA8 /* PartGeometry.cpp in Sources */,
+				616C1AEE1A0C059B0020EAA8 /* Part.cpp in Sources */,
+				616C1B3F1A0C05B50020EAA8 /* VMKKeyLayer.mm in Sources */,
+				616C1B2B1A0C05A40020EAA8 /* TiedHandler.cpp in Sources */,
+				616C1B251A0C05A40020EAA8 /* ScalingHandler.cpp in Sources */,
+				616C1B081A0C059E0020EAA8 /* TimeSignatureGeometry.cpp in Sources */,
+				616C1AF21A0C059E0020EAA8 /* BeamGeometry.cpp in Sources */,
+				616C1B0E1A0C05A40020EAA8 /* ClefHandler.cpp in Sources */,
+				616C1AF31A0C059E0020EAA8 /* ChordGeometry.cpp in Sources */,
+				616C1AFD1A0C059E0020EAA8 /* NoteGeometry.cpp in Sources */,
+				616C1B1B1A0C05A40020EAA8 /* MeasureHandler.cpp in Sources */,
+				616C1B3C1A0C05B50020EAA8 /* VMKClefLayer.mm in Sources */,
+				616C1B391A0C05B50020EAA8 /* VMKBarlineLayer.mm in Sources */,
+				616C1AF51A0C059E0020EAA8 /* DirectionGeometry.cpp in Sources */,
+				616C1B421A0C05B50020EAA8 /* VMKNoteHeadLayer.mm in Sources */,
+				616C1B051A0C059E0020EAA8 /* StemGeometry.cpp in Sources */,
+				616C1B301A0C05A80020EAA8 /* Event.cpp in Sources */,
+				616C1B481A0C05B50020EAA8 /* VMKWedgeLayer.mm in Sources */,
+				616C1B1D1A0C05A40020EAA8 /* NotationsHandler.cpp in Sources */,
+				616C1B231A0C05A40020EAA8 /* RepeatHandler.cpp in Sources */,
+				616C1B0C1A0C05A40020EAA8 /* BarlineHandler.cpp in Sources */,
+				616C1B351A0C05B10020EAA8 /* VMKGeometry.mm in Sources */,
+				616C1B191A0C05A40020EAA8 /* KeyHandler.cpp in Sources */,
+				616C1B111A0C05A40020EAA8 /* DefaultsHandler.cpp in Sources */,
+				616C1AF11A0C059E0020EAA8 /* BarlineGeometry.cpp in Sources */,
+				616C1B091A0C05A40020EAA8 /* ArticulationHandler.cpp in Sources */,
+				616C1AE61A0C05980020EAA8 /* DoubleHandler.cpp in Sources */,
+				616C1B461A0C05B50020EAA8 /* VMKTieLayer.mm in Sources */,
+				616C1AFC1A0C059E0020EAA8 /* MeasureGeometry.cpp in Sources */,
+				616C1B1F1A0C05A40020EAA8 /* OrnamentsHandler.cpp in Sources */,
+				616C1B311A0C05A80020EAA8 /* EventFactory.cpp in Sources */,
+				616C1B0B1A0C05A40020EAA8 /* BackupHandler.cpp in Sources */,
+				616C1B371A0C05B50020EAA8 /* VMKScoreElementImageLayer.mm in Sources */,
+				616C1B261A0C05A40020EAA8 /* ScoreHandler.cpp in Sources */,
+				616C1B451A0C05B50020EAA8 /* VMKRestLayer.mm in Sources */,
+				616C1AEA1A0C05980020EAA8 /* StringHandler.cpp in Sources */,
+				616C1B321A0C05A80020EAA8 /* EventSequence.cpp in Sources */,
+				616C1AE71A0C05980020EAA8 /* IntegerHandler.cpp in Sources */,
+				616C1B011A0C059E0020EAA8 /* RestGeometry.cpp in Sources */,
+				616C1B411A0C05B50020EAA8 /* VMKMeasureLayer.mm in Sources */,
+				616C1B211A0C05A40020EAA8 /* PitchHandler.cpp in Sources */,
+				616C1B161A0C05A40020EAA8 /* FermataHandler.cpp in Sources */,
+				616C1B431A0C05B50020EAA8 /* VMKNoteStemLayer.mm in Sources */,
+				616C1B101A0C05A40020EAA8 /* CreditWordsHandler.cpp in Sources */,
+				616C1B241A0C05A40020EAA8 /* RestHandler.cpp in Sources */,
+				616C1AF61A0C059E0020EAA8 /* DotGeometry.cpp in Sources */,
+				616C1B3E1A0C05B50020EAA8 /* VMKEndingLayer.mm in Sources */,
+				616C1B381A0C05B50020EAA8 /* VMKAccidentalLayer.mm in Sources */,
+				616C1B491A0C05C20020EAA8 /* VMKImageStore.m in Sources */,
+				616C1B151A0C05A40020EAA8 /* EndingHandler.cpp in Sources */,
+				616C1B1C1A0C05A40020EAA8 /* MordentHandler.cpp in Sources */,
+				616C1B201A0C05A40020EAA8 /* PartHandler.cpp in Sources */,
+				616C1B2F1A0C05A40020EAA8 /* UnpitchedHandler.cpp in Sources */,
+				616C1AF81A0C059E0020EAA8 /* FermataGeometry.cpp in Sources */,
+				616C1B181A0C05A40020EAA8 /* IdentificationHandler.cpp in Sources */,
+				616C1B2D1A0C05A40020EAA8 /* TimeHandler.cpp in Sources */,
+				616C1B0D1A0C05A40020EAA8 /* BeamHandler.cpp in Sources */,
+				616C1B281A0C05A40020EAA8 /* SoundHandler.cpp in Sources */,
+				616C1B021A0C059E0020EAA8 /* ScoreGeometry.cpp in Sources */,
+				616C1B131A0C05A40020EAA8 /* DirectionTypeHandler.cpp in Sources */,
+				616C1AEC1A0C059B0020EAA8 /* Measure.cpp in Sources */,
+				616C1B3A1A0C05B50020EAA8 /* VMKBeamLayer.mm in Sources */,
+				616C1B1A1A0C05A40020EAA8 /* LyricHandler.cpp in Sources */,
+				616C1B061A0C059E0020EAA8 /* TieGeometry.cpp in Sources */,
+				616C1B331A0C05A80020EAA8 /* SpanCollection.cpp in Sources */,
+				616C1B271A0C05A40020EAA8 /* SlurHandler.cpp in Sources */,
+				616C1B121A0C05A40020EAA8 /* DirectionHandler.cpp in Sources */,
+				616C1B001A0C059E0020EAA8 /* PedalGeometry.cpp in Sources */,
+				616C1B2E1A0C05A40020EAA8 /* TurnHandler.cpp in Sources */,
+				616C1AF71A0C059E0020EAA8 /* EndingGeometry.cpp in Sources */,
+				616C1AFA1A0C059E0020EAA8 /* KeyGeometry.cpp in Sources */,
+				616C1AF41A0C059E0020EAA8 /* ClefGeometry.cpp in Sources */,
+				616C1AE81A0C05980020EAA8 /* lxml.cpp in Sources */,
+				616C1B3D1A0C05B50020EAA8 /* VMKDirectionLayer.mm in Sources */,
+				616C1B471A0C05B50020EAA8 /* VMKTimeSignatureLayer.mm in Sources */,
+				616C1AE91A0C05980020EAA8 /* RootRecursiveHandler.cpp in Sources */,
+				616C1B171A0C05A40020EAA8 /* ForwardHandler.cpp in Sources */,
+				616C1B3B1A0C05B50020EAA8 /* VMKChordLayer.mm in Sources */,
+				616C1B341A0C05A80020EAA8 /* SpanFactory.cpp in Sources */,
+				616C1B401A0C05B50020EAA8 /* VMKLyricLayer.mm in Sources */,
+				616C1B1E1A0C05A40020EAA8 /* NoteHandler.cpp in Sources */,
+				616C1AEB1A0C059B0020EAA8 /* Identification.cpp in Sources */,
+				616C1B141A0C05A40020EAA8 /* EmptyPlacementHandler.cpp in Sources */,
+				616C1AED1A0C059B0020EAA8 /* Note.cpp in Sources */,
+				616C1B2A1A0C05A40020EAA8 /* SyllabicHandler.cpp in Sources */,
+				616C1AF91A0C059E0020EAA8 /* Geometry.cpp in Sources */,
+				616C1B901A0C4B860020EAA8 /* VMKOrnamentLayer.mm in Sources */,
+				616C1B511A0C0D0B0020EAA8 /* VMKBraceLayer.mm in Sources */,
+				616C1B2C1A0C05A40020EAA8 /* TieHandler.cpp in Sources */,
+				616C1B0F1A0C05A40020EAA8 /* CreditHandler.cpp in Sources */,
+				616C1B071A0C059E0020EAA8 /* TieGeometryFactory.cpp in Sources */,
+				616C1AFE1A0C059E0020EAA8 /* OrnamentsGeometry.cpp in Sources */,
+				616C1B221A0C05A40020EAA8 /* PrintHandler.cpp in Sources */,
+				616C1AF01A0C059E0020EAA8 /* ArticulationGeometry.cpp in Sources */,
+				616C1B0A1A0C05A40020EAA8 /* AttributesHandler.cpp in Sources */,
+				616C1B291A0C05A40020EAA8 /* StaffLayoutHandler.cpp in Sources */,
+				616C1B041A0C059E0020EAA8 /* SpanDirectionGeometryFactory.cpp in Sources */,
+				616C1B441A0C05B50020EAA8 /* VMKPedalLayer.mm in Sources */,
+				616C1AEF1A0C059E0020EAA8 /* AccidentalGeometry.cpp in Sources */,
+				616C1AFB1A0C059E0020EAA8 /* LyricGeometry.cpp in Sources */,
+				616C1B361A0C05B50020EAA8 /* VMKScoreElementLayer.mm in Sources */,
+				616C1B031A0C059E0020EAA8 /* SpanDirectionGeometry.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616C1AD31A0C055F0020EAA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616C1B951A0C524C0020EAA8 /* VMKLayerTestCase.mm in Sources */,
+				616C1B991A0C547C0020EAA8 /* VMKMeasureLayerTests.mm in Sources */,
+				616C1B9B1A0C54E50020EAA8 /* VMKChordLayerTests.mm in Sources */,
+				616C1B9A1A0C54BA0020EAA8 /* VMKClefLayerTests.mm in Sources */,
+				616C1B961A0C53AD0020EAA8 /* VMKTieLayerTests.mm in Sources */,
+				616C1B9C1A0D38930020EAA8 /* VMKAdHocScoreTestCase.mm in Sources */,
+				616C1B971A0C53B10020EAA8 /* VMKTimeSignatureLayerTests.mm in Sources */,
+				616C1B981A0C53FB0020EAA8 /* VMKBeamLayerTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1711,6 +2155,11 @@
 			isa = PBXTargetDependency;
 			target = 61402B231A08251D003AE7A7 /* MusicKit */;
 			targetProxy = 610DC6771A0832D500BEEBFD /* PBXContainerItemProxy */;
+		};
+		616C1ADA1A0C055F0020EAA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 616C1ACC1A0C055E0020EAA8 /* MusicKitOSX */;
+			targetProxy = 616C1AD91A0C055F0020EAA8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1891,6 +2340,24 @@
 		61402B3B1A08251D003AE7A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MusicKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61402B3C1A08251D003AE7A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1901,20 +2368,89 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		61402B3C1A08251D003AE7A7 /* Release */ = {
+		616C1AE11A0C055F0020EAA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = MusicKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		616C1AE21A0C055F0020EAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MusicKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		616C1AE41A0C055F0020EAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MusicKitOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		616C1AE51A0C055F0020EAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MusicKitOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1956,6 +2492,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		616C1AE01A0C055F0020EAA8 /* Build configuration list for PBXNativeTarget "MusicKitOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616C1AE11A0C055F0020EAA8 /* Debug */,
+				616C1AE21A0C055F0020EAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		616C1AE31A0C055F0020EAA8 /* Build configuration list for PBXNativeTarget "MusicKitOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616C1AE41A0C055F0020EAA8 /* Debug */,
+				616C1AE51A0C055F0020EAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
