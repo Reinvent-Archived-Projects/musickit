@@ -186,7 +186,7 @@ using namespace mxml::dom;
     mxml::MeasureGeometry* geom = [self measureGeometry];
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:geom];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd withAccuracy:0.01];
 }
 
 - (void)testAccidentalInBeamedSet {

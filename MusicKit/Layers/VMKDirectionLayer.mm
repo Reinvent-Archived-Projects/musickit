@@ -1,6 +1,8 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import "VMKDirectionLayer.h"
+#import "VMKGeometry.h"
+#import "VMKColor.h"
 
 
 @implementation VMKDirectionLayer
@@ -16,6 +18,7 @@
     _textLayer.foregroundColor = self.foregroundColor;
     _textLayer.backgroundColor = self.backgroundColor;
     _textLayer.alignmentMode = kCAAlignmentCenter;
+    _textLayer.contentsScale = VMKScreenScale();
     [self addSublayer:_textLayer];
 }
 
@@ -39,22 +42,24 @@
 
     mxml::dom::Dynamics* dynamics = dynamic_cast<mxml::dom::Dynamics*>(direction.type());
     if (dynamics) {
-        _textLayer.font = (CFTypeRef)@"Baskerville-BoldItalic";
+        _textLayer.font = CFSTR("Baskerville-BoldItalic");
         _textLayer.fontSize = 26;
         _textLayer.string = [NSString stringWithUTF8String:dynamics->string().c_str()];
     }
 
     mxml::dom::Words* words = dynamic_cast<mxml::dom::Words*>(direction.type());
     if (words) {
-        _textLayer.font = (CFTypeRef)@"Baskerville-SemiBold";
+        _textLayer.font = CFSTR("Baskerville-SemiBold");
         _textLayer.fontSize = 20;
         _textLayer.string = [NSString stringWithUTF8String:words->contents().c_str()];
     }
+
+    _textLayer.frame = {CGPointZero, self.bounds.size};
 }
 
 - (void)layoutSublayers {
-    CGSize size = self.bounds.size;
-    _textLayer.frame = CGRectMake(0, 0, size.width, size.height);
+    [super layoutSublayers];
+    _textLayer.frame = {CGPointZero, self.bounds.size};
 }
 
 @end

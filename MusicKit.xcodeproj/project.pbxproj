@@ -14,78 +14,6 @@
 		610DC5B41A0831DF00BEEBFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5B21A0831DF00BEEBFD /* LaunchScreen.xib */; };
 		610DC5C91A0831F100BEEBFD /* MusicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61402B241A08251D003AE7A7 /* MusicKit.framework */; };
 		610DC61F1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5CB1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm */; };
-		610DC6201A08322800BEEBFD /* BeamView-AccidentalInBeamedSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5CD1A08322800BEEBFD /* BeamView-AccidentalInBeamedSet.png */; };
-		610DC6211A08322800BEEBFD /* BeamView-AccidentalInBeamedSet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5CE1A08322800BEEBFD /* BeamView-AccidentalInBeamedSet@2x.png */; };
-		610DC6221A08322800BEEBFD /* BeamView-BackwardHook.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5CF1A08322800BEEBFD /* BeamView-BackwardHook.png */; };
-		610DC6231A08322800BEEBFD /* BeamView-BackwardHook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5D01A08322800BEEBFD /* BeamView-BackwardHook@2x.png */; };
-		610DC6241A08322800BEEBFD /* BeamView-ForwardHook.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5D11A08322800BEEBFD /* BeamView-ForwardHook.png */; };
-		610DC6251A08322800BEEBFD /* BeamView-ForwardHook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5D21A08322800BEEBFD /* BeamView-ForwardHook@2x.png */; };
-		610DC6261A08322800BEEBFD /* BeamView-FourBeams.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5D31A08322800BEEBFD /* BeamView-FourBeams.png */; };
-		610DC6271A08322800BEEBFD /* BeamView-FourBeams@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5D41A08322800BEEBFD /* BeamView-FourBeams@2x.png */; };
-		610DC6281A08322800BEEBFD /* BeamView-OneBeam.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5D51A08322800BEEBFD /* BeamView-OneBeam.png */; };
-		610DC6291A08322800BEEBFD /* BeamView-OneBeam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5D61A08322800BEEBFD /* BeamView-OneBeam@2x.png */; };
-		610DC62A1A08322800BEEBFD /* BeamView-OneBeamThreeNotes.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5D71A08322800BEEBFD /* BeamView-OneBeamThreeNotes.png */; };
-		610DC62B1A08322800BEEBFD /* BeamView-OneBeamThreeNotes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5D81A08322800BEEBFD /* BeamView-OneBeamThreeNotes@2x.png */; };
-		610DC62C1A08322800BEEBFD /* BeamView-TwoBeams.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5D91A08322800BEEBFD /* BeamView-TwoBeams.png */; };
-		610DC62D1A08322800BEEBFD /* BeamView-TwoBeams@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5DA1A08322800BEEBFD /* BeamView-TwoBeams@2x.png */; };
-		610DC62E1A08322800BEEBFD /* ChordView-128th.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5DB1A08322800BEEBFD /* ChordView-128th.png */; };
-		610DC62F1A08322800BEEBFD /* ChordView-128th@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5DC1A08322800BEEBFD /* ChordView-128th@2x.png */; };
-		610DC6301A08322800BEEBFD /* ChordView-Accent.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5DD1A08322800BEEBFD /* ChordView-Accent.png */; };
-		610DC6311A08322800BEEBFD /* ChordView-Accent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5DE1A08322800BEEBFD /* ChordView-Accent@2x.png */; };
-		610DC6321A08322800BEEBFD /* ChordView-Accidental.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5DF1A08322800BEEBFD /* ChordView-Accidental.png */; };
-		610DC6331A08322800BEEBFD /* ChordView-Accidental@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5E01A08322800BEEBFD /* ChordView-Accidental@2x.png */; };
-		610DC6341A08322800BEEBFD /* ChordView-DisplaceSideways.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5E11A08322800BEEBFD /* ChordView-DisplaceSideways.png */; };
-		610DC6351A08322800BEEBFD /* ChordView-DisplaceSideways@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5E21A08322800BEEBFD /* ChordView-DisplaceSideways@2x.png */; };
-		610DC6361A08322800BEEBFD /* ChordView-Dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5E31A08322800BEEBFD /* ChordView-Dot.png */; };
-		610DC6371A08322800BEEBFD /* ChordView-Dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5E41A08322800BEEBFD /* ChordView-Dot@2x.png */; };
-		610DC6381A08322800BEEBFD /* ChordView-Eighth.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5E51A08322800BEEBFD /* ChordView-Eighth.png */; };
-		610DC6391A08322800BEEBFD /* ChordView-Eighth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5E61A08322800BEEBFD /* ChordView-Eighth@2x.png */; };
-		610DC63A1A08322800BEEBFD /* ChordView-EighthDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5E71A08322800BEEBFD /* ChordView-EighthDown.png */; };
-		610DC63B1A08322800BEEBFD /* ChordView-EighthDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5E81A08322800BEEBFD /* ChordView-EighthDown@2x.png */; };
-		610DC63C1A08322800BEEBFD /* ChordView-Quarter.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5E91A08322800BEEBFD /* ChordView-Quarter.png */; };
-		610DC63D1A08322800BEEBFD /* ChordView-Quarter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5EA1A08322800BEEBFD /* ChordView-Quarter@2x.png */; };
-		610DC63E1A08322800BEEBFD /* ChordView-Whole.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5EB1A08322800BEEBFD /* ChordView-Whole.png */; };
-		610DC63F1A08322800BEEBFD /* ChordView-Whole@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5EC1A08322800BEEBFD /* ChordView-Whole@2x.png */; };
-		610DC6401A08322800BEEBFD /* ClefView-Treble.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5ED1A08322800BEEBFD /* ClefView-Treble.png */; };
-		610DC6411A08322800BEEBFD /* ClefView-Treble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5EE1A08322800BEEBFD /* ClefView-Treble@2x.png */; };
-		610DC6421A08322800BEEBFD /* CollectionViewScoreLayout-Endings.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5EF1A08322800BEEBFD /* CollectionViewScoreLayout-Endings.png */; };
-		610DC6431A08322800BEEBFD /* CollectionViewScoreLayout-Endings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5F01A08322800BEEBFD /* CollectionViewScoreLayout-Endings@2x.png */; };
-		610DC6441A08322800BEEBFD /* CollectionViewScoreLayout-Slurs.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5F11A08322800BEEBFD /* CollectionViewScoreLayout-Slurs.png */; };
-		610DC6451A08322800BEEBFD /* CollectionViewScoreLayout-Slurs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5F21A08322800BEEBFD /* CollectionViewScoreLayout-Slurs@2x.png */; };
-		610DC6461A08322800BEEBFD /* Endings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5F31A08322800BEEBFD /* Endings.xml */; };
-		610DC6471A08322800BEEBFD /* MeasureView-Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5F41A08322800BEEBFD /* MeasureView-Empty.png */; };
-		610DC6481A08322800BEEBFD /* MeasureView-Empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5F51A08322800BEEBFD /* MeasureView-Empty@2x.png */; };
-		610DC6491A08322800BEEBFD /* MeasureView-WithClefs.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5F61A08322800BEEBFD /* MeasureView-WithClefs.png */; };
-		610DC64A1A08322800BEEBFD /* MeasureView-WithClefs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5F71A08322800BEEBFD /* MeasureView-WithClefs@2x.png */; };
-		610DC64B1A08322800BEEBFD /* MeasureView-WithClefsAndTimeSignatures.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5F81A08322800BEEBFD /* MeasureView-WithClefsAndTimeSignatures.png */; };
-		610DC64C1A08322800BEEBFD /* MeasureView-WithClefsAndTimeSignatures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5F91A08322800BEEBFD /* MeasureView-WithClefsAndTimeSignatures@2x.png */; };
-		610DC64D1A08322800BEEBFD /* MeasureView-WithTimeSignatures.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5FA1A08322800BEEBFD /* MeasureView-WithTimeSignatures.png */; };
-		610DC64E1A08322800BEEBFD /* MeasureView-WithTimeSignatures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5FB1A08322800BEEBFD /* MeasureView-WithTimeSignatures@2x.png */; };
-		610DC64F1A08322800BEEBFD /* NoteView-Whole.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5FC1A08322800BEEBFD /* NoteView-Whole.png */; };
-		610DC6501A08322800BEEBFD /* NoteView-Whole@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5FD1A08322800BEEBFD /* NoteView-Whole@2x.png */; };
-		610DC6511A08322800BEEBFD /* Slurs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5FE1A08322800BEEBFD /* Slurs.xml */; };
-		610DC6521A08322800BEEBFD /* TieView-1000Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC5FF1A08322800BEEBFD /* TieView-1000Tie.png */; };
-		610DC6531A08322800BEEBFD /* TieView-1000Tie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6001A08322800BEEBFD /* TieView-1000Tie@2x.png */; };
-		610DC6541A08322800BEEBFD /* TieView-100Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6011A08322800BEEBFD /* TieView-100Tie.png */; };
-		610DC6551A08322800BEEBFD /* TieView-100Tie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6021A08322800BEEBFD /* TieView-100Tie@2x.png */; };
-		610DC6561A08322800BEEBFD /* TieView-18Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6031A08322800BEEBFD /* TieView-18Tie.png */; };
-		610DC6571A08322800BEEBFD /* TieView-18Tie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6041A08322800BEEBFD /* TieView-18Tie@2x.png */; };
-		610DC6581A08322800BEEBFD /* TieView-50Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6051A08322800BEEBFD /* TieView-50Tie.png */; };
-		610DC6591A08322800BEEBFD /* TieView-50Tie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6061A08322800BEEBFD /* TieView-50Tie@2x.png */; };
-		610DC65A1A08322800BEEBFD /* TieView-50TieBelow.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6071A08322800BEEBFD /* TieView-50TieBelow.png */; };
-		610DC65B1A08322800BEEBFD /* TieView-50TieBelow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6081A08322800BEEBFD /* TieView-50TieBelow@2x.png */; };
-		610DC65C1A08322800BEEBFD /* TieView-AngledDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6091A08322800BEEBFD /* TieView-AngledDown.png */; };
-		610DC65D1A08322800BEEBFD /* TieView-AngledDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC60A1A08322800BEEBFD /* TieView-AngledDown@2x.png */; };
-		610DC65E1A08322800BEEBFD /* TieView-AngledDownBelow.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC60B1A08322800BEEBFD /* TieView-AngledDownBelow.png */; };
-		610DC65F1A08322800BEEBFD /* TieView-AngledDownBelow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC60C1A08322800BEEBFD /* TieView-AngledDownBelow@2x.png */; };
-		610DC6601A08322800BEEBFD /* TieView-AngledUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC60D1A08322800BEEBFD /* TieView-AngledUp.png */; };
-		610DC6611A08322800BEEBFD /* TieView-AngledUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC60E1A08322800BEEBFD /* TieView-AngledUp@2x.png */; };
-		610DC6621A08322800BEEBFD /* TieView-AngledUpBelow.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC60F1A08322800BEEBFD /* TieView-AngledUpBelow.png */; };
-		610DC6631A08322800BEEBFD /* TieView-AngledUpBelow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6101A08322800BEEBFD /* TieView-AngledUpBelow@2x.png */; };
-		610DC6641A08322800BEEBFD /* TimeSignatureView-CommonTime.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6111A08322800BEEBFD /* TimeSignatureView-CommonTime.png */; };
-		610DC6651A08322800BEEBFD /* TimeSignatureView-CommonTime@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6121A08322800BEEBFD /* TimeSignatureView-CommonTime@2x.png */; };
-		610DC6661A08322800BEEBFD /* TimeSignatureView-VerticalDigits.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6131A08322800BEEBFD /* TimeSignatureView-VerticalDigits.png */; };
-		610DC6671A08322800BEEBFD /* TimeSignatureView-VerticalDigits@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DC6141A08322800BEEBFD /* TimeSignatureView-VerticalDigits@2x.png */; };
 		610DC6681A08322800BEEBFD /* VMKClefLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */; };
 		610DC6691A08322800BEEBFD /* VMKMeasureLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */; };
 		610DC66A1A08322800BEEBFD /* VMKBeamLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */; };
@@ -179,40 +107,6 @@
 		610DCF101A094B5500BEEBFD /* EventSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE01A094A0E00BEEBFD /* EventSequence.cpp */; };
 		610DCF111A094B5500BEEBFD /* SpanCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE701A094A0E00BEEBFD /* SpanCollection.cpp */; };
 		610DCF121A094B5500BEEBFD /* SpanFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */; };
-		610DCF351A097FAB00BEEBFD /* BeamView-AccidentalInBeamedSet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF131A097FAB00BEEBFD /* BeamView-AccidentalInBeamedSet@3x.png */; };
-		610DCF361A097FAB00BEEBFD /* BeamView-BackwardHook@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF141A097FAB00BEEBFD /* BeamView-BackwardHook@3x.png */; };
-		610DCF371A097FAB00BEEBFD /* BeamView-ForwardHook@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF151A097FAB00BEEBFD /* BeamView-ForwardHook@3x.png */; };
-		610DCF381A097FAB00BEEBFD /* BeamView-FourBeams@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF161A097FAB00BEEBFD /* BeamView-FourBeams@3x.png */; };
-		610DCF391A097FAB00BEEBFD /* BeamView-OneBeam@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF171A097FAB00BEEBFD /* BeamView-OneBeam@3x.png */; };
-		610DCF3A1A097FAB00BEEBFD /* BeamView-OneBeamThreeNotes@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF181A097FAB00BEEBFD /* BeamView-OneBeamThreeNotes@3x.png */; };
-		610DCF3B1A097FAB00BEEBFD /* BeamView-TwoBeams@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF191A097FAB00BEEBFD /* BeamView-TwoBeams@3x.png */; };
-		610DCF3C1A097FAB00BEEBFD /* ChordView-128th@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF1A1A097FAB00BEEBFD /* ChordView-128th@3x.png */; };
-		610DCF3D1A097FAB00BEEBFD /* ChordView-Accent@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF1B1A097FAB00BEEBFD /* ChordView-Accent@3x.png */; };
-		610DCF3E1A097FAB00BEEBFD /* ChordView-Accidental@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF1C1A097FAB00BEEBFD /* ChordView-Accidental@3x.png */; };
-		610DCF3F1A097FAB00BEEBFD /* ChordView-DisplaceSideways@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF1D1A097FAB00BEEBFD /* ChordView-DisplaceSideways@3x.png */; };
-		610DCF401A097FAB00BEEBFD /* ChordView-Dot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF1E1A097FAB00BEEBFD /* ChordView-Dot@3x.png */; };
-		610DCF411A097FAB00BEEBFD /* ChordView-Eighth@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF1F1A097FAB00BEEBFD /* ChordView-Eighth@3x.png */; };
-		610DCF421A097FAB00BEEBFD /* ChordView-EighthDown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF201A097FAB00BEEBFD /* ChordView-EighthDown@3x.png */; };
-		610DCF431A097FAB00BEEBFD /* ChordView-Quarter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF211A097FAB00BEEBFD /* ChordView-Quarter@3x.png */; };
-		610DCF441A097FAB00BEEBFD /* ChordView-Whole@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF221A097FAB00BEEBFD /* ChordView-Whole@3x.png */; };
-		610DCF451A097FAB00BEEBFD /* ClefView-Treble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF231A097FAB00BEEBFD /* ClefView-Treble@3x.png */; };
-		610DCF461A097FAB00BEEBFD /* CollectionViewScoreLayout-Endings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF241A097FAB00BEEBFD /* CollectionViewScoreLayout-Endings@3x.png */; };
-		610DCF471A097FAB00BEEBFD /* CollectionViewScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF251A097FAB00BEEBFD /* CollectionViewScoreLayout-Slurs@3x.png */; };
-		610DCF481A097FAB00BEEBFD /* MeasureView-Empty@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF261A097FAB00BEEBFD /* MeasureView-Empty@3x.png */; };
-		610DCF491A097FAB00BEEBFD /* MeasureView-WithClefs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF271A097FAB00BEEBFD /* MeasureView-WithClefs@3x.png */; };
-		610DCF4A1A097FAB00BEEBFD /* MeasureView-WithClefsAndTimeSignatures@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF281A097FAB00BEEBFD /* MeasureView-WithClefsAndTimeSignatures@3x.png */; };
-		610DCF4B1A097FAB00BEEBFD /* MeasureView-WithTimeSignatures@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF291A097FAB00BEEBFD /* MeasureView-WithTimeSignatures@3x.png */; };
-		610DCF4C1A097FAB00BEEBFD /* TieView-18Tie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF2A1A097FAB00BEEBFD /* TieView-18Tie@3x.png */; };
-		610DCF4D1A097FAB00BEEBFD /* TieView-50Tie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF2B1A097FAB00BEEBFD /* TieView-50Tie@3x.png */; };
-		610DCF4E1A097FAB00BEEBFD /* TieView-50TieBelow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF2C1A097FAB00BEEBFD /* TieView-50TieBelow@3x.png */; };
-		610DCF4F1A097FAB00BEEBFD /* TieView-100Tie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF2D1A097FAB00BEEBFD /* TieView-100Tie@3x.png */; };
-		610DCF501A097FAB00BEEBFD /* TieView-1000Tie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF2E1A097FAB00BEEBFD /* TieView-1000Tie@3x.png */; };
-		610DCF511A097FAB00BEEBFD /* TieView-AngledDown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF2F1A097FAB00BEEBFD /* TieView-AngledDown@3x.png */; };
-		610DCF521A097FAB00BEEBFD /* TieView-AngledDownBelow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF301A097FAB00BEEBFD /* TieView-AngledDownBelow@3x.png */; };
-		610DCF531A097FAB00BEEBFD /* TieView-AngledUp@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF311A097FAB00BEEBFD /* TieView-AngledUp@3x.png */; };
-		610DCF541A097FAB00BEEBFD /* TieView-AngledUpBelow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF321A097FAB00BEEBFD /* TieView-AngledUpBelow@3x.png */; };
-		610DCF551A097FAB00BEEBFD /* TimeSignatureView-CommonTime@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF331A097FAB00BEEBFD /* TimeSignatureView-CommonTime@3x.png */; };
-		610DCF561A097FAB00BEEBFD /* TimeSignatureView-VerticalDigits@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610DCF341A097FAB00BEEBFD /* TimeSignatureView-VerticalDigits@3x.png */; };
 		610DCF5E1A09A08E00BEEBFD /* VMKScoreElementLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF5C1A09A08E00BEEBFD /* VMKScoreElementLayer.h */; };
 		610DCF5F1A09A08E00BEEBFD /* VMKScoreElementLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DCF5D1A09A08E00BEEBFD /* VMKScoreElementLayer.mm */; };
 		610DCF631A09ACED00BEEBFD /* VMKAccidentalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF611A09ACED00BEEBFD /* VMKAccidentalLayer.h */; };
@@ -401,6 +295,234 @@
 		616C1B9A1A0C54BA0020EAA8 /* VMKClefLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */; };
 		616C1B9B1A0C54E50020EAA8 /* VMKChordLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */; };
 		616C1B9C1A0D38930020EAA8 /* VMKAdHocScoreTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5CB1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm */; };
+		616C1C1A1A0D61ED0020EAA8 /* VMKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 616C1C191A0D61ED0020EAA8 /* VMKImage.m */; };
+		616C1C1B1A0D61ED0020EAA8 /* VMKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 616C1C191A0D61ED0020EAA8 /* VMKImage.m */; };
+		616C1C861A0D81550020EAA8 /* ClefLayer-Treble.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C1C1A0D81550020EAA8 /* ClefLayer-Treble.png */; };
+		616C1C871A0D81550020EAA8 /* ClefLayer-Treble.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C1C1A0D81550020EAA8 /* ClefLayer-Treble.png */; };
+		616C1C881A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C1D1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png */; };
+		616C1C891A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C1D1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png */; };
+		616C1C8A1A0D81550020EAA8 /* ClefLayer-Treble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C1E1A0D81550020EAA8 /* ClefLayer-Treble@2x.png */; };
+		616C1C8B1A0D81550020EAA8 /* ClefLayer-Treble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C1E1A0D81550020EAA8 /* ClefLayer-Treble@2x.png */; };
+		616C1C8C1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C1F1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@2x.png */; };
+		616C1C8D1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C1F1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@2x.png */; };
+		616C1C8E1A0D81550020EAA8 /* NoteLayer-Whole@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C201A0D81550020EAA8 /* NoteLayer-Whole@2x.png */; };
+		616C1C8F1A0D81550020EAA8 /* NoteLayer-Whole@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C201A0D81550020EAA8 /* NoteLayer-Whole@2x.png */; };
+		616C1C901A0D81550020EAA8 /* NoteLayer-Whole.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C211A0D81550020EAA8 /* NoteLayer-Whole.png */; };
+		616C1C911A0D81550020EAA8 /* NoteLayer-Whole.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C211A0D81550020EAA8 /* NoteLayer-Whole.png */; };
+		616C1C921A0D81550020EAA8 /* TieLayer-18Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C221A0D81550020EAA8 /* TieLayer-18Tie.png */; };
+		616C1C931A0D81550020EAA8 /* TieLayer-18Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C221A0D81550020EAA8 /* TieLayer-18Tie.png */; };
+		616C1C941A0D81550020EAA8 /* TieLayer-18Tie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C231A0D81550020EAA8 /* TieLayer-18Tie@2x.png */; };
+		616C1C951A0D81550020EAA8 /* TieLayer-18Tie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C231A0D81550020EAA8 /* TieLayer-18Tie@2x.png */; };
+		616C1C961A0D81550020EAA8 /* TieLayer-50Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C241A0D81550020EAA8 /* TieLayer-50Tie.png */; };
+		616C1C971A0D81550020EAA8 /* TieLayer-50Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C241A0D81550020EAA8 /* TieLayer-50Tie.png */; };
+		616C1C981A0D81550020EAA8 /* TieLayer-50Tie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C251A0D81550020EAA8 /* TieLayer-50Tie@2x.png */; };
+		616C1C991A0D81550020EAA8 /* TieLayer-50Tie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C251A0D81550020EAA8 /* TieLayer-50Tie@2x.png */; };
+		616C1C9A1A0D81550020EAA8 /* TieLayer-50TieBelow.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C261A0D81550020EAA8 /* TieLayer-50TieBelow.png */; };
+		616C1C9B1A0D81550020EAA8 /* TieLayer-50TieBelow.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C261A0D81550020EAA8 /* TieLayer-50TieBelow.png */; };
+		616C1C9C1A0D81550020EAA8 /* TieLayer-50TieBelow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C271A0D81550020EAA8 /* TieLayer-50TieBelow@2x.png */; };
+		616C1C9D1A0D81550020EAA8 /* TieLayer-50TieBelow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C271A0D81550020EAA8 /* TieLayer-50TieBelow@2x.png */; };
+		616C1C9E1A0D81550020EAA8 /* TieLayer-100Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C281A0D81550020EAA8 /* TieLayer-100Tie.png */; };
+		616C1C9F1A0D81550020EAA8 /* TieLayer-100Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C281A0D81550020EAA8 /* TieLayer-100Tie.png */; };
+		616C1CA01A0D81550020EAA8 /* TieLayer-100Tie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C291A0D81550020EAA8 /* TieLayer-100Tie@2x.png */; };
+		616C1CA11A0D81550020EAA8 /* TieLayer-100Tie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C291A0D81550020EAA8 /* TieLayer-100Tie@2x.png */; };
+		616C1CA21A0D81550020EAA8 /* TieLayer-1000Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C2A1A0D81550020EAA8 /* TieLayer-1000Tie.png */; };
+		616C1CA31A0D81550020EAA8 /* TieLayer-1000Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C2A1A0D81550020EAA8 /* TieLayer-1000Tie.png */; };
+		616C1CA41A0D81550020EAA8 /* TieLayer-1000Tie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C2B1A0D81550020EAA8 /* TieLayer-1000Tie@2x.png */; };
+		616C1CA51A0D81550020EAA8 /* TieLayer-1000Tie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C2B1A0D81550020EAA8 /* TieLayer-1000Tie@2x.png */; };
+		616C1CA61A0D81550020EAA8 /* TieLayer-AngledDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C2C1A0D81550020EAA8 /* TieLayer-AngledDown.png */; };
+		616C1CA71A0D81550020EAA8 /* TieLayer-AngledDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C2C1A0D81550020EAA8 /* TieLayer-AngledDown.png */; };
+		616C1CA81A0D81550020EAA8 /* TieLayer-AngledDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C2D1A0D81550020EAA8 /* TieLayer-AngledDown@2x.png */; };
+		616C1CA91A0D81550020EAA8 /* TieLayer-AngledDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C2D1A0D81550020EAA8 /* TieLayer-AngledDown@2x.png */; };
+		616C1CAA1A0D81550020EAA8 /* TieLayer-AngledDownBelow.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C2E1A0D81550020EAA8 /* TieLayer-AngledDownBelow.png */; };
+		616C1CAB1A0D81550020EAA8 /* TieLayer-AngledDownBelow.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C2E1A0D81550020EAA8 /* TieLayer-AngledDownBelow.png */; };
+		616C1CAC1A0D81550020EAA8 /* TieLayer-AngledDownBelow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C2F1A0D81550020EAA8 /* TieLayer-AngledDownBelow@2x.png */; };
+		616C1CAD1A0D81550020EAA8 /* TieLayer-AngledDownBelow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C2F1A0D81550020EAA8 /* TieLayer-AngledDownBelow@2x.png */; };
+		616C1CAE1A0D81550020EAA8 /* TieLayer-AngledUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C301A0D81550020EAA8 /* TieLayer-AngledUp.png */; };
+		616C1CAF1A0D81550020EAA8 /* TieLayer-AngledUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C301A0D81550020EAA8 /* TieLayer-AngledUp.png */; };
+		616C1CB01A0D81550020EAA8 /* TieLayer-AngledUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C311A0D81550020EAA8 /* TieLayer-AngledUp@2x.png */; };
+		616C1CB11A0D81550020EAA8 /* TieLayer-AngledUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C311A0D81550020EAA8 /* TieLayer-AngledUp@2x.png */; };
+		616C1CB21A0D81550020EAA8 /* TieLayer-AngledUpBelow.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C321A0D81550020EAA8 /* TieLayer-AngledUpBelow.png */; };
+		616C1CB31A0D81550020EAA8 /* TieLayer-AngledUpBelow.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C321A0D81550020EAA8 /* TieLayer-AngledUpBelow.png */; };
+		616C1CB41A0D81550020EAA8 /* TieLayer-AngledUpBelow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C331A0D81550020EAA8 /* TieLayer-AngledUpBelow@2x.png */; };
+		616C1CB51A0D81550020EAA8 /* TieLayer-AngledUpBelow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C331A0D81550020EAA8 /* TieLayer-AngledUpBelow@2x.png */; };
+		616C1CB61A0D81550020EAA8 /* ChordLayer-EighthDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C341A0D81550020EAA8 /* ChordLayer-EighthDown.png */; };
+		616C1CB71A0D81550020EAA8 /* ChordLayer-EighthDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C341A0D81550020EAA8 /* ChordLayer-EighthDown.png */; };
+		616C1CB81A0D81550020EAA8 /* ChordLayer-Whole.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C351A0D81550020EAA8 /* ChordLayer-Whole.png */; };
+		616C1CB91A0D81550020EAA8 /* ChordLayer-Whole.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C351A0D81550020EAA8 /* ChordLayer-Whole.png */; };
+		616C1CBA1A0D81550020EAA8 /* ChordLayer-EighthDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C361A0D81550020EAA8 /* ChordLayer-EighthDown@2x.png */; };
+		616C1CBB1A0D81550020EAA8 /* ChordLayer-EighthDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C361A0D81550020EAA8 /* ChordLayer-EighthDown@2x.png */; };
+		616C1CBC1A0D81550020EAA8 /* ChordLayer-Whole@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C371A0D81550020EAA8 /* ChordLayer-Whole@2x.png */; };
+		616C1CBD1A0D81550020EAA8 /* ChordLayer-Whole@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C371A0D81550020EAA8 /* ChordLayer-Whole@2x.png */; };
+		616C1CBE1A0D81550020EAA8 /* ChordLayer-Accidental.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C381A0D81550020EAA8 /* ChordLayer-Accidental.png */; };
+		616C1CBF1A0D81550020EAA8 /* ChordLayer-Accidental.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C381A0D81550020EAA8 /* ChordLayer-Accidental.png */; };
+		616C1CC01A0D81550020EAA8 /* ChordLayer-Accidental@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C391A0D81550020EAA8 /* ChordLayer-Accidental@2x.png */; };
+		616C1CC11A0D81550020EAA8 /* ChordLayer-Accidental@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C391A0D81550020EAA8 /* ChordLayer-Accidental@2x.png */; };
+		616C1CC21A0D81550020EAA8 /* ChordLayer-Quarter.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C3A1A0D81550020EAA8 /* ChordLayer-Quarter.png */; };
+		616C1CC31A0D81550020EAA8 /* ChordLayer-Quarter.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C3A1A0D81550020EAA8 /* ChordLayer-Quarter.png */; };
+		616C1CC41A0D81550020EAA8 /* ChordLayer-Quarter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C3B1A0D81550020EAA8 /* ChordLayer-Quarter@2x.png */; };
+		616C1CC51A0D81550020EAA8 /* ChordLayer-Quarter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C3B1A0D81550020EAA8 /* ChordLayer-Quarter@2x.png */; };
+		616C1CC61A0D81550020EAA8 /* ChordLayer-128th.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C3C1A0D81550020EAA8 /* ChordLayer-128th.png */; };
+		616C1CC71A0D81550020EAA8 /* ChordLayer-128th.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C3C1A0D81550020EAA8 /* ChordLayer-128th.png */; };
+		616C1CC81A0D81550020EAA8 /* ChordLayer-128th@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C3D1A0D81550020EAA8 /* ChordLayer-128th@2x.png */; };
+		616C1CC91A0D81550020EAA8 /* ChordLayer-128th@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C3D1A0D81550020EAA8 /* ChordLayer-128th@2x.png */; };
+		616C1CCA1A0D81550020EAA8 /* ChordLayer-DisplaceSideways.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C3E1A0D81550020EAA8 /* ChordLayer-DisplaceSideways.png */; };
+		616C1CCB1A0D81550020EAA8 /* ChordLayer-DisplaceSideways.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C3E1A0D81550020EAA8 /* ChordLayer-DisplaceSideways.png */; };
+		616C1CCC1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C3F1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@2x.png */; };
+		616C1CCD1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C3F1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@2x.png */; };
+		616C1CCE1A0D81550020EAA8 /* ChordLayer-Dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C401A0D81550020EAA8 /* ChordLayer-Dot.png */; };
+		616C1CCF1A0D81550020EAA8 /* ChordLayer-Dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C401A0D81550020EAA8 /* ChordLayer-Dot.png */; };
+		616C1CD01A0D81550020EAA8 /* ChordLayer-Dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C411A0D81550020EAA8 /* ChordLayer-Dot@2x.png */; };
+		616C1CD11A0D81550020EAA8 /* ChordLayer-Dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C411A0D81550020EAA8 /* ChordLayer-Dot@2x.png */; };
+		616C1CD21A0D81550020EAA8 /* ChordLayer-Eighth.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C421A0D81550020EAA8 /* ChordLayer-Eighth.png */; };
+		616C1CD31A0D81550020EAA8 /* ChordLayer-Eighth.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C421A0D81550020EAA8 /* ChordLayer-Eighth.png */; };
+		616C1CD41A0D81550020EAA8 /* ChordLayer-Eighth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C431A0D81550020EAA8 /* ChordLayer-Eighth@2x.png */; };
+		616C1CD51A0D81550020EAA8 /* ChordLayer-Eighth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C431A0D81550020EAA8 /* ChordLayer-Eighth@2x.png */; };
+		616C1CD61A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C441A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits.png */; };
+		616C1CD71A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C441A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits.png */; };
+		616C1CD81A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C451A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png */; };
+		616C1CD91A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C451A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png */; };
+		616C1CDA1A0D81550020EAA8 /* Slurs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C461A0D81550020EAA8 /* Slurs.xml */; };
+		616C1CDB1A0D81550020EAA8 /* Slurs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C461A0D81550020EAA8 /* Slurs.xml */; };
+		616C1CDC1A0D81550020EAA8 /* ChordLayer-Accent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C471A0D81550020EAA8 /* ChordLayer-Accent@2x.png */; };
+		616C1CDD1A0D81550020EAA8 /* ChordLayer-Accent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C471A0D81550020EAA8 /* ChordLayer-Accent@2x.png */; };
+		616C1CDE1A0D81550020EAA8 /* ChordLayer-Accent.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C481A0D81550020EAA8 /* ChordLayer-Accent.png */; };
+		616C1CDF1A0D81550020EAA8 /* ChordLayer-Accent.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C481A0D81550020EAA8 /* ChordLayer-Accent.png */; };
+		616C1CE01A0D81550020EAA8 /* Endings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C491A0D81550020EAA8 /* Endings.xml */; };
+		616C1CE11A0D81550020EAA8 /* Endings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C491A0D81550020EAA8 /* Endings.xml */; };
+		616C1CE21A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4A1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png */; };
+		616C1CE31A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4A1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png */; };
+		616C1CE41A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4B1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png */; };
+		616C1CE51A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4B1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png */; };
+		616C1CE61A0D81550020EAA8 /* BeamLayer-BackwardHook.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4C1A0D81550020EAA8 /* BeamLayer-BackwardHook.png */; };
+		616C1CE71A0D81550020EAA8 /* BeamLayer-BackwardHook.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4C1A0D81550020EAA8 /* BeamLayer-BackwardHook.png */; };
+		616C1CE81A0D81550020EAA8 /* BeamLayer-BackwardHook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4D1A0D81550020EAA8 /* BeamLayer-BackwardHook@2x.png */; };
+		616C1CE91A0D81550020EAA8 /* BeamLayer-BackwardHook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4D1A0D81550020EAA8 /* BeamLayer-BackwardHook@2x.png */; };
+		616C1CEA1A0D81550020EAA8 /* BeamLayer-ForwardHook.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4E1A0D81550020EAA8 /* BeamLayer-ForwardHook.png */; };
+		616C1CEB1A0D81550020EAA8 /* BeamLayer-ForwardHook.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4E1A0D81550020EAA8 /* BeamLayer-ForwardHook.png */; };
+		616C1CEC1A0D81550020EAA8 /* BeamLayer-ForwardHook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4F1A0D81550020EAA8 /* BeamLayer-ForwardHook@2x.png */; };
+		616C1CED1A0D81550020EAA8 /* BeamLayer-ForwardHook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4F1A0D81550020EAA8 /* BeamLayer-ForwardHook@2x.png */; };
+		616C1CEE1A0D81550020EAA8 /* BeamLayer-FourBeams.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C501A0D81550020EAA8 /* BeamLayer-FourBeams.png */; };
+		616C1CEF1A0D81550020EAA8 /* BeamLayer-FourBeams.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C501A0D81550020EAA8 /* BeamLayer-FourBeams.png */; };
+		616C1CF01A0D81550020EAA8 /* BeamLayer-FourBeams@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C511A0D81550020EAA8 /* BeamLayer-FourBeams@2x.png */; };
+		616C1CF11A0D81550020EAA8 /* BeamLayer-FourBeams@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C511A0D81550020EAA8 /* BeamLayer-FourBeams@2x.png */; };
+		616C1CF21A0D81550020EAA8 /* BeamLayer-OneBeam.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C521A0D81550020EAA8 /* BeamLayer-OneBeam.png */; };
+		616C1CF31A0D81550020EAA8 /* BeamLayer-OneBeam.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C521A0D81550020EAA8 /* BeamLayer-OneBeam.png */; };
+		616C1CF41A0D81550020EAA8 /* BeamLayer-OneBeam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C531A0D81550020EAA8 /* BeamLayer-OneBeam@2x.png */; };
+		616C1CF51A0D81550020EAA8 /* BeamLayer-OneBeam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C531A0D81550020EAA8 /* BeamLayer-OneBeam@2x.png */; };
+		616C1CF61A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C541A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes.png */; };
+		616C1CF71A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C541A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes.png */; };
+		616C1CF81A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C551A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@2x.png */; };
+		616C1CF91A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C551A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@2x.png */; };
+		616C1CFA1A0D81550020EAA8 /* BeamLayer-TwoBeams.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C561A0D81550020EAA8 /* BeamLayer-TwoBeams.png */; };
+		616C1CFB1A0D81550020EAA8 /* BeamLayer-TwoBeams.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C561A0D81550020EAA8 /* BeamLayer-TwoBeams.png */; };
+		616C1CFC1A0D81550020EAA8 /* BeamLayer-TwoBeams@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C571A0D81550020EAA8 /* BeamLayer-TwoBeams@2x.png */; };
+		616C1CFD1A0D81550020EAA8 /* BeamLayer-TwoBeams@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C571A0D81550020EAA8 /* BeamLayer-TwoBeams@2x.png */; };
+		616C1CFE1A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C581A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings.png */; };
+		616C1CFF1A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C581A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings.png */; };
+		616C1D001A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C591A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@2x.png */; };
+		616C1D011A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C591A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@2x.png */; };
+		616C1D021A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C5A1A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs.png */; };
+		616C1D031A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C5A1A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs.png */; };
+		616C1D041A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C5B1A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@2x.png */; };
+		616C1D051A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C5B1A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@2x.png */; };
+		616C1D061A0D81550020EAA8 /* MeasureLayer-Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C5C1A0D81550020EAA8 /* MeasureLayer-Empty.png */; };
+		616C1D071A0D81550020EAA8 /* MeasureLayer-Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C5C1A0D81550020EAA8 /* MeasureLayer-Empty.png */; };
+		616C1D081A0D81550020EAA8 /* MeasureLayer-Empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C5D1A0D81550020EAA8 /* MeasureLayer-Empty@2x.png */; };
+		616C1D091A0D81550020EAA8 /* MeasureLayer-Empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C5D1A0D81550020EAA8 /* MeasureLayer-Empty@2x.png */; };
+		616C1D0A1A0D81550020EAA8 /* MeasureLayer-WithClefs.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C5E1A0D81550020EAA8 /* MeasureLayer-WithClefs.png */; };
+		616C1D0B1A0D81550020EAA8 /* MeasureLayer-WithClefs.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C5E1A0D81550020EAA8 /* MeasureLayer-WithClefs.png */; };
+		616C1D0C1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C5F1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png */; };
+		616C1D0D1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C5F1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png */; };
+		616C1D0E1A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C601A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png */; };
+		616C1D0F1A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C601A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png */; };
+		616C1D101A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C611A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png */; };
+		616C1D111A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C611A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png */; };
+		616C1D121A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C621A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures.png */; };
+		616C1D131A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C621A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures.png */; };
+		616C1D141A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C631A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@2x.png */; };
+		616C1D151A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C631A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@2x.png */; };
+		616C1D161A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C641A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png */; };
+		616C1D171A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C641A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png */; };
+		616C1D181A0D81550020EAA8 /* BeamLayer-BackwardHook@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C651A0D81550020EAA8 /* BeamLayer-BackwardHook@3x.png */; };
+		616C1D191A0D81550020EAA8 /* BeamLayer-BackwardHook@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C651A0D81550020EAA8 /* BeamLayer-BackwardHook@3x.png */; };
+		616C1D1A1A0D81550020EAA8 /* BeamLayer-ForwardHook@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C661A0D81550020EAA8 /* BeamLayer-ForwardHook@3x.png */; };
+		616C1D1B1A0D81550020EAA8 /* BeamLayer-ForwardHook@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C661A0D81550020EAA8 /* BeamLayer-ForwardHook@3x.png */; };
+		616C1D1C1A0D81550020EAA8 /* BeamLayer-FourBeams@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C671A0D81550020EAA8 /* BeamLayer-FourBeams@3x.png */; };
+		616C1D1D1A0D81550020EAA8 /* BeamLayer-FourBeams@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C671A0D81550020EAA8 /* BeamLayer-FourBeams@3x.png */; };
+		616C1D1E1A0D81550020EAA8 /* BeamLayer-OneBeam@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C681A0D81550020EAA8 /* BeamLayer-OneBeam@3x.png */; };
+		616C1D1F1A0D81550020EAA8 /* BeamLayer-OneBeam@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C681A0D81550020EAA8 /* BeamLayer-OneBeam@3x.png */; };
+		616C1D201A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C691A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@3x.png */; };
+		616C1D211A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C691A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@3x.png */; };
+		616C1D221A0D81550020EAA8 /* BeamLayer-TwoBeams@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C6A1A0D81550020EAA8 /* BeamLayer-TwoBeams@3x.png */; };
+		616C1D231A0D81550020EAA8 /* BeamLayer-TwoBeams@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C6A1A0D81550020EAA8 /* BeamLayer-TwoBeams@3x.png */; };
+		616C1D241A0D81550020EAA8 /* ChordLayer-128th@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C6B1A0D81550020EAA8 /* ChordLayer-128th@3x.png */; };
+		616C1D251A0D81550020EAA8 /* ChordLayer-128th@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C6B1A0D81550020EAA8 /* ChordLayer-128th@3x.png */; };
+		616C1D261A0D81550020EAA8 /* ChordLayer-Accent@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C6C1A0D81550020EAA8 /* ChordLayer-Accent@3x.png */; };
+		616C1D271A0D81550020EAA8 /* ChordLayer-Accent@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C6C1A0D81550020EAA8 /* ChordLayer-Accent@3x.png */; };
+		616C1D281A0D81550020EAA8 /* ChordLayer-Accidental@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C6D1A0D81550020EAA8 /* ChordLayer-Accidental@3x.png */; };
+		616C1D291A0D81550020EAA8 /* ChordLayer-Accidental@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C6D1A0D81550020EAA8 /* ChordLayer-Accidental@3x.png */; };
+		616C1D2A1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C6E1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@3x.png */; };
+		616C1D2B1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C6E1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@3x.png */; };
+		616C1D2C1A0D81550020EAA8 /* ChordLayer-Dot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C6F1A0D81550020EAA8 /* ChordLayer-Dot@3x.png */; };
+		616C1D2D1A0D81550020EAA8 /* ChordLayer-Dot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C6F1A0D81550020EAA8 /* ChordLayer-Dot@3x.png */; };
+		616C1D2E1A0D81550020EAA8 /* ChordLayer-Eighth@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C701A0D81550020EAA8 /* ChordLayer-Eighth@3x.png */; };
+		616C1D2F1A0D81550020EAA8 /* ChordLayer-Eighth@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C701A0D81550020EAA8 /* ChordLayer-Eighth@3x.png */; };
+		616C1D301A0D81550020EAA8 /* ChordLayer-EighthDown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C711A0D81550020EAA8 /* ChordLayer-EighthDown@3x.png */; };
+		616C1D311A0D81550020EAA8 /* ChordLayer-EighthDown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C711A0D81550020EAA8 /* ChordLayer-EighthDown@3x.png */; };
+		616C1D321A0D81550020EAA8 /* ChordLayer-Quarter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C721A0D81550020EAA8 /* ChordLayer-Quarter@3x.png */; };
+		616C1D331A0D81550020EAA8 /* ChordLayer-Quarter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C721A0D81550020EAA8 /* ChordLayer-Quarter@3x.png */; };
+		616C1D341A0D81550020EAA8 /* ChordLayer-Whole@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C731A0D81550020EAA8 /* ChordLayer-Whole@3x.png */; };
+		616C1D351A0D81550020EAA8 /* ChordLayer-Whole@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C731A0D81550020EAA8 /* ChordLayer-Whole@3x.png */; };
+		616C1D361A0D81550020EAA8 /* ClefLayer-Treble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C741A0D81550020EAA8 /* ClefLayer-Treble@3x.png */; };
+		616C1D371A0D81550020EAA8 /* ClefLayer-Treble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C741A0D81550020EAA8 /* ClefLayer-Treble@3x.png */; };
+		616C1D381A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C751A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@3x.png */; };
+		616C1D391A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C751A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@3x.png */; };
+		616C1D3A1A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C761A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@3x.png */; };
+		616C1D3B1A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C761A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@3x.png */; };
+		616C1D3C1A0D81550020EAA8 /* MeasureLayer-Empty@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C771A0D81550020EAA8 /* MeasureLayer-Empty@3x.png */; };
+		616C1D3D1A0D81550020EAA8 /* MeasureLayer-Empty@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C771A0D81550020EAA8 /* MeasureLayer-Empty@3x.png */; };
+		616C1D3E1A0D81550020EAA8 /* MeasureLayer-WithClefs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C781A0D81550020EAA8 /* MeasureLayer-WithClefs@3x.png */; };
+		616C1D3F1A0D81550020EAA8 /* MeasureLayer-WithClefs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C781A0D81550020EAA8 /* MeasureLayer-WithClefs@3x.png */; };
+		616C1D401A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C791A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@3x.png */; };
+		616C1D411A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C791A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@3x.png */; };
+		616C1D421A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C7A1A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png */; };
+		616C1D431A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C7A1A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png */; };
+		616C1D441A0D81550020EAA8 /* TieLayer-18Tie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C7B1A0D81550020EAA8 /* TieLayer-18Tie@3x.png */; };
+		616C1D451A0D81550020EAA8 /* TieLayer-18Tie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C7B1A0D81550020EAA8 /* TieLayer-18Tie@3x.png */; };
+		616C1D461A0D81550020EAA8 /* TieLayer-50Tie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C7C1A0D81550020EAA8 /* TieLayer-50Tie@3x.png */; };
+		616C1D471A0D81550020EAA8 /* TieLayer-50Tie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C7C1A0D81550020EAA8 /* TieLayer-50Tie@3x.png */; };
+		616C1D481A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C7D1A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png */; };
+		616C1D491A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C7D1A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png */; };
+		616C1D4A1A0D81550020EAA8 /* TieLayer-100Tie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C7E1A0D81550020EAA8 /* TieLayer-100Tie@3x.png */; };
+		616C1D4B1A0D81550020EAA8 /* TieLayer-100Tie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C7E1A0D81550020EAA8 /* TieLayer-100Tie@3x.png */; };
+		616C1D4C1A0D81550020EAA8 /* TieLayer-1000Tie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C7F1A0D81550020EAA8 /* TieLayer-1000Tie@3x.png */; };
+		616C1D4D1A0D81550020EAA8 /* TieLayer-1000Tie@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C7F1A0D81550020EAA8 /* TieLayer-1000Tie@3x.png */; };
+		616C1D4E1A0D81550020EAA8 /* TieLayer-AngledDown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C801A0D81550020EAA8 /* TieLayer-AngledDown@3x.png */; };
+		616C1D4F1A0D81550020EAA8 /* TieLayer-AngledDown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C801A0D81550020EAA8 /* TieLayer-AngledDown@3x.png */; };
+		616C1D501A0D81550020EAA8 /* TieLayer-AngledDownBelow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C811A0D81550020EAA8 /* TieLayer-AngledDownBelow@3x.png */; };
+		616C1D511A0D81550020EAA8 /* TieLayer-AngledDownBelow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C811A0D81550020EAA8 /* TieLayer-AngledDownBelow@3x.png */; };
+		616C1D521A0D81550020EAA8 /* TieLayer-AngledUp@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C821A0D81550020EAA8 /* TieLayer-AngledUp@3x.png */; };
+		616C1D531A0D81550020EAA8 /* TieLayer-AngledUp@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C821A0D81550020EAA8 /* TieLayer-AngledUp@3x.png */; };
+		616C1D541A0D81550020EAA8 /* TieLayer-AngledUpBelow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C831A0D81550020EAA8 /* TieLayer-AngledUpBelow@3x.png */; };
+		616C1D551A0D81550020EAA8 /* TieLayer-AngledUpBelow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C831A0D81550020EAA8 /* TieLayer-AngledUpBelow@3x.png */; };
+		616C1D561A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C841A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@3x.png */; };
+		616C1D571A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C841A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@3x.png */; };
+		616C1D581A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C851A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png */; };
+		616C1D591A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C851A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png */; };
+		616C1D621A0D88930020EAA8 /* VMKDirectionLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1D611A0D88930020EAA8 /* VMKDirectionLayerTests.mm */; };
+		616C1D631A0D88930020EAA8 /* VMKDirectionLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1D611A0D88930020EAA8 /* VMKDirectionLayerTests.mm */; };
+		616C1D6A1A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D641A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@2x.png */; };
+		616C1D6B1A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D641A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@2x.png */; };
+		616C1D6C1A0D8D5E0020EAA8 /* DirectionLayer-Words@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D651A0D8D5E0020EAA8 /* DirectionLayer-Words@2x.png */; };
+		616C1D6D1A0D8D5E0020EAA8 /* DirectionLayer-Words@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D651A0D8D5E0020EAA8 /* DirectionLayer-Words@2x.png */; };
+		616C1D6E1A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D661A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics.png */; };
+		616C1D6F1A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D661A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics.png */; };
+		616C1D701A0D8D5E0020EAA8 /* DirectionLayer-Words.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D671A0D8D5E0020EAA8 /* DirectionLayer-Words.png */; };
+		616C1D711A0D8D5E0020EAA8 /* DirectionLayer-Words.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D671A0D8D5E0020EAA8 /* DirectionLayer-Words.png */; };
+		616C1D721A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D681A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@3x.png */; };
+		616C1D731A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D681A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@3x.png */; };
+		616C1D741A0D8D5E0020EAA8 /* DirectionLayer-Words@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D691A0D8D5E0020EAA8 /* DirectionLayer-Words@3x.png */; };
+		616C1D751A0D8D5E0020EAA8 /* DirectionLayer-Words@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D691A0D8D5E0020EAA8 /* DirectionLayer-Words@3x.png */; };
 		618641511A09B0B900FAE9C9 /* VMKBarlineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6186414F1A09B0B900FAE9C9 /* VMKBarlineLayer.h */; };
 		618641521A09B0B900FAE9C9 /* VMKBarlineLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618641501A09B0B900FAE9C9 /* VMKBarlineLayer.mm */; };
 		618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */; };
@@ -451,78 +573,6 @@
 		610DC5BE1A0831DF00BEEBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		610DC5CA1A08322800BEEBFD /* VMKAdHocScoreTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKAdHocScoreTestCase.h; sourceTree = "<group>"; };
 		610DC5CB1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKAdHocScoreTestCase.mm; sourceTree = "<group>"; };
-		610DC5CD1A08322800BEEBFD /* BeamView-AccidentalInBeamedSet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-AccidentalInBeamedSet.png"; sourceTree = "<group>"; };
-		610DC5CE1A08322800BEEBFD /* BeamView-AccidentalInBeamedSet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-AccidentalInBeamedSet@2x.png"; sourceTree = "<group>"; };
-		610DC5CF1A08322800BEEBFD /* BeamView-BackwardHook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-BackwardHook.png"; sourceTree = "<group>"; };
-		610DC5D01A08322800BEEBFD /* BeamView-BackwardHook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-BackwardHook@2x.png"; sourceTree = "<group>"; };
-		610DC5D11A08322800BEEBFD /* BeamView-ForwardHook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-ForwardHook.png"; sourceTree = "<group>"; };
-		610DC5D21A08322800BEEBFD /* BeamView-ForwardHook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-ForwardHook@2x.png"; sourceTree = "<group>"; };
-		610DC5D31A08322800BEEBFD /* BeamView-FourBeams.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-FourBeams.png"; sourceTree = "<group>"; };
-		610DC5D41A08322800BEEBFD /* BeamView-FourBeams@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-FourBeams@2x.png"; sourceTree = "<group>"; };
-		610DC5D51A08322800BEEBFD /* BeamView-OneBeam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-OneBeam.png"; sourceTree = "<group>"; };
-		610DC5D61A08322800BEEBFD /* BeamView-OneBeam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-OneBeam@2x.png"; sourceTree = "<group>"; };
-		610DC5D71A08322800BEEBFD /* BeamView-OneBeamThreeNotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-OneBeamThreeNotes.png"; sourceTree = "<group>"; };
-		610DC5D81A08322800BEEBFD /* BeamView-OneBeamThreeNotes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-OneBeamThreeNotes@2x.png"; sourceTree = "<group>"; };
-		610DC5D91A08322800BEEBFD /* BeamView-TwoBeams.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-TwoBeams.png"; sourceTree = "<group>"; };
-		610DC5DA1A08322800BEEBFD /* BeamView-TwoBeams@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-TwoBeams@2x.png"; sourceTree = "<group>"; };
-		610DC5DB1A08322800BEEBFD /* ChordView-128th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-128th.png"; sourceTree = "<group>"; };
-		610DC5DC1A08322800BEEBFD /* ChordView-128th@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-128th@2x.png"; sourceTree = "<group>"; };
-		610DC5DD1A08322800BEEBFD /* ChordView-Accent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Accent.png"; sourceTree = "<group>"; };
-		610DC5DE1A08322800BEEBFD /* ChordView-Accent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Accent@2x.png"; sourceTree = "<group>"; };
-		610DC5DF1A08322800BEEBFD /* ChordView-Accidental.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Accidental.png"; sourceTree = "<group>"; };
-		610DC5E01A08322800BEEBFD /* ChordView-Accidental@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Accidental@2x.png"; sourceTree = "<group>"; };
-		610DC5E11A08322800BEEBFD /* ChordView-DisplaceSideways.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-DisplaceSideways.png"; sourceTree = "<group>"; };
-		610DC5E21A08322800BEEBFD /* ChordView-DisplaceSideways@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-DisplaceSideways@2x.png"; sourceTree = "<group>"; };
-		610DC5E31A08322800BEEBFD /* ChordView-Dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Dot.png"; sourceTree = "<group>"; };
-		610DC5E41A08322800BEEBFD /* ChordView-Dot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Dot@2x.png"; sourceTree = "<group>"; };
-		610DC5E51A08322800BEEBFD /* ChordView-Eighth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Eighth.png"; sourceTree = "<group>"; };
-		610DC5E61A08322800BEEBFD /* ChordView-Eighth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Eighth@2x.png"; sourceTree = "<group>"; };
-		610DC5E71A08322800BEEBFD /* ChordView-EighthDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-EighthDown.png"; sourceTree = "<group>"; };
-		610DC5E81A08322800BEEBFD /* ChordView-EighthDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-EighthDown@2x.png"; sourceTree = "<group>"; };
-		610DC5E91A08322800BEEBFD /* ChordView-Quarter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Quarter.png"; sourceTree = "<group>"; };
-		610DC5EA1A08322800BEEBFD /* ChordView-Quarter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Quarter@2x.png"; sourceTree = "<group>"; };
-		610DC5EB1A08322800BEEBFD /* ChordView-Whole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Whole.png"; sourceTree = "<group>"; };
-		610DC5EC1A08322800BEEBFD /* ChordView-Whole@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Whole@2x.png"; sourceTree = "<group>"; };
-		610DC5ED1A08322800BEEBFD /* ClefView-Treble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClefView-Treble.png"; sourceTree = "<group>"; };
-		610DC5EE1A08322800BEEBFD /* ClefView-Treble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClefView-Treble@2x.png"; sourceTree = "<group>"; };
-		610DC5EF1A08322800BEEBFD /* CollectionViewScoreLayout-Endings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Endings.png"; sourceTree = "<group>"; };
-		610DC5F01A08322800BEEBFD /* CollectionViewScoreLayout-Endings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Endings@2x.png"; sourceTree = "<group>"; };
-		610DC5F11A08322800BEEBFD /* CollectionViewScoreLayout-Slurs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Slurs.png"; sourceTree = "<group>"; };
-		610DC5F21A08322800BEEBFD /* CollectionViewScoreLayout-Slurs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Slurs@2x.png"; sourceTree = "<group>"; };
-		610DC5F31A08322800BEEBFD /* Endings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Endings.xml; sourceTree = "<group>"; };
-		610DC5F41A08322800BEEBFD /* MeasureView-Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureView-Empty.png"; sourceTree = "<group>"; };
-		610DC5F51A08322800BEEBFD /* MeasureView-Empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureView-Empty@2x.png"; sourceTree = "<group>"; };
-		610DC5F61A08322800BEEBFD /* MeasureView-WithClefs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureView-WithClefs.png"; sourceTree = "<group>"; };
-		610DC5F71A08322800BEEBFD /* MeasureView-WithClefs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureView-WithClefs@2x.png"; sourceTree = "<group>"; };
-		610DC5F81A08322800BEEBFD /* MeasureView-WithClefsAndTimeSignatures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureView-WithClefsAndTimeSignatures.png"; sourceTree = "<group>"; };
-		610DC5F91A08322800BEEBFD /* MeasureView-WithClefsAndTimeSignatures@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureView-WithClefsAndTimeSignatures@2x.png"; sourceTree = "<group>"; };
-		610DC5FA1A08322800BEEBFD /* MeasureView-WithTimeSignatures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureView-WithTimeSignatures.png"; sourceTree = "<group>"; };
-		610DC5FB1A08322800BEEBFD /* MeasureView-WithTimeSignatures@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureView-WithTimeSignatures@2x.png"; sourceTree = "<group>"; };
-		610DC5FC1A08322800BEEBFD /* NoteView-Whole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoteView-Whole.png"; sourceTree = "<group>"; };
-		610DC5FD1A08322800BEEBFD /* NoteView-Whole@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoteView-Whole@2x.png"; sourceTree = "<group>"; };
-		610DC5FE1A08322800BEEBFD /* Slurs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Slurs.xml; sourceTree = "<group>"; };
-		610DC5FF1A08322800BEEBFD /* TieView-1000Tie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-1000Tie.png"; sourceTree = "<group>"; };
-		610DC6001A08322800BEEBFD /* TieView-1000Tie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-1000Tie@2x.png"; sourceTree = "<group>"; };
-		610DC6011A08322800BEEBFD /* TieView-100Tie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-100Tie.png"; sourceTree = "<group>"; };
-		610DC6021A08322800BEEBFD /* TieView-100Tie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-100Tie@2x.png"; sourceTree = "<group>"; };
-		610DC6031A08322800BEEBFD /* TieView-18Tie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-18Tie.png"; sourceTree = "<group>"; };
-		610DC6041A08322800BEEBFD /* TieView-18Tie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-18Tie@2x.png"; sourceTree = "<group>"; };
-		610DC6051A08322800BEEBFD /* TieView-50Tie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-50Tie.png"; sourceTree = "<group>"; };
-		610DC6061A08322800BEEBFD /* TieView-50Tie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-50Tie@2x.png"; sourceTree = "<group>"; };
-		610DC6071A08322800BEEBFD /* TieView-50TieBelow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-50TieBelow.png"; sourceTree = "<group>"; };
-		610DC6081A08322800BEEBFD /* TieView-50TieBelow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-50TieBelow@2x.png"; sourceTree = "<group>"; };
-		610DC6091A08322800BEEBFD /* TieView-AngledDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledDown.png"; sourceTree = "<group>"; };
-		610DC60A1A08322800BEEBFD /* TieView-AngledDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledDown@2x.png"; sourceTree = "<group>"; };
-		610DC60B1A08322800BEEBFD /* TieView-AngledDownBelow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledDownBelow.png"; sourceTree = "<group>"; };
-		610DC60C1A08322800BEEBFD /* TieView-AngledDownBelow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledDownBelow@2x.png"; sourceTree = "<group>"; };
-		610DC60D1A08322800BEEBFD /* TieView-AngledUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledUp.png"; sourceTree = "<group>"; };
-		610DC60E1A08322800BEEBFD /* TieView-AngledUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledUp@2x.png"; sourceTree = "<group>"; };
-		610DC60F1A08322800BEEBFD /* TieView-AngledUpBelow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledUpBelow.png"; sourceTree = "<group>"; };
-		610DC6101A08322800BEEBFD /* TieView-AngledUpBelow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledUpBelow@2x.png"; sourceTree = "<group>"; };
-		610DC6111A08322800BEEBFD /* TimeSignatureView-CommonTime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureView-CommonTime.png"; sourceTree = "<group>"; };
-		610DC6121A08322800BEEBFD /* TimeSignatureView-CommonTime@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureView-CommonTime@2x.png"; sourceTree = "<group>"; };
-		610DC6131A08322800BEEBFD /* TimeSignatureView-VerticalDigits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureView-VerticalDigits.png"; sourceTree = "<group>"; };
-		610DC6141A08322800BEEBFD /* TimeSignatureView-VerticalDigits@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureView-VerticalDigits@2x.png"; sourceTree = "<group>"; };
 		610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKClefLayerTests.mm; sourceTree = "<group>"; };
 		610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKMeasureLayerTests.mm; sourceTree = "<group>"; };
 		610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKBeamLayerTests.mm; sourceTree = "<group>"; };
@@ -753,40 +803,6 @@
 		610DCE711A094A0E00BEEBFD /* SpanCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpanCollection.h; sourceTree = "<group>"; };
 		610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpanFactory.cpp; sourceTree = "<group>"; };
 		610DCE731A094A0E00BEEBFD /* SpanFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpanFactory.h; sourceTree = "<group>"; };
-		610DCF131A097FAB00BEEBFD /* BeamView-AccidentalInBeamedSet@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-AccidentalInBeamedSet@3x.png"; sourceTree = "<group>"; };
-		610DCF141A097FAB00BEEBFD /* BeamView-BackwardHook@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-BackwardHook@3x.png"; sourceTree = "<group>"; };
-		610DCF151A097FAB00BEEBFD /* BeamView-ForwardHook@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-ForwardHook@3x.png"; sourceTree = "<group>"; };
-		610DCF161A097FAB00BEEBFD /* BeamView-FourBeams@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-FourBeams@3x.png"; sourceTree = "<group>"; };
-		610DCF171A097FAB00BEEBFD /* BeamView-OneBeam@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-OneBeam@3x.png"; sourceTree = "<group>"; };
-		610DCF181A097FAB00BEEBFD /* BeamView-OneBeamThreeNotes@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-OneBeamThreeNotes@3x.png"; sourceTree = "<group>"; };
-		610DCF191A097FAB00BEEBFD /* BeamView-TwoBeams@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamView-TwoBeams@3x.png"; sourceTree = "<group>"; };
-		610DCF1A1A097FAB00BEEBFD /* ChordView-128th@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-128th@3x.png"; sourceTree = "<group>"; };
-		610DCF1B1A097FAB00BEEBFD /* ChordView-Accent@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Accent@3x.png"; sourceTree = "<group>"; };
-		610DCF1C1A097FAB00BEEBFD /* ChordView-Accidental@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Accidental@3x.png"; sourceTree = "<group>"; };
-		610DCF1D1A097FAB00BEEBFD /* ChordView-DisplaceSideways@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-DisplaceSideways@3x.png"; sourceTree = "<group>"; };
-		610DCF1E1A097FAB00BEEBFD /* ChordView-Dot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Dot@3x.png"; sourceTree = "<group>"; };
-		610DCF1F1A097FAB00BEEBFD /* ChordView-Eighth@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Eighth@3x.png"; sourceTree = "<group>"; };
-		610DCF201A097FAB00BEEBFD /* ChordView-EighthDown@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-EighthDown@3x.png"; sourceTree = "<group>"; };
-		610DCF211A097FAB00BEEBFD /* ChordView-Quarter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Quarter@3x.png"; sourceTree = "<group>"; };
-		610DCF221A097FAB00BEEBFD /* ChordView-Whole@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordView-Whole@3x.png"; sourceTree = "<group>"; };
-		610DCF231A097FAB00BEEBFD /* ClefView-Treble@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClefView-Treble@3x.png"; sourceTree = "<group>"; };
-		610DCF241A097FAB00BEEBFD /* CollectionViewScoreLayout-Endings@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Endings@3x.png"; sourceTree = "<group>"; };
-		610DCF251A097FAB00BEEBFD /* CollectionViewScoreLayout-Slurs@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Slurs@3x.png"; sourceTree = "<group>"; };
-		610DCF261A097FAB00BEEBFD /* MeasureView-Empty@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureView-Empty@3x.png"; sourceTree = "<group>"; };
-		610DCF271A097FAB00BEEBFD /* MeasureView-WithClefs@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureView-WithClefs@3x.png"; sourceTree = "<group>"; };
-		610DCF281A097FAB00BEEBFD /* MeasureView-WithClefsAndTimeSignatures@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureView-WithClefsAndTimeSignatures@3x.png"; sourceTree = "<group>"; };
-		610DCF291A097FAB00BEEBFD /* MeasureView-WithTimeSignatures@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureView-WithTimeSignatures@3x.png"; sourceTree = "<group>"; };
-		610DCF2A1A097FAB00BEEBFD /* TieView-18Tie@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-18Tie@3x.png"; sourceTree = "<group>"; };
-		610DCF2B1A097FAB00BEEBFD /* TieView-50Tie@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-50Tie@3x.png"; sourceTree = "<group>"; };
-		610DCF2C1A097FAB00BEEBFD /* TieView-50TieBelow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-50TieBelow@3x.png"; sourceTree = "<group>"; };
-		610DCF2D1A097FAB00BEEBFD /* TieView-100Tie@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-100Tie@3x.png"; sourceTree = "<group>"; };
-		610DCF2E1A097FAB00BEEBFD /* TieView-1000Tie@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-1000Tie@3x.png"; sourceTree = "<group>"; };
-		610DCF2F1A097FAB00BEEBFD /* TieView-AngledDown@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledDown@3x.png"; sourceTree = "<group>"; };
-		610DCF301A097FAB00BEEBFD /* TieView-AngledDownBelow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledDownBelow@3x.png"; sourceTree = "<group>"; };
-		610DCF311A097FAB00BEEBFD /* TieView-AngledUp@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledUp@3x.png"; sourceTree = "<group>"; };
-		610DCF321A097FAB00BEEBFD /* TieView-AngledUpBelow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieView-AngledUpBelow@3x.png"; sourceTree = "<group>"; };
-		610DCF331A097FAB00BEEBFD /* TimeSignatureView-CommonTime@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureView-CommonTime@3x.png"; sourceTree = "<group>"; };
-		610DCF341A097FAB00BEEBFD /* TimeSignatureView-VerticalDigits@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureView-VerticalDigits@3x.png"; sourceTree = "<group>"; };
 		610DCF5C1A09A08E00BEEBFD /* VMKScoreElementLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKScoreElementLayer.h; sourceTree = "<group>"; };
 		610DCF5D1A09A08E00BEEBFD /* VMKScoreElementLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKScoreElementLayer.mm; sourceTree = "<group>"; };
 		610DCF601A09A46900BEEBFD /* VMKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VMKColor.h; sourceTree = "<group>"; };
@@ -869,6 +885,120 @@
 		616C1B8C1A0C4B860020EAA8 /* VMKOrnamentLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKOrnamentLayer.mm; sourceTree = "<group>"; };
 		616C1B911A0C4D790020EAA8 /* VMKOrnamentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKOrnamentView.h; sourceTree = "<group>"; };
 		616C1B921A0C4D790020EAA8 /* VMKOrnamentView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKOrnamentView.mm; sourceTree = "<group>"; };
+		616C1C191A0D61ED0020EAA8 /* VMKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKImage.m; sourceTree = "<group>"; };
+		616C1C1C1A0D81550020EAA8 /* ClefLayer-Treble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClefLayer-Treble.png"; sourceTree = "<group>"; };
+		616C1C1D1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureLayer-CommonTime.png"; sourceTree = "<group>"; };
+		616C1C1E1A0D81550020EAA8 /* ClefLayer-Treble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClefLayer-Treble@2x.png"; sourceTree = "<group>"; };
+		616C1C1F1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureLayer-CommonTime@2x.png"; sourceTree = "<group>"; };
+		616C1C201A0D81550020EAA8 /* NoteLayer-Whole@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoteLayer-Whole@2x.png"; sourceTree = "<group>"; };
+		616C1C211A0D81550020EAA8 /* NoteLayer-Whole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoteLayer-Whole.png"; sourceTree = "<group>"; };
+		616C1C221A0D81550020EAA8 /* TieLayer-18Tie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-18Tie.png"; sourceTree = "<group>"; };
+		616C1C231A0D81550020EAA8 /* TieLayer-18Tie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-18Tie@2x.png"; sourceTree = "<group>"; };
+		616C1C241A0D81550020EAA8 /* TieLayer-50Tie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-50Tie.png"; sourceTree = "<group>"; };
+		616C1C251A0D81550020EAA8 /* TieLayer-50Tie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-50Tie@2x.png"; sourceTree = "<group>"; };
+		616C1C261A0D81550020EAA8 /* TieLayer-50TieBelow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-50TieBelow.png"; sourceTree = "<group>"; };
+		616C1C271A0D81550020EAA8 /* TieLayer-50TieBelow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-50TieBelow@2x.png"; sourceTree = "<group>"; };
+		616C1C281A0D81550020EAA8 /* TieLayer-100Tie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-100Tie.png"; sourceTree = "<group>"; };
+		616C1C291A0D81550020EAA8 /* TieLayer-100Tie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-100Tie@2x.png"; sourceTree = "<group>"; };
+		616C1C2A1A0D81550020EAA8 /* TieLayer-1000Tie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-1000Tie.png"; sourceTree = "<group>"; };
+		616C1C2B1A0D81550020EAA8 /* TieLayer-1000Tie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-1000Tie@2x.png"; sourceTree = "<group>"; };
+		616C1C2C1A0D81550020EAA8 /* TieLayer-AngledDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-AngledDown.png"; sourceTree = "<group>"; };
+		616C1C2D1A0D81550020EAA8 /* TieLayer-AngledDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-AngledDown@2x.png"; sourceTree = "<group>"; };
+		616C1C2E1A0D81550020EAA8 /* TieLayer-AngledDownBelow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-AngledDownBelow.png"; sourceTree = "<group>"; };
+		616C1C2F1A0D81550020EAA8 /* TieLayer-AngledDownBelow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-AngledDownBelow@2x.png"; sourceTree = "<group>"; };
+		616C1C301A0D81550020EAA8 /* TieLayer-AngledUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-AngledUp.png"; sourceTree = "<group>"; };
+		616C1C311A0D81550020EAA8 /* TieLayer-AngledUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-AngledUp@2x.png"; sourceTree = "<group>"; };
+		616C1C321A0D81550020EAA8 /* TieLayer-AngledUpBelow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-AngledUpBelow.png"; sourceTree = "<group>"; };
+		616C1C331A0D81550020EAA8 /* TieLayer-AngledUpBelow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-AngledUpBelow@2x.png"; sourceTree = "<group>"; };
+		616C1C341A0D81550020EAA8 /* ChordLayer-EighthDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-EighthDown.png"; sourceTree = "<group>"; };
+		616C1C351A0D81550020EAA8 /* ChordLayer-Whole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Whole.png"; sourceTree = "<group>"; };
+		616C1C361A0D81550020EAA8 /* ChordLayer-EighthDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-EighthDown@2x.png"; sourceTree = "<group>"; };
+		616C1C371A0D81550020EAA8 /* ChordLayer-Whole@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Whole@2x.png"; sourceTree = "<group>"; };
+		616C1C381A0D81550020EAA8 /* ChordLayer-Accidental.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Accidental.png"; sourceTree = "<group>"; };
+		616C1C391A0D81550020EAA8 /* ChordLayer-Accidental@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Accidental@2x.png"; sourceTree = "<group>"; };
+		616C1C3A1A0D81550020EAA8 /* ChordLayer-Quarter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Quarter.png"; sourceTree = "<group>"; };
+		616C1C3B1A0D81550020EAA8 /* ChordLayer-Quarter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Quarter@2x.png"; sourceTree = "<group>"; };
+		616C1C3C1A0D81550020EAA8 /* ChordLayer-128th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-128th.png"; sourceTree = "<group>"; };
+		616C1C3D1A0D81550020EAA8 /* ChordLayer-128th@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-128th@2x.png"; sourceTree = "<group>"; };
+		616C1C3E1A0D81550020EAA8 /* ChordLayer-DisplaceSideways.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-DisplaceSideways.png"; sourceTree = "<group>"; };
+		616C1C3F1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-DisplaceSideways@2x.png"; sourceTree = "<group>"; };
+		616C1C401A0D81550020EAA8 /* ChordLayer-Dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Dot.png"; sourceTree = "<group>"; };
+		616C1C411A0D81550020EAA8 /* ChordLayer-Dot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Dot@2x.png"; sourceTree = "<group>"; };
+		616C1C421A0D81550020EAA8 /* ChordLayer-Eighth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Eighth.png"; sourceTree = "<group>"; };
+		616C1C431A0D81550020EAA8 /* ChordLayer-Eighth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Eighth@2x.png"; sourceTree = "<group>"; };
+		616C1C441A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureLayer-VerticalDigits.png"; sourceTree = "<group>"; };
+		616C1C451A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureLayer-VerticalDigits@2x.png"; sourceTree = "<group>"; };
+		616C1C461A0D81550020EAA8 /* Slurs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Slurs.xml; sourceTree = "<group>"; };
+		616C1C471A0D81550020EAA8 /* ChordLayer-Accent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Accent@2x.png"; sourceTree = "<group>"; };
+		616C1C481A0D81550020EAA8 /* ChordLayer-Accent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Accent.png"; sourceTree = "<group>"; };
+		616C1C491A0D81550020EAA8 /* Endings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Endings.xml; sourceTree = "<group>"; };
+		616C1C4A1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-AccidentalInBeamedSet.png"; sourceTree = "<group>"; };
+		616C1C4B1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-AccidentalInBeamedSet@2x.png"; sourceTree = "<group>"; };
+		616C1C4C1A0D81550020EAA8 /* BeamLayer-BackwardHook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-BackwardHook.png"; sourceTree = "<group>"; };
+		616C1C4D1A0D81550020EAA8 /* BeamLayer-BackwardHook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-BackwardHook@2x.png"; sourceTree = "<group>"; };
+		616C1C4E1A0D81550020EAA8 /* BeamLayer-ForwardHook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-ForwardHook.png"; sourceTree = "<group>"; };
+		616C1C4F1A0D81550020EAA8 /* BeamLayer-ForwardHook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-ForwardHook@2x.png"; sourceTree = "<group>"; };
+		616C1C501A0D81550020EAA8 /* BeamLayer-FourBeams.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-FourBeams.png"; sourceTree = "<group>"; };
+		616C1C511A0D81550020EAA8 /* BeamLayer-FourBeams@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-FourBeams@2x.png"; sourceTree = "<group>"; };
+		616C1C521A0D81550020EAA8 /* BeamLayer-OneBeam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-OneBeam.png"; sourceTree = "<group>"; };
+		616C1C531A0D81550020EAA8 /* BeamLayer-OneBeam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-OneBeam@2x.png"; sourceTree = "<group>"; };
+		616C1C541A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-OneBeamThreeNotes.png"; sourceTree = "<group>"; };
+		616C1C551A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-OneBeamThreeNotes@2x.png"; sourceTree = "<group>"; };
+		616C1C561A0D81550020EAA8 /* BeamLayer-TwoBeams.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-TwoBeams.png"; sourceTree = "<group>"; };
+		616C1C571A0D81550020EAA8 /* BeamLayer-TwoBeams@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-TwoBeams@2x.png"; sourceTree = "<group>"; };
+		616C1C581A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionLayerScoreLayout-Endings.png"; sourceTree = "<group>"; };
+		616C1C591A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionLayerScoreLayout-Endings@2x.png"; sourceTree = "<group>"; };
+		616C1C5A1A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionLayerScoreLayout-Slurs.png"; sourceTree = "<group>"; };
+		616C1C5B1A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionLayerScoreLayout-Slurs@2x.png"; sourceTree = "<group>"; };
+		616C1C5C1A0D81550020EAA8 /* MeasureLayer-Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-Empty.png"; sourceTree = "<group>"; };
+		616C1C5D1A0D81550020EAA8 /* MeasureLayer-Empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-Empty@2x.png"; sourceTree = "<group>"; };
+		616C1C5E1A0D81550020EAA8 /* MeasureLayer-WithClefs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-WithClefs.png"; sourceTree = "<group>"; };
+		616C1C5F1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-WithClefs@2x.png"; sourceTree = "<group>"; };
+		616C1C601A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-WithClefsAndTimeSignatures.png"; sourceTree = "<group>"; };
+		616C1C611A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-WithClefsAndTimeSignatures@2x.png"; sourceTree = "<group>"; };
+		616C1C621A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-WithTimeSignatures.png"; sourceTree = "<group>"; };
+		616C1C631A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-WithTimeSignatures@2x.png"; sourceTree = "<group>"; };
+		616C1C641A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-AccidentalInBeamedSet@3x.png"; sourceTree = "<group>"; };
+		616C1C651A0D81550020EAA8 /* BeamLayer-BackwardHook@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-BackwardHook@3x.png"; sourceTree = "<group>"; };
+		616C1C661A0D81550020EAA8 /* BeamLayer-ForwardHook@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-ForwardHook@3x.png"; sourceTree = "<group>"; };
+		616C1C671A0D81550020EAA8 /* BeamLayer-FourBeams@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-FourBeams@3x.png"; sourceTree = "<group>"; };
+		616C1C681A0D81550020EAA8 /* BeamLayer-OneBeam@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-OneBeam@3x.png"; sourceTree = "<group>"; };
+		616C1C691A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-OneBeamThreeNotes@3x.png"; sourceTree = "<group>"; };
+		616C1C6A1A0D81550020EAA8 /* BeamLayer-TwoBeams@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeamLayer-TwoBeams@3x.png"; sourceTree = "<group>"; };
+		616C1C6B1A0D81550020EAA8 /* ChordLayer-128th@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-128th@3x.png"; sourceTree = "<group>"; };
+		616C1C6C1A0D81550020EAA8 /* ChordLayer-Accent@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Accent@3x.png"; sourceTree = "<group>"; };
+		616C1C6D1A0D81550020EAA8 /* ChordLayer-Accidental@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Accidental@3x.png"; sourceTree = "<group>"; };
+		616C1C6E1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-DisplaceSideways@3x.png"; sourceTree = "<group>"; };
+		616C1C6F1A0D81550020EAA8 /* ChordLayer-Dot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Dot@3x.png"; sourceTree = "<group>"; };
+		616C1C701A0D81550020EAA8 /* ChordLayer-Eighth@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Eighth@3x.png"; sourceTree = "<group>"; };
+		616C1C711A0D81550020EAA8 /* ChordLayer-EighthDown@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-EighthDown@3x.png"; sourceTree = "<group>"; };
+		616C1C721A0D81550020EAA8 /* ChordLayer-Quarter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Quarter@3x.png"; sourceTree = "<group>"; };
+		616C1C731A0D81550020EAA8 /* ChordLayer-Whole@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChordLayer-Whole@3x.png"; sourceTree = "<group>"; };
+		616C1C741A0D81550020EAA8 /* ClefLayer-Treble@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClefLayer-Treble@3x.png"; sourceTree = "<group>"; };
+		616C1C751A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionLayerScoreLayout-Endings@3x.png"; sourceTree = "<group>"; };
+		616C1C761A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionLayerScoreLayout-Slurs@3x.png"; sourceTree = "<group>"; };
+		616C1C771A0D81550020EAA8 /* MeasureLayer-Empty@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-Empty@3x.png"; sourceTree = "<group>"; };
+		616C1C781A0D81550020EAA8 /* MeasureLayer-WithClefs@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-WithClefs@3x.png"; sourceTree = "<group>"; };
+		616C1C791A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-WithClefsAndTimeSignatures@3x.png"; sourceTree = "<group>"; };
+		616C1C7A1A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-WithTimeSignatures@3x.png"; sourceTree = "<group>"; };
+		616C1C7B1A0D81550020EAA8 /* TieLayer-18Tie@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-18Tie@3x.png"; sourceTree = "<group>"; };
+		616C1C7C1A0D81550020EAA8 /* TieLayer-50Tie@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-50Tie@3x.png"; sourceTree = "<group>"; };
+		616C1C7D1A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-50TieBelow@3x.png"; sourceTree = "<group>"; };
+		616C1C7E1A0D81550020EAA8 /* TieLayer-100Tie@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-100Tie@3x.png"; sourceTree = "<group>"; };
+		616C1C7F1A0D81550020EAA8 /* TieLayer-1000Tie@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-1000Tie@3x.png"; sourceTree = "<group>"; };
+		616C1C801A0D81550020EAA8 /* TieLayer-AngledDown@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-AngledDown@3x.png"; sourceTree = "<group>"; };
+		616C1C811A0D81550020EAA8 /* TieLayer-AngledDownBelow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-AngledDownBelow@3x.png"; sourceTree = "<group>"; };
+		616C1C821A0D81550020EAA8 /* TieLayer-AngledUp@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-AngledUp@3x.png"; sourceTree = "<group>"; };
+		616C1C831A0D81550020EAA8 /* TieLayer-AngledUpBelow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-AngledUpBelow@3x.png"; sourceTree = "<group>"; };
+		616C1C841A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureLayer-CommonTime@3x.png"; sourceTree = "<group>"; };
+		616C1C851A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimeSignatureLayer-VerticalDigits@3x.png"; sourceTree = "<group>"; };
+		616C1D611A0D88930020EAA8 /* VMKDirectionLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKDirectionLayerTests.mm; sourceTree = "<group>"; };
+		616C1D641A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DirectionLayer-Dyanmics@2x.png"; sourceTree = "<group>"; };
+		616C1D651A0D8D5E0020EAA8 /* DirectionLayer-Words@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DirectionLayer-Words@2x.png"; sourceTree = "<group>"; };
+		616C1D661A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DirectionLayer-Dyanmics.png"; sourceTree = "<group>"; };
+		616C1D671A0D8D5E0020EAA8 /* DirectionLayer-Words.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DirectionLayer-Words.png"; sourceTree = "<group>"; };
+		616C1D681A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DirectionLayer-Dyanmics@3x.png"; sourceTree = "<group>"; };
+		616C1D691A0D8D5E0020EAA8 /* DirectionLayer-Words@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DirectionLayer-Words@3x.png"; sourceTree = "<group>"; };
 		6186414F1A09B0B900FAE9C9 /* VMKBarlineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKBarlineLayer.h; sourceTree = "<group>"; };
 		618641501A09B0B900FAE9C9 /* VMKBarlineLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKBarlineLayer.mm; sourceTree = "<group>"; };
 		618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKBeamLayer.h; sourceTree = "<group>"; };
@@ -955,6 +1085,7 @@
 				610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */,
 				610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */,
 				610DC6181A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm */,
+				616C1D611A0D88930020EAA8 /* VMKDirectionLayerTests.mm */,
 				610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */,
 				610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */,
 				610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */,
@@ -973,112 +1104,118 @@
 		610DC5CC1A08322800BEEBFD /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				610DC5CD1A08322800BEEBFD /* BeamView-AccidentalInBeamedSet.png */,
-				610DC5CE1A08322800BEEBFD /* BeamView-AccidentalInBeamedSet@2x.png */,
-				610DCF131A097FAB00BEEBFD /* BeamView-AccidentalInBeamedSet@3x.png */,
-				610DC5CF1A08322800BEEBFD /* BeamView-BackwardHook.png */,
-				610DC5D01A08322800BEEBFD /* BeamView-BackwardHook@2x.png */,
-				610DCF141A097FAB00BEEBFD /* BeamView-BackwardHook@3x.png */,
-				610DC5D11A08322800BEEBFD /* BeamView-ForwardHook.png */,
-				610DC5D21A08322800BEEBFD /* BeamView-ForwardHook@2x.png */,
-				610DCF151A097FAB00BEEBFD /* BeamView-ForwardHook@3x.png */,
-				610DC5D31A08322800BEEBFD /* BeamView-FourBeams.png */,
-				610DC5D41A08322800BEEBFD /* BeamView-FourBeams@2x.png */,
-				610DCF161A097FAB00BEEBFD /* BeamView-FourBeams@3x.png */,
-				610DC5D51A08322800BEEBFD /* BeamView-OneBeam.png */,
-				610DC5D61A08322800BEEBFD /* BeamView-OneBeam@2x.png */,
-				610DCF171A097FAB00BEEBFD /* BeamView-OneBeam@3x.png */,
-				610DC5D71A08322800BEEBFD /* BeamView-OneBeamThreeNotes.png */,
-				610DC5D81A08322800BEEBFD /* BeamView-OneBeamThreeNotes@2x.png */,
-				610DCF181A097FAB00BEEBFD /* BeamView-OneBeamThreeNotes@3x.png */,
-				610DC5D91A08322800BEEBFD /* BeamView-TwoBeams.png */,
-				610DC5DA1A08322800BEEBFD /* BeamView-TwoBeams@2x.png */,
-				610DCF191A097FAB00BEEBFD /* BeamView-TwoBeams@3x.png */,
-				610DC5DB1A08322800BEEBFD /* ChordView-128th.png */,
-				610DC5DC1A08322800BEEBFD /* ChordView-128th@2x.png */,
-				610DCF1A1A097FAB00BEEBFD /* ChordView-128th@3x.png */,
-				610DC5DD1A08322800BEEBFD /* ChordView-Accent.png */,
-				610DC5DE1A08322800BEEBFD /* ChordView-Accent@2x.png */,
-				610DCF1B1A097FAB00BEEBFD /* ChordView-Accent@3x.png */,
-				610DC5DF1A08322800BEEBFD /* ChordView-Accidental.png */,
-				610DC5E01A08322800BEEBFD /* ChordView-Accidental@2x.png */,
-				610DCF1C1A097FAB00BEEBFD /* ChordView-Accidental@3x.png */,
-				610DC5E11A08322800BEEBFD /* ChordView-DisplaceSideways.png */,
-				610DC5E21A08322800BEEBFD /* ChordView-DisplaceSideways@2x.png */,
-				610DCF1D1A097FAB00BEEBFD /* ChordView-DisplaceSideways@3x.png */,
-				610DC5E31A08322800BEEBFD /* ChordView-Dot.png */,
-				610DC5E41A08322800BEEBFD /* ChordView-Dot@2x.png */,
-				610DCF1E1A097FAB00BEEBFD /* ChordView-Dot@3x.png */,
-				610DC5E51A08322800BEEBFD /* ChordView-Eighth.png */,
-				610DC5E61A08322800BEEBFD /* ChordView-Eighth@2x.png */,
-				610DCF1F1A097FAB00BEEBFD /* ChordView-Eighth@3x.png */,
-				610DC5E71A08322800BEEBFD /* ChordView-EighthDown.png */,
-				610DC5E81A08322800BEEBFD /* ChordView-EighthDown@2x.png */,
-				610DCF201A097FAB00BEEBFD /* ChordView-EighthDown@3x.png */,
-				610DC5E91A08322800BEEBFD /* ChordView-Quarter.png */,
-				610DC5EA1A08322800BEEBFD /* ChordView-Quarter@2x.png */,
-				610DCF211A097FAB00BEEBFD /* ChordView-Quarter@3x.png */,
-				610DC5EB1A08322800BEEBFD /* ChordView-Whole.png */,
-				610DC5EC1A08322800BEEBFD /* ChordView-Whole@2x.png */,
-				610DCF221A097FAB00BEEBFD /* ChordView-Whole@3x.png */,
-				610DC5ED1A08322800BEEBFD /* ClefView-Treble.png */,
-				610DC5EE1A08322800BEEBFD /* ClefView-Treble@2x.png */,
-				610DCF231A097FAB00BEEBFD /* ClefView-Treble@3x.png */,
-				610DC5EF1A08322800BEEBFD /* CollectionViewScoreLayout-Endings.png */,
-				610DC5F01A08322800BEEBFD /* CollectionViewScoreLayout-Endings@2x.png */,
-				610DCF241A097FAB00BEEBFD /* CollectionViewScoreLayout-Endings@3x.png */,
-				610DC5F11A08322800BEEBFD /* CollectionViewScoreLayout-Slurs.png */,
-				610DC5F21A08322800BEEBFD /* CollectionViewScoreLayout-Slurs@2x.png */,
-				610DCF251A097FAB00BEEBFD /* CollectionViewScoreLayout-Slurs@3x.png */,
-				610DC5F31A08322800BEEBFD /* Endings.xml */,
-				610DC5F41A08322800BEEBFD /* MeasureView-Empty.png */,
-				610DC5F51A08322800BEEBFD /* MeasureView-Empty@2x.png */,
-				610DCF261A097FAB00BEEBFD /* MeasureView-Empty@3x.png */,
-				610DC5F61A08322800BEEBFD /* MeasureView-WithClefs.png */,
-				610DC5F71A08322800BEEBFD /* MeasureView-WithClefs@2x.png */,
-				610DCF271A097FAB00BEEBFD /* MeasureView-WithClefs@3x.png */,
-				610DC5F81A08322800BEEBFD /* MeasureView-WithClefsAndTimeSignatures.png */,
-				610DC5F91A08322800BEEBFD /* MeasureView-WithClefsAndTimeSignatures@2x.png */,
-				610DCF281A097FAB00BEEBFD /* MeasureView-WithClefsAndTimeSignatures@3x.png */,
-				610DC5FA1A08322800BEEBFD /* MeasureView-WithTimeSignatures.png */,
-				610DC5FB1A08322800BEEBFD /* MeasureView-WithTimeSignatures@2x.png */,
-				610DCF291A097FAB00BEEBFD /* MeasureView-WithTimeSignatures@3x.png */,
-				610DC5FC1A08322800BEEBFD /* NoteView-Whole.png */,
-				610DC5FD1A08322800BEEBFD /* NoteView-Whole@2x.png */,
-				610DC5FE1A08322800BEEBFD /* Slurs.xml */,
-				610DC6031A08322800BEEBFD /* TieView-18Tie.png */,
-				610DC6041A08322800BEEBFD /* TieView-18Tie@2x.png */,
-				610DCF2A1A097FAB00BEEBFD /* TieView-18Tie@3x.png */,
-				610DC6051A08322800BEEBFD /* TieView-50Tie.png */,
-				610DC6061A08322800BEEBFD /* TieView-50Tie@2x.png */,
-				610DCF2B1A097FAB00BEEBFD /* TieView-50Tie@3x.png */,
-				610DC6071A08322800BEEBFD /* TieView-50TieBelow.png */,
-				610DC6081A08322800BEEBFD /* TieView-50TieBelow@2x.png */,
-				610DCF2C1A097FAB00BEEBFD /* TieView-50TieBelow@3x.png */,
-				610DC6011A08322800BEEBFD /* TieView-100Tie.png */,
-				610DC6021A08322800BEEBFD /* TieView-100Tie@2x.png */,
-				610DCF2D1A097FAB00BEEBFD /* TieView-100Tie@3x.png */,
-				610DC5FF1A08322800BEEBFD /* TieView-1000Tie.png */,
-				610DC6001A08322800BEEBFD /* TieView-1000Tie@2x.png */,
-				610DCF2E1A097FAB00BEEBFD /* TieView-1000Tie@3x.png */,
-				610DC6091A08322800BEEBFD /* TieView-AngledDown.png */,
-				610DC60A1A08322800BEEBFD /* TieView-AngledDown@2x.png */,
-				610DCF2F1A097FAB00BEEBFD /* TieView-AngledDown@3x.png */,
-				610DC60B1A08322800BEEBFD /* TieView-AngledDownBelow.png */,
-				610DC60C1A08322800BEEBFD /* TieView-AngledDownBelow@2x.png */,
-				610DCF301A097FAB00BEEBFD /* TieView-AngledDownBelow@3x.png */,
-				610DC60D1A08322800BEEBFD /* TieView-AngledUp.png */,
-				610DC60E1A08322800BEEBFD /* TieView-AngledUp@2x.png */,
-				610DCF311A097FAB00BEEBFD /* TieView-AngledUp@3x.png */,
-				610DC60F1A08322800BEEBFD /* TieView-AngledUpBelow.png */,
-				610DC6101A08322800BEEBFD /* TieView-AngledUpBelow@2x.png */,
-				610DCF321A097FAB00BEEBFD /* TieView-AngledUpBelow@3x.png */,
-				610DC6111A08322800BEEBFD /* TimeSignatureView-CommonTime.png */,
-				610DC6121A08322800BEEBFD /* TimeSignatureView-CommonTime@2x.png */,
-				610DCF331A097FAB00BEEBFD /* TimeSignatureView-CommonTime@3x.png */,
-				610DC6131A08322800BEEBFD /* TimeSignatureView-VerticalDigits.png */,
-				610DC6141A08322800BEEBFD /* TimeSignatureView-VerticalDigits@2x.png */,
-				610DCF341A097FAB00BEEBFD /* TimeSignatureView-VerticalDigits@3x.png */,
+				616C1C4A1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png */,
+				616C1C4B1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png */,
+				616C1C641A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png */,
+				616C1C4C1A0D81550020EAA8 /* BeamLayer-BackwardHook.png */,
+				616C1C4D1A0D81550020EAA8 /* BeamLayer-BackwardHook@2x.png */,
+				616C1C651A0D81550020EAA8 /* BeamLayer-BackwardHook@3x.png */,
+				616C1C4E1A0D81550020EAA8 /* BeamLayer-ForwardHook.png */,
+				616C1C4F1A0D81550020EAA8 /* BeamLayer-ForwardHook@2x.png */,
+				616C1C661A0D81550020EAA8 /* BeamLayer-ForwardHook@3x.png */,
+				616C1C501A0D81550020EAA8 /* BeamLayer-FourBeams.png */,
+				616C1C511A0D81550020EAA8 /* BeamLayer-FourBeams@2x.png */,
+				616C1C671A0D81550020EAA8 /* BeamLayer-FourBeams@3x.png */,
+				616C1C521A0D81550020EAA8 /* BeamLayer-OneBeam.png */,
+				616C1C531A0D81550020EAA8 /* BeamLayer-OneBeam@2x.png */,
+				616C1C681A0D81550020EAA8 /* BeamLayer-OneBeam@3x.png */,
+				616C1C541A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes.png */,
+				616C1C551A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@2x.png */,
+				616C1C691A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@3x.png */,
+				616C1C561A0D81550020EAA8 /* BeamLayer-TwoBeams.png */,
+				616C1C571A0D81550020EAA8 /* BeamLayer-TwoBeams@2x.png */,
+				616C1C6A1A0D81550020EAA8 /* BeamLayer-TwoBeams@3x.png */,
+				616C1C3C1A0D81550020EAA8 /* ChordLayer-128th.png */,
+				616C1C3D1A0D81550020EAA8 /* ChordLayer-128th@2x.png */,
+				616C1C6B1A0D81550020EAA8 /* ChordLayer-128th@3x.png */,
+				616C1C481A0D81550020EAA8 /* ChordLayer-Accent.png */,
+				616C1C471A0D81550020EAA8 /* ChordLayer-Accent@2x.png */,
+				616C1C6C1A0D81550020EAA8 /* ChordLayer-Accent@3x.png */,
+				616C1C381A0D81550020EAA8 /* ChordLayer-Accidental.png */,
+				616C1C391A0D81550020EAA8 /* ChordLayer-Accidental@2x.png */,
+				616C1C6D1A0D81550020EAA8 /* ChordLayer-Accidental@3x.png */,
+				616C1C3E1A0D81550020EAA8 /* ChordLayer-DisplaceSideways.png */,
+				616C1C3F1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@2x.png */,
+				616C1C6E1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@3x.png */,
+				616C1C401A0D81550020EAA8 /* ChordLayer-Dot.png */,
+				616C1C411A0D81550020EAA8 /* ChordLayer-Dot@2x.png */,
+				616C1C6F1A0D81550020EAA8 /* ChordLayer-Dot@3x.png */,
+				616C1C421A0D81550020EAA8 /* ChordLayer-Eighth.png */,
+				616C1C431A0D81550020EAA8 /* ChordLayer-Eighth@2x.png */,
+				616C1C701A0D81550020EAA8 /* ChordLayer-Eighth@3x.png */,
+				616C1C341A0D81550020EAA8 /* ChordLayer-EighthDown.png */,
+				616C1C361A0D81550020EAA8 /* ChordLayer-EighthDown@2x.png */,
+				616C1C711A0D81550020EAA8 /* ChordLayer-EighthDown@3x.png */,
+				616C1C3A1A0D81550020EAA8 /* ChordLayer-Quarter.png */,
+				616C1C3B1A0D81550020EAA8 /* ChordLayer-Quarter@2x.png */,
+				616C1C721A0D81550020EAA8 /* ChordLayer-Quarter@3x.png */,
+				616C1C351A0D81550020EAA8 /* ChordLayer-Whole.png */,
+				616C1C371A0D81550020EAA8 /* ChordLayer-Whole@2x.png */,
+				616C1C731A0D81550020EAA8 /* ChordLayer-Whole@3x.png */,
+				616C1C1C1A0D81550020EAA8 /* ClefLayer-Treble.png */,
+				616C1C1E1A0D81550020EAA8 /* ClefLayer-Treble@2x.png */,
+				616C1C741A0D81550020EAA8 /* ClefLayer-Treble@3x.png */,
+				616C1C581A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings.png */,
+				616C1C591A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@2x.png */,
+				616C1C751A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@3x.png */,
+				616C1C5A1A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs.png */,
+				616C1C5B1A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@2x.png */,
+				616C1C761A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@3x.png */,
+				616C1D661A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics.png */,
+				616C1D641A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@2x.png */,
+				616C1D681A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@3x.png */,
+				616C1D671A0D8D5E0020EAA8 /* DirectionLayer-Words.png */,
+				616C1D651A0D8D5E0020EAA8 /* DirectionLayer-Words@2x.png */,
+				616C1D691A0D8D5E0020EAA8 /* DirectionLayer-Words@3x.png */,
+				616C1C491A0D81550020EAA8 /* Endings.xml */,
+				616C1C5C1A0D81550020EAA8 /* MeasureLayer-Empty.png */,
+				616C1C5D1A0D81550020EAA8 /* MeasureLayer-Empty@2x.png */,
+				616C1C771A0D81550020EAA8 /* MeasureLayer-Empty@3x.png */,
+				616C1C5E1A0D81550020EAA8 /* MeasureLayer-WithClefs.png */,
+				616C1C5F1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png */,
+				616C1C781A0D81550020EAA8 /* MeasureLayer-WithClefs@3x.png */,
+				616C1C601A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png */,
+				616C1C611A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png */,
+				616C1C791A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@3x.png */,
+				616C1C621A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures.png */,
+				616C1C631A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@2x.png */,
+				616C1C7A1A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png */,
+				616C1C211A0D81550020EAA8 /* NoteLayer-Whole.png */,
+				616C1C201A0D81550020EAA8 /* NoteLayer-Whole@2x.png */,
+				616C1C461A0D81550020EAA8 /* Slurs.xml */,
+				616C1C221A0D81550020EAA8 /* TieLayer-18Tie.png */,
+				616C1C231A0D81550020EAA8 /* TieLayer-18Tie@2x.png */,
+				616C1C7B1A0D81550020EAA8 /* TieLayer-18Tie@3x.png */,
+				616C1C241A0D81550020EAA8 /* TieLayer-50Tie.png */,
+				616C1C251A0D81550020EAA8 /* TieLayer-50Tie@2x.png */,
+				616C1C7C1A0D81550020EAA8 /* TieLayer-50Tie@3x.png */,
+				616C1C261A0D81550020EAA8 /* TieLayer-50TieBelow.png */,
+				616C1C271A0D81550020EAA8 /* TieLayer-50TieBelow@2x.png */,
+				616C1C7D1A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png */,
+				616C1C281A0D81550020EAA8 /* TieLayer-100Tie.png */,
+				616C1C291A0D81550020EAA8 /* TieLayer-100Tie@2x.png */,
+				616C1C7E1A0D81550020EAA8 /* TieLayer-100Tie@3x.png */,
+				616C1C2A1A0D81550020EAA8 /* TieLayer-1000Tie.png */,
+				616C1C2B1A0D81550020EAA8 /* TieLayer-1000Tie@2x.png */,
+				616C1C7F1A0D81550020EAA8 /* TieLayer-1000Tie@3x.png */,
+				616C1C2C1A0D81550020EAA8 /* TieLayer-AngledDown.png */,
+				616C1C2D1A0D81550020EAA8 /* TieLayer-AngledDown@2x.png */,
+				616C1C801A0D81550020EAA8 /* TieLayer-AngledDown@3x.png */,
+				616C1C2E1A0D81550020EAA8 /* TieLayer-AngledDownBelow.png */,
+				616C1C2F1A0D81550020EAA8 /* TieLayer-AngledDownBelow@2x.png */,
+				616C1C811A0D81550020EAA8 /* TieLayer-AngledDownBelow@3x.png */,
+				616C1C301A0D81550020EAA8 /* TieLayer-AngledUp.png */,
+				616C1C311A0D81550020EAA8 /* TieLayer-AngledUp@2x.png */,
+				616C1C821A0D81550020EAA8 /* TieLayer-AngledUp@3x.png */,
+				616C1C321A0D81550020EAA8 /* TieLayer-AngledUpBelow.png */,
+				616C1C331A0D81550020EAA8 /* TieLayer-AngledUpBelow@2x.png */,
+				616C1C831A0D81550020EAA8 /* TieLayer-AngledUpBelow@3x.png */,
+				616C1C1D1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png */,
+				616C1C1F1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@2x.png */,
+				616C1C841A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@3x.png */,
+				616C1C441A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits.png */,
+				616C1C451A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png */,
+				616C1C851A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -1439,6 +1576,7 @@
 				61402B291A08251D003AE7A7 /* MusicKit.h */,
 				610DCF601A09A46900BEEBFD /* VMKColor.h */,
 				616C1A971A0A9BDA0020EAA8 /* VMKImage.h */,
+				616C1C191A0D61ED0020EAA8 /* VMKImage.m */,
 				61402B6E1A082562003AE7A7 /* VMKGeometry.h */,
 				61402B6F1A082562003AE7A7 /* VMKGeometry.mm */,
 				61402B751A082562003AE7A7 /* VMKImageStore.h */,
@@ -1729,113 +1867,119 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610DCF4F1A097FAB00BEEBFD /* TieView-100Tie@3x.png in Resources */,
-				610DC6381A08322800BEEBFD /* ChordView-Eighth.png in Resources */,
-				610DC65F1A08322800BEEBFD /* TieView-AngledDownBelow@2x.png in Resources */,
-				610DCF3A1A097FAB00BEEBFD /* BeamView-OneBeamThreeNotes@3x.png in Resources */,
-				610DC6511A08322800BEEBFD /* Slurs.xml in Resources */,
-				610DCF451A097FAB00BEEBFD /* ClefView-Treble@3x.png in Resources */,
-				610DC6651A08322800BEEBFD /* TimeSignatureView-CommonTime@2x.png in Resources */,
-				610DC63D1A08322800BEEBFD /* ChordView-Quarter@2x.png in Resources */,
-				610DC6451A08322800BEEBFD /* CollectionViewScoreLayout-Slurs@2x.png in Resources */,
-				610DC6341A08322800BEEBFD /* ChordView-DisplaceSideways.png in Resources */,
-				610DCF491A097FAB00BEEBFD /* MeasureView-WithClefs@3x.png in Resources */,
-				610DCF4E1A097FAB00BEEBFD /* TieView-50TieBelow@3x.png in Resources */,
-				610DCF521A097FAB00BEEBFD /* TieView-AngledDownBelow@3x.png in Resources */,
-				610DCF421A097FAB00BEEBFD /* ChordView-EighthDown@3x.png in Resources */,
-				610DCF561A097FAB00BEEBFD /* TimeSignatureView-VerticalDigits@3x.png in Resources */,
-				610DC6261A08322800BEEBFD /* BeamView-FourBeams.png in Resources */,
-				610DCF3C1A097FAB00BEEBFD /* ChordView-128th@3x.png in Resources */,
-				610DC6211A08322800BEEBFD /* BeamView-AccidentalInBeamedSet@2x.png in Resources */,
-				610DC65D1A08322800BEEBFD /* TieView-AngledDown@2x.png in Resources */,
-				610DC6481A08322800BEEBFD /* MeasureView-Empty@2x.png in Resources */,
-				610DC6531A08322800BEEBFD /* TieView-1000Tie@2x.png in Resources */,
-				610DC6311A08322800BEEBFD /* ChordView-Accent@2x.png in Resources */,
-				610DC6621A08322800BEEBFD /* TieView-AngledUpBelow.png in Resources */,
-				610DCF401A097FAB00BEEBFD /* ChordView-Dot@3x.png in Resources */,
-				610DC6391A08322800BEEBFD /* ChordView-Eighth@2x.png in Resources */,
-				610DC65A1A08322800BEEBFD /* TieView-50TieBelow.png in Resources */,
-				610DCF381A097FAB00BEEBFD /* BeamView-FourBeams@3x.png in Resources */,
-				610DCF391A097FAB00BEEBFD /* BeamView-OneBeam@3x.png in Resources */,
-				610DCF3E1A097FAB00BEEBFD /* ChordView-Accidental@3x.png in Resources */,
-				610DC6541A08322800BEEBFD /* TieView-100Tie.png in Resources */,
-				610DC6561A08322800BEEBFD /* TieView-18Tie.png in Resources */,
-				610DCF4D1A097FAB00BEEBFD /* TieView-50Tie@3x.png in Resources */,
-				610DC65E1A08322800BEEBFD /* TieView-AngledDownBelow.png in Resources */,
-				610DCF3D1A097FAB00BEEBFD /* ChordView-Accent@3x.png in Resources */,
-				610DC6351A08322800BEEBFD /* ChordView-DisplaceSideways@2x.png in Resources */,
-				610DC6581A08322800BEEBFD /* TieView-50Tie.png in Resources */,
-				610DC6471A08322800BEEBFD /* MeasureView-Empty.png in Resources */,
-				610DC62F1A08322800BEEBFD /* ChordView-128th@2x.png in Resources */,
-				610DC6241A08322800BEEBFD /* BeamView-ForwardHook.png in Resources */,
-				610DCF371A097FAB00BEEBFD /* BeamView-ForwardHook@3x.png in Resources */,
-				610DCF531A097FAB00BEEBFD /* TieView-AngledUp@3x.png in Resources */,
-				610DC63F1A08322800BEEBFD /* ChordView-Whole@2x.png in Resources */,
-				610DC62A1A08322800BEEBFD /* BeamView-OneBeamThreeNotes.png in Resources */,
-				610DC6601A08322800BEEBFD /* TieView-AngledUp.png in Resources */,
-				610DC6441A08322800BEEBFD /* CollectionViewScoreLayout-Slurs.png in Resources */,
-				610DC6421A08322800BEEBFD /* CollectionViewScoreLayout-Endings.png in Resources */,
-				610DC64D1A08322800BEEBFD /* MeasureView-WithTimeSignatures.png in Resources */,
-				610DC6611A08322800BEEBFD /* TieView-AngledUp@2x.png in Resources */,
-				610DC64F1A08322800BEEBFD /* NoteView-Whole.png in Resources */,
-				610DC6591A08322800BEEBFD /* TieView-50Tie@2x.png in Resources */,
-				610DCF471A097FAB00BEEBFD /* CollectionViewScoreLayout-Slurs@3x.png in Resources */,
-				610DCF4B1A097FAB00BEEBFD /* MeasureView-WithTimeSignatures@3x.png in Resources */,
-				610DCF3B1A097FAB00BEEBFD /* BeamView-TwoBeams@3x.png in Resources */,
-				610DC6321A08322800BEEBFD /* ChordView-Accidental.png in Resources */,
-				610DC6551A08322800BEEBFD /* TieView-100Tie@2x.png in Resources */,
-				610DCF551A097FAB00BEEBFD /* TimeSignatureView-CommonTime@3x.png in Resources */,
-				610DCF441A097FAB00BEEBFD /* ChordView-Whole@3x.png in Resources */,
-				610DC6661A08322800BEEBFD /* TimeSignatureView-VerticalDigits.png in Resources */,
-				610DCF4C1A097FAB00BEEBFD /* TieView-18Tie@3x.png in Resources */,
-				610DCF461A097FAB00BEEBFD /* CollectionViewScoreLayout-Endings@3x.png in Resources */,
-				610DC6411A08322800BEEBFD /* ClefView-Treble@2x.png in Resources */,
-				610DC62E1A08322800BEEBFD /* ChordView-128th.png in Resources */,
-				610DC6641A08322800BEEBFD /* TimeSignatureView-CommonTime.png in Resources */,
-				610DC6631A08322800BEEBFD /* TieView-AngledUpBelow@2x.png in Resources */,
-				610DC6331A08322800BEEBFD /* ChordView-Accidental@2x.png in Resources */,
-				610DC64A1A08322800BEEBFD /* MeasureView-WithClefs@2x.png in Resources */,
-				610DCF541A097FAB00BEEBFD /* TieView-AngledUpBelow@3x.png in Resources */,
-				610DC63B1A08322800BEEBFD /* ChordView-EighthDown@2x.png in Resources */,
-				610DC6281A08322800BEEBFD /* BeamView-OneBeam.png in Resources */,
-				610DC6221A08322800BEEBFD /* BeamView-BackwardHook.png in Resources */,
-				610DC6251A08322800BEEBFD /* BeamView-ForwardHook@2x.png in Resources */,
-				610DCF511A097FAB00BEEBFD /* TieView-AngledDown@3x.png in Resources */,
-				610DC6461A08322800BEEBFD /* Endings.xml in Resources */,
-				610DC63E1A08322800BEEBFD /* ChordView-Whole.png in Resources */,
-				610DC64C1A08322800BEEBFD /* MeasureView-WithClefsAndTimeSignatures@2x.png in Resources */,
-				610DC6491A08322800BEEBFD /* MeasureView-WithClefs.png in Resources */,
-				610DC65B1A08322800BEEBFD /* TieView-50TieBelow@2x.png in Resources */,
-				610DCF481A097FAB00BEEBFD /* MeasureView-Empty@3x.png in Resources */,
-				610DCF351A097FAB00BEEBFD /* BeamView-AccidentalInBeamedSet@3x.png in Resources */,
-				610DC6291A08322800BEEBFD /* BeamView-OneBeam@2x.png in Resources */,
-				610DC6361A08322800BEEBFD /* ChordView-Dot.png in Resources */,
-				610DC64E1A08322800BEEBFD /* MeasureView-WithTimeSignatures@2x.png in Resources */,
-				610DC64B1A08322800BEEBFD /* MeasureView-WithClefsAndTimeSignatures.png in Resources */,
-				610DC6401A08322800BEEBFD /* ClefView-Treble.png in Resources */,
-				610DC6501A08322800BEEBFD /* NoteView-Whole@2x.png in Resources */,
-				610DC6371A08322800BEEBFD /* ChordView-Dot@2x.png in Resources */,
-				610DC6301A08322800BEEBFD /* ChordView-Accent.png in Resources */,
-				610DC6431A08322800BEEBFD /* CollectionViewScoreLayout-Endings@2x.png in Resources */,
-				610DC62D1A08322800BEEBFD /* BeamView-TwoBeams@2x.png in Resources */,
-				610DC63C1A08322800BEEBFD /* ChordView-Quarter.png in Resources */,
-				610DC65C1A08322800BEEBFD /* TieView-AngledDown.png in Resources */,
-				610DC6231A08322800BEEBFD /* BeamView-BackwardHook@2x.png in Resources */,
-				610DC62B1A08322800BEEBFD /* BeamView-OneBeamThreeNotes@2x.png in Resources */,
-				610DC62C1A08322800BEEBFD /* BeamView-TwoBeams.png in Resources */,
-				610DCF501A097FAB00BEEBFD /* TieView-1000Tie@3x.png in Resources */,
-				610DCF411A097FAB00BEEBFD /* ChordView-Eighth@3x.png in Resources */,
-				610DCF361A097FAB00BEEBFD /* BeamView-BackwardHook@3x.png in Resources */,
-				610DC6521A08322800BEEBFD /* TieView-1000Tie.png in Resources */,
-				610DC6671A08322800BEEBFD /* TimeSignatureView-VerticalDigits@2x.png in Resources */,
-				610DC6201A08322800BEEBFD /* BeamView-AccidentalInBeamedSet.png in Resources */,
-				610DCF431A097FAB00BEEBFD /* ChordView-Quarter@3x.png in Resources */,
-				610DC6271A08322800BEEBFD /* BeamView-FourBeams@2x.png in Resources */,
-				610DC6571A08322800BEEBFD /* TieView-18Tie@2x.png in Resources */,
+				616C1D581A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png in Resources */,
+				616C1CF01A0D81550020EAA8 /* BeamLayer-FourBeams@2x.png in Resources */,
+				616C1CBE1A0D81550020EAA8 /* ChordLayer-Accidental.png in Resources */,
+				616C1D141A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@2x.png in Resources */,
+				616C1D4A1A0D81550020EAA8 /* TieLayer-100Tie@3x.png in Resources */,
+				616C1CA81A0D81550020EAA8 /* TieLayer-AngledDown@2x.png in Resources */,
+				616C1D001A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@2x.png in Resources */,
+				616C1D6E1A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics.png in Resources */,
+				616C1CF61A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes.png in Resources */,
+				616C1CC41A0D81550020EAA8 /* ChordLayer-Quarter@2x.png in Resources */,
+				616C1C961A0D81550020EAA8 /* TieLayer-50Tie.png in Resources */,
+				616C1D221A0D81550020EAA8 /* BeamLayer-TwoBeams@3x.png in Resources */,
+				616C1CFC1A0D81550020EAA8 /* BeamLayer-TwoBeams@2x.png in Resources */,
+				616C1D041A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@2x.png in Resources */,
+				616C1CEC1A0D81550020EAA8 /* BeamLayer-ForwardHook@2x.png in Resources */,
+				616C1D2C1A0D81550020EAA8 /* ChordLayer-Dot@3x.png in Resources */,
+				616C1D3C1A0D81550020EAA8 /* MeasureLayer-Empty@3x.png in Resources */,
+				616C1D6C1A0D8D5E0020EAA8 /* DirectionLayer-Words@2x.png in Resources */,
+				616C1D741A0D8D5E0020EAA8 /* DirectionLayer-Words@3x.png in Resources */,
+				616C1D321A0D81550020EAA8 /* ChordLayer-Quarter@3x.png in Resources */,
+				616C1C981A0D81550020EAA8 /* TieLayer-50Tie@2x.png in Resources */,
+				616C1CD61A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits.png in Resources */,
+				616C1D4C1A0D81550020EAA8 /* TieLayer-1000Tie@3x.png in Resources */,
+				616C1CC01A0D81550020EAA8 /* ChordLayer-Accidental@2x.png in Resources */,
+				616C1C901A0D81550020EAA8 /* NoteLayer-Whole.png in Resources */,
+				616C1D1A1A0D81550020EAA8 /* BeamLayer-ForwardHook@3x.png in Resources */,
+				616C1D401A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@3x.png in Resources */,
+				616C1CDC1A0D81550020EAA8 /* ChordLayer-Accent@2x.png in Resources */,
+				616C1D161A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png in Resources */,
+				616C1CBA1A0D81550020EAA8 /* ChordLayer-EighthDown@2x.png in Resources */,
+				616C1D521A0D81550020EAA8 /* TieLayer-AngledUp@3x.png in Resources */,
+				616C1D2A1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@3x.png in Resources */,
+				616C1CDA1A0D81550020EAA8 /* Slurs.xml in Resources */,
+				616C1D1E1A0D81550020EAA8 /* BeamLayer-OneBeam@3x.png in Resources */,
+				616C1CC21A0D81550020EAA8 /* ChordLayer-Quarter.png in Resources */,
+				616C1CA01A0D81550020EAA8 /* TieLayer-100Tie@2x.png in Resources */,
+				616C1CCA1A0D81550020EAA8 /* ChordLayer-DisplaceSideways.png in Resources */,
+				616C1D101A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png in Resources */,
+				616C1CE41A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png in Resources */,
+				616C1D481A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png in Resources */,
+				616C1CE21A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png in Resources */,
+				616C1C8C1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@2x.png in Resources */,
+				616C1D2E1A0D81550020EAA8 /* ChordLayer-Eighth@3x.png in Resources */,
 				610DC67C1A08330700BEEBFD /* Symbols.xcassets in Resources */,
-				610DC63A1A08322800BEEBFD /* ChordView-EighthDown.png in Resources */,
-				610DCF4A1A097FAB00BEEBFD /* MeasureView-WithClefsAndTimeSignatures@3x.png in Resources */,
-				610DCF3F1A097FAB00BEEBFD /* ChordView-DisplaceSideways@3x.png in Resources */,
+				616C1D0E1A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png in Resources */,
+				616C1D061A0D81550020EAA8 /* MeasureLayer-Empty.png in Resources */,
+				616C1D701A0D8D5E0020EAA8 /* DirectionLayer-Words.png in Resources */,
+				616C1CC61A0D81550020EAA8 /* ChordLayer-128th.png in Resources */,
+				616C1D341A0D81550020EAA8 /* ChordLayer-Whole@3x.png in Resources */,
+				616C1D4E1A0D81550020EAA8 /* TieLayer-AngledDown@3x.png in Resources */,
+				616C1D441A0D81550020EAA8 /* TieLayer-18Tie@3x.png in Resources */,
+				616C1CA41A0D81550020EAA8 /* TieLayer-1000Tie@2x.png in Resources */,
+				616C1D0C1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png in Resources */,
+				616C1D301A0D81550020EAA8 /* ChordLayer-EighthDown@3x.png in Resources */,
+				616C1CBC1A0D81550020EAA8 /* ChordLayer-Whole@2x.png in Resources */,
+				616C1CF41A0D81550020EAA8 /* BeamLayer-OneBeam@2x.png in Resources */,
+				616C1CCC1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@2x.png in Resources */,
+				616C1D541A0D81550020EAA8 /* TieLayer-AngledUpBelow@3x.png in Resources */,
+				616C1D0A1A0D81550020EAA8 /* MeasureLayer-WithClefs.png in Resources */,
+				616C1CE61A0D81550020EAA8 /* BeamLayer-BackwardHook.png in Resources */,
+				616C1D421A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png in Resources */,
+				616C1CDE1A0D81550020EAA8 /* ChordLayer-Accent.png in Resources */,
+				616C1D361A0D81550020EAA8 /* ClefLayer-Treble@3x.png in Resources */,
+				616C1CD01A0D81550020EAA8 /* ChordLayer-Dot@2x.png in Resources */,
+				616C1CB41A0D81550020EAA8 /* TieLayer-AngledUpBelow@2x.png in Resources */,
+				616C1D021A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs.png in Resources */,
+				616C1D501A0D81550020EAA8 /* TieLayer-AngledDownBelow@3x.png in Resources */,
+				616C1CD41A0D81550020EAA8 /* ChordLayer-Eighth@2x.png in Resources */,
+				616C1CD21A0D81550020EAA8 /* ChordLayer-Eighth.png in Resources */,
+				616C1CA21A0D81550020EAA8 /* TieLayer-1000Tie.png in Resources */,
+				616C1CD81A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png in Resources */,
+				616C1C941A0D81550020EAA8 /* TieLayer-18Tie@2x.png in Resources */,
+				616C1CB21A0D81550020EAA8 /* TieLayer-AngledUpBelow.png in Resources */,
+				616C1D261A0D81550020EAA8 /* ChordLayer-Accent@3x.png in Resources */,
+				616C1C9C1A0D81550020EAA8 /* TieLayer-50TieBelow@2x.png in Resources */,
+				616C1CB01A0D81550020EAA8 /* TieLayer-AngledUp@2x.png in Resources */,
+				616C1CFE1A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings.png in Resources */,
+				616C1CFA1A0D81550020EAA8 /* BeamLayer-TwoBeams.png in Resources */,
+				616C1D6A1A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@2x.png in Resources */,
+				616C1C881A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png in Resources */,
+				616C1D241A0D81550020EAA8 /* ChordLayer-128th@3x.png in Resources */,
+				616C1D121A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures.png in Resources */,
+				616C1CF81A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@2x.png in Resources */,
+				616C1D3A1A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@3x.png in Resources */,
+				616C1C921A0D81550020EAA8 /* TieLayer-18Tie.png in Resources */,
+				616C1D1C1A0D81550020EAA8 /* BeamLayer-FourBeams@3x.png in Resources */,
+				616C1CE01A0D81550020EAA8 /* Endings.xml in Resources */,
+				616C1C9E1A0D81550020EAA8 /* TieLayer-100Tie.png in Resources */,
+				616C1C8A1A0D81550020EAA8 /* ClefLayer-Treble@2x.png in Resources */,
+				616C1CAA1A0D81550020EAA8 /* TieLayer-AngledDownBelow.png in Resources */,
+				616C1C8E1A0D81550020EAA8 /* NoteLayer-Whole@2x.png in Resources */,
+				616C1CEA1A0D81550020EAA8 /* BeamLayer-ForwardHook.png in Resources */,
+				616C1CA61A0D81550020EAA8 /* TieLayer-AngledDown.png in Resources */,
+				616C1D081A0D81550020EAA8 /* MeasureLayer-Empty@2x.png in Resources */,
+				616C1D181A0D81550020EAA8 /* BeamLayer-BackwardHook@3x.png in Resources */,
+				616C1CCE1A0D81550020EAA8 /* ChordLayer-Dot.png in Resources */,
+				616C1D3E1A0D81550020EAA8 /* MeasureLayer-WithClefs@3x.png in Resources */,
+				616C1CF21A0D81550020EAA8 /* BeamLayer-OneBeam.png in Resources */,
+				616C1CB61A0D81550020EAA8 /* ChordLayer-EighthDown.png in Resources */,
+				616C1CB81A0D81550020EAA8 /* ChordLayer-Whole.png in Resources */,
+				616C1CAE1A0D81550020EAA8 /* TieLayer-AngledUp.png in Resources */,
+				616C1CC81A0D81550020EAA8 /* ChordLayer-128th@2x.png in Resources */,
+				616C1D281A0D81550020EAA8 /* ChordLayer-Accidental@3x.png in Resources */,
+				616C1CAC1A0D81550020EAA8 /* TieLayer-AngledDownBelow@2x.png in Resources */,
+				616C1CE81A0D81550020EAA8 /* BeamLayer-BackwardHook@2x.png in Resources */,
+				616C1D461A0D81550020EAA8 /* TieLayer-50Tie@3x.png in Resources */,
+				616C1D201A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@3x.png in Resources */,
+				616C1D561A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@3x.png in Resources */,
+				616C1C9A1A0D81550020EAA8 /* TieLayer-50TieBelow.png in Resources */,
+				616C1D381A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@3x.png in Resources */,
+				616C1C861A0D81550020EAA8 /* ClefLayer-Treble.png in Resources */,
+				616C1CEE1A0D81550020EAA8 /* BeamLayer-FourBeams.png in Resources */,
+				616C1D721A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1858,6 +2002,118 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				616C1D551A0D81550020EAA8 /* TieLayer-AngledUpBelow@3x.png in Resources */,
+				616C1CFB1A0D81550020EAA8 /* BeamLayer-TwoBeams.png in Resources */,
+				616C1D311A0D81550020EAA8 /* ChordLayer-EighthDown@3x.png in Resources */,
+				616C1C9B1A0D81550020EAA8 /* TieLayer-50TieBelow.png in Resources */,
+				616C1D391A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@3x.png in Resources */,
+				616C1D4F1A0D81550020EAA8 /* TieLayer-AngledDown@3x.png in Resources */,
+				616C1CE71A0D81550020EAA8 /* BeamLayer-BackwardHook.png in Resources */,
+				616C1D531A0D81550020EAA8 /* TieLayer-AngledUp@3x.png in Resources */,
+				616C1D071A0D81550020EAA8 /* MeasureLayer-Empty.png in Resources */,
+				616C1C971A0D81550020EAA8 /* TieLayer-50Tie.png in Resources */,
+				616C1D111A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png in Resources */,
+				616C1CCB1A0D81550020EAA8 /* ChordLayer-DisplaceSideways.png in Resources */,
+				616C1CBB1A0D81550020EAA8 /* ChordLayer-EighthDown@2x.png in Resources */,
+				616C1C991A0D81550020EAA8 /* TieLayer-50Tie@2x.png in Resources */,
+				616C1CEF1A0D81550020EAA8 /* BeamLayer-FourBeams.png in Resources */,
+				616C1CB71A0D81550020EAA8 /* ChordLayer-EighthDown.png in Resources */,
+				616C1CAB1A0D81550020EAA8 /* TieLayer-AngledDownBelow.png in Resources */,
+				616C1D371A0D81550020EAA8 /* ClefLayer-Treble@3x.png in Resources */,
+				616C1CDF1A0D81550020EAA8 /* ChordLayer-Accent.png in Resources */,
+				616C1CA51A0D81550020EAA8 /* TieLayer-1000Tie@2x.png in Resources */,
+				616C1CF31A0D81550020EAA8 /* BeamLayer-OneBeam.png in Resources */,
+				616C1D491A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png in Resources */,
+				616C1D6D1A0D8D5E0020EAA8 /* DirectionLayer-Words@2x.png in Resources */,
+				616C1D1B1A0D81550020EAA8 /* BeamLayer-ForwardHook@3x.png in Resources */,
+				616C1D051A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@2x.png in Resources */,
+				616C1C8F1A0D81550020EAA8 /* NoteLayer-Whole@2x.png in Resources */,
+				616C1CBF1A0D81550020EAA8 /* ChordLayer-Accidental.png in Resources */,
+				616C1D2F1A0D81550020EAA8 /* ChordLayer-Eighth@3x.png in Resources */,
+				616C1D511A0D81550020EAA8 /* TieLayer-AngledDownBelow@3x.png in Resources */,
+				616C1C951A0D81550020EAA8 /* TieLayer-18Tie@2x.png in Resources */,
+				616C1C8D1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@2x.png in Resources */,
+				616C1D2B1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@3x.png in Resources */,
+				616C1C871A0D81550020EAA8 /* ClefLayer-Treble.png in Resources */,
+				616C1CA71A0D81550020EAA8 /* TieLayer-AngledDown.png in Resources */,
+				616C1D6F1A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics.png in Resources */,
+				616C1CB31A0D81550020EAA8 /* TieLayer-AngledUpBelow.png in Resources */,
+				616C1C931A0D81550020EAA8 /* TieLayer-18Tie.png in Resources */,
+				616C1D3D1A0D81550020EAA8 /* MeasureLayer-Empty@3x.png in Resources */,
+				616C1CD31A0D81550020EAA8 /* ChordLayer-Eighth.png in Resources */,
+				616C1D271A0D81550020EAA8 /* ChordLayer-Accent@3x.png in Resources */,
+				616C1CB11A0D81550020EAA8 /* TieLayer-AngledUp@2x.png in Resources */,
+				616C1C911A0D81550020EAA8 /* NoteLayer-Whole.png in Resources */,
+				616C1D011A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings@2x.png in Resources */,
+				616C1D131A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures.png in Resources */,
+				616C1C891A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png in Resources */,
+				616C1D231A0D81550020EAA8 /* BeamLayer-TwoBeams@3x.png in Resources */,
+				616C1CD91A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png in Resources */,
+				616C1CF11A0D81550020EAA8 /* BeamLayer-FourBeams@2x.png in Resources */,
+				616C1D191A0D81550020EAA8 /* BeamLayer-BackwardHook@3x.png in Resources */,
+				616C1D451A0D81550020EAA8 /* TieLayer-18Tie@3x.png in Resources */,
+				616C1D431A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png in Resources */,
+				616C1CCD1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@2x.png in Resources */,
+				616C1D4B1A0D81550020EAA8 /* TieLayer-100Tie@3x.png in Resources */,
+				616C1CF51A0D81550020EAA8 /* BeamLayer-OneBeam@2x.png in Resources */,
+				616C1CEB1A0D81550020EAA8 /* BeamLayer-ForwardHook.png in Resources */,
+				616C1D731A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@3x.png in Resources */,
+				616C1C8B1A0D81550020EAA8 /* ClefLayer-Treble@2x.png in Resources */,
+				616C1CDB1A0D81550020EAA8 /* Slurs.xml in Resources */,
+				616C1CD71A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits.png in Resources */,
+				616C1CAF1A0D81550020EAA8 /* TieLayer-AngledUp.png in Resources */,
+				616C1CC51A0D81550020EAA8 /* ChordLayer-Quarter@2x.png in Resources */,
+				616C1CED1A0D81550020EAA8 /* BeamLayer-ForwardHook@2x.png in Resources */,
+				616C1CE31A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png in Resources */,
+				616C1CFF1A0D81550020EAA8 /* CollectionLayerScoreLayout-Endings.png in Resources */,
+				616C1CD51A0D81550020EAA8 /* ChordLayer-Eighth@2x.png in Resources */,
+				616C1D031A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs.png in Resources */,
+				616C1CB91A0D81550020EAA8 /* ChordLayer-Whole.png in Resources */,
+				616C1CA31A0D81550020EAA8 /* TieLayer-1000Tie.png in Resources */,
+				616C1D571A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@3x.png in Resources */,
+				616C1CF71A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes.png in Resources */,
+				616C1CE91A0D81550020EAA8 /* BeamLayer-BackwardHook@2x.png in Resources */,
+				616C1D6B1A0D8D5E0020EAA8 /* DirectionLayer-Dyanmics@2x.png in Resources */,
+				616C1D0D1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png in Resources */,
+				616C1CC91A0D81550020EAA8 /* ChordLayer-128th@2x.png in Resources */,
+				616C1D251A0D81550020EAA8 /* ChordLayer-128th@3x.png in Resources */,
+				616C1D471A0D81550020EAA8 /* TieLayer-50Tie@3x.png in Resources */,
+				616C1D3F1A0D81550020EAA8 /* MeasureLayer-WithClefs@3x.png in Resources */,
+				616C1CFD1A0D81550020EAA8 /* BeamLayer-TwoBeams@2x.png in Resources */,
+				616C1C9D1A0D81550020EAA8 /* TieLayer-50TieBelow@2x.png in Resources */,
+				616C1D591A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png in Resources */,
+				616C1CCF1A0D81550020EAA8 /* ChordLayer-Dot.png in Resources */,
+				616C1D351A0D81550020EAA8 /* ChordLayer-Whole@3x.png in Resources */,
+				616C1CAD1A0D81550020EAA8 /* TieLayer-AngledDownBelow@2x.png in Resources */,
+				616C1CD11A0D81550020EAA8 /* ChordLayer-Dot@2x.png in Resources */,
+				616C1CF91A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@2x.png in Resources */,
+				616C1D291A0D81550020EAA8 /* ChordLayer-Accidental@3x.png in Resources */,
+				616C1CA11A0D81550020EAA8 /* TieLayer-100Tie@2x.png in Resources */,
+				616C1CA91A0D81550020EAA8 /* TieLayer-AngledDown@2x.png in Resources */,
+				616C1CE11A0D81550020EAA8 /* Endings.xml in Resources */,
+				616C1D0F1A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png in Resources */,
+				616C1D4D1A0D81550020EAA8 /* TieLayer-1000Tie@3x.png in Resources */,
+				616C1D1F1A0D81550020EAA8 /* BeamLayer-OneBeam@3x.png in Resources */,
+				616C1CBD1A0D81550020EAA8 /* ChordLayer-Whole@2x.png in Resources */,
+				616C1C9F1A0D81550020EAA8 /* TieLayer-100Tie.png in Resources */,
+				616C1CB51A0D81550020EAA8 /* TieLayer-AngledUpBelow@2x.png in Resources */,
+				616C1CE51A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png in Resources */,
+				616C1D1D1A0D81550020EAA8 /* BeamLayer-FourBeams@3x.png in Resources */,
+				616C1D0B1A0D81550020EAA8 /* MeasureLayer-WithClefs.png in Resources */,
+				616C1D091A0D81550020EAA8 /* MeasureLayer-Empty@2x.png in Resources */,
+				616C1D751A0D8D5E0020EAA8 /* DirectionLayer-Words@3x.png in Resources */,
+				616C1CC11A0D81550020EAA8 /* ChordLayer-Accidental@2x.png in Resources */,
+				616C1D3B1A0D81550020EAA8 /* CollectionLayerScoreLayout-Slurs@3x.png in Resources */,
+				616C1CDD1A0D81550020EAA8 /* ChordLayer-Accent@2x.png in Resources */,
+				616C1D331A0D81550020EAA8 /* ChordLayer-Quarter@3x.png in Resources */,
+				616C1D211A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@3x.png in Resources */,
+				616C1CC71A0D81550020EAA8 /* ChordLayer-128th.png in Resources */,
+				616C1D2D1A0D81550020EAA8 /* ChordLayer-Dot@3x.png in Resources */,
+				616C1D711A0D8D5E0020EAA8 /* DirectionLayer-Words.png in Resources */,
+				616C1D411A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@3x.png in Resources */,
+				616C1D171A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png in Resources */,
+				616C1CC31A0D81550020EAA8 /* ChordLayer-Quarter.png in Resources */,
+				616C1D151A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1877,6 +2133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				616C1D621A0D88930020EAA8 /* VMKDirectionLayerTests.mm in Sources */,
 				610DC66C1A08322800BEEBFD /* VMKTieLayerTests.mm in Sources */,
 				610DCE741A094A1700BEEBFD /* AIImageCompare.m in Sources */,
 				610DC66A1A08322800BEEBFD /* VMKBeamLayerTests.mm in Sources */,
@@ -1910,6 +2167,7 @@
 				616C1A8E1A0A970F0020EAA8 /* VMKChordLayer.mm in Sources */,
 				616C1AA31A0AA89B0020EAA8 /* VMKKeyLayer.mm in Sources */,
 				610DCEEC1A094B5100BEEBFD /* ClefHandler.cpp in Sources */,
+				616C1C1A1A0D61ED0020EAA8 /* VMKImage.m in Sources */,
 				610DCF121A094B5500BEEBFD /* SpanFactory.cpp in Sources */,
 				610DCF071A094B5100BEEBFD /* StaffLayoutHandler.cpp in Sources */,
 				610DCEC81A094B4500BEEBFD /* StringHandler.cpp in Sources */,
@@ -2075,6 +2333,7 @@
 				616C1B181A0C05A40020EAA8 /* IdentificationHandler.cpp in Sources */,
 				616C1B2D1A0C05A40020EAA8 /* TimeHandler.cpp in Sources */,
 				616C1B0D1A0C05A40020EAA8 /* BeamHandler.cpp in Sources */,
+				616C1C1B1A0D61ED0020EAA8 /* VMKImage.m in Sources */,
 				616C1B281A0C05A40020EAA8 /* SoundHandler.cpp in Sources */,
 				616C1B021A0C059E0020EAA8 /* ScoreGeometry.cpp in Sources */,
 				616C1B131A0C05A40020EAA8 /* DirectionTypeHandler.cpp in Sources */,
@@ -2132,6 +2391,7 @@
 				616C1B9B1A0C54E50020EAA8 /* VMKChordLayerTests.mm in Sources */,
 				616C1B9A1A0C54BA0020EAA8 /* VMKClefLayerTests.mm in Sources */,
 				616C1B961A0C53AD0020EAA8 /* VMKTieLayerTests.mm in Sources */,
+				616C1D631A0D88930020EAA8 /* VMKDirectionLayerTests.mm in Sources */,
 				616C1B9C1A0D38930020EAA8 /* VMKAdHocScoreTestCase.mm in Sources */,
 				616C1B971A0C53B10020EAA8 /* VMKTimeSignatureLayerTests.mm in Sources */,
 				616C1B981A0C53FB0020EAA8 /* VMKBeamLayerTests.mm in Sources */,

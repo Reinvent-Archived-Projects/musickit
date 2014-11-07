@@ -42,15 +42,12 @@ static NSString* const TEST_PREFIX = @"test";
 }
 
 - (void)renderLayer:(CALayer*)layer completion:(void (^)(VMKImage* image))completion {
-    CGSize size = layer.preferredFrameSize;
-    layer.bounds = {CGPointZero, size};
     [layer layoutIfNeeded];
-
     [CATransaction setCompletionBlock:^{
-        UIGraphicsBeginImageContextWithOptions(size, NO, 0.);
-        [layer renderInContext:UIGraphicsGetCurrentContext()];
-        VMKImage *result = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
+        VMKImage* result = VMKRenderImage(layer.bounds.size, ^(CGContextRef ctx) {
+            CGContextTranslateCTM(ctx, -layer.bounds.origin.x, -layer.bounds.origin.y);
+            [layer renderInContext:UIGraphicsGetCurrentContext()];
+        });
         completion(result);
     }];
 }

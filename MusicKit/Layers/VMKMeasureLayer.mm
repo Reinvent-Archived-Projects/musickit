@@ -54,6 +54,7 @@ static const CGFloat kBarLineWidth = 1;
     _reusableElementViews = [[NSMutableDictionary alloc] init];
 
     _numberLayer = [CATextLayer layer];
+    _numberLayer.contentsScale = VMKScreenScale();
     _numberLayer.anchorPoint = CGPointMake(0, 1);
     _numberLayer.foregroundColor = self.foregroundColor;
     _numberLayer.backgroundColor = self.backgroundColor;

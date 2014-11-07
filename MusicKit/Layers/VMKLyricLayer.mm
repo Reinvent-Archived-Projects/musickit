@@ -1,5 +1,6 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
+#import "VMKGeometry.h"
 #import "VMKLyricLayer.h"
 
 
@@ -16,6 +17,7 @@
     _textLayer.foregroundColor = self.foregroundColor;
     _textLayer.backgroundColor = self.backgroundColor;
     _textLayer.alignmentMode = kCAAlignmentCenter;
+    _textLayer.contentsScale = VMKScreenScale();
     [self addSublayer:_textLayer];
 }
 
@@ -48,6 +50,7 @@
 }
 
 - (void)layoutSublayers {
+    [super layoutSublayers];
     CGSize size = self.bounds.size;
     _textLayer.frame = CGRectMake(0, 0, size.width, size.height);
 }
