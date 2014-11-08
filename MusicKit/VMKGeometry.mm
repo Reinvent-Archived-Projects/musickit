@@ -8,6 +8,8 @@
 #endif
 
 #import "VMKGeometry.h"
+#include <cmath>
+
 
 CG_EXTERN CGFloat VMKScreenScale() {
 #if TARGET_OS_IPHONE
@@ -20,7 +22,7 @@ CG_EXTERN CGFloat VMKScreenScale() {
 CG_EXTERN CGFloat VMKRoundCoordinate(CGFloat coord) {
     if (coord < 0)
         return roundf(coord + 0.5f);
-    return roundf(coord);
+    return round(coord);
 }
 
 CG_EXTERN CGPoint VMKRoundPoint(CGPoint point) {
@@ -42,8 +44,8 @@ CG_EXTERN CGSize VMKRoundSize(CGSize size) {
 #else
     scale = [NSScreen mainScreen].backingScaleFactor;
 #endif
-    size.width = VMKRoundCoordinate(scale * size.width) / scale;
-    size.height = VMKRoundCoordinate(scale * size.height) / scale;
+    size.width = ceil(scale * size.width) / scale;
+    size.height = ceil(scale * size.height) / scale;
     return size;
 }
 

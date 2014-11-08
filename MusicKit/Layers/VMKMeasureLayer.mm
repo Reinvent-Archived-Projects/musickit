@@ -61,6 +61,9 @@ static const CGFloat kBarLineWidth = 1;
     _numberLayer.alignmentMode = kCAAlignmentCenter;
     _numberLayer.font = CFSTR("Baskerville-SemiBold");
     _numberLayer.fontSize = 11;
+#if !TARGET_OS_IPHONE
+    _numberLayer.transform = CATransform3DMakeScale(1, -1, 1);
+#endif
     _numberLayer.string = @"1";
     [self addSublayer:_numberLayer];
 }

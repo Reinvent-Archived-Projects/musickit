@@ -19,6 +19,9 @@
     _textLayer.backgroundColor = self.backgroundColor;
     _textLayer.alignmentMode = kCAAlignmentCenter;
     _textLayer.contentsScale = VMKScreenScale();
+#if !TARGET_OS_IPHONE
+    _textLayer.transform = CATransform3DMakeScale(1, -1, 1);
+#endif
     [self addSublayer:_textLayer];
 }
 

@@ -1,5 +1,6 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
+#import "VMKGeometry.h"
 #import "VMKLayerTestCase.h"
 #import "VMKImageStore.h"
 
@@ -11,7 +12,7 @@ static NSString* const TEST_PREFIX = @"test";
 @implementation VMKLayerTestCase
 
 - (void)setUp {
-    [VMKImageStore sharedInstance].foregroundColor = [UIColor blackColor];
+    [VMKImageStore sharedInstance].foregroundColor = [VMKColor blackColor];
 
     // Print the location of temporary directory for reference
     NSLog(@"Image test results written to\n%@", NSTemporaryDirectory());
@@ -43,13 +44,15 @@ static NSString* const TEST_PREFIX = @"test";
 
 - (void)renderLayer:(CALayer*)layer completion:(void (^)(VMKImage* image))completion {
     [layer layoutIfNeeded];
-    [CATransaction setCompletionBlock:^{
-        VMKImage* result = VMKRenderImage(layer.bounds.size, ^(CGContextRef ctx) {
-            CGContextTranslateCTM(ctx, -layer.bounds.origin.x, -layer.bounds.origin.y);
-            [layer renderInContext:UIGraphicsGetCurrentContext()];
-        });
-        completion(result);
-    }];
+    VMKImage* result = VMKRenderImage(layer.bounds.size, ^(CGContextRef ctx) {
+#if !TARGET_OS_IPHONE
+        CGContextTranslateCTM(ctx, 0, layer.bounds.size.height);
+        CGContextScaleCTM(ctx, 1.f, -1.f);
+#endif
+        CGContextTranslateCTM(ctx, -layer.bounds.origin.x, -layer.bounds.origin.y);
+        [layer renderInContext:ctx];
+    });
+    completion(result);
 }
 
 - (VMKImage*)loadTestImageForSelector:(SEL)selector {
@@ -76,20 +79,46 @@ static NSString* const TEST_PREFIX = @"test";
 
 - (VMKImage*)loadTestImage:(NSString*)imageName {
     NSBundle* bundle = [NSBundle bundleForClass:[self class]];
+#if TARGET_OS_IPHONE
     NSString* fullName = [NSString stringWithFormat:@"%@%@", imageName, [self.class imageSuffix]];
-    NSString* path = [bundle pathForResource:fullName ofType:@"png"];
-    return [VMKImage imageWithContentsOfFile:path];
+    NSString* type = @"png";
+#else
+    NSString* fullName = [NSString stringWithFormat:@"%@", imageName];
+    NSString* type = @"tiff";
+#endif
+    NSString* path = [bundle pathForResource:fullName ofType:type];
+    VMKImage* image = [[VMKImage alloc] initWithContentsOfFile:path];
+
+#if !TARGET_OS_IPHONE
+    // Remove all image representation except for the current resolution
+    NSImageRep* bestRep = [image beestRepresentationForScreenScale];
+    for (NSImageRep* rep in image.representations)
+        if (rep != bestRep)
+            [image removeRepresentation:rep];
+#endif
+
+    return image;
 }
 
 - (void)saveImage:(VMKImage*)image withName:(NSString*)name {
     NSString* fullName = [NSString stringWithFormat:@"%@%@.png", name, [self.class imageSuffix]];
     NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:fullName];
+
+#if TARGET_OS_IPHONE
     NSData* data = UIImagePNGRepresentation(image);
     [data writeToFile:filePath atomically:YES];
+#else
+    CGImageRef cgRef = [image CGImageForProposedRect:NULL context:nil hints:nil];
+    NSBitmapImageRep *newRep = [[NSBitmapImageRep alloc] initWithCGImage:cgRef];
+    [newRep setSize:[image size]];
+
+    NSData *pngData = [newRep representationUsingType:NSPNGFileType properties:nil];
+    [pngData writeToFile:filePath atomically:YES];
+#endif
 }
 
 + (NSString*)imageSuffix {
-    CGFloat scale = [UIScreen mainScreen].scale;
+    CGFloat scale = VMKScreenScale();
     if (scale != 1)
         return [NSString stringWithFormat:@"@%.0fx", scale];
     return @"";

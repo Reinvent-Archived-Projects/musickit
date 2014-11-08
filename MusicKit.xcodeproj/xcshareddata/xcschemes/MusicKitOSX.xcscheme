@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "616C1AD61A0C055F0020EAA8"
-               BuildableName = "MusicKitOSXTests.xctest"
-               BlueprintName = "MusicKitOSXTests"
+               BlueprintIdentifier = "616C1D911A0D97490020EAA8"
+               BuildableName = "MusicKitOSXAppTests.xctest"
+               BlueprintName = "MusicKitOSXAppTests"
                ReferencedContainer = "container:MusicKit.xcodeproj">
             </BuildableReference>
          </TestableReference>

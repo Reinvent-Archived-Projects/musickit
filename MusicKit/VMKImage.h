@@ -12,6 +12,11 @@
 #import <AppKit/AppKit.h>
 #define VMKImage NSImage
 
+@interface NSImage (VMKExtension)
+
+- (NSImageRep*)beestRepresentationForScreenScale;
+
+@end
 #endif
 
 
