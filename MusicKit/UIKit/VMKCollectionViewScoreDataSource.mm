@@ -128,6 +128,7 @@ using namespace mxml;
     if (!view)
         return nil;
 
+    [cell.contentView addSubview:view];
     view.foregroundColor = self.foregroundColor;
 
     CGRect frame = view.frame;
@@ -143,6 +144,7 @@ using namespace mxml;
     VMKTieView* view = (VMKTieView*)[self scoreElementView:cell];
     if (!view) {
         view = [[VMKTieView alloc] init];
+        [cell.contentView addSubview:view];
     }
 
     view.foregroundColor = self.foregroundColor;
