@@ -61,7 +61,7 @@ static const CGFloat kLineWidth = 1;
     }
 
     CTFontRef font = CTFontCreateWithName(CFSTR("Baskerville"), 13.0, NULL);
-    NSDictionary* attribs = @{ (id)kCTFontAttributeName: CFBridgingRelease(font) };
+    NSDictionary* attribs = @{ (id)kCTFontAttributeName: (__bridge id)font };
     NSAttributedString* stringToDraw = [[NSAttributedString alloc] initWithString:string attributes:attribs];
 
     // Flip the context coordinates, in iOS only.
