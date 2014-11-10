@@ -27,7 +27,7 @@
 
 - (void)setUp {
     [super setUp];
-    
+
     self.scoreLayout = [[VMKCollectionViewScoreLayout alloc] init];
     self.dataSource = [[VMKCollectionViewScoreDataSource alloc] init];
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768) collectionViewLayout:self.scoreLayout];
@@ -36,6 +36,13 @@
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:VMKTieReuseIdentifier];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:VMKDirectionReuseIdentifier];
     self.collectionView.dataSource = self.dataSource;
+}
+
+- (void)tearDown {
+    [super tearDown];
+
+    _score.reset();
+    _geometry.reset();
 }
 
 - (void)load:(NSString*)path {

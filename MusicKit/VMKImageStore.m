@@ -42,6 +42,9 @@
 }
 
 + (VMKImage*)maskFillImage:(VMKImage*)image withColor:(VMKColor*)color {
+    if (image == nil)
+        return nil;
+    
     CGSize size = image.size;
     CGRect bounds = CGRectMake(0, 0, size.width, size.height);
 
