@@ -1,3 +1,3 @@
 # MusicKit
 
-MusicKit is an iOS framework for rendering sheet music. It currently uses UIKit.
+MusicKit is an iOS/MacOS X framework for rendering sheet music. It uses CoreAnimation layers to do the rendering.
