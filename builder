@@ -8,7 +8,7 @@ hash xcpretty 2>/dev/null || { gem install xcpretty; }
 clean() {
 	xcodebuild \
 	  -project MusicKit.xcodeproj \
-	  -scheme MusicKit \
+	  -alltargets  \
 	  clean | xcpretty -cs
 }
 
