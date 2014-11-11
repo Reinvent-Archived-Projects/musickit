@@ -62,8 +62,10 @@
         return;
 
     _geometry = geometry;
-    if (!_geometry)
+    if (!_geometry) {
+        self.bounds = CGRectZero;
         return;
+    }
 
     CGSize size = CGSizeFromSize(_geometry->size());
 

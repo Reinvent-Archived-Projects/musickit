@@ -42,6 +42,7 @@
 
 - (void)setImage:(VMKImage *)image {
     _image = image;
+    [self setNeedsDisplay];
 }
 
 - (void)display {

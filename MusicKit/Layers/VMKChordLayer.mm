@@ -52,8 +52,10 @@ using namespace mxml;
         } else {
             _noteStemLayer.geometry = self.chordGeometry->stem();
         }
+        _noteStemLayer.hidden = NO;
     } else if (_noteStemLayer) {
         _noteStemLayer.geometry = nullptr;
+        _noteStemLayer.hidden = YES;
     }
 
     // Create new layers
