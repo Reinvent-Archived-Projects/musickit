@@ -8,3 +8,6 @@ xcuserdata/
 
 # build output
 build/
+
+# Cocoapods
+Pods
