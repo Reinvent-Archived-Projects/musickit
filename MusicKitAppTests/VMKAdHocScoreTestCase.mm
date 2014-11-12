@@ -2,9 +2,9 @@
 
 #import "VMKAdHocScoreTestCase.h"
 
-#include "PartGeometry.h"
-#include "ScoreGeometry.h"
-#include "SpanFactory.h"
+#include <mxml/geometry/PartGeometry.h>
+#include <mxml/geometry/ScoreGeometry.h>
+#include <mxml/SpanFactory.h>
 
 using namespace mxml::dom;
 
