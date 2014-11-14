@@ -19,7 +19,10 @@
     _textLayer.alignmentMode = kCAAlignmentCenter;
     _textLayer.contentsScale = VMKScreenScale();
 #if !TARGET_OS_IPHONE
-    _textLayer.transform = CATransform3DMakeScale(1, -1, 1);
+    CATransform3D t = CATransform3DIdentity;
+    t = CATransform3DTranslate(t, 0, -_textLayer.preferredFrameSize.height, 0);
+    t = CATransform3DScale(t, 1, -1, 1);
+    _textLayer.transform = t;
 #endif
     [self addSublayer:_textLayer];
 }

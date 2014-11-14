@@ -21,6 +21,7 @@ int process(int argc, const char * argv[]);
 std::unique_ptr<mxml::dom::Score> loadMXL(NSString* filePath);
 std::unique_ptr<mxml::dom::Score> loadXML(NSString* filePath);
 bool renderScore(NSString* path, NSString* outputPrefix);
+CGSize computeSize(const mxml::ScoreGeometry& scoreGeometry);
 
 
 int main(int argc, const char * argv[]) {
@@ -136,27 +137,11 @@ bool renderScore(NSString* path, NSString* output) {
 
     // Generate geometry
     std::unique_ptr<mxml::ScoreGeometry> scoreGeometry(new mxml::ScoreGeometry(*score));
-
-    // Compute size
-    CGSize size = CGSizeZero;
-    for (auto& partGeometry : scoreGeometry->geometries()) {
-        int measure = 0;
-        CGSize measuresSize = CGSizeZero;
-        for (auto& measureGeometry : partGeometry->geometries()) {
-            measuresSize.width += measureGeometry->size().width;
-            measuresSize.height = std::max(measuresSize.height, static_cast<CGFloat>(measureGeometry->size().height));
-
-            ++measure;
-            if (measure >= kNumberOfMeasures)
-                break;
-        }
-        size.width = std::max(size.width, measuresSize.width);
-        size.height += measuresSize.height;
-    }
+    CGSize size = computeSize(*scoreGeometry);
     CGSize scaledSize = CGSizeMake(std::ceil(size.width * kScale), std::ceil(size.height * kScale));
-    size.width = scaledSize.width / kScale;
-    size.height = scaledSize.height / kScale;
 
+    CGRect previewBounds;
+    previewBounds.size = size;
 
     // Create image
     VMKImage* image = [[NSImage alloc] initWithSize:size];
@@ -179,11 +164,13 @@ bool renderScore(NSString* path, NSString* output) {
     CGContextScaleCTM(ctx, 1.f, -1.f);
 
     // Render
-    for (auto& partGeometry : scoreGeometry->geometries()) {
+    for (auto& geometry : scoreGeometry->geometries()) {
+        mxml::PartGeometry& partGeometry = static_cast<mxml::PartGeometry&>(*geometry);
+
         int measure = 0;
         CGSize measuresSize = CGSizeZero;
-        for (auto& measureGeometry : partGeometry->geometries()) {
-            VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithGeometry:measureGeometry.get()];
+        for (auto& measureGeometry : partGeometry.measureGeometries()) {
+            VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithGeometry:measureGeometry];
             [layer layoutIfNeeded];
 
             CGContextTranslateCTM(ctx, -layer.bounds.origin.x, -layer.bounds.origin.y);
@@ -198,8 +185,40 @@ bool renderScore(NSString* path, NSString* output) {
             if (measure >= kNumberOfMeasures)
                 break;
         }
+        CGContextTranslateCTM(ctx, -measuresSize.width, 0);
 
-        CGContextTranslateCTM(ctx, -measuresSize.width, measuresSize.height);
+        for (auto& directionGeometry : partGeometry.directionGeometries()) {
+            CGRect frame = CGRectFromRect(scoreGeometry->convertFromGeometry(directionGeometry->frame(), &partGeometry));
+            frame = VMKRoundRect(frame);
+            if (!CGRectIntersectsRect(frame, previewBounds))
+                continue;
+
+            VMKDirectionLayer* layer = [[VMKDirectionLayer alloc] initWithGeometry:directionGeometry];
+            [layer layoutIfNeeded];
+
+            CGContextTranslateCTM(ctx, frame.origin.x - layer.bounds.origin.x, frame.origin.y - layer.bounds.origin.y);
+            [layer renderInContext:ctx];
+            CGContextTranslateCTM(ctx, layer.bounds.origin.x - frame.origin.x, layer.bounds.origin.y - frame.origin.y);
+        }
+
+        for (auto& tieGeometry : partGeometry.tieGeometries()) {
+            CGRect frame = CGRectFromRect(scoreGeometry->convertFromGeometry(tieGeometry->frame(), &partGeometry));
+            frame = VMKRoundRect(frame);
+            if (!CGRectIntersectsRect(frame, previewBounds))
+                continue;
+
+            VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:tieGeometry];
+            [layer layoutIfNeeded];
+
+            CGFloat dx = frame.origin.x - layer.bounds.origin.x;
+            CGFloat dy = frame.origin.y - layer.bounds.origin.y - 2*frame.size.height; // Not sure why the extra term is necessary, probably a bug in VMKTieLayer
+
+            CGContextTranslateCTM(ctx, dx, dy);
+            [layer renderInContext:ctx];
+            CGContextTranslateCTM(ctx, -dx, -dy);
+        }
+
+        CGContextTranslateCTM(ctx, 0, measuresSize.height);
     }
     [image unlockFocus];
 
@@ -211,4 +230,27 @@ bool renderScore(NSString* path, NSString* output) {
     [data writeToFile:output atomically:YES];
 
     return true;
+}
+
+CGSize computeSize(const mxml::ScoreGeometry& scoreGeometry) {
+    CGSize size = CGSizeZero;
+    for (auto& partGeometry : scoreGeometry.geometries()) {
+        int measure = 0;
+        CGSize measuresSize = CGSizeZero;
+        for (auto& measureGeometry : partGeometry->geometries()) {
+            measuresSize.width += measureGeometry->size().width;
+            measuresSize.height = std::max(measuresSize.height, static_cast<CGFloat>(measureGeometry->size().height));
+
+            ++measure;
+            if (measure >= kNumberOfMeasures)
+                break;
+        }
+        size.width = std::max(size.width, measuresSize.width);
+        size.height += measuresSize.height;
+    }
+    CGSize scaledSize = CGSizeMake(std::ceil(size.width * kScale), std::ceil(size.height * kScale));
+    size.width = scaledSize.width / kScale;
+    size.height = scaledSize.height / kScale;
+
+    return size;
 }
