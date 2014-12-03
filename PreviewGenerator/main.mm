@@ -216,7 +216,7 @@ bool renderScore(NSString* path, NSString* output) {
             [layer layoutIfNeeded];
 
             CGFloat dx = frame.origin.x - layer.bounds.origin.x;
-            CGFloat dy = frame.origin.y - layer.bounds.origin.y - 2*frame.size.height; // Not sure why the extra term is necessary, probably a bug in VMKTieLayer
+            CGFloat dy = frame.origin.y - layer.bounds.origin.y - mxml::PartGeometry::kStaffLineSpacing;
 
             CGContextTranslateCTM(ctx, dx, dy);
             [layer renderInContext:ctx];
