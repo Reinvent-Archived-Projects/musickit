@@ -192,13 +192,18 @@ bool renderScore(NSString* path, NSString* output) {
             frame = VMKRoundRect(frame);
             if (!CGRectIntersectsRect(frame, previewBounds))
                 continue;
-
-            VMKDirectionLayer* layer = [[VMKDirectionLayer alloc] initWithGeometry:directionGeometry];
-            [layer layoutIfNeeded];
-
-            CGContextTranslateCTM(ctx, frame.origin.x - layer.bounds.origin.x, frame.origin.y - layer.bounds.origin.y);
-            [layer renderInContext:ctx];
-            CGContextTranslateCTM(ctx, layer.bounds.origin.x - frame.origin.x, layer.bounds.origin.y - frame.origin.y);
+            
+            VMKScoreElementLayer *layer = nil;
+            if (const mxml::DirectionGeometry* geom = dynamic_cast<const mxml::DirectionGeometry*>(directionGeometry)) {
+                layer = [[VMKDirectionLayer alloc] initWithGeometry:geom];
+            }
+            
+            if (layer) {
+                [layer layoutIfNeeded];
+                CGContextTranslateCTM(ctx, frame.origin.x - layer.bounds.origin.x, frame.origin.y - layer.bounds.origin.y);
+                [layer renderInContext:ctx];
+                CGContextTranslateCTM(ctx, layer.bounds.origin.x - frame.origin.x, layer.bounds.origin.y - frame.origin.y);
+            }
         }
 
         for (auto& tieGeometry : partGeometry.tieGeometries()) {
