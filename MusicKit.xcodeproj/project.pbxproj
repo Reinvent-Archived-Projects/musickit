@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A3E46A1A2E57BF00B2A6C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A3E4691A2E57BF00B2A6C8 /* Images.xcassets */; };
 		11D353EAA0E6C0BBDD28998E /* libPods-PreviewGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 736F0E8822E3E82A82593CC0 /* libPods-PreviewGenerator.a */; };
 		3EA19564C9175997B8B3AB09 /* libPods-MusicKitAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D97B40F18B7EFC550962E5 /* libPods-MusicKitAppTests.a */; };
 		610DC5991A082FF000BEEBFD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DC5981A082FF000BEEBFD /* libxml2.dylib */; };
@@ -540,7 +541,6 @@
 		618C6C4E1A13DCE4008314B2 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618C6BE01A119BFA008314B2 /* main.mm */; };
 		618C6C531A13DFC5008314B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618C6C521A13DFC5008314B2 /* QuartzCore.framework */; };
 		618C6C541A13DFD8008314B2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618C6BE81A119E71008314B2 /* AppKit.framework */; };
-		618C6C561A13E4BC008314B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618C6C551A13E4BC008314B2 /* Images.xcassets */; };
 		618C6C581A13E6F4008314B2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618C6C571A13E6F4008314B2 /* Storyboard.storyboard */; };
 		618C6C591A13E795008314B2 /* VMKImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1C191A0D61ED0020EAA8 /* VMKImage.mm */; };
 		618C6C5A1A13E795008314B2 /* VMKGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B6F1A082562003AE7A7 /* VMKGeometry.mm */; };
@@ -688,6 +688,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A3E4691A2E57BF00B2A6C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2398D1FF5BFE82C3AC02E2F5 /* Pods-PreviewGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreviewGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator.release.xcconfig"; sourceTree = "<group>"; };
 		344A5ABA87A38AA98B8B5722 /* Pods-MusicKitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicKitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicKitAppTests/Pods-MusicKitAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		4038565044AA5D9AFDF4A3A0 /* Pods-MusicKitOSXAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicKitOSXAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicKitOSXAppTests/Pods-MusicKitOSXAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1147,7 +1148,6 @@
 		618C6C2D1A13DC76008314B2 /* PreviewGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreviewGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		618C6C301A13DC76008314B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		618C6C521A13DFC5008314B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		618C6C551A13E4BC008314B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		618C6C571A13E6F4008314B2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		736F0E8822E3E82A82593CC0 /* libPods-PreviewGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PreviewGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75431C370872313FB1E0332A /* Pods-MusicKitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicKitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicKitAppTests/Pods-MusicKitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1856,10 +1856,10 @@
 		618C6C2E1A13DC76008314B2 /* PreviewGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				618C6C301A13DC76008314B2 /* Info.plist */,
-				618C6C551A13E4BC008314B2 /* Images.xcassets */,
-				618C6C571A13E6F4008314B2 /* Storyboard.storyboard */,
 				618C6BE01A119BFA008314B2 /* main.mm */,
+				618C6C571A13E6F4008314B2 /* Storyboard.storyboard */,
+				618C6C301A13DC76008314B2 /* Info.plist */,
+				00A3E4691A2E57BF00B2A6C8 /* Images.xcassets */,
 			);
 			path = PreviewGenerator;
 			sourceTree = "<group>";
@@ -2418,8 +2418,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A3E46A1A2E57BF00B2A6C8 /* Images.xcassets in Resources */,
 				618C6C4D1A13DCC8008314B2 /* Symbols.xcassets in Resources */,
-				618C6C561A13E4BC008314B2 /* Images.xcassets in Resources */,
 				618C6C581A13E6F4008314B2 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
