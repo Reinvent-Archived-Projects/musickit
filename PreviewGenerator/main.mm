@@ -139,6 +139,7 @@ bool renderScore(NSString* path, NSString* output) {
     std::unique_ptr<mxml::ScoreGeometry> scoreGeometry(new mxml::ScoreGeometry(*score));
     CGSize size = computeSize(*scoreGeometry);
     CGSize scaledSize = CGSizeMake(std::ceil(size.width * kScale), std::ceil(size.height * kScale));
+    CGFloat scoreOffset = (scoreGeometry->size().height - size.height) / 2.0f;
 
     CGRect previewBounds;
     previewBounds.size = size;
@@ -189,8 +190,13 @@ bool renderScore(NSString* path, NSString* output) {
 
         for (auto& directionGeometry : partGeometry.directionGeometries()) {
             CGRect frame = CGRectFromRect(scoreGeometry->convertFromGeometry(directionGeometry->frame(), &partGeometry));
+            
+            // Directions are relative to the score, not the measure (preview bounds) so we need to offset
+            // back to score position, this means directions could lie on the boundary of the preview, so
+            // only render if the direction is completely contained.
+            frame.origin.y -= scoreOffset;
             frame = VMKRoundRect(frame);
-            if (!CGRectIntersectsRect(frame, previewBounds))
+            if (!CGRectContainsRect(previewBounds, frame))
                 continue;
             
             VMKScoreElementLayer *layer = nil;
@@ -199,10 +205,13 @@ bool renderScore(NSString* path, NSString* output) {
             }
             
             if (layer) {
+                int dx = frame.origin.x - layer.bounds.origin.x;
+                int dy = frame.origin.y - layer.bounds.origin.y;
+                
                 [layer layoutIfNeeded];
-                CGContextTranslateCTM(ctx, frame.origin.x - layer.bounds.origin.x, frame.origin.y - layer.bounds.origin.y);
+                CGContextTranslateCTM(ctx, dx, dy);
                 [layer renderInContext:ctx];
-                CGContextTranslateCTM(ctx, layer.bounds.origin.x - frame.origin.x, layer.bounds.origin.y - frame.origin.y);
+                CGContextTranslateCTM(ctx, -dx, -dy);
             }
         }
 
@@ -216,7 +225,7 @@ bool renderScore(NSString* path, NSString* output) {
             [layer layoutIfNeeded];
 
             CGFloat dx = frame.origin.x - layer.bounds.origin.x;
-            CGFloat dy = frame.origin.y - layer.bounds.origin.y - mxml::PartGeometry::kStaffLineSpacing;
+            CGFloat dy = (measuresSize.height / 2.0f) + layer.frame.origin.y;
 
             CGContextTranslateCTM(ctx, dx, dy);
             [layer renderInContext:ctx];
