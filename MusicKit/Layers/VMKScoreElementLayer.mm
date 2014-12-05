@@ -87,6 +87,11 @@
 }
 
 - (void)display {
+    // Rendering with a size of 0 crashes on OSX, we should look mxml lib
+    if (self.bounds.size.width == 0 || self.bounds.size.height == 0) {
+        return;
+    }
+    
     if (![self respondsToSelector:@selector(drawInContext:)])
         [super display];
 
