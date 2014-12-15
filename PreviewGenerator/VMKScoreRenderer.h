@@ -17,7 +17,7 @@ public:
     /**
      The number of measures to include in the rendering.
      */
-    static const int numberOfMeasures;
+    static const CGFloat maxWidth;
     
 public:
     /**

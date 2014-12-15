@@ -4,7 +4,7 @@
 
 
 const CGFloat VMKScoreRenderer::scale = 2;
-const int VMKScoreRenderer::numberOfMeasures = 4;
+const CGFloat VMKScoreRenderer::maxWidth = 2048;
 
 
 VMKScoreRenderer::VMKScoreRenderer(const mxml::ScoreGeometry& scoreGeometry) : _scoreGeometry(scoreGeometry), _lastPartGeometry() {
@@ -55,19 +55,15 @@ NSBitmapImageRep* VMKScoreRenderer::render() {
 }
 
 CGSize VMKScoreRenderer::partSize(const mxml::PartGeometry& partGeometry) {
-    int measure = 0;
-    CGSize measuresSize = CGSizeZero;
+    CGFloat measuresWidth = 0.0;
     for (auto& measureGeometry : partGeometry.geometries()) {
-        measuresSize.width += measureGeometry->size().width;
-        measuresSize.height = std::max(measuresSize.height, static_cast<CGFloat>(measureGeometry->size().height));
-
-        ++measure;
-        if (measure >= numberOfMeasures)
+        measuresWidth += measureGeometry->size().width;
+        if (measuresWidth >= maxWidth)
             break;
     }
 
     CGSize size;
-    size.width = measuresSize.width;
+    size.width = std::min(measuresWidth, maxWidth);
     size.height = partGeometry.size().height;
 
     // Round to nearest pixel
@@ -79,8 +75,7 @@ CGSize VMKScoreRenderer::partSize(const mxml::PartGeometry& partGeometry) {
 }
 
 void VMKScoreRenderer::renderMeasures(CGContextRef ctx) {
-    int measure = 0;
-    CGSize measuresSize = CGSizeZero;
+    CGFloat measuresWidth = 0.0;
     for (auto& measureGeometry : _lastPartGeometry->measureGeometries()) {
         CGRect frame = getFrame(*measureGeometry);
         if (!CGRectIntersectsRect(frame, _renderBounds))
@@ -91,11 +86,8 @@ void VMKScoreRenderer::renderMeasures(CGContextRef ctx) {
 
         renderLayer(ctx, layer, frame);
 
-        measuresSize.width += layer.bounds.size.width;
-        measuresSize.height = std::max(measuresSize.height, static_cast<CGFloat>(measureGeometry->size().height));
-
-        ++measure;
-        if (measure >= numberOfMeasures)
+        measuresWidth += layer.bounds.size.width;
+        if (measuresWidth >= maxWidth)
             break;
     }
 }
