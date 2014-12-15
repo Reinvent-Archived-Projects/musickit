@@ -4,8 +4,6 @@
 #import <MusicKit/MusicKit.h>
 #import <SSZipArchive/SSZipArchive.h>
 
-#include <mxml/geometry/ScoreGeometry.h>
-#include <mxml/geometry/PartGeometry.h>
 #include <mxml/parsing/ScoreHandler.h>
 #include <mxml/SpanFactory.h>
 #include <lxml/lxml.h>
@@ -13,16 +11,16 @@
 #include <iostream>
 #include <fstream>
 
-static const int kNumberOfMeasures = 4;
-static const CGFloat kScale = 2;
+#include "VMKScoreRenderer.h"
 
 
 int process(int argc, const char * argv[]);
 std::unique_ptr<mxml::dom::Score> loadMXL(NSString* filePath);
 std::unique_ptr<mxml::dom::Score> loadXML(NSString* filePath);
-bool renderScore(NSString* path, NSString* outputPrefix);
+bool renderScore(NSString* path, NSString* output);
+void renderPart(const mxml::ScoreGeometry& scoreGeometry, const mxml::PartGeometry& partGeometry, NSString* output);
 void renderLayer(CGContextRef ctx, VMKScoreElementLayer* layer, CGRect frame);
-CGSize computeSize(const mxml::ScoreGeometry& scoreGeometry);
+CGSize computeSize(const mxml::PartGeometry& partGeometry);
 
 
 int main(int argc, const char * argv[]) {
@@ -138,126 +136,14 @@ bool renderScore(NSString* path, NSString* output) {
 
     // Generate geometry
     std::unique_ptr<mxml::ScoreGeometry> scoreGeometry(new mxml::ScoreGeometry(*score));
-    CGSize size = computeSize(*scoreGeometry);
-    CGSize scaledSize = CGSizeMake(std::ceil(size.width * kScale), std::ceil(size.height * kScale));
 
-    CGRect previewBounds;
-    previewBounds.size = size;
+    VMKScoreRenderer renderer(*scoreGeometry);
+    NSBitmapImageRep* rep = renderer.render();
+    if (!rep)
+        return false;
 
-    // Create image
-    VMKImage* image = [[NSImage alloc] initWithSize:size];
-    NSBitmapImageRep* rep = [[NSBitmapImageRep alloc]
-                             initWithBitmapDataPlanes:NULL
-                             pixelsWide:scaledSize.width
-                             pixelsHigh:scaledSize.height
-                             bitsPerSample:8
-                             samplesPerPixel:4
-                             hasAlpha:YES
-                             isPlanar:NO
-                             colorSpaceName:NSCalibratedRGBColorSpace
-                             bytesPerRow:0
-                             bitsPerPixel:0];
-    [image addRepresentation:rep];
-    [image lockFocus];
-
-    CGContextRef ctx = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
-    CGContextTranslateCTM(ctx, 0, size.height);
-    CGContextScaleCTM(ctx, 1.f, -1.f);
-
-    // Render
-    for (auto& geometry : scoreGeometry->geometries()) {
-        mxml::PartGeometry& partGeometry = static_cast<mxml::PartGeometry&>(*geometry);
-
-        int measure = 0;
-        CGSize measuresSize = CGSizeZero;
-        for (auto& measureGeometry : partGeometry.measureGeometries()) {
-            CGRect frame = CGRectFromRect(scoreGeometry->convertFromGeometry(measureGeometry->frame(), measureGeometry->parentGeometry()));
-            frame = VMKRoundRect(frame);
-            if (!CGRectIntersectsRect(frame, previewBounds))
-                continue;
-
-            VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithGeometry:measureGeometry];
-            [layer layoutIfNeeded];
-
-            renderLayer(ctx, layer, frame);
-
-            measuresSize.width += layer.bounds.size.width;
-            measuresSize.height = std::max(measuresSize.height, static_cast<CGFloat>(measureGeometry->size().height));
-
-            ++measure;
-            if (measure >= kNumberOfMeasures)
-                break;
-        }
-
-        for (auto& directionGeometry : partGeometry.directionGeometries()) {
-            CGRect frame = CGRectFromRect(scoreGeometry->convertFromGeometry(directionGeometry->frame(), directionGeometry->parentGeometry()));
-            frame = VMKRoundRect(frame);
-            if (!CGRectContainsRect(previewBounds, frame))
-                continue;
-            
-            VMKScoreElementLayer *layer = nil;
-            if (const mxml::DirectionGeometry* geom = dynamic_cast<const mxml::DirectionGeometry*>(directionGeometry)) {
-                layer = [[VMKDirectionLayer alloc] initWithGeometry:geom];
-            }
-            
-            if (layer) {
-                renderLayer(ctx, layer, frame);
-            }
-        }
-
-        for (auto& tieGeometry : partGeometry.tieGeometries()) {
-            CGRect frame = CGRectFromRect(scoreGeometry->convertFromGeometry(tieGeometry->frame(), &partGeometry));
-            frame = VMKRoundRect(frame);
-            if (!CGRectIntersectsRect(frame, previewBounds))
-                continue;
-
-            VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:tieGeometry];
-            [layer layoutIfNeeded];
-
-            renderLayer(ctx, layer, frame);
-        }
-    }
-    [image unlockFocus];
-
-    // Save image
-    CGImageRef cgimage = [image CGImageForProposedRect:NULL context:nil hints:nil];
-    NSBitmapImageRep* newRep = [[NSBitmapImageRep alloc] initWithCGImage:cgimage];
-    [newRep setSize:[image size]];
-    NSData* data = [newRep representationUsingType:NSPNGFileType properties:nil];
+    NSData* data = [rep representationUsingType:NSPNGFileType properties:nil];
     [data writeToFile:output atomically:YES];
 
     return true;
-}
-
-void renderLayer(CGContextRef ctx, VMKScoreElementLayer* layer, CGRect frame) {
-    CGFloat dx = frame.origin.x - layer.bounds.origin.x;
-    CGFloat dy = frame.origin.y - layer.bounds.origin.y;
-
-    [layer layoutIfNeeded];
-    CGContextTranslateCTM(ctx, dx, dy);
-    [layer renderInContext:ctx];
-    CGContextTranslateCTM(ctx, -dx, -dy);
-}
-
-CGSize computeSize(const mxml::ScoreGeometry& scoreGeometry) {
-    CGSize size = CGSizeZero;
-    for (auto& partGeometry : scoreGeometry.geometries()) {
-        int measure = 0;
-        CGSize measuresSize = CGSizeZero;
-        for (auto& measureGeometry : partGeometry->geometries()) {
-            measuresSize.width += measureGeometry->size().width;
-            measuresSize.height = std::max(measuresSize.height, static_cast<CGFloat>(measureGeometry->size().height));
-
-            ++measure;
-            if (measure >= kNumberOfMeasures)
-                break;
-        }
-        size.width = std::max(size.width, measuresSize.width);
-        size.height += partGeometry->size().height;
-    }
-    CGSize scaledSize = CGSizeMake(std::ceil(size.width * kScale), std::ceil(size.height * kScale));
-    size.width = scaledSize.width / kScale;
-    size.height = scaledSize.height / kScale;
-
-    return size;
 }
