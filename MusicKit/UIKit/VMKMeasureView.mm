@@ -26,17 +26,20 @@ static const NSTimeInterval kAnimationDuration = 0.5;
     return (VMKMeasureLayer*)self.layer;
 }
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    self.clipsToBounds = NO;
+    self.backgroundColor = [UIColor clearColor];
+    [self setupBookmarkViews];
+    return self;
+}
+
 - (instancetype)initWithMeasure:(const mxml::MeasureGeometry*)measureGeometry {
     self = [super initWithGeometry:measureGeometry];
     if (!self)
         return nil;
 
     self.measureLayer.measureGeometry = measureGeometry;
-    self.clipsToBounds = NO;
-    self.backgroundColor = [UIColor clearColor];
-
-    [self setupBookmarkViews];
-
     return self;
 }
 
@@ -105,7 +108,8 @@ static const NSTimeInterval kAnimationDuration = 0.5;
 
 - (void)setBookmarkedColor:(UIColor *)bookmarkedColor {
     _bookmarkedColor = bookmarkedColor;
-    _bookmarkImageView.image = [VMKImageStore maskFillImage:[VMKImage imageNamed:@"bg-bookmark"] withColor:bookmarkedColor];
+    if (_bookmarkImageView)
+        _bookmarkImageView.image = [VMKImageStore maskFillImage:[VMKImage imageNamed:@"bg-bookmark"] withColor:bookmarkedColor];
 }
 
 - (const mxml::MeasureGeometry*)measureGeometry {

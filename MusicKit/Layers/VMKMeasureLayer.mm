@@ -186,7 +186,7 @@ static const CGFloat kBarLineWidth = 1;
 - (void)layoutSublayers {
     [super layoutSublayers];
 
-    _numberLayer.position = CGPointMake(0, 0);
+    _numberLayer.position = CGPointMake(0, -2);
     _numberLayer.bounds = {CGPointZero, _numberLayer.preferredFrameSize};
 }
 
