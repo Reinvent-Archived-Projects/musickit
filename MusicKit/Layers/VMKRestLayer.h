@@ -6,7 +6,7 @@
 
 @interface VMKRestLayer : VMKScoreElementImageLayer
 
-+ (NSString*)headImageNameForType:(mxml::dom::Note::Type)type;
++ (NSString*)headImageNameForType:(mxml::dom::Optional<mxml::dom::Note::Type>)type;
 
 - (instancetype)initWithRestGeometry:(const mxml::RestGeometry*)restGeom;
 

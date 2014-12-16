@@ -9,7 +9,7 @@ using namespace mxml::dom;
 
 + (NSString*)stemImageNameForNote:(const mxml::dom::Note&)note {
     NSString* name;
-    switch (note.type()) {
+    switch (note.type().value()) {
         case Note::TYPE_1024TH:
         case Note::TYPE_512TH:
         case Note::TYPE_256TH:

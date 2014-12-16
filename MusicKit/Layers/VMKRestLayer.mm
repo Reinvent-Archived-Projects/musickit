@@ -44,8 +44,11 @@ using namespace mxml::dom;
     self.position = CGPointFromPoint(self.geometry->location());
 }
 
-+ (NSString*)headImageNameForType:(mxml::dom::Note::Type)type {
-    switch (type) {
++ (NSString*)headImageNameForType:(mxml::dom::Optional<mxml::dom::Note::Type>)type {
+    if (!type.isPresent())
+        return @"half-rest";
+
+    switch (type.value()) {
         case Note::TYPE_1024TH:
         case Note::TYPE_512TH:
         case Note::TYPE_256TH:

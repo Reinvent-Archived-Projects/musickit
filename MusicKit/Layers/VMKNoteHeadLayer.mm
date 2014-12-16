@@ -8,7 +8,7 @@ using namespace mxml;
 @implementation VMKNoteHeadLayer
 
 + (NSString*)headImageNameForNote:(const dom::Note&)note {
-    switch (note.type()) {
+    switch (note.type().value()) {
         case dom::Note::TYPE_HALF:
             return @"half-head";
 
