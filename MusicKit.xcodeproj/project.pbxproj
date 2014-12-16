@@ -400,7 +400,6 @@
 		616C1D851A0D97490020EAA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 616C1D841A0D97490020EAA8 /* main.m */; };
 		616C1D881A0D97490020EAA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 616C1D871A0D97490020EAA8 /* ViewController.m */; };
 		616C1D8A1A0D97490020EAA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D891A0D97490020EAA8 /* Images.xcassets */; };
-		616C1D8D1A0D97490020EAA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616C1D8B1A0D97490020EAA8 /* Main.storyboard */; };
 		616C1DA01A0D97590020EAA8 /* BeamLayer-AccidentalInBeamedSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4A1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png */; };
 		616C1DA11A0D97590020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C4B1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png */; };
 		616C1DA21A0D97590020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1C641A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png */; };
@@ -540,7 +539,6 @@
 		618C6C4E1A13DCE4008314B2 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618C6BE01A119BFA008314B2 /* main.mm */; };
 		618C6C531A13DFC5008314B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618C6C521A13DFC5008314B2 /* QuartzCore.framework */; };
 		618C6C541A13DFD8008314B2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618C6BE81A119E71008314B2 /* AppKit.framework */; };
-		618C6C581A13E6F4008314B2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618C6C571A13E6F4008314B2 /* Storyboard.storyboard */; };
 		618C6C591A13E795008314B2 /* VMKImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1C191A0D61ED0020EAA8 /* VMKImage.mm */; };
 		618C6C5A1A13E795008314B2 /* VMKGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B6F1A082562003AE7A7 /* VMKGeometry.mm */; };
 		618C6C5B1A13E795008314B2 /* VMKImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 61402B761A082562003AE7A7 /* VMKImageStore.m */; };
@@ -646,6 +644,8 @@
 		618C6CBF1A13E7E0008314B2 /* SpanCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE701A094A0E00BEEBFD /* SpanCollection.cpp */; };
 		618C6CC01A13E7E0008314B2 /* SpanFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */; };
 		61D667811A3F67B80044A00B /* VMKScoreRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61D667801A3F67B80044A00B /* VMKScoreRenderer.mm */; };
+		61D667B01A40C7D40044A00B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D667AF1A40C7D40044A00B /* MainMenu.xib */; };
+		61D667B21A40C8390044A00B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D667B11A40C8390044A00B /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1127,7 +1127,6 @@
 		616C1D861A0D97490020EAA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		616C1D871A0D97490020EAA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		616C1D891A0D97490020EAA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		616C1D8C1A0D97490020EAA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		616C1D921A0D97490020EAA8 /* MusicKitOSXAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicKitOSXAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		616C1D971A0D97490020EAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		616C1E211A1173300020EAA8 /* CollectionViewScoreLayout-Slurs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Slurs.png"; sourceTree = "<group>"; };
@@ -1145,9 +1144,10 @@
 		618C6C2D1A13DC76008314B2 /* PreviewGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreviewGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		618C6C301A13DC76008314B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		618C6C521A13DFC5008314B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		618C6C571A13E6F4008314B2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		61D6677F1A3F67B80044A00B /* VMKScoreRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKScoreRenderer.h; sourceTree = "<group>"; };
 		61D667801A3F67B80044A00B /* VMKScoreRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKScoreRenderer.mm; sourceTree = "<group>"; };
+		61D667AF1A40C7D40044A00B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		61D667B11A40C8390044A00B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		736F0E8822E3E82A82593CC0 /* libPods-PreviewGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PreviewGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		777972E87AE26FF9CF8EE309 /* Pods-PreviewGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreviewGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator.debug.xcconfig"; sourceTree = "<group>"; };
 		80D97B40F18B7EFC550962E5 /* libPods-MusicKitAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicKitAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1817,7 +1817,7 @@
 				616C1D861A0D97490020EAA8 /* ViewController.h */,
 				616C1D871A0D97490020EAA8 /* ViewController.m */,
 				616C1D891A0D97490020EAA8 /* Images.xcassets */,
-				616C1D8B1A0D97490020EAA8 /* Main.storyboard */,
+				61D667AF1A40C7D40044A00B /* MainMenu.xib */,
 				616C1D7F1A0D97490020EAA8 /* Supporting Files */,
 			);
 			path = MusicKitOSXApp;
@@ -1854,9 +1854,9 @@
 				618C6BE01A119BFA008314B2 /* main.mm */,
 				61D6677F1A3F67B80044A00B /* VMKScoreRenderer.h */,
 				61D667801A3F67B80044A00B /* VMKScoreRenderer.mm */,
-				618C6C571A13E6F4008314B2 /* Storyboard.storyboard */,
 				618C6C301A13DC76008314B2 /* Info.plist */,
 				00A3E4691A2E57BF00B2A6C8 /* Images.xcassets */,
+				61D667B11A40C8390044A00B /* MainMenu.xib */,
 			);
 			path = PreviewGenerator;
 			sourceTree = "<group>";
@@ -2279,7 +2279,7 @@
 			files = (
 				616C1D8A1A0D97490020EAA8 /* Images.xcassets in Resources */,
 				616C1E191A0D977E0020EAA8 /* Symbols.xcassets in Resources */,
-				616C1D8D1A0D97490020EAA8 /* Main.storyboard in Resources */,
+				61D667B01A40C7D40044A00B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2409,7 +2409,7 @@
 			files = (
 				00A3E46A1A2E57BF00B2A6C8 /* Images.xcassets in Resources */,
 				618C6C4D1A13DCC8008314B2 /* Symbols.xcassets in Resources */,
-				618C6C581A13E6F4008314B2 /* Storyboard.storyboard in Resources */,
+				61D667B21A40C8390044A00B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2897,14 +2897,6 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
-		616C1D8B1A0D97490020EAA8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				616C1D8C1A0D97490020EAA8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -3153,7 +3145,7 @@
 				);
 				INFOPLIST_FILE = MusicKitOSXApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -3169,7 +3161,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = MusicKitOSXApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -3238,7 +3230,7 @@
 				);
 				INFOPLIST_FILE = PreviewGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -3261,7 +3253,7 @@
 				);
 				INFOPLIST_FILE = PreviewGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
