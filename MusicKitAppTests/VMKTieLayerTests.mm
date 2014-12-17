@@ -9,7 +9,7 @@
 using namespace mxml;
 using namespace mxml::dom;
 
-static const CGFloat kTieAccuracy = 0.03;
+static const CGFloat kTieAccuracy = 0.045;
 
 
 @interface VMKTieLayerTests : VMKAdHocScoreTestCase
