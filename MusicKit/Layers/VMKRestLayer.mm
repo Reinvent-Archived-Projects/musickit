@@ -46,7 +46,7 @@ using namespace mxml::dom;
 
 + (NSString*)headImageNameForType:(mxml::dom::Optional<mxml::dom::Note::Type>)type {
     if (!type.isPresent())
-        return @"half-rest";
+        return @"whole-rest";
 
     switch (type.value()) {
         case Note::TYPE_1024TH:
