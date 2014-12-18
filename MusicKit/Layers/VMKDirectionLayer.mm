@@ -17,7 +17,7 @@
     _textLayer = [CATextLayer layer];
     _textLayer.foregroundColor = self.foregroundColor;
     _textLayer.backgroundColor = self.backgroundColor;
-    _textLayer.alignmentMode = kCAAlignmentCenter;
+    _textLayer.alignmentMode = kCAAlignmentLeft;
     _textLayer.contentsScale = VMKScreenScale();
 #if !TARGET_OS_IPHONE
     CATransform3D t = CATransform3DIdentity;
