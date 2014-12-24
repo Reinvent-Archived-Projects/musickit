@@ -24,7 +24,7 @@ test() {
 	  -project MusicKit.xcodeproj \
 	  -scheme MusicKitOSX \
 	  -destination 'platform=OS X,arch=x86_64' \
-	  test | xcpretty -cs
+	  build test | xcpretty -cs
 
 	xcodebuild \
 	  -project MusicKit.xcodeproj \
@@ -32,7 +32,7 @@ test() {
 	  -destination 'platform=iOS Simulator,name=iPad Air,OS=latest' \
 	  -destination 'platform=iOS Simulator,name=iPhone 6 Plus,OS=latest' \
 	  -destination 'platform=iOS Simulator,name=iPad 2,OS=7.1' \
-	  test | xcpretty -cs
+	  build test | xcpretty -cs
 }
 
 case $1 in
