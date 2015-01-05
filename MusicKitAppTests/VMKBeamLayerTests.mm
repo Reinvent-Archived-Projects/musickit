@@ -6,6 +6,7 @@
 
 #include "Chord.h"
 #include "PartGeometry.h"
+#include "Metrics.h"
 
 using namespace mxml::dom;
 
@@ -16,25 +17,19 @@ using namespace mxml::dom;
 
 @implementation VMKBeamLayerTests {
     NSMutableArray* _chordViews;
-    Attributes _attributes;
+    Attributes* _attributes;
 }
 
 - (void)setUp {
     [super setUp];
     
+    std::unique_ptr<Attributes> attributes(new Attributes{});
+    attributes->setStaves(presentOptional(1));
+    
+    _attributes = attributes.get();
+    
     Measure* measure = self.measure;
-    
-    _attributes.setStaves(presentOptional(1));
-    
-    Clef clef;
-    clef.setNumber(1);
-    clef.setSign(Clef::SIGN_G);
-    clef.setLine(2);
-    _attributes.setClef(1, absentOptional(clef));
-    measure->addNode(std::unique_ptr<Attributes>(new Attributes(_attributes)));
-    
-    _attributes.setClef(1, presentOptional(clef));
-    measure->setBaseAttributes(_attributes);
+    measure->addNode(std::move(attributes));
     
     _chordViews = [[NSMutableArray alloc] init];
 }
@@ -62,7 +57,7 @@ using namespace mxml::dom;
     
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
-    XCTAssertTrue(size.height >= 3*mxml::PartGeometry::kStaffLineSpacing, @"Height should be greater than zero");
+    XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
@@ -96,10 +91,10 @@ using namespace mxml::dom;
     std::unique_ptr<Note> note = [self createNoteType:Note::TYPE_EIGHTH pitch:Pitch::STEP_A octave:4 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
     note->setStart(0);
     
-    Beam beam;
-    beam.setNumber(2);
-    beam.setType(Beam::TYPE_FORWARD_HOOK);
-    note->addBeam(beam);
+    auto beam = std::unique_ptr<Beam>(new Beam{});
+    beam->setNumber(2);
+    beam->setType(Beam::TYPE_FORWARD_HOOK);
+    note->addBeam(std::move(beam));
     
     std::unique_ptr<Chord> chord(new Chord);
     chord->addNote(std::move(note));
@@ -128,10 +123,10 @@ using namespace mxml::dom;
     note = [self createNoteType:Note::TYPE_EIGHTH pitch:Pitch::STEP_B octave:4 beamType:Beam::TYPE_END numberOfBeams:1];
     note->setStart(1);
     
-    Beam beam;
-    beam.setNumber(2);
-    beam.setType(Beam::TYPE_BACKWARD_HOOK);
-    note->addBeam(beam);
+    auto beam = std::unique_ptr<Beam>(new Beam{});
+    beam->setNumber(2);
+    beam->setType(Beam::TYPE_BACKWARD_HOOK);
+    note->addBeam(std::move(beam));
     
     chord.reset(new Chord);
     chord->addNote(std::move(note));
@@ -200,7 +195,9 @@ using namespace mxml::dom;
     note = [self createNoteType:Note::TYPE_EIGHTH pitch:Pitch::STEP_B octave:4 beamType:Beam::TYPE_END numberOfBeams:1];
     note->setStart(1);
     note->setStem(STEM_DOWN);
-    note->setAccidental(presentOptional(Accidental(Accidental::TYPE_SHARP)));
+    
+    auto accidental = std::unique_ptr<Accidental>(new Accidental{Accidental::TYPE_SHARP});
+    note->setAccidental(std::move(accidental));
     
     chord.reset(new Chord);
     chord->addNote(std::move(note));

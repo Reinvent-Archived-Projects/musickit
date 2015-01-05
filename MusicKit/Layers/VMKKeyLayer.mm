@@ -5,6 +5,8 @@
 
 #include <mxml/geometry/MeasureGeometry.h>
 #include <mxml/geometry/PartGeometry.h>
+#include <mxml/Metrics.h>
+
 #include <cstdlib>
 
 
@@ -26,14 +28,18 @@
     BOOL changed = geometry != self.geometry;
     [super setGeometry:geometry];
 
-    if (geometry)
+    if (geometry) {
         _clef = &self.keyGeometry->clef();
+        assert(_clef);
+    }
+    
 
     if (changed)
         [self setNeedsDisplay];
 }
 
 - (void)setClef:(const mxml::dom::Clef*)clef {
+    assert(clef);
     _clef = clef;
     [self setNeedsDisplay];
 }
@@ -46,13 +52,16 @@
     const mxml::dom::Key& key = keyGeom.key();
 
     NSString* imageName;
-    if (key.fifths() < 0)
+    if (keyGeom.natural())
+        imageName = @"natural";
+    else if (key.fifths() < 0)
         imageName = @"flat";
     else
         imageName = @"sharp";
+    
     VMKImage* image = [[VMKImageStore sharedInstance] imageNamed:imageName];
 
-    CGFloat originY = self.bounds.size.height/2 - mxml::PartGeometry::staffHeight()/2;
+    CGFloat originY = self.bounds.size.height/2 - mxml::Metrics::staffHeight()/2;
     CGRect imageRect;
     imageRect.origin.x = 0;
     imageRect.size = image.size;

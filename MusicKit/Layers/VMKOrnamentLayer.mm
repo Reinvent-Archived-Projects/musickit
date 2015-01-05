@@ -5,15 +5,15 @@
 @implementation VMKOrnamentLayer
 
 + (NSString*)imageNameForOrnaments:(const mxml::dom::Ornaments&)ornaments {
-    if (ornaments.trillMark().isPresent()) {
+    if (ornaments.trillMark().get()) {
         return @"trill";
-    } else if (ornaments.turn().isPresent()) {
+    } else if (ornaments.turn().get()) {
         return @"turn";
-    } else if (ornaments.invertedTurn().isPresent()) {
+    } else if (ornaments.invertedTurn().get()) {
         return @"inverted-turn";
-    } else if (ornaments.mordent().isPresent()) {
+    } else if (ornaments.mordent().get()) {
         return @"mordent";
-    } else if (ornaments.invertedMordent().isPresent()) {
+    } else if (ornaments.invertedMordent().get()) {
         return @"inverted-mordent";
     }
     return nil;

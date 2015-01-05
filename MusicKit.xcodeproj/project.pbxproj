@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		00A3E46A1A2E57BF00B2A6C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A3E4691A2E57BF00B2A6C8 /* Images.xcassets */; };
+		00B34FF61A5B464000198F4A /* AttributesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF21A5B464000198F4A /* AttributesManager.cpp */; };
+		00B34FF71A5B464000198F4A /* AttributesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF21A5B464000198F4A /* AttributesManager.cpp */; };
+		00B34FF81A5B464000198F4A /* AttributesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B34FF31A5B464000198F4A /* AttributesManager.h */; };
+		00B34FF91A5B464000198F4A /* AttributesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B34FF31A5B464000198F4A /* AttributesManager.h */; };
+		00B34FFA1A5B464000198F4A /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
+		00B34FFB1A5B464000198F4A /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
+		00B34FFC1A5B464000198F4A /* Metrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B34FF51A5B464000198F4A /* Metrics.h */; };
+		00B34FFD1A5B464000198F4A /* Metrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B34FF51A5B464000198F4A /* Metrics.h */; };
 		11D353EAA0E6C0BBDD28998E /* libPods-PreviewGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 736F0E8822E3E82A82593CC0 /* libPods-PreviewGenerator.a */; };
 		610DC5991A082FF000BEEBFD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DC5981A082FF000BEEBFD /* libxml2.dylib */; };
 		610DC5A61A0831DF00BEEBFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5A51A0831DF00BEEBFD /* main.m */; };
@@ -260,8 +268,6 @@
 		616C1B511A0C0D0B0020EAA8 /* VMKBraceLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B4D1A0C0D0B0020EAA8 /* VMKBraceLayer.mm */; };
 		616C1B5D1A0C0E310020EAA8 /* VMKAttributesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B531A0C0E310020EAA8 /* VMKAttributesView.h */; };
 		616C1B5E1A0C0E310020EAA8 /* VMKAttributesView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B541A0C0E310020EAA8 /* VMKAttributesView.mm */; };
-		616C1B5F1A0C0E310020EAA8 /* VMKCreditsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B551A0C0E310020EAA8 /* VMKCreditsView.h */; };
-		616C1B601A0C0E310020EAA8 /* VMKCreditsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B561A0C0E310020EAA8 /* VMKCreditsView.mm */; };
 		616C1B611A0C0E310020EAA8 /* VMKCursorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B571A0C0E310020EAA8 /* VMKCursorView.h */; };
 		616C1B621A0C0E310020EAA8 /* VMKCursorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B581A0C0E310020EAA8 /* VMKCursorView.m */; };
 		616C1B631A0C0E310020EAA8 /* VMKMeasureView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B591A0C0E310020EAA8 /* VMKMeasureView.h */; };
@@ -705,6 +711,10 @@
 
 /* Begin PBXFileReference section */
 		00A3E4691A2E57BF00B2A6C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		00B34FF21A5B464000198F4A /* AttributesManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AttributesManager.cpp; path = Submodules/mxml/src/mxml/AttributesManager.cpp; sourceTree = SOURCE_ROOT; };
+		00B34FF31A5B464000198F4A /* AttributesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttributesManager.h; path = Submodules/mxml/src/mxml/AttributesManager.h; sourceTree = SOURCE_ROOT; };
+		00B34FF41A5B464000198F4A /* Metrics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Metrics.cpp; path = Submodules/mxml/src/mxml/Metrics.cpp; sourceTree = SOURCE_ROOT; };
+		00B34FF51A5B464000198F4A /* Metrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Metrics.h; path = Submodules/mxml/src/mxml/Metrics.h; sourceTree = SOURCE_ROOT; };
 		2398D1FF5BFE82C3AC02E2F5 /* Pods-PreviewGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreviewGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator.release.xcconfig"; sourceTree = "<group>"; };
 		610DC5981A082FF000BEEBFD /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		610DC5A11A0831DF00BEEBFD /* MusicKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1000,8 +1010,6 @@
 		616C1B4D1A0C0D0B0020EAA8 /* VMKBraceLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKBraceLayer.mm; sourceTree = "<group>"; };
 		616C1B531A0C0E310020EAA8 /* VMKAttributesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKAttributesView.h; sourceTree = "<group>"; };
 		616C1B541A0C0E310020EAA8 /* VMKAttributesView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKAttributesView.mm; sourceTree = "<group>"; };
-		616C1B551A0C0E310020EAA8 /* VMKCreditsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCreditsView.h; sourceTree = "<group>"; };
-		616C1B561A0C0E310020EAA8 /* VMKCreditsView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKCreditsView.mm; sourceTree = "<group>"; };
 		616C1B571A0C0E310020EAA8 /* VMKCursorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCursorView.h; sourceTree = "<group>"; };
 		616C1B581A0C0E310020EAA8 /* VMKCursorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKCursorView.m; sourceTree = "<group>"; };
 		616C1B591A0C0E310020EAA8 /* VMKMeasureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKMeasureView.h; sourceTree = "<group>"; };
@@ -1460,6 +1468,10 @@
 		610DCDA51A094A0E00BEEBFD /* mxml */ = {
 			isa = PBXGroup;
 			children = (
+				00B34FF21A5B464000198F4A /* AttributesManager.cpp */,
+				00B34FF31A5B464000198F4A /* AttributesManager.h */,
+				00B34FF41A5B464000198F4A /* Metrics.cpp */,
+				00B34FF51A5B464000198F4A /* Metrics.h */,
 				610DCDA61A094A0E00BEEBFD /* dom */,
 				610DCDE21A094A0E00BEEBFD /* geometry */,
 				610DCE1E1A094A0E00BEEBFD /* parsing */,
@@ -1814,8 +1826,6 @@
 				616C1B6C1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm */,
 				616C1B6A1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h */,
 				616C1B6B1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm */,
-				616C1B551A0C0E310020EAA8 /* VMKCreditsView.h */,
-				616C1B561A0C0E310020EAA8 /* VMKCreditsView.mm */,
 				616C1B571A0C0E310020EAA8 /* VMKCursorView.h */,
 				616C1B581A0C0E310020EAA8 /* VMKCursorView.m */,
 				616C1B731A0C2C680020EAA8 /* VMKDirectionView.h */,
@@ -1919,6 +1929,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */,
+				00B34FF81A5B464000198F4A /* AttributesManager.h in Headers */,
 				618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */,
 				616C1B931A0C4D790020EAA8 /* VMKOrnamentView.h in Headers */,
 				616C1AAA1A0AF9960020EAA8 /* VMKMeasureLayer.h in Headers */,
@@ -1927,6 +1938,7 @@
 				616C1AC61A0BFE2C0020EAA8 /* VMKWedgeLayer.h in Headers */,
 				616C1A9E1A0AA24E0020EAA8 /* VMKEndingLayer.h in Headers */,
 				61D0DFC01A44D13900EA6574 /* PlacementGeometry.h in Headers */,
+				00B34FFC1A5B464000198F4A /* Metrics.h in Headers */,
 				616C1B6D1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h in Headers */,
 				616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */,
 				616C1B4E1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */,
@@ -1957,7 +1969,6 @@
 				616C1AB21A0B01BB0020EAA8 /* VMKNoteStemLayer.h in Headers */,
 				616C1B811A0C2DA40020EAA8 /* VMKPedalView.h in Headers */,
 				616C1B701A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h in Headers */,
-				616C1B5F1A0C0E310020EAA8 /* VMKCreditsView.h in Headers */,
 				616C1B851A0C2DDB0020EAA8 /* VMKTieView.h in Headers */,
 				610DCF631A09ACED00BEEBFD /* VMKAccidentalLayer.h in Headers */,
 				610DCF5E1A09A08E00BEEBFD /* VMKScoreElementLayer.h in Headers */,
@@ -1969,10 +1980,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				61D0DFC31A44D13900EA6574 /* PartGeometryFactory.h in Headers */,
+				00B34FF91A5B464000198F4A /* AttributesManager.h in Headers */,
 				61D0DFB91A44D11600EA6574 /* StringUtility.h in Headers */,
 				6149DB4D1A49FB7C005E094A /* CollisionHandler.h in Headers */,
 				616C1B4F1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */,
 				61D0DFC11A44D13900EA6574 /* PlacementGeometry.h in Headers */,
+				00B34FFD1A5B464000198F4A /* Metrics.h in Headers */,
 				616C1B8E1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2529,6 +2542,8 @@
 				610DCF091A094B5100BEEBFD /* TiedHandler.cpp in Sources */,
 				610DCED31A094B4C00BEEBFD /* DirectionGeometry.cpp in Sources */,
 				610DCECA1A094B4800BEEBFD /* Measure.cpp in Sources */,
+				00B34FF61A5B464000198F4A /* AttributesManager.cpp in Sources */,
+				00B34FFA1A5B464000198F4A /* Metrics.cpp in Sources */,
 				610DCEEF1A094B5100BEEBFD /* DefaultsHandler.cpp in Sources */,
 				610DCEC51A094B4500BEEBFD /* IntegerHandler.cpp in Sources */,
 				610DCF001A094B5100BEEBFD /* PrintHandler.cpp in Sources */,
@@ -2583,7 +2598,6 @@
 				610DCEFF1A094B5100BEEBFD /* PitchHandler.cpp in Sources */,
 				616C1B8A1A0C2DEA0020EAA8 /* VMKWedgeView.mm in Sources */,
 				610DCEC91A094B4800BEEBFD /* Identification.cpp in Sources */,
-				616C1B601A0C0E310020EAA8 /* VMKCreditsView.mm in Sources */,
 				616C1A9B1A0A9DAE0020EAA8 /* VMKDirectionLayer.mm in Sources */,
 				610DCEFD1A094B5100BEEBFD /* OrnamentsHandler.cpp in Sources */,
 				616C1A921A0A98B70020EAA8 /* VMKClefLayer.mm in Sources */,
@@ -2668,7 +2682,9 @@
 				616C1B1D1A0C05A40020EAA8 /* NotationsHandler.cpp in Sources */,
 				616C1B231A0C05A40020EAA8 /* RepeatHandler.cpp in Sources */,
 				616C1B0C1A0C05A40020EAA8 /* BarlineHandler.cpp in Sources */,
+				00B34FF71A5B464000198F4A /* AttributesManager.cpp in Sources */,
 				616C1B351A0C05B10020EAA8 /* VMKGeometry.mm in Sources */,
+				00B34FFB1A5B464000198F4A /* Metrics.cpp in Sources */,
 				616C1B191A0C05A40020EAA8 /* KeyHandler.cpp in Sources */,
 				616C1B111A0C05A40020EAA8 /* DefaultsHandler.cpp in Sources */,
 				61D0DFC51A44D13900EA6574 /* PartGeometryFactory.cpp in Sources */,

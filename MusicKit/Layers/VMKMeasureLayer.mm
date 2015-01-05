@@ -13,6 +13,7 @@
 #import "VMKTimeSignatureLayer.h"
 #import "VMKRestLayer.h"
 
+#include <mxml/Metrics.h>
 #include <mxml/geometry/BarlineGeometry.h>
 #include <mxml/geometry/BeamGeometry.h>
 #include <mxml/geometry/ChordGeometry.h>
@@ -207,7 +208,7 @@ static const CGFloat kBarLineWidth = 1;
     CGFloat staffDistance = part->staffDistance();
 
     CGSize size = self.bounds.size;
-    CGFloat stavesHeight = self.measureGeometry->partGeometry().stavesHeight();
+    CGFloat stavesHeight = Metrics::stavesHeight(self.measureGeometry->partGeometry().part());
     CGRect lineRect;
 
     // Draw bar line
@@ -224,11 +225,11 @@ static const CGFloat kBarLineWidth = 1;
     lineRect.size.width = size.width;
     lineRect.size.height = kStaffLineWidth;
     for (int staff = 1; staff <= staves; staff += 1) {
-        for (NSUInteger line = 0; line < PartGeometry::kStaffLineCount; line += 1) {
+        for (NSUInteger line = 0; line < Metrics::kStaffLineCount; line += 1) {
             CGContextFillRect(ctx, VMKRoundRect(lineRect));
-            lineRect.origin.y += PartGeometry::kStaffLineSpacing;
+            lineRect.origin.y += Metrics::kStaffLineSpacing;
         }
-        lineRect.origin.y += -PartGeometry::kStaffLineSpacing + staffDistance;
+        lineRect.origin.y += -Metrics::kStaffLineSpacing + staffDistance;
     }
 
     // Draw ledger lines
@@ -242,7 +243,7 @@ static const CGFloat kBarLineWidth = 1;
 }
 
 - (void)drawLedgerLinesForNoteGeom:(const NoteGeometry*)noteGeom staffNumber:(int)staff inContext:(CGContextRef)ctx {
-    const CGFloat staffOrigin = self.measureGeometry->partGeometry().staffOrigin(staff);
+    const CGFloat staffOrigin = Metrics::staffOrigin(self.measureGeometry->partGeometry().part(), staff);
 
     CGRect lineRect;
     lineRect.origin = CGPointFromPoint(self.geometry->convertFromGeometry(noteGeom->origin(), noteGeom->parentGeometry()));
@@ -251,24 +252,24 @@ static const CGFloat kBarLineWidth = 1;
     lineRect.size.width = noteGeom->size().width + 4;
     lineRect.size.height = kStaffLineWidth;
     
-    CGFloat y = staffOrigin - PartGeometry::kStaffLineSpacing/2;
+    CGFloat y = staffOrigin - Metrics::kStaffLineSpacing/2;
     while (noteGeom->location().y < y) {
-        y -= PartGeometry::kStaffLineSpacing;
-        lineRect.origin.y -= PartGeometry::kStaffLineSpacing;
+        y -= Metrics::kStaffLineSpacing;
+        lineRect.origin.y -= Metrics::kStaffLineSpacing;
         CGContextFillRect(ctx, VMKRoundRect(lineRect));
     }
     
-    lineRect.origin.y = (staffOrigin + PartGeometry::staffHeight()) - kStaffLineWidth/2;
-    y = staffOrigin + PartGeometry::staffHeight() + PartGeometry::kStaffLineSpacing/2;
+    lineRect.origin.y = (staffOrigin + Metrics::staffHeight()) - kStaffLineWidth/2;
+    y = staffOrigin + Metrics::staffHeight() + Metrics::kStaffLineSpacing/2;
     while (noteGeom->location().y > y) {
-        y += PartGeometry::kStaffLineSpacing;
-        lineRect.origin.y += PartGeometry::kStaffLineSpacing;
+        y += Metrics::kStaffLineSpacing;
+        lineRect.origin.y += Metrics::kStaffLineSpacing;
         CGContextFillRect(ctx, VMKRoundRect(lineRect));
     }
 }
 
 - (void)drawLedgerLinesForNoteGeom:(const NoteGeometry*)noteGeom inStaffNumber:(int)staff inContext:(CGContextRef)ctx {
-    const CGFloat staffOrigin = self.measureGeometry->partGeometry().staffOrigin(staff);
+    const CGFloat staffOrigin = Metrics::staffOrigin(self.measureGeometry->partGeometry().part(), staff);
 
     CGRect lineRect;
     lineRect.origin = CGPointFromPoint(self.geometry->convertFromGeometry(noteGeom->origin(), noteGeom->parentGeometry()));
@@ -277,18 +278,18 @@ static const CGFloat kBarLineWidth = 1;
     lineRect.size.width = noteGeom->size().width + 4;
     lineRect.size.height = kStaffLineWidth;
 
-    CGFloat y = staffOrigin - PartGeometry::kStaffLineSpacing/2;
+    CGFloat y = staffOrigin - Metrics::kStaffLineSpacing/2;
     while (noteGeom->location().y < y) {
-        y -= PartGeometry::kStaffLineSpacing;
-        lineRect.origin.y -= PartGeometry::kStaffLineSpacing;
+        y -= Metrics::kStaffLineSpacing;
+        lineRect.origin.y -= Metrics::kStaffLineSpacing;
         CGContextFillRect(ctx, VMKRoundRect(lineRect));
     }
 
-    lineRect.origin.y = (staffOrigin + PartGeometry::staffHeight()) - kStaffLineWidth/2;
-    y = staffOrigin + PartGeometry::staffHeight() + PartGeometry::kStaffLineSpacing/2;
+    lineRect.origin.y = (staffOrigin + Metrics::staffHeight()) - kStaffLineWidth/2;
+    y = staffOrigin + Metrics::staffHeight() + Metrics::kStaffLineSpacing/2;
     while (noteGeom->location().y > y) {
-        y += PartGeometry::kStaffLineSpacing;
-        lineRect.origin.y += PartGeometry::kStaffLineSpacing;
+        y += Metrics::kStaffLineSpacing;
+        lineRect.origin.y += Metrics::kStaffLineSpacing;
         CGContextFillRect(ctx, VMKRoundRect(lineRect));
     }
 }

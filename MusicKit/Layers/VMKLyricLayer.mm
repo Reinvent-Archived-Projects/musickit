@@ -49,7 +49,7 @@
 
     NSString* string  = [NSString stringWithUTF8String:lyric.text().c_str()];
 
-    mxml::dom::Syllabic::Type type = lyric.syllabic().value().type();
+    mxml::dom::Syllabic::Type type = lyric.syllabic()->type();
     if (type == mxml::dom::Syllabic::Begin || type == mxml::dom::Syllabic::Middle)
         string = [string stringByAppendingString:@" - "];
     _textLayer.string = string;

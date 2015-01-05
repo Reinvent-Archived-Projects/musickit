@@ -42,7 +42,6 @@ FOUNDATION_EXPORT const unsigned char MusicKitVersionString[];
 
     #import <MusicKit/UIKit/NSIndexPath+VMKScoreAdditions.h>
     #import <MusicKit/UIKit/VMKAttributesView.h>
-    #import <MusicKit/UIKit/VMKCreditsView.h>
     #import <MusicKit/UIKit/VMKCursorView.h>
     #import <MusicKit/UIKit/VMKMeasureView.h>
     #import <MusicKit/UIKit/VMKScoreElementContainerView.h>

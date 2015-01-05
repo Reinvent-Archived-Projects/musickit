@@ -61,10 +61,10 @@ using namespace mxml::dom;
     std::unique_ptr<Note> note(new Note);
     note->setType(type);
     
-    Pitch pitch;
-    pitch.setOctave(octave);
-    pitch.setStep(pitchStep);
-    note->setPitch(presentOptional(pitch));
+    auto pitch = std::unique_ptr<Pitch>(new Pitch{});
+    pitch->setOctave(octave);
+    pitch->setStep(pitchStep);
+    note->setPitch(std::move(pitch));
     
     note->setMeasure(self.measure);
     
@@ -75,16 +75,16 @@ using namespace mxml::dom;
     std::unique_ptr<Note> note(new Note);
     note->setType(type);
     
-    Pitch pitch;
-    pitch.setOctave(octave);
-    pitch.setStep(pitchStep);
-    note->setPitch(presentOptional(pitch));
+    auto pitch = std::unique_ptr<Pitch>(new Pitch{});
+    pitch->setOctave(octave);
+    pitch->setStep(pitchStep);
+    note->setPitch(std::move(pitch));
     
     for (int bi = 1; bi <= beamCount; bi += 1) {
-        Beam beam;
-        beam.setNumber(1);
-        beam.setType(beamType);
-        note->addBeam(beam);
+        auto beam = std::unique_ptr<Beam>(new Beam{});
+        beam->setNumber(1);
+        beam->setType(beamType);
+        note->addBeam(std::move(beam));
     }
     
     note->setMeasure(self.measure);

@@ -7,6 +7,8 @@
 #import "VMKKeyLayer.h"
 #import "VMKTimeSignatureLayer.h"
 
+#import <mxml/Metrics.h>
+
 #include <algorithm>
 #include <cassert>
 
@@ -254,10 +256,10 @@ static const CGFloat kGapWidth = 10;
         keysWidth = std::max(keysWidth, keyLayer.bounds.size.width);
     }
     
-    CGFloat y0 = -_partGeometry->stavesHeight()/2;
+    CGFloat y0 = -Metrics::stavesHeight(_partGeometry->part())/2;
     for (int staff = 1; staff <= staves; staff += 1) {
         CGFloat x = CGRectGetMaxX(braceFrame) + kSpacing;
-        CGFloat y = y0 + (_partGeometry->staffOrigin(staff) + _partGeometry->staffHeight()/2);
+        CGFloat y = y0 + (Metrics::staffOrigin(_partGeometry->part(), staff) + Metrics::staffHeight()/2);
         
         VMKClefLayer* clefLayer = _clefLayers[staff - 1];
         CGRect clefFrame = clefLayer.frame;
@@ -293,10 +295,10 @@ static const CGFloat kGapWidth = 10;
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGSize size = self.bounds.size;
 
-    CGFloat stavesHeight = _partGeometry->stavesHeight();
+    CGFloat stavesHeight = Metrics::stavesHeight(_partGeometry->part());
     CGPoint origin;
     origin.x = CGRectGetMaxX(_braceLayer.frame) + kSpacing/2;
-    origin.y = -_partGeometry->stavesHeight()/2;
+    origin.y = -Metrics::stavesHeight(_partGeometry->part())/2;
     CGRect lineRect;
 
     CGContextSetFillColorWithColor(ctx, self.foregroundColor.CGColor);
@@ -315,11 +317,11 @@ static const CGFloat kGapWidth = 10;
     lineRect.size.width = size.width - origin.x - kGapWidth;
     lineRect.size.height = kStaffLineWidth;
     for (int staff = 1; staff <= staves; staff += 1) {
-        for (NSUInteger line = 0; line < PartGeometry::kStaffLineCount; line += 1) {
+        for (NSUInteger line = 0; line < Metrics::kStaffLineCount; line += 1) {
             CGContextFillRect(ctx, VMKRoundRect(lineRect));
-            lineRect.origin.y += PartGeometry::kStaffLineSpacing;
+            lineRect.origin.y += Metrics::kStaffLineSpacing;
         }
-        lineRect.origin.y += -PartGeometry::kStaffLineSpacing + staffDistance;
+        lineRect.origin.y += -Metrics::kStaffLineSpacing + staffDistance;
     }
     
     // Draw bar line

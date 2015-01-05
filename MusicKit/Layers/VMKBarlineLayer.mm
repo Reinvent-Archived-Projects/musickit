@@ -3,6 +3,9 @@
 #import "VMKBarlineLayer.h"
 #import "VMKImageStore.h"
 
+#import <mxml/Metrics.h>
+
+
 using namespace mxml;
 
 static const CGFloat kLightLineWidth = 1;
@@ -31,7 +34,7 @@ static const CGFloat kLineSpacing = 2;
 
     if (geom) {
         auto barlineGeom = self.barlineGeometry;
-        auto barline = barlineGeom->barline();
+        auto& barline = barlineGeom->barline();
 
         const dom::Measure* measure = dynamic_cast<const dom::Measure*>(barline.parent());
         assert(measure);
@@ -48,7 +51,7 @@ static const CGFloat kLineSpacing = 2;
         return;
 
     CGContextSetFillColorWithColor(ctx, self.foregroundColor);
-    if (self.barlineGeometry->barline().repeat().isPresent()) {
+    if (self.barlineGeometry->barline().repeat()) {
         [self drawRepeatInContext:ctx];
     } else {
         [self drawRegularInContext:ctx];
@@ -117,8 +120,8 @@ static const CGFloat kLineSpacing = 2;
     CGFloat offset = 0;
 
     const BarlineGeometry* barlineGeom = self.barlineGeometry;
-    const dom::Repeat& repeat = barlineGeom->barline().repeat();
-    if (repeat.direction() == dom::Repeat::DIRECTION_FORWARD) {
+    const auto& repeat = barlineGeom->barline().repeat();
+    if (repeat->direction() == dom::Repeat::DIRECTION_FORWARD) {
         CGContextFillRect(ctx, CGRectMake(offset, 0, kHeavyLineWidth, height));
         offset += (kHeavyLineWidth + kLineSpacing);
         CGContextFillRect(ctx, CGRectMake(offset, 0, kLightLineWidth, height));
@@ -133,8 +136,8 @@ static const CGFloat kLineSpacing = 2;
 
     auto origin = self.geometry->origin();
     for (int staff = 1; staff <= _part->staves(); staff += 1) {
-        CGFloat y1 = (barlineGeom->partGeometry().staffOrigin(staff) + mxml::PartGeometry::kStaffLineSpacing * 1.5 - origin.y);
-        CGFloat y2 = (barlineGeom->partGeometry().staffOrigin(staff) + mxml::PartGeometry::kStaffLineSpacing * 2.5 - origin.y);
+        CGFloat y1 = (mxml::Metrics::staffOrigin(barlineGeom->partGeometry().part(), staff) + mxml::Metrics::kStaffLineSpacing * 1.5 - origin.y);
+        CGFloat y2 = (mxml::Metrics::staffOrigin(barlineGeom->partGeometry().part(), staff) + mxml::Metrics::kStaffLineSpacing * 2.5 - origin.y);
         [dotImage drawInRect:CGRectMake(offset, y1 - dotSize.height/2, dotSize.width, dotSize.height)];
         [dotImage drawInRect:CGRectMake(offset, y2 - dotSize.height/2, dotSize.width, dotSize.height)];
     }

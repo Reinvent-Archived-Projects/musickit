@@ -61,18 +61,18 @@ using mxml::dom::Beam;
         NSUInteger nbeams = std::max(chord1->chord().beams().size(), chord2->chord().beams().size());
         for (int bi = 0; bi < nbeams; bi += 1) {
             if (bi < chord1->chord().beams().size()) {
-                const Beam& beam = chord1->chord().beams()[bi];
-                if (beam.type() == Beam::TYPE_BEGIN || beam.type() == Beam::TYPE_CONTINUE) {
+                const auto& beam = chord1->chord().beams()[bi];
+                if (beam->type() == Beam::TYPE_BEGIN || beam->type() == Beam::TYPE_CONTINUE) {
                     [self drawBeamFrom:bb to:be inContext:ctx];
-                } else if (beam.type() == Beam::TYPE_FORWARD_HOOK) {
+                } else if (beam->type() == Beam::TYPE_FORWARD_HOOK) {
                     be.x = bb.x + BeamGeometry::kHookLength;
                     be.y = bb.y - slope * (bb.x - be.x);
                     [self drawBeamFrom:bb to:be inContext:ctx];
                 }
             }
             if (bi < chord2->chord().beams().size()) {
-                const Beam& beam = chord2->chord().beams()[bi];
-                if (beam.type() == Beam::TYPE_BACKWARD_HOOK) {
+                const auto& beam = chord2->chord().beams()[bi];
+                if (beam->type() == Beam::TYPE_BACKWARD_HOOK) {
                     bb.x = be.x - BeamGeometry::kHookLength;
                     bb.y = be.y - slope * (be.x - bb.x);
                     [self drawBeamFrom:bb to:be inContext:ctx];

@@ -1,7 +1,10 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import "VMKBraceLayer.h"
+
 #import "VMKGeometry.h"
+
+#include <mxml/Metrics.h>
 
 static const CGFloat kBraceWidth = 14.0;
 
@@ -44,7 +47,8 @@ static const CGFloat kBraceWidth = 14.0;
         return;
     }
 
-    self.imageName = [[self class] braceImageNameForHeight:self.partGeometry->stavesHeight()];
+    CGFloat stavesHeight = (CGFloat)mxml::Metrics::stavesHeight(self.partGeometry->part());
+    self.imageName = [[self class] braceImageNameForHeight:stavesHeight];
     self.anchorPoint = CGPointMake(0, 0.5);
     self.bounds = {CGPointZero, self.preferredFrameSize};
 }
@@ -57,7 +61,7 @@ static const CGFloat kBraceWidth = 14.0;
     if (baseSize.height == 0)
         return CGSizeZero;
 
-    CGFloat scale = self.partGeometry->stavesHeight() / baseSize.height;
+    CGFloat scale = mxml::Metrics::stavesHeight(self.partGeometry->part()) / baseSize.height;
     return CGSizeMake(kBraceWidth, baseSize.height * scale);
 }
 

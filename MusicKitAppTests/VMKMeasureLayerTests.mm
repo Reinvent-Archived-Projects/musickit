@@ -14,7 +14,7 @@ using namespace mxml::dom;
 @end
 
 @implementation VMKMeasureLayerTests {
-    Attributes _attributes;
+    Attributes* _attributes;
 }
 
 - (void)setUp {
@@ -22,17 +22,18 @@ using namespace mxml::dom;
     
     Measure* measure = self.measure;
     
-    _attributes.setStaves(presentOptional(2));
-    measure->setBaseAttributes(_attributes);
     
-    std::unique_ptr<Attributes> attributes(new Attributes(_attributes));
+    std::unique_ptr<Attributes> attributes(new Attributes{});
+    attributes->setStaves(presentOptional(2));
+    _attributes = attributes.get();
+    
     measure->addNode(std::move(attributes));
     
-    StaffLayout staffLayout;
-    staffLayout.setStaffDistance(65);
+    auto staffLayout = std::unique_ptr<StaffLayout>(new StaffLayout{});
+    staffLayout->setStaffDistance(65);
     
     std::unique_ptr<Print> print(new Print);
-    print->setStaffLayout(presentOptional(staffLayout));
+    print->setStaffLayout(std::move(staffLayout));
     
     measure->addNode(std::move(print));
 }
@@ -54,16 +55,17 @@ using namespace mxml::dom;
     std::unique_ptr<Attributes> attributes(new Attributes);
     attributes->setStaves(2);
     
-    Clef clef;
-    clef.setNumber(1);
-    clef.setSign(Clef::SIGN_G);
-    clef.setLine(2);
-    attributes->setClef(1, presentOptional(clef));
+    auto clef = std::unique_ptr<Clef>(new Clef{});
+    clef->setNumber(1);
+    clef->setSign(Clef::SIGN_G);
+    clef->setLine(2);
+    attributes->setClef(1, std::move(clef));
     
-    clef.setNumber(2);
-    clef.setSign(Clef::SIGN_F);
-    clef.setLine(4);
-    attributes->setClef(2, presentOptional(clef));
+    clef.reset(new Clef{});
+    clef->setNumber(2);
+    clef->setSign(Clef::SIGN_F);
+    clef->setLine(4);
+    attributes->setClef(2, std::move(clef));
     
     measure->addNode(std::move(attributes));
 
@@ -79,11 +81,11 @@ using namespace mxml::dom;
     std::unique_ptr<Attributes> attributes(new Attributes);
     attributes->setStaves(2);
     
-    Time time;
-    time.setNumber(1);
-    time.setBeats(3);
-    time.setBeatType(4);
-    attributes->setTime(presentOptional(time));
+    auto time = std::unique_ptr<Time>(new Time{});
+    time->setNumber(1);
+    time->setBeats(3);
+    time->setBeatType(4);
+    attributes->setTime(std::move(time));
     
     measure->addNode(std::move(attributes));
 
@@ -99,22 +101,23 @@ using namespace mxml::dom;
     std::unique_ptr<Attributes> attributes(new Attributes);
     attributes->setStaves(2);
     
-    Clef clef;
-    clef.setNumber(1);
-    clef.setSign(Clef::SIGN_G);
-    clef.setLine(2);
-    attributes->setClef(1, presentOptional(clef));
+    auto clef = std::unique_ptr<Clef>(new Clef{});
+    clef->setNumber(1);
+    clef->setSign(Clef::SIGN_G);
+    clef->setLine(2);
+    attributes->setClef(1, std::move(clef));
     
-    clef.setNumber(2);
-    clef.setSign(Clef::SIGN_F);
-    clef.setLine(4);
-    attributes->setClef(2, presentOptional(clef));
+    clef.reset(new Clef{});
+    clef->setNumber(2);
+    clef->setSign(Clef::SIGN_F);
+    clef->setLine(4);
+    attributes->setClef(2, std::move(clef));
     
-    Time time;
-    time.setNumber(1);
-    time.setBeats(3);
-    time.setBeatType(4);
-    attributes->setTime(presentOptional(time));
+    auto time = std::unique_ptr<Time>(new Time{});
+    time->setNumber(1);
+    time->setBeats(3);
+    time->setBeatType(4);
+    attributes->setTime(std::move(time));
     
     measure->addNode(std::move(attributes));
 

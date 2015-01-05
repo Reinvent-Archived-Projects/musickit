@@ -14,8 +14,8 @@ using namespace mxml::dom;
 @implementation VMKClefLayerTests
 
 - (void)testTreble {
-    Clef clef = Clef::trebleClef();
-    mxml::ClefGeometry geom(clef);
+    auto clef = Clef::trebleClef();
+    mxml::ClefGeometry geom(*clef);
     VMKClefLayer* layer = [[VMKClefLayer alloc] initWithClefGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;

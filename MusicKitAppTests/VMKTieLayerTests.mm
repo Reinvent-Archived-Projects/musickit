@@ -24,19 +24,7 @@ static const CGFloat kTieAccuracy = 0.045;
 - (void)setUp {
     [super setUp];
     
-    Measure* measure = self.measure;
-    
     _attributes.setStaves(presentOptional(1));
-    
-    Clef clef;
-    clef.setNumber(1);
-    clef.setSign(Clef::SIGN_G);
-    clef.setLine(2);
-    _attributes.setClef(1, absentOptional(clef));
-    measure->addNode(std::unique_ptr<Attributes>(new Attributes(_attributes)));
-    
-    _attributes.setClef(1, presentOptional(clef));
-    measure->setBaseAttributes(_attributes);
     
     _chordViews = [[NSMutableArray alloc] init];
 }

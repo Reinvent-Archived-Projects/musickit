@@ -4,8 +4,12 @@
 #import "VMKChordLayer.h"
 #import "VMKImageStore.h"
 
+#include "AttributesManager.h"
 #include "PartGeometry.h"
+#include "Metrics.h"
 
+
+using namespace mxml;
 using namespace mxml::dom;
 
 
@@ -15,7 +19,8 @@ using namespace mxml::dom;
 
 @implementation VMKChordLayerTests {
     std::unique_ptr<Chord> _chord;
-    Attributes _attributes;
+    Attributes* _attributes;
+    AttributesManager _attributesManager;
 }
 
 - (void)setUp {
@@ -24,16 +29,18 @@ using namespace mxml::dom;
     Measure* measure = self.measure;
     
     std::unique_ptr<Attributes> attributes(new Attributes);
-    _attributes.setStaves(presentOptional(1));
+    attributes->setStaves(presentOptional(1));
     
-    Clef clef;
-    clef.setNumber(1);
-    clef.setSign(Clef::SIGN_G);
-    clef.setLine(2);
-    attributes->setClef(1, presentOptional(clef));
+    auto clef = std::unique_ptr<Clef>(new Clef{});
+    clef->setNumber(1);
+    clef->setSign(Clef::SIGN_G);
+    clef->setLine(2);
+    attributes->setClef(1, std::move(clef));
     
-    _attributes = *attributes;
+    _attributes = attributes.get();
     measure->addNode(std::move(attributes));
+    
+    _attributesManager.addAllAttribute(*measure);
     
     _chord.reset(new Chord);
 }
@@ -47,10 +54,10 @@ using namespace mxml::dom;
     std::unique_ptr<Note> note(new Note);
     note->setType(type);
     
-    Pitch pitch;
-    pitch.setOctave(octave);
-    pitch.setStep(pitchStep);
-    note->setPitch(presentOptional(pitch));
+    auto pitch = std::unique_ptr<Pitch>(new Pitch{});
+    pitch->setOctave(octave);
+    pitch->setStep(pitchStep);
+    note->setPitch(std::move(pitch));
     
     note->setMeasure(self.measure);
     
@@ -63,12 +70,12 @@ using namespace mxml::dom;
     _chord->addNote([self createNoteWithType:Note::TYPE_EIGHTH withPitch:Pitch::STEP_F inOctave:3]);
 
     mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributes, *partGeom);
+    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
-    XCTAssertTrue(size.height >= 3*mxml::PartGeometry::kStaffLineSpacing, @"Height should be greater than zero");
+    XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
@@ -81,12 +88,12 @@ using namespace mxml::dom;
     _chord->addNote([self createNoteWithType:Note::TYPE_EIGHTH withPitch:Pitch::STEP_F inOctave:3]);
 
     mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributes, *partGeom);
+    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
-    XCTAssertTrue(size.height >= 3*mxml::PartGeometry::kStaffLineSpacing, @"Height should be greater than zero");
+    XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
@@ -97,12 +104,12 @@ using namespace mxml::dom;
     _chord->addNote([self createNoteWithType:Note::TYPE_128TH withPitch:Pitch::STEP_F inOctave:3]);
 
     mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributes, *partGeom);
+    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
-    XCTAssertTrue(size.height >= 3*mxml::PartGeometry::kStaffLineSpacing, @"Height should be greater than zero");
+    XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
@@ -111,12 +118,12 @@ using namespace mxml::dom;
     _chord->addNote([self createNoteWithType:Note::TYPE_WHOLE withPitch:Pitch::STEP_G inOctave:4]);
 
     mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributes, *partGeom);
+    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
-    XCTAssertTrue(size.height == mxml::PartGeometry::kStaffLineSpacing, @"Height should be greater than zero");
+    XCTAssertTrue(size.height == mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
@@ -125,12 +132,12 @@ using namespace mxml::dom;
     _chord->addNote([self createNoteWithType:Note::TYPE_QUARTER withPitch:Pitch::STEP_G inOctave:4]);
 
     mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributes, *partGeom);
+    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
-    XCTAssertTrue(size.height >= mxml::PartGeometry::kStaffLineSpacing, @"Height should be greater than zero");
+    XCTAssertTrue(size.height >= mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
@@ -140,23 +147,25 @@ using namespace mxml::dom;
     _chord->addNote([self createNoteWithType:Note::TYPE_HALF withPitch:Pitch::STEP_G inOctave:4]);
 
     mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributes, *partGeom);
+    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
-    XCTAssertTrue(size.height >= mxml::PartGeometry::kStaffLineSpacing, @"Height should be greater than zero");
+    XCTAssertTrue(size.height >= mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
 
 - (void)testDot {
     auto note = [self createNoteWithType:Note::TYPE_QUARTER withPitch:Pitch::STEP_G inOctave:4];
-    note->setDot(presentOptional(EmptyPlacement()));
+    
+    auto placement = std::unique_ptr<EmptyPlacement>(new EmptyPlacement{});
+    note->setDot(std::move(placement));
     _chord->addNote(std::move(note));
 
     mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributes, *partGeom);
+    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
@@ -166,13 +175,14 @@ using namespace mxml::dom;
     auto note = [self createNoteWithType:Note::TYPE_QUARTER withPitch:Pitch::STEP_G inOctave:4];
     
     Accidental accidental;
-    accidental.setType(Accidental::TYPE_SHARP);
-    note->setAccidental(presentOptional(accidental));
+    
+    auto accidential = std::unique_ptr<Accidental>(new Accidental{Accidental::TYPE_SHARP});
+    note->setAccidental(std::move(accidential));
     
     _chord->addNote(std::move(note));
     
     mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributes, *partGeom);
+    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
@@ -181,16 +191,16 @@ using namespace mxml::dom;
 - (void)testAccent {
     auto note = [self createNoteWithType:Note::TYPE_QUARTER withPitch:Pitch::STEP_G inOctave:4];
     
-    Notations notations;
-    Articulation articulation;
-    articulation.setType(Articulation::ACCENT);
-    notations.addArticulation(articulation);
-    note->setNotations(presentOptional(notations));
+    auto articulation = std::unique_ptr<Articulation>(new Articulation{Articulation::ACCENT});
+    
+    auto notations = std::unique_ptr<Notations>(new Notations{});
+    notations->addArticulation(std::move(articulation));
+    note->setNotations(std::move(notations));
     
     _chord->addNote(std::move(note));
 
     mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributes, *partGeom);
+    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
