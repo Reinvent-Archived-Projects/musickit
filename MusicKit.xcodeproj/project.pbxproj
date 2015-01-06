@@ -16,6 +16,8 @@
 		00B34FFB1A5B464000198F4A /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
 		00B34FFC1A5B464000198F4A /* Metrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B34FF51A5B464000198F4A /* Metrics.h */; };
 		00B34FFD1A5B464000198F4A /* Metrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B34FF51A5B464000198F4A /* Metrics.h */; };
+		00CD77781A5C75190067C531 /* AttributesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF21A5B464000198F4A /* AttributesManager.cpp */; };
+		00CD77791A5C75260067C531 /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
 		11D353EAA0E6C0BBDD28998E /* libPods-PreviewGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 736F0E8822E3E82A82593CC0 /* libPods-PreviewGenerator.a */; };
 		610DC5991A082FF000BEEBFD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DC5981A082FF000BEEBFD /* libxml2.dylib */; };
 		610DC5A61A0831DF00BEEBFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5A51A0831DF00BEEBFD /* main.m */; };
@@ -2821,6 +2823,7 @@
 				618C6C961A13E7DC008314B2 /* AttributesHandler.cpp in Sources */,
 				61D667811A3F67B80044A00B /* VMKScoreRenderer.mm in Sources */,
 				618C6C951A13E7DC008314B2 /* ArticulationHandler.cpp in Sources */,
+				00CD77791A5C75260067C531 /* Metrics.cpp in Sources */,
 				618C6C8C1A13E7D6008314B2 /* PedalGeometry.cpp in Sources */,
 				618C6C5B1A13E795008314B2 /* VMKImageStore.m in Sources */,
 				6149DB501A49FB7C005E094A /* CollisionHandler.cpp in Sources */,
@@ -2892,6 +2895,7 @@
 				618C6CBD1A13E7E0008314B2 /* EventFactory.cpp in Sources */,
 				618C6C8B1A13E7D6008314B2 /* PartGeometry.cpp in Sources */,
 				618C6C4E1A13DCE4008314B2 /* main.mm in Sources */,
+				00CD77781A5C75190067C531 /* AttributesManager.cpp in Sources */,
 				618C6C9B1A13E7DC008314B2 /* CreditHandler.cpp in Sources */,
 				618C6C881A13E7D6008314B2 /* MeasureGeometry.cpp in Sources */,
 				618C6C921A13E7D6008314B2 /* TieGeometry.cpp in Sources */,
