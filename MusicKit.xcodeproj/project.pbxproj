@@ -126,6 +126,11 @@
 		61402BA91A082562003AE7A7 /* VMKGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B6F1A082562003AE7A7 /* VMKGeometry.mm */; };
 		61402BAF1A082562003AE7A7 /* VMKImageStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B751A082562003AE7A7 /* VMKImageStore.h */; };
 		61402BB01A082562003AE7A7 /* VMKImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 61402B761A082562003AE7A7 /* VMKImageStore.m */; };
+		614055AA1A5B5D70005224C9 /* LyricGeometryFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 614055A81A5B5D70005224C9 /* LyricGeometryFactory.h */; };
+		614055AB1A5B5D70005224C9 /* LyricGeometryFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 614055A81A5B5D70005224C9 /* LyricGeometryFactory.h */; };
+		614055AC1A5B5D70005224C9 /* LyricGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614055A91A5B5D70005224C9 /* LyricGeometryFactory.cpp */; };
+		614055AD1A5B5D70005224C9 /* LyricGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614055A91A5B5D70005224C9 /* LyricGeometryFactory.cpp */; };
+		614055AE1A5B5D7E005224C9 /* LyricGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614055A91A5B5D70005224C9 /* LyricGeometryFactory.cpp */; };
 		6149DB4C1A49FB7C005E094A /* CollisionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6149DB4A1A49FB7C005E094A /* CollisionHandler.h */; };
 		6149DB4D1A49FB7C005E094A /* CollisionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6149DB4A1A49FB7C005E094A /* CollisionHandler.h */; };
 		6149DB4E1A49FB7C005E094A /* CollisionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6149DB4B1A49FB7C005E094A /* CollisionHandler.cpp */; };
@@ -971,6 +976,8 @@
 		61402B751A082562003AE7A7 /* VMKImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKImageStore.h; sourceTree = "<group>"; };
 		61402B761A082562003AE7A7 /* VMKImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKImageStore.m; sourceTree = "<group>"; };
 		61402C591A082661003AE7A7 /* Symbols.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Symbols.xcassets; sourceTree = "<group>"; };
+		614055A81A5B5D70005224C9 /* LyricGeometryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricGeometryFactory.h; path = Submodules/mxml/src/mxml/geometry/LyricGeometryFactory.h; sourceTree = SOURCE_ROOT; };
+		614055A91A5B5D70005224C9 /* LyricGeometryFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LyricGeometryFactory.cpp; path = Submodules/mxml/src/mxml/geometry/LyricGeometryFactory.cpp; sourceTree = SOURCE_ROOT; };
 		6149DB4A1A49FB7C005E094A /* CollisionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionHandler.h; path = Submodules/mxml/src/mxml/geometry/CollisionHandler.h; sourceTree = SOURCE_ROOT; };
 		6149DB4B1A49FB7C005E094A /* CollisionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionHandler.cpp; path = Submodules/mxml/src/mxml/geometry/CollisionHandler.cpp; sourceTree = SOURCE_ROOT; };
 		616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKChordLayer.h; sourceTree = "<group>"; };
@@ -1584,6 +1591,8 @@
 				610DCDFB1A094A0E00BEEBFD /* LineSegment.h */,
 				610DCDFC1A094A0E00BEEBFD /* LyricGeometry.cpp */,
 				610DCDFD1A094A0E00BEEBFD /* LyricGeometry.h */,
+				614055A91A5B5D70005224C9 /* LyricGeometryFactory.cpp */,
+				614055A81A5B5D70005224C9 /* LyricGeometryFactory.h */,
 				610DCDFE1A094A0E00BEEBFD /* MeasureElementGeometry.h */,
 				610DCDFF1A094A0E00BEEBFD /* MeasureGeometry.cpp */,
 				610DCE001A094A0E00BEEBFD /* MeasureGeometry.h */,
@@ -1954,6 +1963,7 @@
 				616C1AA21A0AA89B0020EAA8 /* VMKKeyLayer.h in Headers */,
 				616C1B7D1A0C2D8F0020EAA8 /* VMKLyricView.h in Headers */,
 				616C1B751A0C2C680020EAA8 /* VMKDirectionView.h in Headers */,
+				614055AA1A5B5D70005224C9 /* LyricGeometryFactory.h in Headers */,
 				616C1B5D1A0C0E310020EAA8 /* VMKAttributesView.h in Headers */,
 				61D0DFC21A44D13900EA6574 /* PartGeometryFactory.h in Headers */,
 				616C1AB61A0B030B0020EAA8 /* VMKPedalLayer.h in Headers */,
@@ -1987,6 +1997,7 @@
 				61D0DFC11A44D13900EA6574 /* PlacementGeometry.h in Headers */,
 				00B34FFD1A5B464000198F4A /* Metrics.h in Headers */,
 				616C1B8E1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */,
+				614055AB1A5B5D70005224C9 /* LyricGeometryFactory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2654,6 +2665,7 @@
 				610DCED71A094B4C00BEEBFD /* Geometry.cpp in Sources */,
 				616C1AA71A0AACE50020EAA8 /* VMKLyricLayer.mm in Sources */,
 				610DCEF31A094B5100BEEBFD /* EndingHandler.cpp in Sources */,
+				614055AC1A5B5D70005224C9 /* LyricGeometryFactory.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2676,6 +2688,7 @@
 				616C1B391A0C05B50020EAA8 /* VMKBarlineLayer.mm in Sources */,
 				616C1AF51A0C059E0020EAA8 /* DirectionGeometry.cpp in Sources */,
 				616C1B421A0C05B50020EAA8 /* VMKNoteHeadLayer.mm in Sources */,
+				614055AD1A5B5D70005224C9 /* LyricGeometryFactory.cpp in Sources */,
 				616C1B051A0C059E0020EAA8 /* StemGeometry.cpp in Sources */,
 				616C1B301A0C05A80020EAA8 /* Event.cpp in Sources */,
 				616C1B481A0C05B50020EAA8 /* VMKWedgeLayer.mm in Sources */,
@@ -2818,6 +2831,7 @@
 				618C6CA91A13E7DC008314B2 /* NotationsHandler.cpp in Sources */,
 				618C6C661A13E7A1008314B2 /* VMKKeyLayer.mm in Sources */,
 				618C6CBC1A13E7E0008314B2 /* Event.cpp in Sources */,
+				614055AE1A5B5D7E005224C9 /* LyricGeometryFactory.cpp in Sources */,
 				618C6C821A13E7D6008314B2 /* DotGeometry.cpp in Sources */,
 				618C6CA81A13E7DC008314B2 /* MordentHandler.cpp in Sources */,
 				618C6CA01A13E7DC008314B2 /* EmptyPlacementHandler.cpp in Sources */,
