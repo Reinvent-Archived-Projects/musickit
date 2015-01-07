@@ -40,7 +40,7 @@ using namespace mxml::dom;
     _attributes = attributes.get();
     measure->addNode(std::move(attributes));
     
-    _attributesManager.addAllAttribute(*measure);
+    _attributesManager.addAllAttributes(*measure);
     
     _chord.reset(new Chord);
 }

@@ -8,10 +8,10 @@
 
 @implementation VMKAccidentalLayer
 
-+ (NSArray*)imagesForAccidental:(const mxml::dom::Accidental&)accidental {
++ (NSArray*)imagesForAccidental:(int)alter {
     VMKImageStore* imageStore = [VMKImageStore sharedInstance];
 
-    switch (accidental.type()) {
+    switch (alter) {
         case mxml::dom::Accidental::TYPE_SHARP:
             return @[ [imageStore imageNamed:@"sharp"] ];
 
@@ -58,8 +58,7 @@
 - (void)drawInContext:(CGContextRef)ctx{
     CGSize size = self.bounds.size;
 
-    auto& accidental = self.accidentalGeometry->accidentail();
-    NSArray* images = [[self class] imagesForAccidental:accidental];
+    NSArray* images = [[self class] imagesForAccidental:self.accidentalGeometry->alter()];
     CGSize imagesSize = [[self class] sizeForImages:images];
 
     CGFloat scale = size.width / imagesSize.width;
