@@ -11,5 +11,6 @@
 
 @property(nonatomic) const mxml::KeyGeometry* keyGeometry;
 @property(nonatomic) const mxml::dom::Clef* clef;
+@property(nonatomic) BOOL hideNaturals;
 
 @end

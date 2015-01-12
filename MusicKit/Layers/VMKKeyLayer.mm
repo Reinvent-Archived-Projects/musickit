@@ -51,6 +51,9 @@
     const mxml::KeyGeometry& keyGeom = *self.keyGeometry;
     const mxml::dom::Key& key = keyGeom.key();
 
+    if (keyGeom.natural() && _hideNaturals)
+        return;
+    
     NSString* imageName;
     if (keyGeom.natural())
         imageName = @"natural";

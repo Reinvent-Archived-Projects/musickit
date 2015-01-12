@@ -123,6 +123,7 @@ static const CGFloat kGapWidth = 10;
         
         VMKKeyLayer* keyLayer = [[VMKKeyLayer alloc] initWithKeyGeometry:0];
         keyLayer.foregroundColor = self.foregroundColor.CGColor;
+        keyLayer.hideNaturals = YES;
         [_keyLayers addObject:keyLayer];
         [self.layer addSublayer:keyLayer];
     }
