@@ -3,9 +3,10 @@
 #import "VMKAdHocScoreTestCase.h"
 #import "VMKMeasureLayer.h"
 
-#include "Print.h"
-#include "PartGeometry.h"
-#include "SpanFactory.h"
+#include <mxml/dom/Print.h>
+#include <mxml/geometry/ScoreGeometry.h>
+#include <mxml/geometry/PartGeometry.h>
+#include <mxml/SpanFactory.h>
 
 using namespace mxml::dom;
 
@@ -13,21 +14,16 @@ using namespace mxml::dom;
 
 @end
 
-@implementation VMKMeasureLayerTests {
-    Attributes* _attributes;
-}
+@implementation VMKMeasureLayerTests
 
 - (void)setUp {
     [super setUp];
     
-    Measure* measure = self.measure;
-    
-    
-    std::unique_ptr<Attributes> attributes(new Attributes{});
+    auto measure = self.measure;
+    auto attributes = self.attributes;
     attributes->setStaves(presentOptional(2));
-    _attributes = attributes.get();
-    
-    measure->addNode(std::move(attributes));
+    self.builder->setTrebleClef(attributes, 1);
+    self.builder->setBassClef(attributes, 2);
     
     auto staffLayout = std::unique_ptr<StaffLayout>(new StaffLayout{});
     staffLayout->setStaffDistance(65);
@@ -39,8 +35,16 @@ using namespace mxml::dom;
 }
 
 - (void)testEmpty {
-    mxml::MeasureGeometry* geom = [self measureGeometry];
-    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:geom];
+    self.attributes->setClef(1, std::unique_ptr<Clef>{});
+    self.attributes->setClef(2, std::unique_ptr<Clef>{});
+
+    auto score = self.builder->build();
+    mxml::ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
     
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
@@ -50,79 +54,56 @@ using namespace mxml::dom;
 }
 
 - (void)testWithClefs {
-    Measure* measure = self.measure;
-    
-    std::unique_ptr<Attributes> attributes(new Attributes);
-    attributes->setStaves(2);
-    
-    auto clef = std::unique_ptr<Clef>(new Clef{});
-    clef->setNumber(1);
-    clef->setSign(Clef::SIGN_G);
-    clef->setLine(2);
-    attributes->setClef(1, std::move(clef));
-    
-    clef.reset(new Clef{});
-    clef->setNumber(2);
-    clef->setSign(Clef::SIGN_F);
-    clef->setLine(4);
-    attributes->setClef(2, std::move(clef));
-    
-    measure->addNode(std::move(attributes));
+    auto attributes = self.attributes;
+    attributes->setStaves(presentOptional(2));
+    self.builder->setTrebleClef(attributes, 1);
+    self.builder->setBassClef(attributes, 2);
 
-    mxml::MeasureGeometry* geom = [self measureGeometry];
-    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:geom];
+    auto score = self.builder->build();
+    mxml::ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
 
 - (void)testWithTimeSignatures {
-    Measure* measure = self.measure;
-    
-    std::unique_ptr<Attributes> attributes(new Attributes);
-    attributes->setStaves(2);
-    
-    auto time = std::unique_ptr<Time>(new Time{});
-    time->setNumber(1);
+    auto attributes = self.attributes;
+    attributes->setClef(1, std::unique_ptr<Clef>{});
+    attributes->setClef(2, std::unique_ptr<Clef>{});
+
+    auto time = self.builder->setTime(attributes);
     time->setBeats(3);
     time->setBeatType(4);
-    attributes->setTime(std::move(time));
-    
-    measure->addNode(std::move(attributes));
 
-    mxml::MeasureGeometry* geom = [self measureGeometry];
-    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:geom];
+    auto score = self.builder->build();
+    mxml::ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
 
 - (void)testWithClefsAndTimeSignatures {
-    Measure* measure = self.measure;
-    
-    std::unique_ptr<Attributes> attributes(new Attributes);
-    attributes->setStaves(2);
-    
-    auto clef = std::unique_ptr<Clef>(new Clef{});
-    clef->setNumber(1);
-    clef->setSign(Clef::SIGN_G);
-    clef->setLine(2);
-    attributes->setClef(1, std::move(clef));
-    
-    clef.reset(new Clef{});
-    clef->setNumber(2);
-    clef->setSign(Clef::SIGN_F);
-    clef->setLine(4);
-    attributes->setClef(2, std::move(clef));
-    
-    auto time = std::unique_ptr<Time>(new Time{});
-    time->setNumber(1);
+    auto attributes = self.attributes;
+
+    auto time = self.builder->setTime(attributes);
     time->setBeats(3);
     time->setBeatType(4);
-    attributes->setTime(std::move(time));
-    
-    measure->addNode(std::move(attributes));
 
-    mxml::MeasureGeometry* geom = [self measureGeometry];
-    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:geom];
+    auto score = self.builder->build();
+    mxml::ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }

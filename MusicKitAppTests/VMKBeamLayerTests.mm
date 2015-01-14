@@ -4,9 +4,9 @@
 #import "VMKBeamLayer.h"
 #import "VMKMeasureLayer.h"
 
-#include "Chord.h"
-#include "PartGeometry.h"
-#include "Metrics.h"
+#include <mxml/dom/Chord.h>
+#include <mxml/geometry/ScoreGeometry.h>
+#include <mxml/Metrics.h>
 
 using namespace mxml::dom;
 
@@ -17,21 +17,14 @@ using namespace mxml::dom;
 
 @implementation VMKBeamLayerTests {
     NSMutableArray* _chordViews;
-    Attributes* _attributes;
 }
 
 - (void)setUp {
     [super setUp];
-    
-    std::unique_ptr<Attributes> attributes(new Attributes{});
-    attributes->setStaves(presentOptional(1));
-    
-    _attributes = attributes.get();
-    
-    Measure* measure = self.measure;
-    measure->addNode(std::move(attributes));
-    
     _chordViews = [[NSMutableArray alloc] init];
+
+    self.attributes->setDivisions(presentOptional(1));
+    self.attributes->setClef(1, std::unique_ptr<Clef>{});
 }
 
 - (void)tearDown {
@@ -39,21 +32,33 @@ using namespace mxml::dom;
     _chordViews = nil;
 }
 
-- (void)testOneBeam {
-    std::unique_ptr<Chord> chord(new Chord);
-    std::unique_ptr<Note> note = [self createNoteType:Note::TYPE_EIGHTH pitch:Pitch::STEP_A octave:4 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
-    note->setStart(0);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
-    
-    chord.reset(new Chord);
-    note = [self createNoteType:Note::TYPE_EIGHTH pitch:Pitch::STEP_B octave:4 beamType:Beam::TYPE_END numberOfBeams:1];
-    note->setStart(1);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
+- (void)addBeamToNote:(Note*)note beamType:(Beam::Type)beamType numberOfBeams:(int)beamCount {
+    for (int bi = 1; bi <= beamCount; bi += 1) {
+        auto beam = std::unique_ptr<Beam>(new Beam{});
+        beam->setNumber(1);
+        beam->setType(beamType);
+        note->addBeam(std::move(beam));
+    }
+}
 
-    mxml::MeasureGeometry* geom = [self measureGeometry];
-    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:geom];
+- (void)testOneBeam {
+    auto chord1 = self.builder->addChord(self.measure);
+    auto note1 = self.builder->addNote(chord1, Note::TYPE_EIGHTH, 0, 1);
+    self.builder->setPitch(note1, Pitch::STEP_A, 4);
+    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
+
+    auto chord2 = self.builder->addChord(self.measure);
+    auto note2 = self.builder->addNote(chord2, Note::TYPE_EIGHTH, 1, 1);
+    self.builder->setPitch(note2, Pitch::STEP_B, 4);
+    [self addBeamToNote:note2 beamType:Beam::TYPE_END numberOfBeams:1];
+
+    auto score = self.builder->build();
+    mxml::ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
     
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
@@ -63,148 +68,158 @@ using namespace mxml::dom;
 }
 
 - (void)testOneBeamThreeNotes {
-    std::unique_ptr<Chord> chord(new Chord);
-    std::unique_ptr<Note> note = [self createNoteType:Note::TYPE_64TH pitch:Pitch::STEP_C octave:4 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
-    note->setStart(0);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
-    
-    chord.reset(new Chord);
-    note = [self createNoteType:Note::TYPE_64TH pitch:Pitch::STEP_B octave:4 beamType:Beam::TYPE_CONTINUE numberOfBeams:1];
-    note->setStart(1);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
-    
-    chord.reset(new Chord);
-    note = [self createNoteType:Note::TYPE_64TH pitch:Pitch::STEP_D octave:4 beamType:Beam::TYPE_END numberOfBeams:1];
-    note->setStart(2);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
+    auto chord1 = self.builder->addChord(self.measure);
+    auto note1 = self.builder->addNote(chord1, Note::TYPE_64TH, 0, 1);
+    self.builder->setPitch(note1, Pitch::STEP_C, 4);
+    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
 
-    mxml::MeasureGeometry* geom = [self measureGeometry];
-    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:geom];
+    auto chord2 = self.builder->addChord(self.measure);
+    auto note2 = self.builder->addNote(chord2, Note::TYPE_64TH, 1, 1);
+    self.builder->setPitch(note2, Pitch::STEP_B, 4);
+    [self addBeamToNote:note2 beamType:Beam::TYPE_CONTINUE numberOfBeams:1];
+
+    auto chord3 = self.builder->addChord(self.measure);
+    auto note3 = self.builder->addNote(chord3, Note::TYPE_64TH, 2, 1);
+    self.builder->setPitch(note3, Pitch::STEP_D, 4);
+    [self addBeamToNote:note3 beamType:Beam::TYPE_END numberOfBeams:1];
+
+    auto score = self.builder->build();
+    mxml::ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
 
 - (void)testForwardHook {
-    std::unique_ptr<Note> note = [self createNoteType:Note::TYPE_EIGHTH pitch:Pitch::STEP_A octave:4 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
-    note->setStart(0);
-    
+    auto chord1 = self.builder->addChord(self.measure);
+    auto note1 = self.builder->addNote(chord1, Note::TYPE_EIGHTH, 0, 1);
+    self.builder->setPitch(note1, Pitch::STEP_A, 4);
+    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
+
     auto beam = std::unique_ptr<Beam>(new Beam{});
     beam->setNumber(2);
     beam->setType(Beam::TYPE_FORWARD_HOOK);
-    note->addBeam(std::move(beam));
-    
-    std::unique_ptr<Chord> chord(new Chord);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
-    
-    note = [self createNoteType:Note::TYPE_EIGHTH pitch:Pitch::STEP_B octave:4 beamType:Beam::TYPE_END numberOfBeams:1];
-    note->setStart(1);
-    chord.reset(new Chord);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
+    note1->addBeam(std::move(beam));
 
-    mxml::MeasureGeometry* geom = [self measureGeometry];
-    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:geom];
+    auto chord2 = self.builder->addChord(self.measure);
+    auto note2 = self.builder->addNote(chord2, Note::TYPE_EIGHTH, 1, 1);
+    self.builder->setPitch(note2, Pitch::STEP_B, 4);
+    [self addBeamToNote:note2 beamType:Beam::TYPE_END numberOfBeams:1];
+
+    auto score = self.builder->build();
+    mxml::ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
 
 - (void)testBackwardHook {
-    std::unique_ptr<Note> note = [self createNoteType:Note::TYPE_EIGHTH pitch:Pitch::STEP_A octave:4 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
-    note->setStart(0);
-    
-    std::unique_ptr<Chord> chord(new Chord);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
-    
-    note = [self createNoteType:Note::TYPE_EIGHTH pitch:Pitch::STEP_B octave:4 beamType:Beam::TYPE_END numberOfBeams:1];
-    note->setStart(1);
-    
+    auto chord1 = self.builder->addChord(self.measure);
+    auto note1 = self.builder->addNote(chord1, Note::TYPE_EIGHTH, 0, 1);
+    self.builder->setPitch(note1, Pitch::STEP_A, 4);
+    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
+
+    auto chord2 = self.builder->addChord(self.measure);
+    auto note2 = self.builder->addNote(chord2, Note::TYPE_EIGHTH, 1, 1);
+    self.builder->setPitch(note2, Pitch::STEP_B, 4);
+    [self addBeamToNote:note2 beamType:Beam::TYPE_END numberOfBeams:1];
+
     auto beam = std::unique_ptr<Beam>(new Beam{});
     beam->setNumber(2);
     beam->setType(Beam::TYPE_BACKWARD_HOOK);
-    note->addBeam(std::move(beam));
-    
-    chord.reset(new Chord);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
+    note2->addBeam(std::move(beam));
 
-    mxml::MeasureGeometry* geom = [self measureGeometry];
-    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:geom];
+    auto score = self.builder->build();
+    mxml::ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
 
 - (void)testTwoBeams {
-    std::unique_ptr<Note> note = [self createNoteType:Note::TYPE_16TH pitch:Pitch::STEP_A octave:4 beamType:Beam::TYPE_BEGIN numberOfBeams:2];
-    note->setStart(0);
-    
-    std::unique_ptr<Chord> chord(new Chord);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
-    
-    note = [self createNoteType:Note::TYPE_16TH pitch:Pitch::STEP_B octave:4 beamType:Beam::TYPE_END numberOfBeams:2];
-    note->setStart(1);
-    
-    chord.reset(new Chord);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
-    
-    mxml::MeasureGeometry* geom = [self measureGeometry];
-    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:geom];
+    auto chord1 = self.builder->addChord(self.measure);
+    auto note1 = self.builder->addNote(chord1, Note::TYPE_16TH, 0, 1);
+    self.builder->setPitch(note1, Pitch::STEP_A, 4);
+    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:2];
+
+    auto chord2 = self.builder->addChord(self.measure);
+    auto note2 = self.builder->addNote(chord2, Note::TYPE_16TH, 1, 1);
+    self.builder->setPitch(note2, Pitch::STEP_B, 4);
+    [self addBeamToNote:note2 beamType:Beam::TYPE_END numberOfBeams:2];
+
+    auto score = self.builder->build();
+    mxml::ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
 
 - (void)testFourBeams {
-    std::unique_ptr<Chord> chord(new Chord);
-    std::unique_ptr<Note> note = [self createNoteType:Note::TYPE_64TH pitch:Pitch::STEP_C octave:4 beamType:Beam::TYPE_BEGIN numberOfBeams:4];
-    note->setStart(0);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
-    
-    chord.reset(new Chord);
-    note = [self createNoteType:Note::TYPE_64TH pitch:Pitch::STEP_B octave:4 beamType:Beam::TYPE_CONTINUE numberOfBeams:4];
-    note->setStart(1);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
-    
-    chord.reset(new Chord);
-    note = [self createNoteType:Note::TYPE_64TH pitch:Pitch::STEP_D octave:4 beamType:Beam::TYPE_END numberOfBeams:4];
-    note->setStart(2);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
+    auto chord1 = self.builder->addChord(self.measure);
+    auto note1 = self.builder->addNote(chord1, Note::TYPE_64TH, 0, 1);
+    self.builder->setPitch(note1, Pitch::STEP_C, 4);
+    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:4];
 
-    mxml::MeasureGeometry* geom = [self measureGeometry];
-    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:geom];
+    auto chord2 = self.builder->addChord(self.measure);
+    auto note2 = self.builder->addNote(chord2, Note::TYPE_64TH, 1, 1);
+    self.builder->setPitch(note2, Pitch::STEP_B, 4);
+    [self addBeamToNote:note2 beamType:Beam::TYPE_CONTINUE numberOfBeams:4];
+
+    auto chord3 = self.builder->addChord(self.measure);
+    auto note3 = self.builder->addNote(chord3, Note::TYPE_64TH, 2, 1);
+    self.builder->setPitch(note3, Pitch::STEP_D, 4);
+    [self addBeamToNote:note3 beamType:Beam::TYPE_END numberOfBeams:4];
+
+    auto score = self.builder->build();
+    mxml::ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:0.01];
 }
 
 - (void)testAccidentalInBeamedSet {
-    std::unique_ptr<Note> note = [self createNoteType:Note::TYPE_EIGHTH pitch:Pitch::STEP_A octave:4 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
-    note->setStem(STEM_DOWN);
-    
-    std::unique_ptr<Chord> chord(new Chord);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
-    
-    note = [self createNoteType:Note::TYPE_EIGHTH pitch:Pitch::STEP_B octave:4 beamType:Beam::TYPE_END numberOfBeams:1];
-    note->setStart(1);
-    note->setStem(STEM_DOWN);
+    auto chord1 = self.builder->addChord(self.measure);
+    auto note1 = self.builder->addNote(chord1, Note::TYPE_EIGHTH, 0, 1);
+    self.builder->setPitch(note1, Pitch::STEP_A, 4);
+    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
+    note1->setStem(STEM_DOWN);
+
+    auto chord2 = self.builder->addChord(self.measure);
+    auto note2 = self.builder->addNote(chord2, Note::TYPE_EIGHTH, 1, 1);
+    self.builder->setPitch(note2, Pitch::STEP_B, 4);
+    [self addBeamToNote:note2 beamType:Beam::TYPE_END numberOfBeams:1];
+    note2->setStem(STEM_DOWN);
     
     auto accidental = std::unique_ptr<Accidental>(new Accidental{Accidental::TYPE_SHARP});
-    note->setAccidental(std::move(accidental));
-    
-    chord.reset(new Chord);
-    chord->addNote(std::move(note));
-    self.measure->addNode(std::move(chord));
+    note2->setAccidental(std::move(accidental));
 
-    mxml::MeasureGeometry* geom = [self measureGeometry];
-    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:geom];
+    auto score = self.builder->build();
+    mxml::ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }

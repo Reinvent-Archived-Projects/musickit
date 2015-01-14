@@ -2,22 +2,15 @@
 
 #import "VMKLayerTestCase.h"
 
-#include "Note.h"
-#include "MeasureGeometry.h"
-#include "Score.h"
-#include "SpanCollection.h"
-#include <memory>
+#include <mxml/ScoreBuilder.h>
+#include <mxml/dom/Part.h>
+
 
 @interface VMKAdHocScoreTestCase : VMKLayerTestCase
 
-- (mxml::dom::Score*)score;
-- (mxml::dom::Part*)part;
-- (mxml::dom::Measure*)measure;
-
-- (mxml::PartGeometry*)partGeometry;
-- (mxml::MeasureGeometry*)measureGeometry;
-
-- (std::unique_ptr<mxml::dom::Note>)createNoteType:(mxml::dom::Note::Type)type pitch:(mxml::dom::Pitch::Step)pitchStep octave:(int)octave;
-- (std::unique_ptr<mxml::dom::Note>)createNoteType:(mxml::dom::Note::Type)type pitch:(mxml::dom::Pitch::Step)pitchStep octave:(int)octave beamType:(mxml::dom::Beam::Type)beamType numberOfBeams:(int)beamCount;
+@property(nonatomic, readonly) mxml::ScoreBuilder* builder;
+@property(nonatomic) mxml::dom::Part* part;
+@property(nonatomic) mxml::dom::Measure* measure;
+@property(nonatomic) mxml::dom::Attributes* attributes;
 
 @end

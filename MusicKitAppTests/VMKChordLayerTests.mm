@@ -4,9 +4,11 @@
 #import "VMKChordLayer.h"
 #import "VMKImageStore.h"
 
-#include "AttributesManager.h"
-#include "PartGeometry.h"
-#include "Metrics.h"
+#include <mxml/ScoreBuilder.h>
+#include <mxml/ScoreProperties.h>
+#include <mxml/geometry/PartGeometry.h>
+#include <mxml/geometry/ScoreGeometry.h>
+#include <mxml/Metrics.h>
 
 
 using namespace mxml;
@@ -17,60 +19,27 @@ using namespace mxml::dom;
 
 @end
 
-@implementation VMKChordLayerTests {
-    std::unique_ptr<Chord> _chord;
-    Attributes* _attributes;
-    AttributesManager _attributesManager;
-}
-
-- (void)setUp {
-    [super setUp];
-    
-    Measure* measure = self.measure;
-    
-    std::unique_ptr<Attributes> attributes(new Attributes);
-    attributes->setStaves(presentOptional(1));
-    
-    auto clef = std::unique_ptr<Clef>(new Clef{});
-    clef->setNumber(1);
-    clef->setSign(Clef::SIGN_G);
-    clef->setLine(2);
-    attributes->setClef(1, std::move(clef));
-    
-    _attributes = attributes.get();
-    measure->addNode(std::move(attributes));
-    
-    _attributesManager.addAllAttributes(*measure);
-    
-    _chord.reset(new Chord);
-}
-
-- (void)tearDown {
-    [super tearDown];
-    _chord.reset();
-}
-
-- (std::unique_ptr<Note>)createNoteWithType:(Note::Type)type withPitch:(Pitch::Step)pitchStep inOctave:(int)octave {
-    std::unique_ptr<Note> note(new Note);
-    note->setType(type);
-    
-    auto pitch = std::unique_ptr<Pitch>(new Pitch{});
-    pitch->setOctave(octave);
-    pitch->setStep(pitchStep);
-    note->setPitch(std::move(pitch));
-    
-    note->setMeasure(self.measure);
-    
-    return std::move(note);
-}
+@implementation VMKChordLayerTests
 
 - (void)testEighth {
-    _chord->addNote([self createNoteWithType:Note::TYPE_EIGHTH withPitch:Pitch::STEP_B inOctave:4]);
-    _chord->addNote([self createNoteWithType:Note::TYPE_EIGHTH withPitch:Pitch::STEP_G inOctave:4]);
-    _chord->addNote([self createNoteWithType:Note::TYPE_EIGHTH withPitch:Pitch::STEP_F inOctave:3]);
+    auto chord = self.builder->addChord(self.measure);
 
-    mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
+    auto note1 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
+    self.builder->setPitch(note1, Pitch::STEP_B, 4);
+
+    auto note2 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
+    self.builder->setPitch(note2, Pitch::STEP_G, 4);
+
+    auto note3 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
+    self.builder->setPitch(note3, Pitch::STEP_F, 3);
+
+    auto score = self.builder->build();
+    ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
+
+    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;
@@ -81,14 +50,24 @@ using namespace mxml::dom;
 }
 
 - (void)testEighthDown {
-    auto note = [self createNoteWithType:Note::TYPE_EIGHTH withPitch:Pitch::STEP_B inOctave:4];
-    note->setStem(STEM_DOWN);
-    _chord->addNote(std::move(note));
-    _chord->addNote([self createNoteWithType:Note::TYPE_EIGHTH withPitch:Pitch::STEP_G inOctave:4]);
-    _chord->addNote([self createNoteWithType:Note::TYPE_EIGHTH withPitch:Pitch::STEP_F inOctave:3]);
+    auto chord = self.builder->addChord(self.measure);
+    auto note1 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
+    self.builder->setPitch(note1, Pitch::STEP_B, 4);
+    note1->setStem(STEM_DOWN);
 
-    mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
+    auto note2 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
+    self.builder->setPitch(note2, Pitch::STEP_G, 4);
+
+    auto note3 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
+    self.builder->setPitch(note3, Pitch::STEP_F, 3);
+
+    auto score = self.builder->build();
+    ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
+
+    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;
@@ -99,12 +78,23 @@ using namespace mxml::dom;
 }
 
 - (void)test128th {
-    _chord->addNote([self createNoteWithType:Note::TYPE_128TH withPitch:Pitch::STEP_B inOctave:4]);
-    _chord->addNote([self createNoteWithType:Note::TYPE_128TH withPitch:Pitch::STEP_G inOctave:4]);
-    _chord->addNote([self createNoteWithType:Note::TYPE_128TH withPitch:Pitch::STEP_F inOctave:3]);
+    auto chord = self.builder->addChord(self.measure);
+    auto note1 = self.builder->addNote(chord, Note::TYPE_128TH);
+    self.builder->setPitch(note1, Pitch::STEP_B, 4);
 
-    mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
+    auto note2 = self.builder->addNote(chord, Note::TYPE_128TH);
+    self.builder->setPitch(note2, Pitch::STEP_G, 4);
+
+    auto note3 = self.builder->addNote(chord, Note::TYPE_128TH);
+    self.builder->setPitch(note3, Pitch::STEP_F, 3);
+
+    auto score = self.builder->build();
+    ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
+
+    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     CGSize size = layer.preferredFrameSize;
@@ -115,10 +105,17 @@ using namespace mxml::dom;
 }
 
 - (void)testWhole {
-    _chord->addNote([self createNoteWithType:Note::TYPE_WHOLE withPitch:Pitch::STEP_G inOctave:4]);
+    auto chord = self.builder->addChord(self.measure);
+    auto note2 = self.builder->addNote(chord, Note::TYPE_WHOLE);
+    self.builder->setPitch(note2, Pitch::STEP_G, 4);
 
-    mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
+    auto score = self.builder->build();
+    ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
+
+    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     CGSize size = layer.preferredFrameSize;
@@ -129,10 +126,17 @@ using namespace mxml::dom;
 }
 
 - (void)testQuarter {
-    _chord->addNote([self createNoteWithType:Note::TYPE_QUARTER withPitch:Pitch::STEP_G inOctave:4]);
+    auto chord = self.builder->addChord(self.measure);
+    auto note = self.builder->addNote(chord, Note::TYPE_QUARTER);
+    self.builder->setPitch(note, Pitch::STEP_G, 4);
 
-    mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
+    auto score = self.builder->build();
+    ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
+
+    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;
@@ -143,11 +147,21 @@ using namespace mxml::dom;
 }
 
 - (void)testDisplaceSideways {
-    _chord->addNote([self createNoteWithType:Note::TYPE_HALF withPitch:Pitch::STEP_F inOctave:4]);
-    _chord->addNote([self createNoteWithType:Note::TYPE_HALF withPitch:Pitch::STEP_G inOctave:4]);
+    auto chord = self.builder->addChord(self.measure);
 
-    mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
+    auto note1 = self.builder->addNote(chord, Note::TYPE_HALF);
+    self.builder->setPitch(note1, Pitch::STEP_F, 4);
+
+    auto note2 = self.builder->addNote(chord, Note::TYPE_HALF);
+    self.builder->setPitch(note2, Pitch::STEP_G, 4);
+
+    auto score = self.builder->build();
+    ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
+
+    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;
@@ -158,49 +172,63 @@ using namespace mxml::dom;
 }
 
 - (void)testDot {
-    auto note = [self createNoteWithType:Note::TYPE_QUARTER withPitch:Pitch::STEP_G inOctave:4];
+    auto chord = self.builder->addChord(self.measure);
+    auto note = self.builder->addNote(chord, Note::TYPE_QUARTER);
+    self.builder->setPitch(note, Pitch::STEP_G, 4);
     
     auto placement = std::unique_ptr<EmptyPlacement>(new EmptyPlacement{});
     note->setDot(std::move(placement));
-    _chord->addNote(std::move(note));
 
-    mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
+    auto score = self.builder->build();
+    ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
+
+    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
 
 - (void)testAccidental {
-    auto note = [self createNoteWithType:Note::TYPE_QUARTER withPitch:Pitch::STEP_G inOctave:4];
-    
-    Accidental accidental;
+    auto chord = self.builder->addChord(self.measure);
+    auto note = self.builder->addNote(chord, Note::TYPE_QUARTER);
+    self.builder->setPitch(note, Pitch::STEP_G, 4);
     
     auto accidential = std::unique_ptr<Accidental>(new Accidental{Accidental::TYPE_SHARP});
     note->setAccidental(std::move(accidential));
-    
-    _chord->addNote(std::move(note));
-    
-    mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
+
+    auto score = self.builder->build();
+    ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
+
+    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
 
 - (void)testAccent {
-    auto note = [self createNoteWithType:Note::TYPE_QUARTER withPitch:Pitch::STEP_G inOctave:4];
+    auto chord = self.builder->addChord(self.measure);
+    auto note = self.builder->addNote(chord, Note::TYPE_QUARTER);
+    self.builder->setPitch(note, Pitch::STEP_G, 4);
     
     auto articulation = std::unique_ptr<Articulation>(new Articulation{Articulation::ACCENT});
     
     auto notations = std::unique_ptr<Notations>(new Notations{});
     notations->addArticulation(std::move(articulation));
     note->setNotations(std::move(notations));
-    
-    _chord->addNote(std::move(note));
 
-    mxml::PartGeometry* partGeom = [self partGeometry];
-    mxml::ChordGeometry geom(*_chord, _attributesManager, *partGeom);
+    auto score = self.builder->build();
+    ScoreProperties properties(*score);
+
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
+
+    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
