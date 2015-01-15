@@ -15,6 +15,7 @@
 #import "VMKWedgeView.h"
 #import "VMKWordsView.h"
 
+#include <mxml/geometry/CodaGeometry.h>
 #include <mxml/geometry/EndingGeometry.h>
 #include <mxml/geometry/LyricGeometry.h>
 #include <mxml/geometry/OrnamentsGeometry.h>
@@ -117,6 +118,8 @@ using namespace mxml;
         } else if (dynamic_cast<const dom::Pedal*>(geom->startDirection().type())) {
             view = [[VMKPedalView alloc] initWithPedalGeometry:geom];
         }
+    } else if (const CodaGeometry* geom = dynamic_cast<const CodaGeometry*>(geometry)) {
+        view = [[VMKImageView alloc] initWithImageName:@"coda" geometry:geom];
     } else if (const SegnoGeometry* geom = dynamic_cast<const SegnoGeometry*>(geometry)) {
         view = [[VMKImageView alloc] initWithImageName:@"segno" geometry:geom];
     } else if (const WordsGeometry* geom = dynamic_cast<const WordsGeometry*>(geometry)) {

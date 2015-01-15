@@ -3,13 +3,22 @@
 #import "VMKLayerTestCase.h"
 #import "VMKScoreElementImageLayer.h"
 
+#import <mxml/geometry/CodaGeometry.h>
 #import <mxml/geometry/SegnoGeometry.h>
 
-@interface VMKSegnoLayerTests : VMKLayerTestCase
+@interface VMKImageLayerTests : VMKLayerTestCase
 
 @end
 
-@implementation VMKSegnoLayerTests
+@implementation VMKImageLayerTests
+
+- (void)testCoda {
+    mxml::dom::Segno coda;
+    mxml::SegnoGeometry geom(coda);
+    VMKScoreElementImageLayer* layer = [[VMKScoreElementImageLayer alloc] initWithImageName:@"coda" geometry:&geom];
+    
+    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+}
 
 - (void)testSegno {
     mxml::dom::Segno segno;

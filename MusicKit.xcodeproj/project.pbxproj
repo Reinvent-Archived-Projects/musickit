@@ -29,14 +29,24 @@
 		000868881A683B5300BAA13D /* WordsLayer-Words@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0008687D1A683B5300BAA13D /* WordsLayer-Words@2x.png */; };
 		000868891A683B5300BAA13D /* WordsLayer-Words@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0008687E1A683B5300BAA13D /* WordsLayer-Words@3x.png */; };
 		0008688A1A683B5300BAA13D /* WordsLayer-Words@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0008687E1A683B5300BAA13D /* WordsLayer-Words@3x.png */; };
-		0008688D1A683BF500BAA13D /* VMKSegnoLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0008688C1A683BF500BAA13D /* VMKSegnoLayerTests.mm */; };
-		0008688E1A683BF500BAA13D /* VMKSegnoLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0008688C1A683BF500BAA13D /* VMKSegnoLayerTests.mm */; };
-		000868921A683F5500BAA13D /* SegnoLayer-Segno.png in Resources */ = {isa = PBXBuildFile; fileRef = 0008688F1A683F5500BAA13D /* SegnoLayer-Segno.png */; };
-		000868931A683F5500BAA13D /* SegnoLayer-Segno.png in Resources */ = {isa = PBXBuildFile; fileRef = 0008688F1A683F5500BAA13D /* SegnoLayer-Segno.png */; };
-		000868941A683F5500BAA13D /* SegnoLayer-Segno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868901A683F5500BAA13D /* SegnoLayer-Segno@2x.png */; };
-		000868951A683F5500BAA13D /* SegnoLayer-Segno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868901A683F5500BAA13D /* SegnoLayer-Segno@2x.png */; };
-		000868961A683F5500BAA13D /* SegnoLayer-Segno@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868911A683F5500BAA13D /* SegnoLayer-Segno@3x.png */; };
-		000868971A683F5500BAA13D /* SegnoLayer-Segno@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868911A683F5500BAA13D /* SegnoLayer-Segno@3x.png */; };
+		0008689E1A68442B00BAA13D /* CodaGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0008689C1A68442B00BAA13D /* CodaGeometry.cpp */; };
+		0008689F1A68442B00BAA13D /* CodaGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 0008689D1A68442B00BAA13D /* CodaGeometry.h */; };
+		000868A01A68443000BAA13D /* CodaGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0008689C1A68442B00BAA13D /* CodaGeometry.cpp */; };
+		000868A11A68443000BAA13D /* CodaGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0008689C1A68442B00BAA13D /* CodaGeometry.cpp */; };
+		000868A31A68447300BAA13D /* VMKImageLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000868A21A68447300BAA13D /* VMKImageLayerTests.mm */; };
+		000868A41A68447300BAA13D /* VMKImageLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000868A21A68447300BAA13D /* VMKImageLayerTests.mm */; };
+		000868A81A68456C00BAA13D /* ImageLayer-Segno.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868A51A68456C00BAA13D /* ImageLayer-Segno.png */; };
+		000868A91A68456C00BAA13D /* ImageLayer-Segno.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868A51A68456C00BAA13D /* ImageLayer-Segno.png */; };
+		000868AA1A68456C00BAA13D /* ImageLayer-Segno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868A61A68456C00BAA13D /* ImageLayer-Segno@2x.png */; };
+		000868AB1A68456C00BAA13D /* ImageLayer-Segno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868A61A68456C00BAA13D /* ImageLayer-Segno@2x.png */; };
+		000868AC1A68456C00BAA13D /* ImageLayer-Segno@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868A71A68456C00BAA13D /* ImageLayer-Segno@3x.png */; };
+		000868AD1A68456C00BAA13D /* ImageLayer-Segno@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868A71A68456C00BAA13D /* ImageLayer-Segno@3x.png */; };
+		000868B11A6845B800BAA13D /* ImageLayer-Coda.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868AE1A6845B800BAA13D /* ImageLayer-Coda.png */; };
+		000868B21A6845B800BAA13D /* ImageLayer-Coda.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868AE1A6845B800BAA13D /* ImageLayer-Coda.png */; };
+		000868B31A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868AF1A6845B800BAA13D /* ImageLayer-Coda@2x.png */; };
+		000868B41A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868AF1A6845B800BAA13D /* ImageLayer-Coda@2x.png */; };
+		000868B51A6845B800BAA13D /* ImageLayer-Coda@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868B01A6845B800BAA13D /* ImageLayer-Coda@3x.png */; };
+		000868B61A6845B800BAA13D /* ImageLayer-Coda@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868B01A6845B800BAA13D /* ImageLayer-Coda@3x.png */; };
 		00094F011A67482E0053C615 /* WordsGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00094EFF1A67482E0053C615 /* WordsGeometry.cpp */; };
 		00094F021A67482E0053C615 /* WordsGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 00094F001A67482E0053C615 /* WordsGeometry.h */; };
 		00094F031A6748350053C615 /* WordsGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00094EFF1A67482E0053C615 /* WordsGeometry.cpp */; };
@@ -760,10 +770,15 @@
 		0008687C1A683B5300BAA13D /* WordsLayer-Words.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WordsLayer-Words.png"; sourceTree = "<group>"; };
 		0008687D1A683B5300BAA13D /* WordsLayer-Words@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WordsLayer-Words@2x.png"; sourceTree = "<group>"; };
 		0008687E1A683B5300BAA13D /* WordsLayer-Words@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WordsLayer-Words@3x.png"; sourceTree = "<group>"; };
-		0008688C1A683BF500BAA13D /* VMKSegnoLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKSegnoLayerTests.mm; sourceTree = "<group>"; };
-		0008688F1A683F5500BAA13D /* SegnoLayer-Segno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SegnoLayer-Segno.png"; sourceTree = "<group>"; };
-		000868901A683F5500BAA13D /* SegnoLayer-Segno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SegnoLayer-Segno@2x.png"; sourceTree = "<group>"; };
-		000868911A683F5500BAA13D /* SegnoLayer-Segno@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SegnoLayer-Segno@3x.png"; sourceTree = "<group>"; };
+		0008689C1A68442B00BAA13D /* CodaGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CodaGeometry.cpp; path = Submodules/mxml/src/mxml/geometry/CodaGeometry.cpp; sourceTree = SOURCE_ROOT; };
+		0008689D1A68442B00BAA13D /* CodaGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CodaGeometry.h; path = Submodules/mxml/src/mxml/geometry/CodaGeometry.h; sourceTree = SOURCE_ROOT; };
+		000868A21A68447300BAA13D /* VMKImageLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKImageLayerTests.mm; sourceTree = "<group>"; };
+		000868A51A68456C00BAA13D /* ImageLayer-Segno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageLayer-Segno.png"; sourceTree = "<group>"; };
+		000868A61A68456C00BAA13D /* ImageLayer-Segno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageLayer-Segno@2x.png"; sourceTree = "<group>"; };
+		000868A71A68456C00BAA13D /* ImageLayer-Segno@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageLayer-Segno@3x.png"; sourceTree = "<group>"; };
+		000868AE1A6845B800BAA13D /* ImageLayer-Coda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageLayer-Coda.png"; sourceTree = "<group>"; };
+		000868AF1A6845B800BAA13D /* ImageLayer-Coda@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageLayer-Coda@2x.png"; sourceTree = "<group>"; };
+		000868B01A6845B800BAA13D /* ImageLayer-Coda@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageLayer-Coda@3x.png"; sourceTree = "<group>"; };
 		00094EFF1A67482E0053C615 /* WordsGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WordsGeometry.cpp; path = Submodules/mxml/src/mxml/geometry/WordsGeometry.cpp; sourceTree = SOURCE_ROOT; };
 		00094F001A67482E0053C615 /* WordsGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordsGeometry.h; path = Submodules/mxml/src/mxml/geometry/WordsGeometry.h; sourceTree = SOURCE_ROOT; };
 		00094F051A6748460053C615 /* SegnoGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SegnoGeometry.cpp; path = Submodules/mxml/src/mxml/geometry/SegnoGeometry.cpp; sourceTree = SOURCE_ROOT; };
@@ -959,7 +974,6 @@
 		610DCE391A094A0E00BEEBFD /* EndingHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndingHandler.h; sourceTree = "<group>"; };
 		610DCE3A1A094A0E00BEEBFD /* FermataHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FermataHandler.cpp; sourceTree = "<group>"; };
 		610DCE3B1A094A0E00BEEBFD /* FermataHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FermataHandler.h; sourceTree = "<group>"; };
-		610DCE3C1A094A0E00BEEBFD /* Find Results */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Find Results"; sourceTree = "<group>"; };
 		610DCE3D1A094A0E00BEEBFD /* ForwardHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ForwardHandler.cpp; sourceTree = "<group>"; };
 		610DCE3E1A094A0E00BEEBFD /* ForwardHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForwardHandler.h; sourceTree = "<group>"; };
 		610DCE3F1A094A0E00BEEBFD /* IdentificationHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IdentificationHandler.cpp; sourceTree = "<group>"; };
@@ -1338,11 +1352,11 @@
 				610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */,
 				610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */,
 				610DC6181A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm */,
+				000868A21A68447300BAA13D /* VMKImageLayerTests.mm */,
 				610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */,
 				610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */,
 				610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */,
 				000868761A6835D600BAA13D /* VMKWordsLayerTests.mm */,
-				0008688C1A683BF500BAA13D /* VMKSegnoLayerTests.mm */,
 			);
 			path = MusicKitAppTests;
 			sourceTree = "<group>";
@@ -1416,6 +1430,12 @@
 				616C1E231A1173300020EAA8 /* CollectionViewScoreLayout-Slurs@2x.png */,
 				616C1E2E1A117D0B0020EAA8 /* CollectionViewScoreLayout-Slurs@3x.png */,
 				616C1C491A0D81550020EAA8 /* Endings.xml */,
+				000868AE1A6845B800BAA13D /* ImageLayer-Coda.png */,
+				000868AF1A6845B800BAA13D /* ImageLayer-Coda@2x.png */,
+				000868B01A6845B800BAA13D /* ImageLayer-Coda@3x.png */,
+				000868A51A68456C00BAA13D /* ImageLayer-Segno.png */,
+				000868A61A68456C00BAA13D /* ImageLayer-Segno@2x.png */,
+				000868A71A68456C00BAA13D /* ImageLayer-Segno@3x.png */,
 				616C1C5C1A0D81550020EAA8 /* MeasureLayer-Empty.png */,
 				616C1C5D1A0D81550020EAA8 /* MeasureLayer-Empty@2x.png */,
 				616C1C771A0D81550020EAA8 /* MeasureLayer-Empty@3x.png */,
@@ -1430,9 +1450,6 @@
 				616C1C7A1A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png */,
 				616C1C211A0D81550020EAA8 /* NoteLayer-Whole.png */,
 				616C1C201A0D81550020EAA8 /* NoteLayer-Whole@2x.png */,
-				0008688F1A683F5500BAA13D /* SegnoLayer-Segno.png */,
-				000868901A683F5500BAA13D /* SegnoLayer-Segno@2x.png */,
-				000868911A683F5500BAA13D /* SegnoLayer-Segno@3x.png */,
 				616C1C461A0D81550020EAA8 /* Slurs.xml */,
 				616C1C221A0D81550020EAA8 /* TieLayer-18Tie.png */,
 				616C1C231A0D81550020EAA8 /* TieLayer-18Tie@2x.png */,
@@ -1629,6 +1646,8 @@
 				610DCDEC1A094A0E00BEEBFD /* ChordGeometry.h */,
 				610DCDED1A094A0E00BEEBFD /* ClefGeometry.cpp */,
 				610DCDEE1A094A0E00BEEBFD /* ClefGeometry.h */,
+				0008689C1A68442B00BAA13D /* CodaGeometry.cpp */,
+				0008689D1A68442B00BAA13D /* CodaGeometry.h */,
 				6149DB4B1A49FB7C005E094A /* CollisionHandler.cpp */,
 				6149DB4A1A49FB7C005E094A /* CollisionHandler.h */,
 				610DCDF11A094A0E00BEEBFD /* DotGeometry.cpp */,
@@ -1720,7 +1739,6 @@
 				610DCE391A094A0E00BEEBFD /* EndingHandler.h */,
 				610DCE3A1A094A0E00BEEBFD /* FermataHandler.cpp */,
 				610DCE3B1A094A0E00BEEBFD /* FermataHandler.h */,
-				610DCE3C1A094A0E00BEEBFD /* Find Results */,
 				610DCE3D1A094A0E00BEEBFD /* ForwardHandler.cpp */,
 				610DCE3E1A094A0E00BEEBFD /* ForwardHandler.h */,
 				610DCE3F1A094A0E00BEEBFD /* IdentificationHandler.cpp */,
@@ -2023,6 +2041,7 @@
 				616C1AA21A0AA89B0020EAA8 /* VMKKeyLayer.h in Headers */,
 				616C1B7D1A0C2D8F0020EAA8 /* VMKLyricView.h in Headers */,
 				614055AA1A5B5D70005224C9 /* LyricGeometryFactory.h in Headers */,
+				0008689F1A68442B00BAA13D /* CodaGeometry.h in Headers */,
 				00094F0A1A6748460053C615 /* SegnoGeometry.h in Headers */,
 				616C1B5D1A0C0E310020EAA8 /* VMKAttributesView.h in Headers */,
 				61D0DFC21A44D13900EA6574 /* PartGeometryFactory.h in Headers */,
@@ -2280,8 +2299,6 @@
 				616C1D141A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@2x.png in Resources */,
 				616C1D4A1A0D81550020EAA8 /* TieLayer-100Tie@3x.png in Resources */,
 				616C1CA81A0D81550020EAA8 /* TieLayer-AngledDown@2x.png in Resources */,
-				000868941A683F5500BAA13D /* SegnoLayer-Segno@2x.png in Resources */,
-				000868961A683F5500BAA13D /* SegnoLayer-Segno@3x.png in Resources */,
 				616C1CF61A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes.png in Resources */,
 				0008687F1A683B5300BAA13D /* WordsLayer-Dyanmics.png in Resources */,
 				616C1CC41A0D81550020EAA8 /* ChordLayer-Quarter@2x.png in Resources */,
@@ -2309,6 +2326,7 @@
 				616C1D2A1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@3x.png in Resources */,
 				616C1CDA1A0D81550020EAA8 /* Slurs.xml in Resources */,
 				616C1D1E1A0D81550020EAA8 /* BeamLayer-OneBeam@3x.png in Resources */,
+				000868B31A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */,
 				616C1CC21A0D81550020EAA8 /* ChordLayer-Quarter.png in Resources */,
 				616C1CA01A0D81550020EAA8 /* TieLayer-100Tie@2x.png in Resources */,
 				616C1CCA1A0D81550020EAA8 /* ChordLayer-DisplaceSideways.png in Resources */,
@@ -2330,6 +2348,7 @@
 				616C1D0C1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png in Resources */,
 				616C1D301A0D81550020EAA8 /* ChordLayer-EighthDown@3x.png in Resources */,
 				616C1CBC1A0D81550020EAA8 /* ChordLayer-Whole@2x.png in Resources */,
+				000868AC1A68456C00BAA13D /* ImageLayer-Segno@3x.png in Resources */,
 				616C1CF41A0D81550020EAA8 /* BeamLayer-OneBeam@2x.png in Resources */,
 				616C1CCC1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@2x.png in Resources */,
 				616C1D541A0D81550020EAA8 /* TieLayer-AngledUpBelow@3x.png in Resources */,
@@ -2337,7 +2356,6 @@
 				616C1CE61A0D81550020EAA8 /* BeamLayer-BackwardHook.png in Resources */,
 				616C1D421A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png in Resources */,
 				616C1CDE1A0D81550020EAA8 /* ChordLayer-Accent.png in Resources */,
-				000868921A683F5500BAA13D /* SegnoLayer-Segno.png in Resources */,
 				616C1D361A0D81550020EAA8 /* ClefLayer-Treble@3x.png in Resources */,
 				000868891A683B5300BAA13D /* WordsLayer-Words@3x.png in Resources */,
 				616C1CD01A0D81550020EAA8 /* ChordLayer-Dot@2x.png in Resources */,
@@ -2368,7 +2386,9 @@
 				616C1CAA1A0D81550020EAA8 /* TieLayer-AngledDownBelow.png in Resources */,
 				616C1C8E1A0D81550020EAA8 /* NoteLayer-Whole@2x.png in Resources */,
 				616C1CEA1A0D81550020EAA8 /* BeamLayer-ForwardHook.png in Resources */,
+				000868B51A6845B800BAA13D /* ImageLayer-Coda@3x.png in Resources */,
 				616C1CA61A0D81550020EAA8 /* TieLayer-AngledDown.png in Resources */,
+				000868B11A6845B800BAA13D /* ImageLayer-Coda.png in Resources */,
 				616C1D081A0D81550020EAA8 /* MeasureLayer-Empty@2x.png in Resources */,
 				000868871A683B5300BAA13D /* WordsLayer-Words@2x.png in Resources */,
 				616C1E251A1173300020EAA8 /* CollectionViewScoreLayout-Slurs.png in Resources */,
@@ -2377,6 +2397,7 @@
 				616C1D3E1A0D81550020EAA8 /* MeasureLayer-WithClefs@3x.png in Resources */,
 				616C1CF21A0D81550020EAA8 /* BeamLayer-OneBeam.png in Resources */,
 				616C1CB61A0D81550020EAA8 /* ChordLayer-EighthDown.png in Resources */,
+				000868A81A68456C00BAA13D /* ImageLayer-Segno.png in Resources */,
 				616C1CB81A0D81550020EAA8 /* ChordLayer-Whole.png in Resources */,
 				616C1CAE1A0D81550020EAA8 /* TieLayer-AngledUp.png in Resources */,
 				616C1CC81A0D81550020EAA8 /* ChordLayer-128th@2x.png in Resources */,
@@ -2387,6 +2408,7 @@
 				616C1D201A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@3x.png in Resources */,
 				616C1D561A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@3x.png in Resources */,
 				616C1C9A1A0D81550020EAA8 /* TieLayer-50TieBelow.png in Resources */,
+				000868AA1A68456C00BAA13D /* ImageLayer-Segno@2x.png in Resources */,
 				616C1C861A0D81550020EAA8 /* ClefLayer-Treble.png in Resources */,
 				000868811A683B5300BAA13D /* WordsLayer-Dyanmics@2x.png in Resources */,
 				616C1CEE1A0D81550020EAA8 /* BeamLayer-FourBeams.png in Resources */,
@@ -2427,8 +2449,6 @@
 				616C1DEB1A0D97590020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png in Resources */,
 				616C1E061A0D97590020EAA8 /* TieLayer-AngledUp@3x.png in Resources */,
 				616C1DE01A0D97590020EAA8 /* MeasureLayer-Empty.png in Resources */,
-				000868951A683F5500BAA13D /* SegnoLayer-Segno@2x.png in Resources */,
-				000868971A683F5500BAA13D /* SegnoLayer-Segno@3x.png in Resources */,
 				616C1DFB1A0D97590020EAA8 /* TieLayer-1000Tie.png in Resources */,
 				000868801A683B5300BAA13D /* WordsLayer-Dyanmics.png in Resources */,
 				616C1DAA1A0D97590020EAA8 /* BeamLayer-FourBeams@2x.png in Resources */,
@@ -2456,6 +2476,7 @@
 				616C1DE21A0D97590020EAA8 /* MeasureLayer-Empty@3x.png in Resources */,
 				616C1DEE1A0D97590020EAA8 /* Slurs.xml in Resources */,
 				616C1DC61A0D97590020EAA8 /* ChordLayer-Eighth@3x.png in Resources */,
+				000868B41A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */,
 				616C1DA51A0D97590020EAA8 /* BeamLayer-BackwardHook@3x.png in Resources */,
 				616C1DB21A0D97590020EAA8 /* BeamLayer-TwoBeams.png in Resources */,
 				616C1E281A1173300020EAA8 /* CollectionViewScoreLayout-Endings@2x.png in Resources */,
@@ -2477,6 +2498,7 @@
 				616C1E041A0D97590020EAA8 /* TieLayer-AngledUp.png in Resources */,
 				616C1DEF1A0D97590020EAA8 /* TieLayer-18Tie.png in Resources */,
 				616C1E091A0D97590020EAA8 /* TieLayer-AngledUpBelow@3x.png in Resources */,
+				000868AD1A68456C00BAA13D /* ImageLayer-Segno@3x.png in Resources */,
 				616C1DA91A0D97590020EAA8 /* BeamLayer-FourBeams.png in Resources */,
 				616C1DF91A0D97590020EAA8 /* TieLayer-100Tie@2x.png in Resources */,
 				616C1E001A0D97590020EAA8 /* TieLayer-AngledDown@3x.png in Resources */,
@@ -2484,7 +2506,6 @@
 				616C1DA11A0D97590020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png in Resources */,
 				616C1DF01A0D97590020EAA8 /* TieLayer-18Tie@2x.png in Resources */,
 				616C1DC31A0D97590020EAA8 /* ChordLayer-Dot@3x.png in Resources */,
-				000868931A683F5500BAA13D /* SegnoLayer-Segno.png in Resources */,
 				616C1E321A117D0B0020EAA8 /* CollectionViewScoreLayout-Slurs@3x.png in Resources */,
 				0008688A1A683B5300BAA13D /* WordsLayer-Words@3x.png in Resources */,
 				616C1DFD1A0D97590020EAA8 /* TieLayer-1000Tie@3x.png in Resources */,
@@ -2515,7 +2536,9 @@
 				616C1E0A1A0D97590020EAA8 /* TimeSignatureLayer-CommonTime.png in Resources */,
 				616C1DC11A0D97590020EAA8 /* ChordLayer-Dot.png in Resources */,
 				616C1DF21A0D97590020EAA8 /* TieLayer-50Tie.png in Resources */,
+				000868B61A6845B800BAA13D /* ImageLayer-Coda@3x.png in Resources */,
 				616C1DA71A0D97590020EAA8 /* BeamLayer-ForwardHook@2x.png in Resources */,
+				000868B21A6845B800BAA13D /* ImageLayer-Coda.png in Resources */,
 				616C1E261A1173300020EAA8 /* CollectionViewScoreLayout-Slurs.png in Resources */,
 				000868881A683B5300BAA13D /* WordsLayer-Words@2x.png in Resources */,
 				616C1DF61A0D97590020EAA8 /* TieLayer-50TieBelow@2x.png in Resources */,
@@ -2524,6 +2547,7 @@
 				616C1DEA1A0D97590020EAA8 /* MeasureLayer-WithTimeSignatures@2x.png in Resources */,
 				616C1DA21A0D97590020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png in Resources */,
 				616C1DF71A0D97590020EAA8 /* TieLayer-50TieBelow@3x.png in Resources */,
+				000868A91A68456C00BAA13D /* ImageLayer-Segno.png in Resources */,
 				616C1DAC1A0D97590020EAA8 /* BeamLayer-OneBeam.png in Resources */,
 				616C1DAD1A0D97590020EAA8 /* BeamLayer-OneBeam@2x.png in Resources */,
 				616C1DCE1A0D97590020EAA8 /* ChordLayer-Whole@2x.png in Resources */,
@@ -2534,6 +2558,7 @@
 				616C1DE91A0D97590020EAA8 /* MeasureLayer-WithTimeSignatures.png in Resources */,
 				616C1E0E1A0D97590020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png in Resources */,
 				616C1DAE1A0D97590020EAA8 /* BeamLayer-OneBeam@3x.png in Resources */,
+				000868AB1A68456C00BAA13D /* ImageLayer-Segno@2x.png in Resources */,
 				616C1DBA1A0D97590020EAA8 /* ChordLayer-Accent@3x.png in Resources */,
 				000868821A683B5300BAA13D /* WordsLayer-Dyanmics@2x.png in Resources */,
 				616C1DC01A0D97590020EAA8 /* ChordLayer-DisplaceSideways@3x.png in Resources */,
@@ -2601,10 +2626,10 @@
 			files = (
 				610DC66C1A08322800BEEBFD /* VMKTieLayerTests.mm in Sources */,
 				610DCE741A094A1700BEEBFD /* AIImageCompare.m in Sources */,
+				000868A31A68447300BAA13D /* VMKImageLayerTests.mm in Sources */,
 				610DC66A1A08322800BEEBFD /* VMKBeamLayerTests.mm in Sources */,
 				610DC66D1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm in Sources */,
 				610DC61F1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm in Sources */,
-				0008688D1A683BF500BAA13D /* VMKSegnoLayerTests.mm in Sources */,
 				610DC66E1A08322800BEEBFD /* VMKChordLayerTests.mm in Sources */,
 				610DC66F1A08322800BEEBFD /* VMKLayerTestCase.mm in Sources */,
 				610DC66B1A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm in Sources */,
@@ -2643,6 +2668,7 @@
 				610DCF0B1A094B5100BEEBFD /* TimeHandler.cpp in Sources */,
 				61239A741A65FFB100B3F0A3 /* ScoreBuilder.cpp in Sources */,
 				616C1B721A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm in Sources */,
+				0008689E1A68442B00BAA13D /* CodaGeometry.cpp in Sources */,
 				616C1B641A0C0E310020EAA8 /* VMKMeasureView.mm in Sources */,
 				610DCEEE1A094B5100BEEBFD /* CreditWordsHandler.cpp in Sources */,
 				610DCEE31A094B4C00BEEBFD /* StemGeometry.cpp in Sources */,
@@ -2865,6 +2891,7 @@
 				616C1AFB1A0C059E0020EAA8 /* LyricGeometry.cpp in Sources */,
 				00094F031A6748350053C615 /* WordsGeometry.cpp in Sources */,
 				616C1B361A0C05B50020EAA8 /* VMKScoreElementLayer.mm in Sources */,
+				000868A01A68443000BAA13D /* CodaGeometry.cpp in Sources */,
 				616C1B031A0C059E0020EAA8 /* SpanDirectionGeometry.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2888,8 +2915,8 @@
 				616C1E131A0D97700020EAA8 /* VMKMeasureLayerTests.mm in Sources */,
 				616C1E161A0D97700020EAA8 /* VMKTieLayerTests.mm in Sources */,
 				616C1E101A0D97700020EAA8 /* VMKLayerTestCase.mm in Sources */,
+				000868A41A68447300BAA13D /* VMKImageLayerTests.mm in Sources */,
 				616C1E141A0D97700020EAA8 /* VMKBeamLayerTests.mm in Sources */,
-				0008688E1A683BF500BAA13D /* VMKSegnoLayerTests.mm in Sources */,
 				616C1E1E1A0D97BD0020EAA8 /* AIImageCompare.m in Sources */,
 				616C1E181A0D97700020EAA8 /* VMKChordLayerTests.mm in Sources */,
 				000868781A6835D600BAA13D /* VMKWordsLayerTests.mm in Sources */,
@@ -2989,6 +3016,7 @@
 				618C6C9C1A13E7DC008314B2 /* CreditWordsHandler.cpp in Sources */,
 				618C6C941A13E7D6008314B2 /* TimeSignatureGeometry.cpp in Sources */,
 				618C6C6B1A13E7A1008314B2 /* VMKOrnamentLayer.mm in Sources */,
+				000868A11A68443000BAA13D /* CodaGeometry.cpp in Sources */,
 				618C6CAC1A13E7DC008314B2 /* PartHandler.cpp in Sources */,
 				614057D51A5CBD49005224C9 /* Pitch.cpp in Sources */,
 				618C6CC01A13E7E0008314B2 /* SpanFactory.cpp in Sources */,
