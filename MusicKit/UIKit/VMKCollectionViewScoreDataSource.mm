@@ -3,8 +3,8 @@
 #import "NSIndexPath+VMKScoreAdditions.h"
 #import "VMKCollectionViewScoreDataSource.h"
 #import "VMKCursorView.h"
-#import "VMKDirectionView.h"
 #import "VMKEndingView.h"
+#import "VMKImageView.h"
 #import "VMKLyricView.h"
 #import "VMKMeasureView.h"
 #import "VMKOrnamentView.h"
@@ -13,11 +13,13 @@
 #import "VMKScoreElementImageLayer.h"
 #import "VMKTieView.h"
 #import "VMKWedgeView.h"
+#import "VMKWordsView.h"
 
 #include <mxml/geometry/EndingGeometry.h>
 #include <mxml/geometry/LyricGeometry.h>
 #include <mxml/geometry/OrnamentsGeometry.h>
 #include <mxml/geometry/PartGeometry.h>
+#include <mxml/geometry/SegnoGeometry.h>
 #include <mxml/dom/Pedal.h>
 #include <mxml/dom/Wedge.h>
 
@@ -115,8 +117,10 @@ using namespace mxml;
         } else if (dynamic_cast<const dom::Pedal*>(geom->startDirection().type())) {
             view = [[VMKPedalView alloc] initWithPedalGeometry:geom];
         }
-    } else if (const DirectionGeometry* geom = dynamic_cast<const DirectionGeometry*>(geometry)) {
-        view = [[VMKDirectionView alloc] initWithDirectionGeometry:geom];
+    } else if (const SegnoGeometry* geom = dynamic_cast<const SegnoGeometry*>(geometry)) {
+        view = [[VMKImageView alloc] initWithImageName:@"segno" geometry:geom];
+    } else if (const WordsGeometry* geom = dynamic_cast<const WordsGeometry*>(geometry)) {
+        view = [[VMKWordsView alloc] initWithWordsGeometry:geom];
     } else if (const OrnamentsGeometry* geom = dynamic_cast<const OrnamentsGeometry*>(geometry)) {
         view = [[VMKOrnamentView alloc] initWithOrnamentsGeometry:geom];
     } else if (const EndingGeometry* geom = dynamic_cast<const EndingGeometry*>(geometry)) {

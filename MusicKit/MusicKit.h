@@ -20,7 +20,6 @@ FOUNDATION_EXPORT const unsigned char MusicKitVersionString[];
 #import <MusicKit/Layers/VMKBraceLayer.h>
 #import <MusicKit/Layers/VMKChordLayer.h>
 #import <MusicKit/Layers/VMKClefLayer.h>
-#import <MusicKit/Layers/VMKDirectionLayer.h>
 #import <MusicKit/Layers/VMKEndingLayer.h>
 #import <MusicKit/Layers/VMKKeyLayer.h>
 #import <MusicKit/Layers/VMKLyricLayer.h>
@@ -35,6 +34,7 @@ FOUNDATION_EXPORT const unsigned char MusicKitVersionString[];
 #import <MusicKit/Layers/VMKTieLayer.h>
 #import <MusicKit/Layers/VMKTimeSignatureLayer.h>
 #import <MusicKit/Layers/VMKWedgeLayer.h>
+#import <MusicKit/Layers/VMKWordsLayer.h>
 
 #import "TargetConditionals.h"
 #if TARGET_OS_IPHONE

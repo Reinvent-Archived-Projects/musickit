@@ -1,16 +1,16 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import "VMKLayerTestCase.h"
-#import "VMKDirectionLayer.h"
-#include <mxml/geometry/DirectionGeometry.h>
+#import "VMKWordsLayer.h"
+#include <mxml/geometry/WordsGeometry.h>
 
 
-@interface VMKDirectionLayerTests : VMKLayerTestCase
+@interface VMKWordsLayerTests : VMKLayerTestCase
 
 @end
 
 
-@implementation VMKDirectionLayerTests
+@implementation VMKWordsLayerTests
 
 - (void)testWords {
     std::unique_ptr<mxml::dom::Words> words(new mxml::dom::Words);
@@ -18,9 +18,9 @@
 
     mxml::dom::Direction direction;
     direction.setType(std::move(words));
-    mxml::DirectionGeometry geom(direction);
+    mxml::WordsGeometry geom(direction);
 
-    VMKDirectionLayer* layer = [[VMKDirectionLayer alloc] initWithDirectionGeometry:&geom];
+    VMKWordsLayer* layer = [[VMKWordsLayer alloc] initWithWordsGeometry:&geom];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }
@@ -31,9 +31,9 @@
 
     mxml::dom::Direction direction;
     direction.setType(std::move(dynamics));
-    mxml::DirectionGeometry geom(direction);
+    mxml::WordsGeometry geom(direction);
 
-    VMKDirectionLayer* layer = [[VMKDirectionLayer alloc] initWithDirectionGeometry:&geom];
+    VMKWordsLayer* layer = [[VMKWordsLayer alloc] initWithWordsGeometry:&geom];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
 }

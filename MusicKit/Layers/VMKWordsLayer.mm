@@ -1,14 +1,14 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
-#import "VMKDirectionLayer.h"
+#import "VMKWordsLayer.h"
 #import "VMKGeometry.h"
 #import "VMKColor.h"
 
 
-@implementation VMKDirectionLayer
+@implementation VMKWordsLayer
 
-- (instancetype)initWithDirectionGeometry:(const mxml::DirectionGeometry*)directionGeom {
-    return [super initWithGeometry:directionGeom];
+- (instancetype)initWithWordsGeometry:(const mxml::WordsGeometry*)wordsGeom {
+    return [super initWithGeometry:wordsGeom];
 }
 
 - (void)setup {
@@ -33,33 +33,27 @@
     _textLayer.foregroundColor = foregroundColor;
 }
 
-- (const mxml::DirectionGeometry*)directionGeometry {
-    return static_cast<const mxml::DirectionGeometry*>(self.geometry);
+- (const mxml::WordsGeometry*)wordsGeometry {
+    return static_cast<const mxml::WordsGeometry*>(self.geometry);
 }
 
-- (void)setDirectionGeometry:(const mxml::DirectionGeometry*)directionGeometry {
-    [self setGeometry:directionGeometry];
+- (void)setDirectionGeometry:(const mxml::WordsGeometry*)wordsGeometry {
+    [self setGeometry:wordsGeometry];
 }
 
 - (void)setGeometry:(const mxml::Geometry*)geometry {
     [super setGeometry:geometry];
-
-    const mxml::dom::Direction& direction = self.directionGeometry->direction();
-
-    mxml::dom::Dynamics* dynamics = dynamic_cast<mxml::dom::Dynamics*>(direction.type());
-    if (dynamics) {
+    
+    if (self.wordsGeometry->dynamics()) {
         _textLayer.font = CFSTR("Baskerville-BoldItalic");
         _textLayer.fontSize = 26;
-        _textLayer.string = [NSString stringWithUTF8String:dynamics->string().c_str()];
-    }
-
-    mxml::dom::Words* words = dynamic_cast<mxml::dom::Words*>(direction.type());
-    if (words) {
+    } else {
         _textLayer.font = CFSTR("Baskerville-SemiBold");
         _textLayer.fontSize = 20;
-        _textLayer.string = [NSString stringWithUTF8String:words->contents().c_str()];
     }
-
+    
+    if (self.wordsGeometry->contents())
+        _textLayer.string = [NSString stringWithUTF8String:self.wordsGeometry->contents()->c_str()];
     _textLayer.frame = {CGPointZero, self.bounds.size};
 }
 
