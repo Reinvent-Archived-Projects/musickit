@@ -717,6 +717,24 @@
 		61C8503B1A684F5300031100 /* Loop.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850331A684F5300031100 /* Loop.h */; };
 		61C8503C1A684F5300031100 /* Jump.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850341A684F5300031100 /* Jump.h */; };
 		61C8503D1A684F5300031100 /* Jump.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850341A684F5300031100 /* Jump.h */; };
+		61C850651A6D977E00031100 /* OctaveShiftGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850631A6D977E00031100 /* OctaveShiftGeometry.h */; };
+		61C850661A6D977E00031100 /* OctaveShiftGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850631A6D977E00031100 /* OctaveShiftGeometry.h */; };
+		61C850671A6D977E00031100 /* OctaveShiftGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C850641A6D977E00031100 /* OctaveShiftGeometry.cpp */; };
+		61C850681A6D977E00031100 /* OctaveShiftGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C850641A6D977E00031100 /* OctaveShiftGeometry.cpp */; };
+		61C850691A6D977E00031100 /* OctaveShiftGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C850641A6D977E00031100 /* OctaveShiftGeometry.cpp */; };
+		61C8506C1A6D978A00031100 /* OctaveShiftHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C8506A1A6D978A00031100 /* OctaveShiftHandler.h */; };
+		61C8506D1A6D978A00031100 /* OctaveShiftHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C8506A1A6D978A00031100 /* OctaveShiftHandler.h */; };
+		61C8506E1A6D978A00031100 /* OctaveShiftHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C8506B1A6D978A00031100 /* OctaveShiftHandler.cpp */; };
+		61C8506F1A6D978A00031100 /* OctaveShiftHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C8506B1A6D978A00031100 /* OctaveShiftHandler.cpp */; };
+		61C850701A6D978A00031100 /* OctaveShiftHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C8506B1A6D978A00031100 /* OctaveShiftHandler.cpp */; };
+		61C850731A6D97A500031100 /* VMKOctaveShiftLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61C850711A6D97A500031100 /* VMKOctaveShiftLayer.mm */; };
+		61C850741A6D97A500031100 /* VMKOctaveShiftLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61C850711A6D97A500031100 /* VMKOctaveShiftLayer.mm */; };
+		61C850751A6D97A500031100 /* VMKOctaveShiftLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61C850711A6D97A500031100 /* VMKOctaveShiftLayer.mm */; };
+		61C850761A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850721A6D97A500031100 /* VMKOctaveShiftLayer.h */; };
+		61C850771A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850721A6D97A500031100 /* VMKOctaveShiftLayer.h */; };
+		61C8507A1A6D97B900031100 /* VMKOctaveShiftView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61C850781A6D97B900031100 /* VMKOctaveShiftView.mm */; };
+		61C8507D1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850791A6D97B900031100 /* VMKOctaveShiftView.h */; };
+		61C8507E1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850791A6D97B900031100 /* VMKOctaveShiftView.h */; };
 		61D0DFB81A44D11600EA6574 /* StringUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D0DFB61A44D11600EA6574 /* StringUtility.h */; };
 		61D0DFB91A44D11600EA6574 /* StringUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D0DFB61A44D11600EA6574 /* StringUtility.h */; };
 		61D0DFBA1A44D11600EA6574 /* StringUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61D0DFB71A44D11600EA6574 /* StringUtility.cpp */; };
@@ -1259,6 +1277,15 @@
 		61C850321A684F5300031100 /* LoopFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LoopFactory.cpp; path = Submodules/mxml/src/mxml/LoopFactory.cpp; sourceTree = SOURCE_ROOT; };
 		61C850331A684F5300031100 /* Loop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Loop.h; path = Submodules/mxml/src/mxml/Loop.h; sourceTree = SOURCE_ROOT; };
 		61C850341A684F5300031100 /* Jump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jump.h; path = Submodules/mxml/src/mxml/Jump.h; sourceTree = SOURCE_ROOT; };
+		61C850621A6D976C00031100 /* OctaveShift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OctaveShift.h; path = Submodules/mxml/src/mxml/dom/OctaveShift.h; sourceTree = SOURCE_ROOT; };
+		61C850631A6D977E00031100 /* OctaveShiftGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OctaveShiftGeometry.h; path = Submodules/mxml/src/mxml/geometry/OctaveShiftGeometry.h; sourceTree = SOURCE_ROOT; };
+		61C850641A6D977E00031100 /* OctaveShiftGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OctaveShiftGeometry.cpp; path = Submodules/mxml/src/mxml/geometry/OctaveShiftGeometry.cpp; sourceTree = SOURCE_ROOT; };
+		61C8506A1A6D978A00031100 /* OctaveShiftHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OctaveShiftHandler.h; path = Submodules/mxml/src/mxml/parsing/OctaveShiftHandler.h; sourceTree = SOURCE_ROOT; };
+		61C8506B1A6D978A00031100 /* OctaveShiftHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OctaveShiftHandler.cpp; path = Submodules/mxml/src/mxml/parsing/OctaveShiftHandler.cpp; sourceTree = SOURCE_ROOT; };
+		61C850711A6D97A500031100 /* VMKOctaveShiftLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKOctaveShiftLayer.mm; sourceTree = "<group>"; };
+		61C850721A6D97A500031100 /* VMKOctaveShiftLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKOctaveShiftLayer.h; sourceTree = "<group>"; };
+		61C850781A6D97B900031100 /* VMKOctaveShiftView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKOctaveShiftView.mm; sourceTree = "<group>"; };
+		61C850791A6D97B900031100 /* VMKOctaveShiftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKOctaveShiftView.h; sourceTree = "<group>"; };
 		61D0DFB61A44D11600EA6574 /* StringUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtility.h; sourceTree = "<group>"; };
 		61D0DFB71A44D11600EA6574 /* StringUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtility.cpp; sourceTree = "<group>"; };
 		61D0DFBD1A44D13900EA6574 /* PlacementGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacementGeometry.h; sourceTree = "<group>"; };
@@ -1629,6 +1656,7 @@
 				610DCDC21A094A0E00BEEBFD /* Notations.h */,
 				610DCDC31A094A0E00BEEBFD /* Note.cpp */,
 				610DCDC41A094A0E00BEEBFD /* Note.h */,
+				61C850621A6D976C00031100 /* OctaveShift.h */,
 				610DCDC51A094A0E00BEEBFD /* Optional.h */,
 				610DCDC61A094A0E00BEEBFD /* Ornaments.h */,
 				610DCDC71A094A0E00BEEBFD /* Part.cpp */,
@@ -1682,10 +1710,6 @@
 				610DCDF41A094A0E00BEEBFD /* EndingGeometry.h */,
 				610DCDF51A094A0E00BEEBFD /* FermataGeometry.cpp */,
 				610DCDF61A094A0E00BEEBFD /* FermataGeometry.h */,
-				00094F051A6748460053C615 /* SegnoGeometry.cpp */,
-				00094F061A6748460053C615 /* SegnoGeometry.h */,
-				00094EFF1A67482E0053C615 /* WordsGeometry.cpp */,
-				00094F001A67482E0053C615 /* WordsGeometry.h */,
 				610DCDF71A094A0E00BEEBFD /* Geometry.cpp */,
 				610DCDF81A094A0E00BEEBFD /* Geometry.h */,
 				610DCDF91A094A0E00BEEBFD /* KeyGeometry.cpp */,
@@ -1700,6 +1724,8 @@
 				610DCE001A094A0E00BEEBFD /* MeasureGeometry.h */,
 				610DCE011A094A0E00BEEBFD /* NoteGeometry.cpp */,
 				610DCE021A094A0E00BEEBFD /* NoteGeometry.h */,
+				61C850641A6D977E00031100 /* OctaveShiftGeometry.cpp */,
+				61C850631A6D977E00031100 /* OctaveShiftGeometry.h */,
 				610DCE031A094A0E00BEEBFD /* OrnamentsGeometry.cpp */,
 				610DCE041A094A0E00BEEBFD /* OrnamentsGeometry.h */,
 				610DCE051A094A0E00BEEBFD /* PartGeometry.cpp */,
@@ -1715,6 +1741,8 @@
 				610DCE0C1A094A0E00BEEBFD /* RestGeometry.h */,
 				610DCE0D1A094A0E00BEEBFD /* ScoreGeometry.cpp */,
 				610DCE0E1A094A0E00BEEBFD /* ScoreGeometry.h */,
+				00094F051A6748460053C615 /* SegnoGeometry.cpp */,
+				00094F061A6748460053C615 /* SegnoGeometry.h */,
 				610DCE0F1A094A0E00BEEBFD /* Size.h */,
 				610DCE101A094A0E00BEEBFD /* SpanDirectionGeometry.cpp */,
 				610DCE111A094A0E00BEEBFD /* SpanDirectionGeometry.h */,
@@ -1729,6 +1757,8 @@
 				610DCE1A1A094A0E00BEEBFD /* TieGeometryFactory.h */,
 				610DCE1B1A094A0E00BEEBFD /* TimeSignatureGeometry.cpp */,
 				610DCE1C1A094A0E00BEEBFD /* TimeSignatureGeometry.h */,
+				00094EFF1A67482E0053C615 /* WordsGeometry.cpp */,
+				00094F001A67482E0053C615 /* WordsGeometry.h */,
 			);
 			path = geometry;
 			sourceTree = "<group>";
@@ -1781,6 +1811,8 @@
 				610DCE4A1A094A0E00BEEBFD /* NotationsHandler.h */,
 				610DCE4B1A094A0E00BEEBFD /* NoteHandler.cpp */,
 				610DCE4C1A094A0E00BEEBFD /* NoteHandler.h */,
+				61C8506B1A6D978A00031100 /* OctaveShiftHandler.cpp */,
+				61C8506A1A6D978A00031100 /* OctaveShiftHandler.h */,
 				610DCE4D1A094A0E00BEEBFD /* OrnamentsHandler.cpp */,
 				610DCE4E1A094A0E00BEEBFD /* OrnamentsHandler.h */,
 				610DCE4F1A094A0E00BEEBFD /* PartHandler.cpp */,
@@ -1850,6 +1882,8 @@
 				616C1AAD1A0B01300020EAA8 /* VMKNoteHeadLayer.mm */,
 				616C1AB01A0B01BB0020EAA8 /* VMKNoteStemLayer.h */,
 				616C1AB11A0B01BB0020EAA8 /* VMKNoteStemLayer.mm */,
+				61C850721A6D97A500031100 /* VMKOctaveShiftLayer.h */,
+				61C850711A6D97A500031100 /* VMKOctaveShiftLayer.mm */,
 				616C1B8B1A0C4B860020EAA8 /* VMKOrnamentLayer.h */,
 				616C1B8C1A0C4B860020EAA8 /* VMKOrnamentLayer.mm */,
 				616C1AB41A0B030B0020EAA8 /* VMKPedalLayer.h */,
@@ -1946,6 +1980,8 @@
 				616C1B7C1A0C2D8F0020EAA8 /* VMKLyricView.mm */,
 				616C1B591A0C0E310020EAA8 /* VMKMeasureView.h */,
 				616C1B5A1A0C0E310020EAA8 /* VMKMeasureView.mm */,
+				61C850791A6D97B900031100 /* VMKOctaveShiftView.h */,
+				61C850781A6D97B900031100 /* VMKOctaveShiftView.mm */,
 				616C1B911A0C4D790020EAA8 /* VMKOrnamentView.h */,
 				616C1B921A0C4D790020EAA8 /* VMKOrnamentView.mm */,
 				616C1B7F1A0C2DA40020EAA8 /* VMKPedalView.h */,
@@ -2041,7 +2077,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */,
+				61C8507D1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */,
 				618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */,
+				61C850761A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */,
 				00094F021A67482E0053C615 /* WordsGeometry.h in Headers */,
 				616C1B931A0C4D790020EAA8 /* VMKOrnamentView.h in Headers */,
 				616C1AAA1A0AF9960020EAA8 /* VMKMeasureLayer.h in Headers */,
@@ -2054,7 +2092,9 @@
 				61D0DFC01A44D13900EA6574 /* PlacementGeometry.h in Headers */,
 				00B34FFC1A5B464000198F4A /* Metrics.h in Headers */,
 				616C1B6D1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h in Headers */,
+				61C850651A6D977E00031100 /* OctaveShiftGeometry.h in Headers */,
 				616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */,
+				61C8506C1A6D978A00031100 /* OctaveShiftHandler.h in Headers */,
 				616C1B4E1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */,
 				61239A721A65FFB100B3F0A3 /* ScoreBuilder.h in Headers */,
 				618641511A09B0B900FAE9C9 /* VMKBarlineLayer.h in Headers */,
@@ -2101,6 +2141,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C8506D1A6D978A00031100 /* OctaveShiftHandler.h in Headers */,
 				61239A841A673B5B00B3F0A3 /* JumpFactory.h in Headers */,
 				61D0DFC31A44D13900EA6574 /* PartGeometryFactory.h in Headers */,
 				61D0DFB91A44D11600EA6574 /* StringUtility.h in Headers */,
@@ -2111,12 +2152,15 @@
 				61239A681A64B4F000B3F0A3 /* ScoreProperties.h in Headers */,
 				000868721A68346400BAA13D /* VMKImageView.h in Headers */,
 				61C8503B1A684F5300031100 /* Loop.h in Headers */,
+				61C850771A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */,
 				61C8503D1A684F5300031100 /* Jump.h in Headers */,
 				00094F0B1A6748460053C615 /* SegnoGeometry.h in Headers */,
 				61D0DFC11A44D13900EA6574 /* PlacementGeometry.h in Headers */,
+				61C850661A6D977E00031100 /* OctaveShiftGeometry.h in Headers */,
 				00B34FFD1A5B464000198F4A /* Metrics.h in Headers */,
 				00094F0F1A6748710053C615 /* VMKWordsView.h in Headers */,
 				616C1B8E1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */,
+				61C8507E1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */,
 				614055AB1A5B5D70005224C9 /* LyricGeometryFactory.h in Headers */,
 				61239A731A65FFB100B3F0A3 /* ScoreBuilder.h in Headers */,
 			);
@@ -2694,6 +2738,7 @@
 				61C850371A684F5300031100 /* LoopFactory.cpp in Sources */,
 				610DCF001A094B5100BEEBFD /* PrintHandler.cpp in Sources */,
 				616C1A8E1A0A970F0020EAA8 /* VMKChordLayer.mm in Sources */,
+				61C850731A6D97A500031100 /* VMKOctaveShiftLayer.mm in Sources */,
 				616C1AA31A0AA89B0020EAA8 /* VMKKeyLayer.mm in Sources */,
 				610DCEEC1A094B5100BEEBFD /* ClefHandler.cpp in Sources */,
 				616C1C1A1A0D61ED0020EAA8 /* VMKImage.mm in Sources */,
@@ -2701,7 +2746,9 @@
 				610DCF071A094B5100BEEBFD /* StaffLayoutHandler.cpp in Sources */,
 				610DCEC81A094B4500BEEBFD /* StringHandler.cpp in Sources */,
 				610DCF0B1A094B5100BEEBFD /* TimeHandler.cpp in Sources */,
+				61C850671A6D977E00031100 /* OctaveShiftGeometry.cpp in Sources */,
 				61239A741A65FFB100B3F0A3 /* ScoreBuilder.cpp in Sources */,
+				61C8507A1A6D97B900031100 /* VMKOctaveShiftView.mm in Sources */,
 				616C1B721A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm in Sources */,
 				0008689E1A68442B00BAA13D /* CodaGeometry.cpp in Sources */,
 				616C1B641A0C0E310020EAA8 /* VMKMeasureView.mm in Sources */,
@@ -2779,6 +2826,7 @@
 				00094F011A67482E0053C615 /* WordsGeometry.cpp in Sources */,
 				610DCEF71A094B5100BEEBFD /* KeyHandler.cpp in Sources */,
 				610DCEF51A094B5100BEEBFD /* ForwardHandler.cpp in Sources */,
+				61C8506E1A6D978A00031100 /* OctaveShiftHandler.cpp in Sources */,
 				610DCF061A094B5100BEEBFD /* SoundHandler.cpp in Sources */,
 				610DCEFC1A094B5100BEEBFD /* NoteHandler.cpp in Sources */,
 				610DCF0D1A094B5100BEEBFD /* UnpitchedHandler.cpp in Sources */,
@@ -2822,6 +2870,7 @@
 				616C1B251A0C05A40020EAA8 /* ScalingHandler.cpp in Sources */,
 				616C1B081A0C059E0020EAA8 /* TimeSignatureGeometry.cpp in Sources */,
 				616C1AF21A0C059E0020EAA8 /* BeamGeometry.cpp in Sources */,
+				61C8506F1A6D978A00031100 /* OctaveShiftHandler.cpp in Sources */,
 				616C1B0E1A0C05A40020EAA8 /* ClefHandler.cpp in Sources */,
 				616C1AF31A0C059E0020EAA8 /* ChordGeometry.cpp in Sources */,
 				616C1AFD1A0C059E0020EAA8 /* NoteGeometry.cpp in Sources */,
@@ -2888,6 +2937,7 @@
 				616C1B3A1A0C05B50020EAA8 /* VMKBeamLayer.mm in Sources */,
 				616C1B1A1A0C05A40020EAA8 /* LyricHandler.cpp in Sources */,
 				616C1B061A0C059E0020EAA8 /* TieGeometry.cpp in Sources */,
+				61C850741A6D97A500031100 /* VMKOctaveShiftLayer.mm in Sources */,
 				616C1B331A0C05A80020EAA8 /* SpanCollection.cpp in Sources */,
 				616C1B271A0C05A40020EAA8 /* SlurHandler.cpp in Sources */,
 				616C1B121A0C05A40020EAA8 /* DirectionHandler.cpp in Sources */,
@@ -2923,6 +2973,7 @@
 				616C1AF01A0C059E0020EAA8 /* ArticulationGeometry.cpp in Sources */,
 				616C1B0A1A0C05A40020EAA8 /* AttributesHandler.cpp in Sources */,
 				616C1B291A0C05A40020EAA8 /* StaffLayoutHandler.cpp in Sources */,
+				61C850681A6D977E00031100 /* OctaveShiftGeometry.cpp in Sources */,
 				616C1B041A0C059E0020EAA8 /* SpanDirectionGeometryFactory.cpp in Sources */,
 				616C1B441A0C05B50020EAA8 /* VMKPedalLayer.mm in Sources */,
 				616C1AEF1A0C059E0020EAA8 /* AccidentalGeometry.cpp in Sources */,
@@ -2968,6 +3019,7 @@
 			files = (
 				618C6C8E1A13E7D6008314B2 /* ScoreGeometry.cpp in Sources */,
 				618C6CA71A13E7DC008314B2 /* MeasureHandler.cpp in Sources */,
+				61C850691A6D977E00031100 /* OctaveShiftGeometry.cpp in Sources */,
 				618C6C961A13E7DC008314B2 /* AttributesHandler.cpp in Sources */,
 				61D667811A3F67B80044A00B /* VMKScoreRenderer.mm in Sources */,
 				61239A821A673B5B00B3F0A3 /* JumpFactory.cpp in Sources */,
@@ -3018,8 +3070,10 @@
 				618C6C751A13E7CF008314B2 /* RootRecursiveHandler.cpp in Sources */,
 				618C6CAD1A13E7DC008314B2 /* PitchHandler.cpp in Sources */,
 				618C6C781A13E7D2008314B2 /* Measure.cpp in Sources */,
+				61C850751A6D97A500031100 /* VMKOctaveShiftLayer.mm in Sources */,
 				618C6CB21A13E7DC008314B2 /* ScoreHandler.cpp in Sources */,
 				618C6CB01A13E7DC008314B2 /* RestHandler.cpp in Sources */,
+				61C850701A6D978A00031100 /* OctaveShiftHandler.cpp in Sources */,
 				618C6C631A13E7A1008314B2 /* VMKClefLayer.mm in Sources */,
 				618C6CB61A13E7DC008314B2 /* SyllabicHandler.cpp in Sources */,
 				618C6C8A1A13E7D6008314B2 /* OrnamentsGeometry.cpp in Sources */,

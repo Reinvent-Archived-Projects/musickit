@@ -54,7 +54,7 @@ static const CGFloat kLineWidth = 1;
     }
 
     NSMutableString* string = [NSMutableString string];
-    for (auto number : geom->stopEnding().numbers()) {
+    for (auto& number : geom->stopEnding().numbers()) {
         if (string.length > 0)
             [string appendString:@", "];
         [string appendFormat:@"%d.", number];

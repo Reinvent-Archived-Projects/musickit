@@ -162,7 +162,7 @@ static const CGFloat kGapWidth = 10;
     
     const ClefGeometry* clefGeoms[staves];
     std::fill(clefGeoms, clefGeoms + staves, static_cast<const ClefGeometry*>(0));
-    for (auto geom : _clefs) {
+    for (auto& geom : _clefs) {
         if (clefGeoms[geom->staff() - 1] == 0 || geom->frame().max().x + geom->parentGeometry()->frame().min().x <= offset)
             clefGeoms[geom->staff() - 1] = geom;
     }
@@ -176,7 +176,7 @@ static const CGFloat kGapWidth = 10;
     
     const KeyGeometry* keyGeoms[staves];
     std::fill(keyGeoms, keyGeoms + staves, static_cast<const KeyGeometry*>(0));
-    for (auto geom : _keys) {
+    for (auto& geom : _keys) {
         if (keyGeoms[geom->staff() - 1] == 0 || geom->frame().max().x + geom->parentGeometry()->frame().min().x <= offset)
             keyGeoms[geom->staff() - 1] = geom;
     }

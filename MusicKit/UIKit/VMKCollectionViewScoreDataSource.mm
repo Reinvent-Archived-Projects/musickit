@@ -7,6 +7,7 @@
 #import "VMKImageView.h"
 #import "VMKLyricView.h"
 #import "VMKMeasureView.h"
+#import "VMKOctaveShiftView.h"
 #import "VMKOrnamentView.h"
 #import "VMKPedalView.h"
 #import "VMKScoreElementContainerView.h"
@@ -23,6 +24,8 @@
 #include <mxml/geometry/SegnoGeometry.h>
 #include <mxml/dom/Pedal.h>
 #include <mxml/dom/Wedge.h>
+#include <mxml/dom/OctaveShift.h>
+
 
 NSString* const VMKMeasureReuseIdentifier = @"Measure";
 NSString* const VMKDirectionReuseIdentifier = @"Direction";
@@ -117,6 +120,8 @@ using namespace mxml;
             view = [[VMKWedgeView alloc] initWithWedgeGeometry:geom];
         } else if (dynamic_cast<const dom::Pedal*>(geom->startDirection().type())) {
             view = [[VMKPedalView alloc] initWithPedalGeometry:geom];
+        } else if (dynamic_cast<const dom::OctaveShift*>(geom->startDirection().type())) {
+            view = [[VMKOctaveShiftView alloc] initWithOctaveShiftGeometry:geom];
         }
     } else if (const CodaGeometry* geom = dynamic_cast<const CodaGeometry*>(geometry)) {
         view = [[VMKImageView alloc] initWithImageName:@"coda" geometry:geom];
