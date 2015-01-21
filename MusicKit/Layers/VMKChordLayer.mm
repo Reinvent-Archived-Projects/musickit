@@ -146,7 +146,7 @@ using namespace mxml;
         return;
 
     VMKScoreElementImageLayer* layer = [[VMKScoreElementImageLayer alloc] initWithImageName:imageName geometry:geom];
-    if (geom->stem() == dom::STEM_UP)
+    if (geom->stem() == dom::kStemUp)
         layer.affineTransform = CGAffineTransformMakeScale(1, -1);
     [_otherLayers addObject:layer];
     [self addSublayer:layer];
@@ -167,7 +167,7 @@ using namespace mxml;
     if (!geom)
         return;
     const dom::Chord& chord = geom->chord();
-    if (chord.type() >= dom::Note::TYPE_WHOLE || chord.stem() == dom::STEM_NONE)
+    if (chord.type() >= dom::Note::TYPE_WHOLE || chord.stem() == dom::kStemNone)
         return;
 
     CGFloat x = geom->refNoteLocation().x;
@@ -183,11 +183,11 @@ using namespace mxml;
 
     CGPoint offset = self.bounds.origin;
     CGRect stemRect = CGRectZero;
-    if (chord.stem() == dom::STEM_UP || chord.stem() == dom::STEM_DOUBLE) {
+    if (chord.stem() == dom::kStemUp || chord.stem() == dom::kStemDouble) {
         stemRect.origin.y = offset.y;
         stemRect.origin.x = (x + NoteGeometry::kQuarterWidth/2 - kStemWidth);
         stemRect.size.height = maxy - offset.y - kStemOffset;
-    } else if (chord.stem() == dom::STEM_DOWN) {
+    } else if (chord.stem() == dom::kStemDown) {
         stemRect.origin.y = miny + kStemOffset;
         stemRect.origin.x = (x - NoteGeometry::kQuarterWidth/2);
         stemRect.size.height = self.preferredFrameSize.height - (miny - offset.y + kStemOffset);

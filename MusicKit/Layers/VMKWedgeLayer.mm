@@ -43,12 +43,12 @@ using namespace mxml;
 
     CGFloat width = geom->stopLocation().x - geom->startLocation().x;
 
-    if (startWedge.type() == dom::Wedge::TYPE_CRESCENDO) {
+    if (startWedge.type() == dom::Wedge::kTypeCrescendo) {
         CGFloat spread = stopWedge.spread();
         CGContextMoveToPoint(ctx, width, 0);
         CGContextAddLineToPoint(ctx, 0, spread/2);
         CGContextAddLineToPoint(ctx, width, spread);
-    } else if (startWedge.type() == dom::Wedge::TYPE_DIMINUENDO) {
+    } else if (startWedge.type() == dom::Wedge::kTypeDiminuendo) {
         CGFloat spread = startWedge.spread();
         CGContextMoveToPoint(ctx, 0, 0);
         CGContextAddLineToPoint(ctx, width, spread/2);

@@ -12,19 +12,19 @@
     VMKImageStore* imageStore = [VMKImageStore sharedInstance];
 
     switch (alter) {
-        case mxml::dom::Accidental::TYPE_SHARP:
+        case mxml::dom::Accidental::kTypeSharp:
             return @[ [imageStore imageNamed:@"sharp"] ];
 
-        case mxml::dom::Accidental::TYPE_FLAT:
+        case mxml::dom::Accidental::kTypeFlat:
             return @[ [imageStore imageNamed:@"flat"] ];
 
-        case mxml::dom::Accidental::TYPE_NATURAL:
+        case mxml::dom::Accidental::kTypeNatural:
             return @[ [imageStore imageNamed:@"natural"] ];
 
-        case mxml::dom::Accidental::TYPE_DOUBLE_SHARP:
+        case mxml::dom::Accidental::kTypeDoubleSharp:
             return @[ [imageStore imageNamed:@"double-sharp"] ];
 
-        case mxml::dom::Accidental::TYPE_DOUBLE_FLAT: {
+        case mxml::dom::Accidental::kTypeDoubleFlat: {
             VMKImage* image = [imageStore imageNamed:@"flat"];
             return @[ image, image ];
         }

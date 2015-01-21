@@ -750,6 +750,71 @@
 		61D667811A3F67B80044A00B /* VMKScoreRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61D667801A3F67B80044A00B /* VMKScoreRenderer.mm */; };
 		61D667B01A40C7D40044A00B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D667AF1A40C7D40044A00B /* MainMenu.xib */; };
 		61D667B21A40C8390044A00B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D667B11A40C8390044A00B /* MainMenu.xib */; };
+		61F072F41A703583002CA9CA /* SystemLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072EF1A703583002CA9CA /* SystemLayout.h */; };
+		61F072F51A703583002CA9CA /* SystemLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072EF1A703583002CA9CA /* SystemLayout.h */; };
+		61F072F61A703583002CA9CA /* Position.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072F01A703583002CA9CA /* Position.h */; };
+		61F072F71A703583002CA9CA /* Position.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072F01A703583002CA9CA /* Position.h */; };
+		61F072F81A703583002CA9CA /* PageMargins.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072F11A703583002CA9CA /* PageMargins.h */; };
+		61F072F91A703583002CA9CA /* PageMargins.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072F11A703583002CA9CA /* PageMargins.h */; };
+		61F072FA1A703583002CA9CA /* PageLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072F21A703583002CA9CA /* PageLayout.h */; };
+		61F072FB1A703583002CA9CA /* PageLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072F21A703583002CA9CA /* PageLayout.h */; };
+		61F072FC1A703583002CA9CA /* FormattedText.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072F31A703583002CA9CA /* FormattedText.h */; };
+		61F072FD1A703583002CA9CA /* FormattedText.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072F31A703583002CA9CA /* FormattedText.h */; };
+		61F073141A703596002CA9CA /* TypeFactories.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072FE1A703596002CA9CA /* TypeFactories.h */; };
+		61F073151A703596002CA9CA /* TypeFactories.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072FE1A703596002CA9CA /* TypeFactories.h */; };
+		61F073161A703596002CA9CA /* TypeFactories.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F072FF1A703596002CA9CA /* TypeFactories.cpp */; };
+		61F073171A703596002CA9CA /* TypeFactories.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F072FF1A703596002CA9CA /* TypeFactories.cpp */; };
+		61F073181A703596002CA9CA /* TypeFactories.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F072FF1A703596002CA9CA /* TypeFactories.cpp */; };
+		61F073191A703596002CA9CA /* SystemMarginsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073001A703596002CA9CA /* SystemMarginsHandler.h */; };
+		61F0731A1A703596002CA9CA /* SystemMarginsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073001A703596002CA9CA /* SystemMarginsHandler.h */; };
+		61F0731B1A703596002CA9CA /* SystemMarginsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073011A703596002CA9CA /* SystemMarginsHandler.cpp */; };
+		61F0731C1A703596002CA9CA /* SystemMarginsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073011A703596002CA9CA /* SystemMarginsHandler.cpp */; };
+		61F0731D1A703596002CA9CA /* SystemMarginsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073011A703596002CA9CA /* SystemMarginsHandler.cpp */; };
+		61F0731E1A703596002CA9CA /* SystemLayoutHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073021A703596002CA9CA /* SystemLayoutHandler.h */; };
+		61F0731F1A703596002CA9CA /* SystemLayoutHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073021A703596002CA9CA /* SystemLayoutHandler.h */; };
+		61F073201A703596002CA9CA /* SystemLayoutHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073031A703596002CA9CA /* SystemLayoutHandler.cpp */; };
+		61F073211A703596002CA9CA /* SystemLayoutHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073031A703596002CA9CA /* SystemLayoutHandler.cpp */; };
+		61F073221A703596002CA9CA /* SystemLayoutHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073031A703596002CA9CA /* SystemLayoutHandler.cpp */; };
+		61F073231A703596002CA9CA /* SystemDividersHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073041A703596002CA9CA /* SystemDividersHandler.h */; };
+		61F073241A703596002CA9CA /* SystemDividersHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073041A703596002CA9CA /* SystemDividersHandler.h */; };
+		61F073251A703596002CA9CA /* SystemDividersHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073051A703596002CA9CA /* SystemDividersHandler.cpp */; };
+		61F073261A703596002CA9CA /* SystemDividersHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073051A703596002CA9CA /* SystemDividersHandler.cpp */; };
+		61F073271A703596002CA9CA /* SystemDividersHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073051A703596002CA9CA /* SystemDividersHandler.cpp */; };
+		61F073281A703596002CA9CA /* PositionFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073061A703596002CA9CA /* PositionFactory.h */; };
+		61F073291A703596002CA9CA /* PositionFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073061A703596002CA9CA /* PositionFactory.h */; };
+		61F0732A1A703596002CA9CA /* PositionFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073071A703596002CA9CA /* PositionFactory.cpp */; };
+		61F0732B1A703596002CA9CA /* PositionFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073071A703596002CA9CA /* PositionFactory.cpp */; };
+		61F0732C1A703596002CA9CA /* PositionFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073071A703596002CA9CA /* PositionFactory.cpp */; };
+		61F0732D1A703596002CA9CA /* PageMarginsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073081A703596002CA9CA /* PageMarginsHandler.h */; };
+		61F0732E1A703596002CA9CA /* PageMarginsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073081A703596002CA9CA /* PageMarginsHandler.h */; };
+		61F0732F1A703596002CA9CA /* PageMarginsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073091A703596002CA9CA /* PageMarginsHandler.cpp */; };
+		61F073301A703596002CA9CA /* PageMarginsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073091A703596002CA9CA /* PageMarginsHandler.cpp */; };
+		61F073311A703596002CA9CA /* PageMarginsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073091A703596002CA9CA /* PageMarginsHandler.cpp */; };
+		61F073321A703596002CA9CA /* PageLayoutHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F0730A1A703596002CA9CA /* PageLayoutHandler.h */; };
+		61F073331A703596002CA9CA /* PageLayoutHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F0730A1A703596002CA9CA /* PageLayoutHandler.h */; };
+		61F073341A703596002CA9CA /* PageLayoutHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F0730B1A703596002CA9CA /* PageLayoutHandler.cpp */; };
+		61F073351A703596002CA9CA /* PageLayoutHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F0730B1A703596002CA9CA /* PageLayoutHandler.cpp */; };
+		61F073361A703596002CA9CA /* PageLayoutHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F0730B1A703596002CA9CA /* PageLayoutHandler.cpp */; };
+		61F073371A703596002CA9CA /* GenericNodeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F0730C1A703596002CA9CA /* GenericNodeHandler.h */; };
+		61F073381A703596002CA9CA /* GenericNodeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F0730C1A703596002CA9CA /* GenericNodeHandler.h */; };
+		61F073391A703596002CA9CA /* GenericNodeHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F0730D1A703596002CA9CA /* GenericNodeHandler.cpp */; };
+		61F0733A1A703596002CA9CA /* GenericNodeHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F0730D1A703596002CA9CA /* GenericNodeHandler.cpp */; };
+		61F0733B1A703596002CA9CA /* GenericNodeHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F0730D1A703596002CA9CA /* GenericNodeHandler.cpp */; };
+		61F0733C1A703596002CA9CA /* GenericNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F0730E1A703596002CA9CA /* GenericNode.h */; };
+		61F0733D1A703596002CA9CA /* GenericNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F0730E1A703596002CA9CA /* GenericNode.h */; };
+		61F0733E1A703596002CA9CA /* GenericNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F0730F1A703596002CA9CA /* GenericNode.cpp */; };
+		61F0733F1A703596002CA9CA /* GenericNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F0730F1A703596002CA9CA /* GenericNode.cpp */; };
+		61F073401A703596002CA9CA /* GenericNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F0730F1A703596002CA9CA /* GenericNode.cpp */; };
+		61F073411A703596002CA9CA /* FormattedTextHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073101A703596002CA9CA /* FormattedTextHandler.h */; };
+		61F073421A703596002CA9CA /* FormattedTextHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073101A703596002CA9CA /* FormattedTextHandler.h */; };
+		61F073431A703596002CA9CA /* FormattedTextHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073111A703596002CA9CA /* FormattedTextHandler.cpp */; };
+		61F073441A703596002CA9CA /* FormattedTextHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073111A703596002CA9CA /* FormattedTextHandler.cpp */; };
+		61F073451A703596002CA9CA /* FormattedTextHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073111A703596002CA9CA /* FormattedTextHandler.cpp */; };
+		61F073461A703596002CA9CA /* AppearanceHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073121A703596002CA9CA /* AppearanceHandler.h */; };
+		61F073471A703596002CA9CA /* AppearanceHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F073121A703596002CA9CA /* AppearanceHandler.h */; };
+		61F073481A703596002CA9CA /* AppearanceHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073131A703596002CA9CA /* AppearanceHandler.cpp */; };
+		61F073491A703596002CA9CA /* AppearanceHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073131A703596002CA9CA /* AppearanceHandler.cpp */; };
+		61F0734A1A703596002CA9CA /* AppearanceHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F073131A703596002CA9CA /* AppearanceHandler.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -863,7 +928,6 @@
 		610DCDA31A094A0E00BEEBFD /* StringHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StringHandler.cpp; sourceTree = "<group>"; };
 		610DCDA41A094A0E00BEEBFD /* StringHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringHandler.h; sourceTree = "<group>"; };
 		610DCDA71A094A0E00BEEBFD /* Accidental.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Accidental.h; sourceTree = "<group>"; };
-		610DCDA81A094A0E00BEEBFD /* Appearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appearance.h; sourceTree = "<group>"; };
 		610DCDA91A094A0E00BEEBFD /* Articulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Articulation.h; sourceTree = "<group>"; };
 		610DCDAA1A094A0E00BEEBFD /* Attributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Attributes.h; sourceTree = "<group>"; };
 		610DCDAB1A094A0E00BEEBFD /* Backup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Backup.h; sourceTree = "<group>"; };
@@ -1295,6 +1359,33 @@
 		61D667801A3F67B80044A00B /* VMKScoreRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKScoreRenderer.mm; sourceTree = "<group>"; };
 		61D667AF1A40C7D40044A00B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		61D667B11A40C8390044A00B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		61F072EF1A703583002CA9CA /* SystemLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemLayout.h; path = Submodules/mxml/src/mxml/dom/SystemLayout.h; sourceTree = SOURCE_ROOT; };
+		61F072F01A703583002CA9CA /* Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Position.h; path = Submodules/mxml/src/mxml/dom/Position.h; sourceTree = SOURCE_ROOT; };
+		61F072F11A703583002CA9CA /* PageMargins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageMargins.h; path = Submodules/mxml/src/mxml/dom/PageMargins.h; sourceTree = SOURCE_ROOT; };
+		61F072F21A703583002CA9CA /* PageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageLayout.h; path = Submodules/mxml/src/mxml/dom/PageLayout.h; sourceTree = SOURCE_ROOT; };
+		61F072F31A703583002CA9CA /* FormattedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormattedText.h; path = Submodules/mxml/src/mxml/dom/FormattedText.h; sourceTree = SOURCE_ROOT; };
+		61F072FE1A703596002CA9CA /* TypeFactories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypeFactories.h; path = Submodules/mxml/src/mxml/parsing/TypeFactories.h; sourceTree = SOURCE_ROOT; };
+		61F072FF1A703596002CA9CA /* TypeFactories.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TypeFactories.cpp; path = Submodules/mxml/src/mxml/parsing/TypeFactories.cpp; sourceTree = SOURCE_ROOT; };
+		61F073001A703596002CA9CA /* SystemMarginsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemMarginsHandler.h; path = Submodules/mxml/src/mxml/parsing/SystemMarginsHandler.h; sourceTree = SOURCE_ROOT; };
+		61F073011A703596002CA9CA /* SystemMarginsHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SystemMarginsHandler.cpp; path = Submodules/mxml/src/mxml/parsing/SystemMarginsHandler.cpp; sourceTree = SOURCE_ROOT; };
+		61F073021A703596002CA9CA /* SystemLayoutHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemLayoutHandler.h; path = Submodules/mxml/src/mxml/parsing/SystemLayoutHandler.h; sourceTree = SOURCE_ROOT; };
+		61F073031A703596002CA9CA /* SystemLayoutHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SystemLayoutHandler.cpp; path = Submodules/mxml/src/mxml/parsing/SystemLayoutHandler.cpp; sourceTree = SOURCE_ROOT; };
+		61F073041A703596002CA9CA /* SystemDividersHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemDividersHandler.h; path = Submodules/mxml/src/mxml/parsing/SystemDividersHandler.h; sourceTree = SOURCE_ROOT; };
+		61F073051A703596002CA9CA /* SystemDividersHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SystemDividersHandler.cpp; path = Submodules/mxml/src/mxml/parsing/SystemDividersHandler.cpp; sourceTree = SOURCE_ROOT; };
+		61F073061A703596002CA9CA /* PositionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PositionFactory.h; path = Submodules/mxml/src/mxml/parsing/PositionFactory.h; sourceTree = SOURCE_ROOT; };
+		61F073071A703596002CA9CA /* PositionFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PositionFactory.cpp; path = Submodules/mxml/src/mxml/parsing/PositionFactory.cpp; sourceTree = SOURCE_ROOT; };
+		61F073081A703596002CA9CA /* PageMarginsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageMarginsHandler.h; path = Submodules/mxml/src/mxml/parsing/PageMarginsHandler.h; sourceTree = SOURCE_ROOT; };
+		61F073091A703596002CA9CA /* PageMarginsHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PageMarginsHandler.cpp; path = Submodules/mxml/src/mxml/parsing/PageMarginsHandler.cpp; sourceTree = SOURCE_ROOT; };
+		61F0730A1A703596002CA9CA /* PageLayoutHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageLayoutHandler.h; path = Submodules/mxml/src/mxml/parsing/PageLayoutHandler.h; sourceTree = SOURCE_ROOT; };
+		61F0730B1A703596002CA9CA /* PageLayoutHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PageLayoutHandler.cpp; path = Submodules/mxml/src/mxml/parsing/PageLayoutHandler.cpp; sourceTree = SOURCE_ROOT; };
+		61F0730C1A703596002CA9CA /* GenericNodeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericNodeHandler.h; path = Submodules/mxml/src/mxml/parsing/GenericNodeHandler.h; sourceTree = SOURCE_ROOT; };
+		61F0730D1A703596002CA9CA /* GenericNodeHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GenericNodeHandler.cpp; path = Submodules/mxml/src/mxml/parsing/GenericNodeHandler.cpp; sourceTree = SOURCE_ROOT; };
+		61F0730E1A703596002CA9CA /* GenericNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericNode.h; path = Submodules/mxml/src/mxml/parsing/GenericNode.h; sourceTree = SOURCE_ROOT; };
+		61F0730F1A703596002CA9CA /* GenericNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GenericNode.cpp; path = Submodules/mxml/src/mxml/parsing/GenericNode.cpp; sourceTree = SOURCE_ROOT; };
+		61F073101A703596002CA9CA /* FormattedTextHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormattedTextHandler.h; path = Submodules/mxml/src/mxml/parsing/FormattedTextHandler.h; sourceTree = SOURCE_ROOT; };
+		61F073111A703596002CA9CA /* FormattedTextHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FormattedTextHandler.cpp; path = Submodules/mxml/src/mxml/parsing/FormattedTextHandler.cpp; sourceTree = SOURCE_ROOT; };
+		61F073121A703596002CA9CA /* AppearanceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppearanceHandler.h; path = Submodules/mxml/src/mxml/parsing/AppearanceHandler.h; sourceTree = SOURCE_ROOT; };
+		61F073131A703596002CA9CA /* AppearanceHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppearanceHandler.cpp; path = Submodules/mxml/src/mxml/parsing/AppearanceHandler.cpp; sourceTree = SOURCE_ROOT; };
 		736F0E8822E3E82A82593CC0 /* libPods-PreviewGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PreviewGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		777972E87AE26FF9CF8EE309 /* Pods-PreviewGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreviewGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator.debug.xcconfig"; sourceTree = "<group>"; };
 		80D97B40F18B7EFC550962E5 /* libPods-MusicKitAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicKitAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1626,7 +1717,6 @@
 			isa = PBXGroup;
 			children = (
 				610DCDA71A094A0E00BEEBFD /* Accidental.h */,
-				610DCDA81A094A0E00BEEBFD /* Appearance.h */,
 				610DCDA91A094A0E00BEEBFD /* Articulation.h */,
 				610DCDAA1A094A0E00BEEBFD /* Attributes.h */,
 				610DCDAB1A094A0E00BEEBFD /* Backup.h */,
@@ -1642,6 +1732,7 @@
 				610DCDB51A094A0E00BEEBFD /* EmptyPlacement.h */,
 				610DCDB61A094A0E00BEEBFD /* Ending.h */,
 				610DCDB71A094A0E00BEEBFD /* Fermata.h */,
+				61F072F31A703583002CA9CA /* FormattedText.h */,
 				610DCDB81A094A0E00BEEBFD /* Forward.h */,
 				610DCDB91A094A0E00BEEBFD /* Identification.cpp */,
 				610DCDBA1A094A0E00BEEBFD /* Identification.h */,
@@ -1659,11 +1750,14 @@
 				61C850621A6D976C00031100 /* OctaveShift.h */,
 				610DCDC51A094A0E00BEEBFD /* Optional.h */,
 				610DCDC61A094A0E00BEEBFD /* Ornaments.h */,
+				61F072F21A703583002CA9CA /* PageLayout.h */,
+				61F072F11A703583002CA9CA /* PageMargins.h */,
 				610DCDC71A094A0E00BEEBFD /* Part.cpp */,
 				610DCDC81A094A0E00BEEBFD /* Part.h */,
 				610DCDC91A094A0E00BEEBFD /* Pedal.h */,
 				614057D11A5CBD49005224C9 /* Pitch.cpp */,
 				610DCDCA1A094A0E00BEEBFD /* Pitch.h */,
+				61F072F01A703583002CA9CA /* Position.h */,
 				610DCDCB1A094A0E00BEEBFD /* Print.h */,
 				610DCDCC1A094A0E00BEEBFD /* Repeat.h */,
 				610DCDCD1A094A0E00BEEBFD /* Rest.h */,
@@ -1673,6 +1767,7 @@
 				610DCDD11A094A0E00BEEBFD /* Sound.h */,
 				610DCDD21A094A0E00BEEBFD /* StaffLayout.h */,
 				610DCDD31A094A0E00BEEBFD /* Syllabic.h */,
+				61F072EF1A703583002CA9CA /* SystemLayout.h */,
 				610DCDD41A094A0E00BEEBFD /* Tie.h */,
 				610DCDD51A094A0E00BEEBFD /* Tied.h */,
 				610DCDD61A094A0E00BEEBFD /* Time.h */,
@@ -1766,6 +1861,8 @@
 		610DCE1E1A094A0E00BEEBFD /* parsing */ = {
 			isa = PBXGroup;
 			children = (
+				61F073131A703596002CA9CA /* AppearanceHandler.cpp */,
+				61F073121A703596002CA9CA /* AppearanceHandler.h */,
 				610DCE1F1A094A0E00BEEBFD /* ArticulationHandler.cpp */,
 				610DCE201A094A0E00BEEBFD /* ArticulationHandler.h */,
 				610DCE211A094A0E00BEEBFD /* AttributesHandler.cpp */,
@@ -1795,8 +1892,14 @@
 				610DCE391A094A0E00BEEBFD /* EndingHandler.h */,
 				610DCE3A1A094A0E00BEEBFD /* FermataHandler.cpp */,
 				610DCE3B1A094A0E00BEEBFD /* FermataHandler.h */,
+				61F073111A703596002CA9CA /* FormattedTextHandler.cpp */,
+				61F073101A703596002CA9CA /* FormattedTextHandler.h */,
 				610DCE3D1A094A0E00BEEBFD /* ForwardHandler.cpp */,
 				610DCE3E1A094A0E00BEEBFD /* ForwardHandler.h */,
+				61F0730F1A703596002CA9CA /* GenericNode.cpp */,
+				61F0730E1A703596002CA9CA /* GenericNode.h */,
+				61F0730D1A703596002CA9CA /* GenericNodeHandler.cpp */,
+				61F0730C1A703596002CA9CA /* GenericNodeHandler.h */,
 				610DCE3F1A094A0E00BEEBFD /* IdentificationHandler.cpp */,
 				610DCE401A094A0E00BEEBFD /* IdentificationHandler.h */,
 				610DCE411A094A0E00BEEBFD /* KeyHandler.cpp */,
@@ -1815,10 +1918,16 @@
 				61C8506A1A6D978A00031100 /* OctaveShiftHandler.h */,
 				610DCE4D1A094A0E00BEEBFD /* OrnamentsHandler.cpp */,
 				610DCE4E1A094A0E00BEEBFD /* OrnamentsHandler.h */,
+				61F0730B1A703596002CA9CA /* PageLayoutHandler.cpp */,
+				61F0730A1A703596002CA9CA /* PageLayoutHandler.h */,
+				61F073091A703596002CA9CA /* PageMarginsHandler.cpp */,
+				61F073081A703596002CA9CA /* PageMarginsHandler.h */,
 				610DCE4F1A094A0E00BEEBFD /* PartHandler.cpp */,
 				610DCE501A094A0E00BEEBFD /* PartHandler.h */,
 				610DCE511A094A0E00BEEBFD /* PitchHandler.cpp */,
 				610DCE521A094A0E00BEEBFD /* PitchHandler.h */,
+				61F073071A703596002CA9CA /* PositionFactory.cpp */,
+				61F073061A703596002CA9CA /* PositionFactory.h */,
 				610DCE531A094A0E00BEEBFD /* PrintHandler.cpp */,
 				610DCE541A094A0E00BEEBFD /* PrintHandler.h */,
 				610DCE551A094A0E00BEEBFD /* RepeatHandler.cpp */,
@@ -1837,6 +1946,12 @@
 				610DCE621A094A0E00BEEBFD /* StaffLayoutHandler.h */,
 				610DCE631A094A0E00BEEBFD /* SyllabicHandler.cpp */,
 				610DCE641A094A0E00BEEBFD /* SyllabicHandler.h */,
+				61F073051A703596002CA9CA /* SystemDividersHandler.cpp */,
+				61F073041A703596002CA9CA /* SystemDividersHandler.h */,
+				61F073031A703596002CA9CA /* SystemLayoutHandler.cpp */,
+				61F073021A703596002CA9CA /* SystemLayoutHandler.h */,
+				61F073011A703596002CA9CA /* SystemMarginsHandler.cpp */,
+				61F073001A703596002CA9CA /* SystemMarginsHandler.h */,
 				610DCE651A094A0E00BEEBFD /* TiedHandler.cpp */,
 				610DCE661A094A0E00BEEBFD /* TiedHandler.h */,
 				610DCE671A094A0E00BEEBFD /* TieHandler.cpp */,
@@ -1845,6 +1960,8 @@
 				610DCE6A1A094A0E00BEEBFD /* TimeHandler.h */,
 				610DCE6B1A094A0E00BEEBFD /* TurnHandler.cpp */,
 				610DCE6C1A094A0E00BEEBFD /* TurnHandler.h */,
+				61F072FF1A703596002CA9CA /* TypeFactories.cpp */,
+				61F072FE1A703596002CA9CA /* TypeFactories.h */,
 				610DCE6D1A094A0E00BEEBFD /* UnpitchedHandler.cpp */,
 				610DCE6E1A094A0E00BEEBFD /* UnpitchedHandler.h */,
 			);
@@ -2076,7 +2193,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F073281A703596002CA9CA /* PositionFactory.h in Headers */,
+				61F0731E1A703596002CA9CA /* SystemLayoutHandler.h in Headers */,
 				616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */,
+				61F073461A703596002CA9CA /* AppearanceHandler.h in Headers */,
 				61C8507D1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */,
 				618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */,
 				61C850761A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */,
@@ -2087,15 +2207,21 @@
 				616C1ABA1A0B03A30020EAA8 /* VMKRestLayer.h in Headers */,
 				616C1AC61A0BFE2C0020EAA8 /* VMKWedgeLayer.h in Headers */,
 				61C8503A1A684F5300031100 /* Loop.h in Headers */,
+				61F072FA1A703583002CA9CA /* PageLayout.h in Headers */,
+				61F0733C1A703596002CA9CA /* GenericNode.h in Headers */,
 				616C1A9E1A0AA24E0020EAA8 /* VMKEndingLayer.h in Headers */,
 				61C8503C1A684F5300031100 /* Jump.h in Headers */,
+				61F072F81A703583002CA9CA /* PageMargins.h in Headers */,
 				61D0DFC01A44D13900EA6574 /* PlacementGeometry.h in Headers */,
 				00B34FFC1A5B464000198F4A /* Metrics.h in Headers */,
 				616C1B6D1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h in Headers */,
 				61C850651A6D977E00031100 /* OctaveShiftGeometry.h in Headers */,
 				616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */,
+				61F073231A703596002CA9CA /* SystemDividersHandler.h in Headers */,
 				61C8506C1A6D978A00031100 /* OctaveShiftHandler.h in Headers */,
+				61F072F41A703583002CA9CA /* SystemLayout.h in Headers */,
 				616C1B4E1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */,
+				61F0732D1A703596002CA9CA /* PageMarginsHandler.h in Headers */,
 				61239A721A65FFB100B3F0A3 /* ScoreBuilder.h in Headers */,
 				618641511A09B0B900FAE9C9 /* VMKBarlineLayer.h in Headers */,
 				61402B2A1A08251D003AE7A7 /* MusicKit.h in Headers */,
@@ -2104,20 +2230,27 @@
 				6149DB4C1A49FB7C005E094A /* CollisionHandler.h in Headers */,
 				616C1B611A0C0E310020EAA8 /* VMKCursorView.h in Headers */,
 				616C1B6F1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.h in Headers */,
+				61F073411A703596002CA9CA /* FormattedTextHandler.h in Headers */,
+				61F072F61A703583002CA9CA /* Position.h in Headers */,
 				616C1B891A0C2DEA0020EAA8 /* VMKWedgeView.h in Headers */,
 				61239A671A64B4F000B3F0A3 /* ScoreProperties.h in Headers */,
+				61F073321A703596002CA9CA /* PageLayoutHandler.h in Headers */,
+				61F072FC1A703583002CA9CA /* FormattedText.h in Headers */,
 				616C1AA21A0AA89B0020EAA8 /* VMKKeyLayer.h in Headers */,
 				616C1B7D1A0C2D8F0020EAA8 /* VMKLyricView.h in Headers */,
 				614055AA1A5B5D70005224C9 /* LyricGeometryFactory.h in Headers */,
 				0008689F1A68442B00BAA13D /* CodaGeometry.h in Headers */,
+				61F073141A703596002CA9CA /* TypeFactories.h in Headers */,
 				00094F0A1A6748460053C615 /* SegnoGeometry.h in Headers */,
 				616C1B5D1A0C0E310020EAA8 /* VMKAttributesView.h in Headers */,
 				61D0DFC21A44D13900EA6574 /* PartGeometryFactory.h in Headers */,
 				616C1AB61A0B030B0020EAA8 /* VMKPedalLayer.h in Headers */,
 				0008686A1A68344500BAA13D /* VMKWordsLayer.h in Headers */,
 				61402BAF1A082562003AE7A7 /* VMKImageStore.h in Headers */,
+				61F073191A703596002CA9CA /* SystemMarginsHandler.h in Headers */,
 				616C1B651A0C0E310020EAA8 /* VMKScoreElementContainerView.h in Headers */,
 				61402BA81A082562003AE7A7 /* VMKGeometry.h in Headers */,
+				61F073371A703596002CA9CA /* GenericNodeHandler.h in Headers */,
 				616C1B791A0C2D7A0020EAA8 /* VMKEndingView.h in Headers */,
 				61239A831A673B5B00B3F0A3 /* JumpFactory.h in Headers */,
 				616C1ABE1A0B054C0020EAA8 /* VMKTieLayer.h in Headers */,
@@ -2143,26 +2276,42 @@
 			files = (
 				61C8506D1A6D978A00031100 /* OctaveShiftHandler.h in Headers */,
 				61239A841A673B5B00B3F0A3 /* JumpFactory.h in Headers */,
+				61F0732E1A703596002CA9CA /* PageMarginsHandler.h in Headers */,
+				61F073421A703596002CA9CA /* FormattedTextHandler.h in Headers */,
 				61D0DFC31A44D13900EA6574 /* PartGeometryFactory.h in Headers */,
 				61D0DFB91A44D11600EA6574 /* StringUtility.h in Headers */,
 				6149DB4D1A49FB7C005E094A /* CollisionHandler.h in Headers */,
+				61F072F71A703583002CA9CA /* Position.h in Headers */,
+				61F0731F1A703596002CA9CA /* SystemLayoutHandler.h in Headers */,
 				0008686B1A68344500BAA13D /* VMKWordsLayer.h in Headers */,
 				61C850361A684F5300031100 /* LoopFactory.h in Headers */,
 				616C1B4F1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */,
+				61F072FB1A703583002CA9CA /* PageLayout.h in Headers */,
 				61239A681A64B4F000B3F0A3 /* ScoreProperties.h in Headers */,
 				000868721A68346400BAA13D /* VMKImageView.h in Headers */,
+				61F0733D1A703596002CA9CA /* GenericNode.h in Headers */,
+				61F073381A703596002CA9CA /* GenericNodeHandler.h in Headers */,
 				61C8503B1A684F5300031100 /* Loop.h in Headers */,
 				61C850771A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */,
 				61C8503D1A684F5300031100 /* Jump.h in Headers */,
+				61F073241A703596002CA9CA /* SystemDividersHandler.h in Headers */,
+				61F073151A703596002CA9CA /* TypeFactories.h in Headers */,
 				00094F0B1A6748460053C615 /* SegnoGeometry.h in Headers */,
+				61F073471A703596002CA9CA /* AppearanceHandler.h in Headers */,
+				61F072FD1A703583002CA9CA /* FormattedText.h in Headers */,
+				61F073291A703596002CA9CA /* PositionFactory.h in Headers */,
 				61D0DFC11A44D13900EA6574 /* PlacementGeometry.h in Headers */,
 				61C850661A6D977E00031100 /* OctaveShiftGeometry.h in Headers */,
 				00B34FFD1A5B464000198F4A /* Metrics.h in Headers */,
 				00094F0F1A6748710053C615 /* VMKWordsView.h in Headers */,
+				61F073331A703596002CA9CA /* PageLayoutHandler.h in Headers */,
+				61F072F91A703583002CA9CA /* PageMargins.h in Headers */,
 				616C1B8E1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */,
 				61C8507E1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */,
 				614055AB1A5B5D70005224C9 /* LyricGeometryFactory.h in Headers */,
+				61F0731A1A703596002CA9CA /* SystemMarginsHandler.h in Headers */,
 				61239A731A65FFB100B3F0A3 /* ScoreBuilder.h in Headers */,
+				61F072F51A703583002CA9CA /* SystemLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2738,7 +2887,9 @@
 				61C850371A684F5300031100 /* LoopFactory.cpp in Sources */,
 				610DCF001A094B5100BEEBFD /* PrintHandler.cpp in Sources */,
 				616C1A8E1A0A970F0020EAA8 /* VMKChordLayer.mm in Sources */,
+				61F0732A1A703596002CA9CA /* PositionFactory.cpp in Sources */,
 				61C850731A6D97A500031100 /* VMKOctaveShiftLayer.mm in Sources */,
+				61F073251A703596002CA9CA /* SystemDividersHandler.cpp in Sources */,
 				616C1AA31A0AA89B0020EAA8 /* VMKKeyLayer.mm in Sources */,
 				610DCEEC1A094B5100BEEBFD /* ClefHandler.cpp in Sources */,
 				616C1C1A1A0D61ED0020EAA8 /* VMKImage.mm in Sources */,
@@ -2761,6 +2912,7 @@
 				616C1AB31A0B01BB0020EAA8 /* VMKNoteStemLayer.mm in Sources */,
 				610DCEE01A094B4C00BEEBFD /* ScoreGeometry.cpp in Sources */,
 				610DCEDB1A094B4C00BEEBFD /* NoteGeometry.cpp in Sources */,
+				61F073481A703596002CA9CA /* AppearanceHandler.cpp in Sources */,
 				616C1ABF1A0B054C0020EAA8 /* VMKTieLayer.mm in Sources */,
 				616C1B501A0C0D0B0020EAA8 /* VMKBraceLayer.mm in Sources */,
 				610DCED61A094B4C00BEEBFD /* FermataGeometry.cpp in Sources */,
@@ -2786,17 +2938,20 @@
 				610DCF101A094B5500BEEBFD /* EventSequence.cpp in Sources */,
 				616C1B861A0C2DDB0020EAA8 /* VMKTieView.mm in Sources */,
 				616C1AAF1A0B01300020EAA8 /* VMKNoteHeadLayer.mm in Sources */,
+				61F073391A703596002CA9CA /* GenericNodeHandler.cpp in Sources */,
 				610DCEF81A094B5100BEEBFD /* LyricHandler.cpp in Sources */,
 				610DCEE41A094B4C00BEEBFD /* TieGeometry.cpp in Sources */,
 				610DCF081A094B5100BEEBFD /* SyllabicHandler.cpp in Sources */,
 				616C1B711A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm in Sources */,
 				616C1B7A1A0C2D7A0020EAA8 /* VMKEndingView.mm in Sources */,
 				610DCEFF1A094B5100BEEBFD /* PitchHandler.cpp in Sources */,
+				61F0732F1A703596002CA9CA /* PageMarginsHandler.cpp in Sources */,
 				616C1B8A1A0C2DEA0020EAA8 /* VMKWedgeView.mm in Sources */,
 				610DCEC91A094B4800BEEBFD /* Identification.cpp in Sources */,
 				610DCEFD1A094B5100BEEBFD /* OrnamentsHandler.cpp in Sources */,
 				616C1A921A0A98B70020EAA8 /* VMKClefLayer.mm in Sources */,
 				610DCED11A094B4C00BEEBFD /* ChordGeometry.cpp in Sources */,
+				61F073161A703596002CA9CA /* TypeFactories.cpp in Sources */,
 				610DCF0C1A094B5100BEEBFD /* TurnHandler.cpp in Sources */,
 				610DCEE21A094B4C00BEEBFD /* SpanDirectionGeometryFactory.cpp in Sources */,
 				610DCEC61A094B4500BEEBFD /* lxml.cpp in Sources */,
@@ -2815,6 +2970,7 @@
 				610DCEC41A094B4500BEEBFD /* DoubleHandler.cpp in Sources */,
 				610DCEE11A094B4C00BEEBFD /* SpanDirectionGeometry.cpp in Sources */,
 				616C1A961A0A99600020EAA8 /* VMKScoreElementImageLayer.mm in Sources */,
+				61F0733E1A703596002CA9CA /* GenericNode.cpp in Sources */,
 				610DCF051A094B5100BEEBFD /* SlurHandler.cpp in Sources */,
 				618641521A09B0B900FAE9C9 /* VMKBarlineLayer.mm in Sources */,
 				610DCF111A094B5500BEEBFD /* SpanCollection.cpp in Sources */,
@@ -2824,6 +2980,7 @@
 				610DCED81A094B4C00BEEBFD /* KeyGeometry.cpp in Sources */,
 				0008686C1A68344500BAA13D /* VMKWordsLayer.mm in Sources */,
 				00094F011A67482E0053C615 /* WordsGeometry.cpp in Sources */,
+				61F0731B1A703596002CA9CA /* SystemMarginsHandler.cpp in Sources */,
 				610DCEF71A094B5100BEEBFD /* KeyHandler.cpp in Sources */,
 				610DCEF51A094B5100BEEBFD /* ForwardHandler.cpp in Sources */,
 				61C8506E1A6D978A00031100 /* OctaveShiftHandler.cpp in Sources */,
@@ -2837,11 +2994,14 @@
 				610DCEF01A094B5100BEEBFD /* DirectionHandler.cpp in Sources */,
 				610DCEC71A094B4500BEEBFD /* RootRecursiveHandler.cpp in Sources */,
 				610DCEEB1A094B5100BEEBFD /* BeamHandler.cpp in Sources */,
+				61F073431A703596002CA9CA /* FormattedTextHandler.cpp in Sources */,
 				610DCED01A094B4C00BEEBFD /* BeamGeometry.cpp in Sources */,
 				610DCECF1A094B4C00BEEBFD /* BarlineGeometry.cpp in Sources */,
 				610DCECE1A094B4C00BEEBFD /* ArticulationGeometry.cpp in Sources */,
 				610DCEF41A094B5100BEEBFD /* FermataHandler.cpp in Sources */,
+				61F073341A703596002CA9CA /* PageLayoutHandler.cpp in Sources */,
 				610DCF0E1A094B5500BEEBFD /* Event.cpp in Sources */,
+				61F073201A703596002CA9CA /* SystemLayoutHandler.cpp in Sources */,
 				610DCEFA1A094B5100BEEBFD /* MordentHandler.cpp in Sources */,
 				610DCED41A094B4C00BEEBFD /* DotGeometry.cpp in Sources */,
 				610DCEF91A094B5100BEEBFD /* MeasureHandler.cpp in Sources */,
@@ -2880,8 +3040,10 @@
 				616C1B391A0C05B50020EAA8 /* VMKBarlineLayer.mm in Sources */,
 				616C1B421A0C05B50020EAA8 /* VMKNoteHeadLayer.mm in Sources */,
 				614055AD1A5B5D70005224C9 /* LyricGeometryFactory.cpp in Sources */,
+				61F073351A703596002CA9CA /* PageLayoutHandler.cpp in Sources */,
 				61239A811A673B5B00B3F0A3 /* JumpFactory.cpp in Sources */,
 				616C1B051A0C059E0020EAA8 /* StemGeometry.cpp in Sources */,
+				61F073491A703596002CA9CA /* AppearanceHandler.cpp in Sources */,
 				616C1B301A0C05A80020EAA8 /* Event.cpp in Sources */,
 				616C1B481A0C05B50020EAA8 /* VMKWedgeLayer.mm in Sources */,
 				616C1B1D1A0C05A40020EAA8 /* NotationsHandler.cpp in Sources */,
@@ -2897,21 +3059,26 @@
 				61C850381A684F5300031100 /* LoopFactory.cpp in Sources */,
 				616C1AE61A0C05980020EAA8 /* DoubleHandler.cpp in Sources */,
 				616C1B461A0C05B50020EAA8 /* VMKTieLayer.mm in Sources */,
+				61F0733A1A703596002CA9CA /* GenericNodeHandler.cpp in Sources */,
 				616C1AFC1A0C059E0020EAA8 /* MeasureGeometry.cpp in Sources */,
 				616C1B1F1A0C05A40020EAA8 /* OrnamentsHandler.cpp in Sources */,
 				616C1B311A0C05A80020EAA8 /* EventFactory.cpp in Sources */,
 				616C1B0B1A0C05A40020EAA8 /* BackupHandler.cpp in Sources */,
 				00094F081A6748460053C615 /* SegnoGeometry.cpp in Sources */,
 				61239A751A65FFB100B3F0A3 /* ScoreBuilder.cpp in Sources */,
+				61F073441A703596002CA9CA /* FormattedTextHandler.cpp in Sources */,
 				616C1B371A0C05B50020EAA8 /* VMKScoreElementImageLayer.mm in Sources */,
 				616C1B261A0C05A40020EAA8 /* ScoreHandler.cpp in Sources */,
 				616C1B451A0C05B50020EAA8 /* VMKRestLayer.mm in Sources */,
 				616C1AEA1A0C05980020EAA8 /* StringHandler.cpp in Sources */,
 				616C1B321A0C05A80020EAA8 /* EventSequence.cpp in Sources */,
+				61F0732B1A703596002CA9CA /* PositionFactory.cpp in Sources */,
+				61F073211A703596002CA9CA /* SystemLayoutHandler.cpp in Sources */,
 				616C1AE71A0C05980020EAA8 /* IntegerHandler.cpp in Sources */,
 				616C1B011A0C059E0020EAA8 /* RestGeometry.cpp in Sources */,
 				616C1B411A0C05B50020EAA8 /* VMKMeasureLayer.mm in Sources */,
 				616C1B211A0C05A40020EAA8 /* PitchHandler.cpp in Sources */,
+				61F073301A703596002CA9CA /* PageMarginsHandler.cpp in Sources */,
 				616C1B161A0C05A40020EAA8 /* FermataHandler.cpp in Sources */,
 				616C1B431A0C05B50020EAA8 /* VMKNoteStemLayer.mm in Sources */,
 				616C1B101A0C05A40020EAA8 /* CreditWordsHandler.cpp in Sources */,
@@ -2925,7 +3092,9 @@
 				616C1B1C1A0C05A40020EAA8 /* MordentHandler.cpp in Sources */,
 				616C1B201A0C05A40020EAA8 /* PartHandler.cpp in Sources */,
 				616C1B2F1A0C05A40020EAA8 /* UnpitchedHandler.cpp in Sources */,
+				61F0733F1A703596002CA9CA /* GenericNode.cpp in Sources */,
 				616C1AF81A0C059E0020EAA8 /* FermataGeometry.cpp in Sources */,
+				61F0731C1A703596002CA9CA /* SystemMarginsHandler.cpp in Sources */,
 				616C1B181A0C05A40020EAA8 /* IdentificationHandler.cpp in Sources */,
 				616C1B2D1A0C05A40020EAA8 /* TimeHandler.cpp in Sources */,
 				616C1B0D1A0C05A40020EAA8 /* BeamHandler.cpp in Sources */,
@@ -2939,6 +3108,7 @@
 				616C1B061A0C059E0020EAA8 /* TieGeometry.cpp in Sources */,
 				61C850741A6D97A500031100 /* VMKOctaveShiftLayer.mm in Sources */,
 				616C1B331A0C05A80020EAA8 /* SpanCollection.cpp in Sources */,
+				61F073171A703596002CA9CA /* TypeFactories.cpp in Sources */,
 				616C1B271A0C05A40020EAA8 /* SlurHandler.cpp in Sources */,
 				616C1B121A0C05A40020EAA8 /* DirectionHandler.cpp in Sources */,
 				616C1B001A0C059E0020EAA8 /* PedalGeometry.cpp in Sources */,
@@ -2974,6 +3144,7 @@
 				616C1B0A1A0C05A40020EAA8 /* AttributesHandler.cpp in Sources */,
 				616C1B291A0C05A40020EAA8 /* StaffLayoutHandler.cpp in Sources */,
 				61C850681A6D977E00031100 /* OctaveShiftGeometry.cpp in Sources */,
+				61F073261A703596002CA9CA /* SystemDividersHandler.cpp in Sources */,
 				616C1B041A0C059E0020EAA8 /* SpanDirectionGeometryFactory.cpp in Sources */,
 				616C1B441A0C05B50020EAA8 /* VMKPedalLayer.mm in Sources */,
 				616C1AEF1A0C059E0020EAA8 /* AccidentalGeometry.cpp in Sources */,
@@ -3021,7 +3192,9 @@
 				618C6CA71A13E7DC008314B2 /* MeasureHandler.cpp in Sources */,
 				61C850691A6D977E00031100 /* OctaveShiftGeometry.cpp in Sources */,
 				618C6C961A13E7DC008314B2 /* AttributesHandler.cpp in Sources */,
+				61F0731D1A703596002CA9CA /* SystemMarginsHandler.cpp in Sources */,
 				61D667811A3F67B80044A00B /* VMKScoreRenderer.mm in Sources */,
+				61F0734A1A703596002CA9CA /* AppearanceHandler.cpp in Sources */,
 				61239A821A673B5B00B3F0A3 /* JumpFactory.cpp in Sources */,
 				618C6C951A13E7DC008314B2 /* ArticulationHandler.cpp in Sources */,
 				00CD77791A5C75260067C531 /* Metrics.cpp in Sources */,
@@ -3037,16 +3210,19 @@
 				618C6C661A13E7A1008314B2 /* VMKKeyLayer.mm in Sources */,
 				618C6CBC1A13E7E0008314B2 /* Event.cpp in Sources */,
 				614055AE1A5B5D7E005224C9 /* LyricGeometryFactory.cpp in Sources */,
+				61F073361A703596002CA9CA /* PageLayoutHandler.cpp in Sources */,
 				618C6C821A13E7D6008314B2 /* DotGeometry.cpp in Sources */,
 				618C6CA81A13E7DC008314B2 /* MordentHandler.cpp in Sources */,
 				618C6CA01A13E7DC008314B2 /* EmptyPlacementHandler.cpp in Sources */,
 				00094F091A6748460053C615 /* SegnoGeometry.cpp in Sources */,
 				618C6C721A13E7CF008314B2 /* DoubleHandler.cpp in Sources */,
+				61F073401A703596002CA9CA /* GenericNode.cpp in Sources */,
 				618C6CAF1A13E7DC008314B2 /* RepeatHandler.cpp in Sources */,
 				618C6C831A13E7D6008314B2 /* EndingGeometry.cpp in Sources */,
 				618C6CA31A13E7DC008314B2 /* ForwardHandler.cpp in Sources */,
 				618C6C6A1A13E7A1008314B2 /* VMKNoteStemLayer.mm in Sources */,
 				618C6C851A13E7D6008314B2 /* Geometry.cpp in Sources */,
+				61F073311A703596002CA9CA /* PageMarginsHandler.cpp in Sources */,
 				618C6C5E1A13E7A1008314B2 /* VMKAccidentalLayer.mm in Sources */,
 				618C6C6E1A13E7A1008314B2 /* VMKTieLayer.mm in Sources */,
 				618C6C701A13E7A1008314B2 /* VMKWedgeLayer.mm in Sources */,
@@ -3065,6 +3241,7 @@
 				618C6CB11A13E7DC008314B2 /* ScalingHandler.cpp in Sources */,
 				618C6C791A13E7D2008314B2 /* Note.cpp in Sources */,
 				618C6C7F1A13E7D6008314B2 /* ChordGeometry.cpp in Sources */,
+				61F0732C1A703596002CA9CA /* PositionFactory.cpp in Sources */,
 				618C6C671A13E7A1008314B2 /* VMKLyricLayer.mm in Sources */,
 				618C6CA11A13E7DC008314B2 /* EndingHandler.cpp in Sources */,
 				618C6C751A13E7CF008314B2 /* RootRecursiveHandler.cpp in Sources */,
@@ -3082,10 +3259,14 @@
 				618C6CAE1A13E7DC008314B2 /* PrintHandler.cpp in Sources */,
 				618C6C6C1A13E7A1008314B2 /* VMKPedalLayer.mm in Sources */,
 				618C6C7D1A13E7D6008314B2 /* BarlineGeometry.cpp in Sources */,
+				61F0733B1A703596002CA9CA /* GenericNodeHandler.cpp in Sources */,
+				61F073271A703596002CA9CA /* SystemDividersHandler.cpp in Sources */,
 				618C6C8D1A13E7D6008314B2 /* RestGeometry.cpp in Sources */,
 				618C6C741A13E7CF008314B2 /* lxml.cpp in Sources */,
 				618C6C5C1A13E7A1008314B2 /* VMKScoreElementLayer.mm in Sources */,
+				61F073221A703596002CA9CA /* SystemLayoutHandler.cpp in Sources */,
 				618C6C841A13E7D6008314B2 /* FermataGeometry.cpp in Sources */,
+				61F073451A703596002CA9CA /* FormattedTextHandler.cpp in Sources */,
 				61D0DFBC1A44D11600EA6574 /* StringUtility.cpp in Sources */,
 				618C6C7C1A13E7D6008314B2 /* ArticulationGeometry.cpp in Sources */,
 				618C6CA41A13E7DC008314B2 /* IdentificationHandler.cpp in Sources */,
@@ -3113,6 +3294,7 @@
 				000868A11A68443000BAA13D /* CodaGeometry.cpp in Sources */,
 				618C6CAC1A13E7DC008314B2 /* PartHandler.cpp in Sources */,
 				614057D51A5CBD49005224C9 /* Pitch.cpp in Sources */,
+				61F073181A703596002CA9CA /* TypeFactories.cpp in Sources */,
 				618C6CC01A13E7E0008314B2 /* SpanFactory.cpp in Sources */,
 				618C6C601A13E7A1008314B2 /* VMKBeamLayer.mm in Sources */,
 				61239A6B1A64B4F000B3F0A3 /* ScoreProperties.cpp in Sources */,

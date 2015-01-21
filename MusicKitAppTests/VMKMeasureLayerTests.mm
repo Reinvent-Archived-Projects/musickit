@@ -25,11 +25,8 @@ using namespace mxml::dom;
     self.builder->setTrebleClef(attributes, 1);
     self.builder->setBassClef(attributes, 2);
     
-    auto staffLayout = std::unique_ptr<StaffLayout>(new StaffLayout{});
-    staffLayout->setStaffDistance(65);
-    
     std::unique_ptr<Print> print(new Print);
-    print->setStaffLayout(std::move(staffLayout));
+    print->staffDistances[2] = 65;
     
     measure->addNode(std::move(print));
 }

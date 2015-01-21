@@ -51,7 +51,7 @@
 
     if (lyric.syllabic()) {
         mxml::dom::Syllabic::Type type = lyric.syllabic()->type();
-        if (type == mxml::dom::Syllabic::Begin || type == mxml::dom::Syllabic::Middle)
+        if (type == mxml::dom::Syllabic::kBegin || type == mxml::dom::Syllabic::kMiddle)
             string = [string stringByAppendingString:@" - "];
     }
     

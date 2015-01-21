@@ -53,7 +53,7 @@ using namespace mxml::dom;
     auto chord = self.builder->addChord(self.measure);
     auto note1 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
     self.builder->setPitch(note1, Pitch::STEP_B, 4);
-    note1->setStem(STEM_DOWN);
+    note1->setStem(kStemDown);
 
     auto note2 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
     self.builder->setPitch(note2, Pitch::STEP_G, 4);
@@ -196,7 +196,7 @@ using namespace mxml::dom;
     auto note = self.builder->addNote(chord, Note::TYPE_QUARTER);
     self.builder->setPitch(note, Pitch::STEP_G, 4);
     
-    auto accidential = std::unique_ptr<Accidental>(new Accidental{Accidental::TYPE_SHARP});
+    auto accidential = std::unique_ptr<Accidental>(new Accidental{Accidental::kTypeSharp});
     note->setAccidental(std::move(accidential));
 
     auto score = self.builder->build();

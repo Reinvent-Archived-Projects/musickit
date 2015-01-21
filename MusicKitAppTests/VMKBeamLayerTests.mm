@@ -45,12 +45,12 @@ using namespace mxml::dom;
     auto chord1 = self.builder->addChord(self.measure);
     auto note1 = self.builder->addNote(chord1, Note::TYPE_EIGHTH, 0, 1);
     self.builder->setPitch(note1, Pitch::STEP_A, 4);
-    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
+    [self addBeamToNote:note1 beamType:Beam::kTypeBegin numberOfBeams:1];
 
     auto chord2 = self.builder->addChord(self.measure);
     auto note2 = self.builder->addNote(chord2, Note::TYPE_EIGHTH, 1, 1);
     self.builder->setPitch(note2, Pitch::STEP_B, 4);
-    [self addBeamToNote:note2 beamType:Beam::TYPE_END numberOfBeams:1];
+    [self addBeamToNote:note2 beamType:Beam::kTypeEnd numberOfBeams:1];
 
     auto score = self.builder->build();
     mxml::ScoreProperties properties(*score);
@@ -71,17 +71,17 @@ using namespace mxml::dom;
     auto chord1 = self.builder->addChord(self.measure);
     auto note1 = self.builder->addNote(chord1, Note::TYPE_64TH, 0, 1);
     self.builder->setPitch(note1, Pitch::STEP_C, 4);
-    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
+    [self addBeamToNote:note1 beamType:Beam::kTypeBegin numberOfBeams:1];
 
     auto chord2 = self.builder->addChord(self.measure);
     auto note2 = self.builder->addNote(chord2, Note::TYPE_64TH, 1, 1);
     self.builder->setPitch(note2, Pitch::STEP_B, 4);
-    [self addBeamToNote:note2 beamType:Beam::TYPE_CONTINUE numberOfBeams:1];
+    [self addBeamToNote:note2 beamType:Beam::kContinue numberOfBeams:1];
 
     auto chord3 = self.builder->addChord(self.measure);
     auto note3 = self.builder->addNote(chord3, Note::TYPE_64TH, 2, 1);
     self.builder->setPitch(note3, Pitch::STEP_D, 4);
-    [self addBeamToNote:note3 beamType:Beam::TYPE_END numberOfBeams:1];
+    [self addBeamToNote:note3 beamType:Beam::kTypeEnd numberOfBeams:1];
 
     auto score = self.builder->build();
     mxml::ScoreProperties properties(*score);
@@ -98,17 +98,17 @@ using namespace mxml::dom;
     auto chord1 = self.builder->addChord(self.measure);
     auto note1 = self.builder->addNote(chord1, Note::TYPE_EIGHTH, 0, 1);
     self.builder->setPitch(note1, Pitch::STEP_A, 4);
-    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
+    [self addBeamToNote:note1 beamType:Beam::kTypeBegin numberOfBeams:1];
 
     auto beam = std::unique_ptr<Beam>(new Beam{});
     beam->setNumber(2);
-    beam->setType(Beam::TYPE_FORWARD_HOOK);
+    beam->setType(Beam::kTypeForwardHook);
     note1->addBeam(std::move(beam));
 
     auto chord2 = self.builder->addChord(self.measure);
     auto note2 = self.builder->addNote(chord2, Note::TYPE_EIGHTH, 1, 1);
     self.builder->setPitch(note2, Pitch::STEP_B, 4);
-    [self addBeamToNote:note2 beamType:Beam::TYPE_END numberOfBeams:1];
+    [self addBeamToNote:note2 beamType:Beam::kTypeEnd numberOfBeams:1];
 
     auto score = self.builder->build();
     mxml::ScoreProperties properties(*score);
@@ -125,16 +125,16 @@ using namespace mxml::dom;
     auto chord1 = self.builder->addChord(self.measure);
     auto note1 = self.builder->addNote(chord1, Note::TYPE_EIGHTH, 0, 1);
     self.builder->setPitch(note1, Pitch::STEP_A, 4);
-    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
+    [self addBeamToNote:note1 beamType:Beam::kTypeBegin numberOfBeams:1];
 
     auto chord2 = self.builder->addChord(self.measure);
     auto note2 = self.builder->addNote(chord2, Note::TYPE_EIGHTH, 1, 1);
     self.builder->setPitch(note2, Pitch::STEP_B, 4);
-    [self addBeamToNote:note2 beamType:Beam::TYPE_END numberOfBeams:1];
+    [self addBeamToNote:note2 beamType:Beam::kTypeEnd numberOfBeams:1];
 
     auto beam = std::unique_ptr<Beam>(new Beam{});
     beam->setNumber(2);
-    beam->setType(Beam::TYPE_BACKWARD_HOOK);
+    beam->setType(Beam::kTypeBackwardHook);
     note2->addBeam(std::move(beam));
 
     auto score = self.builder->build();
@@ -152,12 +152,12 @@ using namespace mxml::dom;
     auto chord1 = self.builder->addChord(self.measure);
     auto note1 = self.builder->addNote(chord1, Note::TYPE_16TH, 0, 1);
     self.builder->setPitch(note1, Pitch::STEP_A, 4);
-    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:2];
+    [self addBeamToNote:note1 beamType:Beam::kTypeBegin numberOfBeams:2];
 
     auto chord2 = self.builder->addChord(self.measure);
     auto note2 = self.builder->addNote(chord2, Note::TYPE_16TH, 1, 1);
     self.builder->setPitch(note2, Pitch::STEP_B, 4);
-    [self addBeamToNote:note2 beamType:Beam::TYPE_END numberOfBeams:2];
+    [self addBeamToNote:note2 beamType:Beam::kTypeEnd numberOfBeams:2];
 
     auto score = self.builder->build();
     mxml::ScoreProperties properties(*score);
@@ -174,17 +174,17 @@ using namespace mxml::dom;
     auto chord1 = self.builder->addChord(self.measure);
     auto note1 = self.builder->addNote(chord1, Note::TYPE_64TH, 0, 1);
     self.builder->setPitch(note1, Pitch::STEP_C, 4);
-    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:4];
+    [self addBeamToNote:note1 beamType:Beam::kTypeBegin numberOfBeams:4];
 
     auto chord2 = self.builder->addChord(self.measure);
     auto note2 = self.builder->addNote(chord2, Note::TYPE_64TH, 1, 1);
     self.builder->setPitch(note2, Pitch::STEP_B, 4);
-    [self addBeamToNote:note2 beamType:Beam::TYPE_CONTINUE numberOfBeams:4];
+    [self addBeamToNote:note2 beamType:Beam::kContinue numberOfBeams:4];
 
     auto chord3 = self.builder->addChord(self.measure);
     auto note3 = self.builder->addNote(chord3, Note::TYPE_64TH, 2, 1);
     self.builder->setPitch(note3, Pitch::STEP_D, 4);
-    [self addBeamToNote:note3 beamType:Beam::TYPE_END numberOfBeams:4];
+    [self addBeamToNote:note3 beamType:Beam::kTypeEnd numberOfBeams:4];
 
     auto score = self.builder->build();
     mxml::ScoreProperties properties(*score);
@@ -201,16 +201,16 @@ using namespace mxml::dom;
     auto chord1 = self.builder->addChord(self.measure);
     auto note1 = self.builder->addNote(chord1, Note::TYPE_EIGHTH, 0, 1);
     self.builder->setPitch(note1, Pitch::STEP_A, 4);
-    [self addBeamToNote:note1 beamType:Beam::TYPE_BEGIN numberOfBeams:1];
-    note1->setStem(STEM_DOWN);
+    [self addBeamToNote:note1 beamType:Beam::kTypeBegin numberOfBeams:1];
+    note1->setStem(kStemDown);
 
     auto chord2 = self.builder->addChord(self.measure);
     auto note2 = self.builder->addNote(chord2, Note::TYPE_EIGHTH, 1, 1);
     self.builder->setPitch(note2, Pitch::STEP_B, 4);
-    [self addBeamToNote:note2 beamType:Beam::TYPE_END numberOfBeams:1];
-    note2->setStem(STEM_DOWN);
+    [self addBeamToNote:note2 beamType:Beam::kTypeEnd numberOfBeams:1];
+    note2->setStem(kStemDown);
     
-    auto accidental = std::unique_ptr<Accidental>(new Accidental{Accidental::TYPE_SHARP});
+    auto accidental = std::unique_ptr<Accidental>(new Accidental{Accidental::kTypeSharp});
     note2->setAccidental(std::move(accidental));
 
     auto score = self.builder->build();

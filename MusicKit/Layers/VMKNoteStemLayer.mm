@@ -39,9 +39,9 @@ using namespace mxml::dom;
         return nil;
 
     NSString* dir = nil;
-    if (note.stem() == STEM_UP || note.stem() == STEM_DOUBLE)
+    if (note.stem() == kStemUp || note.stem() == kStemDouble)
         dir = @"up";
-    else if (note.stem() == STEM_DOWN)
+    else if (note.stem() == kStemDown)
         dir = @"down";
     if (dir == nil)
         return nil;
@@ -53,9 +53,9 @@ using namespace mxml::dom;
     NSString* name = @"quarter";
 
     NSString* dir = nil;
-    if (note.stem() == STEM_UP || note.stem() == STEM_DOUBLE)
+    if (note.stem() == kStemUp || note.stem() == kStemDouble)
         dir = @"up";
-    else if (note.stem() == STEM_DOWN)
+    else if (note.stem() == kStemDown)
         dir = @"down";
     if (dir == nil)
         return nil;
