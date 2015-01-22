@@ -63,7 +63,7 @@ static const CGFloat kGapWidth = 10;
     [self buildLayers];
 
     _braceLayer.partGeometry = partGeometry;
-    _braceLayer.hidden = partGeometry->part().staves() <= 1;
+    _braceLayer.hidden = partGeometry->staves() <= 1;
 
     [self setNeedsLayout];
     [self setNeedsDisplay];
@@ -105,7 +105,7 @@ static const CGFloat kGapWidth = 10;
 - (void)buildLayers {
     [self clearLayers];
     
-    int staves = _partGeometry->part().staves();
+    auto staves = _partGeometry->staves();
     _clefLayers = [[NSMutableArray alloc] initWithCapacity:staves];
     _timeLayers = [[NSMutableArray alloc] initWithCapacity:staves];
     _keyLayers = [[NSMutableArray alloc] initWithCapacity:staves];
@@ -158,7 +158,7 @@ static const CGFloat kGapWidth = 10;
     if (!_partGeometry)
         return;
 
-    const int staves = _partGeometry->part().staves();
+    const auto staves = _partGeometry->staves();
     
     const ClefGeometry* clefGeoms[staves];
     std::fill(clefGeoms, clefGeoms + staves, static_cast<const ClefGeometry*>(0));
@@ -245,7 +245,7 @@ static const CGFloat kGapWidth = 10;
     CGFloat timesWidth = 0;
     CGFloat keysWidth = 0;
     
-    const int staves = _partGeometry->part().staves();
+    const auto staves = _partGeometry->staves();
     for (int staff = 1; staff <= staves; staff += 1) {
         VMKClefLayer* clefLayer = _clefLayers[staff - 1];
         clefsWidth = std::max(clefsWidth, clefLayer.bounds.size.width);
@@ -257,10 +257,10 @@ static const CGFloat kGapWidth = 10;
         keysWidth = std::max(keysWidth, keyLayer.bounds.size.width);
     }
     
-    CGFloat y0 = -Metrics::stavesHeight(_partGeometry->part())/2;
+    CGFloat y0 = -_partGeometry->stavesHeight()/2;
     for (int staff = 1; staff <= staves; staff += 1) {
         CGFloat x = CGRectGetMaxX(braceFrame) + kSpacing;
-        CGFloat y = y0 + (Metrics::staffOrigin(_partGeometry->part(), staff) + Metrics::staffHeight()/2);
+        CGFloat y = y0 + (_partGeometry->staffOrigin(staff) + Metrics::staffHeight()/2);
         
         VMKClefLayer* clefLayer = _clefLayers[staff - 1];
         CGRect clefFrame = clefLayer.frame;
@@ -288,18 +288,18 @@ static const CGFloat kGapWidth = 10;
     if (!_partGeometry)
         return;
 
-    int staves = _partGeometry->part().staves();
-    CGFloat staffDistance = _partGeometry->part().staffDistance();
+    const auto staves = _partGeometry->staves();
+    CGFloat staffDistance = _partGeometry->staffDistance();
     if (staves == 0)
         return;
     
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGSize size = self.bounds.size;
 
-    CGFloat stavesHeight = Metrics::stavesHeight(_partGeometry->part());
+    CGFloat stavesHeight = _partGeometry->stavesHeight();
     CGPoint origin;
     origin.x = CGRectGetMaxX(_braceLayer.frame) + kSpacing/2;
-    origin.y = -Metrics::stavesHeight(_partGeometry->part())/2;
+    origin.y = -_partGeometry->stavesHeight()/2;
     CGRect lineRect;
 
     CGContextSetFillColorWithColor(ctx, self.foregroundColor.CGColor);

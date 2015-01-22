@@ -47,7 +47,7 @@ static const CGFloat kBraceWidth = 14.0;
         return;
     }
 
-    CGFloat stavesHeight = (CGFloat)mxml::Metrics::stavesHeight(self.partGeometry->part());
+    CGFloat stavesHeight = (CGFloat)self.partGeometry->stavesHeight();
     self.imageName = [[self class] braceImageNameForHeight:stavesHeight];
     self.anchorPoint = CGPointMake(0, 0.5);
     self.bounds = {CGPointZero, self.preferredFrameSize};
@@ -61,7 +61,7 @@ static const CGFloat kBraceWidth = 14.0;
     if (baseSize.height == 0)
         return CGSizeZero;
 
-    CGFloat scale = mxml::Metrics::stavesHeight(self.partGeometry->part()) / baseSize.height;
+    CGFloat scale = self.partGeometry->stavesHeight() / baseSize.height;
     return CGSizeMake(kBraceWidth, baseSize.height * scale);
 }
 

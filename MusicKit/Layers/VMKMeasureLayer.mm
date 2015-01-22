@@ -42,6 +42,7 @@ static const CGFloat kBarLineWidth = 1;
 @implementation VMKMeasureLayer {
     NSMutableArray* _elementLayers;
     NSMutableDictionary* _reusableElementViews;
+    const mxml::PartGeometry* _partGeometry;
 }
 
 - (id)initWithMeasure:(const mxml::MeasureGeometry*)measureGeom {
@@ -100,6 +101,10 @@ static const CGFloat kBarLineWidth = 1;
     if (geometry) {
         const Measure& measure = self.measureGeometry->measure();
         _numberLayer.string = [NSString stringWithUTF8String:measure.number().c_str()];
+
+        _partGeometry = &self.measureGeometry->partGeometry();
+    } else {
+        _partGeometry = nullptr;
     }
 
     [self clearElementViews];
@@ -197,18 +202,18 @@ static const CGFloat kBarLineWidth = 1;
 
     CGContextSetFillColorWithColor(ctx, self.foregroundColor);
 
+    auto& partGeometry = self.measureGeometry->partGeometry();
     const Measure& measure = self.measureGeometry->measure();
     const Part* part = dynamic_cast<const Part*>(measure.parent());
     assert(part);
 
-    int staves = part->staves();
+    auto staves = partGeometry.staves();
     if (staves == 0)
         return;
 
-    CGFloat staffDistance = part->staffDistance();
-
     CGSize size = self.bounds.size;
-    CGFloat stavesHeight = Metrics::stavesHeight(self.measureGeometry->partGeometry().part());
+    CGFloat staffDistance = partGeometry.staffDistance();
+    CGFloat stavesHeight = partGeometry.stavesHeight();
     CGRect lineRect;
 
     // Draw bar line
@@ -243,7 +248,7 @@ static const CGFloat kBarLineWidth = 1;
 }
 
 - (void)drawLedgerLinesForNoteGeom:(const NoteGeometry*)noteGeom staffNumber:(int)staff inContext:(CGContextRef)ctx {
-    const CGFloat staffOrigin = Metrics::staffOrigin(self.measureGeometry->partGeometry().part(), staff);
+    const CGFloat staffOrigin = _partGeometry->staffOrigin(staff);
 
     CGRect lineRect;
     lineRect.origin = CGPointFromPoint(self.geometry->convertFromGeometry(noteGeom->origin(), noteGeom->parentGeometry()));
@@ -269,7 +274,7 @@ static const CGFloat kBarLineWidth = 1;
 }
 
 - (void)drawLedgerLinesForNoteGeom:(const NoteGeometry*)noteGeom inStaffNumber:(int)staff inContext:(CGContextRef)ctx {
-    const CGFloat staffOrigin = Metrics::staffOrigin(self.measureGeometry->partGeometry().part(), staff);
+    const CGFloat staffOrigin = _partGeometry->staffOrigin(staff);
 
     CGRect lineRect;
     lineRect.origin = CGPointFromPoint(self.geometry->convertFromGeometry(noteGeom->origin(), noteGeom->parentGeometry()));

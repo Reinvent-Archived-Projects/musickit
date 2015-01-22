@@ -23,6 +23,7 @@
 @implementation VMKCollectionViewScoreLayoutTests {
     std::unique_ptr<mxml::dom::Score> _score;
     std::unique_ptr<mxml::ScoreProperties> _scoreProperties;
+    std::unique_ptr<mxml::ScrollMetrics> _metrics;
     std::unique_ptr<mxml::ScoreGeometry> _geometry;
 }
 
@@ -43,6 +44,7 @@
     [super tearDown];
 
     _geometry.reset();
+    _metrics.reset();
     _scoreProperties.reset();
     _score.reset();
 }
@@ -53,9 +55,10 @@
     lxml::parse(is, [path UTF8String], handler);
     _score = handler.result();
     _scoreProperties.reset(new mxml::ScoreProperties(*_score));
+    _metrics.reset(new mxml::ScrollMetrics(*_score, *_scoreProperties));
     
     if (!_score->parts().empty() && !_score->parts().front()->measures().empty()) {
-        _geometry.reset(new mxml::ScoreGeometry(*_score, *_scoreProperties));
+        _geometry.reset(new mxml::ScoreGeometry(*_score, *_scoreProperties, *_metrics));
     } else {
         _geometry.reset();
     }

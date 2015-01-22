@@ -35,8 +35,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
+    ScrollMetrics metrics(*score, properties);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
     auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
 
     mxml::ChordGeometry geom(*chord, properties, *partGeometry);
@@ -63,8 +64,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
+    ScrollMetrics metrics(*score, properties);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
     auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
 
     mxml::ChordGeometry geom(*chord, properties, *partGeometry);
@@ -90,8 +92,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
+    ScrollMetrics metrics(*score, properties);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
     auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
 
     mxml::ChordGeometry geom(*chord, properties, *partGeometry);
@@ -111,8 +114,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
+    ScrollMetrics metrics(*score, properties);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
     auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
 
     mxml::ChordGeometry geom(*chord, properties, *partGeometry);
@@ -132,8 +136,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
+    ScrollMetrics metrics(*score, properties);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
     auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
 
     mxml::ChordGeometry geom(*chord, properties, *partGeometry);
@@ -157,8 +162,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
+    ScrollMetrics metrics(*score, properties);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
     auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
 
     mxml::ChordGeometry geom(*chord, properties, *partGeometry);
@@ -181,8 +187,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
+    ScrollMetrics metrics(*score, properties);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
     auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
 
     mxml::ChordGeometry geom(*chord, properties, *partGeometry);
@@ -201,8 +208,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
+    ScrollMetrics metrics(*score, properties);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
     auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
 
     mxml::ChordGeometry geom(*chord, properties, *partGeometry);
@@ -224,8 +232,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
+    ScrollMetrics metrics(*score, properties);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
     auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
 
     mxml::ChordGeometry geom(*chord, properties, *partGeometry);
