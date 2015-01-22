@@ -59,6 +59,25 @@
 		00094F0E1A6748710053C615 /* VMKWordsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00094F0C1A6748710053C615 /* VMKWordsView.h */; };
 		00094F0F1A6748710053C615 /* VMKWordsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00094F0C1A6748710053C615 /* VMKWordsView.h */; };
 		00094F101A6748710053C615 /* VMKWordsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00094F0D1A6748710053C615 /* VMKWordsView.mm */; };
+		0022AE0E1A70833700139992 /* CollisionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE061A70833700139992 /* CollisionHandler.cpp */; };
+		0022AE0F1A70833700139992 /* CollisionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE061A70833700139992 /* CollisionHandler.cpp */; };
+		0022AE101A70833700139992 /* CollisionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE061A70833700139992 /* CollisionHandler.cpp */; };
+		0022AE111A70833700139992 /* CollisionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0022AE071A70833700139992 /* CollisionHandler.h */; };
+		0022AE121A70833700139992 /* CollisionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0022AE071A70833700139992 /* CollisionHandler.h */; };
+		0022AE131A70833700139992 /* CollisionResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0022AE081A70833700139992 /* CollisionResolver.h */; };
+		0022AE141A70833700139992 /* CollisionResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0022AE081A70833700139992 /* CollisionResolver.h */; };
+		0022AE151A70833700139992 /* CollisionResolver.hh in Headers */ = {isa = PBXBuildFile; fileRef = 0022AE091A70833700139992 /* CollisionResolver.hh */; };
+		0022AE161A70833700139992 /* CollisionResolver.hh in Headers */ = {isa = PBXBuildFile; fileRef = 0022AE091A70833700139992 /* CollisionResolver.hh */; };
+		0022AE171A70833700139992 /* HorizontalResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE0A1A70833700139992 /* HorizontalResolver.cpp */; };
+		0022AE181A70833700139992 /* HorizontalResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE0A1A70833700139992 /* HorizontalResolver.cpp */; };
+		0022AE191A70833700139992 /* HorizontalResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE0A1A70833700139992 /* HorizontalResolver.cpp */; };
+		0022AE1A1A70833700139992 /* HorizontalResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0022AE0B1A70833700139992 /* HorizontalResolver.h */; };
+		0022AE1B1A70833700139992 /* HorizontalResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0022AE0B1A70833700139992 /* HorizontalResolver.h */; };
+		0022AE1C1A70833700139992 /* VerticalResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE0C1A70833700139992 /* VerticalResolver.cpp */; };
+		0022AE1D1A70833700139992 /* VerticalResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE0C1A70833700139992 /* VerticalResolver.cpp */; };
+		0022AE1E1A70833700139992 /* VerticalResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE0C1A70833700139992 /* VerticalResolver.cpp */; };
+		0022AE1F1A70833700139992 /* VerticalResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0022AE0D1A70833700139992 /* VerticalResolver.h */; };
+		0022AE201A70833700139992 /* VerticalResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0022AE0D1A70833700139992 /* VerticalResolver.h */; };
 		00A3E46A1A2E57BF00B2A6C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A3E4691A2E57BF00B2A6C8 /* Images.xcassets */; };
 		00B34FFA1A5B464000198F4A /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
 		00B34FFB1A5B464000198F4A /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
@@ -202,11 +221,6 @@
 		614057D71A5CBD49005224C9 /* Key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614057D21A5CBD49005224C9 /* Key.cpp */; };
 		614057D81A5CBD49005224C9 /* Key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614057D21A5CBD49005224C9 /* Key.cpp */; };
 		614057DA1A5CC54E005224C9 /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
-		6149DB4C1A49FB7C005E094A /* CollisionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6149DB4A1A49FB7C005E094A /* CollisionHandler.h */; };
-		6149DB4D1A49FB7C005E094A /* CollisionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6149DB4A1A49FB7C005E094A /* CollisionHandler.h */; };
-		6149DB4E1A49FB7C005E094A /* CollisionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6149DB4B1A49FB7C005E094A /* CollisionHandler.cpp */; };
-		6149DB4F1A49FB7C005E094A /* CollisionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6149DB4B1A49FB7C005E094A /* CollisionHandler.cpp */; };
-		6149DB501A49FB7C005E094A /* CollisionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6149DB4B1A49FB7C005E094A /* CollisionHandler.cpp */; };
 		616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */; };
 		616C1A8E1A0A970F0020EAA8 /* VMKChordLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */; };
 		616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */; };
@@ -882,6 +896,14 @@
 		00094F061A6748460053C615 /* SegnoGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SegnoGeometry.h; path = Submodules/mxml/src/mxml/geometry/SegnoGeometry.h; sourceTree = SOURCE_ROOT; };
 		00094F0C1A6748710053C615 /* VMKWordsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKWordsView.h; sourceTree = "<group>"; };
 		00094F0D1A6748710053C615 /* VMKWordsView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKWordsView.mm; sourceTree = "<group>"; };
+		0022AE061A70833700139992 /* CollisionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollisionHandler.cpp; sourceTree = "<group>"; };
+		0022AE071A70833700139992 /* CollisionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionHandler.h; sourceTree = "<group>"; };
+		0022AE081A70833700139992 /* CollisionResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionResolver.h; sourceTree = "<group>"; };
+		0022AE091A70833700139992 /* CollisionResolver.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CollisionResolver.hh; sourceTree = "<group>"; };
+		0022AE0A1A70833700139992 /* HorizontalResolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HorizontalResolver.cpp; sourceTree = "<group>"; };
+		0022AE0B1A70833700139992 /* HorizontalResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalResolver.h; sourceTree = "<group>"; };
+		0022AE0C1A70833700139992 /* VerticalResolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VerticalResolver.cpp; sourceTree = "<group>"; };
+		0022AE0D1A70833700139992 /* VerticalResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalResolver.h; sourceTree = "<group>"; };
 		00A3E4691A2E57BF00B2A6C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		00B34FF21A5B464000198F4A /* AttributesManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AttributesManager.cpp; path = "/Users/al/dev/VM/intune-ios/Submodules/MusicKit/Libraries/mxml/AttributesManager.cpp"; sourceTree = "<absolute>"; };
 		00B34FF41A5B464000198F4A /* Metrics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Metrics.cpp; sourceTree = "<group>"; };
@@ -1148,8 +1170,6 @@
 		614055A91A5B5D70005224C9 /* LyricGeometryFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LyricGeometryFactory.cpp; sourceTree = "<group>"; };
 		614057D11A5CBD49005224C9 /* Pitch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pitch.cpp; sourceTree = "<group>"; };
 		614057D21A5CBD49005224C9 /* Key.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Key.cpp; sourceTree = "<group>"; };
-		6149DB4A1A49FB7C005E094A /* CollisionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionHandler.h; sourceTree = "<group>"; };
-		6149DB4B1A49FB7C005E094A /* CollisionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollisionHandler.cpp; sourceTree = "<group>"; };
 		616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKChordLayer.h; sourceTree = "<group>"; };
 		616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKChordLayer.mm; sourceTree = "<group>"; };
 		616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKClefLayer.h; sourceTree = "<group>"; };
@@ -1455,6 +1475,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0022AE051A70833700139992 /* collisions */ = {
+			isa = PBXGroup;
+			children = (
+				0022AE061A70833700139992 /* CollisionHandler.cpp */,
+				0022AE071A70833700139992 /* CollisionHandler.h */,
+				0022AE081A70833700139992 /* CollisionResolver.h */,
+				0022AE091A70833700139992 /* CollisionResolver.hh */,
+				0022AE0A1A70833700139992 /* HorizontalResolver.cpp */,
+				0022AE0B1A70833700139992 /* HorizontalResolver.h */,
+				0022AE0C1A70833700139992 /* VerticalResolver.cpp */,
+				0022AE0D1A70833700139992 /* VerticalResolver.h */,
+			);
+			name = collisions;
+			path = Submodules/mxml/src/mxml/geometry/collisions;
+			sourceTree = SOURCE_ROOT;
+		};
 		610DC5A21A0831DF00BEEBFD /* MusicKitApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -1783,6 +1819,7 @@
 		610DCDE21A094A0E00BEEBFD /* geometry */ = {
 			isa = PBXGroup;
 			children = (
+				0022AE051A70833700139992 /* collisions */,
 				610DCDE31A094A0E00BEEBFD /* AccidentalGeometry.cpp */,
 				610DCDE41A094A0E00BEEBFD /* AccidentalGeometry.h */,
 				610DCDE51A094A0E00BEEBFD /* ArticulationGeometry.cpp */,
@@ -1797,8 +1834,6 @@
 				610DCDEE1A094A0E00BEEBFD /* ClefGeometry.h */,
 				0008689C1A68442B00BAA13D /* CodaGeometry.cpp */,
 				0008689D1A68442B00BAA13D /* CodaGeometry.h */,
-				6149DB4B1A49FB7C005E094A /* CollisionHandler.cpp */,
-				6149DB4A1A49FB7C005E094A /* CollisionHandler.h */,
 				610DCDF11A094A0E00BEEBFD /* DotGeometry.cpp */,
 				610DCDF21A094A0E00BEEBFD /* DotGeometry.h */,
 				610DCDF31A094A0E00BEEBFD /* EndingGeometry.cpp */,
@@ -2207,6 +2242,7 @@
 				616C1ABA1A0B03A30020EAA8 /* VMKRestLayer.h in Headers */,
 				616C1AC61A0BFE2C0020EAA8 /* VMKWedgeLayer.h in Headers */,
 				61C8503A1A684F5300031100 /* Loop.h in Headers */,
+				0022AE1F1A70833700139992 /* VerticalResolver.h in Headers */,
 				61F072FA1A703583002CA9CA /* PageLayout.h in Headers */,
 				61F0733C1A703596002CA9CA /* GenericNode.h in Headers */,
 				616C1A9E1A0AA24E0020EAA8 /* VMKEndingLayer.h in Headers */,
@@ -2217,6 +2253,7 @@
 				616C1B6D1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h in Headers */,
 				61C850651A6D977E00031100 /* OctaveShiftGeometry.h in Headers */,
 				616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */,
+				0022AE111A70833700139992 /* CollisionHandler.h in Headers */,
 				61F073231A703596002CA9CA /* SystemDividersHandler.h in Headers */,
 				61C8506C1A6D978A00031100 /* OctaveShiftHandler.h in Headers */,
 				61F072F41A703583002CA9CA /* SystemLayout.h in Headers */,
@@ -2227,7 +2264,6 @@
 				61402B2A1A08251D003AE7A7 /* MusicKit.h in Headers */,
 				616C1A951A0A99600020EAA8 /* VMKScoreElementImageLayer.h in Headers */,
 				616C1AA61A0AACE50020EAA8 /* VMKLyricLayer.h in Headers */,
-				6149DB4C1A49FB7C005E094A /* CollisionHandler.h in Headers */,
 				616C1B611A0C0E310020EAA8 /* VMKCursorView.h in Headers */,
 				616C1B6F1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.h in Headers */,
 				61F073411A703596002CA9CA /* FormattedTextHandler.h in Headers */,
@@ -2241,6 +2277,7 @@
 				614055AA1A5B5D70005224C9 /* LyricGeometryFactory.h in Headers */,
 				0008689F1A68442B00BAA13D /* CodaGeometry.h in Headers */,
 				61F073141A703596002CA9CA /* TypeFactories.h in Headers */,
+				0022AE151A70833700139992 /* CollisionResolver.hh in Headers */,
 				00094F0A1A6748460053C615 /* SegnoGeometry.h in Headers */,
 				616C1B5D1A0C0E310020EAA8 /* VMKAttributesView.h in Headers */,
 				61D0DFC21A44D13900EA6574 /* PartGeometryFactory.h in Headers */,
@@ -2250,6 +2287,7 @@
 				61F073191A703596002CA9CA /* SystemMarginsHandler.h in Headers */,
 				616C1B651A0C0E310020EAA8 /* VMKScoreElementContainerView.h in Headers */,
 				61402BA81A082562003AE7A7 /* VMKGeometry.h in Headers */,
+				0022AE131A70833700139992 /* CollisionResolver.h in Headers */,
 				61F073371A703596002CA9CA /* GenericNodeHandler.h in Headers */,
 				616C1B791A0C2D7A0020EAA8 /* VMKEndingView.h in Headers */,
 				61239A831A673B5B00B3F0A3 /* JumpFactory.h in Headers */,
@@ -2260,6 +2298,7 @@
 				616C1AAE1A0B01300020EAA8 /* VMKNoteHeadLayer.h in Headers */,
 				61D0DFB81A44D11600EA6574 /* StringUtility.h in Headers */,
 				616C1AB21A0B01BB0020EAA8 /* VMKNoteStemLayer.h in Headers */,
+				0022AE1A1A70833700139992 /* HorizontalResolver.h in Headers */,
 				616C1B811A0C2DA40020EAA8 /* VMKPedalView.h in Headers */,
 				616C1B701A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h in Headers */,
 				00094F0E1A6748710053C615 /* VMKWordsView.h in Headers */,
@@ -2274,21 +2313,24 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0022AE161A70833700139992 /* CollisionResolver.hh in Headers */,
 				61C8506D1A6D978A00031100 /* OctaveShiftHandler.h in Headers */,
 				61239A841A673B5B00B3F0A3 /* JumpFactory.h in Headers */,
 				61F0732E1A703596002CA9CA /* PageMarginsHandler.h in Headers */,
 				61F073421A703596002CA9CA /* FormattedTextHandler.h in Headers */,
 				61D0DFC31A44D13900EA6574 /* PartGeometryFactory.h in Headers */,
 				61D0DFB91A44D11600EA6574 /* StringUtility.h in Headers */,
-				6149DB4D1A49FB7C005E094A /* CollisionHandler.h in Headers */,
 				61F072F71A703583002CA9CA /* Position.h in Headers */,
 				61F0731F1A703596002CA9CA /* SystemLayoutHandler.h in Headers */,
 				0008686B1A68344500BAA13D /* VMKWordsLayer.h in Headers */,
 				61C850361A684F5300031100 /* LoopFactory.h in Headers */,
 				616C1B4F1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */,
 				61F072FB1A703583002CA9CA /* PageLayout.h in Headers */,
+				0022AE121A70833700139992 /* CollisionHandler.h in Headers */,
+				0022AE201A70833700139992 /* VerticalResolver.h in Headers */,
 				61239A681A64B4F000B3F0A3 /* ScoreProperties.h in Headers */,
 				000868721A68346400BAA13D /* VMKImageView.h in Headers */,
+				0022AE141A70833700139992 /* CollisionResolver.h in Headers */,
 				61F0733D1A703596002CA9CA /* GenericNode.h in Headers */,
 				61F073381A703596002CA9CA /* GenericNodeHandler.h in Headers */,
 				61C8503B1A684F5300031100 /* Loop.h in Headers */,
@@ -2300,6 +2342,7 @@
 				61F073471A703596002CA9CA /* AppearanceHandler.h in Headers */,
 				61F072FD1A703583002CA9CA /* FormattedText.h in Headers */,
 				61F073291A703596002CA9CA /* PositionFactory.h in Headers */,
+				0022AE1B1A70833700139992 /* HorizontalResolver.h in Headers */,
 				61D0DFC11A44D13900EA6574 /* PlacementGeometry.h in Headers */,
 				61C850661A6D977E00031100 /* OctaveShiftGeometry.h in Headers */,
 				00B34FFD1A5B464000198F4A /* Metrics.h in Headers */,
@@ -2941,14 +2984,17 @@
 				61F073391A703596002CA9CA /* GenericNodeHandler.cpp in Sources */,
 				610DCEF81A094B5100BEEBFD /* LyricHandler.cpp in Sources */,
 				610DCEE41A094B4C00BEEBFD /* TieGeometry.cpp in Sources */,
+				0022AE0E1A70833700139992 /* CollisionHandler.cpp in Sources */,
 				610DCF081A094B5100BEEBFD /* SyllabicHandler.cpp in Sources */,
 				616C1B711A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm in Sources */,
 				616C1B7A1A0C2D7A0020EAA8 /* VMKEndingView.mm in Sources */,
 				610DCEFF1A094B5100BEEBFD /* PitchHandler.cpp in Sources */,
 				61F0732F1A703596002CA9CA /* PageMarginsHandler.cpp in Sources */,
+				0022AE1C1A70833700139992 /* VerticalResolver.cpp in Sources */,
 				616C1B8A1A0C2DEA0020EAA8 /* VMKWedgeView.mm in Sources */,
 				610DCEC91A094B4800BEEBFD /* Identification.cpp in Sources */,
 				610DCEFD1A094B5100BEEBFD /* OrnamentsHandler.cpp in Sources */,
+				0022AE171A70833700139992 /* HorizontalResolver.cpp in Sources */,
 				616C1A921A0A98B70020EAA8 /* VMKClefLayer.mm in Sources */,
 				610DCED11A094B4C00BEEBFD /* ChordGeometry.cpp in Sources */,
 				61F073161A703596002CA9CA /* TypeFactories.cpp in Sources */,
@@ -2958,7 +3004,6 @@
 				616C1B6E1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m in Sources */,
 				616C1B7E1A0C2D8F0020EAA8 /* VMKLyricView.mm in Sources */,
 				610DCF021A094B5100BEEBFD /* RestHandler.cpp in Sources */,
-				6149DB4E1A49FB7C005E094A /* CollisionHandler.cpp in Sources */,
 				610DCEDC1A094B4C00BEEBFD /* OrnamentsGeometry.cpp in Sources */,
 				610DCEF11A094B5100BEEBFD /* DirectionTypeHandler.cpp in Sources */,
 				618641561A09B23C00FAE9C9 /* VMKBeamLayer.mm in Sources */,
@@ -3068,6 +3113,7 @@
 				61239A751A65FFB100B3F0A3 /* ScoreBuilder.cpp in Sources */,
 				61F073441A703596002CA9CA /* FormattedTextHandler.cpp in Sources */,
 				616C1B371A0C05B50020EAA8 /* VMKScoreElementImageLayer.mm in Sources */,
+				0022AE1D1A70833700139992 /* VerticalResolver.cpp in Sources */,
 				616C1B261A0C05A40020EAA8 /* ScoreHandler.cpp in Sources */,
 				616C1B451A0C05B50020EAA8 /* VMKRestLayer.mm in Sources */,
 				616C1AEA1A0C05980020EAA8 /* StringHandler.cpp in Sources */,
@@ -3112,6 +3158,7 @@
 				616C1B271A0C05A40020EAA8 /* SlurHandler.cpp in Sources */,
 				616C1B121A0C05A40020EAA8 /* DirectionHandler.cpp in Sources */,
 				616C1B001A0C059E0020EAA8 /* PedalGeometry.cpp in Sources */,
+				0022AE0F1A70833700139992 /* CollisionHandler.cpp in Sources */,
 				616C1B2E1A0C05A40020EAA8 /* TurnHandler.cpp in Sources */,
 				616C1AF71A0C059E0020EAA8 /* EndingGeometry.cpp in Sources */,
 				616C1AFA1A0C059E0020EAA8 /* KeyGeometry.cpp in Sources */,
@@ -3120,13 +3167,13 @@
 				616C1B471A0C05B50020EAA8 /* VMKTimeSignatureLayer.mm in Sources */,
 				616C1AE91A0C05980020EAA8 /* RootRecursiveHandler.cpp in Sources */,
 				61D0DFBB1A44D11600EA6574 /* StringUtility.cpp in Sources */,
-				6149DB4F1A49FB7C005E094A /* CollisionHandler.cpp in Sources */,
 				616C1B171A0C05A40020EAA8 /* ForwardHandler.cpp in Sources */,
 				616C1B3B1A0C05B50020EAA8 /* VMKChordLayer.mm in Sources */,
 				616C1B341A0C05A80020EAA8 /* SpanFactory.cpp in Sources */,
 				614057D41A5CBD49005224C9 /* Pitch.cpp in Sources */,
 				616C1B401A0C05B50020EAA8 /* VMKLyricLayer.mm in Sources */,
 				616C1B1E1A0C05A40020EAA8 /* NoteHandler.cpp in Sources */,
+				0022AE181A70833700139992 /* HorizontalResolver.cpp in Sources */,
 				616C1AEB1A0C059B0020EAA8 /* Identification.cpp in Sources */,
 				616C1B141A0C05A40020EAA8 /* EmptyPlacementHandler.cpp in Sources */,
 				616C1AED1A0C059B0020EAA8 /* Note.cpp in Sources */,
@@ -3200,7 +3247,6 @@
 				00CD77791A5C75260067C531 /* Metrics.cpp in Sources */,
 				618C6C8C1A13E7D6008314B2 /* PedalGeometry.cpp in Sources */,
 				618C6C5B1A13E795008314B2 /* VMKImageStore.m in Sources */,
-				6149DB501A49FB7C005E094A /* CollisionHandler.cpp in Sources */,
 				61C850391A684F5300031100 /* LoopFactory.cpp in Sources */,
 				618C6C651A13E7A1008314B2 /* VMKEndingLayer.mm in Sources */,
 				618C6CB51A13E7DC008314B2 /* StaffLayoutHandler.cpp in Sources */,
@@ -3230,6 +3276,7 @@
 				618C6CA61A13E7DC008314B2 /* LyricHandler.cpp in Sources */,
 				618C6C681A13E7A1008314B2 /* VMKMeasureLayer.mm in Sources */,
 				618C6CB31A13E7DC008314B2 /* SlurHandler.cpp in Sources */,
+				0022AE191A70833700139992 /* HorizontalResolver.cpp in Sources */,
 				618C6CBA1A13E7DC008314B2 /* TurnHandler.cpp in Sources */,
 				618C6C611A13E7A1008314B2 /* VMKBraceLayer.mm in Sources */,
 				618C6C5F1A13E7A1008314B2 /* VMKBarlineLayer.mm in Sources */,
@@ -3260,6 +3307,7 @@
 				618C6C6C1A13E7A1008314B2 /* VMKPedalLayer.mm in Sources */,
 				618C6C7D1A13E7D6008314B2 /* BarlineGeometry.cpp in Sources */,
 				61F0733B1A703596002CA9CA /* GenericNodeHandler.cpp in Sources */,
+				0022AE101A70833700139992 /* CollisionHandler.cpp in Sources */,
 				61F073271A703596002CA9CA /* SystemDividersHandler.cpp in Sources */,
 				618C6C8D1A13E7D6008314B2 /* RestGeometry.cpp in Sources */,
 				618C6C741A13E7CF008314B2 /* lxml.cpp in Sources */,
@@ -3276,6 +3324,7 @@
 				618C6C801A13E7D6008314B2 /* ClefGeometry.cpp in Sources */,
 				618C6C6D1A13E7A1008314B2 /* VMKRestLayer.mm in Sources */,
 				618C6C591A13E795008314B2 /* VMKImage.mm in Sources */,
+				0022AE1E1A70833700139992 /* VerticalResolver.cpp in Sources */,
 				618C6C9A1A13E7DC008314B2 /* ClefHandler.cpp in Sources */,
 				618C6C7A1A13E7D2008314B2 /* Part.cpp in Sources */,
 				618C6CBD1A13E7E0008314B2 /* EventFactory.cpp in Sources */,
