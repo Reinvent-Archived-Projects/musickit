@@ -44,16 +44,22 @@
 - (void)setGeometry:(const mxml::Geometry*)geometry {
     [super setGeometry:geometry];
     
+    NSString *preprend = @"";
     if (self.wordsGeometry->dynamics()) {
         _textLayer.font = CFSTR("Baskerville-BoldItalic");
         _textLayer.fontSize = 26;
+        
+        // The kernings for this font gets clipped on some letters (eg 'f') by
+        // CATextLayer, prepend a space to allow more room :/
+        preprend = @" ";
     } else {
         _textLayer.font = CFSTR("Baskerville-SemiBold");
         _textLayer.fontSize = 20;
     }
     
     if (self.wordsGeometry->contents())
-        _textLayer.string = [NSString stringWithUTF8String:self.wordsGeometry->contents()->c_str()];
+        _textLayer.string = [preprend stringByAppendingString:[NSString stringWithUTF8String:self.wordsGeometry->contents()->c_str()]];
+
     _textLayer.frame = {CGPointZero, self.bounds.size};
 }
 
