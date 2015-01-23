@@ -35,12 +35,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
-    ScrollMetrics metrics(*score, properties);
+    ScrollMetrics metrics(*score, properties, 0);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
-    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
-
-    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
+    mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;
@@ -64,12 +61,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
-    ScrollMetrics metrics(*score, properties);
+    ScrollMetrics metrics(*score, properties, 0);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
-    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
-
-    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
+    mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;
@@ -92,12 +86,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
-    ScrollMetrics metrics(*score, properties);
+    ScrollMetrics metrics(*score, properties, 0);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
-    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
-
-    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
+    mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     CGSize size = layer.preferredFrameSize;
@@ -114,12 +105,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
-    ScrollMetrics metrics(*score, properties);
+    ScrollMetrics metrics(*score, properties, 0);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
-    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
-
-    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
+    mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     CGSize size = layer.preferredFrameSize;
@@ -136,12 +124,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
-    ScrollMetrics metrics(*score, properties);
+    ScrollMetrics metrics(*score, properties, 0);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
-    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
-
-    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
+    mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;
@@ -162,12 +147,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
-    ScrollMetrics metrics(*score, properties);
+    ScrollMetrics metrics(*score, properties, 0);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
-    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
-
-    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
+    mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
     
     CGSize size = layer.preferredFrameSize;
@@ -187,12 +169,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
-    ScrollMetrics metrics(*score, properties);
+    ScrollMetrics metrics(*score, properties, 0);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
-    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
-
-    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
+    mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
@@ -208,12 +187,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
-    ScrollMetrics metrics(*score, properties);
+    ScrollMetrics metrics(*score, properties, 0);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
-    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
-
-    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
+    mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
@@ -232,12 +208,9 @@ using namespace mxml::dom;
 
     auto score = self.builder->build();
     ScoreProperties properties(*score);
-    ScrollMetrics metrics(*score, properties);
+    ScrollMetrics metrics(*score, properties, 0);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, metrics, false));
-    auto partGeometry = static_cast<mxml::PartGeometry*>(scoreGeometry->geometries().front().get());
-
-    mxml::ChordGeometry geom(*chord, properties, *partGeometry);
+    mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
     [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];

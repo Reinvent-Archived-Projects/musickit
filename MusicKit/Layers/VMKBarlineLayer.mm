@@ -13,9 +13,7 @@ static const CGFloat kHeavyLineWidth = 2;
 static const CGFloat kLineSpacing = 2;
 
 
-@implementation VMKBarlineLayer {
-    const PartGeometry* _partGeometry;
-}
+@implementation VMKBarlineLayer
 
 - (instancetype)initWithBarlineGeometry:(const mxml::BarlineGeometry*)barlineGeom {
     return [super initWithGeometry:barlineGeom];
@@ -31,12 +29,6 @@ static const CGFloat kLineSpacing = 2;
 
 - (void)setGeometry:(const mxml::Geometry*)geom {
     [super setGeometry:geom];
-
-    if (geom) {
-        auto barlineGeom = self.barlineGeometry;
-        _partGeometry = &barlineGeom->partGeometry();
-    }
-
     [self setNeedsDisplay];
 }
 
@@ -128,11 +120,12 @@ static const CGFloat kLineSpacing = 2;
         offset = 0;
     }
 
+    auto& metrics = self.barlineGeometry->metrics();
     auto origin = self.geometry->origin();
-    const auto staves = _partGeometry->staves();
+    const auto staves = metrics.staves();
     for (int staff = 1; staff <= staves; staff += 1) {
-        CGFloat y1 = (_partGeometry->staffOrigin(staff) + mxml::Metrics::kStaffLineSpacing * 1.5 - origin.y);
-        CGFloat y2 = (_partGeometry->staffOrigin(staff) + mxml::Metrics::kStaffLineSpacing * 2.5 - origin.y);
+        CGFloat y1 = (metrics.staffOrigin(staff) + mxml::Metrics::kStaffLineSpacing * 1.5 - origin.y);
+        CGFloat y2 = (metrics.staffOrigin(staff) + mxml::Metrics::kStaffLineSpacing * 2.5 - origin.y);
         [dotImage drawInRect:CGRectMake(offset, y1 - dotSize.height/2, dotSize.width, dotSize.height)];
         [dotImage drawInRect:CGRectMake(offset, y2 - dotSize.height/2, dotSize.width, dotSize.height)];
     }

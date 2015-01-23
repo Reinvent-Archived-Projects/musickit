@@ -4,7 +4,7 @@
 #import "VMKTieLayer.h"
 #include <mxml/dom/Chord.h>
 #include <mxml/geometry/PartGeometry.h>
-#include <mxml/geometry/TieGeometryFactory.h>
+#include <mxml/geometry/factories/TieGeometryFactory.h>
 
 using namespace mxml;
 using namespace mxml::dom;

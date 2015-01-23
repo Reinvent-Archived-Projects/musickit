@@ -7,6 +7,9 @@
 #import "VMKGeometry.h"
 
 #include <mxml/geometry/PartGeometry.h>
+#include <mxml/geometry/PlacementGeometry.h>
+#include <mxml/geometry/TieGeometry.h>
+
 
 using namespace mxml;
 

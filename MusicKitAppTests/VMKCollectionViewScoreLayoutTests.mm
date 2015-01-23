@@ -55,10 +55,9 @@
     lxml::parse(is, [path UTF8String], handler);
     _score = handler.result();
     _scoreProperties.reset(new mxml::ScoreProperties(*_score));
-    _metrics.reset(new mxml::ScrollMetrics(*_score, *_scoreProperties));
     
     if (!_score->parts().empty() && !_score->parts().front()->measures().empty()) {
-        _geometry.reset(new mxml::ScoreGeometry(*_score, *_scoreProperties, *_metrics));
+        _geometry.reset(new mxml::ScoreGeometry(*_score, *_scoreProperties));
     } else {
         _geometry.reset();
     }
