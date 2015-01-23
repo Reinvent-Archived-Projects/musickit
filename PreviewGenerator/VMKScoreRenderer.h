@@ -36,7 +36,7 @@ protected:
     static CGSize partSize(const mxml::PartGeometry& partGeometry);
 
     void renderMeasures(CGContextRef ctx);
-    void renderDirections(CGContextRef ctx);
+    void renderWords(CGContextRef ctx);
     void renderTies(CGContextRef ctx);
     
     CGRect getFrame(const mxml::Geometry& geometry);

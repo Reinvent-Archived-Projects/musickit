@@ -135,7 +135,8 @@ bool renderScore(NSString* path, NSString* output) {
         return false;
 
     // Generate geometry
-    std::unique_ptr<mxml::ScoreGeometry> scoreGeometry(new mxml::ScoreGeometry(*score));
+    mxml::ScoreProperties scoreProperties(*score);
+    std::unique_ptr<mxml::ScoreGeometry> scoreGeometry(new mxml::ScoreGeometry(*score, scoreProperties));
 
     VMKScoreRenderer renderer(*scoreGeometry);
     NSBitmapImageRep* rep = renderer.render();

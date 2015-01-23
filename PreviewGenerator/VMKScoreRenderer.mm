@@ -44,7 +44,7 @@ NSBitmapImageRep* VMKScoreRenderer::render() {
     CGContextScaleCTM(ctx, 1.f, -1.f);
 
     renderMeasures(ctx);
-    renderDirections(ctx);
+    renderWords(ctx);
     renderTies(ctx);
     [image unlockFocus];
 
@@ -92,14 +92,14 @@ void VMKScoreRenderer::renderMeasures(CGContextRef ctx) {
     }
 }
 
-void VMKScoreRenderer::renderDirections(CGContextRef ctx) {
+void VMKScoreRenderer::renderWords(CGContextRef ctx) {
     for (auto& directionGeometry : _lastPartGeometry->directionGeometries()) {
         CGRect frame = getFrame(*directionGeometry);
         if (!CGRectContainsRect(_renderBounds, frame))
             continue;
 
-        if (const mxml::DirectionGeometry* geom = dynamic_cast<const mxml::DirectionGeometry*>(directionGeometry)) {
-            VMKScoreElementLayer *layer = [[VMKDirectionLayer alloc] initWithGeometry:geom];
+        if (const mxml::WordsGeometry* geom = dynamic_cast<const mxml::WordsGeometry*>(directionGeometry)) {
+            VMKScoreElementLayer *layer = [[VMKWordsLayer alloc] initWithGeometry:geom];
             renderLayer(ctx, layer, frame);
         }
     }
