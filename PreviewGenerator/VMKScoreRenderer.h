@@ -3,7 +3,7 @@
 #import <AppKit/AppKit.h>
 #import <MusicKit/MusicKit.h>
 
-#include <mxml/geometry/ScoreGeometry.h>
+#include <mxml/geometry/ScrollScoreGeometry.h>
 #include <mxml/geometry/PartGeometry.h>
 
 
@@ -23,7 +23,7 @@ public:
     /**
      Construct a score renderer for the score geometry.
      */
-    VMKScoreRenderer(const mxml::ScoreGeometry& scoreGeometry);
+    VMKScoreRenderer(const mxml::ScrollScoreGeometry& scoreGeometry);
 
     /**
      Render the first `numberOfMeasures` measures of the last part of the score.
@@ -43,7 +43,7 @@ protected:
     void renderLayer(CGContextRef ctx, VMKScoreElementLayer* layer, CGRect frame);
 
 private:
-    const mxml::ScoreGeometry& _scoreGeometry;
+    const mxml::ScrollScoreGeometry& _scoreGeometry;
     const mxml::PartGeometry* _lastPartGeometry;
 
     CGRect _renderBounds;

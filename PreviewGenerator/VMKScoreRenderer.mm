@@ -7,7 +7,7 @@ const CGFloat VMKScoreRenderer::scale = 2;
 const CGFloat VMKScoreRenderer::maxWidth = 2048;
 
 
-VMKScoreRenderer::VMKScoreRenderer(const mxml::ScoreGeometry& scoreGeometry) : _scoreGeometry(scoreGeometry), _lastPartGeometry() {
+VMKScoreRenderer::VMKScoreRenderer(const mxml::ScrollScoreGeometry& scoreGeometry) : _scoreGeometry(scoreGeometry), _lastPartGeometry() {
     // Find last part
     for (auto& geometry : scoreGeometry.geometries())
         _lastPartGeometry = static_cast<mxml::PartGeometry*>(geometry.get());

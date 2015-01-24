@@ -20,7 +20,7 @@ static const CGFloat VMCursorWidth = 16;
     CGFloat _topOffset;
 }
 
-- (void)setScoreGeometry:(const mxml::ScoreGeometry *)geometry {
+- (void)setScoreGeometry:(const mxml::ScrollScoreGeometry *)geometry {
     _scoreGeometry = geometry;
     if (_scoreGeometry)
         _topOffset = (_minHeight - _scoreGeometry->size().height)/2;

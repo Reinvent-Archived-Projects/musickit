@@ -5,7 +5,7 @@
 #import "VMKMeasureLayer.h"
 
 #include <mxml/dom/Chord.h>
-#include <mxml/geometry/ScoreGeometry.h>
+#include <mxml/geometry/ScrollScoreGeometry.h>
 #include <mxml/ScrollMetrics.h>
 
 using namespace mxml::dom;
@@ -53,9 +53,8 @@ using namespace mxml::dom;
     [self addBeamToNote:note2 beamType:Beam::kTypeEnd numberOfBeams:1];
 
     auto score = self.builder->build();
-    mxml::ScoreProperties properties(*score);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
     auto partGeometry = scoreGeometry->partGeometries().front();
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
@@ -84,9 +83,8 @@ using namespace mxml::dom;
     [self addBeamToNote:note3 beamType:Beam::kTypeEnd numberOfBeams:1];
 
     auto score = self.builder->build();
-    mxml::ScoreProperties properties(*score);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
     auto partGeometry = scoreGeometry->partGeometries().front();
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
@@ -111,9 +109,8 @@ using namespace mxml::dom;
     [self addBeamToNote:note2 beamType:Beam::kTypeEnd numberOfBeams:1];
 
     auto score = self.builder->build();
-    mxml::ScoreProperties properties(*score);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
     auto partGeometry = scoreGeometry->partGeometries().front();
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
@@ -138,9 +135,8 @@ using namespace mxml::dom;
     note2->addBeam(std::move(beam));
 
     auto score = self.builder->build();
-    mxml::ScoreProperties properties(*score);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
     auto partGeometry = scoreGeometry->partGeometries().front();
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
@@ -160,9 +156,8 @@ using namespace mxml::dom;
     [self addBeamToNote:note2 beamType:Beam::kTypeEnd numberOfBeams:2];
 
     auto score = self.builder->build();
-    mxml::ScoreProperties properties(*score);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
     auto partGeometry = scoreGeometry->partGeometries().front();
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
@@ -187,9 +182,8 @@ using namespace mxml::dom;
     [self addBeamToNote:note3 beamType:Beam::kTypeEnd numberOfBeams:4];
 
     auto score = self.builder->build();
-    mxml::ScoreProperties properties(*score);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
     auto partGeometry = scoreGeometry->partGeometries().front();
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
@@ -214,9 +208,8 @@ using namespace mxml::dom;
     note2->setAccidental(std::move(accidental));
 
     auto score = self.builder->build();
-    mxml::ScoreProperties properties(*score);
 
-    auto scoreGeometry = std::unique_ptr<mxml::ScoreGeometry>(new mxml::ScoreGeometry(*score, properties, false));
+    auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
     auto partGeometry = scoreGeometry->partGeometries().front();
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];

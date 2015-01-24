@@ -7,7 +7,7 @@
 #include <mxml/ScoreBuilder.h>
 #include <mxml/ScoreProperties.h>
 #include <mxml/geometry/PartGeometry.h>
-#include <mxml/geometry/ScoreGeometry.h>
+#include <mxml/geometry/ScrollScoreGeometry.h>
 #include <mxml/Metrics.h>
 
 

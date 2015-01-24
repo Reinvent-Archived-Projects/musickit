@@ -18,7 +18,7 @@ int process(int argc, const char * argv[]);
 std::unique_ptr<mxml::dom::Score> loadMXL(NSString* filePath);
 std::unique_ptr<mxml::dom::Score> loadXML(NSString* filePath);
 bool renderScore(NSString* path, NSString* output);
-void renderPart(const mxml::ScoreGeometry& scoreGeometry, const mxml::PartGeometry& partGeometry, NSString* output);
+void renderPart(const mxml::ScrollScoreGeometry& scoreGeometry, const mxml::PartGeometry& partGeometry, NSString* output);
 void renderLayer(CGContextRef ctx, VMKScoreElementLayer* layer, CGRect frame);
 CGSize computeSize(const mxml::PartGeometry& partGeometry);
 
@@ -135,8 +135,7 @@ bool renderScore(NSString* path, NSString* output) {
         return false;
 
     // Generate geometry
-    mxml::ScoreProperties scoreProperties(*score);
-    std::unique_ptr<mxml::ScoreGeometry> scoreGeometry(new mxml::ScoreGeometry(*score, scoreProperties));
+    std::unique_ptr<mxml::ScrollScoreGeometry> scoreGeometry(new mxml::ScrollScoreGeometry(*score));
 
     VMKScoreRenderer renderer(*scoreGeometry);
     NSBitmapImageRep* rep = renderer.render();
