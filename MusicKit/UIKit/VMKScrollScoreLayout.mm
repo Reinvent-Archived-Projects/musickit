@@ -1,8 +1,8 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import "NSIndexPath+VMKScoreAdditions.h"
-#import "VMKCollectionViewScoreLayout.h"
-#import "VMKCollectionViewScoreDataSource.h"
+#import "VMKScrollScoreLayout.h"
+#import "VMKScrollScoreDataSource.h"
 #import "VMKCursorView.h"
 #import "VMKGeometry.h"
 
@@ -16,7 +16,7 @@ using namespace mxml;
 static const CGFloat VMCursorWidth = 16;
 
 
-@implementation VMKCollectionViewScoreLayout {
+@implementation VMKScrollScoreLayout {
     CGFloat _topOffset;
 }
 

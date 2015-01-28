@@ -2,9 +2,9 @@
 
 #import "VMKLayerTestCase.h"
 
-#import "VMKCollectionViewScoreLayout.h"
-#import "VMKCollectionViewScoreDataSource.h"
 #import "VMKMeasureView.h"
+#import "VMKScrollScoreDataSource.h"
+#import "VMKScrollScoreLayout.h"
 #import "VMKTieView.h"
 
 #include "lxml.h"
@@ -14,13 +14,13 @@
 
 #include <fstream>
 
-@interface VMKCollectionViewScoreLayoutTests : VMKLayerTestCase
-@property(nonatomic, strong) VMKCollectionViewScoreLayout* scoreLayout;
-@property(nonatomic, strong) VMKCollectionViewScoreDataSource* dataSource;
+@interface VMKScrollScoreLayoutTests : VMKLayerTestCase
+@property(nonatomic, strong) VMKScrollScoreLayout* scoreLayout;
+@property(nonatomic, strong) VMKScrollScoreDataSource* dataSource;
 @property(nonatomic, strong) UICollectionView* collectionView;
 @end
 
-@implementation VMKCollectionViewScoreLayoutTests {
+@implementation VMKScrollScoreLayoutTests {
     std::unique_ptr<mxml::dom::Score> _score;
     std::unique_ptr<mxml::ScrollScoreGeometry> _geometry;
 }
@@ -28,8 +28,8 @@
 - (void)setUp {
     [super setUp];
 
-    self.scoreLayout = [[VMKCollectionViewScoreLayout alloc] init];
-    self.dataSource = [[VMKCollectionViewScoreDataSource alloc] init];
+    self.scoreLayout = [[VMKScrollScoreLayout alloc] init];
+    self.dataSource = [[VMKScrollScoreDataSource alloc] init];
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768) collectionViewLayout:self.scoreLayout];
     self.collectionView.backgroundColor = [UIColor clearColor];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:VMKMeasureReuseIdentifier];

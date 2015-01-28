@@ -94,7 +94,7 @@
 		610DC6681A08322800BEEBFD /* VMKClefLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */; };
 		610DC6691A08322800BEEBFD /* VMKMeasureLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */; };
 		610DC66A1A08322800BEEBFD /* VMKBeamLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */; };
-		610DC66B1A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6181A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm */; };
+		610DC66B1A08322800BEEBFD /* VMKScrollScoreLayoutTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6181A08322800BEEBFD /* VMKScrollScoreLayoutTests.mm */; };
 		610DC66C1A08322800BEEBFD /* VMKTieLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */; };
 		610DC66D1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */; };
 		610DC66E1A08322800BEEBFD /* VMKChordLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */; };
@@ -349,10 +349,6 @@
 		616C1B661A0C0E310020EAA8 /* VMKScoreElementContainerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B5C1A0C0E310020EAA8 /* VMKScoreElementContainerView.mm */; };
 		616C1B6D1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B671A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h */; };
 		616C1B6E1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B681A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m */; };
-		616C1B6F1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B691A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.h */; };
-		616C1B701A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B6A1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h */; };
-		616C1B711A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B6B1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm */; };
-		616C1B721A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B6C1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm */; };
 		616C1B791A0C2D7A0020EAA8 /* VMKEndingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B771A0C2D7A0020EAA8 /* VMKEndingView.h */; };
 		616C1B7A1A0C2D7A0020EAA8 /* VMKEndingView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B781A0C2D7A0020EAA8 /* VMKEndingView.mm */; };
 		616C1B7D1A0C2D8F0020EAA8 /* VMKLyricView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B7B1A0C2D8F0020EAA8 /* VMKLyricView.h */; };
@@ -587,18 +583,18 @@
 		616C1E1A1A0D977F0020EAA8 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61402C591A082661003AE7A7 /* Symbols.xcassets */; };
 		616C1E1B1A0D97940020EAA8 /* MusicKitOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616C1ACD1A0C055E0020EAA8 /* MusicKitOSX.framework */; };
 		616C1E1E1A0D97BD0020EAA8 /* AIImageCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD931A094A0E00BEEBFD /* AIImageCompare.m */; };
-		616C1E251A1173300020EAA8 /* CollectionViewScoreLayout-Slurs.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E211A1173300020EAA8 /* CollectionViewScoreLayout-Slurs.png */; };
-		616C1E261A1173300020EAA8 /* CollectionViewScoreLayout-Slurs.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E211A1173300020EAA8 /* CollectionViewScoreLayout-Slurs.png */; };
-		616C1E271A1173300020EAA8 /* CollectionViewScoreLayout-Endings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E221A1173300020EAA8 /* CollectionViewScoreLayout-Endings@2x.png */; };
-		616C1E281A1173300020EAA8 /* CollectionViewScoreLayout-Endings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E221A1173300020EAA8 /* CollectionViewScoreLayout-Endings@2x.png */; };
-		616C1E291A1173300020EAA8 /* CollectionViewScoreLayout-Slurs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E231A1173300020EAA8 /* CollectionViewScoreLayout-Slurs@2x.png */; };
-		616C1E2A1A1173300020EAA8 /* CollectionViewScoreLayout-Slurs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E231A1173300020EAA8 /* CollectionViewScoreLayout-Slurs@2x.png */; };
-		616C1E2B1A1173300020EAA8 /* CollectionViewScoreLayout-Endings.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E241A1173300020EAA8 /* CollectionViewScoreLayout-Endings.png */; };
-		616C1E2C1A1173300020EAA8 /* CollectionViewScoreLayout-Endings.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E241A1173300020EAA8 /* CollectionViewScoreLayout-Endings.png */; };
-		616C1E2F1A117D0B0020EAA8 /* CollectionViewScoreLayout-Endings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E2D1A117D0B0020EAA8 /* CollectionViewScoreLayout-Endings@3x.png */; };
-		616C1E301A117D0B0020EAA8 /* CollectionViewScoreLayout-Endings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E2D1A117D0B0020EAA8 /* CollectionViewScoreLayout-Endings@3x.png */; };
-		616C1E311A117D0B0020EAA8 /* CollectionViewScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E2E1A117D0B0020EAA8 /* CollectionViewScoreLayout-Slurs@3x.png */; };
-		616C1E321A117D0B0020EAA8 /* CollectionViewScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E2E1A117D0B0020EAA8 /* CollectionViewScoreLayout-Slurs@3x.png */; };
+		616C1E251A1173300020EAA8 /* ScrollScoreLayout-Slurs.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E211A1173300020EAA8 /* ScrollScoreLayout-Slurs.png */; };
+		616C1E261A1173300020EAA8 /* ScrollScoreLayout-Slurs.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E211A1173300020EAA8 /* ScrollScoreLayout-Slurs.png */; };
+		616C1E271A1173300020EAA8 /* ScrollScoreLayout-Endings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E221A1173300020EAA8 /* ScrollScoreLayout-Endings@2x.png */; };
+		616C1E281A1173300020EAA8 /* ScrollScoreLayout-Endings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E221A1173300020EAA8 /* ScrollScoreLayout-Endings@2x.png */; };
+		616C1E291A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E231A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png */; };
+		616C1E2A1A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E231A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png */; };
+		616C1E2B1A1173300020EAA8 /* ScrollScoreLayout-Endings.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E241A1173300020EAA8 /* ScrollScoreLayout-Endings.png */; };
+		616C1E2C1A1173300020EAA8 /* ScrollScoreLayout-Endings.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E241A1173300020EAA8 /* ScrollScoreLayout-Endings.png */; };
+		616C1E2F1A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E2D1A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png */; };
+		616C1E301A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E2D1A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png */; };
+		616C1E311A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E2E1A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png */; };
+		616C1E321A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E2E1A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png */; };
 		618641511A09B0B900FAE9C9 /* VMKBarlineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6186414F1A09B0B900FAE9C9 /* VMKBarlineLayer.h */; };
 		618641521A09B0B900FAE9C9 /* VMKBarlineLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618641501A09B0B900FAE9C9 /* VMKBarlineLayer.mm */; };
 		618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */; };
@@ -743,6 +739,10 @@
 		61D667811A3F67B80044A00B /* VMKScoreRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61D667801A3F67B80044A00B /* VMKScoreRenderer.mm */; };
 		61D667B01A40C7D40044A00B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D667AF1A40C7D40044A00B /* MainMenu.xib */; };
 		61D667B21A40C8390044A00B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D667B11A40C8390044A00B /* MainMenu.xib */; };
+		61E530AE1A78667200E5B2FF /* VMKScrollScoreLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61E530AA1A78667200E5B2FF /* VMKScrollScoreLayout.mm */; };
+		61E530AF1A78667200E5B2FF /* VMKScrollScoreLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E530AB1A78667200E5B2FF /* VMKScrollScoreLayout.h */; };
+		61E530B01A78667200E5B2FF /* VMKScrollScoreDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61E530AC1A78667200E5B2FF /* VMKScrollScoreDataSource.mm */; };
+		61E530B11A78667200E5B2FF /* VMKScrollScoreDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E530AD1A78667200E5B2FF /* VMKScrollScoreDataSource.h */; };
 		61F072F41A703583002CA9CA /* SystemLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072EF1A703583002CA9CA /* SystemLayout.h */; };
 		61F072F51A703583002CA9CA /* SystemLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072EF1A703583002CA9CA /* SystemLayout.h */; };
 		61F072F61A703583002CA9CA /* Position.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F072F01A703583002CA9CA /* Position.h */; };
@@ -973,7 +973,7 @@
 		610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKClefLayerTests.mm; sourceTree = "<group>"; };
 		610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKMeasureLayerTests.mm; sourceTree = "<group>"; };
 		610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKBeamLayerTests.mm; sourceTree = "<group>"; };
-		610DC6181A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKCollectionViewScoreLayoutTests.mm; sourceTree = "<group>"; };
+		610DC6181A08322800BEEBFD /* VMKScrollScoreLayoutTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKScrollScoreLayoutTests.mm; sourceTree = "<group>"; };
 		610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKTieLayerTests.mm; sourceTree = "<group>"; };
 		610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKTimeSignatureLayerTests.mm; sourceTree = "<group>"; };
 		610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKChordLayerTests.mm; sourceTree = "<group>"; };
@@ -1254,10 +1254,6 @@
 		616C1B5C1A0C0E310020EAA8 /* VMKScoreElementContainerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKScoreElementContainerView.mm; sourceTree = "<group>"; };
 		616C1B671A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+VMKScoreAdditions.h"; sourceTree = "<group>"; };
 		616C1B681A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+VMKScoreAdditions.m"; sourceTree = "<group>"; };
-		616C1B691A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCollectionViewScoreDataSource.h; sourceTree = "<group>"; };
-		616C1B6A1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCollectionViewScoreLayout.h; sourceTree = "<group>"; };
-		616C1B6B1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKCollectionViewScoreLayout.mm; sourceTree = "<group>"; };
-		616C1B6C1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKCollectionViewScoreDataSource.mm; sourceTree = "<group>"; };
 		616C1B771A0C2D7A0020EAA8 /* VMKEndingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKEndingView.h; sourceTree = "<group>"; };
 		616C1B781A0C2D7A0020EAA8 /* VMKEndingView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKEndingView.mm; sourceTree = "<group>"; };
 		616C1B7B1A0C2D8F0020EAA8 /* VMKLyricView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKLyricView.h; sourceTree = "<group>"; };
@@ -1383,12 +1379,12 @@
 		616C1D891A0D97490020EAA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		616C1D921A0D97490020EAA8 /* MusicKitOSXAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicKitOSXAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		616C1D971A0D97490020EAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		616C1E211A1173300020EAA8 /* CollectionViewScoreLayout-Slurs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Slurs.png"; sourceTree = "<group>"; };
-		616C1E221A1173300020EAA8 /* CollectionViewScoreLayout-Endings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Endings@2x.png"; sourceTree = "<group>"; };
-		616C1E231A1173300020EAA8 /* CollectionViewScoreLayout-Slurs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Slurs@2x.png"; sourceTree = "<group>"; };
-		616C1E241A1173300020EAA8 /* CollectionViewScoreLayout-Endings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Endings.png"; sourceTree = "<group>"; };
-		616C1E2D1A117D0B0020EAA8 /* CollectionViewScoreLayout-Endings@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Endings@3x.png"; sourceTree = "<group>"; };
-		616C1E2E1A117D0B0020EAA8 /* CollectionViewScoreLayout-Slurs@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CollectionViewScoreLayout-Slurs@3x.png"; sourceTree = "<group>"; };
+		616C1E211A1173300020EAA8 /* ScrollScoreLayout-Slurs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Slurs.png"; sourceTree = "<group>"; };
+		616C1E221A1173300020EAA8 /* ScrollScoreLayout-Endings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Endings@2x.png"; sourceTree = "<group>"; };
+		616C1E231A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Slurs@2x.png"; sourceTree = "<group>"; };
+		616C1E241A1173300020EAA8 /* ScrollScoreLayout-Endings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Endings.png"; sourceTree = "<group>"; };
+		616C1E2D1A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Endings@3x.png"; sourceTree = "<group>"; };
+		616C1E2E1A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Slurs@3x.png"; sourceTree = "<group>"; };
 		6186414F1A09B0B900FAE9C9 /* VMKBarlineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKBarlineLayer.h; sourceTree = "<group>"; };
 		618641501A09B0B900FAE9C9 /* VMKBarlineLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKBarlineLayer.mm; sourceTree = "<group>"; };
 		618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKBeamLayer.h; sourceTree = "<group>"; };
@@ -1418,6 +1414,10 @@
 		61D667801A3F67B80044A00B /* VMKScoreRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKScoreRenderer.mm; sourceTree = "<group>"; };
 		61D667AF1A40C7D40044A00B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		61D667B11A40C8390044A00B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		61E530AA1A78667200E5B2FF /* VMKScrollScoreLayout.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKScrollScoreLayout.mm; sourceTree = "<group>"; };
+		61E530AB1A78667200E5B2FF /* VMKScrollScoreLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKScrollScoreLayout.h; sourceTree = "<group>"; };
+		61E530AC1A78667200E5B2FF /* VMKScrollScoreDataSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKScrollScoreDataSource.mm; sourceTree = "<group>"; };
+		61E530AD1A78667200E5B2FF /* VMKScrollScoreDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKScrollScoreDataSource.h; sourceTree = "<group>"; };
 		61F072EF1A703583002CA9CA /* SystemLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemLayout.h; path = Submodules/mxml/src/mxml/dom/SystemLayout.h; sourceTree = SOURCE_ROOT; };
 		61F072F01A703583002CA9CA /* Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Position.h; path = Submodules/mxml/src/mxml/dom/Position.h; sourceTree = SOURCE_ROOT; };
 		61F072F11A703583002CA9CA /* PageMargins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageMargins.h; path = Submodules/mxml/src/mxml/dom/PageMargins.h; sourceTree = SOURCE_ROOT; };
@@ -1596,7 +1596,7 @@
 				610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */,
 				610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */,
 				610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */,
-				610DC6181A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm */,
+				610DC6181A08322800BEEBFD /* VMKScrollScoreLayoutTests.mm */,
 				000868A21A68447300BAA13D /* VMKImageLayerTests.mm */,
 				610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */,
 				610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */,
@@ -1668,12 +1668,12 @@
 				616C1C1C1A0D81550020EAA8 /* ClefLayer-Treble.png */,
 				616C1C1E1A0D81550020EAA8 /* ClefLayer-Treble@2x.png */,
 				616C1C741A0D81550020EAA8 /* ClefLayer-Treble@3x.png */,
-				616C1E241A1173300020EAA8 /* CollectionViewScoreLayout-Endings.png */,
-				616C1E221A1173300020EAA8 /* CollectionViewScoreLayout-Endings@2x.png */,
-				616C1E2D1A117D0B0020EAA8 /* CollectionViewScoreLayout-Endings@3x.png */,
-				616C1E211A1173300020EAA8 /* CollectionViewScoreLayout-Slurs.png */,
-				616C1E231A1173300020EAA8 /* CollectionViewScoreLayout-Slurs@2x.png */,
-				616C1E2E1A117D0B0020EAA8 /* CollectionViewScoreLayout-Slurs@3x.png */,
+				616C1E241A1173300020EAA8 /* ScrollScoreLayout-Endings.png */,
+				616C1E221A1173300020EAA8 /* ScrollScoreLayout-Endings@2x.png */,
+				616C1E2D1A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png */,
+				616C1E211A1173300020EAA8 /* ScrollScoreLayout-Slurs.png */,
+				616C1E231A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png */,
+				616C1E2E1A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png */,
 				616C1C491A0D81550020EAA8 /* Endings.xml */,
 				000868AE1A6845B800BAA13D /* ImageLayer-Coda.png */,
 				000868AF1A6845B800BAA13D /* ImageLayer-Coda@2x.png */,
@@ -2194,10 +2194,6 @@
 				616C1B681A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m */,
 				616C1B531A0C0E310020EAA8 /* VMKAttributesView.h */,
 				616C1B541A0C0E310020EAA8 /* VMKAttributesView.mm */,
-				616C1B691A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.h */,
-				616C1B6C1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm */,
-				616C1B6A1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h */,
-				616C1B6B1A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm */,
 				616C1B571A0C0E310020EAA8 /* VMKCursorView.h */,
 				616C1B581A0C0E310020EAA8 /* VMKCursorView.m */,
 				616C1B771A0C2D7A0020EAA8 /* VMKEndingView.h */,
@@ -2220,6 +2216,10 @@
 				616C1B801A0C2DA40020EAA8 /* VMKPedalView.mm */,
 				616C1B5B1A0C0E310020EAA8 /* VMKScoreElementContainerView.h */,
 				616C1B5C1A0C0E310020EAA8 /* VMKScoreElementContainerView.mm */,
+				61E530AD1A78667200E5B2FF /* VMKScrollScoreDataSource.h */,
+				61E530AC1A78667200E5B2FF /* VMKScrollScoreDataSource.mm */,
+				61E530AB1A78667200E5B2FF /* VMKScrollScoreLayout.h */,
+				61E530AA1A78667200E5B2FF /* VMKScrollScoreLayout.mm */,
 				61F0743C1A730D71002CA9CA /* VMKSystemView.h */,
 				61F0743D1A730D71002CA9CA /* VMKSystemView.mm */,
 				616C1B831A0C2DDB0020EAA8 /* VMKTieView.h */,
@@ -2339,6 +2339,7 @@
 				61C8507D1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */,
 				61F073911A718D8E002CA9CA /* PageMetrics.h in Headers */,
 				618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */,
+				61E530B11A78667200E5B2FF /* VMKScrollScoreDataSource.h in Headers */,
 				61C850761A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */,
 				00094F021A67482E0053C615 /* WordsGeometry.h in Headers */,
 				616C1B931A0C4D790020EAA8 /* VMKOrnamentView.h in Headers */,
@@ -2352,6 +2353,7 @@
 				61F0738C1A718D8E002CA9CA /* ScrollMetrics.h in Headers */,
 				61F0733C1A703596002CA9CA /* GenericNode.h in Headers */,
 				616C1A9E1A0AA24E0020EAA8 /* VMKEndingLayer.h in Headers */,
+				61E530AF1A78667200E5B2FF /* VMKScrollScoreLayout.h in Headers */,
 				61C8503C1A684F5300031100 /* Jump.h in Headers */,
 				61F072F81A703583002CA9CA /* PageMargins.h in Headers */,
 				61F0743E1A730D71002CA9CA /* VMKSystemView.h in Headers */,
@@ -2376,7 +2378,6 @@
 				616C1A951A0A99600020EAA8 /* VMKScoreElementImageLayer.h in Headers */,
 				616C1AA61A0AACE50020EAA8 /* VMKLyricLayer.h in Headers */,
 				616C1B611A0C0E310020EAA8 /* VMKCursorView.h in Headers */,
-				616C1B6F1A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.h in Headers */,
 				61F073411A703596002CA9CA /* FormattedTextHandler.h in Headers */,
 				61F073F81A71D3BF002CA9CA /* OrnamentGeometryFactory.h in Headers */,
 				61F072F61A703583002CA9CA /* Position.h in Headers */,
@@ -2416,7 +2417,6 @@
 				616C1AB21A0B01BB0020EAA8 /* VMKNoteStemLayer.h in Headers */,
 				0022AE1A1A70833700139992 /* HorizontalResolver.h in Headers */,
 				616C1B811A0C2DA40020EAA8 /* VMKPedalView.h in Headers */,
-				616C1B701A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.h in Headers */,
 				61F073EE1A71D3BF002CA9CA /* EndingGeometryFactory.h in Headers */,
 				00094F0E1A6748710053C615 /* VMKWordsView.h in Headers */,
 				616C1B851A0C2DDB0020EAA8 /* VMKTieView.h in Headers */,
@@ -2711,13 +2711,13 @@
 				616C1CD61A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits.png in Resources */,
 				616C1D4C1A0D81550020EAA8 /* TieLayer-1000Tie@3x.png in Resources */,
 				616C1CC01A0D81550020EAA8 /* ChordLayer-Accidental@2x.png in Resources */,
-				616C1E291A1173300020EAA8 /* CollectionViewScoreLayout-Slurs@2x.png in Resources */,
+				616C1E291A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png in Resources */,
 				616C1C901A0D81550020EAA8 /* NoteLayer-Whole.png in Resources */,
 				616C1D1A1A0D81550020EAA8 /* BeamLayer-ForwardHook@3x.png in Resources */,
 				616C1D401A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@3x.png in Resources */,
 				616C1CDC1A0D81550020EAA8 /* ChordLayer-Accent@2x.png in Resources */,
 				616C1D161A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png in Resources */,
-				616C1E2B1A1173300020EAA8 /* CollectionViewScoreLayout-Endings.png in Resources */,
+				616C1E2B1A1173300020EAA8 /* ScrollScoreLayout-Endings.png in Resources */,
 				616C1CBA1A0D81550020EAA8 /* ChordLayer-EighthDown@2x.png in Resources */,
 				616C1D521A0D81550020EAA8 /* TieLayer-AngledUp@3x.png in Resources */,
 				616C1D2A1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@3x.png in Resources */,
@@ -2727,7 +2727,7 @@
 				616C1CC21A0D81550020EAA8 /* ChordLayer-Quarter.png in Resources */,
 				616C1CA01A0D81550020EAA8 /* TieLayer-100Tie@2x.png in Resources */,
 				616C1CCA1A0D81550020EAA8 /* ChordLayer-DisplaceSideways.png in Resources */,
-				616C1E271A1173300020EAA8 /* CollectionViewScoreLayout-Endings@2x.png in Resources */,
+				616C1E271A1173300020EAA8 /* ScrollScoreLayout-Endings@2x.png in Resources */,
 				616C1D101A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png in Resources */,
 				616C1CE41A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png in Resources */,
 				616C1D481A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png in Resources */,
@@ -2756,7 +2756,7 @@
 				616C1D361A0D81550020EAA8 /* ClefLayer-Treble@3x.png in Resources */,
 				000868891A683B5300BAA13D /* WordsLayer-Words@3x.png in Resources */,
 				616C1CD01A0D81550020EAA8 /* ChordLayer-Dot@2x.png in Resources */,
-				616C1E311A117D0B0020EAA8 /* CollectionViewScoreLayout-Slurs@3x.png in Resources */,
+				616C1E311A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png in Resources */,
 				616C1CB41A0D81550020EAA8 /* TieLayer-AngledUpBelow@2x.png in Resources */,
 				616C1D501A0D81550020EAA8 /* TieLayer-AngledDownBelow@3x.png in Resources */,
 				616C1CD41A0D81550020EAA8 /* ChordLayer-Eighth@2x.png in Resources */,
@@ -2768,7 +2768,7 @@
 				616C1D261A0D81550020EAA8 /* ChordLayer-Accent@3x.png in Resources */,
 				616C1C9C1A0D81550020EAA8 /* TieLayer-50TieBelow@2x.png in Resources */,
 				616C1CB01A0D81550020EAA8 /* TieLayer-AngledUp@2x.png in Resources */,
-				616C1E2F1A117D0B0020EAA8 /* CollectionViewScoreLayout-Endings@3x.png in Resources */,
+				616C1E2F1A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png in Resources */,
 				616C1CFA1A0D81550020EAA8 /* BeamLayer-TwoBeams.png in Resources */,
 				616C1C881A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png in Resources */,
 				000868831A683B5300BAA13D /* WordsLayer-Dyanmics@3x.png in Resources */,
@@ -2788,7 +2788,7 @@
 				000868B11A6845B800BAA13D /* ImageLayer-Coda.png in Resources */,
 				616C1D081A0D81550020EAA8 /* MeasureLayer-Empty@2x.png in Resources */,
 				000868871A683B5300BAA13D /* WordsLayer-Words@2x.png in Resources */,
-				616C1E251A1173300020EAA8 /* CollectionViewScoreLayout-Slurs.png in Resources */,
+				616C1E251A1173300020EAA8 /* ScrollScoreLayout-Slurs.png in Resources */,
 				616C1D181A0D81550020EAA8 /* BeamLayer-BackwardHook@3x.png in Resources */,
 				616C1CCE1A0D81550020EAA8 /* ChordLayer-Dot.png in Resources */,
 				616C1D3E1A0D81550020EAA8 /* MeasureLayer-WithClefs@3x.png in Resources */,
@@ -2862,12 +2862,12 @@
 				616C1DCC1A0D97590020EAA8 /* ChordLayer-Quarter@3x.png in Resources */,
 				616C1DAB1A0D97590020EAA8 /* BeamLayer-FourBeams@3x.png in Resources */,
 				616C1DF81A0D97590020EAA8 /* TieLayer-100Tie.png in Resources */,
-				616C1E2A1A1173300020EAA8 /* CollectionViewScoreLayout-Slurs@2x.png in Resources */,
+				616C1E2A1A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png in Resources */,
 				616C1DFA1A0D97590020EAA8 /* TieLayer-100Tie@3x.png in Resources */,
 				616C1DF31A0D97590020EAA8 /* TieLayer-50Tie@2x.png in Resources */,
 				616C1DE51A0D97590020EAA8 /* MeasureLayer-WithClefs@3x.png in Resources */,
 				616C1E0D1A0D97590020EAA8 /* TimeSignatureLayer-VerticalDigits.png in Resources */,
-				616C1E2C1A1173300020EAA8 /* CollectionViewScoreLayout-Endings.png in Resources */,
+				616C1E2C1A1173300020EAA8 /* ScrollScoreLayout-Endings.png in Resources */,
 				616C1DB01A0D97590020EAA8 /* BeamLayer-OneBeamThreeNotes@2x.png in Resources */,
 				616C1DDF1A0D97590020EAA8 /* Endings.xml in Resources */,
 				616C1DE21A0D97590020EAA8 /* MeasureLayer-Empty@3x.png in Resources */,
@@ -2876,7 +2876,7 @@
 				000868B41A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */,
 				616C1DA51A0D97590020EAA8 /* BeamLayer-BackwardHook@3x.png in Resources */,
 				616C1DB21A0D97590020EAA8 /* BeamLayer-TwoBeams.png in Resources */,
-				616C1E281A1173300020EAA8 /* CollectionViewScoreLayout-Endings@2x.png in Resources */,
+				616C1E281A1173300020EAA8 /* ScrollScoreLayout-Endings@2x.png in Resources */,
 				616C1DB61A0D97590020EAA8 /* ChordLayer-128th@2x.png in Resources */,
 				616C1E011A0D97590020EAA8 /* TieLayer-AngledDownBelow.png in Resources */,
 				616C1DE41A0D97590020EAA8 /* MeasureLayer-WithClefs@2x.png in Resources */,
@@ -2903,7 +2903,7 @@
 				616C1DA11A0D97590020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png in Resources */,
 				616C1DF01A0D97590020EAA8 /* TieLayer-18Tie@2x.png in Resources */,
 				616C1DC31A0D97590020EAA8 /* ChordLayer-Dot@3x.png in Resources */,
-				616C1E321A117D0B0020EAA8 /* CollectionViewScoreLayout-Slurs@3x.png in Resources */,
+				616C1E321A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png in Resources */,
 				0008688A1A683B5300BAA13D /* WordsLayer-Words@3x.png in Resources */,
 				616C1DFD1A0D97590020EAA8 /* TieLayer-1000Tie@3x.png in Resources */,
 				616C1DF41A0D97590020EAA8 /* TieLayer-50Tie@3x.png in Resources */,
@@ -2916,7 +2916,7 @@
 				616C1DAF1A0D97590020EAA8 /* BeamLayer-OneBeamThreeNotes.png in Resources */,
 				616C1DCF1A0D97590020EAA8 /* ChordLayer-Whole@3x.png in Resources */,
 				616C1DBE1A0D97590020EAA8 /* ChordLayer-DisplaceSideways.png in Resources */,
-				616C1E301A117D0B0020EAA8 /* CollectionViewScoreLayout-Endings@3x.png in Resources */,
+				616C1E301A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png in Resources */,
 				616C1E071A0D97590020EAA8 /* TieLayer-AngledUpBelow.png in Resources */,
 				616C1E0C1A0D97590020EAA8 /* TimeSignatureLayer-CommonTime@3x.png in Resources */,
 				616C1DF11A0D97590020EAA8 /* TieLayer-18Tie@3x.png in Resources */,
@@ -2936,7 +2936,7 @@
 				000868B61A6845B800BAA13D /* ImageLayer-Coda@3x.png in Resources */,
 				616C1DA71A0D97590020EAA8 /* BeamLayer-ForwardHook@2x.png in Resources */,
 				000868B21A6845B800BAA13D /* ImageLayer-Coda.png in Resources */,
-				616C1E261A1173300020EAA8 /* CollectionViewScoreLayout-Slurs.png in Resources */,
+				616C1E261A1173300020EAA8 /* ScrollScoreLayout-Slurs.png in Resources */,
 				000868881A683B5300BAA13D /* WordsLayer-Words@2x.png in Resources */,
 				616C1DF61A0D97590020EAA8 /* TieLayer-50TieBelow@2x.png in Resources */,
 				616C1DED1A0D97590020EAA8 /* NoteLayer-Whole@2x.png in Resources */,
@@ -3029,7 +3029,7 @@
 				610DC61F1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm in Sources */,
 				610DC66E1A08322800BEEBFD /* VMKChordLayerTests.mm in Sources */,
 				610DC66F1A08322800BEEBFD /* VMKLayerTestCase.mm in Sources */,
-				610DC66B1A08322800BEEBFD /* VMKCollectionViewScoreLayoutTests.mm in Sources */,
+				610DC66B1A08322800BEEBFD /* VMKScrollScoreLayoutTests.mm in Sources */,
 				610DC6691A08322800BEEBFD /* VMKMeasureLayerTests.mm in Sources */,
 				610DC6681A08322800BEEBFD /* VMKClefLayerTests.mm in Sources */,
 				000868771A6835D600BAA13D /* VMKWordsLayerTests.mm in Sources */,
@@ -3072,7 +3072,6 @@
 				61C850671A6D977E00031100 /* OctaveShiftGeometry.cpp in Sources */,
 				61239A741A65FFB100B3F0A3 /* ScoreBuilder.cpp in Sources */,
 				61C8507A1A6D97B900031100 /* VMKOctaveShiftView.mm in Sources */,
-				616C1B721A0C2B490020EAA8 /* VMKCollectionViewScoreDataSource.mm in Sources */,
 				0008689E1A68442B00BAA13D /* CodaGeometry.cpp in Sources */,
 				616C1B641A0C0E310020EAA8 /* VMKMeasureView.mm in Sources */,
 				610DCEEE1A094B5100BEEBFD /* CreditWordsHandler.cpp in Sources */,
@@ -3120,7 +3119,6 @@
 				0022AE0E1A70833700139992 /* CollisionHandler.cpp in Sources */,
 				61F073F51A71D3BF002CA9CA /* OrnamentGeometryFactory.cpp in Sources */,
 				610DCF081A094B5100BEEBFD /* SyllabicHandler.cpp in Sources */,
-				616C1B711A0C2B490020EAA8 /* VMKCollectionViewScoreLayout.mm in Sources */,
 				616C1B7A1A0C2D7A0020EAA8 /* VMKEndingView.mm in Sources */,
 				610DCEFF1A094B5100BEEBFD /* PitchHandler.cpp in Sources */,
 				61F0732F1A703596002CA9CA /* PageMarginsHandler.cpp in Sources */,
@@ -3132,8 +3130,10 @@
 				616C1A921A0A98B70020EAA8 /* VMKClefLayer.mm in Sources */,
 				610DCED11A094B4C00BEEBFD /* ChordGeometry.cpp in Sources */,
 				61F073161A703596002CA9CA /* TypeFactories.cpp in Sources */,
+				61E530B01A78667200E5B2FF /* VMKScrollScoreDataSource.mm in Sources */,
 				610DCF0C1A094B5100BEEBFD /* TurnHandler.cpp in Sources */,
 				610DCEC61A094B4500BEEBFD /* lxml.cpp in Sources */,
+				61E530AE1A78667200E5B2FF /* VMKScrollScoreLayout.mm in Sources */,
 				616C1B6E1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m in Sources */,
 				616C1B7E1A0C2D8F0020EAA8 /* VMKLyricView.mm in Sources */,
 				610DCF021A094B5100BEEBFD /* RestHandler.cpp in Sources */,

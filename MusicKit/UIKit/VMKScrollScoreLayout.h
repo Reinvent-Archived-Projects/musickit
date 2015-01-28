@@ -4,7 +4,7 @@
 #include <mxml/geometry/ScrollScoreGeometry.h>
 
 
-@interface VMKCollectionViewScoreLayout : UICollectionViewLayout
+@interface VMKScrollScoreLayout : UICollectionViewLayout
 
 @property(nonatomic) const mxml::ScrollScoreGeometry* scoreGeometry;
 @property(nonatomic) CGFloat minHeight;

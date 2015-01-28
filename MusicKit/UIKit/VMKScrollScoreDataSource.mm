@@ -1,7 +1,7 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import "NSIndexPath+VMKScoreAdditions.h"
-#import "VMKCollectionViewScoreDataSource.h"
+#import "VMKScrollScoreDataSource.h"
 #import "VMKCursorView.h"
 #import "VMKEndingView.h"
 #import "VMKImageView.h"
@@ -35,7 +35,7 @@ NSString* const VMKCursorReuseIdentifier = @"Cursor";
 using namespace mxml;
 
 
-@implementation VMKCollectionViewScoreDataSource
+@implementation VMKScrollScoreDataSource
 
 - (instancetype)init {
     self = [super init];

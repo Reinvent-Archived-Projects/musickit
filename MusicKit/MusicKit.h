@@ -45,8 +45,8 @@ FOUNDATION_EXPORT const unsigned char MusicKitVersionString[];
     #import <MusicKit/UIKit/VMKCursorView.h>
     #import <MusicKit/UIKit/VMKMeasureView.h>
     #import <MusicKit/UIKit/VMKScoreElementContainerView.h>
-    #import <MusicKit/UIKit/VMKCollectionViewScoreLayout.h>
-    #import <MusicKit/UIKit/VMKCollectionViewScoreDataSource.h>
+    #import <MusicKit/UIKit/VMKScrollScoreLayout.h>
+    #import <MusicKit/UIKit/VMKScrollScoreDataSource.h>
     #import <MusicKit/UIKit/VMKPageScoreLayout.h>
     #import <MusicKit/UIKit/VMKPageScoreDataSource.h>
 #else

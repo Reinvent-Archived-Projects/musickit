@@ -9,7 +9,7 @@ extern NSString* const VMKTieReuseIdentifier;
 extern NSString* const VMKCursorReuseIdentifier;
 
 
-@interface VMKCollectionViewScoreDataSource : NSObject <UICollectionViewDataSource>
+@interface VMKScrollScoreDataSource : NSObject <UICollectionViewDataSource>
 
 @property(nonatomic) const mxml::ScrollScoreGeometry* scoreGeometry;
 @property(nonatomic, strong) NSSet* bookmarks;
