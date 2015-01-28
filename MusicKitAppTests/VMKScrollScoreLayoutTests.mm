@@ -79,4 +79,20 @@
     [self testLayer:self.collectionView.layer forSelector:_cmd withAccuracy:0.0001];
 }
 
+- (void)testAccidentals {
+    NSBundle* bundle = [NSBundle bundleForClass:[self class]];
+    NSString* path = [bundle pathForResource:@"Accidentals" ofType:@"xml"];
+    [self load:path];
+    
+    [self testLayer:self.collectionView.layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+}
+
+- (void)testAccidentals2 {
+    NSBundle* bundle = [NSBundle bundleForClass:[self class]];
+    NSString* path = [bundle pathForResource:@"Accidentals2" ofType:@"xml"];
+    [self load:path];
+    
+    [self testLayer:self.collectionView.layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+}
+
 @end
