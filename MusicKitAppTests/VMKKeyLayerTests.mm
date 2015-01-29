@@ -7,7 +7,7 @@
 #include <mxml/dom/Key.h>
 
 // There is a placement inconsistency between iOS and MacOS so we need a larger tolerance
-static const CGFloat kKeyAlphaTolerance = 0.005;
+static const CGFloat kKeyAlphaTolerance = 0.018;
 
 
 @interface VMKKeyLayerTests : VMKAdHocScoreTestCase

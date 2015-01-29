@@ -84,7 +84,7 @@ using namespace mxml::dom;
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:0.0017];
 }
 
 - (void)testWithClefsAndTimeSignatures {
@@ -102,7 +102,7 @@ using namespace mxml::dom;
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:0.0008];
 }
 
 @end

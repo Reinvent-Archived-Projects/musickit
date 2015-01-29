@@ -95,7 +95,7 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:0.002];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:0.004];
 }
 
 - (void)testWhole {
@@ -174,7 +174,7 @@ using namespace mxml::dom;
     mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:0.003];
 }
 
 - (void)testAccidental {
