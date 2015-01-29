@@ -9,7 +9,8 @@
 using namespace mxml;
 using namespace mxml::dom;
 
-static const CGFloat kTieAccuracy = 0.045;
+static const CGFloat kTieAccuracy = 0.054;
+static const CGFloat kLongTieAccuracy = 0.096;
 
 
 @interface VMKTieLayerTests : VMKAdHocScoreTestCase
@@ -40,14 +41,14 @@ static const CGFloat kTieAccuracy = 0.045;
     TieGeometry geom({0, 10}, {50, 10}, kPlacementAbove);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kLongTieAccuracy];
 }
 
 - (void)test50TieBelow {
     TieGeometry geom({0, 10}, {50, 10}, kPlacementBelow);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kLongTieAccuracy];
 }
 
 - (void)testAngledDown {
@@ -82,14 +83,14 @@ static const CGFloat kTieAccuracy = 0.045;
     TieGeometry geom({0, 10}, {100, 10}, kPlacementAbove);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kLongTieAccuracy];
 }
 
 - (void)test1000Tie {
     TieGeometry geom({0, 10}, {1000, 10}, kPlacementAbove);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kLongTieAccuracy];
 }
 
 @end

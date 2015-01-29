@@ -95,7 +95,7 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:0.002];
 }
 
 - (void)testWhole {
