@@ -4,12 +4,12 @@
 #import "VMKImage.h"
 #import <XCTest/XCTest.h>
 
-#define VIEW_RENDER_ACCURACY 0.001
+extern const CGFloat kDefaultAlphaTolerance;
 
 
 @interface VMKLayerTestCase : XCTestCase
 
-- (void)testLayer:(CALayer*)view forSelector:(SEL)selector withAccuracy:(CGFloat)accuracy;
+- (void)testLayer:(CALayer*)view forSelector:(SEL)selector alphaTolerance:(CGFloat)alphaTolerance;
 - (void)renderLayer:(CALayer*)view completion:(void (^)(VMKImage* image))completion;
 
 - (VMKImage*)loadTestImageForSelector:(SEL)selector;

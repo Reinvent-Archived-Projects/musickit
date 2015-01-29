@@ -47,7 +47,7 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testWithClefs {
@@ -64,7 +64,7 @@ using namespace mxml::dom;
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testWithTimeSignatures {
@@ -84,7 +84,7 @@ using namespace mxml::dom;
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testWithClefsAndTimeSignatures {
@@ -102,7 +102,7 @@ using namespace mxml::dom;
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 @end

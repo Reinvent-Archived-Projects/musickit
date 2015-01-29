@@ -17,7 +17,7 @@
     mxml::SegnoGeometry geom(coda);
     VMKScoreElementImageLayer* layer = [[VMKScoreElementImageLayer alloc] initWithImageName:@"coda" geometry:&geom];
     
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testSegno {
@@ -25,7 +25,7 @@
     mxml::SegnoGeometry geom(segno);
     VMKScoreElementImageLayer* layer = [[VMKScoreElementImageLayer alloc] initWithImageName:@"segno" geometry:&geom];
     
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 @end

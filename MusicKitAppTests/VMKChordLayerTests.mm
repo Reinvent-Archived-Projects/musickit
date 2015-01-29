@@ -44,7 +44,7 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testEighthDown {
@@ -70,7 +70,7 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)test128th {
@@ -95,7 +95,7 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testWhole {
@@ -114,7 +114,7 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height == mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testQuarter {
@@ -133,7 +133,7 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testDisplaceSideways {
@@ -156,7 +156,7 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testDot {
@@ -174,7 +174,7 @@ using namespace mxml::dom;
     mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testAccidental {
@@ -192,7 +192,7 @@ using namespace mxml::dom;
     mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testAccent {
@@ -213,7 +213,7 @@ using namespace mxml::dom;
     mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 @end

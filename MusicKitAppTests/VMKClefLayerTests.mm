@@ -22,7 +22,7 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 @end

@@ -63,7 +63,7 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testOneBeamThreeNotes {
@@ -89,7 +89,7 @@ using namespace mxml::dom;
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testForwardHook {
@@ -115,7 +115,7 @@ using namespace mxml::dom;
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testBackwardHook {
@@ -141,7 +141,7 @@ using namespace mxml::dom;
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testTwoBeams {
@@ -162,7 +162,7 @@ using namespace mxml::dom;
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testFourBeams {
@@ -188,7 +188,7 @@ using namespace mxml::dom;
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:0.01];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testAccidentalInBeamedSet {
@@ -214,7 +214,7 @@ using namespace mxml::dom;
     auto measureGeometry = partGeometry->measureGeometries().front();
     VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 @end

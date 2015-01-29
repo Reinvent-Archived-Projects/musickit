@@ -68,7 +68,7 @@
     NSString* path = [bundle pathForResource:@"Slurs" ofType:@"xml"];
     [self load:path];
 
-    [self testLayer:self.collectionView.layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testEndings {
@@ -76,7 +76,7 @@
     NSString* path = [bundle pathForResource:@"Endings" ofType:@"xml"];
     [self load:path];
 
-    [self testLayer:self.collectionView.layer forSelector:_cmd withAccuracy:0.0001];
+    [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testAccidentals {
@@ -84,7 +84,7 @@
     NSString* path = [bundle pathForResource:@"Accidentals" ofType:@"xml"];
     [self load:path];
     
-    [self testLayer:self.collectionView.layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testAccidentals2 {
@@ -92,7 +92,7 @@
     NSString* path = [bundle pathForResource:@"Accidentals2" ofType:@"xml"];
     [self load:path];
     
-    [self testLayer:self.collectionView.layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 @end

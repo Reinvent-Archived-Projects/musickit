@@ -6,7 +6,8 @@
 #include <mxml/dom/Clef.h>
 #include <mxml/dom/Key.h>
 
-static const CGFloat kKeyRenderAccuracy = 0.002;
+// There is a placement inconsistency between iOS and MacOS so we need a larger tolerance
+static const CGFloat kKeyAlphaTolerance = 0.005;
 
 
 @interface VMKKeyLayerTests : VMKAdHocScoreTestCase
@@ -22,7 +23,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
 
     mxml::KeyGeometry geometry(key, *clef);
     VMKKeyLayer* layer = [[VMKKeyLayer alloc] initWithKeyGeometry:&geometry];
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testGMajor {
@@ -37,7 +38,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testDMajor {
@@ -52,7 +53,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testAMajor {
@@ -67,7 +68,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testEMajor {
@@ -82,7 +83,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testBMajor {
@@ -97,7 +98,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testFSharpMajor {
@@ -112,7 +113,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testCSharpMajor {
@@ -127,7 +128,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testFMajor {
@@ -142,7 +143,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testBFlatMajor {
@@ -157,7 +158,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testEFlatMajor {
@@ -172,7 +173,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testAFlatMajor {
@@ -187,7 +188,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testDFlatMajor {
@@ -202,7 +203,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testGFlatMajor {
@@ -217,7 +218,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 - (void)testCFlatMajor {
@@ -232,7 +233,7 @@ static const CGFloat kKeyRenderAccuracy = 0.002;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:kKeyRenderAccuracy];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
 }
 
 @end

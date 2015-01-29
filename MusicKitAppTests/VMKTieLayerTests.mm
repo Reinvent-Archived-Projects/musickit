@@ -33,63 +33,63 @@ static const CGFloat kTieAccuracy = 0.045;
     TieGeometry geom({0, 10}, {18, 10}, kPlacementAbove);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd withAccuracy:kTieAccuracy];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
 }
 
 - (void)test50Tie {
     TieGeometry geom({0, 10}, {50, 10}, kPlacementAbove);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd withAccuracy:kTieAccuracy];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
 }
 
 - (void)test50TieBelow {
     TieGeometry geom({0, 10}, {50, 10}, kPlacementBelow);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd withAccuracy:kTieAccuracy];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
 }
 
 - (void)testAngledDown {
     TieGeometry geom({0, 10}, {50, 30}, kPlacementAbove);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd withAccuracy:kTieAccuracy];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
 }
 
 - (void)testAngledDownBelow {
     TieGeometry geom({0, 10}, {50, 30}, kPlacementBelow);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd withAccuracy:kTieAccuracy];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
 }
 
 - (void)testAngledUp {
     TieGeometry geom({0, 30}, {50, 10}, kPlacementAbove);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd withAccuracy:kTieAccuracy];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
 }
 
 - (void)testAngledUpBelow {
     TieGeometry geom({0, 30}, {50, 10}, kPlacementBelow);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd withAccuracy:kTieAccuracy];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
 }
 
 - (void)test100Tie {
     TieGeometry geom({0, 10}, {100, 10}, kPlacementAbove);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd withAccuracy:kTieAccuracy];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
 }
 
 - (void)test1000Tie {
     TieGeometry geom({0, 10}, {1000, 10}, kPlacementAbove);
     VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd withAccuracy:0.001];
+    [self testLayer:view forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 @end

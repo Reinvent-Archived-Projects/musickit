@@ -4,6 +4,7 @@
 #import "VMKLayerTestCase.h"
 #import "VMKImageStore.h"
 
+const CGFloat kDefaultAlphaTolerance = 0.0005;
 static NSString* const CLASS_PREFIX = @"VMK";
 static NSString* const CLASS_SUFFIX = @"Tests";
 static NSString* const TEST_PREFIX = @"test";
@@ -11,14 +12,16 @@ static NSString* const TEST_PREFIX = @"test";
 
 @implementation VMKLayerTestCase
 
-- (void)setUp {
-    [VMKImageStore sharedInstance].foregroundColor = [VMKColor blackColor];
-
++ (void)load {
     // Print the location of temporary directory for reference
     NSLog(@"Image test results written to\n%@", NSTemporaryDirectory());
 }
 
-- (void)testLayer:(CALayer*)layer forSelector:(SEL)selector withAccuracy:(CGFloat)accuracy {
+- (void)setUp {
+    [VMKImageStore sharedInstance].foregroundColor = [VMKColor blackColor];
+}
+
+- (void)testLayer:(CALayer*)layer forSelector:(SEL)selector alphaTolerance:(CGFloat)alphaTolerance {
     BOOL __block timedOut = NO;
     XCTestExpectation* expectation = [self expectationWithDescription:@"renderView"];
 
@@ -29,11 +32,28 @@ static NSString* const TEST_PREFIX = @"test";
 
         [expectation fulfill];
 
-        if (rendered.size.width != expected.size.width || rendered.size.height != expected.size.height)
+        if (rendered.size.width != expected.size.width || rendered.size.height != expected.size.height) {
             XCTFail(@"View should match size of reference image");
-        else
-            XCTAssertEqualWithAccuracy(AIImageMeanAbosulteError(rendered, expected), 0, accuracy, @"View appearance should match test image");
+            return;
+        }
 
+        AIComponents components = AIImageMeanAbsoluteErrorByComponent(rendered, expected);
+        CGFloat colorError = components.red + components.green + components.blue;
+        CGFloat alphaError = components.alpha;
+
+        if (colorError > 0 || alphaError > alphaTolerance) {
+            CGFloat rms = AIImageRootMeanSquareError(rendered, expected);
+            CGFloat ratio = AIImageDifferentPixelRatio(rendered, expected);
+
+            NSLog(@"Image %@:", [self imageNameForSelector:selector]);
+            NSLog(@"  Color MAE %f", colorError);
+            NSLog(@"  Alpha MAE %f", alphaError);
+            NSLog(@"  RMS %f", rms);
+            NSLog(@"  Pixel ratio %f", ratio);
+        }
+
+        XCTAssertEqual(colorError, 0, @"View colors should match test image exactly");
+        XCTAssertEqualWithAccuracy(alphaError, 0, alphaTolerance, @"View alpha values should match test image within the tolerance");
         [self saveImage:rendered forSelector:selector];
     }];
 

@@ -22,7 +22,7 @@
 
     VMKWordsLayer* layer = [[VMKWordsLayer alloc] initWithWordsGeometry:&geom];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 - (void)testDyanmics {
@@ -35,7 +35,7 @@
 
     VMKWordsLayer* layer = [[VMKWordsLayer alloc] initWithWordsGeometry:&geom];
 
-    [self testLayer:layer forSelector:_cmd withAccuracy:VIEW_RENDER_ACCURACY];
+    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
 }
 
 @end
