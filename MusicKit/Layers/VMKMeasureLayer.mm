@@ -207,10 +207,15 @@ static const CGFloat kBarLineWidth = 1;
     CGFloat stavesHeight = metrics.stavesHeight();
     CGRect lineRect;
 
-    // Draw bar line
-    lineRect.origin = CGPointZero;
-    lineRect.origin.x -= kBarLineWidth/2;
-    lineRect.origin.y -= kStaffLineWidth/2;
+    // Draw bar lines
+    lineRect.origin.x = -kBarLineWidth/2;
+    lineRect.origin.y = -kStaffLineWidth/2;
+    lineRect.size.width = kBarLineWidth;
+    lineRect.size.height = stavesHeight + kStaffLineWidth;
+    CGContextFillRect(ctx, VMKRoundRect(lineRect));
+
+    lineRect.origin.x = size.width - kBarLineWidth/2;
+    lineRect.origin.y = -kStaffLineWidth/2;
     lineRect.size.width = kBarLineWidth;
     lineRect.size.height = stavesHeight + kStaffLineWidth;
     CGContextFillRect(ctx, VMKRoundRect(lineRect));
