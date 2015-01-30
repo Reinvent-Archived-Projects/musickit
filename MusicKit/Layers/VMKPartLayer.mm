@@ -1,13 +1,29 @@
 //  Copyright (c) 2015 Venture Media Labs. All rights reserved.
 
-#import "VMKPartLayer.h"
+#import "VMKEndingLayer.h"
+#import "VMKLyricLayer.h"
 #import "VMKMeasureLayer.h"
+#import "VMKOctaveShiftLayer.h"
+#import "VMKOrnamentLayer.h"
+#import "VMKPartLayer.h"
+#import "VMKPedalLayer.h"
+#import "VMKTieLayer.h"
+#import "VMKWedgeLayer.h"
+#import "VMKWordsLayer.h"
+
+#include <mxml/dom/OctaveShift.h>
+#include <mxml/dom/Pedal.h>
+#include <mxml/dom/Wedge.h>
+#include <mxml/geometry/CodaGeometry.h>
+#include <mxml/geometry/SegnoGeometry.h>
 
 
 @interface VMKPartLayer ()
 
 @property(nonatomic, strong) NSMutableArray* measureLayers;
 @property(nonatomic, strong) NSMutableSet* reusableMeasureLayers;
+@property(nonatomic, strong) NSMutableArray* directionLayers;
+@property(nonatomic, strong) NSMutableArray* tieLayers;
 
 @end
 
@@ -22,6 +38,8 @@
     [super setup];
     self.measureLayers = [[NSMutableArray alloc] init];
     self.reusableMeasureLayers = [[NSMutableSet alloc] init];
+    self.directionLayers = [[NSMutableArray alloc] init];
+    self.tieLayers = [[NSMutableArray alloc] init];
 }
 
 #pragma mark - 
@@ -57,6 +75,16 @@
         [self.reusableMeasureLayers addObject:layer];
     }
     [self.measureLayers removeAllObjects];
+
+    for (VMKScoreElementLayer* layer in self.directionLayers) {
+        [layer removeFromSuperlayer];
+    }
+    [self.directionLayers removeAllObjects];
+
+    for (VMKTieLayer* layer in self.tieLayers) {
+        [layer removeFromSuperlayer];
+    }
+    [self.tieLayers removeAllObjects];
 }
 
 - (void)createSublayers {
@@ -78,6 +106,55 @@
 
         [self.measureLayers addObject:layer];
     }
+
+    auto& directionGeometries = self.partGeometry->directionGeometries();
+    for (auto& geometry : directionGeometries) {
+        [self createDirectionLayer:geometry];
+    }
+
+    auto& tieGeometries = self.partGeometry->tieGeometries();
+    for (auto& geometry : tieGeometries) {
+        [self createTieLayer:geometry];
+    }
+}
+
+- (void)createDirectionLayer:(const mxml::PlacementGeometry*)geometry {
+    VMKScoreElementLayer* layer;
+
+    if (const mxml::SpanDirectionGeometry* geom = dynamic_cast<const mxml::SpanDirectionGeometry*>(geometry)) {
+        if (dynamic_cast<const mxml::dom::Wedge*>(geom->startDirection().type())) {
+            layer = [[VMKWedgeLayer alloc] initWithSpanDirectionGeometry:geom];
+        } else if (dynamic_cast<const mxml::dom::Pedal*>(geom->startDirection().type())) {
+            layer = [[VMKPedalLayer alloc] initWithSpanDirectionGeometry:geom];
+        } else if (dynamic_cast<const mxml::dom::OctaveShift*>(geom->startDirection().type())) {
+            layer = [[VMKOctaveShiftLayer alloc] initWithSpanDirectionGeometry:geom];
+        }
+    } else if (auto geom = dynamic_cast<const mxml::CodaGeometry*>(geometry)) {
+        layer = [[VMKScoreElementImageLayer alloc] initWithImageName:@"coda" geometry:geom];
+    } else if (auto geom = dynamic_cast<const mxml::SegnoGeometry*>(geometry)) {
+        layer = [[VMKScoreElementImageLayer alloc] initWithImageName:@"segno" geometry:geom];
+    } else if (auto geom = dynamic_cast<const mxml::WordsGeometry*>(geometry)) {
+        layer = [[VMKWordsLayer alloc] initWithWordsGeometry:geom];
+    } else if (auto geom = dynamic_cast<const mxml::OrnamentsGeometry*>(geometry)) {
+        layer = [[VMKOrnamentLayer alloc] initWithOrnamentsGeometry:geom];
+    } else if (auto geom = dynamic_cast<const mxml::EndingGeometry*>(geometry)) {
+        layer = [[VMKEndingLayer alloc] initWithEndingGeometry:geom];
+    } else if (auto geom = dynamic_cast<const mxml::LyricGeometry*>(geometry)) {
+        layer = [[VMKLyricLayer alloc] initWithLyricGeometry:geom];
+    }
+
+    layer.foregroundColor = self.foregroundColor;
+    layer.backgroundColor = self.backgroundColor;
+    [self addSublayer:layer];
+    [self.directionLayers addObject:layer];
+}
+
+- (void)createTieLayer:(const mxml::TieGeometry*)geometry {
+    VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:geometry];
+    layer.foregroundColor = self.foregroundColor;
+    layer.backgroundColor = self.backgroundColor;
+    [self addSublayer:layer];
+    [self.tieLayers addObject:layer];
 }
 
 @end
