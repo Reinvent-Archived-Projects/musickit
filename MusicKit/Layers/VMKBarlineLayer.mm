@@ -2,6 +2,7 @@
 
 #import "VMKBarlineLayer.h"
 #import "VMKImageStore.h"
+#import "VMKMeasureLayer.h"
 
 #import <mxml/Metrics.h>
 
@@ -29,6 +30,11 @@ static const CGFloat kLineSpacing = 2;
 
 - (void)setGeometry:(const mxml::Geometry*)geom {
     [super setGeometry:geom];
+
+    CGRect bounds = self.bounds;
+    bounds.size.height += VMKStaffLineWidth;
+    self.bounds = bounds;
+    
     [self setNeedsDisplay];
 }
 

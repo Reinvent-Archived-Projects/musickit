@@ -3,6 +3,9 @@
 #import "VMKScoreElementLayer.h"
 #include <mxml/geometry/MeasureGeometry.h>
 
+extern const CGFloat VMKStaffLineWidth;
+extern const CGFloat VMKBarLineWidth;
+
 
 @interface VMKMeasureLayer : VMKScoreElementLayer
 

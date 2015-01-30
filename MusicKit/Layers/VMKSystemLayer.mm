@@ -1,7 +1,9 @@
 //  Copyright (c) 2015 Venture Media Labs. All rights reserved.
 
-#import "VMKSystemLayer.h"
+#import "VMKGeometry.h"
+#import "VMKMeasureLayer.h"
 #import "VMKPartLayer.h"
+#import "VMKSystemLayer.h"
 
 
 @interface VMKSystemLayer ()
@@ -49,6 +51,7 @@
     if (geometry)
         [self createSublayers];
     [self setNeedsLayout];
+    [self setNeedsDisplay];
 }
 
 - (void)clearSublayers {
@@ -78,6 +81,37 @@
         layer.hidden = NO;
 
         [self.partLayers addObject:layer];
+    }
+}
+
+- (void)drawInContext:(CGContextRef)ctx {
+    CGContextSetFillColorWithColor(ctx, self.backgroundColor);
+    CGContextFillRect(ctx, self.bounds);
+
+    CGContextSetFillColorWithColor(ctx, self.foregroundColor);
+
+    CGSize size = self.bounds.size;
+    auto systemGeometry = self.systemGeometry;
+    for (std::size_t partIndex = 0; partIndex < systemGeometry->partGeometries().size(); partIndex += 1) {
+        auto& partGeometry = systemGeometry->partGeometries().at(partIndex);
+        auto& measureGeometry = partGeometry->measureGeometries().at(0);
+
+        CGFloat stavesHeight = partGeometry->stavesHeight();
+        auto origin = measureGeometry->convertToGeometry({0, 0}, systemGeometry);
+        CGRect lineRect;
+
+        // Draw bar lines
+        lineRect.origin.x = 0;
+        lineRect.origin.y = origin.y - VMKStaffLineWidth/2;
+        lineRect.size.width = VMKBarLineWidth;
+        lineRect.size.height = stavesHeight + VMKStaffLineWidth;
+        CGContextFillRect(ctx, VMKRoundRect(lineRect));
+
+        lineRect.origin.x = size.width - VMKBarLineWidth;
+        lineRect.origin.y = origin.y - VMKStaffLineWidth/2;
+        lineRect.size.width = VMKBarLineWidth;
+        lineRect.size.height = stavesHeight + VMKStaffLineWidth;
+        CGContextFillRect(ctx, VMKRoundRect(lineRect));
     }
 }
 
