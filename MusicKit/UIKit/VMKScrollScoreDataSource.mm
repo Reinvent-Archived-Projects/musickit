@@ -177,6 +177,7 @@ using namespace mxml;
     VMKCursorView* view;
     if (cell.contentView.subviews.count == 0) {
         view = [[VMKCursorView alloc] initWithFrame:cell.contentView.bounds];
+        view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [cell.contentView addSubview:view];
     } else {
         view = (VMKCursorView*)[cell.contentView.subviews firstObject];

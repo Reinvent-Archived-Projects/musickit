@@ -10,5 +10,6 @@
 
 @property(nonatomic) BOOL showCursor;
 @property(nonatomic) CGPoint cursorLocation;
+@property(nonatomic) NSUInteger cursorSystemIndex;
 
 @end

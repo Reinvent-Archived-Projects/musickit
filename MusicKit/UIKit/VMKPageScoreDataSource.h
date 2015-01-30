@@ -5,6 +5,11 @@
 
 extern NSString* const VMKSystemReuseIdentifier;
 
+typedef NS_ENUM(NSUInteger, VMKPageScoreSection) {
+    VMKPageScoreSectionSystem,
+    VMKPageScoreSectionCursor,
+    VMKPageScoreSectionCount
+};
 
 @interface VMKPageScoreDataSource : NSObject <UICollectionViewDataSource>
 

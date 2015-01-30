@@ -30,13 +30,18 @@ static const CGFloat VMCursorWidth = 16;
         if (CGRectIntersectsRect(rect, attributes.frame))
             [attributesArray addObject:attributes];
     }
+    
+    if (self.showCursor && CGRectContainsPoint(rect, self.cursorLocation)) {
+        NSIndexPath* indexPath = [NSIndexPath indexPathForItem:0 inSection:1];
+        [attributesArray addObject:[self layoutAttributesForCursorAtIndexPath:indexPath]];
+    }
 
     return attributesArray;
 }
 
 - (UICollectionViewLayoutAttributes*)layoutAttributesForItemAtIndexPath:(NSIndexPath*)indexPath {
-//    if (indexPath.type == VMKScoreElementTypeCursor)
-//        return [self layoutAttributesForCursorAtIndexPath:indexPath];
+    if (indexPath.section == 0)
+        return [self layoutAttributesForCursorAtIndexPath:indexPath];
 
     auto systemGeometry = static_cast<const SystemGeometry*>(_scoreGeometry->systemGeometries()[indexPath.item]);
     return [self layoutAttributesForGeometry:systemGeometry atIndexPath:indexPath];
@@ -44,14 +49,15 @@ static const CGFloat VMCursorWidth = 16;
 
 - (UICollectionViewLayoutAttributes*)layoutAttributesForCursorAtIndexPath:(NSIndexPath*)indexPath {
     UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-    attributes.alpha = self.showCursor ? 1 : 0;
-
+    
     CGRect frame;
     frame.origin.x = self.cursorLocation.x - VMCursorWidth/2;
     frame.origin.y = self.cursorLocation.y;
     frame.size.width = VMCursorWidth;
-    frame.size.height = _scoreGeometry->size().height;
+    frame.size.height = _scoreGeometry->systemGeometries().at(_cursorSystemIndex)->size().height;
+    
     attributes.frame = frame;
+    attributes.alpha = self.showCursor ? 1 : 0;
     attributes.zIndex = 1;
 
     return attributes;
