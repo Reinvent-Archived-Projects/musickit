@@ -54,7 +54,11 @@ static const CGFloat VMCursorWidth = 16;
     frame.origin.x = self.cursorLocation.x - VMCursorWidth/2;
     frame.origin.y = self.cursorLocation.y;
     frame.size.width = VMCursorWidth;
-    frame.size.height = _scoreGeometry->systemGeometries().at(_cursorSystemIndex)->size().height;
+
+    auto& systemGeometries = _scoreGeometry->systemGeometries();
+    if (_cursorSystemIndex >= systemGeometries.size())
+        _cursorSystemIndex = systemGeometries.size() - 1;
+    frame.size.height = systemGeometries.at(_cursorSystemIndex)->size().height;
     
     attributes.frame = frame;
     attributes.alpha = self.showCursor ? 1 : 0;
