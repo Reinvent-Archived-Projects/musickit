@@ -65,7 +65,7 @@
 
 - (void)testSlurs {
     NSBundle* bundle = [NSBundle bundleForClass:[self class]];
-    NSString* path = [bundle pathForResource:@"Slurs" ofType:@"xml"];
+    NSString* path = [bundle pathForResource:@"slurs" ofType:@"xml"];
     [self load:path];
 
     [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
@@ -73,7 +73,7 @@
 
 - (void)testEndings {
     NSBundle* bundle = [NSBundle bundleForClass:[self class]];
-    NSString* path = [bundle pathForResource:@"Endings" ofType:@"xml"];
+    NSString* path = [bundle pathForResource:@"endings" ofType:@"xml"];
     [self load:path];
 
     [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
@@ -81,7 +81,7 @@
 
 - (void)testAccidentals {
     NSBundle* bundle = [NSBundle bundleForClass:[self class]];
-    NSString* path = [bundle pathForResource:@"Accidentals" ofType:@"xml"];
+    NSString* path = [bundle pathForResource:@"accidentals" ofType:@"xml"];
     [self load:path];
     
     [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
@@ -89,7 +89,7 @@
 
 - (void)testAccidentals2 {
     NSBundle* bundle = [NSBundle bundleForClass:[self class]];
-    NSString* path = [bundle pathForResource:@"Accidentals2" ofType:@"xml"];
+    NSString* path = [bundle pathForResource:@"accidentals2" ofType:@"xml"];
     [self load:path];
     
     [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];

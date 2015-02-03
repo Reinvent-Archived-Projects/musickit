@@ -72,7 +72,9 @@ static NSString* const TEST_PREFIX = @"test";
         CGContextTranslateCTM(ctx, -layer.bounds.origin.x, -layer.bounds.origin.y);
         [layer renderInContext:ctx];
     });
-    completion(result);
+    
+    if (completion)
+        completion(result);
 }
 
 - (VMKImage*)loadTestImageForSelector:(SEL)selector {
@@ -142,6 +144,23 @@ static NSString* const TEST_PREFIX = @"test";
     if (scale != 1)
         return [NSString stringWithFormat:@"@%.0fx", scale];
     return @"";
+}
+
+- (void)overrideLayerBackgorunds:(CALayer *)layer dictionary:(NSDictionary *)dictionary {
+    if (!layer)
+        return;
+    
+    // Force render the base layer so the sublayers are created
+    if (!layer.superlayer)
+        [self renderLayer:layer completion:nil];
+
+    VMKColor* color = dictionary[layer.class];
+    if (color)
+        layer.backgroundColor = [color colorWithAlphaComponent:0.3].CGColor;
+    
+    for (CALayer *sublayer in layer.sublayers) {
+        [self overrideLayerBackgorunds:sublayer dictionary:dictionary];
+    }
 }
 
 @end

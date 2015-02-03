@@ -4,6 +4,7 @@
 #include <mxml/geometry/PageScoreGeometry.h>
 
 extern NSString* const VMKSystemReuseIdentifier;
+extern NSString* const VMKSystemCursorReuseIdentifier;
 
 typedef NS_ENUM(NSUInteger, VMKPageScoreSection) {
     VMKPageScoreSectionSystem,

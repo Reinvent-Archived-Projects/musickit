@@ -7,7 +7,7 @@
 using namespace mxml;
 
 NSString* const VMKSystemReuseIdentifier = @"System";
-NSString* const VMKCursorReuseIdentifier = @"Cursor";
+NSString* const VMKSystemCursorReuseIdentifier = @"Cursor";
 
 
 @implementation VMKPageScoreDataSource
@@ -63,7 +63,7 @@ NSString* const VMKCursorReuseIdentifier = @"Cursor";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForCursorAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:VMKCursorReuseIdentifier forIndexPath:indexPath];
+    UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:VMKSystemCursorReuseIdentifier forIndexPath:indexPath];
     
     VMKCursorView* view;
     if (cell.contentView.subviews.count == 0) {

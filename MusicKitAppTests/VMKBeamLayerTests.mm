@@ -24,7 +24,7 @@ using namespace mxml::dom;
     _chordViews = [[NSMutableArray alloc] init];
 
     self.attributes->setDivisions(presentOptional(1));
-    self.attributes->setClef(1, std::unique_ptr<Clef>{});
+    self.attributes->setClef(1, std::unique_ptr<Clef>{new Clef});
 }
 
 - (void)tearDown {

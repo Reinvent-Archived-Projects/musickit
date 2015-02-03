@@ -32,6 +32,8 @@ static const CGFloat kGapWidth = 10;
     NSMutableArray* _clefLayers;
     NSMutableArray* _timeLayers;
     NSMutableArray* _keyLayers;
+    
+    BOOL _updateGeometries;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -132,7 +134,7 @@ static const CGFloat kGapWidth = 10;
     _braceLayer.foregroundColor = self.foregroundColor.CGColor;
     [self.layer addSublayer:_braceLayer];
     
-    [self setOffset:0];
+    _updateGeometries = YES;
 }
 
 - (void)clear {
@@ -143,41 +145,48 @@ static const CGFloat kGapWidth = 10;
 
 - (void)addClefGeometry:(const mxml::ClefGeometry*)clef {
     _clefs.push_back(clef);
+    _updateGeometries = YES;
 }
 
 - (void)addTimeGeometry:(const mxml::TimeSignatureGeometry*)time {
     _times.push_back(time);
+    _updateGeometries = YES;
 }
 
 - (void)addKeyGeometry:(const mxml::KeyGeometry*)key {
     _keys.push_back(key);
+    _updateGeometries = YES;
 }
 
-// Select geometries that are behind the offset
-- (void)setOffset:(CGFloat)offset {
+- (void)updateGeometries {
+    if (!_updateGeometries)
+        return;
+    
     if (!_partGeometry)
         return;
-
+    
     const auto staves = _partGeometry->staves();
     
     const ClefGeometry* clefGeoms[staves];
     std::fill(clefGeoms, clefGeoms + staves, static_cast<const ClefGeometry*>(0));
     for (auto& geom : _clefs) {
-        if (clefGeoms[geom->staff() - 1] == 0 || geom->frame().max().x + geom->parentGeometry()->frame().min().x <= offset)
+        // Select geometries that are behind the offset
+        if (clefGeoms[geom->staff() - 1] == 0 || geom->frame().max().x + geom->parentGeometry()->frame().min().x <= _offset)
             clefGeoms[geom->staff() - 1] = geom;
     }
     
     const TimeSignatureGeometry* timeGeom = 0;
     for (auto it = _times.rbegin(); it != _times.rend(); ++it) {
         timeGeom = *it;
-        if (timeGeom->frame().max().x + timeGeom->parentGeometry()->frame().min().x <= offset)
+        if (timeGeom->frame().max().x + timeGeom->parentGeometry()->frame().min().x <= _offset)
             break;
     }
     
     const KeyGeometry* keyGeoms[staves];
     std::fill(keyGeoms, keyGeoms + staves, static_cast<const KeyGeometry*>(0));
     for (auto& geom : _keys) {
-        if (keyGeoms[geom->staff() - 1] == 0 || geom->frame().max().x + geom->parentGeometry()->frame().min().x <= offset)
+        // Select geometries that are behind the offset
+        if (keyGeoms[geom->staff() - 1] == 0 || geom->frame().max().x + geom->parentGeometry()->frame().min().x <= _offset)
             keyGeoms[geom->staff() - 1] = geom;
     }
     
@@ -193,8 +202,16 @@ static const CGFloat kGapWidth = 10;
         if (clefGeoms[staff - 1])
             keyLayer.clef = &clefGeoms[staff - 1]->clef();
     }
-
+    
     [self setNeedsLayout];
+    _updateGeometries = NO;
+}
+
+- (void)setOffset:(CGFloat)offset {
+    if (_offset != offset) {
+        _offset = offset;
+        _updateGeometries = YES;
+    }
 }
 
 - (CGSize)intrinsicContentSize {
@@ -234,6 +251,8 @@ static const CGFloat kGapWidth = 10;
 }
 
 - (void)layoutSubviews {
+    [self updateGeometries];
+    
     if (!_partGeometry)
         return;
     

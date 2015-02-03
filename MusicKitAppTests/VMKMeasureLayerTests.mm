@@ -69,8 +69,8 @@ using namespace mxml::dom;
 
 - (void)testWithTimeSignatures {
     auto attributes = self.attributes;
-    attributes->setClef(1, std::unique_ptr<Clef>{});
-    attributes->setClef(2, std::unique_ptr<Clef>{});
+    attributes->setClef(1, std::unique_ptr<Clef>{new Clef});
+    attributes->setClef(2, std::unique_ptr<Clef>{new Clef});
 
     auto time = self.builder->setTime(attributes);
     time->setBeats(3);

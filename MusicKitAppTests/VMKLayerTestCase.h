@@ -15,4 +15,6 @@ extern const CGFloat kDefaultAlphaTolerance;
 - (VMKImage*)loadTestImageForSelector:(SEL)selector;
 - (void)saveImage:(VMKImage*)data forSelector:(SEL)selector;
 
+- (void)overrideLayerBackgorunds:(CALayer *)layer dictionary:(NSDictionary *)dictionary;
+
 @end

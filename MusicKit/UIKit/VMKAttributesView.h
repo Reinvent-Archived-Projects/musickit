@@ -12,11 +12,11 @@
 
 @property(nonatomic) const mxml::PartGeometry* partGeometry;
 @property(nonatomic, strong) UIColor* foregroundColor;
+@property(nonatomic) CGFloat offset;
 
 - (void)clear;
 - (void)addClefGeometry:(const mxml::ClefGeometry*)clef;
 - (void)addTimeGeometry:(const mxml::TimeSignatureGeometry*)time;
 - (void)addKeyGeometry:(const mxml::KeyGeometry*)key;
-- (void)setOffset:(CGFloat)offset;
 
 @end

@@ -21,6 +21,7 @@
     _attributes = _builder->addAttributes(_measure);
     _attributes->setStaves(mxml::dom::presentOptional(1));
     _builder->setTrebleClef(_attributes);
+    _builder->setKey(_attributes);
 }
 
 - (void)tearDown {
