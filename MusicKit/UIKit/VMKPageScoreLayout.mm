@@ -11,6 +11,18 @@ static const CGFloat VMCursorWidth = 16;
 
 @implementation VMKPageScoreLayout
 
+- (instancetype)init {
+    self = [super init];
+    self.scale = 1;
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder*)decoder {
+    self = [super initWithCoder:decoder];
+    self.scale = 1;
+    return self;
+}
+
 - (void)setScoreGeometry:(const mxml::PageScoreGeometry*)scoreGeometry {
     _scoreGeometry = scoreGeometry;
     [self invalidateLayout];
@@ -21,6 +33,7 @@ static const CGFloat VMCursorWidth = 16;
     if (!_scoreGeometry)
         return attributesArray;
 
+    const auto transform = CGAffineTransformMakeScale(self.scale, self.scale);
     const auto systemCount = _scoreGeometry->systemGeometries().size();
     for (NSUInteger systemIndex = 0; systemIndex < systemCount; systemIndex += 1) {
         NSIndexPath* indexPath = [NSIndexPath indexPathForItem:systemIndex inSection:0];
@@ -31,7 +44,7 @@ static const CGFloat VMCursorWidth = 16;
             [attributesArray addObject:attributes];
     }
     
-    if (self.showCursor && CGRectContainsPoint(rect, self.cursorLocation)) {
+    if (self.showCursor && CGRectContainsPoint(rect, CGPointApplyAffineTransform(self.cursorLocation, transform))) {
         NSIndexPath* indexPath = [NSIndexPath indexPathForItem:0 inSection:1];
         [attributesArray addObject:[self layoutAttributesForCursorAtIndexPath:indexPath]];
     }
@@ -59,8 +72,9 @@ static const CGFloat VMCursorWidth = 16;
     if (_cursorSystemIndex >= systemGeometries.size())
         _cursorSystemIndex = systemGeometries.size() - 1;
     frame.size.height = systemGeometries.at(_cursorSystemIndex)->size().height;
-    
-    attributes.frame = frame;
+
+    const CGAffineTransform transform = CGAffineTransformMakeScale(self.scale, self.scale);
+    attributes.frame = CGRectApplyAffineTransform(frame, transform);
     attributes.alpha = self.showCursor ? 1 : 0;
     attributes.zIndex = 1;
 
@@ -70,9 +84,10 @@ static const CGFloat VMCursorWidth = 16;
 - (UICollectionViewLayoutAttributes *)layoutAttributesForGeometry:(const mxml::Geometry*)geometry atIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
 
+    const CGAffineTransform transform = CGAffineTransformMakeScale(self.scale, self.scale);
     CGRect frame = CGRectFromRect(_scoreGeometry->convertFromGeometry(geometry->frame(), geometry->parentGeometry()));
     frame = VMKRoundRect(frame);
-    attributes.frame = frame;
+    attributes.frame = CGRectApplyAffineTransform(frame, transform);
 
     return attributes;
 }
@@ -80,7 +95,10 @@ static const CGFloat VMCursorWidth = 16;
 - (CGSize)collectionViewContentSize {
     if (!_scoreGeometry)
         return CGSizeZero;
-    return CGSizeMake(_scoreGeometry->size().width, _scoreGeometry->size().height);
+
+    const CGSize size = CGSizeMake(_scoreGeometry->size().width, _scoreGeometry->size().height);
+    const CGAffineTransform transform = CGAffineTransformMakeScale(self.scale, self.scale);
+    return CGSizeApplyAffineTransform(size, transform);
 }
 
 @end

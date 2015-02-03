@@ -15,6 +15,8 @@ typedef NS_ENUM(NSUInteger, VMKPageScoreSection) {
 @interface VMKPageScoreDataSource : NSObject <UICollectionViewDataSource>
 
 @property(nonatomic) const mxml::PageScoreGeometry* scoreGeometry;
+@property(nonatomic) CGFloat scale;
+
 @property(nonatomic, strong) NSSet* bookmarks;
 @property(nonatomic, strong) UIColor* foregroundColor;
 @property(nonatomic, strong) UIColor* tintColor;

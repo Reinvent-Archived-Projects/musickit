@@ -8,6 +8,7 @@
 
 @property(nonatomic) const mxml::PageScoreGeometry* scoreGeometry;
 
+@property(nonatomic) CGFloat scale;
 @property(nonatomic) BOOL showCursor;
 @property(nonatomic) CGPoint cursorLocation;
 @property(nonatomic) NSUInteger cursorSystemIndex;

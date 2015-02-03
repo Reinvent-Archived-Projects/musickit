@@ -15,6 +15,7 @@ NSString* const VMKSystemCursorReuseIdentifier = @"Cursor";
 - (instancetype)init {
     self = [super init];
     self.foregroundColor = [UIColor blackColor];
+    self.scale = 1;
     return self;
 }
 
@@ -58,6 +59,7 @@ NSString* const VMKSystemCursorReuseIdentifier = @"Cursor";
     CGRect frame = systemView.frame;
     frame.origin = CGPointZero;
     systemView.frame = frame;
+    systemView.transform = CGAffineTransformMakeScale(self.scale, self.scale);
     
     return cell;
 }
@@ -74,6 +76,7 @@ NSString* const VMKSystemCursorReuseIdentifier = @"Cursor";
         view = (VMKCursorView*)[cell.contentView.subviews firstObject];
     }
     view.color = self.cursorColor;
+    view.transform = CGAffineTransformMakeScale(self.scale, self.scale);
     
     return cell;
 }
