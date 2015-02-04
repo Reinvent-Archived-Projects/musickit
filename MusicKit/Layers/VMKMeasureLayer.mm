@@ -191,9 +191,6 @@ const CGFloat VMKBarLineWidth = 1;
 }
 
 - (void)drawInContext:(CGContextRef)ctx {
-    CGContextSetFillColorWithColor(ctx, self.backgroundColor);
-    CGContextFillRect(ctx, self.bounds);
-
     CGContextSetFillColorWithColor(ctx, self.foregroundColor);
 
     auto& metrics = self.measureGeometry->metrics();

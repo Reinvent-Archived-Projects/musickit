@@ -85,9 +85,6 @@
 }
 
 - (void)drawInContext:(CGContextRef)ctx {
-    CGContextSetFillColorWithColor(ctx, self.backgroundColor);
-    CGContextFillRect(ctx, self.bounds);
-
     CGContextSetFillColorWithColor(ctx, self.foregroundColor);
 
     CGSize size = self.bounds.size;
