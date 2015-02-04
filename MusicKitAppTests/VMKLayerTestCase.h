@@ -5,15 +5,21 @@
 #import <XCTest/XCTest.h>
 
 extern const CGFloat kDefaultAlphaTolerance;
+extern const CGFloat kMaximumError;
 
+struct VMKRenderingErrors {
+    CGFloat maximumError;
+    CGFloat colorError;
+    CGFloat alphaError;
+    CGFloat rms;
+    CGFloat ratio;
+};
 
 @interface VMKLayerTestCase : XCTestCase
 
-- (void)testLayer:(CALayer*)view forSelector:(SEL)selector alphaTolerance:(CGFloat)alphaTolerance;
-- (void)renderLayer:(CALayer*)view completion:(void (^)(VMKImage* image))completion;
+- (void)calculateRenderingErrors:(CALayer*)layer forSelector:(SEL)selector testBlock:(void (^)(VMKRenderingErrors))testBlock;
 
-- (VMKImage*)loadTestImageForSelector:(SEL)selector;
-- (void)saveImage:(VMKImage*)data forSelector:(SEL)selector;
+- (void)testLayer:(CALayer*)view forSelector:(SEL)selector alphaTolerance:(CGFloat)alphaTolerance;
 
 - (void)overrideLayerBackgorunds:(CALayer *)layer dictionary:(NSDictionary *)dictionary;
 

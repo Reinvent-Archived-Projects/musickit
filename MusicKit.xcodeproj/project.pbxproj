@@ -66,6 +66,22 @@
 		001E81071A7FF6AA00784D9D /* PageScoreLayout-Attributes.png in Resources */ = {isa = PBXBuildFile; fileRef = 001E81051A7FF6AA00784D9D /* PageScoreLayout-Attributes.png */; };
 		001E81091A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001E81081A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png */; };
 		001E810A1A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001E81081A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png */; };
+		001EAAEA1A82B7850097AE0D /* PageScoreLayout-AttributesFail.png in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAE71A82B7850097AE0D /* PageScoreLayout-AttributesFail.png */; };
+		001EAAEB1A82B7850097AE0D /* PageScoreLayout-AttributesFail.png in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAE71A82B7850097AE0D /* PageScoreLayout-AttributesFail.png */; };
+		001EAAEC1A82B7850097AE0D /* PageScoreLayout-AttributesFail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAE81A82B7850097AE0D /* PageScoreLayout-AttributesFail@2x.png */; };
+		001EAAED1A82B7850097AE0D /* PageScoreLayout-AttributesFail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAE81A82B7850097AE0D /* PageScoreLayout-AttributesFail@2x.png */; };
+		001EAAEE1A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAE91A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png */; };
+		001EAAEF1A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAE91A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png */; };
+		001EAAF11A82CCED0097AE0D /* VMKSystemLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 001EAAF01A82CCED0097AE0D /* VMKSystemLayerTests.mm */; };
+		001EAAF21A82CCED0097AE0D /* VMKSystemLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 001EAAF01A82CCED0097AE0D /* VMKSystemLayerTests.mm */; };
+		001EAAF41A82CD4C0097AE0D /* system.xml in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAF31A82CD4C0097AE0D /* system.xml */; };
+		001EAAF51A82CD4C0097AE0D /* system.xml in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAF31A82CD4C0097AE0D /* system.xml */; };
+		001EAAF91A82D26D0097AE0D /* SystemLayer-System.png in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAF61A82D26D0097AE0D /* SystemLayer-System.png */; };
+		001EAAFA1A82D26D0097AE0D /* SystemLayer-System.png in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAF61A82D26D0097AE0D /* SystemLayer-System.png */; };
+		001EAAFB1A82D26D0097AE0D /* SystemLayer-System@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAF71A82D26D0097AE0D /* SystemLayer-System@2x.png */; };
+		001EAAFC1A82D26D0097AE0D /* SystemLayer-System@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAF71A82D26D0097AE0D /* SystemLayer-System@2x.png */; };
+		001EAAFD1A82D26D0097AE0D /* SystemLayer-System@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAF81A82D26D0097AE0D /* SystemLayer-System@3x.png */; };
+		001EAAFE1A82D26D0097AE0D /* SystemLayer-System@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001EAAF81A82D26D0097AE0D /* SystemLayer-System@3x.png */; };
 		0022AE0E1A70833700139992 /* CollisionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE061A70833700139992 /* CollisionHandler.cpp */; };
 		0022AE0F1A70833700139992 /* CollisionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE061A70833700139992 /* CollisionHandler.cpp */; };
 		0022AE101A70833700139992 /* CollisionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE061A70833700139992 /* CollisionHandler.cpp */; };
@@ -604,7 +620,6 @@
 		616C1E121A0D97700020EAA8 /* VMKClefLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */; };
 		616C1E131A0D97700020EAA8 /* VMKMeasureLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */; };
 		616C1E141A0D97700020EAA8 /* VMKBeamLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */; };
-		616C1E161A0D97700020EAA8 /* VMKTieLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */; };
 		616C1E171A0D97700020EAA8 /* VMKTimeSignatureLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */; };
 		616C1E181A0D97700020EAA8 /* VMKChordLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */; };
 		616C1E191A0D977E0020EAA8 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61402C591A082661003AE7A7 /* Symbols.xcassets */; };
@@ -772,7 +787,6 @@
 		61E530B01A78667200E5B2FF /* VMKScrollScoreDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61E530AC1A78667200E5B2FF /* VMKScrollScoreDataSource.mm */; };
 		61E530B11A78667200E5B2FF /* VMKScrollScoreDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E530AD1A78667200E5B2FF /* VMKScrollScoreDataSource.h */; };
 		61E530BF1A7ACBC500E5B2FF /* VMKKeyLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61E530BE1A7ACBC500E5B2FF /* VMKKeyLayerTests.mm */; };
-		61E530C01A7ACBC500E5B2FF /* VMKKeyLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61E530BE1A7ACBC500E5B2FF /* VMKKeyLayerTests.mm */; };
 		61E530EE1A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530C11A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png */; };
 		61E530EF1A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530C11A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png */; };
 		61E530F01A7ACF5400E5B2FF /* KeyLayer-GMajor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530C21A7ACF5400E5B2FF /* KeyLayer-GMajor@2x.png */; };
@@ -1069,6 +1083,14 @@
 		00094F0D1A6748710053C615 /* VMKWordsView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKWordsView.mm; sourceTree = "<group>"; };
 		001E81051A7FF6AA00784D9D /* PageScoreLayout-Attributes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PageScoreLayout-Attributes.png"; sourceTree = "<group>"; };
 		001E81081A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PageScoreLayout-Attributes@3x.png"; sourceTree = "<group>"; };
+		001EAAE71A82B7850097AE0D /* PageScoreLayout-AttributesFail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PageScoreLayout-AttributesFail.png"; sourceTree = "<group>"; };
+		001EAAE81A82B7850097AE0D /* PageScoreLayout-AttributesFail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PageScoreLayout-AttributesFail@2x.png"; sourceTree = "<group>"; };
+		001EAAE91A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PageScoreLayout-AttributesFail@3x.png"; sourceTree = "<group>"; };
+		001EAAF01A82CCED0097AE0D /* VMKSystemLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKSystemLayerTests.mm; sourceTree = "<group>"; };
+		001EAAF31A82CD4C0097AE0D /* system.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = system.xml; sourceTree = "<group>"; };
+		001EAAF61A82D26D0097AE0D /* SystemLayer-System.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-System.png"; sourceTree = "<group>"; };
+		001EAAF71A82D26D0097AE0D /* SystemLayer-System@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-System@2x.png"; sourceTree = "<group>"; };
+		001EAAF81A82D26D0097AE0D /* SystemLayer-System@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-System@3x.png"; sourceTree = "<group>"; };
 		0022AE061A70833700139992 /* CollisionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CollisionHandler.cpp; sourceTree = "<group>"; };
 		0022AE071A70833700139992 /* CollisionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionHandler.h; sourceTree = "<group>"; };
 		0022AE081A70833700139992 /* CollisionResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionResolver.h; sourceTree = "<group>"; };
@@ -1780,6 +1802,7 @@
 				61E530BE1A7ACBC500E5B2FF /* VMKKeyLayerTests.mm */,
 				0005C1051A7C3C4900B60619 /* VMKPageScoreLayoutTests.mm */,
 				610DC6181A08322800BEEBFD /* VMKScrollScoreLayoutTests.mm */,
+				001EAAF01A82CCED0097AE0D /* VMKSystemLayerTests.mm */,
 				610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */,
 				610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */,
 				610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */,
@@ -1803,6 +1826,7 @@
 				005DA5DA1A7FEEE0003B41AC /* accidentals2.xml */,
 				005DA5DF1A7FEF09003B41AC /* endings.xml */,
 				005DA5D61A7FEECE003B41AC /* slurs.xml */,
+				001EAAF31A82CD4C0097AE0D /* system.xml */,
 				0005C0FE1A7C381500B60619 /* system_attributes.xml */,
 				616C1C4A1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png */,
 				616C1C4B1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png */,
@@ -1923,6 +1947,9 @@
 				001E81051A7FF6AA00784D9D /* PageScoreLayout-Attributes.png */,
 				005DA5E21A7FEFD3003B41AC /* PageScoreLayout-Attributes@2x.png */,
 				001E81081A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png */,
+				001EAAE71A82B7850097AE0D /* PageScoreLayout-AttributesFail.png */,
+				001EAAE81A82B7850097AE0D /* PageScoreLayout-AttributesFail@2x.png */,
+				001EAAE91A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png */,
 				00A90B611A79907000D971B3 /* ScrollScoreLayout-Accidentals.png */,
 				00A90B621A79907000D971B3 /* ScrollScoreLayout-Accidentals@2x.png */,
 				00A90B631A79907000D971B3 /* ScrollScoreLayout-Accidentals@3x.png */,
@@ -1935,6 +1962,9 @@
 				616C1E211A1173300020EAA8 /* ScrollScoreLayout-Slurs.png */,
 				616C1E231A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png */,
 				616C1E2E1A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png */,
+				001EAAF61A82D26D0097AE0D /* SystemLayer-System.png */,
+				001EAAF71A82D26D0097AE0D /* SystemLayer-System@2x.png */,
+				001EAAF81A82D26D0097AE0D /* SystemLayer-System@3x.png */,
 				616C1C221A0D81550020EAA8 /* TieLayer-18Tie.png */,
 				616C1C231A0D81550020EAA8 /* TieLayer-18Tie@2x.png */,
 				616C1C7B1A0D81550020EAA8 /* TieLayer-18Tie@3x.png */,
@@ -2988,13 +3018,16 @@
 				61E5310E1A7ACF5400E5B2FF /* KeyLayer-EFlatMajor@2x.png in Resources */,
 				616C1D101A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png in Resources */,
 				616C1CE41A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png in Resources */,
+				001EAAEE1A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png in Resources */,
 				616C1D481A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png in Resources */,
 				61E5310A1A7ACF5400E5B2FF /* KeyLayer-EMajor.png in Resources */,
 				61E5313A1A7ACF5400E5B2FF /* KeyLayer-BFlatMajor.png in Resources */,
 				616C1CE21A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png in Resources */,
 				61E531121A7ACF5400E5B2FF /* KeyLayer-DMajor@3x.png in Resources */,
 				616C1C8C1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@2x.png in Resources */,
+				001EAAEA1A82B7850097AE0D /* PageScoreLayout-AttributesFail.png in Resources */,
 				61E531041A7ACF5400E5B2FF /* KeyLayer-FMajor.png in Resources */,
+				001EAAF41A82CD4C0097AE0D /* system.xml in Resources */,
 				00A90B691A79907000D971B3 /* ScrollScoreLayout-Accidentals@2x.png in Resources */,
 				61E5312C1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@2x.png in Resources */,
 				616C1D2E1A0D81550020EAA8 /* ChordLayer-Eighth@3x.png in Resources */,
@@ -3006,6 +3039,7 @@
 				616C1CC61A0D81550020EAA8 /* ChordLayer-128th.png in Resources */,
 				616C1D341A0D81550020EAA8 /* ChordLayer-Whole@3x.png in Resources */,
 				00A90B6B1A79907000D971B3 /* ScrollScoreLayout-Accidentals@3x.png in Resources */,
+				001EAAFB1A82D26D0097AE0D /* SystemLayer-System@2x.png in Resources */,
 				616C1D4E1A0D81550020EAA8 /* TieLayer-AngledDown@3x.png in Resources */,
 				616C1D441A0D81550020EAA8 /* TieLayer-18Tie@3x.png in Resources */,
 				616C1CA41A0D81550020EAA8 /* TieLayer-1000Tie@2x.png in Resources */,
@@ -3037,6 +3071,7 @@
 				616C1CD21A0D81550020EAA8 /* ChordLayer-Eighth.png in Resources */,
 				001E81061A7FF6AA00784D9D /* PageScoreLayout-Attributes.png in Resources */,
 				616C1CA21A0D81550020EAA8 /* TieLayer-1000Tie.png in Resources */,
+				001EAAFD1A82D26D0097AE0D /* SystemLayer-System@3x.png in Resources */,
 				616C1CD81A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png in Resources */,
 				005DA5E01A7FEF09003B41AC /* endings.xml in Resources */,
 				616C1C941A0D81550020EAA8 /* TieLayer-18Tie@2x.png in Resources */,
@@ -3044,6 +3079,7 @@
 				616C1CB21A0D81550020EAA8 /* TieLayer-AngledUpBelow.png in Resources */,
 				61E5312A1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@3x.png in Resources */,
 				61E531021A7ACF5400E5B2FF /* KeyLayer-FMajor@2x.png in Resources */,
+				001EAAF91A82D26D0097AE0D /* SystemLayer-System.png in Resources */,
 				616C1D261A0D81550020EAA8 /* ChordLayer-Accent@3x.png in Resources */,
 				616C1C9C1A0D81550020EAA8 /* TieLayer-50TieBelow@2x.png in Resources */,
 				616C1CB01A0D81550020EAA8 /* TieLayer-AngledUp@2x.png in Resources */,
@@ -3059,6 +3095,7 @@
 				616C1D121A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures.png in Resources */,
 				616C1CF81A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes@2x.png in Resources */,
 				616C1C921A0D81550020EAA8 /* TieLayer-18Tie.png in Resources */,
+				001EAAEC1A82B7850097AE0D /* PageScoreLayout-AttributesFail@2x.png in Resources */,
 				616C1D1C1A0D81550020EAA8 /* BeamLayer-FourBeams@3x.png in Resources */,
 				616C1C9E1A0D81550020EAA8 /* TieLayer-100Tie.png in Resources */,
 				616C1C8A1A0D81550020EAA8 /* ClefLayer-Treble@2x.png in Resources */,
@@ -3195,13 +3232,16 @@
 				616C1E011A0D97590020EAA8 /* TieLayer-AngledDownBelow.png in Resources */,
 				616C1DE41A0D97590020EAA8 /* MeasureLayer-WithClefs@2x.png in Resources */,
 				616C1E021A0D97590020EAA8 /* TieLayer-AngledDownBelow@2x.png in Resources */,
+				001EAAEF1A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png in Resources */,
 				61E5310B1A7ACF5400E5B2FF /* KeyLayer-EMajor.png in Resources */,
 				61E5313B1A7ACF5400E5B2FF /* KeyLayer-BFlatMajor.png in Resources */,
 				616C1DA31A0D97590020EAA8 /* BeamLayer-BackwardHook.png in Resources */,
 				61E531131A7ACF5400E5B2FF /* KeyLayer-DMajor@3x.png in Resources */,
 				616C1DB91A0D97590020EAA8 /* ChordLayer-Accent@2x.png in Resources */,
 				61E531051A7ACF5400E5B2FF /* KeyLayer-FMajor.png in Resources */,
+				001EAAEB1A82B7850097AE0D /* PageScoreLayout-AttributesFail.png in Resources */,
 				00A90B6A1A79907000D971B3 /* ScrollScoreLayout-Accidentals@2x.png in Resources */,
+				001EAAF51A82CD4C0097AE0D /* system.xml in Resources */,
 				61E5312D1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@2x.png in Resources */,
 				616C1DE31A0D97590020EAA8 /* MeasureLayer-WithClefs.png in Resources */,
 				616C1E0F1A0D97590020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png in Resources */,
@@ -3213,6 +3253,7 @@
 				616C1DBD1A0D97590020EAA8 /* ChordLayer-Accidental@3x.png in Resources */,
 				00A90B6C1A79907000D971B3 /* ScrollScoreLayout-Accidentals@3x.png in Resources */,
 				616C1DFE1A0D97590020EAA8 /* TieLayer-AngledDown.png in Resources */,
+				001EAAFC1A82D26D0097AE0D /* SystemLayer-System@2x.png in Resources */,
 				616C1DBB1A0D97590020EAA8 /* ChordLayer-Accidental.png in Resources */,
 				616C1DEC1A0D97590020EAA8 /* NoteLayer-Whole.png in Resources */,
 				61E531011A7ACF5400E5B2FF /* KeyLayer-FMajor@3x.png in Resources */,
@@ -3244,6 +3285,7 @@
 				616C1DC71A0D97590020EAA8 /* ChordLayer-EighthDown.png in Resources */,
 				001E81071A7FF6AA00784D9D /* PageScoreLayout-Attributes.png in Resources */,
 				616C1DB41A0D97590020EAA8 /* BeamLayer-TwoBeams@3x.png in Resources */,
+				001EAAFE1A82D26D0097AE0D /* SystemLayer-System@3x.png in Resources */,
 				616C1DAF1A0D97590020EAA8 /* BeamLayer-OneBeamThreeNotes.png in Resources */,
 				005DA5E11A7FEF09003B41AC /* endings.xml in Resources */,
 				61E5311B1A7ACF5400E5B2FF /* KeyLayer-DFlatMajor@2x.png in Resources */,
@@ -3251,6 +3293,7 @@
 				61E5312B1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@3x.png in Resources */,
 				61E531031A7ACF5400E5B2FF /* KeyLayer-FMajor@2x.png in Resources */,
 				616C1DBE1A0D97590020EAA8 /* ChordLayer-DisplaceSideways.png in Resources */,
+				001EAAFA1A82D26D0097AE0D /* SystemLayer-System.png in Resources */,
 				616C1E301A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png in Resources */,
 				616C1E071A0D97590020EAA8 /* TieLayer-AngledUpBelow.png in Resources */,
 				616C1E0C1A0D97590020EAA8 /* TimeSignatureLayer-CommonTime@3x.png in Resources */,
@@ -3266,6 +3309,7 @@
 				616C1E0B1A0D97590020EAA8 /* TimeSignatureLayer-CommonTime@2x.png in Resources */,
 				616C1DC51A0D97590020EAA8 /* ChordLayer-Eighth@2x.png in Resources */,
 				616C1DCA1A0D97590020EAA8 /* ChordLayer-Quarter.png in Resources */,
+				001EAAED1A82B7850097AE0D /* PageScoreLayout-AttributesFail@2x.png in Resources */,
 				616C1DF51A0D97590020EAA8 /* TieLayer-50TieBelow.png in Resources */,
 				616C1E081A0D97590020EAA8 /* TieLayer-AngledUpBelow@2x.png in Resources */,
 				616C1DBC1A0D97590020EAA8 /* ChordLayer-Accidental@2x.png in Resources */,
@@ -3386,6 +3430,7 @@
 				610DC66E1A08322800BEEBFD /* VMKChordLayerTests.mm in Sources */,
 				610DC66F1A08322800BEEBFD /* VMKLayerTestCase.mm in Sources */,
 				610DC66B1A08322800BEEBFD /* VMKScrollScoreLayoutTests.mm in Sources */,
+				001EAAF11A82CCED0097AE0D /* VMKSystemLayerTests.mm in Sources */,
 				610DC6691A08322800BEEBFD /* VMKMeasureLayerTests.mm in Sources */,
 				610DC6681A08322800BEEBFD /* VMKClefLayerTests.mm in Sources */,
 				61E530BF1A7ACBC500E5B2FF /* VMKKeyLayerTests.mm in Sources */,
@@ -3725,8 +3770,7 @@
 				616C1E121A0D97700020EAA8 /* VMKClefLayerTests.mm in Sources */,
 				616C1E171A0D97700020EAA8 /* VMKTimeSignatureLayerTests.mm in Sources */,
 				616C1E131A0D97700020EAA8 /* VMKMeasureLayerTests.mm in Sources */,
-				616C1E161A0D97700020EAA8 /* VMKTieLayerTests.mm in Sources */,
-				61E530C01A7ACBC500E5B2FF /* VMKKeyLayerTests.mm in Sources */,
+				001EAAF21A82CCED0097AE0D /* VMKSystemLayerTests.mm in Sources */,
 				616C1E101A0D97700020EAA8 /* VMKLayerTestCase.mm in Sources */,
 				000868A41A68447300BAA13D /* VMKImageLayerTests.mm in Sources */,
 				616C1E141A0D97700020EAA8 /* VMKBeamLayerTests.mm in Sources */,

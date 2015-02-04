@@ -34,7 +34,7 @@ using namespace mxml::dom;
     self.builder->setPitch(note3, Pitch::STEP_F, 3);
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score);
+    ScoreProperties properties(*score, ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometry geom(*chord, properties, metrics);
@@ -60,7 +60,7 @@ using namespace mxml::dom;
     self.builder->setPitch(note3, Pitch::STEP_F, 3);
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score);
+    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometry geom(*chord, properties, metrics);
@@ -85,7 +85,7 @@ using namespace mxml::dom;
     self.builder->setPitch(note3, Pitch::STEP_F, 3);
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score);
+    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometry geom(*chord, properties, metrics);
@@ -104,7 +104,7 @@ using namespace mxml::dom;
     self.builder->setPitch(note2, Pitch::STEP_G, 4);
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score);
+    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometry geom(*chord, properties, metrics);
@@ -123,7 +123,7 @@ using namespace mxml::dom;
     self.builder->setPitch(note, Pitch::STEP_G, 4);
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score);
+    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometry geom(*chord, properties, metrics);
@@ -146,7 +146,7 @@ using namespace mxml::dom;
     self.builder->setPitch(note2, Pitch::STEP_G, 4);
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score);
+    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometry geom(*chord, properties, metrics);
@@ -168,7 +168,7 @@ using namespace mxml::dom;
     note->setDot(std::move(placement));
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score);
+    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometry geom(*chord, properties, metrics);
@@ -186,7 +186,7 @@ using namespace mxml::dom;
     note->setAccidental(std::move(accidential));
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score);
+    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometry geom(*chord, properties, metrics);
@@ -207,7 +207,7 @@ using namespace mxml::dom;
     note->setNotations(std::move(notations));
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score);
+    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometry geom(*chord, properties, metrics);

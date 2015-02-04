@@ -5,10 +5,13 @@
 #import "VMKImageStore.h"
 
 const CGFloat kDefaultAlphaTolerance = 0.0005;
+
+const CGFloat kColorTolerance = 0.0f;
+const CGFloat kMaximumError = 0.2f;
+
 static NSString* const CLASS_PREFIX = @"VMK";
 static NSString* const CLASS_SUFFIX = @"Tests";
 static NSString* const TEST_PREFIX = @"test";
-
 
 @implementation VMKLayerTestCase
 
@@ -21,11 +24,13 @@ static NSString* const TEST_PREFIX = @"test";
     [VMKImageStore sharedInstance].foregroundColor = [VMKColor blackColor];
 }
 
-- (void)testLayer:(CALayer*)layer forSelector:(SEL)selector alphaTolerance:(CGFloat)alphaTolerance {
+- (void)calculateRenderingErrors:(CALayer*)layer forSelector:(SEL)selector testBlock:(void (^)(VMKRenderingErrors))testBlock {
+    NSString *imageName = [self imageNameForSelector:selector];
+
     BOOL __block timedOut = NO;
     XCTestExpectation* expectation = [self expectationWithDescription:@"renderView"];
 
-    VMKImage* expected = [self loadTestImageForSelector:selector];
+    VMKImage* expected = [self loadTestImageWithName:imageName];
     [self renderLayer:layer completion:^(VMKImage* rendered) {
         if (timedOut)
             return;
@@ -38,27 +43,36 @@ static NSString* const TEST_PREFIX = @"test";
         }
 
         AIComponents components = AIImageMeanAbsoluteErrorByComponent(rendered, expected);
-        CGFloat colorError = components.red + components.green + components.blue;
-        CGFloat alphaError = components.alpha;
 
-        if (colorError > 0 || alphaError > alphaTolerance) {
-            CGFloat rms = AIImageRootMeanSquareError(rendered, expected);
-            CGFloat ratio = AIImageDifferentPixelRatio(rendered, expected);
+        VMKRenderingErrors errors;
+        errors.maximumError = AIImageMaximumAbsoluteError(rendered, expected);;
+        errors.colorError = components.red + components.green + components.blue;
+        errors.alphaError = components.alpha;
+        errors.rms = AIImageRootMeanSquareError(rendered, expected);
+        errors.ratio = AIImageDifferentPixelRatio(rendered, expected);
+        testBlock(errors);
 
-            NSLog(@"Image %@:", [self imageNameForSelector:selector]);
-            NSLog(@"  Color MAE %f", colorError);
-            NSLog(@"  Alpha MAE %f", alphaError);
-            NSLog(@"  RMS %f", rms);
-            NSLog(@"  Pixel ratio %f", ratio);
-        }
-
-        XCTAssertEqual(colorError, 0, @"View colors should match test image exactly");
-        XCTAssertEqualWithAccuracy(alphaError, 0, alphaTolerance, @"View alpha values should match test image within the tolerance");
-        [self saveImage:rendered forSelector:selector];
+        [self saveImage:rendered name:imageName];
     }];
 
     [self waitForExpectationsWithTimeout:0.5 handler:^(NSError* error) {
         timedOut = YES;
+    }];
+}
+
+- (void)testLayer:(CALayer*)layer forSelector:(SEL)selector alphaTolerance:(CGFloat)alphaTolerance {
+    [self calculateRenderingErrors:layer forSelector:selector testBlock:^(VMKRenderingErrors errors) {
+        if (errors.maximumError > kMaximumError) {
+            NSString *imageName = [self imageNameForSelector:selector];
+            NSLog(@"Image %@:", imageName);
+            NSLog(@"  Maximum AE %f <= %f", errors.maximumError, kMaximumError);
+            NSLog(@"  Color Mean AE %f <= %f", errors.colorError, kColorTolerance);
+            NSLog(@"  Alpha Mean AE %f <= %f", errors.alphaError, alphaTolerance);
+            NSLog(@"  RMS %f", errors.rms);
+            NSLog(@"  Pixel ratio %f", errors.ratio);
+        }
+
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError, @"Layer absolute error should should be less than the tolerance");
     }];
 }
 
@@ -77,12 +91,12 @@ static NSString* const TEST_PREFIX = @"test";
         completion(result);
 }
 
-- (VMKImage*)loadTestImageForSelector:(SEL)selector {
-    return [self loadTestImage:[self imageNameForSelector:selector]];
+- (VMKImage*)loadTestImageWithName:(NSString *)name {
+    return [self loadTestImage:name];
 }
 
-- (void)saveImage:(VMKImage*)data forSelector:(SEL)selector {
-    [self saveImage:data withName:[self imageNameForSelector:selector]];
+- (void)saveImage:(VMKImage*)data name:(NSString *)name {
+    [self saveImage:data withName:name];
 }
 
 - (NSString*)imageNameForSelector:(SEL)selector {

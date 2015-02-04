@@ -36,8 +36,6 @@ using namespace mxml::dom;
     self.attributes->setClef(2, std::unique_ptr<Clef>{});
 
     auto score = self.builder->build();
-    mxml::ScoreProperties properties(*score);
-
     auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
     auto partGeometry = scoreGeometry->partGeometries().front();
     auto measureGeometry = partGeometry->measureGeometries().front();
@@ -57,8 +55,6 @@ using namespace mxml::dom;
     self.builder->setBassClef(attributes, 2);
 
     auto score = self.builder->build();
-    mxml::ScoreProperties properties(*score);
-
     auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
     auto partGeometry = scoreGeometry->partGeometries().front();
     auto measureGeometry = partGeometry->measureGeometries().front();
@@ -77,8 +73,6 @@ using namespace mxml::dom;
     time->setBeatType(4);
 
     auto score = self.builder->build();
-    mxml::ScoreProperties properties(*score);
-
     auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
     auto partGeometry = scoreGeometry->partGeometries().front();
     auto measureGeometry = partGeometry->measureGeometries().front();
@@ -95,8 +89,6 @@ using namespace mxml::dom;
     time->setBeatType(4);
 
     auto score = self.builder->build();
-    mxml::ScoreProperties properties(*score);
-
     auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
     auto partGeometry = scoreGeometry->partGeometries().front();
     auto measureGeometry = partGeometry->measureGeometries().front();

@@ -63,6 +63,7 @@ const CGFloat VMKBarLineWidth = 1;
     _numberLayer.font = CFSTR("Baskerville-SemiBold");
     _numberLayer.fontSize = 11;
     _numberLayer.string = @"1";
+    _numberLayer.hidden = YES;
 #if !TARGET_OS_IPHONE
     CATransform3D t = CATransform3DIdentity;
     t = CATransform3DTranslate(t, 0, -_numberLayer.preferredFrameSize.height, 0);
@@ -97,14 +98,17 @@ const CGFloat VMKBarLineWidth = 1;
 - (void)setGeometry:(const mxml::Geometry *)geometry {
     [super setGeometry:geometry];
 
-    if (geometry) {
-        const Measure& measure = self.measureGeometry->measure();
-        _numberLayer.string = [NSString stringWithUTF8String:measure.number().c_str()];
-    }
-
     [self clearElementViews];
-    if (geometry)
+    if (geometry) {
         [self createElementViews];
+        if (self.measureGeometry->showNumber()) {
+            const Measure& measure = self.measureGeometry->measure();
+            _numberLayer.string = [NSString stringWithUTF8String:measure.number().c_str()];
+            _numberLayer.position = CGPointMake(0, -2);
+            _numberLayer.bounds = {CGPointZero, _numberLayer.preferredFrameSize};
+            _numberLayer.hidden = NO;
+        }
+    }
 
     [self setNeedsLayout];
     [self setNeedsDisplay];
@@ -122,6 +126,8 @@ const CGFloat VMKBarLineWidth = 1;
         [array addObject:layer];
     }
     [_elementLayers removeAllObjects];
+
+    _numberLayer.hidden = YES;
 }
 
 - (void)createElementViews {
@@ -182,13 +188,6 @@ const CGFloat VMKBarLineWidth = 1;
     layer.foregroundColor = self.foregroundColor;
     layer.backgroundColor = self.backgroundColor;
     layer.hidden = NO;
-}
-
-- (void)layoutSublayers {
-    [super layoutSublayers];
-
-    _numberLayer.position = CGPointMake(0, -2);
-    _numberLayer.bounds = {CGPointZero, _numberLayer.preferredFrameSize};
 }
 
 - (void)drawInContext:(CGContextRef)ctx {

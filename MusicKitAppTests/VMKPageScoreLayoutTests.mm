@@ -64,12 +64,28 @@
     NSBundle* bundle = [NSBundle bundleForClass:[self class]];
     NSString* path = [bundle pathForResource:@"system_attributes" ofType:@"xml"];
     [self load:path];
-    
+
     [self overrideLayerBackgorunds:self.collectionView.layer dictionary:@{VMKClefLayer.class: [UIColor blueColor],
                                                                           VMKKeyLayer.class: [UIColor redColor],
                                                                           VMKTimeSignatureLayer.class: [UIColor greenColor]}];
-    
-    [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+
+    [self calculateRenderingErrors:self.collectionView.layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
+}
+
+- (void)testAttributesFail {
+    NSBundle* bundle = [NSBundle bundleForClass:[self class]];
+    NSString* path = [bundle pathForResource:@"system_attributes" ofType:@"xml"];
+    [self load:path];
+
+    [self overrideLayerBackgorunds:self.collectionView.layer dictionary:@{VMKClefLayer.class: [UIColor blueColor],
+                                                                          VMKKeyLayer.class: [UIColor redColor],
+                                                                          VMKTimeSignatureLayer.class: [UIColor greenColor]}];
+
+    [self calculateRenderingErrors:self.collectionView.layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertGreaterThan(errors.maximumError, kMaximumError);
+    }];
 }
 
 @end
