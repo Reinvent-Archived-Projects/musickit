@@ -4,9 +4,6 @@
 #import "VMKLayerTestCase.h"
 #import "VMKImageStore.h"
 
-const CGFloat kDefaultAlphaTolerance = 0.0005;
-
-const CGFloat kColorTolerance = 0.0f;
 const CGFloat kMaximumError = 0.2f;
 
 static NSString* const CLASS_PREFIX = @"VMK";
@@ -57,22 +54,6 @@ static NSString* const TEST_PREFIX = @"test";
 
     [self waitForExpectationsWithTimeout:0.5 handler:^(NSError* error) {
         timedOut = YES;
-    }];
-}
-
-- (void)testLayer:(CALayer*)layer forSelector:(SEL)selector alphaTolerance:(CGFloat)alphaTolerance {
-    [self calculateRenderingErrors:layer forSelector:selector testBlock:^(VMKRenderingErrors errors) {
-        if (errors.maximumError > kMaximumError) {
-            NSString *imageName = [self imageNameForSelector:selector];
-            NSLog(@"Image %@:", imageName);
-            NSLog(@"  Maximum AE %f <= %f", errors.maximumError, kMaximumError);
-            NSLog(@"  Color Mean AE %f <= %f", errors.colorError, kColorTolerance);
-            NSLog(@"  Alpha Mean AE %f <= %f", errors.alphaError, alphaTolerance);
-            NSLog(@"  RMS %f", errors.rms);
-            NSLog(@"  Pixel ratio %f", errors.ratio);
-        }
-
-        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError, @"Layer absolute error should should be less than the tolerance");
     }];
 }
 

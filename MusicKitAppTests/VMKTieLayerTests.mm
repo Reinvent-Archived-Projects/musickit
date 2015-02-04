@@ -9,9 +9,6 @@
 using namespace mxml;
 using namespace mxml::dom;
 
-static const CGFloat kTieAccuracy = 0.18;
-
-
 @interface VMKTieLayerTests : VMKAdHocScoreTestCase
 
 @end
@@ -31,65 +28,83 @@ static const CGFloat kTieAccuracy = 0.18;
 
 - (void)test18Tie {
     TieGeometry geom({0, 10}, {18, 10}, kPlacementAbove);
-    VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
+    VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)test50Tie {
     TieGeometry geom({0, 10}, {50, 10}, kPlacementAbove);
-    VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
+    VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)test50TieBelow {
     TieGeometry geom({0, 10}, {50, 10}, kPlacementBelow);
-    VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
+    VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testAngledDown {
     TieGeometry geom({0, 10}, {50, 30}, kPlacementAbove);
-    VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
+    VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testAngledDownBelow {
     TieGeometry geom({0, 10}, {50, 30}, kPlacementBelow);
-    VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
+    VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testAngledUp {
     TieGeometry geom({0, 30}, {50, 10}, kPlacementAbove);
-    VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
+    VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testAngledUpBelow {
     TieGeometry geom({0, 30}, {50, 10}, kPlacementBelow);
-    VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
+    VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)test100Tie {
     TieGeometry geom({0, 10}, {100, 10}, kPlacementAbove);
-    VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
+    VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)test1000Tie {
     TieGeometry geom({0, 10}, {1000, 10}, kPlacementAbove);
-    VMKTieLayer* view = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
+    VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
-    [self testLayer:view forSelector:_cmd alphaTolerance:kTieAccuracy];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 @end

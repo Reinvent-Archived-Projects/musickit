@@ -44,7 +44,9 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testEighthDown {
@@ -70,7 +72,9 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)test128th {
@@ -95,7 +99,9 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= 3*mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:0.004];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testWhole {
@@ -114,7 +120,9 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height == mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testQuarter {
@@ -133,7 +141,9 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testDisplaceSideways {
@@ -156,7 +166,9 @@ using namespace mxml::dom;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height >= mxml::Metrics::kStaffLineSpacing, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testDot {
@@ -174,7 +186,9 @@ using namespace mxml::dom;
     mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:0.003];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testAccidental {
@@ -192,7 +206,9 @@ using namespace mxml::dom;
     mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testAccent {
@@ -213,7 +229,9 @@ using namespace mxml::dom;
     mxml::ChordGeometry geom(*chord, properties, metrics);
     VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 @end

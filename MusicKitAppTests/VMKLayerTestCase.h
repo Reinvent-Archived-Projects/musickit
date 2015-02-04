@@ -4,7 +4,6 @@
 #import "VMKImage.h"
 #import <XCTest/XCTest.h>
 
-extern const CGFloat kDefaultAlphaTolerance;
 extern const CGFloat kMaximumError;
 
 struct VMKRenderingErrors {
@@ -17,10 +16,7 @@ struct VMKRenderingErrors {
 
 @interface VMKLayerTestCase : XCTestCase
 
-- (void)calculateRenderingErrors:(CALayer*)layer forSelector:(SEL)selector testBlock:(void (^)(VMKRenderingErrors))testBlock;
-
-- (void)testLayer:(CALayer*)view forSelector:(SEL)selector alphaTolerance:(CGFloat)alphaTolerance;
-
+- (void)calculateRenderingErrors:(CALayer *)layer forSelector:(SEL)selector testBlock:(void (^)(VMKRenderingErrors))testBlock;
 - (void)overrideLayerBackgorunds:(CALayer *)layer dictionary:(NSDictionary *)dictionary;
 
 @end

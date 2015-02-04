@@ -6,9 +6,6 @@
 #include <mxml/dom/Clef.h>
 #include <mxml/dom/Key.h>
 
-// There is a placement inconsistency between iOS and MacOS so we need a larger tolerance
-static const CGFloat kKeyAlphaTolerance = 0.018;
-
 
 @interface VMKKeyLayerTests : VMKAdHocScoreTestCase
 @end
@@ -23,7 +20,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
 
     mxml::KeyGeometry geometry(key, *clef);
     VMKKeyLayer* layer = [[VMKKeyLayer alloc] initWithKeyGeometry:&geometry];
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testGMajor {
@@ -38,7 +37,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testDMajor {
@@ -53,7 +54,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testAMajor {
@@ -68,7 +71,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testEMajor {
@@ -83,7 +88,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testBMajor {
@@ -98,7 +105,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testFSharpMajor {
@@ -113,7 +122,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testCSharpMajor {
@@ -128,7 +139,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testFMajor {
@@ -143,7 +156,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testBFlatMajor {
@@ -158,7 +173,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testEFlatMajor {
@@ -173,7 +190,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testAFlatMajor {
@@ -188,8 +207,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
-}
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];}
 
 - (void)testDFlatMajor {
     auto clef = mxml::dom::Clef::trebleClef();
@@ -203,7 +223,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testGFlatMajor {
@@ -218,7 +240,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testCFlatMajor {
@@ -233,7 +257,9 @@ static const CGFloat kKeyAlphaTolerance = 0.018;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
     XCTAssertTrue(size.height > 0, @"Height should be greater than zero");
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kKeyAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 @end

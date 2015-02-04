@@ -68,7 +68,9 @@
     NSString* path = [bundle pathForResource:@"slurs" ofType:@"xml"];
     [self load:path];
 
-    [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self calculateRenderingErrors:self.collectionView.layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testEndings {
@@ -76,23 +78,29 @@
     NSString* path = [bundle pathForResource:@"endings" ofType:@"xml"];
     [self load:path];
 
-    [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self calculateRenderingErrors:self.collectionView.layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testAccidentals {
     NSBundle* bundle = [NSBundle bundleForClass:[self class]];
     NSString* path = [bundle pathForResource:@"accidentals" ofType:@"xml"];
     [self load:path];
-    
-    [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+
+    [self calculateRenderingErrors:self.collectionView.layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testAccidentals2 {
     NSBundle* bundle = [NSBundle bundleForClass:[self class]];
     NSString* path = [bundle pathForResource:@"accidentals2" ofType:@"xml"];
     [self load:path];
-    
-    [self testLayer:self.collectionView.layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+
+    [self calculateRenderingErrors:self.collectionView.layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 @end

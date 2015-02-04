@@ -22,7 +22,9 @@
 
     VMKWordsLayer* layer = [[VMKWordsLayer alloc] initWithWordsGeometry:&geom];
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 - (void)testDyanmics {
@@ -35,7 +37,9 @@
 
     VMKWordsLayer* layer = [[VMKWordsLayer alloc] initWithWordsGeometry:&geom];
 
-    [self testLayer:layer forSelector:_cmd alphaTolerance:kDefaultAlphaTolerance];
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
 }
 
 @end
