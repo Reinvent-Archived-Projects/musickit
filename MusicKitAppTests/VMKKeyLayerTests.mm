@@ -13,18 +13,6 @@
 
 @implementation VMKKeyLayerTests
 
-- (void)testCMajor {
-    auto clef = mxml::dom::Clef::trebleClef();
-    auto key = mxml::dom::Key{};
-    key.setFifths(0);
-
-    mxml::KeyGeometry geometry(key, *clef);
-    VMKKeyLayer* layer = [[VMKKeyLayer alloc] initWithKeyGeometry:&geometry];
-    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
-        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
-    }];
-}
-
 - (void)testGMajor {
     auto clef = mxml::dom::Clef::trebleClef();
     auto key = mxml::dom::Key{};

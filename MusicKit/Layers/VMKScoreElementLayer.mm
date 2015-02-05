@@ -42,10 +42,6 @@
     return nil;
 }
 
-- (void)setBackgroundColor:(CGColorRef)backgroundColor {
-    [super setBackgroundColor:backgroundColor];
-}
-
 - (void)setForegroundColor:(CGColorRef)foregroundColor {
     if (_foregroundColor == foregroundColor)
         return;

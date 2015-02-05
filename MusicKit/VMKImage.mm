@@ -8,6 +8,9 @@
 CG_EXTERN VMKImage* VMKRenderImage(CGSize size, void (^block)(CGContextRef))   {
     UIGraphicsBeginImageContextWithOptions(size, NO, 0.f);
     CGContextRef context = UIGraphicsGetCurrentContext();
+    if (!context)
+        return nil;
+
     block(context);
 
     VMKImage* result = UIGraphicsGetImageFromCurrentImageContext();

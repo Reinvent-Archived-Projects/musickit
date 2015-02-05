@@ -35,6 +35,7 @@ static NSString* const TEST_PREFIX = @"test";
         [expectation fulfill];
 
         if (rendered.size.width != expected.size.width || rendered.size.height != expected.size.height) {
+            [self saveImage:rendered name:imageName];
             XCTFail(@"View should match size of reference image");
             return;
         }

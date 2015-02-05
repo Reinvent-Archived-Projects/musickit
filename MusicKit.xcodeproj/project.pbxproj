@@ -232,6 +232,7 @@
 		610DCF5F1A09A08E00BEEBFD /* VMKScoreElementLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DCF5D1A09A08E00BEEBFD /* VMKScoreElementLayer.mm */; };
 		610DCF631A09ACED00BEEBFD /* VMKAccidentalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF611A09ACED00BEEBFD /* VMKAccidentalLayer.h */; };
 		610DCF641A09ACED00BEEBFD /* VMKAccidentalLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DCF621A09ACED00BEEBFD /* VMKAccidentalLayer.mm */; };
+		61149B5C1A83043800EB0C0F /* VMKKeyLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61E530BE1A7ACBC500E5B2FF /* VMKKeyLayerTests.mm */; };
 		61239A671A64B4F000B3F0A3 /* ScoreProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 61239A651A64B4F000B3F0A3 /* ScoreProperties.h */; };
 		61239A681A64B4F000B3F0A3 /* ScoreProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 61239A651A64B4F000B3F0A3 /* ScoreProperties.h */; };
 		61239A691A64B4F000B3F0A3 /* ScoreProperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61239A661A64B4F000B3F0A3 /* ScoreProperties.cpp */; };
@@ -841,12 +842,6 @@
 		61E531211A7ACF5400E5B2FF /* KeyLayer-CSharpMajor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530DA1A7ACF5400E5B2FF /* KeyLayer-CSharpMajor@2x.png */; };
 		61E531221A7ACF5400E5B2FF /* KeyLayer-CSharpMajor.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530DB1A7ACF5400E5B2FF /* KeyLayer-CSharpMajor.png */; };
 		61E531231A7ACF5400E5B2FF /* KeyLayer-CSharpMajor.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530DB1A7ACF5400E5B2FF /* KeyLayer-CSharpMajor.png */; };
-		61E531241A7ACF5400E5B2FF /* KeyLayer-CMajor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530DC1A7ACF5400E5B2FF /* KeyLayer-CMajor@3x.png */; };
-		61E531251A7ACF5400E5B2FF /* KeyLayer-CMajor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530DC1A7ACF5400E5B2FF /* KeyLayer-CMajor@3x.png */; };
-		61E531261A7ACF5400E5B2FF /* KeyLayer-CMajor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530DD1A7ACF5400E5B2FF /* KeyLayer-CMajor@2x.png */; };
-		61E531271A7ACF5400E5B2FF /* KeyLayer-CMajor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530DD1A7ACF5400E5B2FF /* KeyLayer-CMajor@2x.png */; };
-		61E531281A7ACF5400E5B2FF /* KeyLayer-CMajor.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530DE1A7ACF5400E5B2FF /* KeyLayer-CMajor.png */; };
-		61E531291A7ACF5400E5B2FF /* KeyLayer-CMajor.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530DE1A7ACF5400E5B2FF /* KeyLayer-CMajor.png */; };
 		61E5312A1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530DF1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@3x.png */; };
 		61E5312B1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530DF1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@3x.png */; };
 		61E5312C1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530E01A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@2x.png */; };
@@ -1602,9 +1597,6 @@
 		61E530D91A7ACF5400E5B2FF /* KeyLayer-CSharpMajor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyLayer-CSharpMajor@3x.png"; sourceTree = "<group>"; };
 		61E530DA1A7ACF5400E5B2FF /* KeyLayer-CSharpMajor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyLayer-CSharpMajor@2x.png"; sourceTree = "<group>"; };
 		61E530DB1A7ACF5400E5B2FF /* KeyLayer-CSharpMajor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyLayer-CSharpMajor.png"; sourceTree = "<group>"; };
-		61E530DC1A7ACF5400E5B2FF /* KeyLayer-CMajor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyLayer-CMajor@3x.png"; sourceTree = "<group>"; };
-		61E530DD1A7ACF5400E5B2FF /* KeyLayer-CMajor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyLayer-CMajor@2x.png"; sourceTree = "<group>"; };
-		61E530DE1A7ACF5400E5B2FF /* KeyLayer-CMajor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyLayer-CMajor.png"; sourceTree = "<group>"; };
 		61E530DF1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyLayer-CFlatMajor@3x.png"; sourceTree = "<group>"; };
 		61E530E01A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyLayer-CFlatMajor@2x.png"; sourceTree = "<group>"; };
 		61E530E11A7ACF5400E5B2FF /* KeyLayer-CFlatMajor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyLayer-CFlatMajor.png"; sourceTree = "<group>"; };
@@ -1900,9 +1892,6 @@
 				61E530E11A7ACF5400E5B2FF /* KeyLayer-CFlatMajor.png */,
 				61E530E01A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@2x.png */,
 				61E530DF1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@3x.png */,
-				61E530DE1A7ACF5400E5B2FF /* KeyLayer-CMajor.png */,
-				61E530DD1A7ACF5400E5B2FF /* KeyLayer-CMajor@2x.png */,
-				61E530DC1A7ACF5400E5B2FF /* KeyLayer-CMajor@3x.png */,
 				61E530DB1A7ACF5400E5B2FF /* KeyLayer-CSharpMajor.png */,
 				61E530DA1A7ACF5400E5B2FF /* KeyLayer-CSharpMajor@2x.png */,
 				61E530D91A7ACF5400E5B2FF /* KeyLayer-CSharpMajor@3x.png */,
@@ -3034,7 +3023,6 @@
 				610DC67C1A08330700BEEBFD /* Symbols.xcassets in Resources */,
 				616C1D0E1A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png in Resources */,
 				616C1D061A0D81550020EAA8 /* MeasureLayer-Empty.png in Resources */,
-				61E531241A7ACF5400E5B2FF /* KeyLayer-CMajor@3x.png in Resources */,
 				61E530F61A7ACF5400E5B2FF /* KeyLayer-GFlatMajor@2x.png in Resources */,
 				616C1CC61A0D81550020EAA8 /* ChordLayer-128th.png in Resources */,
 				616C1D341A0D81550020EAA8 /* ChordLayer-Whole@3x.png in Resources */,
@@ -3085,7 +3073,6 @@
 				616C1CB01A0D81550020EAA8 /* TieLayer-AngledUp@2x.png in Resources */,
 				616C1E2F1A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png in Resources */,
 				61E531141A7ACF5400E5B2FF /* KeyLayer-DMajor@2x.png in Resources */,
-				61E531281A7ACF5400E5B2FF /* KeyLayer-CMajor.png in Resources */,
 				616C1CFA1A0D81550020EAA8 /* BeamLayer-TwoBeams.png in Resources */,
 				616C1C881A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png in Resources */,
 				61E531441A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@2x.png in Resources */,
@@ -3142,7 +3129,6 @@
 				61E531081A7ACF5400E5B2FF /* KeyLayer-EMajor@2x.png in Resources */,
 				616C1C861A0D81550020EAA8 /* ClefLayer-Treble.png in Resources */,
 				000868811A683B5300BAA13D /* WordsLayer-Dyanmics@2x.png in Resources */,
-				61E531261A7ACF5400E5B2FF /* KeyLayer-CMajor@2x.png in Resources */,
 				616C1CEE1A0D81550020EAA8 /* BeamLayer-FourBeams.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3247,7 +3233,6 @@
 				616C1E0F1A0D97590020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png in Resources */,
 				616C1DB11A0D97590020EAA8 /* BeamLayer-OneBeamThreeNotes@3x.png in Resources */,
 				616C1DCD1A0D97590020EAA8 /* ChordLayer-Whole.png in Resources */,
-				61E531251A7ACF5400E5B2FF /* KeyLayer-CMajor@3x.png in Resources */,
 				61E530F71A7ACF5400E5B2FF /* KeyLayer-GFlatMajor@2x.png in Resources */,
 				616C1DA01A0D97590020EAA8 /* BeamLayer-AccidentalInBeamedSet.png in Resources */,
 				616C1DBD1A0D97590020EAA8 /* ChordLayer-Accidental@3x.png in Resources */,
@@ -3298,7 +3283,6 @@
 				616C1E071A0D97590020EAA8 /* TieLayer-AngledUpBelow.png in Resources */,
 				616C1E0C1A0D97590020EAA8 /* TimeSignatureLayer-CommonTime@3x.png in Resources */,
 				61E531151A7ACF5400E5B2FF /* KeyLayer-DMajor@2x.png in Resources */,
-				61E531291A7ACF5400E5B2FF /* KeyLayer-CMajor.png in Resources */,
 				616C1DF11A0D97590020EAA8 /* TieLayer-18Tie@3x.png in Resources */,
 				616C1DC81A0D97590020EAA8 /* ChordLayer-EighthDown@2x.png in Resources */,
 				61E531451A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@2x.png in Resources */,
@@ -3356,7 +3340,6 @@
 				61E531091A7ACF5400E5B2FF /* KeyLayer-EMajor@2x.png in Resources */,
 				616C1DBA1A0D97590020EAA8 /* ChordLayer-Accent@3x.png in Resources */,
 				000868821A683B5300BAA13D /* WordsLayer-Dyanmics@2x.png in Resources */,
-				61E531271A7ACF5400E5B2FF /* KeyLayer-CMajor@2x.png in Resources */,
 				616C1DC01A0D97590020EAA8 /* ChordLayer-DisplaceSideways@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3769,6 +3752,7 @@
 			files = (
 				616C1E121A0D97700020EAA8 /* VMKClefLayerTests.mm in Sources */,
 				616C1E171A0D97700020EAA8 /* VMKTimeSignatureLayerTests.mm in Sources */,
+				61149B5C1A83043800EB0C0F /* VMKKeyLayerTests.mm in Sources */,
 				616C1E131A0D97700020EAA8 /* VMKMeasureLayerTests.mm in Sources */,
 				001EAAF21A82CCED0097AE0D /* VMKSystemLayerTests.mm in Sources */,
 				616C1E101A0D97700020EAA8 /* VMKLayerTestCase.mm in Sources */,

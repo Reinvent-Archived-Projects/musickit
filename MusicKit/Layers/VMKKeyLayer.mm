@@ -2,6 +2,7 @@
 
 #import "VMKKeyLayer.h"
 #import "VMKImageStore.h"
+#import "VMKGeometry.h"
 
 #include <mxml/geometry/MeasureGeometry.h>
 #include <mxml/geometry/PartGeometry.h>
@@ -32,7 +33,6 @@
         _clef = &self.keyGeometry->clef();
         assert(_clef);
     }
-    
 
     if (changed)
         [self setNeedsDisplay];
@@ -70,7 +70,7 @@
     imageRect.size = image.size;
     for (int fifth = 1; fifth <= std::abs(key.fifths()); fifth += 1) {
         imageRect.origin.y = originY + self.keyGeometry->keyStaffY(key.fifths() > 0 ? fifth : -fifth, *_clef) - imageRect.size.height/2;
-        [image drawInRect:imageRect];
+        [image drawInRect:VMKRoundRect(imageRect)];
         imageRect.origin.x += imageRect.size.width + mxml::KeyGeometry::kSpacing;
     }
 }
