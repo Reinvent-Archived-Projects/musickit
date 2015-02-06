@@ -8,6 +8,7 @@ using namespace mxml;
 
 NSString* const VMKSystemReuseIdentifier = @"System";
 NSString* const VMKSystemCursorReuseIdentifier = @"Cursor";
+NSString* const VMKPageHeaderReuseIdentifier = @"Header";
 
 
 @implementation VMKPageScoreDataSource
@@ -79,6 +80,11 @@ NSString* const VMKSystemCursorReuseIdentifier = @"Cursor";
     view.transform = CGAffineTransformMakeScale(self.scale, self.scale);
     
     return cell;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    UICollectionReusableView* view = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:VMKPageHeaderReuseIdentifier forIndexPath:indexPath];
+    return view;
 }
 
 @end

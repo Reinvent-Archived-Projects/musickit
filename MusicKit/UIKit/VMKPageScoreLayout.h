@@ -10,6 +10,7 @@
 
 @property(nonatomic) CGFloat scale;
 @property(nonatomic) BOOL showCursor;
+@property(nonatomic) CGFloat headerHeight;
 @property(nonatomic) CGPoint cursorLocation;
 @property(nonatomic) NSUInteger cursorSystemIndex;
 

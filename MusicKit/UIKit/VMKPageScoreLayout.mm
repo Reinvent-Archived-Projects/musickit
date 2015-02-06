@@ -30,6 +30,10 @@ static const CGFloat VMCursorWidth = 16;
 
 - (NSArray*)layoutAttributesForElementsInRect:(CGRect)rect {
     NSMutableArray* attributesArray = [NSMutableArray array];
+    if (rect.origin.y < self.headerHeight) {
+        [attributesArray addObject:[self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]]];
+    }
+
     if (!_scoreGeometry)
         return attributesArray;
 
@@ -61,8 +65,6 @@ static const CGFloat VMCursorWidth = 16;
 }
 
 - (UICollectionViewLayoutAttributes*)layoutAttributesForCursorAtIndexPath:(NSIndexPath*)indexPath {
-    UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-    
     CGRect frame;
     frame.origin.x = self.cursorLocation.x - VMCursorWidth/2;
     frame.origin.y = self.cursorLocation.y;
@@ -74,7 +76,11 @@ static const CGFloat VMCursorWidth = 16;
     frame.size.height = systemGeometries.at(_cursorSystemIndex)->size().height;
 
     const CGAffineTransform transform = CGAffineTransformMakeScale(self.scale, self.scale);
-    attributes.frame = CGRectApplyAffineTransform(frame, transform);
+    frame = CGRectApplyAffineTransform(frame, transform);
+    frame.origin.y += self.headerHeight;
+
+    UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+    attributes.frame = frame;
     attributes.alpha = self.showCursor ? 1 : 0;
     attributes.zIndex = 1;
 
@@ -82,13 +88,23 @@ static const CGFloat VMCursorWidth = 16;
 }
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForGeometry:(const mxml::Geometry*)geometry atIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-
     const CGAffineTransform transform = CGAffineTransformMakeScale(self.scale, self.scale);
     CGRect frame = CGRectFromRect(_scoreGeometry->convertFromGeometry(geometry->frame(), geometry->parentGeometry()));
     frame = VMKRoundRect(frame);
-    attributes.frame = CGRectApplyAffineTransform(frame, transform);
+    frame = CGRectApplyAffineTransform(frame, transform);
+    frame.origin.y += self.headerHeight;
 
+    UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+    attributes.frame = frame;
+    return attributes;
+}
+
+- (UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    if (![kind isEqualToString:UICollectionElementKindSectionHeader])
+        return nil;
+    
+    UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:kind withIndexPath:indexPath];
+    attributes.frame = CGRectMake(0, 0, _scoreGeometry->size().width, self.headerHeight);
     return attributes;
 }
 

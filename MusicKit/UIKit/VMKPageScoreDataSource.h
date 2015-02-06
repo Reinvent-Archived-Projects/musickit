@@ -5,6 +5,7 @@
 
 extern NSString* const VMKSystemReuseIdentifier;
 extern NSString* const VMKSystemCursorReuseIdentifier;
+extern NSString* const VMKPageHeaderReuseIdentifier;
 
 typedef NS_ENUM(NSUInteger, VMKPageScoreSection) {
     VMKPageScoreSectionSystem,
