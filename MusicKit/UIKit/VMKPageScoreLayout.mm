@@ -29,8 +29,14 @@ static const CGFloat kBottomPadding = 40;
     [self invalidateLayout];
 }
 
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
+    return YES;
+}
+
 - (NSArray*)layoutAttributesForElementsInRect:(CGRect)rect {
     NSMutableArray* attributesArray = [NSMutableArray array];
+
+    // Header
     if (rect.origin.y < self.headerHeight) {
         [attributesArray addObject:[self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]]];
     }
@@ -38,7 +44,7 @@ static const CGFloat kBottomPadding = 40;
     if (!_scoreGeometry)
         return attributesArray;
 
-    const auto transform = CGAffineTransformMakeScale(self.scale, self.scale);
+    // Systems
     const auto systemCount = _scoreGeometry->systemGeometries().size();
     for (NSUInteger systemIndex = 0; systemIndex < systemCount; systemIndex += 1) {
         NSIndexPath* indexPath = [NSIndexPath indexPathForItem:systemIndex inSection:0];
@@ -48,10 +54,13 @@ static const CGFloat kBottomPadding = 40;
         if (CGRectIntersectsRect(rect, attributes.frame))
             [attributesArray addObject:attributes];
     }
-    
-    if (self.showCursor && CGRectContainsPoint(rect, CGPointApplyAffineTransform(self.cursorLocation, transform))) {
+
+    // Cursors
+    if (self.cursorStyle == VMKCursorStyleNote) {
         NSIndexPath* indexPath = [NSIndexPath indexPathForItem:0 inSection:1];
         [attributesArray addObject:[self layoutAttributesForCursorAtIndexPath:indexPath]];
+    } else if (self.cursorStyle == VMKCursorStyleMeasure) {
+        [attributesArray addObjectsFromArray:[self layoutAttributesForMeasureCursors]];
     }
 
     return attributesArray;
@@ -66,9 +75,11 @@ static const CGFloat kBottomPadding = 40;
 }
 
 - (UICollectionViewLayoutAttributes*)layoutAttributesForCursorAtIndexPath:(NSIndexPath*)indexPath {
+    auto cursorLocation = [self cursorNoteLocation];
+
     CGRect frame;
-    frame.origin.x = self.cursorLocation.x - kCursorWidth/2;
-    frame.origin.y = self.cursorLocation.y;
+    frame.origin.x = cursorLocation.x - kCursorWidth/2;
+    frame.origin.y = cursorLocation.y;
     frame.size.width = kCursorWidth;
 
     auto& systemGeometries = _scoreGeometry->systemGeometries();
@@ -82,10 +93,53 @@ static const CGFloat kBottomPadding = 40;
 
     UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     attributes.frame = frame;
-    attributes.alpha = self.showCursor ? 1 : 0;
+    attributes.alpha = 1;
     attributes.zIndex = 1;
 
     return attributes;
+}
+
+- (NSArray*)layoutAttributesForMeasureCursors {
+    NSMutableArray* attributesArray = [NSMutableArray array];
+    if (!self.cursorPosition.isValid())
+        return nullptr;
+
+    const auto& scoreProperties = _scoreGeometry->scoreProperties();
+    const auto& event = *self.cursorPosition;
+    const auto measureIndex = event.measureIndex();
+    const auto systemIndex = scoreProperties.systemIndex(measureIndex);
+    const auto range = scoreProperties.measureRange(systemIndex);
+    const auto systemGeometry = _scoreGeometry->systemGeometries()[systemIndex];
+
+    NSUInteger item = 0;
+    for (std::size_t partIndex = 0; partIndex < scoreProperties.partCount(); partIndex += 1) {
+        const auto staves = scoreProperties.staves(partIndex);
+
+        auto partGeometry = systemGeometry->partGeometries()[partIndex];
+        auto measureGeometry = partGeometry->measureGeometries()[measureIndex - range.first];
+
+        for (int staff = 1; staff <= staves; staff += 1) {
+            CGRect frame = CGRectFromRect(partGeometry->convertToGeometry(measureGeometry->frame(), _scoreGeometry));
+            frame.origin.y += mxml::MeasureGeometry::kVerticalPadding + partGeometry->staffOrigin(staff);
+            frame.size.height = Metrics::staffHeight();
+
+            const CGAffineTransform transform = CGAffineTransformMakeScale(self.scale, self.scale);
+            frame = CGRectApplyAffineTransform(frame, transform);
+            frame.origin.y += self.headerHeight;
+
+            NSIndexPath* indexPath = [NSIndexPath indexPathForItem:item inSection:1];
+            item += 1;
+
+            UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+            attributes.frame = frame;
+            attributes.alpha = 1;
+            attributes.zIndex = -1;
+            
+            [attributesArray addObject:attributes];
+        }
+    }
+
+    return attributesArray;
 }
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForGeometry:(const mxml::Geometry*)geometry atIndexPath:(NSIndexPath *)indexPath {
@@ -118,6 +172,36 @@ static const CGFloat kBottomPadding = 40;
     size = CGSizeApplyAffineTransform(size, transform);
     size.height += self.headerHeight + kBottomPadding;
     return size;
+}
+
+
+#pragma mark - Cursor positioning
+
+- (mxml::Point)cursorNoteLocation {
+    if (!self.cursorPosition.isValid())
+        return _scoreGeometry->origin();
+
+    const auto& event = *self.cursorPosition;
+    const auto& notes = event.onNotes();
+    const auto& scoreProperties = _scoreGeometry->scoreProperties();
+    const auto& spans = _scoreGeometry->spans();
+
+    for (auto& note : notes) {
+        auto it = spans.with(note);
+        if (it != spans.end()) {
+            auto& span = *it;
+            auto systemIndex = scoreProperties.systemIndex(span.measureIndex());
+            auto range = scoreProperties.measureRange(systemIndex);
+            auto systemGeometry = _scoreGeometry->systemGeometries()[systemIndex];
+
+            mxml::Point location;
+            location.x = span.start() - spans.origin(range.first) + span.eventOffset();
+            location.y = systemGeometry->origin().y;
+            return location;
+        }
+    }
+
+    return _scoreGeometry->origin();
 }
 
 @end

@@ -68,7 +68,7 @@ using namespace mxml;
     else if (type == VMKScoreElementTypeTie)
         return partGeom->tieGeometries().size();
     else if (type == VMKScoreElementTypeCursor)
-        return 1;
+        return self.cursorStyle == VMKCursorStyleMeasure ? static_cast<NSInteger>(self.scoreGeometry->scoreProperties().staves()) : 1;
     return 0;
 }
 
@@ -97,7 +97,6 @@ using namespace mxml;
     measureView.foregroundColor = self.foregroundColor;
     measureView.bookmarkedColor = self.tintColor;
     measureView.measureGeometry = partGeom->measureGeometries().at(indexPath.item);
-    measureView.bookmarked = [self.bookmarks containsObject:@(indexPath.item)];
 
     CGRect frame = measureView.frame;
     frame.origin = CGPointZero;
@@ -182,6 +181,7 @@ using namespace mxml;
     } else {
         view = (VMKCursorView*)[cell.contentView.subviews firstObject];
     }
+    view.cursorStyle = self.cursorStyle;
     view.color = self.cursorColor;
     
     return cell;

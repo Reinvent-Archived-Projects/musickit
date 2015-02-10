@@ -1,6 +1,8 @@
 //  Copyright (c) 2015 Venture Media Labs. All rights reserved.
 
 #import <UIKit/UIKit.h>
+#import "VMKCursorView.h"
+
 #include <mxml/geometry/PageScoreGeometry.h>
 
 extern NSString* const VMKSystemReuseIdentifier;
@@ -9,14 +11,14 @@ extern NSString* const VMKPageHeaderReuseIdentifier;
 
 typedef NS_ENUM(NSUInteger, VMKPageScoreSection) {
     VMKPageScoreSectionSystem,
-    VMKPageScoreSectionCursor,
-    VMKPageScoreSectionCount
+    VMKPageScoreSectionCursor
 };
 
 @interface VMKPageScoreDataSource : NSObject <UICollectionViewDataSource>
 
 @property(nonatomic) const mxml::PageScoreGeometry* scoreGeometry;
 @property(nonatomic) CGFloat scale;
+@property(nonatomic) VMKCursorStyle cursorStyle;
 
 @property(nonatomic, strong) NSSet* bookmarks;
 @property(nonatomic, strong) UIColor* foregroundColor;

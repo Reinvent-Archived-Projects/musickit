@@ -1,6 +1,9 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import <UIKit/UIKit.h>
+#import "VMKCursorView.h"
+
+#include <mxml/EventSequence.h>
 #include <mxml/geometry/ScrollScoreGeometry.h>
 
 
@@ -9,8 +12,8 @@
 @property(nonatomic) const mxml::ScrollScoreGeometry* scoreGeometry;
 @property(nonatomic) CGFloat minHeight;
 
-@property(nonatomic) BOOL showCursor;
-@property(nonatomic) CGFloat cursorOffset;
+@property(nonatomic) VMKCursorStyle cursorStyle;
+@property(nonatomic) mxml::EventSequence::Iterator cursorPosition;
 
 @property(nonatomic, readonly) CGFloat topOffset;
 

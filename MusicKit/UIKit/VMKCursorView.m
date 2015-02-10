@@ -32,12 +32,17 @@ const CGFloat VMCursorFadeOutLength = 40;
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
     [[self.color colorWithAlphaComponent:VMCursorAlpha] setFill];
-    CGContextFillRect(ctx, CGRectMake(0, VMCursorFadeOutLength, size.width, size.height - 2*VMCursorFadeOutLength));
+    if (self.cursorStyle == VMKCursorStyleNote) {
+        CGContextFillRect(ctx, CGRectMake(0, VMCursorFadeOutLength, size.width, size.height - 2*VMCursorFadeOutLength));
 
-    CGGradientRef gradient = [self createGradient];
-    CGContextDrawLinearGradient(ctx, gradient, CGPointMake(size.width/2, VMCursorFadeOutLength), CGPointMake(size.width/2, 0), 0);
-    CGContextDrawLinearGradient(ctx, gradient, CGPointMake(size.width/2, size.height - VMCursorFadeOutLength), CGPointMake(size.width/2, size.height), 0);
-    CGGradientRelease(gradient);
+        CGGradientRef gradient = [self createGradient];
+        CGContextDrawLinearGradient(ctx, gradient, CGPointMake(size.width/2, VMCursorFadeOutLength), CGPointMake(size.width/2, 0), 0);
+        CGContextDrawLinearGradient(ctx, gradient, CGPointMake(size.width/2, size.height - VMCursorFadeOutLength), CGPointMake(size.width/2, size.height), 0);
+        CGGradientRelease(gradient);
+
+    } else if (self.cursorStyle == VMKCursorStyleMeasure)  {
+        CGContextFillRect(ctx, CGRectMake(0, 0, size.width, size.height));
+    }
 }
 
 - (CGGradientRef)createGradient {

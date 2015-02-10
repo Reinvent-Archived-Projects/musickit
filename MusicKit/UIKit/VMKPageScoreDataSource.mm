@@ -23,14 +23,24 @@ NSString* const VMKPageHeaderReuseIdentifier = @"Header";
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)collectionView {
     if (!self.scoreGeometry)
         return 0;
-    return VMKPageScoreSectionCount;
+
+    switch (self.cursorStyle) {
+        case VMKCursorStyleNone:
+            return 1;
+
+        case VMKCursorStyleNote:
+        case VMKCursorStyleMeasure:
+            return 2;
+    }
 }
 
 - (NSInteger)collectionView:(UICollectionView*)collectionView numberOfItemsInSection:(NSInteger)section {
     if (section == VMKPageScoreSectionSystem)
         return _scoreGeometry->systemGeometries().size();
-    else if (section == VMKPageScoreSectionCursor)
+    else if (section == VMKPageScoreSectionCursor && self.cursorStyle == VMKCursorStyleNote)
         return 1;
+    else
+        return static_cast<NSInteger>(self.scoreGeometry->scoreProperties().staves());
     return 0;
 }
 
@@ -76,6 +86,7 @@ NSString* const VMKPageHeaderReuseIdentifier = @"Header";
     } else {
         view = (VMKCursorView*)[cell.contentView.subviews firstObject];
     }
+    view.cursorStyle = self.cursorStyle;
     view.color = self.cursorColor;
     view.transform = CGAffineTransformMakeScale(self.scale, self.scale);
     

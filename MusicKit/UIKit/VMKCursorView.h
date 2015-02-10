@@ -5,9 +5,16 @@
 extern const CGFloat VMCursorAlpha;
 extern const CGFloat VMCursorFadeOutLength;
 
+typedef NS_ENUM(NSInteger, VMKCursorStyle) {
+    VMKCursorStyleNone,
+    VMKCursorStyleNote,
+    VMKCursorStyleMeasure
+};
+
 
 @interface VMKCursorView : UIView
 
 @property(nonatomic, strong) UIColor* color;
+@property(nonatomic) VMKCursorStyle cursorStyle;
 
 @end
