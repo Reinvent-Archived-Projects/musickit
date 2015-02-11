@@ -104,7 +104,7 @@ static const CGFloat VMCursorWidth = 16;
         return nil;
     
     UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:kind withIndexPath:indexPath];
-    attributes.frame = CGRectMake(0, 0, _scoreGeometry->size().width, self.headerHeight);
+    attributes.frame = CGRectMake(0, 0, _scoreGeometry->size().width * self.scale, self.headerHeight);
     return attributes;
 }
 
