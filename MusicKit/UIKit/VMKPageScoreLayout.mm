@@ -6,7 +6,8 @@
 
 using namespace mxml;
 
-static const CGFloat VMCursorWidth = 16;
+static const CGFloat kCursorWidth = 16;
+static const CGFloat kBottomPadding = 40;
 
 
 @implementation VMKPageScoreLayout
@@ -66,9 +67,9 @@ static const CGFloat VMCursorWidth = 16;
 
 - (UICollectionViewLayoutAttributes*)layoutAttributesForCursorAtIndexPath:(NSIndexPath*)indexPath {
     CGRect frame;
-    frame.origin.x = self.cursorLocation.x - VMCursorWidth/2;
+    frame.origin.x = self.cursorLocation.x - kCursorWidth/2;
     frame.origin.y = self.cursorLocation.y;
-    frame.size.width = VMCursorWidth;
+    frame.size.width = kCursorWidth;
 
     auto& systemGeometries = _scoreGeometry->systemGeometries();
     if (_cursorSystemIndex >= systemGeometries.size())
@@ -112,9 +113,11 @@ static const CGFloat VMCursorWidth = 16;
     if (!_scoreGeometry)
         return CGSizeZero;
 
-    const CGSize size = CGSizeMake(_scoreGeometry->size().width, _scoreGeometry->size().height);
+    CGSize size = CGSizeMake(_scoreGeometry->size().width, _scoreGeometry->size().height);
     const CGAffineTransform transform = CGAffineTransformMakeScale(self.scale, self.scale);
-    return CGSizeApplyAffineTransform(size, transform);
+    size = CGSizeApplyAffineTransform(size, transform);
+    size.height += self.headerHeight + kBottomPadding;
+    return size;
 }
 
 @end
