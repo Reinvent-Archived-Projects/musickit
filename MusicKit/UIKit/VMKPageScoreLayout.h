@@ -18,4 +18,6 @@
 @property(nonatomic) mxml::EventSequence::Iterator cursorPosition;
 @property(nonatomic) NSUInteger cursorSystemIndex;
 
+@property(nonatomic, readonly) CGPoint cursorLocation;
+
 @end

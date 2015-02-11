@@ -16,5 +16,6 @@
 @property(nonatomic) mxml::EventSequence::Iterator cursorPosition;
 
 @property(nonatomic, readonly) CGFloat topOffset;
+@property(nonatomic, readonly) CGFloat cursorLocation;
 
 @end

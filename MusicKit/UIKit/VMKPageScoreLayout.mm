@@ -177,9 +177,9 @@ static const CGFloat kBottomPadding = 40;
 
 #pragma mark - Cursor positioning
 
-- (mxml::Point)cursorNoteLocation {
+- (CGPoint)cursorNoteLocation {
     if (!self.cursorPosition.isValid())
-        return _scoreGeometry->origin();
+        return CGPointFromPoint(_scoreGeometry->origin());
 
     const auto& event = *self.cursorPosition;
     const auto& notes = event.onNotes();
@@ -194,14 +194,14 @@ static const CGFloat kBottomPadding = 40;
             auto range = scoreProperties.measureRange(systemIndex);
             auto systemGeometry = _scoreGeometry->systemGeometries()[systemIndex];
 
-            mxml::Point location;
+            CGPoint location;
             location.x = span.start() - spans.origin(range.first) + span.eventOffset();
             location.y = systemGeometry->origin().y;
             return location;
         }
     }
 
-    return _scoreGeometry->origin();
+    return CGPointFromPoint(_scoreGeometry->origin());
 }
 
 @end
