@@ -88,7 +88,6 @@ NSString* const VMKPageHeaderReuseIdentifier = @"Header";
     }
     view.cursorStyle = self.cursorStyle;
     view.color = self.cursorColor;
-    view.transform = CGAffineTransformMakeScale(self.scale, self.scale);
     
     return cell;
 }
