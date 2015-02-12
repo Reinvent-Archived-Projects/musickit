@@ -122,7 +122,10 @@ static const CGFloat VMCursorWidth = 16;
 }
 
 - (CGFloat)cursorLocation {
-    const auto& event = *self.cursorPosition;
+    if (!self.cursorEvent)
+        return 0;
+
+    const auto& event = *self.cursorEvent;
     const auto& notes = event.onNotes();
 
     for (auto note = notes.begin(); note != notes.end(); ++note) {
@@ -138,11 +141,11 @@ static const CGFloat VMCursorWidth = 16;
 
 - (NSArray*)layoutAttributesForMeasureCursors {
     NSMutableArray* attributesArray = [NSMutableArray array];
-    if (!self.cursorPosition.isValid())
+    if (!self.cursorEvent)
         return nullptr;
 
+    const auto& event = *self.cursorEvent;
     const auto& scoreProperties = _scoreGeometry->scoreProperties();
-    const auto& event = *self.cursorPosition;
     const auto measureIndex = event.measureIndex();
 
     NSUInteger item = 0;

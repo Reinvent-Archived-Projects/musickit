@@ -15,8 +15,7 @@
 @property(nonatomic) CGFloat headerHeight;
 
 @property(nonatomic) VMKCursorStyle cursorStyle;
-@property(nonatomic) mxml::EventSequence::Iterator cursorPosition;
-@property(nonatomic) NSUInteger cursorSystemIndex;
+@property(nonatomic) const mxml::Event* cursorEvent;
 
 @property(nonatomic, readonly) CGPoint cursorLocation;
 

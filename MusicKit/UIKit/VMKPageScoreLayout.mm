@@ -82,10 +82,14 @@ static const CGFloat kBottomPadding = 40;
     frame.origin.y = cursorLocation.y;
     frame.size.width = kCursorWidth;
 
+    std::size_t systemIndex = 0;
+    if (self.cursorEvent)
+        systemIndex = _scoreGeometry->scoreProperties().systemIndex(self.cursorEvent->measureIndex());
+
     auto& systemGeometries = _scoreGeometry->systemGeometries();
-    if (_cursorSystemIndex >= systemGeometries.size())
-        _cursorSystemIndex = systemGeometries.size() - 1;
-    frame.size.height = systemGeometries.at(_cursorSystemIndex)->size().height;
+    if (systemIndex >= systemGeometries.size())
+        systemIndex = systemGeometries.size() - 1;
+    frame.size.height = systemGeometries.at(systemIndex)->size().height;
 
     const CGAffineTransform transform = CGAffineTransformMakeScale(self.scale, self.scale);
     frame = CGRectApplyAffineTransform(frame, transform);
@@ -101,11 +105,11 @@ static const CGFloat kBottomPadding = 40;
 
 - (NSArray*)layoutAttributesForMeasureCursors {
     NSMutableArray* attributesArray = [NSMutableArray array];
-    if (!self.cursorPosition.isValid())
+    if (!self.cursorEvent)
         return nullptr;
 
     const auto& scoreProperties = _scoreGeometry->scoreProperties();
-    const auto& event = *self.cursorPosition;
+    const auto& event = *self.cursorEvent;
     const auto measureIndex = event.measureIndex();
     const auto systemIndex = scoreProperties.systemIndex(measureIndex);
     const auto range = scoreProperties.measureRange(systemIndex);
@@ -178,10 +182,10 @@ static const CGFloat kBottomPadding = 40;
 #pragma mark - Cursor positioning
 
 - (CGPoint)cursorNoteLocation {
-    if (!self.cursorPosition.isValid())
+    if (!self.cursorEvent)
         return CGPointFromPoint(_scoreGeometry->origin());
 
-    const auto& event = *self.cursorPosition;
+    const auto& event = *self.cursorEvent;
     const auto& notes = event.onNotes();
     const auto& scoreProperties = _scoreGeometry->scoreProperties();
     const auto& spans = _scoreGeometry->spans();

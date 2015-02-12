@@ -13,7 +13,7 @@
 @property(nonatomic) CGFloat minHeight;
 
 @property(nonatomic) VMKCursorStyle cursorStyle;
-@property(nonatomic) mxml::EventSequence::Iterator cursorPosition;
+@property(nonatomic) const mxml::Event* cursorEvent;
 
 @property(nonatomic, readonly) CGFloat topOffset;
 @property(nonatomic, readonly) CGFloat cursorLocation;
