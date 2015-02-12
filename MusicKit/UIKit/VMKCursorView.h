@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger, VMKCursorStyle) {
 @interface VMKCursorView : UIView
 
 @property(nonatomic, strong) UIColor* color;
+@property(nonatomic) CGFloat opacity;
 @property(nonatomic) VMKCursorStyle cursorStyle;
 
 @end

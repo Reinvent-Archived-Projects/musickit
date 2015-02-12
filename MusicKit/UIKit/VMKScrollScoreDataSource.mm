@@ -181,6 +181,7 @@ using namespace mxml;
     } else {
         view = (VMKCursorView*)[cell.contentView.subviews firstObject];
     }
+    view.opacity = self.cursorOpacity;
     view.cursorStyle = self.cursorStyle;
     view.color = self.cursorColor;
     

@@ -14,6 +14,7 @@ extern NSString* const VMKCursorReuseIdentifier;
 @interface VMKScrollScoreDataSource : NSObject <UICollectionViewDataSource>
 
 @property(nonatomic) const mxml::ScrollScoreGeometry* scoreGeometry;
+@property(nonatomic) CGFloat cursorOpacity;
 @property(nonatomic) VMKCursorStyle cursorStyle;
 
 @property(nonatomic, strong) UIColor* foregroundColor;

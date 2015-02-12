@@ -18,6 +18,7 @@ typedef NS_ENUM(NSUInteger, VMKPageScoreSection) {
 
 @property(nonatomic) const mxml::PageScoreGeometry* scoreGeometry;
 @property(nonatomic) CGFloat scale;
+@property(nonatomic) CGFloat cursorOpacity;
 @property(nonatomic) VMKCursorStyle cursorStyle;
 
 @property(nonatomic, strong) NSSet* bookmarks;

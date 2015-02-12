@@ -2,7 +2,6 @@
 
 #import "VMKCursorView.h"
 
-const CGFloat VMCursorAlpha = 0.25;
 const CGFloat VMCursorFadeOutLength = 40;
 
 
@@ -11,6 +10,7 @@ const CGFloat VMCursorFadeOutLength = 40;
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     self.color = [UIColor colorWithRed:1 green:94/255.f blue:57/255.f alpha:1];
+    self.opacity = 0.25;
     self.backgroundColor = [UIColor clearColor];
     return self;
 }
@@ -18,6 +18,7 @@ const CGFloat VMCursorFadeOutLength = 40;
 - (instancetype)initWithCoder:(NSCoder *)decoder {
     self = [super initWithCoder:decoder];
     self.color = [UIColor colorWithRed:1 green:94/255.f blue:57/255.f alpha:1];
+    self.opacity = 0.25;
     self.backgroundColor = [UIColor clearColor];
     return self;
 }
@@ -27,11 +28,21 @@ const CGFloat VMCursorFadeOutLength = 40;
     [self setNeedsDisplay];
 }
 
+- (void)setOpacity:(CGFloat)opacity {
+    _opacity = opacity;
+    [self setNeedsDisplay];
+}
+
+- (void)setCursorStyle:(VMKCursorStyle)cursorStyle {
+    _cursorStyle = cursorStyle;
+    [self setNeedsDisplay];
+}
+
 - (void)drawRect:(CGRect)rect {
     CGSize size = self.bounds.size;
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
-    [[self.color colorWithAlphaComponent:VMCursorAlpha] setFill];
+    [[self.color colorWithAlphaComponent:self.opacity] setFill];
     if (self.cursorStyle == VMKCursorStyleNote) {
         CGContextFillRect(ctx, CGRectMake(0, VMCursorFadeOutLength, size.width, size.height - 2*VMCursorFadeOutLength));
 
@@ -50,7 +61,7 @@ const CGFloat VMCursorFadeOutLength = 40;
 
     CGFloat components[8] = {0};
     [self.color getRed:&components[0] green:&components[1] blue:&components[2] alpha:&components[3]];
-    components[3] = VMCursorAlpha;
+    components[3] = self.opacity;
     components[4] = components[0];
     components[5] = components[1];
     components[6] = components[2];
