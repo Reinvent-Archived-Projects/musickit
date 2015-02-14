@@ -770,6 +770,11 @@
 		61A2B7A21A8EA14600C1EE2A /* TimeSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B78B1A8EA14600C1EE2A /* TimeSequence.cpp */; };
 		61A2B7A31A8EA14600C1EE2A /* TimeSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A2B78C1A8EA14600C1EE2A /* TimeSequence.h */; };
 		61A2B7A41A8EA14600C1EE2A /* TimeSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A2B78C1A8EA14600C1EE2A /* TimeSequence.h */; };
+		61A2B7A51A8EBB4800C1EE2A /* AlterSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B7811A8EA14600C1EE2A /* AlterSequence.cpp */; };
+		61A2B7A61A8EBB4E00C1EE2A /* ClefSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B7851A8EA14600C1EE2A /* ClefSequence.cpp */; };
+		61A2B7A71A8EBB4E00C1EE2A /* DivisionsSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B7871A8EA14600C1EE2A /* DivisionsSequence.cpp */; };
+		61A2B7A81A8EBB4E00C1EE2A /* KeySequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B7891A8EA14600C1EE2A /* KeySequence.cpp */; };
+		61A2B7A91A8EBB4E00C1EE2A /* TimeSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B78B1A8EA14600C1EE2A /* TimeSequence.cpp */; };
 		61C850351A684F5300031100 /* LoopFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850311A684F5300031100 /* LoopFactory.h */; };
 		61C850361A684F5300031100 /* LoopFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850311A684F5300031100 /* LoopFactory.h */; };
 		61C850371A684F5300031100 /* LoopFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C850321A684F5300031100 /* LoopFactory.cpp */; };
@@ -3853,6 +3858,7 @@
 				61F073F21A71D3BF002CA9CA /* LyricGeometryFactory.cpp in Sources */,
 				618C6CA71A13E7DC008314B2 /* MeasureHandler.cpp in Sources */,
 				61C850691A6D977E00031100 /* OctaveShiftGeometry.cpp in Sources */,
+				61A2B7A51A8EBB4800C1EE2A /* AlterSequence.cpp in Sources */,
 				618C6C961A13E7DC008314B2 /* AttributesHandler.cpp in Sources */,
 				61F0731D1A703596002CA9CA /* SystemMarginsHandler.cpp in Sources */,
 				61D667811A3F67B80044A00B /* VMKScoreRenderer.mm in Sources */,
@@ -3890,6 +3896,7 @@
 				618C6CA61A13E7DC008314B2 /* LyricHandler.cpp in Sources */,
 				618C6C681A13E7A1008314B2 /* VMKMeasureLayer.mm in Sources */,
 				618C6CB31A13E7DC008314B2 /* SlurHandler.cpp in Sources */,
+				61A2B7A91A8EBB4E00C1EE2A /* TimeSequence.cpp in Sources */,
 				0022AE191A70833700139992 /* HorizontalResolver.cpp in Sources */,
 				618C6CBA1A13E7DC008314B2 /* TurnHandler.cpp in Sources */,
 				61F0744C1A730EEB002CA9CA /* VMKPartLayer.mm in Sources */,
@@ -3914,6 +3921,7 @@
 				618C6C781A13E7D2008314B2 /* Measure.cpp in Sources */,
 				61C850751A6D97A500031100 /* VMKOctaveShiftLayer.mm in Sources */,
 				61F0742E1A72DD3E002CA9CA /* ScrollScoreGeometry.cpp in Sources */,
+				61A2B7A81A8EBB4E00C1EE2A /* KeySequence.cpp in Sources */,
 				618C6CB21A13E7DC008314B2 /* ScoreHandler.cpp in Sources */,
 				618C6CB01A13E7DC008314B2 /* RestHandler.cpp in Sources */,
 				00E7B48D1A8155F400B949FC /* Attributes.cpp in Sources */,
@@ -3944,6 +3952,7 @@
 				618C6CAA1A13E7DC008314B2 /* NoteHandler.cpp in Sources */,
 				618C6C801A13E7D6008314B2 /* ClefGeometry.cpp in Sources */,
 				618C6C6D1A13E7A1008314B2 /* VMKRestLayer.mm in Sources */,
+				61A2B7A71A8EBB4E00C1EE2A /* DivisionsSequence.cpp in Sources */,
 				618C6C591A13E795008314B2 /* VMKImage.mm in Sources */,
 				0022AE1E1A70833700139992 /* VerticalResolver.cpp in Sources */,
 				618C6C9A1A13E7DC008314B2 /* ClefHandler.cpp in Sources */,
@@ -3981,6 +3990,7 @@
 				614057D81A5CBD49005224C9 /* Key.cpp in Sources */,
 				618C6C6F1A13E7A1008314B2 /* VMKTimeSignatureLayer.mm in Sources */,
 				618C6CA21A13E7DC008314B2 /* FermataHandler.cpp in Sources */,
+				61A2B7A61A8EBB4E00C1EE2A /* ClefSequence.cpp in Sources */,
 				618C6C911A13E7D6008314B2 /* StemGeometry.cpp in Sources */,
 				618C6C5D1A13E7A1008314B2 /* VMKScoreElementImageLayer.mm in Sources */,
 				618C6C731A13E7CF008314B2 /* IntegerHandler.cpp in Sources */,
