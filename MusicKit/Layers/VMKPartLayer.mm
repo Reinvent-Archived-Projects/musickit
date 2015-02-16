@@ -143,10 +143,12 @@
         layer = [[VMKLyricLayer alloc] initWithLyricGeometry:geom];
     }
 
-    layer.foregroundColor = self.foregroundColor;
-    layer.backgroundColor = self.backgroundColor;
-    [self addSublayer:layer];
-    [self.directionLayers addObject:layer];
+    if (layer) {
+        layer.foregroundColor = self.foregroundColor;
+        layer.backgroundColor = self.backgroundColor;
+        [self addSublayer:layer];
+        [self.directionLayers addObject:layer];
+    }
 }
 
 - (void)createTieLayer:(const mxml::TieGeometry*)geometry {

@@ -95,7 +95,6 @@ using namespace mxml;
 
     const PartGeometry* partGeom = [self partGeometryForSection:indexPath.section];
     measureView.foregroundColor = self.foregroundColor;
-    measureView.bookmarkedColor = self.tintColor;
     measureView.measureGeometry = partGeom->measureGeometries().at(indexPath.item);
 
     CGRect frame = measureView.frame;
