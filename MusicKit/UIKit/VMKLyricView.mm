@@ -6,23 +6,23 @@
 @implementation VMKLyricView
 
 + (Class)layerClass {
-    return[VMKLyricLayer class];
+    return [VMKLyricLayer class];
 }
 
 - (instancetype)initWithLyricGeometry:(const mxml::LyricGeometry*)lyricGeometry {
     return [super initWithGeometry:lyricGeometry];
 }
 
-- (VMKLyricLayer*)directionLayer {
+- (VMKLyricLayer*)lyricLayer {
     return (VMKLyricLayer*)self.layer;
 }
 
 - (const mxml::LyricGeometry*)lyricGeometry {
-    return self.directionLayer.lyricGeometry;
+    return self.lyricLayer.lyricGeometry;
 }
 
 - (void)setLyricGeometry:(const mxml::LyricGeometry *)lyricGeometry {
-    self.directionLayer.lyricGeometry = lyricGeometry;
+    self.lyricLayer.lyricGeometry = lyricGeometry;
 }
 
 @end
