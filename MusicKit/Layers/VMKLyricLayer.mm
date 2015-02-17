@@ -27,9 +27,14 @@
     [self addSublayer:_textLayer];
 }
 
-- (void)setForegroundColor:(VMKColor*)foregroundColor {
-    [super setForegroundColor:foregroundColor];
-    _textLayer.foregroundColor = foregroundColor.CGColor;
+- (void)setActiveForegroundColor:(VMKColor*)foregroundColor {
+    [super setActiveForegroundColor:foregroundColor];
+    _textLayer.foregroundColor = self.foregroundColor.CGColor;
+}
+
+- (void)setInactiveForegroundColor:(VMKColor*)foregroundColor {
+    [super setInactiveForegroundColor:foregroundColor];
+    _textLayer.foregroundColor = self.foregroundColor.CGColor;
 }
 
 - (const mxml::LyricGeometry*)lyricGeometry {

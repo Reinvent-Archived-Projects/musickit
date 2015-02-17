@@ -28,7 +28,7 @@
 }
 
 - (void)setForegroundColor:(UIColor *)foregroundColor {
-    self.scoreElementLayer.foregroundColor = foregroundColor;
+    self.scoreElementLayer.activeForegroundColor = foregroundColor;
 }
 
 - (CGSize)sizeThatFits:(CGSize)size {

@@ -76,15 +76,22 @@ const CGFloat VMKBarLineWidth = 1;
 
 #pragma mark -
 
-- (void)setForegroundColor:(VMKColor*)foregroundColor {
-    [super setForegroundColor:foregroundColor];
+- (void)setActiveForegroundColor:(VMKColor*)foregroundColor {
+    [super setActiveForegroundColor:foregroundColor];
 
     for (VMKScoreElementLayer* view in _elementLayers)
-        view.foregroundColor = foregroundColor;
+        view.activeForegroundColor = foregroundColor;
 
-    _numberLayer.foregroundColor = foregroundColor.CGColor;
+    _numberLayer.foregroundColor = self.foregroundColor.CGColor;
+}
 
-    [self setNeedsDisplay];
+- (void)setInactiveForegroundColor:(VMKColor*)foregroundColor {
+    [super setInactiveForegroundColor:foregroundColor];
+
+    for (VMKScoreElementLayer* view in _elementLayers)
+        view.inactiveForegroundColor = foregroundColor;
+
+    _numberLayer.foregroundColor = self.foregroundColor.CGColor;
 }
 
 - (const mxml::MeasureGeometry*)measureGeometry {
@@ -185,7 +192,8 @@ const CGFloat VMKBarLineWidth = 1;
 }
 
 - (void)configureView:(VMKScoreElementLayer*)layer {
-    layer.foregroundColor = self.foregroundColor;
+    layer.activeForegroundColor = self.activeForegroundColor;
+    layer.inactiveForegroundColor = self.inactiveForegroundColor;
     layer.backgroundColor = self.backgroundColor;
     layer.hidden = NO;
 }

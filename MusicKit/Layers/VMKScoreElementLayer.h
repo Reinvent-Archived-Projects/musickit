@@ -14,8 +14,14 @@
 /** Geometry object. */
 @property(nonatomic) const mxml::Geometry* geometry;
 
-/** The foreground color. */
-@property(nonatomic, strong) VMKColor* foregroundColor;
+/** The active foreground color. */
+@property(nonatomic, strong) VMKColor* activeForegroundColor;
+
+/** The inactive foreground color. */
+@property(nonatomic, strong) VMKColor* inactiveForegroundColor;
+
+/** The current foreground color. */
+@property(nonatomic, strong, readonly) VMKColor* foregroundColor;
 
 
 /** This method is called from init to setup the view.

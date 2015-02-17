@@ -28,7 +28,8 @@
 
 - (void)setup {
     self.backgroundColor = [VMKColor clearColor].CGColor;
-    self.foregroundColor = [VMKColor blackColor];
+    self.activeForegroundColor = [VMKColor blackColor];
+    self.inactiveForegroundColor = [VMKColor lightGrayColor];
     self.opaque = NO;
     self.contentsScale = VMKScreenScale();
 }
@@ -38,12 +39,26 @@
     return nil;
 }
 
-- (void)setForegroundColor:(VMKColor*)foregroundColor {
-    if (_foregroundColor == foregroundColor)
+- (void)setActiveForegroundColor:(VMKColor*)foregroundColor {
+    if (_activeForegroundColor == foregroundColor)
         return;
 
-    _foregroundColor = foregroundColor;
+    _activeForegroundColor = foregroundColor;
     [self setNeedsDisplay];
+}
+
+- (void)setInactiveForegroundColor:(VMKColor*)foregroundColor {
+    if (_inactiveForegroundColor == foregroundColor)
+        return;
+
+    _inactiveForegroundColor = foregroundColor;
+    [self setNeedsDisplay];
+}
+
+- (VMKColor*)foregroundColor {
+    if (_geometry && _geometry->isActive())
+        return self.activeForegroundColor;
+    return self.inactiveForegroundColor;
 }
 
 - (void)setGeometry:(const mxml::Geometry*)geometry {

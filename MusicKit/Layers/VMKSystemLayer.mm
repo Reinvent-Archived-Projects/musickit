@@ -29,11 +29,18 @@
 
 #pragma mark -
 
-- (void)setForegroundColor:(VMKColor*)foregroundColor {
-    [super setForegroundColor:foregroundColor];
+- (void)setActiveForegroundColor:(VMKColor*)foregroundColor {
+    [super setActiveForegroundColor:foregroundColor];
 
     for (VMKPartLayer* layer in self.partLayers)
-        layer.foregroundColor = foregroundColor;
+        layer.activeForegroundColor = foregroundColor;
+}
+
+- (void)setInactiveForegroundColor:(VMKColor*)foregroundColor {
+    [super setInactiveForegroundColor:foregroundColor];
+
+    for (VMKPartLayer* layer in self.partLayers)
+        layer.inactiveForegroundColor = foregroundColor;
 }
 
 - (const mxml::SystemGeometry*)systemGeometry {
@@ -76,7 +83,8 @@
             [self addSublayer:layer];
         }
 
-        layer.foregroundColor = self.foregroundColor;
+        layer.activeForegroundColor = self.activeForegroundColor;
+        layer.inactiveForegroundColor = self.inactiveForegroundColor;
         layer.backgroundColor = self.backgroundColor;
         layer.hidden = NO;
 

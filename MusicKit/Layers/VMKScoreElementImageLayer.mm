@@ -18,8 +18,13 @@
     return self;
 }
 
-- (void)setForegroundColor:(VMKColor*)foregroundColor {
-    [super setForegroundColor:foregroundColor];
+- (void)setActiveForegroundColor:(VMKColor*)foregroundColor {
+    [super setActiveForegroundColor:foregroundColor];
+    [self _updateImage];
+}
+
+- (void)setInactiveForegroundColor:(VMKColor*)foregroundColor {
+    [super setInactiveForegroundColor:foregroundColor];
     [self _updateImage];
 }
 

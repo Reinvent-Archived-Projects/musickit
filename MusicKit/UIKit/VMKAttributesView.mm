@@ -76,15 +76,15 @@ static const CGFloat kGapWidth = 10;
     _foregroundColor = foregroundColor;
     
     for (VMKClefLayer *clefLayer in _clefLayers)
-        clefLayer.foregroundColor = _foregroundColor;
+        clefLayer.activeForegroundColor = _foregroundColor;
     
     for (VMKTimeSignatureLayer *timeLayer in _timeLayers)
-        timeLayer.foregroundColor = _foregroundColor;
+        timeLayer.activeForegroundColor = _foregroundColor;
     
     for (VMKKeyLayer *keyLayer in _keyLayers)
-        keyLayer.foregroundColor = _foregroundColor;
+        keyLayer.activeForegroundColor = _foregroundColor;
     
-    _braceLayer.foregroundColor = _foregroundColor;
+    _braceLayer.activeForegroundColor = _foregroundColor;
     
     [self setNeedsDisplay];
 }
@@ -114,24 +114,24 @@ static const CGFloat kGapWidth = 10;
     
     for (int staff = 1; staff <= staves; staff += 1) {
         VMKClefLayer* clefLayer = [[VMKClefLayer alloc] initWithClefGeometry:0];
-        clefLayer.foregroundColor = self.foregroundColor;
+        clefLayer.activeForegroundColor = self.foregroundColor;
         [_clefLayers addObject:clefLayer];
         [self.layer addSublayer:clefLayer];
         
         VMKTimeSignatureLayer* timeLayer = [[VMKTimeSignatureLayer alloc] initWithTimeSignatureGeometry:0];
-        timeLayer.foregroundColor = self.foregroundColor;
+        timeLayer.activeForegroundColor = self.foregroundColor;
         [_timeLayers addObject:timeLayer];
         [self.layer addSublayer:timeLayer];
         
         VMKKeyLayer* keyLayer = [[VMKKeyLayer alloc] initWithKeyGeometry:0];
-        keyLayer.foregroundColor = self.foregroundColor;
+        keyLayer.activeForegroundColor = self.foregroundColor;
         keyLayer.hideNaturals = YES;
         [_keyLayers addObject:keyLayer];
         [self.layer addSublayer:keyLayer];
     }
     
     _braceLayer = [[VMKBraceLayer alloc] initWithPartGeometry:_partGeometry];
-    _braceLayer.foregroundColor = self.foregroundColor;
+    _braceLayer.activeForegroundColor = self.foregroundColor;
     [self.layer addSublayer:_braceLayer];
     
     _updateGeometries = YES;

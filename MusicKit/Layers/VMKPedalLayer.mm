@@ -23,11 +23,6 @@ using namespace mxml;
     self.geometry = spanDirectionGeometry;
 }
 
-- (void)setForegroundColor:(VMKColor*)foregroundColor {
-    [super setForegroundColor:foregroundColor];
-    [self setNeedsDisplay];
-}
-
 - (void)setGeometry:(const Geometry *)geometry {
     [super setGeometry:geometry];
     [self setNeedsDisplay];

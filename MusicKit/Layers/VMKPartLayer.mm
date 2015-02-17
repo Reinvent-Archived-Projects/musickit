@@ -44,11 +44,18 @@
 
 #pragma mark - 
 
-- (void)setForegroundColor:(VMKColor*)foregroundColor {
-    [super setForegroundColor:foregroundColor];
+- (void)setActiveForegroundColor:(VMKColor*)foregroundColor {
+    [super setActiveForegroundColor:foregroundColor];
 
     for (VMKMeasureLayer* layer in self.measureLayers)
-        layer.foregroundColor = foregroundColor;
+        layer.activeForegroundColor = foregroundColor;
+}
+
+- (void)setInactiveForegroundColor:(VMKColor*)foregroundColor {
+    [super setInactiveForegroundColor:foregroundColor];
+
+    for (VMKMeasureLayer* layer in self.measureLayers)
+        layer.inactiveForegroundColor = foregroundColor;
 }
 
 - (const mxml::PartGeometry*)partGeometry {
@@ -100,7 +107,8 @@
             [self addSublayer:layer];
         }
 
-        layer.foregroundColor = self.foregroundColor;
+        layer.activeForegroundColor = self.activeForegroundColor;
+        layer.InactiveForegroundColor = self.inactiveForegroundColor;
         layer.backgroundColor = self.backgroundColor;
         layer.hidden = NO;
 
@@ -144,7 +152,8 @@
     }
 
     if (layer) {
-        layer.foregroundColor = self.foregroundColor;
+        layer.activeForegroundColor = self.activeForegroundColor;
+        layer.inactiveForegroundColor = self.inactiveForegroundColor;
         layer.backgroundColor = self.backgroundColor;
         [self addSublayer:layer];
         [self.directionLayers addObject:layer];
@@ -153,7 +162,8 @@
 
 - (void)createTieLayer:(const mxml::TieGeometry*)geometry {
     VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:geometry];
-    layer.foregroundColor = self.foregroundColor;
+    layer.activeForegroundColor = self.activeForegroundColor;
+    layer.inactiveForegroundColor = self.inactiveForegroundColor;
     layer.backgroundColor = self.backgroundColor;
     [self addSublayer:layer];
     [self.tieLayers addObject:layer];

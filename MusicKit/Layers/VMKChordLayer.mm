@@ -47,7 +47,8 @@ using namespace mxml;
     if (self.chordGeometry && self.chordGeometry->stem()) {
         if (!_noteStemLayer) {
             _noteStemLayer = [[VMKNoteStemLayer alloc] initWithGeometry:self.chordGeometry->stem()];
-            _noteStemLayer.foregroundColor = self.foregroundColor;
+            _noteStemLayer.activeForegroundColor = self.activeForegroundColor;
+            _noteStemLayer.inactiveForegroundColor = self.inactiveForegroundColor;
             [self addSublayer:_noteStemLayer];
         } else {
             _noteStemLayer.geometry = self.chordGeometry->stem();
@@ -72,14 +73,22 @@ using namespace mxml;
     [self setNeedsDisplay];
 }
 
-- (void)setForegroundColor:(VMKColor*)foregroundColor {
-    [super setForegroundColor:foregroundColor];
+- (void)setActiveForegroundColor:(VMKColor*)foregroundColor {
+    [super setActiveForegroundColor:foregroundColor];
     for (VMKNoteHeadLayer* layer in _noteHeadLayers)
-        layer.foregroundColor = foregroundColor;
+        layer.activeForegroundColor = foregroundColor;
     for (VMKScoreElementLayer* layer in _otherLayers)
-        layer.foregroundColor = foregroundColor;
-    _noteStemLayer.foregroundColor = foregroundColor;
-    [self setNeedsDisplay];
+        layer.activeForegroundColor = foregroundColor;
+    _noteStemLayer.activeForegroundColor = foregroundColor;
+}
+
+- (void)setInactiveForegroundColor:(VMKColor*)foregroundColor {
+    [super setInactiveForegroundColor:foregroundColor];
+    for (VMKNoteHeadLayer* layer in _noteHeadLayers)
+        layer.inactiveForegroundColor = foregroundColor;
+    for (VMKScoreElementLayer* layer in _otherLayers)
+        layer.inactiveForegroundColor = foregroundColor;
+    _noteStemLayer.inactiveForegroundColor = foregroundColor;
 }
 
 - (void)clear {
@@ -98,17 +107,20 @@ using namespace mxml;
     for (auto& geom : self.chordGeometry->geometries()) {
         if (auto noteGeom = dynamic_cast<const NoteGeometry*>(geom.get())) {
             VMKNoteHeadLayer* layer = [[VMKNoteHeadLayer alloc] initWithNoteGeometry:noteGeom];
-            layer.foregroundColor = self.foregroundColor;
+            layer.activeForegroundColor = self.activeForegroundColor;
+            layer.inactiveForegroundColor = self.inactiveForegroundColor;
             [_noteHeadLayers addObject:layer];
             [self addSublayer:layer];
         } else if (auto accidentalGeom = dynamic_cast<const AccidentalGeometry*>(geom.get())) {
             VMKAccidentalLayer* accLayer = [[VMKAccidentalLayer alloc] initWithAccidentalGeometry:accidentalGeom];
-            accLayer.foregroundColor = self.foregroundColor;
+            accLayer.activeForegroundColor = self.activeForegroundColor;
+            accLayer.inactiveForegroundColor = self.inactiveForegroundColor;
             [_otherLayers addObject:accLayer];
             [self addSublayer:accLayer];
         } else if (auto dotGeom = dynamic_cast<const DotGeometry*>(geom.get())) {
             VMKScoreElementImageLayer* dotView = [[VMKScoreElementImageLayer alloc] initWithImageName:@"dot" geometry:dotGeom];
-            dotView.foregroundColor = self.foregroundColor;
+            dotView.activeForegroundColor = self.activeForegroundColor;
+            dotView.inactiveForegroundColor = self.inactiveForegroundColor;
             [_otherLayers addObject:dotView];
             [self addSublayer:dotView];
         } else if (auto articulationGeom = dynamic_cast<const ArticulationGeometry*>(geom.get())) {
