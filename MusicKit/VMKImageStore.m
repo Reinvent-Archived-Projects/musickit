@@ -3,7 +3,7 @@
 #import "VMKImageStore.h"
 
 @interface VMKImageStore ()
-@property(nonatomic, strong) NSMutableDictionary* images;
+@property(nonatomic, strong) NSMutableDictionary* imagesByColor;
 @end
 
 @implementation VMKImageStore
@@ -19,24 +19,24 @@
 
 - (id)init {
     self = [super init];
-    self.images = [[NSMutableDictionary alloc] init];
-    self.foregroundColor = [VMKColor blackColor];
+    self.imagesByColor = [[NSMutableDictionary alloc] init];
     return self;
 }
 
-- (void)setForegroundColor:(VMKColor*)foregroundColor {
-    _foregroundColor = foregroundColor;
-    [self.images removeAllObjects];
-}
+- (VMKImage*)imageNamed:(NSString*)name withColor:(VMKColor*)color {
+    NSMutableDictionary* images = self.imagesByColor[color];
+    if (!images) {
+        images = [NSMutableDictionary dictionary];
+        self.imagesByColor[color] = images;
+    }
 
-- (VMKImage*)imageNamed:(NSString*)name {
-    VMKImage* image = self.images[name];
+    VMKImage* image = images[name];
     if (image)
         return image;
 
-    image = [self.class maskFillImage:[VMKImage imageNamed:name] withColor:self.foregroundColor];
+    image = [self.class maskFillImage:[VMKImage imageNamed:name] withColor:color];
     if (image)
-        self.images[name] = image;
+        images[name] = image;
 
     return image;
 }
@@ -66,6 +66,14 @@
         CGContextFillRect(ctx, bounds);
     });
 #endif
+}
+
+- (void)removeCachedImagesWithColor:(VMKColor*)color {
+    [self.imagesByColor removeObjectForKey:color];
+}
+
+- (void)removeAllCachedImages {
+    [self.imagesByColor removeAllObjects];
 }
 
 @end

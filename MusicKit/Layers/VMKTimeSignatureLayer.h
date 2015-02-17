@@ -9,17 +9,17 @@
 /**
  Get the image for a time signature symbol at a particular scale.
  */
-+ (VMKImage*)imageForSymbol:(mxml::dom::Time::Symbol)symbol;
++ (VMKImage*)imageForSymbol:(mxml::dom::Time::Symbol)symbol withColor:(VMKColor*)color;
 
 /**
  Get the array of digit images for a time signature number.
  */
-+ (NSArray*)imagesForNumber:(int)number;
++ (NSArray*)imagesForNumber:(int)number withColor:(VMKColor*)color;
 
 /**
  Get the image for a time signature digit at a particular scale.
  */
-+ (VMKImage*)imageForDigit:(int)digit;
++ (VMKImage*)imageForDigit:(int)digit withColor:(VMKColor*)color;
 
 
 - (instancetype)initWithTimeSignatureGeometry:(const mxml::TimeSignatureGeometry*)timeGeom;

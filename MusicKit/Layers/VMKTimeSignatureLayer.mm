@@ -11,33 +11,33 @@ static const CGFloat kHorizontalSpacing = 0;
 
 @implementation VMKTimeSignatureLayer
 
-+ (VMKImage*)imageForSymbol:(dom::Time::Symbol)symbol {
++ (VMKImage*)imageForSymbol:(dom::Time::Symbol)symbol withColor:(VMKColor*)color {
     if (symbol == dom::Time::SYMBOL_COMMON)
-        return [[VMKImageStore sharedInstance] imageNamed:@"common"];
+        return [[VMKImageStore sharedInstance] imageNamed:@"common" withColor:color];
     return nil;
 }
 
-+ (NSArray*)imagesForNumber:(int)number {
++ (NSArray*)imagesForNumber:(int)number withColor:(VMKColor*)color {
     NSMutableArray* array = [NSMutableArray array];
 
     // Special case when number is zero
     if (number == 0) {
-        [array addObject:[self imageForDigit:number]];
+        [array addObject:[self imageForDigit:number withColor:color]];
         return array;
     }
 
     while (number > 0) {
         int digit = number % 10;
-        [array insertObject:[self imageForDigit:digit] atIndex:0];
+        [array insertObject:[self imageForDigit:digit withColor:color] atIndex:0];
         number /= 10;
     }
 
     return array;
 }
 
-+ (VMKImage*)imageForDigit:(int)digit {
++ (VMKImage*)imageForDigit:(int)digit withColor:(VMKColor*)color {
     NSString* name = [NSString stringWithFormat:@"numeral-%d", digit];
-    return [[VMKImageStore sharedInstance] imageNamed:name];
+    return [[VMKImageStore sharedInstance] imageNamed:name withColor:color];
 }
 
 + (CGSize)sizeForImages:(NSArray*)images {
@@ -77,16 +77,16 @@ static const CGFloat kHorizontalSpacing = 0;
 
     const dom::Time& time = self.timeSignatureGeometry->time();
 
-    VMKImage* image = [[self class] imageForSymbol:time.symbol()];
+    VMKImage* image = [[self class] imageForSymbol:time.symbol() withColor:self.foregroundColor];
     if (image) {
         [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
         return;
     }
 
-    NSArray* topImages = [[self class] imagesForNumber:time.beats()];
+    NSArray* topImages = [[self class] imagesForNumber:time.beats() withColor:self.foregroundColor];
     CGSize topSize = [[self class] sizeForImages:topImages];
 
-    NSArray* bottomImages = [[self class] imagesForNumber:time.beatType()];
+    NSArray* bottomImages = [[self class] imagesForNumber:time.beatType() withColor:self.foregroundColor];
     CGSize bottomSize = [[self class] sizeForImages:bottomImages];
 
     CGRect imageRect;

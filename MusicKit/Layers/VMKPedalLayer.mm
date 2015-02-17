@@ -23,7 +23,7 @@ using namespace mxml;
     self.geometry = spanDirectionGeometry;
 }
 
-- (void)setForegroundColor:(CGColorRef)foregroundColor {
+- (void)setForegroundColor:(VMKColor*)foregroundColor {
     [super setForegroundColor:foregroundColor];
     [self setNeedsDisplay];
 }
@@ -36,7 +36,7 @@ using namespace mxml;
 - (void)drawInContext:(CGContextRef)ctx {
     const CGFloat lineWidth = SpanDirectionGeometry::kLineWidth;
 
-    CGContextSetStrokeColorWithColor(ctx, self.foregroundColor);
+    CGContextSetStrokeColorWithColor(ctx, self.foregroundColor.CGColor);
     CGContextSetLineWidth(ctx, lineWidth);
 
     const SpanDirectionGeometry* geom = self.spanDirectionGeometry;
@@ -44,7 +44,7 @@ using namespace mxml;
     //const dom::Pedal& stopPedal = dynamic_cast<const dom::Pedal&>(*geom->stopDirection().type());
 
     CGFloat width = geom->stopLocation().x - geom->startLocation().x;
-    VMKImage* pedImage = [[VMKImageStore sharedInstance] imageNamed:@"ped"];
+    VMKImage* pedImage = [[VMKImageStore sharedInstance] imageNamed:@"ped" withColor:self.foregroundColor];
     [pedImage drawInRect:CGRectMake(0, 0, pedImage.size.width, pedImage.size.height)];
 
     if (startPedal.line()) {
@@ -54,7 +54,7 @@ using namespace mxml;
     }
 
     if (startPedal.sign()) {
-        VMKImage* starImage = [[VMKImageStore sharedInstance] imageNamed:@"star"];
+        VMKImage* starImage = [[VMKImageStore sharedInstance] imageNamed:@"star" withColor:self.foregroundColor];
         CGPoint point = CGPointMake(self.bounds.size.width - starImage.size.width, 0);
         [starImage drawInRect:CGRectMake(point.x, point.y, starImage.size.width, starImage.size.height)];
     }

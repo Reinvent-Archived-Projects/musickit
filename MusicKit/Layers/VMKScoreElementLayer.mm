@@ -26,13 +26,9 @@
     return self;
 }
 
-- (void)dealloc {
-    CGColorRelease(_foregroundColor);
-}
-
 - (void)setup {
     self.backgroundColor = [VMKColor clearColor].CGColor;
-    self.foregroundColor = [VMKColor blackColor].CGColor;
+    self.foregroundColor = [VMKColor blackColor];
     self.opaque = NO;
     self.contentsScale = VMKScreenScale();
 }
@@ -42,14 +38,11 @@
     return nil;
 }
 
-- (void)setForegroundColor:(CGColorRef)foregroundColor {
+- (void)setForegroundColor:(VMKColor*)foregroundColor {
     if (_foregroundColor == foregroundColor)
         return;
 
-    CGColorRelease(_foregroundColor);
     _foregroundColor = foregroundColor;
-    CGColorRetain(_foregroundColor);
-
     [self setNeedsDisplay];
 }
 

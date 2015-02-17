@@ -11,9 +11,10 @@
 
 + (instancetype)sharedInstance;
 
-@property(nonatomic, strong) VMKColor* foregroundColor;
-
-- (VMKImage*)imageNamed:(NSString*)name;
+- (VMKImage*)imageNamed:(NSString*)name withColor:(VMKColor*)color;
 + (VMKImage*)maskFillImage:(VMKImage*)image withColor:(VMKColor*)color;
+
+- (void)removeCachedImagesWithColor:(VMKColor*)color;
+- (void)removeAllCachedImages;
 
 @end

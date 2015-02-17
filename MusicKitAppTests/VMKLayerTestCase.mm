@@ -17,10 +17,6 @@ static NSString* const TEST_PREFIX = @"test";
     NSLog(@"Image test results written to\n%@", NSTemporaryDirectory());
 }
 
-- (void)setUp {
-    [VMKImageStore sharedInstance].foregroundColor = [VMKColor blackColor];
-}
-
 - (void)calculateRenderingErrors:(CALayer*)layer forSelector:(SEL)selector testBlock:(void (^)(VMKRenderingErrors))testBlock {
     NSString *imageName = [self imageNameForSelector:selector];
 

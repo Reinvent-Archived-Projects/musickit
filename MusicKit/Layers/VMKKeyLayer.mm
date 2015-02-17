@@ -62,7 +62,7 @@
     else
         imageName = @"sharp";
     
-    VMKImage* image = [[VMKImageStore sharedInstance] imageNamed:imageName];
+    VMKImage* image = [[VMKImageStore sharedInstance] imageNamed:imageName withColor:self.foregroundColor];
 
     CGFloat originY = self.bounds.size.height/2 - mxml::Metrics::staffHeight()/2;
     CGRect imageRect;

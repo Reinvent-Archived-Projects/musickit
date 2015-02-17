@@ -34,7 +34,7 @@ static const CGFloat kEndsControlsOutterX = 0.0286;
 }
 
 - (void)drawInContext:(CGContextRef)ctx {
-    CGContextSetFillColorWithColor(ctx, self.foregroundColor);
+    CGContextSetFillColorWithColor(ctx, self.foregroundColor.CGColor);
 
     const CGFloat dx = self.tieGeometry->stopLocation().x - self.tieGeometry->startLocation().x;
     const CGFloat dy = self.tieGeometry->stopLocation().y - self.tieGeometry->startLocation().y;

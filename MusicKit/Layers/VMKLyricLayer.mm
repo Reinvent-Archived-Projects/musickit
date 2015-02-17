@@ -14,7 +14,7 @@
     [super setup];
 
     _textLayer = [CATextLayer layer];
-    _textLayer.foregroundColor = self.foregroundColor;
+    _textLayer.foregroundColor = self.foregroundColor.CGColor;
     _textLayer.backgroundColor = self.backgroundColor;
     _textLayer.alignmentMode = kCAAlignmentCenter;
     _textLayer.contentsScale = VMKScreenScale();
@@ -27,9 +27,9 @@
     [self addSublayer:_textLayer];
 }
 
-- (void)setForegroundColor:(CGColorRef)foregroundColor {
+- (void)setForegroundColor:(VMKColor*)foregroundColor {
     [super setForegroundColor:foregroundColor];
-    _textLayer.foregroundColor = foregroundColor;
+    _textLayer.foregroundColor = foregroundColor.CGColor;
 }
 
 - (const mxml::LyricGeometry*)lyricGeometry {

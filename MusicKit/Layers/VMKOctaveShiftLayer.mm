@@ -27,7 +27,7 @@ using namespace mxml;
     self.geometry = spanDirectionGeometry;
 }
 
-- (void)setForegroundColor:(CGColorRef)foregroundColor {
+- (void)setForegroundColor:(VMKColor*)foregroundColor {
     [super setForegroundColor:foregroundColor];
     [self setNeedsDisplay];
 }
@@ -40,7 +40,7 @@ using namespace mxml;
 - (void)drawInContext:(CGContextRef)ctx {
     const CGFloat lineWidth = SpanDirectionGeometry::kLineWidth;
 
-    CGContextSetStrokeColorWithColor(ctx, self.foregroundColor);
+    CGContextSetStrokeColorWithColor(ctx, self.foregroundColor.CGColor);
     CGContextSetLineWidth(ctx, lineWidth);
 
     const SpanDirectionGeometry* geom = self.spanDirectionGeometry;

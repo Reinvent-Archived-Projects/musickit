@@ -8,24 +8,24 @@
 
 @implementation VMKAccidentalLayer
 
-+ (NSArray*)imagesForAccidental:(int)alter {
++ (NSArray*)imagesForAccidental:(int)alter withColor:(VMKColor*)color {
     VMKImageStore* imageStore = [VMKImageStore sharedInstance];
 
     switch (alter) {
         case mxml::dom::Accidental::kTypeSharp:
-            return @[ [imageStore imageNamed:@"sharp"] ];
+            return @[ [imageStore imageNamed:@"sharp" withColor:color] ];
 
         case mxml::dom::Accidental::kTypeFlat:
-            return @[ [imageStore imageNamed:@"flat"] ];
+            return @[ [imageStore imageNamed:@"flat" withColor:color] ];
 
         case mxml::dom::Accidental::kTypeNatural:
-            return @[ [imageStore imageNamed:@"natural"] ];
+            return @[ [imageStore imageNamed:@"natural" withColor:color] ];
 
         case mxml::dom::Accidental::kTypeDoubleSharp:
-            return @[ [imageStore imageNamed:@"double-sharp"] ];
+            return @[ [imageStore imageNamed:@"double-sharp" withColor:color] ];
 
         case mxml::dom::Accidental::kTypeDoubleFlat: {
-            VMKImage* image = [imageStore imageNamed:@"flat"];
+            VMKImage* image = [imageStore imageNamed:@"flat" withColor:color];
             return @[ image, image ];
         }
 
@@ -58,7 +58,7 @@
 - (void)drawInContext:(CGContextRef)ctx{
     CGSize size = self.bounds.size;
 
-    NSArray* images = [[self class] imagesForAccidental:self.accidentalGeometry->alter()];
+    NSArray* images = [[self class] imagesForAccidental:self.accidentalGeometry->alter() withColor:self.foregroundColor];
     CGSize imagesSize = [[self class] sizeForImages:images];
 
     CGFloat scale = size.width / imagesSize.width;

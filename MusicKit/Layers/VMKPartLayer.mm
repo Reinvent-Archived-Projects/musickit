@@ -44,7 +44,7 @@
 
 #pragma mark - 
 
-- (void)setForegroundColor:(CGColorRef)foregroundColor {
+- (void)setForegroundColor:(VMKColor*)foregroundColor {
     [super setForegroundColor:foregroundColor];
 
     for (VMKMeasureLayer* layer in self.measureLayers)

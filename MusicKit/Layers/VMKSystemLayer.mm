@@ -29,7 +29,7 @@
 
 #pragma mark -
 
-- (void)setForegroundColor:(CGColorRef)foregroundColor {
+- (void)setForegroundColor:(VMKColor*)foregroundColor {
     [super setForegroundColor:foregroundColor];
 
     for (VMKPartLayer* layer in self.partLayers)
@@ -85,7 +85,7 @@
 }
 
 - (void)drawInContext:(CGContextRef)ctx {
-    CGContextSetFillColorWithColor(ctx, self.foregroundColor);
+    CGContextSetFillColorWithColor(ctx, self.foregroundColor.CGColor);
 
     CGSize size = self.bounds.size;
     auto systemGeometry = self.systemGeometry;

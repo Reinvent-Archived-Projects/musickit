@@ -57,7 +57,7 @@ const CGFloat VMKBarLineWidth = 1;
     _numberLayer = [CATextLayer layer];
     _numberLayer.contentsScale = VMKScreenScale();
     _numberLayer.anchorPoint = CGPointMake(0, 1);
-    _numberLayer.foregroundColor = self.foregroundColor;
+    _numberLayer.foregroundColor = self.foregroundColor.CGColor;
     _numberLayer.backgroundColor = self.backgroundColor;
     _numberLayer.alignmentMode = kCAAlignmentCenter;
     _numberLayer.font = CFSTR("Baskerville-SemiBold");
@@ -76,13 +76,13 @@ const CGFloat VMKBarLineWidth = 1;
 
 #pragma mark -
 
-- (void)setForegroundColor:(CGColorRef)foregroundColor {
+- (void)setForegroundColor:(VMKColor*)foregroundColor {
     [super setForegroundColor:foregroundColor];
 
     for (VMKScoreElementLayer* view in _elementLayers)
         view.foregroundColor = foregroundColor;
 
-    _numberLayer.foregroundColor = foregroundColor;
+    _numberLayer.foregroundColor = foregroundColor.CGColor;
 
     [self setNeedsDisplay];
 }
@@ -191,7 +191,7 @@ const CGFloat VMKBarLineWidth = 1;
 }
 
 - (void)drawInContext:(CGContextRef)ctx {
-    CGContextSetFillColorWithColor(ctx, self.foregroundColor);
+    CGContextSetFillColorWithColor(ctx, self.foregroundColor.CGColor);
 
     auto& metrics = self.measureGeometry->metrics();
     auto staves = metrics.staves();

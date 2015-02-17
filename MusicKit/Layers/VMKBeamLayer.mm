@@ -47,7 +47,7 @@ using mxml::dom::Beam;
 - (void)drawInContext:(CGContextRef)ctx{
     if (!self.geometry)
         return;
-    CGContextSetFillColorWithColor(ctx, self.foregroundColor);
+    CGContextSetFillColorWithColor(ctx, self.foregroundColor.CGColor);
 
     const BeamGeometry* beamGeom = self.beamGeometry;
     CGFloat slope = (beamGeom->beamEnd().y - beamGeom->beamBegin().y) / (beamGeom->beamEnd().x - beamGeom->beamBegin().x);

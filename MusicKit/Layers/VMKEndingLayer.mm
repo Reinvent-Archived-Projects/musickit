@@ -30,9 +30,9 @@ static const CGFloat kLineWidth = 1;
 - (void)drawInContext:(CGContextRef)ctx{
     const mxml::EndingGeometry* geom = self.endingGeometry;
 
-    CGContextSetStrokeColorWithColor(ctx, self.foregroundColor);
-    CGContextSetStrokeColorWithColor(ctx, self.foregroundColor);
-    CGContextSetFillColorWithColor(ctx, self.foregroundColor);
+    CGContextSetStrokeColorWithColor(ctx, self.foregroundColor.CGColor);
+    CGContextSetStrokeColorWithColor(ctx, self.foregroundColor.CGColor);
+    CGContextSetFillColorWithColor(ctx, self.foregroundColor.CGColor);
 
 
     CGSize size = self.bounds.size;

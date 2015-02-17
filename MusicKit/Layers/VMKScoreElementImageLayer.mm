@@ -18,7 +18,7 @@
     return self;
 }
 
-- (void)setForegroundColor:(CGColorRef)foregroundColor {
+- (void)setForegroundColor:(VMKColor*)foregroundColor {
     [super setForegroundColor:foregroundColor];
     [self _updateImage];
 }
@@ -34,7 +34,7 @@
 - (void)_updateImage {
     if (self.imageName) {
         VMKImageStore* imageStore = [VMKImageStore sharedInstance];
-        self.image = [imageStore imageNamed:self.imageName];
+        self.image = [imageStore imageNamed:self.imageName withColor:self.foregroundColor];
     } else {
         self.image = nil;
     }

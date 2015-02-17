@@ -1,6 +1,8 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import <QuartzCore/QuartzCore.h>
+#import "VMKColor.h"
+
 #include <mxml/geometry/Geometry.h>
 
 
@@ -13,7 +15,7 @@
 @property(nonatomic) const mxml::Geometry* geometry;
 
 /** The foreground color. */
-@property(nonatomic) CGColorRef foregroundColor;
+@property(nonatomic, strong) VMKColor* foregroundColor;
 
 
 /** This method is called from init to setup the view.

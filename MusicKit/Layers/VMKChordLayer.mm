@@ -72,7 +72,7 @@ using namespace mxml;
     [self setNeedsDisplay];
 }
 
-- (void)setForegroundColor:(CGColorRef)foregroundColor {
+- (void)setForegroundColor:(VMKColor*)foregroundColor {
     [super setForegroundColor:foregroundColor];
     for (VMKNoteHeadLayer* layer in _noteHeadLayers)
         layer.foregroundColor = foregroundColor;
@@ -194,7 +194,7 @@ using namespace mxml;
     }
     stemRect.size.width = kStemWidth;
 
-    CGContextSetFillColorWithColor(ctx, self.foregroundColor);
+    CGContextSetFillColorWithColor(ctx, self.foregroundColor.CGColor);
 
     CGContextFillRect(ctx, VMKRoundRect(stemRect));
 }

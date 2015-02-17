@@ -42,7 +42,7 @@ static const CGFloat kLineSpacing = 2;
     if (!self.geometry)
         return;
 
-    CGContextSetFillColorWithColor(ctx, self.foregroundColor);
+    CGContextSetFillColorWithColor(ctx, self.foregroundColor.CGColor);
     if (self.barlineGeometry->barline().repeat()) {
         [self drawRepeatInContext:ctx];
     } else {
@@ -107,7 +107,7 @@ static const CGFloat kLineSpacing = 2;
 - (void)drawRepeatInContext:(CGContextRef)ctx {
     CGFloat height = self.bounds.size.height;
 
-    VMKImage* dotImage = [[VMKImageStore sharedInstance] imageNamed:@"dot"];
+    VMKImage* dotImage = [[VMKImageStore sharedInstance] imageNamed:@"dot" withColor:self.foregroundColor];
     CGSize dotSize = dotImage.size;
     CGFloat offset = 0;
 
