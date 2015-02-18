@@ -111,6 +111,7 @@ const CGFloat VMKBarLineWidth = 1;
         if (self.measureGeometry->showNumber()) {
             const Measure& measure = self.measureGeometry->measure();
             _numberLayer.string = [NSString stringWithUTF8String:measure.number().c_str()];
+            _numberLayer.foregroundColor = self.foregroundColor.CGColor;
             _numberLayer.position = CGPointMake(0, -2);
             _numberLayer.bounds = {CGPointZero, _numberLayer.preferredFrameSize};
             _numberLayer.hidden = NO;

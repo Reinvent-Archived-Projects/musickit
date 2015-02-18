@@ -59,7 +59,8 @@
         if (type == mxml::dom::Syllabic::kBegin || type == mxml::dom::Syllabic::kMiddle)
             string = [string stringByAppendingString:@" - "];
     }
-    
+
+    _textLayer.foregroundColor = self.foregroundColor.CGColor;
     _textLayer.string = string;
 }
 

@@ -65,6 +65,7 @@
     if (self.wordsGeometry->contents())
         _textLayer.string = [preprend stringByAppendingString:[NSString stringWithUTF8String:self.wordsGeometry->contents()->c_str()]];
 
+    _textLayer.foregroundColor = self.foregroundColor.CGColor;
     _textLayer.frame = {CGPointZero, self.bounds.size};
 }
 
