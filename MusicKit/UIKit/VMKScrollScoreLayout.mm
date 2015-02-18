@@ -126,14 +126,12 @@ static const CGFloat VMCursorWidth = 16;
         return 0;
 
     const auto& event = *self.cursorEvent;
-    const auto& notes = event.onNotes();
+    const auto& spans = _scoreGeometry->spans();
 
-    for (auto note = notes.begin(); note != notes.end(); ++note) {
-        auto it = _scoreGeometry->spans().with(*note);
-        if (it != _scoreGeometry->spans().end()) {
-            const auto& span = *it;
-            return span.start() + span.eventOffset();
-        }
+    auto it = spans.closest(event.measureIndex(), event.measureTime(), typeid(mxml::dom::Note));
+    if (it != spans.end()) {
+        const auto& span = *it;
+        return span.start() + span.eventOffset();
     }
 
     return 0;

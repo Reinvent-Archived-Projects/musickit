@@ -186,23 +186,20 @@ static const CGFloat kBottomPadding = 40;
         return CGPointFromPoint(_scoreGeometry->origin());
 
     const auto& event = *self.cursorEvent;
-    const auto& notes = event.onNotes();
     const auto& scoreProperties = _scoreGeometry->scoreProperties();
     const auto& spans = _scoreGeometry->spans();
 
-    for (auto& note : notes) {
-        auto it = spans.with(note);
-        if (it != spans.end()) {
-            auto& span = *it;
-            auto systemIndex = scoreProperties.systemIndex(span.measureIndex());
-            auto range = scoreProperties.measureRange(systemIndex);
-            auto systemGeometry = _scoreGeometry->systemGeometries()[systemIndex];
+    auto it = spans.closest(event.measureIndex(), event.measureTime(), typeid(mxml::dom::Note));
+    if (it != spans.end()) {
+        auto& span = *it;
+        auto systemIndex = scoreProperties.systemIndex(span.measureIndex());
+        auto range = scoreProperties.measureRange(systemIndex);
+        auto systemGeometry = _scoreGeometry->systemGeometries()[systemIndex];
 
-            CGPoint location;
-            location.x = span.start() - spans.origin(range.first) + span.eventOffset();
-            location.y = systemGeometry->origin().y;
-            return location;
-        }
+        CGPoint location;
+        location.x = span.start() - spans.origin(range.first) + span.eventOffset();
+        location.y = systemGeometry->origin().y;
+        return location;
     }
 
     return CGPointFromPoint(_scoreGeometry->origin());
