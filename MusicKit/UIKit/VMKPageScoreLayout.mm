@@ -29,10 +29,6 @@ static const CGFloat kBottomPadding = 40;
     [self invalidateLayout];
 }
 
-- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
-    return YES;
-}
-
 - (NSArray*)layoutAttributesForElementsInRect:(CGRect)rect {
     NSMutableArray* attributesArray = [NSMutableArray array];
 
