@@ -55,6 +55,11 @@
     [super setGeometry:accidentalGeometry];
 }
 
+- (void)setGeometry:(const mxml::Geometry *)geometry {
+    [super setGeometry:geometry];
+    [self setNeedsDisplay];
+}
+
 - (void)drawInContext:(CGContextRef)ctx{
     CGSize size = self.bounds.size;
 

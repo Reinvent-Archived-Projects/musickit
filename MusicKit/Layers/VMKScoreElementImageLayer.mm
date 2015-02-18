@@ -28,6 +28,11 @@
     [self _updateImage];
 }
 
+- (void)setGeometry:(const mxml::Geometry *)geometry {
+    [super setGeometry:geometry];
+    [self _updateImage];
+}
+
 - (void)setImageName:(NSString *)imageName {
     if (imageName == _imageName)
         return;
