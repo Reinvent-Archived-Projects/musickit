@@ -120,7 +120,7 @@ static const CGFloat kBottomPadding = 40;
 
         for (int staff = 1; staff <= staves; staff += 1) {
             CGRect frame = CGRectFromRect(partGeometry->convertToGeometry(measureGeometry->frame(), _scoreGeometry));
-            frame.origin.y += mxml::MeasureGeometry::kVerticalPadding + partGeometry->staffOrigin(staff);
+            frame.origin.y += -measureGeometry->contentOffset().y + partGeometry->staffOrigin(staff);
             frame.size.height = Metrics::staffHeight();
 
             const CGAffineTransform transform = CGAffineTransformMakeScale(self.scale, self.scale);

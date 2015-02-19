@@ -155,7 +155,7 @@ static const CGFloat VMCursorWidth = 16;
 
         for (int staff = 1; staff <= staves; staff += 1) {
             CGRect frame = CGRectFromRect(partGeometry->convertToGeometry(measureGeometry->frame(), _scoreGeometry));
-            frame.origin.y += mxml::MeasureGeometry::kVerticalPadding + partGeometry->staffOrigin(staff) + _topOffset;
+            frame.origin.y += -measureGeometry->contentOffset().y + partGeometry->staffOrigin(staff) + _topOffset;
             frame.size.height = Metrics::staffHeight();
 
             NSIndexPath* indexPath = [NSIndexPath indexPathForItem:staff - 1 ofType:VMKScoreElementTypeCursor inPart:partIndex];

@@ -80,8 +80,9 @@
     }
     self.anchorPoint = anchorPoint;
 
-    self.bounds = {CGPointFromPoint(_geometry->contentOffset()), size};
+    self.bounds = VMKRoundRect({CGPointFromPoint(_geometry->contentOffset()), size});
     self.position = CGPointFromPoint(_geometry->location());
+    self.frame = VMKRoundRect(self.frame);
 }
 
 - (CGSize)preferredFrameSize {

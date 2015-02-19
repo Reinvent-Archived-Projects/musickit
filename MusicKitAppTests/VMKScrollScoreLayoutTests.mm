@@ -2,6 +2,7 @@
 
 #import "VMKLayerTestCase.h"
 
+#import "VMKGeometry.h"
 #import "VMKMeasureView.h"
 #import "VMKScrollScoreDataSource.h"
 #import "VMKScrollScoreLayout.h"
@@ -56,10 +57,11 @@
     } else {
         _geometry.reset();
     }
-    
-    self.scoreLayout.minHeight = self.collectionView.bounds.size.height - self.collectionView.contentInset.top - self.collectionView.contentInset.bottom;
+
+    self.scoreLayout.minHeight = _geometry->frame().size.height;
     self.scoreLayout.scoreGeometry = _geometry.get();
     self.dataSource.scoreGeometry = _geometry.get();
+    self.collectionView.frame = CGRectMake(0, 0, _geometry->frame().size.width, _geometry->frame().size.height);
     [self.collectionView reloadData];
 }
 

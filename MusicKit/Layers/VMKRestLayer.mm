@@ -40,8 +40,9 @@ using namespace mxml::dom;
     }
     self.anchorPoint = anchorPoint;
 
-    self.bounds = {CGPointFromPoint(self.geometry->contentOffset()), size};
+    self.bounds = VMKRoundRect({CGPointFromPoint(self.geometry->contentOffset()), size});
     self.position = CGPointFromPoint(self.geometry->location());
+    self.frame = VMKRoundRect(self.frame);
 }
 
 + (NSString*)headImageNameForType:(mxml::dom::Optional<mxml::dom::Note::Type>)type {

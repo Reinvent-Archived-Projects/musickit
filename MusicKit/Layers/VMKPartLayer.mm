@@ -108,7 +108,7 @@
         }
 
         layer.activeForegroundColor = self.activeForegroundColor;
-        layer.InactiveForegroundColor = self.inactiveForegroundColor;
+        layer.inactiveForegroundColor = self.inactiveForegroundColor;
         layer.backgroundColor = self.backgroundColor;
         layer.hidden = NO;
 
