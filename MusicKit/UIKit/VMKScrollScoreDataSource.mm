@@ -114,11 +114,11 @@ using namespace mxml;
     const PartGeometry* partGeom = [self partGeometryForSection:indexPath.section];
     const Geometry* geometry = partGeom->directionGeometries().at(indexPath.item);
     if (const SpanDirectionGeometry* geom = dynamic_cast<const SpanDirectionGeometry*>(geometry)) {
-        if (dynamic_cast<const dom::Wedge*>(geom->startDirection().type())) {
+        if (dynamic_cast<const dom::Wedge*>(geom->type())) {
             view = [[VMKWedgeView alloc] initWithWedgeGeometry:geom];
-        } else if (dynamic_cast<const dom::Pedal*>(geom->startDirection().type())) {
+        } else if (dynamic_cast<const dom::Pedal*>(geom->type())) {
             view = [[VMKPedalView alloc] initWithPedalGeometry:geom];
-        } else if (dynamic_cast<const dom::OctaveShift*>(geom->startDirection().type())) {
+        } else if (dynamic_cast<const dom::OctaveShift*>(geom->type())) {
             view = [[VMKOctaveShiftView alloc] initWithOctaveShiftGeometry:geom];
         }
     } else if (const CodaGeometry* geom = dynamic_cast<const CodaGeometry*>(geometry)) {

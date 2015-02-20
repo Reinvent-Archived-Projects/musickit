@@ -130,11 +130,11 @@
     VMKScoreElementLayer* layer;
 
     if (const mxml::SpanDirectionGeometry* geom = dynamic_cast<const mxml::SpanDirectionGeometry*>(geometry)) {
-        if (dynamic_cast<const mxml::dom::Wedge*>(geom->startDirection().type())) {
+        if (dynamic_cast<const mxml::dom::Wedge*>(geom->type())) {
             layer = [[VMKWedgeLayer alloc] initWithSpanDirectionGeometry:geom];
-        } else if (dynamic_cast<const mxml::dom::Pedal*>(geom->startDirection().type())) {
+        } else if (dynamic_cast<const mxml::dom::Pedal*>(geom->type())) {
             layer = [[VMKPedalLayer alloc] initWithSpanDirectionGeometry:geom];
-        } else if (dynamic_cast<const mxml::dom::OctaveShift*>(geom->startDirection().type())) {
+        } else if (dynamic_cast<const mxml::dom::OctaveShift*>(geom->type())) {
             layer = [[VMKOctaveShiftLayer alloc] initWithSpanDirectionGeometry:geom];
         }
     } else if (auto geom = dynamic_cast<const mxml::CodaGeometry*>(geometry)) {

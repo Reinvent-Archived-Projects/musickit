@@ -233,6 +233,18 @@
 		610DCF631A09ACED00BEEBFD /* VMKAccidentalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF611A09ACED00BEEBFD /* VMKAccidentalLayer.h */; };
 		610DCF641A09ACED00BEEBFD /* VMKAccidentalLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DCF621A09ACED00BEEBFD /* VMKAccidentalLayer.mm */; };
 		61149B5C1A83043800EB0C0F /* VMKKeyLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61E530BE1A7ACBC500E5B2FF /* VMKKeyLayerTests.mm */; };
+		6118AD9E1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD981A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png */; };
+		6118AD9F1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD981A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png */; };
+		6118ADA01A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD991A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png */; };
+		6118ADA11A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD991A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png */; };
+		6118ADA21A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9A1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@3x.png */; };
+		6118ADA31A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9A1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@3x.png */; };
+		6118ADA41A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9B1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop.png */; };
+		6118ADA51A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9B1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop.png */; };
+		6118ADA61A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9C1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png */; };
+		6118ADA71A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9C1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png */; };
+		6118ADA81A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9D1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png */; };
+		6118ADA91A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9D1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png */; };
 		61239A671A64B4F000B3F0A3 /* ScoreProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 61239A651A64B4F000B3F0A3 /* ScoreProperties.h */; };
 		61239A681A64B4F000B3F0A3 /* ScoreProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 61239A651A64B4F000B3F0A3 /* ScoreProperties.h */; };
 		61239A691A64B4F000B3F0A3 /* ScoreProperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61239A661A64B4F000B3F0A3 /* ScoreProperties.cpp */; };
@@ -260,6 +272,8 @@
 		614057D71A5CBD49005224C9 /* Key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614057D21A5CBD49005224C9 /* Key.cpp */; };
 		614057D81A5CBD49005224C9 /* Key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614057D21A5CBD49005224C9 /* Key.cpp */; };
 		614057DA1A5CC54E005224C9 /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
+		616337441A97F99100CF7D2F /* kiss_the_rain.xml in Resources */ = {isa = PBXBuildFile; fileRef = 616337431A97F99100CF7D2F /* kiss_the_rain.xml */; };
+		616337451A97F99100CF7D2F /* kiss_the_rain.xml in Resources */ = {isa = PBXBuildFile; fileRef = 616337431A97F99100CF7D2F /* kiss_the_rain.xml */; };
 		616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */; };
 		616C1A8E1A0A970F0020EAA8 /* VMKChordLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */; };
 		616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */; };
@@ -1377,6 +1391,12 @@
 		610DCF601A09A46900BEEBFD /* VMKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VMKColor.h; sourceTree = "<group>"; };
 		610DCF611A09ACED00BEEBFD /* VMKAccidentalLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKAccidentalLayer.h; sourceTree = "<group>"; };
 		610DCF621A09ACED00BEEBFD /* VMKAccidentalLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKAccidentalLayer.mm; sourceTree = "<group>"; };
+		6118AD981A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStart.png"; sourceTree = "<group>"; };
+		6118AD991A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStart@2x.png"; sourceTree = "<group>"; };
+		6118AD9A1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStart@3x.png"; sourceTree = "<group>"; };
+		6118AD9B1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStop.png"; sourceTree = "<group>"; };
+		6118AD9C1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStop@2x.png"; sourceTree = "<group>"; };
+		6118AD9D1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStop@3x.png"; sourceTree = "<group>"; };
 		61239A651A64B4F000B3F0A3 /* ScoreProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoreProperties.h; path = Submodules/mxml/src/mxml/ScoreProperties.h; sourceTree = SOURCE_ROOT; };
 		61239A661A64B4F000B3F0A3 /* ScoreProperties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScoreProperties.cpp; path = Submodules/mxml/src/mxml/ScoreProperties.cpp; sourceTree = SOURCE_ROOT; };
 		61239A701A65FFB100B3F0A3 /* ScoreBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoreBuilder.h; path = Submodules/mxml/src/mxml/ScoreBuilder.h; sourceTree = SOURCE_ROOT; };
@@ -1393,6 +1413,7 @@
 		61402C591A082661003AE7A7 /* Symbols.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Symbols.xcassets; sourceTree = "<group>"; };
 		614057D11A5CBD49005224C9 /* Pitch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pitch.cpp; sourceTree = "<group>"; };
 		614057D21A5CBD49005224C9 /* Key.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Key.cpp; sourceTree = "<group>"; };
+		616337431A97F99100CF7D2F /* kiss_the_rain.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = kiss_the_rain.xml; path = "../../../../../../../Desktop/Kiss the Rain/kiss_the_rain.xml"; sourceTree = "<group>"; };
 		616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKChordLayer.h; sourceTree = "<group>"; };
 		616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKChordLayer.mm; sourceTree = "<group>"; };
 		616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKClefLayer.h; sourceTree = "<group>"; };
@@ -1855,12 +1876,6 @@
 		610DC5CC1A08322800BEEBFD /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				005DA5D91A7FEEE0003B41AC /* accidentals.xml */,
-				005DA5DA1A7FEEE0003B41AC /* accidentals2.xml */,
-				005DA5DF1A7FEF09003B41AC /* endings.xml */,
-				005DA5D61A7FEECE003B41AC /* slurs.xml */,
-				001EAAF31A82CD4C0097AE0D /* system.xml */,
-				0005C0FE1A7C381500B60619 /* system_attributes.xml */,
 				616C1C4A1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png */,
 				616C1C4B1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png */,
 				616C1C641A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png */,
@@ -1992,6 +2007,12 @@
 				616C1E211A1173300020EAA8 /* ScrollScoreLayout-Slurs.png */,
 				616C1E231A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png */,
 				616C1E2E1A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png */,
+				6118AD981A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png */,
+				6118AD991A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png */,
+				6118AD9A1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@3x.png */,
+				6118AD9B1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop.png */,
+				6118AD9C1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png */,
+				6118AD9D1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png */,
 				001EAAF61A82D26D0097AE0D /* SystemLayer-System.png */,
 				001EAAF71A82D26D0097AE0D /* SystemLayer-System@2x.png */,
 				001EAAF81A82D26D0097AE0D /* SystemLayer-System@3x.png */,
@@ -2034,6 +2055,13 @@
 				0008687C1A683B5300BAA13D /* WordsLayer-Words.png */,
 				0008687D1A683B5300BAA13D /* WordsLayer-Words@2x.png */,
 				0008687E1A683B5300BAA13D /* WordsLayer-Words@3x.png */,
+				005DA5D91A7FEEE0003B41AC /* accidentals.xml */,
+				005DA5DA1A7FEEE0003B41AC /* accidentals2.xml */,
+				005DA5DF1A7FEF09003B41AC /* endings.xml */,
+				616337431A97F99100CF7D2F /* kiss_the_rain.xml */,
+				005DA5D61A7FEECE003B41AC /* slurs.xml */,
+				0005C0FE1A7C381500B60619 /* system_attributes.xml */,
+				001EAAF31A82CD4C0097AE0D /* system.xml */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -3027,6 +3055,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				005DA5DD1A7FEEE0003B41AC /* accidentals2.xml in Resources */,
+				6118ADA21A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@3x.png in Resources */,
 				616C1D581A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png in Resources */,
 				61E530FC1A7ACF5400E5B2FF /* KeyLayer-FSharpMajor@2x.png in Resources */,
 				616C1CF01A0D81550020EAA8 /* BeamLayer-FourBeams@2x.png in Resources */,
@@ -3099,6 +3128,7 @@
 				610DC67C1A08330700BEEBFD /* Symbols.xcassets in Resources */,
 				616C1D0E1A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png in Resources */,
 				616C1D061A0D81550020EAA8 /* MeasureLayer-Empty.png in Resources */,
+				6118ADA41A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop.png in Resources */,
 				61E530F61A7ACF5400E5B2FF /* KeyLayer-GFlatMajor@2x.png in Resources */,
 				616C1CC61A0D81550020EAA8 /* ChordLayer-128th.png in Resources */,
 				616C1D341A0D81550020EAA8 /* ChordLayer-Whole@3x.png in Resources */,
@@ -3121,6 +3151,8 @@
 				616C1CE61A0D81550020EAA8 /* BeamLayer-BackwardHook.png in Resources */,
 				61E531401A7ACF5400E5B2FF /* KeyLayer-AMajor.png in Resources */,
 				616C1D421A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png in Resources */,
+				6118ADA61A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png in Resources */,
+				616337441A97F99100CF7D2F /* kiss_the_rain.xml in Resources */,
 				616C1CDE1A0D81550020EAA8 /* ChordLayer-Accent.png in Resources */,
 				616C1D361A0D81550020EAA8 /* ClefLayer-Treble@3x.png in Resources */,
 				000868891A683B5300BAA13D /* WordsLayer-Words@3x.png in Resources */,
@@ -3131,6 +3163,7 @@
 				005DA5DB1A7FEEE0003B41AC /* accidentals.xml in Resources */,
 				616C1D501A0D81550020EAA8 /* TieLayer-AngledDownBelow@3x.png in Resources */,
 				61E5313C1A7ACF5400E5B2FF /* KeyLayer-AMajor@3x.png in Resources */,
+				6118ADA81A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png in Resources */,
 				616C1CD41A0D81550020EAA8 /* ChordLayer-Eighth@2x.png in Resources */,
 				616C1CD21A0D81550020EAA8 /* ChordLayer-Eighth.png in Resources */,
 				001E81061A7FF6AA00784D9D /* PageScoreLayout-Attributes.png in Resources */,
@@ -3141,6 +3174,7 @@
 				616C1C941A0D81550020EAA8 /* TieLayer-18Tie@2x.png in Resources */,
 				61E5311A1A7ACF5400E5B2FF /* KeyLayer-DFlatMajor@2x.png in Resources */,
 				616C1CB21A0D81550020EAA8 /* TieLayer-AngledUpBelow.png in Resources */,
+				6118ADA01A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png in Resources */,
 				61E5312A1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@3x.png in Resources */,
 				61E531021A7ACF5400E5B2FF /* KeyLayer-FMajor@2x.png in Resources */,
 				001EAAF91A82D26D0097AE0D /* SystemLayer-System.png in Resources */,
@@ -3188,6 +3222,7 @@
 				61E530F01A7ACF5400E5B2FF /* KeyLayer-GMajor@2x.png in Resources */,
 				005DA5D71A7FEECE003B41AC /* slurs.xml in Resources */,
 				61E5311C1A7ACF5400E5B2FF /* KeyLayer-DFlatMajor.png in Resources */,
+				6118AD9E1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png in Resources */,
 				616C1CB81A0D81550020EAA8 /* ChordLayer-Whole.png in Resources */,
 				616C1CAE1A0D81550020EAA8 /* TieLayer-AngledUp.png in Resources */,
 				616C1CC81A0D81550020EAA8 /* ChordLayer-128th@2x.png in Resources */,
@@ -3238,6 +3273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				005DA5DE1A7FEEE0003B41AC /* accidentals2.xml in Resources */,
+				6118ADA31A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@3x.png in Resources */,
 				616C1DFC1A0D97590020EAA8 /* TieLayer-1000Tie@2x.png in Resources */,
 				61E530FD1A7ACF5400E5B2FF /* KeyLayer-FSharpMajor@2x.png in Resources */,
 				616C1DC41A0D97590020EAA8 /* ChordLayer-Eighth.png in Resources */,
@@ -3310,6 +3346,7 @@
 				616C1DB11A0D97590020EAA8 /* BeamLayer-OneBeamThreeNotes@3x.png in Resources */,
 				616C1DCD1A0D97590020EAA8 /* ChordLayer-Whole.png in Resources */,
 				61E530F71A7ACF5400E5B2FF /* KeyLayer-GFlatMajor@2x.png in Resources */,
+				6118ADA51A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop.png in Resources */,
 				616C1DA01A0D97590020EAA8 /* BeamLayer-AccidentalInBeamedSet.png in Resources */,
 				616C1DBD1A0D97590020EAA8 /* ChordLayer-Accidental@3x.png in Resources */,
 				00A90B6C1A79907000D971B3 /* ScrollScoreLayout-Accidentals@3x.png in Resources */,
@@ -3332,6 +3369,8 @@
 				61E531411A7ACF5400E5B2FF /* KeyLayer-AMajor.png in Resources */,
 				616C1DF01A0D97590020EAA8 /* TieLayer-18Tie@2x.png in Resources */,
 				616C1DC31A0D97590020EAA8 /* ChordLayer-Dot@3x.png in Resources */,
+				6118ADA71A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png in Resources */,
+				616337451A97F99100CF7D2F /* kiss_the_rain.xml in Resources */,
 				616C1E321A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png in Resources */,
 				0008688A1A683B5300BAA13D /* WordsLayer-Words@3x.png in Resources */,
 				616C1DFD1A0D97590020EAA8 /* TieLayer-1000Tie@3x.png in Resources */,
@@ -3342,6 +3381,7 @@
 				005DA5DC1A7FEEE0003B41AC /* accidentals.xml in Resources */,
 				61E5313D1A7ACF5400E5B2FF /* KeyLayer-AMajor@3x.png in Resources */,
 				616C1DCB1A0D97590020EAA8 /* ChordLayer-Quarter@2x.png in Resources */,
+				6118ADA91A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png in Resources */,
 				616C1E051A0D97590020EAA8 /* TieLayer-AngledUp@2x.png in Resources */,
 				616C1DC71A0D97590020EAA8 /* ChordLayer-EighthDown.png in Resources */,
 				001E81071A7FF6AA00784D9D /* PageScoreLayout-Attributes.png in Resources */,
@@ -3352,6 +3392,7 @@
 				61E5311B1A7ACF5400E5B2FF /* KeyLayer-DFlatMajor@2x.png in Resources */,
 				616C1DCF1A0D97590020EAA8 /* ChordLayer-Whole@3x.png in Resources */,
 				61E5312B1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@3x.png in Resources */,
+				6118ADA11A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png in Resources */,
 				61E531031A7ACF5400E5B2FF /* KeyLayer-FMajor@2x.png in Resources */,
 				616C1DBE1A0D97590020EAA8 /* ChordLayer-DisplaceSideways.png in Resources */,
 				001EAAFA1A82D26D0097AE0D /* SystemLayer-System.png in Resources */,
@@ -3399,6 +3440,7 @@
 				61E530F11A7ACF5400E5B2FF /* KeyLayer-GMajor@2x.png in Resources */,
 				005DA5D81A7FEECE003B41AC /* slurs.xml in Resources */,
 				61E5311D1A7ACF5400E5B2FF /* KeyLayer-DFlatMajor.png in Resources */,
+				6118AD9F1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png in Resources */,
 				616C1DAC1A0D97590020EAA8 /* BeamLayer-OneBeam.png in Resources */,
 				616C1DAD1A0D97590020EAA8 /* BeamLayer-OneBeam@2x.png in Resources */,
 				616C1DCE1A0D97590020EAA8 /* ChordLayer-Whole@2x.png in Resources */,
