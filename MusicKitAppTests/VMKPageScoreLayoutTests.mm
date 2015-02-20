@@ -65,9 +65,10 @@
     NSString* path = [bundle pathForResource:@"system_attributes" ofType:@"xml"];
     [self load:path];
 
-    [self overrideLayerBackgorunds:self.collectionView.layer dictionary:@{VMKClefLayer.class: [UIColor blueColor],
-                                                                          VMKKeyLayer.class: [UIColor redColor],
-                                                                          VMKTimeSignatureLayer.class: [UIColor greenColor]}];
+    // Force render the base layer so the sublayers are created
+    if (!self.collectionView.layer.superlayer)
+        [self renderLayer:self.collectionView.layer completion:nil];
+    [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1]];
 
     [self calculateRenderingErrors:self.collectionView.layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
         XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
@@ -79,9 +80,10 @@
     NSString* path = [bundle pathForResource:@"system_attributes" ofType:@"xml"];
     [self load:path];
 
-    [self overrideLayerBackgorunds:self.collectionView.layer dictionary:@{VMKClefLayer.class: [UIColor blueColor],
-                                                                          VMKKeyLayer.class: [UIColor redColor],
-                                                                          VMKTimeSignatureLayer.class: [UIColor greenColor]}];
+    // Force render the base layer so the sublayers are created
+    if (!self.collectionView.layer.superlayer)
+        [self renderLayer:self.collectionView.layer completion:nil];
+    [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1]];
 
     [self calculateRenderingErrors:self.collectionView.layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
         XCTAssertGreaterThan(errors.maximumError, kMaximumError);

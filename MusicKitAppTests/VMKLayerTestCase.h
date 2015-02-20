@@ -18,5 +18,6 @@ struct VMKRenderingErrors {
 
 - (void)calculateRenderingErrors:(CALayer *)layer forSelector:(SEL)selector testBlock:(void (^)(VMKRenderingErrors))testBlock;
 - (void)overrideLayerBackgorunds:(CALayer *)layer dictionary:(NSDictionary *)dictionary;
+- (void)renderLayer:(CALayer*)layer completion:(void (^)(VMKImage* image))completion;
 
 @end

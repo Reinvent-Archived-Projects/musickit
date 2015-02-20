@@ -760,6 +760,20 @@
 		618C6CBE1A13E7E0008314B2 /* EventSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE01A094A0E00BEEBFD /* EventSequence.cpp */; };
 		618C6CBF1A13E7E0008314B2 /* SpanCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE701A094A0E00BEEBFD /* SpanCollection.cpp */; };
 		618C6CC01A13E7E0008314B2 /* SpanFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */; };
+		61947F301A9D01150032977B /* VMKRenderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 61947F2E1A9D01150032977B /* VMKRenderOperation.h */; };
+		61947F311A9D01150032977B /* VMKRenderOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61947F2F1A9D01150032977B /* VMKRenderOperation.mm */; };
+		61947F371A9D01270032977B /* VMKScrollingDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 61947F321A9D01270032977B /* VMKScrollingDirection.h */; };
+		61947F381A9D01270032977B /* VMKScrollingDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 61947F321A9D01270032977B /* VMKScrollingDirection.h */; };
+		61947F391A9D01270032977B /* VMKScrollingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 61947F331A9D01270032977B /* VMKScrollingImageCache.h */; };
+		61947F3A1A9D01270032977B /* VMKScrollingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 61947F331A9D01270032977B /* VMKScrollingImageCache.h */; };
+		61947F3B1A9D01270032977B /* VMKScrollingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 61947F341A9D01270032977B /* VMKScrollingImageCache.m */; };
+		61947F3C1A9D01270032977B /* VMKScrollingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 61947F341A9D01270032977B /* VMKScrollingImageCache.m */; };
+		61947F3D1A9D01270032977B /* VMKScrollingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 61947F341A9D01270032977B /* VMKScrollingImageCache.m */; };
+		61947F3E1A9D01270032977B /* VMKScrollingOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 61947F351A9D01270032977B /* VMKScrollingOperationQueue.h */; };
+		61947F3F1A9D01270032977B /* VMKScrollingOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 61947F351A9D01270032977B /* VMKScrollingOperationQueue.h */; };
+		61947F401A9D01270032977B /* VMKScrollingOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 61947F361A9D01270032977B /* VMKScrollingOperationQueue.m */; };
+		61947F411A9D01270032977B /* VMKScrollingOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 61947F361A9D01270032977B /* VMKScrollingOperationQueue.m */; };
+		61947F421A9D01270032977B /* VMKScrollingOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 61947F361A9D01270032977B /* VMKScrollingOperationQueue.m */; };
 		61A2B78D1A8EA14600C1EE2A /* AlterSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B7811A8EA14600C1EE2A /* AlterSequence.cpp */; };
 		61A2B78E1A8EA14600C1EE2A /* AlterSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A2B7811A8EA14600C1EE2A /* AlterSequence.cpp */; };
 		61A2B78F1A8EA14600C1EE2A /* AlterSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A2B7821A8EA14600C1EE2A /* AlterSequence.h */; };
@@ -1050,6 +1064,7 @@
 		61F0744A1A730EEB002CA9CA /* VMKPartLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074471A730EEB002CA9CA /* VMKPartLayer.mm */; };
 		61F0744B1A730EEB002CA9CA /* VMKPartLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074471A730EEB002CA9CA /* VMKPartLayer.mm */; };
 		61F0744C1A730EEB002CA9CA /* VMKPartLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074471A730EEB002CA9CA /* VMKPartLayer.mm */; };
+		F17188579D6EEDAAA9A07C5B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 612631447FEC20DB3AEB4C11 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1404,6 +1419,7 @@
 		61239A711A65FFB100B3F0A3 /* ScoreBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScoreBuilder.cpp; path = Submodules/mxml/src/mxml/ScoreBuilder.cpp; sourceTree = SOURCE_ROOT; };
 		61239A7E1A673B5B00B3F0A3 /* JumpFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JumpFactory.cpp; path = Submodules/mxml/src/mxml/JumpFactory.cpp; sourceTree = SOURCE_ROOT; };
 		61239A7F1A673B5B00B3F0A3 /* JumpFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JumpFactory.h; path = Submodules/mxml/src/mxml/JumpFactory.h; sourceTree = SOURCE_ROOT; };
+		612631447FEC20DB3AEB4C11 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		61402B241A08251D003AE7A7 /* MusicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MusicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61402B281A08251D003AE7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61402B291A08251D003AE7A7 /* MusicKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicKit.h; sourceTree = "<group>"; };
@@ -1595,6 +1611,13 @@
 		618C6C2D1A13DC76008314B2 /* PreviewGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreviewGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		618C6C301A13DC76008314B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		618C6C521A13DFC5008314B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		61947F2E1A9D01150032977B /* VMKRenderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKRenderOperation.h; sourceTree = "<group>"; };
+		61947F2F1A9D01150032977B /* VMKRenderOperation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKRenderOperation.mm; sourceTree = "<group>"; };
+		61947F321A9D01270032977B /* VMKScrollingDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKScrollingDirection.h; sourceTree = "<group>"; };
+		61947F331A9D01270032977B /* VMKScrollingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKScrollingImageCache.h; sourceTree = "<group>"; };
+		61947F341A9D01270032977B /* VMKScrollingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKScrollingImageCache.m; sourceTree = "<group>"; };
+		61947F351A9D01270032977B /* VMKScrollingOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKScrollingOperationQueue.h; sourceTree = "<group>"; };
+		61947F361A9D01270032977B /* VMKScrollingOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKScrollingOperationQueue.m; sourceTree = "<group>"; };
 		61A2B7811A8EA14600C1EE2A /* AlterSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AlterSequence.cpp; sourceTree = "<group>"; };
 		61A2B7821A8EA14600C1EE2A /* AlterSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlterSequence.h; sourceTree = "<group>"; };
 		61A2B7831A8EA14600C1EE2A /* AttributeSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeSequence.h; sourceTree = "<group>"; };
@@ -1736,7 +1759,9 @@
 		736F0E8822E3E82A82593CC0 /* libPods-PreviewGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PreviewGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		777972E87AE26FF9CF8EE309 /* Pods-PreviewGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreviewGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator.debug.xcconfig"; sourceTree = "<group>"; };
 		80D97B40F18B7EFC550962E5 /* libPods-MusicKitAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicKitAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2D701AB579B41062F40F71 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D28BA6C0D7D850D4E794B2FB /* libPods-MusicKitOSXAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicKitOSXAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2ADAD28401CD22432044D84 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1762,6 +1787,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				610DC5991A082FF000BEEBFD /* libxml2.dylib in Frameworks */,
+				F17188579D6EEDAAA9A07C5B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2500,6 +2526,11 @@
 				61402B6F1A082562003AE7A7 /* VMKGeometry.mm */,
 				61402B751A082562003AE7A7 /* VMKImageStore.h */,
 				61402B761A082562003AE7A7 /* VMKImageStore.m */,
+				61947F321A9D01270032977B /* VMKScrollingDirection.h */,
+				61947F331A9D01270032977B /* VMKScrollingImageCache.h */,
+				61947F341A9D01270032977B /* VMKScrollingImageCache.m */,
+				61947F351A9D01270032977B /* VMKScrollingOperationQueue.h */,
+				61947F361A9D01270032977B /* VMKScrollingOperationQueue.m */,
 				610DCF571A099C0900BEEBFD /* Layers */,
 				61402B271A08251D003AE7A7 /* Supporting Files */,
 				616C1B521A0C0E310020EAA8 /* UIKit */,
@@ -2543,6 +2574,8 @@
 				61F074391A72DDB9002CA9CA /* VMKPageScoreLayout.mm */,
 				616C1B7F1A0C2DA40020EAA8 /* VMKPedalView.h */,
 				616C1B801A0C2DA40020EAA8 /* VMKPedalView.mm */,
+				61947F2E1A9D01150032977B /* VMKRenderOperation.h */,
+				61947F2F1A9D01150032977B /* VMKRenderOperation.mm */,
 				616C1B5B1A0C0E310020EAA8 /* VMKScoreElementContainerView.h */,
 				616C1B5C1A0C0E310020EAA8 /* VMKScoreElementContainerView.mm */,
 				61E530AD1A78667200E5B2FF /* VMKScrollScoreDataSource.h */,
@@ -2660,6 +2693,7 @@
 				80D97B40F18B7EFC550962E5 /* libPods-MusicKitAppTests.a */,
 				D28BA6C0D7D850D4E794B2FB /* libPods-MusicKitOSXAppTests.a */,
 				736F0E8822E3E82A82593CC0 /* libPods-PreviewGenerator.a */,
+				612631447FEC20DB3AEB4C11 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2669,6 +2703,8 @@
 			children = (
 				777972E87AE26FF9CF8EE309 /* Pods-PreviewGenerator.debug.xcconfig */,
 				2398D1FF5BFE82C3AC02E2F5 /* Pods-PreviewGenerator.release.xcconfig */,
+				AE2D701AB579B41062F40F71 /* Pods.debug.xcconfig */,
+				D2ADAD28401CD22432044D84 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -2690,6 +2726,7 @@
 				618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */,
 				61E530B11A78667200E5B2FF /* VMKScrollScoreDataSource.h in Headers */,
 				61C850761A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */,
+				61947F391A9D01270032977B /* VMKScrollingImageCache.h in Headers */,
 				00094F021A67482E0053C615 /* WordsGeometry.h in Headers */,
 				616C1B931A0C4D790020EAA8 /* VMKOrnamentView.h in Headers */,
 				616C1AAA1A0AF9960020EAA8 /* VMKMeasureLayer.h in Headers */,
@@ -2725,7 +2762,9 @@
 				61F0742A1A72DD3E002CA9CA /* ScrollScoreGeometry.h in Headers */,
 				61F073FD1A71D3BF002CA9CA /* PartGeometryFactory.h in Headers */,
 				616C1A951A0A99600020EAA8 /* VMKScoreElementImageLayer.h in Headers */,
+				61947F301A9D01150032977B /* VMKRenderOperation.h in Headers */,
 				616C1AA61A0AACE50020EAA8 /* VMKLyricLayer.h in Headers */,
+				61947F371A9D01270032977B /* VMKScrollingDirection.h in Headers */,
 				61A2B79B1A8EA14600C1EE2A /* DivisionsSequence.h in Headers */,
 				616C1B611A0C0E310020EAA8 /* VMKCursorView.h in Headers */,
 				61F073411A703596002CA9CA /* FormattedTextHandler.h in Headers */,
@@ -2758,6 +2797,7 @@
 				61402BA81A082562003AE7A7 /* VMKGeometry.h in Headers */,
 				0022AE131A70833700139992 /* CollisionResolver.h in Headers */,
 				61A2B7931A8EA14600C1EE2A /* AttributeSequence.hh in Headers */,
+				61947F3E1A9D01270032977B /* VMKScrollingOperationQueue.h in Headers */,
 				61F073371A703596002CA9CA /* GenericNodeHandler.h in Headers */,
 				616C1B791A0C2D7A0020EAA8 /* VMKEndingView.h in Headers */,
 				61239A831A673B5B00B3F0A3 /* JumpFactory.h in Headers */,
@@ -2819,6 +2859,7 @@
 				61F073241A703596002CA9CA /* SystemDividersHandler.h in Headers */,
 				61F073151A703596002CA9CA /* TypeFactories.h in Headers */,
 				61F073F41A71D3BF002CA9CA /* LyricGeometryFactory.h in Headers */,
+				61947F381A9D01270032977B /* VMKScrollingDirection.h in Headers */,
 				61F073FE1A71D3BF002CA9CA /* PartGeometryFactory.h in Headers */,
 				61F073F91A71D3BF002CA9CA /* OrnamentGeometryFactory.h in Headers */,
 				61F073921A718D8E002CA9CA /* PageMetrics.h in Headers */,
@@ -2827,6 +2868,7 @@
 				61F073E21A71D3BF002CA9CA /* SystemGeometry.h in Headers */,
 				61F073471A703596002CA9CA /* AppearanceHandler.h in Headers */,
 				61F072FD1A703583002CA9CA /* FormattedText.h in Headers */,
+				61947F3A1A9D01270032977B /* VMKScrollingImageCache.h in Headers */,
 				61F073291A703596002CA9CA /* PositionFactory.h in Headers */,
 				61A2B7981A8EA14600C1EE2A /* ClefSequence.h in Headers */,
 				0022AE1B1A70833700139992 /* HorizontalResolver.h in Headers */,
@@ -2839,6 +2881,7 @@
 				616C1B8E1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */,
 				61C8507E1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */,
 				61F074491A730EEB002CA9CA /* VMKPartLayer.h in Headers */,
+				61947F3F1A9D01270032977B /* VMKScrollingOperationQueue.h in Headers */,
 				61A2B7941A8EA14600C1EE2A /* AttributeSequence.hh in Headers */,
 				61F073EA1A71D3BF002CA9CA /* DirectionGeometryFactory.h in Headers */,
 				61F0738D1A718D8E002CA9CA /* ScrollMetrics.h in Headers */,
@@ -2892,10 +2935,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61402B3A1A08251D003AE7A7 /* Build configuration list for PBXNativeTarget "MusicKit" */;
 			buildPhases = (
+				C80C04CF0660C3666C720276 /* Check Pods Manifest.lock */,
 				61402B1F1A08251D003AE7A7 /* Sources */,
 				61402B201A08251D003AE7A7 /* Frameworks */,
 				61402B211A08251D003AE7A7 /* Headers */,
 				61402B221A08251D003AE7A7 /* Resources */,
+				F13EADDE931E7D2FDD4A1C95 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -3490,6 +3535,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		C80C04CF0660C3666C720276 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		D2FD8DD53D491AA30B8C293C /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3503,6 +3563,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F13EADDE931E7D2FDD4A1C95 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3600,6 +3675,7 @@
 				616C1AC71A0BFE2C0020EAA8 /* VMKWedgeLayer.mm in Sources */,
 				00094F101A6748710053C615 /* VMKWordsView.mm in Sources */,
 				610DCF041A094B5100BEEBFD /* ScoreHandler.cpp in Sources */,
+				61947F3B1A9D01270032977B /* VMKScrollingImageCache.m in Sources */,
 				610DCEED1A094B5100BEEBFD /* CreditHandler.cpp in Sources */,
 				610DCED21A094B4C00BEEBFD /* ClefGeometry.cpp in Sources */,
 				616C1ABB1A0B03A30020EAA8 /* VMKRestLayer.mm in Sources */,
@@ -3630,6 +3706,7 @@
 				610DCEFF1A094B5100BEEBFD /* PitchHandler.cpp in Sources */,
 				61F0732F1A703596002CA9CA /* PageMarginsHandler.cpp in Sources */,
 				0022AE1C1A70833700139992 /* VerticalResolver.cpp in Sources */,
+				61947F401A9D01270032977B /* VMKScrollingOperationQueue.m in Sources */,
 				616C1B8A1A0C2DEA0020EAA8 /* VMKWedgeView.mm in Sources */,
 				610DCEC91A094B4800BEEBFD /* Identification.cpp in Sources */,
 				610DCEFD1A094B5100BEEBFD /* OrnamentsHandler.cpp in Sources */,
@@ -3685,6 +3762,7 @@
 				00E7B48B1A8155EB00B949FC /* Attributes.cpp in Sources */,
 				61F074311A72DD3E002CA9CA /* PageScoreGeometry.cpp in Sources */,
 				610DCED01A094B4C00BEEBFD /* BeamGeometry.cpp in Sources */,
+				61947F311A9D01150032977B /* VMKRenderOperation.mm in Sources */,
 				61F074431A730E0C002CA9CA /* VMKSystemLayer.mm in Sources */,
 				610DCECF1A094B4C00BEEBFD /* BarlineGeometry.cpp in Sources */,
 				610DCECE1A094B4C00BEEBFD /* ArticulationGeometry.cpp in Sources */,
@@ -3777,6 +3855,7 @@
 				616C1B211A0C05A40020EAA8 /* PitchHandler.cpp in Sources */,
 				61F073301A703596002CA9CA /* PageMarginsHandler.cpp in Sources */,
 				61A2B78E1A8EA14600C1EE2A /* AlterSequence.cpp in Sources */,
+				61947F3C1A9D01270032977B /* VMKScrollingImageCache.m in Sources */,
 				616C1B161A0C05A40020EAA8 /* FermataHandler.cpp in Sources */,
 				616C1B431A0C05B50020EAA8 /* VMKNoteStemLayer.mm in Sources */,
 				616C1B101A0C05A40020EAA8 /* CreditWordsHandler.cpp in Sources */,
@@ -3818,6 +3897,7 @@
 				61F073EC1A71D3BF002CA9CA /* EndingGeometryFactory.cpp in Sources */,
 				61F073F61A71D3BF002CA9CA /* OrnamentGeometryFactory.cpp in Sources */,
 				616C1AE81A0C05980020EAA8 /* lxml.cpp in Sources */,
+				61947F411A9D01270032977B /* VMKScrollingOperationQueue.m in Sources */,
 				61A2B79A1A8EA14600C1EE2A /* DivisionsSequence.cpp in Sources */,
 				61F074441A730E18002CA9CA /* VMKSystemLayer.mm in Sources */,
 				616C1B471A0C05B50020EAA8 /* VMKTimeSignatureLayer.mm in Sources */,
@@ -4009,6 +4089,7 @@
 				618C6C7E1A13E7D6008314B2 /* BeamGeometry.cpp in Sources */,
 				0008686E1A68344500BAA13D /* VMKWordsLayer.mm in Sources */,
 				618C6C871A13E7D6008314B2 /* LyricGeometry.cpp in Sources */,
+				61947F421A9D01270032977B /* VMKScrollingOperationQueue.m in Sources */,
 				618C6C9C1A13E7DC008314B2 /* CreditWordsHandler.cpp in Sources */,
 				618C6C941A13E7D6008314B2 /* TimeSignatureGeometry.cpp in Sources */,
 				618C6C6B1A13E7A1008314B2 /* VMKOrnamentLayer.mm in Sources */,
@@ -4021,6 +4102,7 @@
 				61239A6B1A64B4F000B3F0A3 /* ScoreProperties.cpp in Sources */,
 				61239A761A65FFB100B3F0A3 /* ScoreBuilder.cpp in Sources */,
 				618C6C9D1A13E7DC008314B2 /* DefaultsHandler.cpp in Sources */,
+				61947F3D1A9D01270032977B /* VMKScrollingImageCache.m in Sources */,
 				61F073E51A71D3BF002CA9CA /* SystemGeometry.cpp in Sources */,
 				618C6C9E1A13E7DC008314B2 /* DirectionHandler.cpp in Sources */,
 				618C6C691A13E7A1008314B2 /* VMKNoteHeadLayer.mm in Sources */,
@@ -4254,12 +4336,18 @@
 		};
 		61402B3B1A08251D003AE7A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE2D701AB579B41062F40F71 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/include/libxml2,
+					"$(SRCROOT)/Libraries",
+				);
 				INFOPLIST_FILE = MusicKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -4271,12 +4359,18 @@
 		};
 		61402B3C1A08251D003AE7A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2ADAD28401CD22432044D84 /* Pods.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/include/libxml2,
+					"$(SRCROOT)/Libraries",
+				);
 				INFOPLIST_FILE = MusicKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

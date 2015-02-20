@@ -21,7 +21,9 @@ typedef NS_ENUM(NSUInteger, VMKPageScoreSection) {
 @property(nonatomic) CGFloat cursorOpacity;
 @property(nonatomic) VMKCursorStyle cursorStyle;
 
-@property(nonatomic, strong) UIColor* foregroundColor;
+@property(nonatomic, strong) UIColor* activeForegroundColor;
+@property(nonatomic, strong) UIColor* inactiveForegroundColor;
+@property(nonatomic, strong) UIColor* backgroundColor;
 @property(nonatomic, strong) UIColor* tintColor;
 @property(nonatomic, strong) UIColor* cursorColor;
 

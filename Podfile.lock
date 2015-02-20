@@ -1,10 +1,13 @@
 PODS:
+  - KVOController (1.0.3)
   - SSZipArchive (0.3.2)
 
 DEPENDENCIES:
+  - KVOController (~> 1.0.3)
   - SSZipArchive
 
 SPEC CHECKSUMS:
+  KVOController: b1139ef1fc373b6757e4b69493fedd7b56eb1272
   SSZipArchive: 11299a4e89821bd4085b12f25edaa85853e0051c
 
 COCOAPODS: 0.35.0
