@@ -3,7 +3,10 @@
 #import "VMKImageStore.h"
 
 @interface VMKImageStore ()
+
 @property(nonatomic, strong) NSMutableDictionary* imagesByColor;
+@property(nonatomic, strong) dispatch_queue_t queue;
+
 @end
 
 @implementation VMKImageStore
@@ -20,15 +23,20 @@
 - (id)init {
     self = [super init];
     self.imagesByColor = [[NSMutableDictionary alloc] init];
+    self.queue = dispatch_queue_create("VMKImageStore", DISPATCH_QUEUE_SERIAL);
     return self;
 }
 
 - (VMKImage*)imageNamed:(NSString*)name withColor:(VMKColor*)color {
-    NSMutableDictionary* images = self.imagesByColor[color];
-    if (!images) {
-        images = [NSMutableDictionary dictionary];
-        self.imagesByColor[color] = images;
-    }
+    __block NSMutableDictionary* images;
+
+    dispatch_sync(_queue, ^{
+        images = self.imagesByColor[color];
+        if (!images) {
+            images = [NSMutableDictionary dictionary];
+            self.imagesByColor[color] = images;
+        }
+    });
 
     VMKImage* image = images[name];
     if (image)
@@ -69,11 +77,15 @@
 }
 
 - (void)removeCachedImagesWithColor:(VMKColor*)color {
-    [self.imagesByColor removeObjectForKey:color];
+    dispatch_async(_queue, ^{
+        [self.imagesByColor removeObjectForKey:color];
+    });
 }
 
 - (void)removeAllCachedImages {
-    [self.imagesByColor removeAllObjects];
+    dispatch_async(_queue, ^{
+        [self.imagesByColor removeAllObjects];
+    });
 }
 
 @end
