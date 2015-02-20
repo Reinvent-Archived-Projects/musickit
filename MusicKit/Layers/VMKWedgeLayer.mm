@@ -33,8 +33,8 @@ using namespace mxml;
     CGContextTranslateCTM(ctx, 0, lineWidth/2);
 
     const SpanDirectionGeometry* geom = self.spanDirectionGeometry;
-    const dom::Wedge& startWedge = dynamic_cast<const dom::Wedge&>(*geom->startDirection().type());
-    const dom::Wedge& stopWedge = dynamic_cast<const dom::Wedge&>(*geom->stopDirection().type());
+    const dom::Wedge& startWedge = dynamic_cast<const dom::Wedge&>(*geom->startDirection()->type());
+    const dom::Wedge& stopWedge = dynamic_cast<const dom::Wedge&>(*geom->stopDirection()->type());
 
     CGFloat width = geom->stopLocation().x - geom->startLocation().x;
 

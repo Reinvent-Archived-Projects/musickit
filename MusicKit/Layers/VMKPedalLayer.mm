@@ -35,20 +35,20 @@ using namespace mxml;
     CGContextSetLineWidth(ctx, lineWidth);
 
     const SpanDirectionGeometry* geom = self.spanDirectionGeometry;
-    const dom::Pedal& startPedal = dynamic_cast<const dom::Pedal&>(*geom->startDirection().type());
-    //const dom::Pedal& stopPedal = dynamic_cast<const dom::Pedal&>(*geom->stopDirection().type());
+    const dom::Pedal& pedal = dynamic_cast<const dom::Pedal&>(*geom->type());
 
     CGFloat width = geom->stopLocation().x - geom->startLocation().x;
     VMKImage* pedImage = [[VMKImageStore sharedInstance] imageNamed:@"ped" withColor:self.foregroundColor];
     [pedImage drawInRect:CGRectMake(0, 0, pedImage.size.width, pedImage.size.height)];
 
-    if (startPedal.line()) {
+    if (pedal.line()) {
         CGContextMoveToPoint(ctx, pedImage.size.width, pedImage.size.height - lineWidth-2);
         CGContextAddLineToPoint(ctx, width - lineWidth/2, pedImage.size.height - lineWidth-2);
-        CGContextAddLineToPoint(ctx, width - lineWidth/2, pedImage.size.height/2);
+        if (geom->stopDirection())
+            CGContextAddLineToPoint(ctx, width - lineWidth/2, pedImage.size.height/2);
     }
 
-    if (startPedal.sign()) {
+    if (pedal.sign()) {
         VMKImage* starImage = [[VMKImageStore sharedInstance] imageNamed:@"star" withColor:self.foregroundColor];
         CGPoint point = CGPointMake(self.bounds.size.width - starImage.size.width, 0);
         [starImage drawInRect:CGRectMake(point.x, point.y, starImage.size.width, starImage.size.height)];

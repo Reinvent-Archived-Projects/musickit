@@ -45,18 +45,20 @@ using namespace mxml;
     
     CTFontRef font = CTFontCreateWithName(CFSTR("Baskerville-Italic"), 22.0, NULL);
     NSDictionary* attribs = @{ (id)kCTFontAttributeName: (__bridge id)font };
-    NSMutableAttributedString* stringToDraw = [[NSMutableAttributedString alloc] initWithString:@"8va" attributes:attribs];
+    NSMutableAttributedString* stringToDraw;
+    if (geom->startDirection())
+        stringToDraw = [[NSMutableAttributedString alloc] initWithString:@"8va" attributes:attribs];
+    else
+        stringToDraw = [[NSMutableAttributedString alloc] initWithString:@"(8va)" attributes:attribs];
     [stringToDraw addAttribute:(id)kCTSuperscriptAttributeName value:@1 range:NSMakeRange(1, 2) ];
 
-    // Flip the context coordinates, in iOS only.
-#if TARGET_OS_IPHONE
+    // Flip the context coordinates
     CGContextTranslateCTM(ctx, 0, self.bounds.size.height);
     CGContextScaleCTM(ctx, 1.0, -1.0);
-#endif
 
-    // draw
+    // draw 
     CGContextSetTextMatrix(ctx, CGAffineTransformIdentity);
-    CGContextSetTextPosition(ctx, 0, 0);
+    CGContextSetTextPosition(ctx, 0, 1);
     CTLineRef line = CTLineCreateWithAttributedString((CFAttributedStringRef)stringToDraw);
     CGRect bounds = CTLineGetImageBounds(line, ctx);
     CTLineDraw(line, ctx);
@@ -67,7 +69,8 @@ using namespace mxml;
 
     CGContextMoveToPoint(ctx, CGRectGetMaxX(bounds) + 2, CGRectGetMidY(bounds) - kLineWidth/2);
     CGContextAddLineToPoint(ctx, width - lineWidth/2, CGRectGetMidY(bounds) - kLineWidth/2);
-    CGContextAddLineToPoint(ctx, width - lineWidth/2, CGRectGetMinY(bounds));
+    if (geom->stopDirection())
+        CGContextAddLineToPoint(ctx, width - lineWidth/2, CGRectGetMinY(bounds));
     CGContextStrokePath(ctx);
 }
 
