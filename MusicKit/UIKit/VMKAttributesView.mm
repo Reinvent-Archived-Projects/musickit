@@ -257,7 +257,7 @@ static const CGFloat kGapWidth = 10;
         return;
     
     _braceLayer.bounds = {CGPointZero, _braceLayer.preferredFrameSize};
-    _braceLayer.position = CGPointMake(kLeftMargin, 0);
+    _braceLayer.position = CGPointMake(kLeftMargin, _partGeometry->stavesHeight()/2);
     CGRect braceFrame = _braceLayer.frame;
 
     CGFloat clefsWidth = 0;
@@ -276,7 +276,7 @@ static const CGFloat kGapWidth = 10;
         keysWidth = std::max(keysWidth, keyLayer.bounds.size.width);
     }
     
-    CGFloat y0 = -_partGeometry->stavesHeight()/2;
+    CGFloat y0 = 0;
     for (int staff = 1; staff <= staves; staff += 1) {
         CGFloat x = CGRectGetMaxX(braceFrame) + kSpacing;
         CGFloat y = y0 + (_partGeometry->staffOrigin(staff) + Metrics::staffHeight()/2);
@@ -318,7 +318,7 @@ static const CGFloat kGapWidth = 10;
     CGFloat stavesHeight = _partGeometry->stavesHeight();
     CGPoint origin;
     origin.x = CGRectGetMaxX(_braceLayer.frame) + kSpacing/2;
-    origin.y = -_partGeometry->stavesHeight()/2;
+    origin.y = 0;
     CGRect lineRect;
 
     CGContextSetFillColorWithColor(ctx, self.foregroundColor.CGColor);
