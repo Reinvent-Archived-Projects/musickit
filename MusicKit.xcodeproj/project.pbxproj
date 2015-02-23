@@ -129,6 +129,8 @@
 		00B34FFB1A5B464000198F4A /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
 		00B34FFC1A5B464000198F4A /* Metrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B34FF51A5B464000198F4A /* Metrics.h */; };
 		00B34FFD1A5B464000198F4A /* Metrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B34FF51A5B464000198F4A /* Metrics.h */; };
+		00BF50C21A9BA1E900B18BCD /* kiss_the_rain.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */; };
+		00BF50C31A9BA1E900B18BCD /* kiss_the_rain.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */; };
 		00E7B48B1A8155EB00B949FC /* Attributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B48A1A8155EB00B949FC /* Attributes.cpp */; };
 		00E7B48C1A8155EB00B949FC /* Attributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B48A1A8155EB00B949FC /* Attributes.cpp */; };
 		00E7B48D1A8155F400B949FC /* Attributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B48A1A8155EB00B949FC /* Attributes.cpp */; };
@@ -272,8 +274,6 @@
 		614057D71A5CBD49005224C9 /* Key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614057D21A5CBD49005224C9 /* Key.cpp */; };
 		614057D81A5CBD49005224C9 /* Key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614057D21A5CBD49005224C9 /* Key.cpp */; };
 		614057DA1A5CC54E005224C9 /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
-		616337441A97F99100CF7D2F /* kiss_the_rain.xml in Resources */ = {isa = PBXBuildFile; fileRef = 616337431A97F99100CF7D2F /* kiss_the_rain.xml */; };
-		616337451A97F99100CF7D2F /* kiss_the_rain.xml in Resources */ = {isa = PBXBuildFile; fileRef = 616337431A97F99100CF7D2F /* kiss_the_rain.xml */; };
 		616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */; };
 		616C1A8E1A0A970F0020EAA8 /* VMKChordLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */; };
 		616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */; };
@@ -1152,6 +1152,7 @@
 		00A90B661A79907000D971B3 /* ScrollScoreLayout-Accidentals2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Accidentals2@3x.png"; sourceTree = "<group>"; };
 		00B34FF41A5B464000198F4A /* Metrics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Metrics.cpp; sourceTree = "<group>"; };
 		00B34FF51A5B464000198F4A /* Metrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metrics.h; sourceTree = "<group>"; };
+		00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = kiss_the_rain.xml; sourceTree = "<group>"; };
 		00E7B48A1A8155EB00B949FC /* Attributes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Attributes.cpp; path = Submodules/mxml/src/mxml/dom/Attributes.cpp; sourceTree = SOURCE_ROOT; };
 		2398D1FF5BFE82C3AC02E2F5 /* Pods-PreviewGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreviewGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator.release.xcconfig"; sourceTree = "<group>"; };
 		610DC5981A082FF000BEEBFD /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -1413,7 +1414,6 @@
 		61402C591A082661003AE7A7 /* Symbols.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Symbols.xcassets; sourceTree = "<group>"; };
 		614057D11A5CBD49005224C9 /* Pitch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pitch.cpp; sourceTree = "<group>"; };
 		614057D21A5CBD49005224C9 /* Key.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Key.cpp; sourceTree = "<group>"; };
-		616337431A97F99100CF7D2F /* kiss_the_rain.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = kiss_the_rain.xml; path = "../../../../../../../Desktop/Kiss the Rain/kiss_the_rain.xml"; sourceTree = "<group>"; };
 		616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKChordLayer.h; sourceTree = "<group>"; };
 		616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKChordLayer.mm; sourceTree = "<group>"; };
 		616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKClefLayer.h; sourceTree = "<group>"; };
@@ -2058,7 +2058,7 @@
 				005DA5D91A7FEEE0003B41AC /* accidentals.xml */,
 				005DA5DA1A7FEEE0003B41AC /* accidentals2.xml */,
 				005DA5DF1A7FEF09003B41AC /* endings.xml */,
-				616337431A97F99100CF7D2F /* kiss_the_rain.xml */,
+				00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */,
 				005DA5D61A7FEECE003B41AC /* slurs.xml */,
 				0005C0FE1A7C381500B60619 /* system_attributes.xml */,
 				001EAAF31A82CD4C0097AE0D /* system.xml */,
@@ -3074,6 +3074,7 @@
 				616C1D221A0D81550020EAA8 /* BeamLayer-TwoBeams@3x.png in Resources */,
 				616C1CFC1A0D81550020EAA8 /* BeamLayer-TwoBeams@2x.png in Resources */,
 				616C1CEC1A0D81550020EAA8 /* BeamLayer-ForwardHook@2x.png in Resources */,
+				00BF50C21A9BA1E900B18BCD /* kiss_the_rain.xml in Resources */,
 				616C1D2C1A0D81550020EAA8 /* ChordLayer-Dot@3x.png in Resources */,
 				616C1D3C1A0D81550020EAA8 /* MeasureLayer-Empty@3x.png in Resources */,
 				00A90B711A79907000D971B3 /* ScrollScoreLayout-Accidentals2@3x.png in Resources */,
@@ -3152,7 +3153,6 @@
 				61E531401A7ACF5400E5B2FF /* KeyLayer-AMajor.png in Resources */,
 				616C1D421A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png in Resources */,
 				6118ADA61A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png in Resources */,
-				616337441A97F99100CF7D2F /* kiss_the_rain.xml in Resources */,
 				616C1CDE1A0D81550020EAA8 /* ChordLayer-Accent.png in Resources */,
 				616C1D361A0D81550020EAA8 /* ClefLayer-Treble@3x.png in Resources */,
 				000868891A683B5300BAA13D /* WordsLayer-Words@3x.png in Resources */,
@@ -3292,6 +3292,7 @@
 				616C1DC21A0D97590020EAA8 /* ChordLayer-Dot@2x.png in Resources */,
 				616C1E031A0D97590020EAA8 /* TieLayer-AngledDownBelow@3x.png in Resources */,
 				616C1DD11A0D97590020EAA8 /* ClefLayer-Treble@2x.png in Resources */,
+				00BF50C31A9BA1E900B18BCD /* kiss_the_rain.xml in Resources */,
 				616C1DB81A0D97590020EAA8 /* ChordLayer-Accent.png in Resources */,
 				616C1DBF1A0D97590020EAA8 /* ChordLayer-DisplaceSideways@2x.png in Resources */,
 				00A90B721A79907000D971B3 /* ScrollScoreLayout-Accidentals2@3x.png in Resources */,
@@ -3370,7 +3371,6 @@
 				616C1DF01A0D97590020EAA8 /* TieLayer-18Tie@2x.png in Resources */,
 				616C1DC31A0D97590020EAA8 /* ChordLayer-Dot@3x.png in Resources */,
 				6118ADA71A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png in Resources */,
-				616337451A97F99100CF7D2F /* kiss_the_rain.xml in Resources */,
 				616C1E321A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png in Resources */,
 				0008688A1A683B5300BAA13D /* WordsLayer-Words@3x.png in Resources */,
 				616C1DFD1A0D97590020EAA8 /* TieLayer-1000Tie@3x.png in Resources */,
