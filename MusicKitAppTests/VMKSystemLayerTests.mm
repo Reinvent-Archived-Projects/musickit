@@ -1,42 +1,21 @@
 //  Copyright (c) 2015 Venture Media Labs. All rights reserved.
 
-#import "VMKLayerTestCase.h"
+#import "VMKFileScoreTestCase.h"
+
 #import "VMKSystemLayer.h"
 
 #include <mxml/geometry/PageScoreGeometry.h>
-#include <mxml/parsing/ScoreHandler.h>
 
-#include "lxml.h"
-#include <fstream>
-
-@interface VMKSystemLayerTests : VMKLayerTestCase
+@interface VMKSystemLayerTests : VMKFileScoreTestCase
 
 @end
 
-@implementation VMKSystemLayerTests {
-    std::unique_ptr<mxml::dom::Score> _score;
-    std::unique_ptr<mxml::PageScoreGeometry> _geometry;
-}
-
-- (void)load:(NSString*)path {
-    mxml::ScoreHandler handler;
-    std::ifstream is([path UTF8String]);
-    lxml::parse(is, [path UTF8String], handler);
-    _score = handler.result();
-
-    if (!_score->parts().empty() && !_score->parts().front()->measures().empty()) {
-        _geometry.reset(new mxml::PageScoreGeometry(*_score, 728));
-    } else {
-        _geometry.reset();
-    }
-}
+@implementation VMKSystemLayerTests
 
 - (void)testSystem {
-    NSBundle* bundle = [NSBundle bundleForClass:[self class]];
-    NSString* path = [bundle pathForResource:@"system" ofType:@"xml"];
-    [self load:path];
-
-    auto systemGeometry = _geometry->systemGeometries().front();
+    auto score = [self loadScore:@"system"];
+    auto scoreGeometry = std::unique_ptr<mxml::PageScoreGeometry>(new mxml::PageScoreGeometry(*score, 728));
+    auto systemGeometry = scoreGeometry->systemGeometries().front();
     VMKSystemLayer *layer = [[VMKSystemLayer alloc] initWithGeometry:systemGeometry];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
@@ -45,11 +24,9 @@
 }
 
 - (void)testOctaveShiftMultipleSystemsStart {
-    NSBundle* bundle = [NSBundle bundleForClass:[self class]];
-    NSString* path = [bundle pathForResource:@"kiss_the_rain" ofType:@"xml"];
-    [self load:path];
-
-    auto systemGeometry = _geometry->systemGeometries()[0];
+    auto score = [self loadScore:@"kiss_the_rain"];
+    auto scoreGeometry = std::unique_ptr<mxml::PageScoreGeometry>(new mxml::PageScoreGeometry(*score, 728));
+    auto systemGeometry = scoreGeometry->systemGeometries().at(0);
     VMKSystemLayer *layer = [[VMKSystemLayer alloc] initWithGeometry:systemGeometry];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
@@ -58,11 +35,9 @@
 }
 
 - (void)testOctaveShiftMultipleSystemsStop {
-    NSBundle* bundle = [NSBundle bundleForClass:[self class]];
-    NSString* path = [bundle pathForResource:@"kiss_the_rain" ofType:@"xml"];
-    [self load:path];
-
-    auto systemGeometry = _geometry->systemGeometries()[1];
+    auto score = [self loadScore:@"kiss_the_rain"];
+    auto scoreGeometry = std::unique_ptr<mxml::PageScoreGeometry>(new mxml::PageScoreGeometry(*score, 728));
+    auto systemGeometry = scoreGeometry->systemGeometries().at(1);
     VMKSystemLayer *layer = [[VMKSystemLayer alloc] initWithGeometry:systemGeometry];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
