@@ -53,13 +53,11 @@
     if (self.wordsGeometry->dynamics()) {
         _textLayer.font = CFSTR("Baskerville-BoldItalic");
         _textLayer.fontSize = 26;
-        
-        // The kernings for this font gets clipped on some letters (eg 'f') by
-        // CATextLayer, prepend a space to allow more room :/
-        preprend = @" ";
+        _textLayer.alignmentMode = kCAAlignmentCenter;
     } else {
         _textLayer.font = CFSTR("Baskerville-SemiBold");
         _textLayer.fontSize = 20;
+        _textLayer.alignmentMode = kCAAlignmentLeft;
     }
     
     if (self.wordsGeometry->contents())

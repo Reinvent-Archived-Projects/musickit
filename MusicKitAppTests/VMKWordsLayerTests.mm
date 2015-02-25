@@ -42,4 +42,19 @@
     }];
 }
 
+- (void)testDontCropSlanted {
+    std::unique_ptr<mxml::dom::Dynamics> dynamics(new mxml::dom::Dynamics);
+    dynamics->setString("f");
+
+    mxml::dom::Direction direction;
+    direction.setType(std::move(dynamics));
+    mxml::WordsGeometry geom(direction);
+
+    VMKWordsLayer* layer = [[VMKWordsLayer alloc] initWithWordsGeometry:&geom];
+
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
+}
+
 @end
