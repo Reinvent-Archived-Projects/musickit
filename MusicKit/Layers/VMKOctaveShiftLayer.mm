@@ -46,7 +46,7 @@ using namespace mxml;
     CTFontRef font = CTFontCreateWithName(CFSTR("Baskerville-Italic"), 22.0, NULL);
     NSDictionary* attribs = @{ (id)kCTFontAttributeName: (__bridge id)font };
     NSMutableAttributedString* stringToDraw;
-    if (geom->startDirection())
+    if (!geom->isContinuation())
         stringToDraw = [[NSMutableAttributedString alloc] initWithString:@"8va" attributes:attribs];
     else
         stringToDraw = [[NSMutableAttributedString alloc] initWithString:@"(8va)" attributes:attribs];
