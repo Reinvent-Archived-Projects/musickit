@@ -101,6 +101,14 @@
 		0022AE1E1A70833700139992 /* VerticalResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0022AE0C1A70833700139992 /* VerticalResolver.cpp */; };
 		0022AE1F1A70833700139992 /* VerticalResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0022AE0D1A70833700139992 /* VerticalResolver.h */; };
 		0022AE201A70833700139992 /* VerticalResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0022AE0D1A70833700139992 /* VerticalResolver.h */; };
+		002F986A1A9E59C60009A8F0 /* VMKFileScoreTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 002F98691A9E59C60009A8F0 /* VMKFileScoreTestCase.mm */; };
+		002F986B1A9E59C60009A8F0 /* VMKFileScoreTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 002F98691A9E59C60009A8F0 /* VMKFileScoreTestCase.mm */; };
+		002F98701A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 002F986F1A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png */; };
+		002F98711A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 002F986F1A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png */; };
+		002F98731A9E5EDE0009A8F0 /* MeasureLayerFile-RepeatAccidentals@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 002F98721A9E5EDE0009A8F0 /* MeasureLayerFile-RepeatAccidentals@3x.png */; };
+		002F98741A9E5EDE0009A8F0 /* MeasureLayerFile-RepeatAccidentals@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 002F98721A9E5EDE0009A8F0 /* MeasureLayerFile-RepeatAccidentals@3x.png */; };
+		002F98761A9E5F540009A8F0 /* MeasureLayerFile-RepeatAccidentals.png in Resources */ = {isa = PBXBuildFile; fileRef = 002F98751A9E5F540009A8F0 /* MeasureLayerFile-RepeatAccidentals.png */; };
+		002F98771A9E5F540009A8F0 /* MeasureLayerFile-RepeatAccidentals.png in Resources */ = {isa = PBXBuildFile; fileRef = 002F98751A9E5F540009A8F0 /* MeasureLayerFile-RepeatAccidentals.png */; };
 		0054E8F71A72D7C8007FBC3E /* libPods-PreviewGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0054E8F61A72D7C8007FBC3E /* libPods-PreviewGenerator.a */; };
 		005DA5D71A7FEECE003B41AC /* slurs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 005DA5D61A7FEECE003B41AC /* slurs.xml */; };
 		005DA5D81A7FEECE003B41AC /* slurs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 005DA5D61A7FEECE003B41AC /* slurs.xml */; };
@@ -1137,6 +1145,11 @@
 		0022AE0B1A70833700139992 /* HorizontalResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalResolver.h; sourceTree = "<group>"; };
 		0022AE0C1A70833700139992 /* VerticalResolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VerticalResolver.cpp; sourceTree = "<group>"; };
 		0022AE0D1A70833700139992 /* VerticalResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalResolver.h; sourceTree = "<group>"; };
+		002F98681A9E59C60009A8F0 /* VMKFileScoreTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKFileScoreTestCase.h; sourceTree = "<group>"; };
+		002F98691A9E59C60009A8F0 /* VMKFileScoreTestCase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKFileScoreTestCase.mm; sourceTree = "<group>"; };
+		002F986F1A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayerFile-RepeatAccidentals@2x.png"; sourceTree = "<group>"; };
+		002F98721A9E5EDE0009A8F0 /* MeasureLayerFile-RepeatAccidentals@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayerFile-RepeatAccidentals@3x.png"; sourceTree = "<group>"; };
+		002F98751A9E5F540009A8F0 /* MeasureLayerFile-RepeatAccidentals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayerFile-RepeatAccidentals.png"; sourceTree = "<group>"; };
 		0054E8F61A72D7C8007FBC3E /* libPods-PreviewGenerator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-PreviewGenerator.a"; path = "../../../../../Library/Developer/Xcode/DerivedData/MusicKit-gcgzjjxrconftneustojcbmzydss/Build/Products/Debug/libPods-PreviewGenerator.a"; sourceTree = "<group>"; };
 		005DA5D61A7FEECE003B41AC /* slurs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = slurs.xml; sourceTree = "<group>"; };
 		005DA5D91A7FEEE0003B41AC /* accidentals.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = accidentals.xml; sourceTree = "<group>"; };
@@ -1849,6 +1862,8 @@
 				610DC61D1A08322800BEEBFD /* VMKLayerTestCase.mm */,
 				610DC5CA1A08322800BEEBFD /* VMKAdHocScoreTestCase.h */,
 				610DC5CB1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm */,
+				002F98681A9E59C60009A8F0 /* VMKFileScoreTestCase.h */,
+				002F98691A9E59C60009A8F0 /* VMKFileScoreTestCase.mm */,
 				610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */,
 				610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */,
 				610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */,
@@ -1987,6 +2002,9 @@
 				616C1C621A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures.png */,
 				616C1C631A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@2x.png */,
 				616C1C7A1A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png */,
+				002F98751A9E5F540009A8F0 /* MeasureLayerFile-RepeatAccidentals.png */,
+				002F986F1A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png */,
+				002F98721A9E5EDE0009A8F0 /* MeasureLayerFile-RepeatAccidentals@3x.png */,
 				616C1C211A0D81550020EAA8 /* NoteLayer-Whole.png */,
 				616C1C201A0D81550020EAA8 /* NoteLayer-Whole@2x.png */,
 				001E81051A7FF6AA00784D9D /* PageScoreLayout-Attributes.png */,
@@ -3103,6 +3121,7 @@
 				616C1D2A1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@3x.png in Resources */,
 				616C1D1E1A0D81550020EAA8 /* BeamLayer-OneBeam@3x.png in Resources */,
 				61E5310C1A7ACF5400E5B2FF /* KeyLayer-EFlatMajor@3x.png in Resources */,
+				002F98761A9E5F540009A8F0 /* MeasureLayerFile-RepeatAccidentals.png in Resources */,
 				61E531421A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@3x.png in Resources */,
 				000868B31A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */,
 				616C1CC21A0D81550020EAA8 /* ChordLayer-Quarter.png in Resources */,
@@ -3140,6 +3159,7 @@
 				616C1CA41A0D81550020EAA8 /* TieLayer-1000Tie@2x.png in Resources */,
 				001E81091A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png in Resources */,
 				61E531001A7ACF5400E5B2FF /* KeyLayer-FMajor@3x.png in Resources */,
+				002F98701A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png in Resources */,
 				616C1D0C1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png in Resources */,
 				616C1D301A0D81550020EAA8 /* ChordLayer-EighthDown@3x.png in Resources */,
 				616C1CBC1A0D81550020EAA8 /* ChordLayer-Whole@2x.png in Resources */,
@@ -3205,6 +3225,7 @@
 				005DA5E31A7FEFD3003B41AC /* PageScoreLayout-Attributes@2x.png in Resources */,
 				61E530F81A7ACF5400E5B2FF /* KeyLayer-GFlatMajor.png in Resources */,
 				616C1CA61A0D81550020EAA8 /* TieLayer-AngledDown.png in Resources */,
+				002F98731A9E5EDE0009A8F0 /* MeasureLayerFile-RepeatAccidentals@3x.png in Resources */,
 				61E531361A7ACF5400E5B2FF /* KeyLayer-BFlatMajor@3x.png in Resources */,
 				000868B11A6845B800BAA13D /* ImageLayer-Coda.png in Resources */,
 				61E5312E1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor.png in Resources */,
@@ -3321,6 +3342,7 @@
 				616C1DC61A0D97590020EAA8 /* ChordLayer-Eighth@3x.png in Resources */,
 				61E5310D1A7ACF5400E5B2FF /* KeyLayer-EFlatMajor@3x.png in Resources */,
 				61E531431A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@3x.png in Resources */,
+				002F98771A9E5F540009A8F0 /* MeasureLayerFile-RepeatAccidentals.png in Resources */,
 				000868B41A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */,
 				616C1DA51A0D97590020EAA8 /* BeamLayer-BackwardHook@3x.png in Resources */,
 				61E5313F1A7ACF5400E5B2FF /* KeyLayer-AMajor@2x.png in Resources */,
@@ -3358,6 +3380,7 @@
 				61E531011A7ACF5400E5B2FF /* KeyLayer-FMajor@3x.png in Resources */,
 				001E810A1A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png in Resources */,
 				616C1E041A0D97590020EAA8 /* TieLayer-AngledUp.png in Resources */,
+				002F98711A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png in Resources */,
 				616C1DEF1A0D97590020EAA8 /* TieLayer-18Tie.png in Resources */,
 				616C1E091A0D97590020EAA8 /* TieLayer-AngledUpBelow@3x.png in Resources */,
 				000868AD1A68456C00BAA13D /* ImageLayer-Segno@3x.png in Resources */,
@@ -3423,6 +3446,7 @@
 				005DA5E41A7FEFD3003B41AC /* PageScoreLayout-Attributes@2x.png in Resources */,
 				61E530F91A7ACF5400E5B2FF /* KeyLayer-GFlatMajor.png in Resources */,
 				616C1DA71A0D97590020EAA8 /* BeamLayer-ForwardHook@2x.png in Resources */,
+				002F98741A9E5EDE0009A8F0 /* MeasureLayerFile-RepeatAccidentals@3x.png in Resources */,
 				61E531371A7ACF5400E5B2FF /* KeyLayer-BFlatMajor@3x.png in Resources */,
 				000868B21A6845B800BAA13D /* ImageLayer-Coda.png in Resources */,
 				61E5312F1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor.png in Resources */,
@@ -3528,6 +3552,7 @@
 				610DC66A1A08322800BEEBFD /* VMKBeamLayerTests.mm in Sources */,
 				610DC66D1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm in Sources */,
 				610DC61F1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm in Sources */,
+				002F986A1A9E59C60009A8F0 /* VMKFileScoreTestCase.mm in Sources */,
 				610DC66E1A08322800BEEBFD /* VMKChordLayerTests.mm in Sources */,
 				610DC66F1A08322800BEEBFD /* VMKLayerTestCase.mm in Sources */,
 				610DC66B1A08322800BEEBFD /* VMKScrollScoreLayoutTests.mm in Sources */,
@@ -3878,6 +3903,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002F986B1A9E59C60009A8F0 /* VMKFileScoreTestCase.mm in Sources */,
 				616C1E121A0D97700020EAA8 /* VMKClefLayerTests.mm in Sources */,
 				616C1E171A0D97700020EAA8 /* VMKTimeSignatureLayerTests.mm in Sources */,
 				61149B5C1A83043800EB0C0F /* VMKKeyLayerTests.mm in Sources */,

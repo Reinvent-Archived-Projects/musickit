@@ -1,12 +1,15 @@
 //  Copyright (c) 2014 Venture Media Labs. All rights reserved.
 
 #import "VMKAdHocScoreTestCase.h"
+#import "VMKFileScoreTestCase.h"
+
 #import "VMKMeasureLayer.h"
 
 #include <mxml/dom/Print.h>
 #include <mxml/geometry/ScrollScoreGeometry.h>
 #include <mxml/geometry/PartGeometry.h>
 #include <mxml/SpanFactory.h>
+
 
 using namespace mxml::dom;
 
@@ -106,3 +109,24 @@ using namespace mxml::dom;
 }
 
 @end
+
+
+@interface VMKMeasureLayerFileTests : VMKFileScoreTestCase
+
+@end
+
+@implementation VMKMeasureLayerFileTests
+
+- (void)testRepeatAccidentals {
+    auto score = [self loadScore:@"kiss_the_rain"];
+    auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, true));
+    auto measureGeometry = scoreGeometry->partGeometries().at(0)->measureGeometries().at(45);
+    VMKMeasureLayer *layer = [[VMKMeasureLayer alloc] initWithGeometry:measureGeometry];
+
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
+}
+
+@end
+
