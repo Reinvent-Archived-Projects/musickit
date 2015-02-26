@@ -7,7 +7,7 @@ using namespace mxml::dom;
 
 @implementation VMKNoteStemLayer
 
-+ (NSString*)stemImageNameForNote:(const mxml::dom::Note&)note {
++ (NSString*)stemImageNameForNote:(const mxml::dom::Note&)note direction:(mxml::dom::Stem)stemDirection {
     NSString* name;
     switch (note.type().value()) {
         case Note::TYPE_1024TH:
@@ -39,9 +39,9 @@ using namespace mxml::dom;
         return nil;
 
     NSString* dir = nil;
-    if (note.stem() == kStemUp || note.stem() == kStemDouble)
+    if (stemDirection == kStemUp)
         dir = @"up";
-    else if (note.stem() == kStemDown)
+    else if (stemDirection == kStemDown)
         dir = @"down";
     if (dir == nil)
         return nil;
@@ -49,13 +49,13 @@ using namespace mxml::dom;
     return [NSString stringWithFormat:@"%@-%@", name, dir];
 }
 
-+ (NSString*)noFlagsStemImageNameForNote:(const mxml::dom::Note&)note {
++ (NSString*)noFlagsStemImageNameForNote:(const mxml::dom::Note&)note direction:(mxml::dom::Stem)stemDirection {
     NSString* name = @"quarter";
 
     NSString* dir = nil;
-    if (note.stem() == kStemUp || note.stem() == kStemDouble)
+    if (stemDirection == kStemUp)
         dir = @"up";
-    else if (note.stem() == kStemDown)
+    else if (stemDirection == kStemDown)
         dir = @"down";
     if (dir == nil)
         return nil;
@@ -84,9 +84,9 @@ using namespace mxml::dom;
     if (self.geometry) {
         const Note& note = self.stemGeometry->note();
         if (self.stemGeometry->showFlags())
-            self.imageName = [[self class] stemImageNameForNote:note];
+            self.imageName = [[self class] stemImageNameForNote:note direction:self.stemGeometry->stemDirection()];
         else
-            self.imageName = [[self class] noFlagsStemImageNameForNote:note];
+            self.imageName = [[self class] noFlagsStemImageNameForNote:note direction:self.stemGeometry->stemDirection()];
     } else {
         self.imageName = nil;
     }

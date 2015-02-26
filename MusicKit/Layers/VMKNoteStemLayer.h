@@ -9,7 +9,7 @@
 /**
  Get the image name for the note's stem.
  */
-+ (NSString*)stemImageNameForNote:(const mxml::dom::Note&)note;
++ (NSString*)stemImageNameForNote:(const mxml::dom::Note&)note direction:(mxml::dom::Stem)stemDirection;
 
 - (instancetype)initWithStemGeometry:(const mxml::StemGeometry*)stemGeom;
 

@@ -175,16 +175,17 @@ using namespace mxml;
 }
 
 - (void)drawInContext:(CGContextRef)ctx{
-    const ChordGeometry* geom = self.chordGeometry;
-    if (!geom)
-        return;
-    const dom::Chord& chord = geom->chord();
-    if (chord.type() >= dom::Note::TYPE_WHOLE || chord.stem() == dom::kStemNone)
+    auto chordGeometry = self.chordGeometry;
+    if (!chordGeometry)
         return;
 
-    CGFloat x = geom->refNoteLocation().x;
-    CGFloat miny = geom->refNoteLocation().y;
-    CGFloat maxy = geom->refNoteLocation().y;
+    auto stemGeometry = chordGeometry->stem();
+    if (!stemGeometry)
+        return;
+
+    CGFloat x = chordGeometry->refNoteLocation().x;
+    CGFloat miny = chordGeometry->refNoteLocation().y;
+    CGFloat maxy = chordGeometry->refNoteLocation().y;
     for (VMKNoteHeadLayer* layer in _noteHeadLayers) {
         CGPoint location = layer.position;
         if (location.y < miny)
@@ -195,11 +196,11 @@ using namespace mxml;
 
     CGPoint offset = self.bounds.origin;
     CGRect stemRect = CGRectZero;
-    if (chord.stem() == dom::kStemUp || chord.stem() == dom::kStemDouble) {
+    if (stemGeometry->stemDirection() == dom::kStemUp) {
         stemRect.origin.y = offset.y;
         stemRect.origin.x = (x + NoteGeometry::kQuarterWidth/2 - kStemWidth);
         stemRect.size.height = maxy - offset.y - kStemOffset;
-    } else if (chord.stem() == dom::kStemDown) {
+    } else if (stemGeometry->stemDirection() == dom::kStemDown) {
         stemRect.origin.y = miny + kStemOffset;
         stemRect.origin.x = (x - NoteGeometry::kQuarterWidth/2);
         stemRect.size.height = self.preferredFrameSize.height - (miny - offset.y + kStemOffset);
