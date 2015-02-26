@@ -31,14 +31,13 @@ static const CGFloat kBottomPadding = 40;
 
 - (NSArray*)layoutAttributesForElementsInRect:(CGRect)rect {
     NSMutableArray* attributesArray = [NSMutableArray array];
+    if (!_scoreGeometry)
+        return attributesArray;
 
     // Header
     if (rect.origin.y < self.headerHeight) {
         [attributesArray addObject:[self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]]];
     }
-
-    if (!_scoreGeometry)
-        return attributesArray;
 
     // Systems
     const auto systemCount = _scoreGeometry->systemGeometries().size();
@@ -66,6 +65,9 @@ static const CGFloat kBottomPadding = 40;
     if (indexPath.section == 0)
         return [self layoutAttributesForCursorAtIndexPath:indexPath];
 
+    if (!_scoreGeometry)
+        return nil;
+
     auto systemGeometry = static_cast<const SystemGeometry*>(_scoreGeometry->systemGeometries()[indexPath.item]);
     return [self layoutAttributesForGeometry:systemGeometry atIndexPath:indexPath];
 }
@@ -79,7 +81,7 @@ static const CGFloat kBottomPadding = 40;
     frame.size.width = kCursorWidth;
 
     std::size_t systemIndex = 0;
-    if (self.cursorEvent)
+    if (self.cursorEvent && _scoreGeometry)
         systemIndex = _scoreGeometry->scoreProperties().systemIndex(self.cursorEvent->measureIndex());
 
     auto& systemGeometries = _scoreGeometry->systemGeometries();
@@ -101,7 +103,7 @@ static const CGFloat kBottomPadding = 40;
 
 - (NSArray*)layoutAttributesForMeasureCursors {
     NSMutableArray* attributesArray = [NSMutableArray array];
-    if (!self.cursorEvent)
+    if (!self.cursorEvent || !_scoreGeometry)
         return nullptr;
 
     const auto& scoreProperties = _scoreGeometry->scoreProperties();
@@ -143,6 +145,9 @@ static const CGFloat kBottomPadding = 40;
 }
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForGeometry:(const mxml::Geometry*)geometry atIndexPath:(NSIndexPath *)indexPath {
+    if (!_scoreGeometry)
+        return nil;
+
     const CGAffineTransform transform = CGAffineTransformMakeScale(self.scale, self.scale);
     CGRect frame = CGRectFromRect(_scoreGeometry->convertFromGeometry(geometry->frame(), geometry->parentGeometry()));
     frame = VMKRoundRect(frame);
@@ -156,6 +161,9 @@ static const CGFloat kBottomPadding = 40;
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     if (![kind isEqualToString:UICollectionElementKindSectionHeader])
+        return nil;
+
+    if (!_scoreGeometry)
         return nil;
     
     UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:kind withIndexPath:indexPath];
@@ -178,6 +186,9 @@ static const CGFloat kBottomPadding = 40;
 #pragma mark - Cursor positioning
 
 - (CGPoint)cursorNoteLocation {
+    if (!_scoreGeometry)
+        return CGPointZero;
+
     if (!self.cursorEvent)
         return CGPointFromPoint(_scoreGeometry->origin());
 
