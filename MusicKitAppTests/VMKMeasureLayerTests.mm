@@ -124,11 +124,7 @@ using namespace mxml::dom;
     VMKMeasureLayer *layer = [[VMKMeasureLayer alloc] initWithGeometry:measureGeometry];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
-#if TARGET_OS_IPHONE
         XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
-#else
-        XCTAssertLessThanOrEqual(errors.alphaError, 0.0035);
-#endif
     }];
 }
 
