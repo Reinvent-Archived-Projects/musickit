@@ -71,16 +71,16 @@
         return;
     }
 
-    CGSize size = CGSizeFromSize(_geometry->size());
+    CGRect bounds = VMKRoundRect(CGRectFromRect(_geometry->bounds()));
+    self.bounds = bounds;
 
     CGPoint anchorPoint = CGPointMake(0.5, 0.5);
-    if (size.width > 0 && size.height > 0) {
-        anchorPoint = CGPointMake(_geometry->anchorPoint().x / size.width,
-                                  _geometry->anchorPoint().y / size.height);
+    if (bounds.size.width > 0 && bounds.size.height > 0) {
+        anchorPoint = CGPointMake(_geometry->anchorPoint().x / bounds.size.width,
+                                  _geometry->anchorPoint().y / bounds.size.height);
     }
     self.anchorPoint = anchorPoint;
 
-    self.bounds = VMKRoundRect({CGPointFromPoint(_geometry->contentOffset()), size});
     self.position = CGPointFromPoint(_geometry->location());
     self.frame = VMKRoundRect(self.frame);
 }
