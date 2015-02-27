@@ -21,6 +21,7 @@ bool renderScore(NSString* path, NSString* output);
 void renderPart(const mxml::ScrollScoreGeometry& scoreGeometry, const mxml::PartGeometry& partGeometry, NSString* output);
 void renderLayer(CGContextRef ctx, VMKScoreElementLayer* layer, CGRect frame);
 CGSize computeSize(const mxml::PartGeometry& partGeometry);
+void openInPreview(NSString* output);
 
 
 int main(int argc, const char * argv[]) {
@@ -146,5 +147,17 @@ bool renderScore(NSString* path, NSString* output) {
     NSData* data = [rep representationUsingType:NSPNGFileType properties:nil];
     [data writeToFile:output atomically:YES];
 
+    //openInPreview(output);
+
     return true;
+}
+
+void openInPreview(NSString* output) {
+    NSWorkspace* workspace = [NSWorkspace sharedWorkspace];
+    NSURL* url = [NSURL fileURLWithPath:[workspace fullPathForApplication:@"Preview"]];
+    NSArray *arguments = [NSArray arrayWithObjects:output, nil];
+    [workspace launchApplicationAtURL:url
+                              options:0
+                        configuration:[NSDictionary dictionaryWithObject:arguments forKey:NSWorkspaceLaunchConfigurationArguments]
+                                error:nil];
 }
