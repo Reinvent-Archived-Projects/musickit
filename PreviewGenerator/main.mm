@@ -42,8 +42,9 @@ int process(int argc, const char * argv[]) {
     NSString* output = nil;
     for (int i = 1; i < argc; i += 1) {
         NSString* argument = [NSString stringWithUTF8String:argv[i]];
-        if ([argument hasPrefix:@"-"])
-            continue;
+        if ([argument hasPrefix:@"-"]) {
+            break;
+        }
 
         if (!input)
             input = argument;
@@ -51,7 +52,7 @@ int process(int argc, const char * argv[]) {
             output = argument;
     }
 
-    if (!input) {
+    if (!input || !output) {
         printUsage(argc, argv);
         return 1;
     }
