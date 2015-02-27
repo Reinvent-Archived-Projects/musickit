@@ -2,6 +2,7 @@
 
 #include "VMKScoreRenderer.h"
 
+#include <algorithm>
 
 const CGFloat VMKScoreRenderer::scale = 2;
 const CGFloat VMKScoreRenderer::maxWidth = 2048;
@@ -54,6 +55,21 @@ NSBitmapImageRep* VMKScoreRenderer::render() {
     return newRep;
 }
 
+CGFloat VMKScoreRenderer::calculatePartHeight(const mxml::PartGeometry& partGeometry) {
+    mxml::coord_t minY = 0.0f;
+    mxml::coord_t maxY = 0.0f;
+
+    for (auto& geometry : partGeometry.geometries()){
+        auto frame = geometry->frame();
+        if (frame.origin.x < maxWidth) {
+            minY = std::min(minY, frame.min().y);
+            maxY = std::max(maxY, frame.max().y);
+        }
+    }
+
+    return maxY - minY;
+}
+
 CGSize VMKScoreRenderer::partSize(const mxml::PartGeometry& partGeometry) {
     CGFloat measuresWidth = 0.0;
     for (auto& measureGeometry : partGeometry.geometries()) {
@@ -64,7 +80,7 @@ CGSize VMKScoreRenderer::partSize(const mxml::PartGeometry& partGeometry) {
 
     CGSize size;
     size.width = std::min(measuresWidth, maxWidth);
-    size.height = partGeometry.size().height;
+    size.height = calculatePartHeight(partGeometry);
 
     // Round to nearest pixel
     CGSize scaledSize = CGSizeMake(std::ceil(size.width * scale), std::ceil(size.height * scale));

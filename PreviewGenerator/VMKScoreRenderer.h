@@ -34,6 +34,7 @@ public:
 
 protected:
     static CGSize partSize(const mxml::PartGeometry& partGeometry);
+    static CGFloat calculatePartHeight(const mxml::PartGeometry& partGeometry);
 
     void renderMeasures(CGContextRef ctx);
     void renderWords(CGContextRef ctx);
