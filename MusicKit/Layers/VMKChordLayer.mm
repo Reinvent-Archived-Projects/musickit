@@ -181,7 +181,7 @@ using namespace mxml;
 
     auto stemGeometry = chordGeometry->stem();
     if (!stemGeometry)
-        return;
+        return; 
 
     CGFloat x = chordGeometry->refNoteLocation().x;
     CGFloat miny = chordGeometry->refNoteLocation().y;

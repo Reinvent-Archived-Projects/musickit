@@ -50,7 +50,7 @@ using mxml::dom::Beam;
     CGContextSetFillColorWithColor(ctx, self.foregroundColor.CGColor);
 
     const BeamGeometry* beamGeom = self.beamGeometry;
-    CGFloat slope = (beamGeom->beamEnd().y - beamGeom->beamBegin().y) / (beamGeom->beamEnd().x - beamGeom->beamBegin().x);
+    CGFloat slope = beamGeom->slope();
 
     for (NSUInteger ci = 0; ci < beamGeom->chords().size() - 1; ci += 1) {
         const ChordGeometry* chord1 = beamGeom->chords().at(ci);
@@ -62,7 +62,7 @@ using mxml::dom::Beam;
         for (int bi = 0; bi < nbeams; bi += 1) {
             if (bi < chord1->chord().beams().size()) {
                 const auto& beam = chord1->chord().beams()[bi];
-                if (beam->type() == Beam::kTypeBegin || beam->type() == Beam::kContinue) {
+                if (beam->type() == Beam::kTypeBegin || beam->type() == Beam::kTypeContinue) {
                     [self drawBeamFrom:bb to:be inContext:ctx];
                 } else if (beam->type() == Beam::kTypeForwardHook) {
                     be.x = bb.x + BeamGeometry::kHookLength;

@@ -8,6 +8,7 @@
 #include <mxml/ScoreProperties.h>
 #include <mxml/geometry/PartGeometry.h>
 #include <mxml/geometry/ScrollScoreGeometry.h>
+#include <mxml/geometry/factories/ChordGeometryFactory.h>
 #include <mxml/Metrics.h>
 
 
@@ -37,8 +38,9 @@ using namespace mxml::dom;
     ScoreProperties properties(*score, ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
-    mxml::ChordGeometry geom(*chord, properties, metrics);
-    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
+    mxml::ChordGeometryFactory factory(properties, metrics);
+    auto geom = factory.build(*chord);
+    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:geom.get()];
     
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
@@ -65,8 +67,9 @@ using namespace mxml::dom;
     ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
-    mxml::ChordGeometry geom(*chord, properties, metrics);
-    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
+    mxml::ChordGeometryFactory factory(properties, metrics);
+    auto geom = factory.build(*chord);
+    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:geom.get()];
     
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
@@ -92,8 +95,9 @@ using namespace mxml::dom;
     ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
-    mxml::ChordGeometry geom(*chord, properties, metrics);
-    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
+    mxml::ChordGeometryFactory factory(properties, metrics);
+    auto geom = factory.build(*chord);
+    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:geom.get()];
 
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
@@ -113,8 +117,9 @@ using namespace mxml::dom;
     ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
-    mxml::ChordGeometry geom(*chord, properties, metrics);
-    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
+    mxml::ChordGeometryFactory factory(properties, metrics);
+    auto geom = factory.build(*chord);
+    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:geom.get()];
 
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
@@ -134,8 +139,9 @@ using namespace mxml::dom;
     ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
-    mxml::ChordGeometry geom(*chord, properties, metrics);
-    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
+    mxml::ChordGeometryFactory factory(properties, metrics);
+    auto geom = factory.build(*chord);
+    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:geom.get()];
     
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
@@ -159,8 +165,9 @@ using namespace mxml::dom;
     ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
-    mxml::ChordGeometry geom(*chord, properties, metrics);
-    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
+    mxml::ChordGeometryFactory factory(properties, metrics);
+    auto geom = factory.build(*chord);
+    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:geom.get()];
     
     CGSize size = layer.preferredFrameSize;
     XCTAssertTrue(size.width > 0, @"Width should be greater than zero");
@@ -183,8 +190,9 @@ using namespace mxml::dom;
     ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
-    mxml::ChordGeometry geom(*chord, properties, metrics);
-    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
+    mxml::ChordGeometryFactory factory(properties, metrics);
+    auto geom = factory.build(*chord);
+    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:geom.get()];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
         XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
@@ -203,8 +211,9 @@ using namespace mxml::dom;
     ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
-    mxml::ChordGeometry geom(*chord, properties, metrics);
-    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
+    mxml::ChordGeometryFactory factory(properties, metrics);
+    auto geom = factory.build(*chord);
+    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:geom.get()];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
         XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
@@ -226,8 +235,9 @@ using namespace mxml::dom;
     ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
     ScrollMetrics metrics(*score, properties, 0);
 
-    mxml::ChordGeometry geom(*chord, properties, metrics);
-    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:&geom];
+    mxml::ChordGeometryFactory factory(properties, metrics);
+    auto geom = factory.build(*chord);
+    VMKChordLayer* layer = [[VMKChordLayer alloc] initWithChordGeometry:geom.get()];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
         XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);

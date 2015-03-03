@@ -108,6 +108,29 @@ using namespace mxml::dom;
     }];
 }
 
+- (void)testStemDirections {
+    auto builder = self.builder;
+
+    auto attributes = self.attributes;
+    attributes->setStaves(presentOptional(1));
+
+    auto noteDown = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, 0, 1);
+    builder->setPitch(noteDown, mxml::dom::Pitch::STEP_E, 5);
+
+    auto noteUp = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, 1, 1);
+    builder->setPitch(noteUp, mxml::dom::Pitch::STEP_F, 4);
+
+    auto score = builder->build();
+    auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
+
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
+}
+
 @end
 
 

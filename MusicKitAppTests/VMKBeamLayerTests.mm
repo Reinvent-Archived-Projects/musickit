@@ -77,7 +77,7 @@ using namespace mxml::dom;
     auto chord2 = self.builder->addChord(self.measure);
     auto note2 = self.builder->addNote(chord2, Note::TYPE_64TH, 1, 1);
     self.builder->setPitch(note2, Pitch::STEP_B, 4);
-    [self addBeamToNote:note2 beamType:Beam::kContinue numberOfBeams:1];
+    [self addBeamToNote:note2 beamType:Beam::kTypeContinue numberOfBeams:1];
 
     auto chord3 = self.builder->addChord(self.measure);
     auto note3 = self.builder->addNote(chord3, Note::TYPE_64TH, 2, 1);
@@ -184,7 +184,7 @@ using namespace mxml::dom;
     auto chord2 = self.builder->addChord(self.measure);
     auto note2 = self.builder->addNote(chord2, Note::TYPE_64TH, 1, 1);
     self.builder->setPitch(note2, Pitch::STEP_B, 4);
-    [self addBeamToNote:note2 beamType:Beam::kContinue numberOfBeams:4];
+    [self addBeamToNote:note2 beamType:Beam::kTypeContinue numberOfBeams:4];
 
     auto chord3 = self.builder->addChord(self.measure);
     auto note3 = self.builder->addNote(chord3, Note::TYPE_64TH, 2, 1);
