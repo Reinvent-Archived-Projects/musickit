@@ -21,8 +21,8 @@ CG_EXTERN CGFloat VMKScreenScale() {
 
 CG_EXTERN CGFloat VMKRoundCoordinate(CGFloat coord) {
     if (coord < 0)
-        return roundf(coord + 0.5f);
-    return round(coord);
+        return std::roundf(coord + 0.1f);
+    return std::roundf(coord);
 }
 
 CG_EXTERN CGPoint VMKRoundPoint(CGPoint point) {
