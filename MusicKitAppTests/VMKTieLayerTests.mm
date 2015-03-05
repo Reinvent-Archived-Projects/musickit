@@ -163,7 +163,6 @@ using namespace mxml::dom;
     }];
 }
 
-
 - (void)testSlurPlacementUp {
     auto builder = self.builder;
     auto time = dom::time_t{};
@@ -209,6 +208,88 @@ using namespace mxml::dom;
 
     auto score = builder->build();
     auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    VMKPartLayer* layer = [[VMKPartLayer alloc] initWithPartGeometry:partGeometry];
+
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
+}
+
+- (void)testSlurPlacementUpDown {
+    auto builder = self.builder;
+    auto time = dom::time_t{};
+
+    {
+        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::STEP_E, 4);
+
+        auto slur = std::unique_ptr<dom::Slur>(new Slur{});
+        slur->setType(dom::kStart);
+
+        auto notations = std::unique_ptr<dom::Notations>(new Notations{});
+        notations->addSlur(std::move(slur));
+        note->setNotations(std::move(notations));
+    }
+    {
+        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::STEP_B, 4);
+    }
+    {
+        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::STEP_E, 5);
+
+        auto slur = std::unique_ptr<dom::Slur>(new Slur{});
+        slur->setType(dom::kStop);
+
+        auto notations = std::unique_ptr<dom::Notations>(new Notations{});
+        notations->addSlur(std::move(slur));
+        note->setNotations(std::move(notations));
+    }
+
+    auto score = builder->build();
+    auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, true));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    VMKPartLayer* layer = [[VMKPartLayer alloc] initWithPartGeometry:partGeometry];
+
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
+}
+
+- (void)testSlurPlacementDownUp {
+    auto builder = self.builder;
+    auto time = dom::time_t{};
+
+    {
+        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::STEP_E, 5);
+
+        auto slur = std::unique_ptr<dom::Slur>(new Slur{});
+        slur->setType(dom::kStart);
+
+        auto notations = std::unique_ptr<dom::Notations>(new Notations{});
+        notations->addSlur(std::move(slur));
+        note->setNotations(std::move(notations));
+    }
+    {
+        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::STEP_B, 4);
+    }
+    {
+        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::STEP_E, 4);
+
+        auto slur = std::unique_ptr<dom::Slur>(new Slur{});
+        slur->setType(dom::kStop);
+
+        auto notations = std::unique_ptr<dom::Notations>(new Notations{});
+        notations->addSlur(std::move(slur));
+        note->setNotations(std::move(notations));
+    }
+
+    auto score = builder->build();
+    auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, true));
     auto partGeometry = scoreGeometry->partGeometries().front();
     VMKPartLayer* layer = [[VMKPartLayer alloc] initWithPartGeometry:partGeometry];
 

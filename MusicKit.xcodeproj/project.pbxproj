@@ -261,6 +261,18 @@
 		611621861AA8D9D90051C869 /* TieLayer-SlurPlacementUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 611621821AA8D9D90051C869 /* TieLayer-SlurPlacementUp@2x.png */; };
 		611621881AA8DA1E0051C869 /* TieLayer-SlurPlacementUp@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 611621871AA8DA1E0051C869 /* TieLayer-SlurPlacementUp@3x.png */; };
 		611621891AA8DA1E0051C869 /* TieLayer-SlurPlacementUp@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 611621871AA8DA1E0051C869 /* TieLayer-SlurPlacementUp@3x.png */; };
+		611621901AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 6116218A1AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp.png */; };
+		611621911AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 6116218A1AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp.png */; };
+		611621921AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6116218B1AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@2x.png */; };
+		611621931AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6116218B1AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@2x.png */; };
+		611621941AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6116218C1AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@3x.png */; };
+		611621951AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6116218C1AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@3x.png */; };
+		611621961AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 6116218D1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown.png */; };
+		611621971AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 6116218D1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown.png */; };
+		611621981AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6116218E1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@2x.png */; };
+		611621991AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6116218E1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@2x.png */; };
+		6116219A1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6116218F1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@3x.png */; };
+		6116219B1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6116218F1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@3x.png */; };
 		6118AD9E1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD981A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png */; };
 		6118AD9F1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD981A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png */; };
 		6118ADA01A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD991A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png */; };
@@ -1455,6 +1467,12 @@
 		611621811AA8D9D90051C869 /* TieLayer-SlurPlacementUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-SlurPlacementUp.png"; sourceTree = "<group>"; };
 		611621821AA8D9D90051C869 /* TieLayer-SlurPlacementUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-SlurPlacementUp@2x.png"; sourceTree = "<group>"; };
 		611621871AA8DA1E0051C869 /* TieLayer-SlurPlacementUp@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-SlurPlacementUp@3x.png"; sourceTree = "<group>"; };
+		6116218A1AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-SlurPlacementDownUp.png"; sourceTree = "<group>"; };
+		6116218B1AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-SlurPlacementDownUp@2x.png"; sourceTree = "<group>"; };
+		6116218C1AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-SlurPlacementDownUp@3x.png"; sourceTree = "<group>"; };
+		6116218D1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-SlurPlacementUpDown.png"; sourceTree = "<group>"; };
+		6116218E1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-SlurPlacementUpDown@2x.png"; sourceTree = "<group>"; };
+		6116218F1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TieLayer-SlurPlacementUpDown@3x.png"; sourceTree = "<group>"; };
 		6118AD981A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStart.png"; sourceTree = "<group>"; };
 		6118AD991A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStart@2x.png"; sourceTree = "<group>"; };
 		6118AD9A1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStart@3x.png"; sourceTree = "<group>"; };
@@ -2127,9 +2145,15 @@
 				611621781AA7DF690051C869 /* TieLayer-SlurPlacementDown.png */,
 				611621791AA7DF690051C869 /* TieLayer-SlurPlacementDown@2x.png */,
 				6116217A1AA7DF690051C869 /* TieLayer-SlurPlacementDown@3x.png */,
+				6116218A1AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp.png */,
+				6116218B1AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@2x.png */,
+				6116218C1AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@3x.png */,
 				611621811AA8D9D90051C869 /* TieLayer-SlurPlacementUp.png */,
 				611621821AA8D9D90051C869 /* TieLayer-SlurPlacementUp@2x.png */,
 				611621871AA8DA1E0051C869 /* TieLayer-SlurPlacementUp@3x.png */,
+				6116218D1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown.png */,
+				6116218E1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@2x.png */,
+				6116218F1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@3x.png */,
 				616C1C1D1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png */,
 				616C1C1F1A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@2x.png */,
 				616C1C841A0D81550020EAA8 /* TimeSignatureLayer-CommonTime@3x.png */,
@@ -3198,6 +3222,7 @@
 				616C1E291A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png in Resources */,
 				61E531161A7ACF5400E5B2FF /* KeyLayer-DMajor.png in Resources */,
 				61E531201A7ACF5400E5B2FF /* KeyLayer-CSharpMajor@2x.png in Resources */,
+				611621941AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@3x.png in Resources */,
 				616C1C901A0D81550020EAA8 /* NoteLayer-Whole.png in Resources */,
 				616C1D1A1A0D81550020EAA8 /* BeamLayer-ForwardHook@3x.png in Resources */,
 				616C1D401A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@3x.png in Resources */,
@@ -3247,6 +3272,7 @@
 				616C1D341A0D81550020EAA8 /* ChordLayer-Whole@3x.png in Resources */,
 				00A90B6B1A79907000D971B3 /* ScrollScoreLayout-Accidentals@3x.png in Resources */,
 				001EAAFB1A82D26D0097AE0D /* SystemLayer-System@2x.png in Resources */,
+				611621901AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp.png in Resources */,
 				616C1D4E1A0D81550020EAA8 /* TieLayer-AngledDown@3x.png in Resources */,
 				616C1D441A0D81550020EAA8 /* TieLayer-18Tie@3x.png in Resources */,
 				616C1CA41A0D81550020EAA8 /* TieLayer-1000Tie@2x.png in Resources */,
@@ -3283,6 +3309,7 @@
 				616C1CD21A0D81550020EAA8 /* ChordLayer-Eighth.png in Resources */,
 				001E81061A7FF6AA00784D9D /* PageScoreLayout-Attributes.png in Resources */,
 				616C1CA21A0D81550020EAA8 /* TieLayer-1000Tie.png in Resources */,
+				611621981AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@2x.png in Resources */,
 				001EAAFD1A82D26D0097AE0D /* SystemLayer-System@3x.png in Resources */,
 				616C1CD81A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png in Resources */,
 				005DA5E01A7FEF09003B41AC /* endings.xml in Resources */,
@@ -3317,6 +3344,7 @@
 				616C1CEA1A0D81550020EAA8 /* BeamLayer-ForwardHook.png in Resources */,
 				000868B51A6845B800BAA13D /* ImageLayer-Coda@3x.png in Resources */,
 				0005C0FF1A7C381500B60619 /* system_attributes.xml in Resources */,
+				6116219A1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@3x.png in Resources */,
 				61E531321A7ACF5400E5B2FF /* KeyLayer-BMajor@2x.png in Resources */,
 				005DA5E31A7FEFD3003B41AC /* PageScoreLayout-Attributes@2x.png in Resources */,
 				61E530F81A7ACF5400E5B2FF /* KeyLayer-GFlatMajor.png in Resources */,
@@ -3346,6 +3374,7 @@
 				616C1CC81A0D81550020EAA8 /* ChordLayer-128th@2x.png in Resources */,
 				616C1D281A0D81550020EAA8 /* ChordLayer-Accidental@3x.png in Resources */,
 				616C1CAC1A0D81550020EAA8 /* TieLayer-AngledDownBelow@2x.png in Resources */,
+				611621921AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@2x.png in Resources */,
 				6116217F1AA7DF690051C869 /* TieLayer-SlurPlacementDown@3x.png in Resources */,
 				61E530F21A7ACF5400E5B2FF /* KeyLayer-GMajor.png in Resources */,
 				616C1CE81A0D81550020EAA8 /* BeamLayer-BackwardHook@2x.png in Resources */,
@@ -3356,6 +3385,7 @@
 				61E530F41A7ACF5400E5B2FF /* KeyLayer-GFlatMajor@3x.png in Resources */,
 				616C1C9A1A0D81550020EAA8 /* TieLayer-50TieBelow.png in Resources */,
 				000868AA1A68456C00BAA13D /* ImageLayer-Segno@2x.png in Resources */,
+				611621961AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown.png in Resources */,
 				61947F471A9E632A0032977B /* WordsLayer-DontCropSlanted.png in Resources */,
 				61E531081A7ACF5400E5B2FF /* KeyLayer-EMajor@2x.png in Resources */,
 				616C1C861A0D81550020EAA8 /* ClefLayer-Treble.png in Resources */,
@@ -3431,6 +3461,7 @@
 				616C1DF81A0D97590020EAA8 /* TieLayer-100Tie.png in Resources */,
 				61E531171A7ACF5400E5B2FF /* KeyLayer-DMajor.png in Resources */,
 				61E531211A7ACF5400E5B2FF /* KeyLayer-CSharpMajor@2x.png in Resources */,
+				611621951AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@3x.png in Resources */,
 				616C1E2A1A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png in Resources */,
 				616C1DFA1A0D97590020EAA8 /* TieLayer-100Tie@3x.png in Resources */,
 				616C1DF31A0D97590020EAA8 /* TieLayer-50Tie@2x.png in Resources */,
@@ -3480,6 +3511,7 @@
 				00A90B6C1A79907000D971B3 /* ScrollScoreLayout-Accidentals@3x.png in Resources */,
 				616C1DFE1A0D97590020EAA8 /* TieLayer-AngledDown.png in Resources */,
 				001EAAFC1A82D26D0097AE0D /* SystemLayer-System@2x.png in Resources */,
+				611621911AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp.png in Resources */,
 				616C1DBB1A0D97590020EAA8 /* ChordLayer-Accidental.png in Resources */,
 				616C1DEC1A0D97590020EAA8 /* NoteLayer-Whole.png in Resources */,
 				61E531011A7ACF5400E5B2FF /* KeyLayer-FMajor@3x.png in Resources */,
@@ -3516,6 +3548,7 @@
 				616C1DC71A0D97590020EAA8 /* ChordLayer-EighthDown.png in Resources */,
 				001E81071A7FF6AA00784D9D /* PageScoreLayout-Attributes.png in Resources */,
 				616C1DB41A0D97590020EAA8 /* BeamLayer-TwoBeams@3x.png in Resources */,
+				611621991AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@2x.png in Resources */,
 				001EAAFE1A82D26D0097AE0D /* SystemLayer-System@3x.png in Resources */,
 				616C1DAF1A0D97590020EAA8 /* BeamLayer-OneBeamThreeNotes.png in Resources */,
 				005DA5E11A7FEF09003B41AC /* endings.xml in Resources */,
@@ -3550,6 +3583,7 @@
 				616C1DF21A0D97590020EAA8 /* TieLayer-50Tie.png in Resources */,
 				000868B61A6845B800BAA13D /* ImageLayer-Coda@3x.png in Resources */,
 				0005C1001A7C381500B60619 /* system_attributes.xml in Resources */,
+				6116219B1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@3x.png in Resources */,
 				61E531331A7ACF5400E5B2FF /* KeyLayer-BMajor@2x.png in Resources */,
 				005DA5E41A7FEFD3003B41AC /* PageScoreLayout-Attributes@2x.png in Resources */,
 				61E530F91A7ACF5400E5B2FF /* KeyLayer-GFlatMajor.png in Resources */,
@@ -3579,6 +3613,7 @@
 				616C1DCE1A0D97590020EAA8 /* ChordLayer-Whole@2x.png in Resources */,
 				616C1DB51A0D97590020EAA8 /* ChordLayer-128th.png in Resources */,
 				616C1DB71A0D97590020EAA8 /* ChordLayer-128th@3x.png in Resources */,
+				611621931AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@2x.png in Resources */,
 				611621801AA7DF690051C869 /* TieLayer-SlurPlacementDown@3x.png in Resources */,
 				61E530F31A7ACF5400E5B2FF /* KeyLayer-GMajor.png in Resources */,
 				616C1DE11A0D97590020EAA8 /* MeasureLayer-Empty@2x.png in Resources */,
@@ -3589,6 +3624,7 @@
 				61E530F51A7ACF5400E5B2FF /* KeyLayer-GFlatMajor@3x.png in Resources */,
 				616C1DAE1A0D97590020EAA8 /* BeamLayer-OneBeam@3x.png in Resources */,
 				000868AB1A68456C00BAA13D /* ImageLayer-Segno@2x.png in Resources */,
+				611621971AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown.png in Resources */,
 				61947F481A9E632A0032977B /* WordsLayer-DontCropSlanted.png in Resources */,
 				61E531091A7ACF5400E5B2FF /* KeyLayer-EMajor@2x.png in Resources */,
 				616C1DBA1A0D97590020EAA8 /* ChordLayer-Accent@3x.png in Resources */,
