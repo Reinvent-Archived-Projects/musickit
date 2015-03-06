@@ -131,6 +131,41 @@ using namespace mxml::dom;
     }];
 }
 
+- (void)testStemExtensions {
+    auto builder = self.builder;
+
+    auto attributes = self.attributes;
+    attributes->setStaves(presentOptional(1));
+
+    auto note1 = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, 0, 1);
+    builder->setPitch(note1, mxml::dom::Pitch::STEP_A, 3);
+
+    auto note2 = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, 1, 1);
+    builder->setPitch(note2, mxml::dom::Pitch::STEP_E, 3);
+
+    auto note3 = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, 2, 1);
+    builder->setPitch(note3, mxml::dom::Pitch::STEP_D, 6);
+
+    auto note4 = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, 3, 1);
+    builder->setPitch(note4, mxml::dom::Pitch::STEP_A, 6);
+
+    auto note5 = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, 4, 1);
+    builder->setPitch(note5, mxml::dom::Pitch::STEP_A, 4);
+
+    auto note6 = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, 5, 1);
+    builder->setPitch(note6, mxml::dom::Pitch::STEP_C, 5);
+
+    auto score = builder->build();
+    auto scoreGeometry = std::unique_ptr<mxml::ScrollScoreGeometry>(new mxml::ScrollScoreGeometry(*score, false));
+    auto partGeometry = scoreGeometry->partGeometries().front();
+    auto measureGeometry = partGeometry->measureGeometries().front();
+    VMKMeasureLayer* layer = [[VMKMeasureLayer alloc] initWithMeasure:measureGeometry];
+
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
+}
+
 @end
 
 

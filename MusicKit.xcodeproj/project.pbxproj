@@ -137,6 +137,12 @@
 		00B34FFB1A5B464000198F4A /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
 		00B34FFC1A5B464000198F4A /* Metrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B34FF51A5B464000198F4A /* Metrics.h */; };
 		00B34FFD1A5B464000198F4A /* Metrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B34FF51A5B464000198F4A /* Metrics.h */; };
+		00B36F521AA92439009368E1 /* MeasureLayer-StemExtensions.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B36F511AA92439009368E1 /* MeasureLayer-StemExtensions.png */; };
+		00B36F531AA92439009368E1 /* MeasureLayer-StemExtensions.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B36F511AA92439009368E1 /* MeasureLayer-StemExtensions.png */; };
+		00B36F551AA9258F009368E1 /* MeasureLayer-StemExtensions@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B36F541AA9258F009368E1 /* MeasureLayer-StemExtensions@2x.png */; };
+		00B36F561AA9258F009368E1 /* MeasureLayer-StemExtensions@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B36F541AA9258F009368E1 /* MeasureLayer-StemExtensions@2x.png */; };
+		00B36F581AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B36F571AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png */; };
+		00B36F591AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B36F571AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png */; };
 		00BF50C21A9BA1E900B18BCD /* kiss_the_rain.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */; };
 		00BF50C31A9BA1E900B18BCD /* kiss_the_rain.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */; };
 		00E7B48B1A8155EB00B949FC /* Attributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B48A1A8155EB00B949FC /* Attributes.cpp */; };
@@ -1218,6 +1224,9 @@
 		00A90B661A79907000D971B3 /* ScrollScoreLayout-Accidentals2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Accidentals2@3x.png"; sourceTree = "<group>"; };
 		00B34FF41A5B464000198F4A /* Metrics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Metrics.cpp; sourceTree = "<group>"; };
 		00B34FF51A5B464000198F4A /* Metrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metrics.h; sourceTree = "<group>"; };
+		00B36F511AA92439009368E1 /* MeasureLayer-StemExtensions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-StemExtensions.png"; sourceTree = "<group>"; };
+		00B36F541AA9258F009368E1 /* MeasureLayer-StemExtensions@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-StemExtensions@2x.png"; sourceTree = "<group>"; };
+		00B36F571AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-StemExtensions@3x.png"; sourceTree = "<group>"; };
 		00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = kiss_the_rain.xml; sourceTree = "<group>"; };
 		00E7B48A1A8155EB00B949FC /* Attributes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Attributes.cpp; path = Submodules/mxml/src/mxml/dom/Attributes.cpp; sourceTree = SOURCE_ROOT; };
 		2398D1FF5BFE82C3AC02E2F5 /* Pods-PreviewGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreviewGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator.release.xcconfig"; sourceTree = "<group>"; };
@@ -2074,6 +2083,9 @@
 				611621691AA668F10051C869 /* MeasureLayer-StemDirections.png */,
 				611621661AA6681B0051C869 /* MeasureLayer-StemDirections@2x.png */,
 				6116216C1AA669760051C869 /* MeasureLayer-StemDirections@3x.png */,
+				00B36F511AA92439009368E1 /* MeasureLayer-StemExtensions.png */,
+				00B36F541AA9258F009368E1 /* MeasureLayer-StemExtensions@2x.png */,
+				00B36F571AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png */,
 				616C1C5E1A0D81550020EAA8 /* MeasureLayer-WithClefs.png */,
 				616C1C5F1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png */,
 				616C1C781A0D81550020EAA8 /* MeasureLayer-WithClefs@3x.png */,
@@ -3247,6 +3259,7 @@
 				61947F441A9E60C50032977B /* WordsLayer-DontCropSlanted@2x.png in Resources */,
 				6116216A1AA668F10051C869 /* MeasureLayer-StemDirections.png in Resources */,
 				616C1D101A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png in Resources */,
+				00B36F551AA9258F009368E1 /* MeasureLayer-StemExtensions@2x.png in Resources */,
 				616C1CE41A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png in Resources */,
 				001EAAEE1A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png in Resources */,
 				616C1D481A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png in Resources */,
@@ -3326,6 +3339,7 @@
 				616C1E2F1A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png in Resources */,
 				61E531141A7ACF5400E5B2FF /* KeyLayer-DMajor@2x.png in Resources */,
 				616C1CFA1A0D81550020EAA8 /* BeamLayer-TwoBeams.png in Resources */,
+				00B36F581AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png in Resources */,
 				616C1C881A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png in Resources */,
 				61E531441A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@2x.png in Resources */,
 				61E531381A7ACF5400E5B2FF /* KeyLayer-BFlatMajor@2x.png in Resources */,
@@ -3364,6 +3378,7 @@
 				616C1CF21A0D81550020EAA8 /* BeamLayer-OneBeam.png in Resources */,
 				611621671AA6681B0051C869 /* MeasureLayer-StemDirections@2x.png in Resources */,
 				616C1CB61A0D81550020EAA8 /* ChordLayer-EighthDown.png in Resources */,
+				00B36F521AA92439009368E1 /* MeasureLayer-StemExtensions.png in Resources */,
 				000868A81A68456C00BAA13D /* ImageLayer-Segno.png in Resources */,
 				61E530F01A7ACF5400E5B2FF /* KeyLayer-GMajor@2x.png in Resources */,
 				005DA5D71A7FEECE003B41AC /* slurs.xml in Resources */,
@@ -3486,6 +3501,7 @@
 				61947F451A9E60C50032977B /* WordsLayer-DontCropSlanted@2x.png in Resources */,
 				6116216B1AA668F10051C869 /* MeasureLayer-StemDirections.png in Resources */,
 				616C1DE41A0D97590020EAA8 /* MeasureLayer-WithClefs@2x.png in Resources */,
+				00B36F561AA9258F009368E1 /* MeasureLayer-StemExtensions@2x.png in Resources */,
 				616C1E021A0D97590020EAA8 /* TieLayer-AngledDownBelow@2x.png in Resources */,
 				001EAAEF1A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png in Resources */,
 				61E5310B1A7ACF5400E5B2FF /* KeyLayer-EMajor.png in Resources */,
@@ -3565,6 +3581,7 @@
 				61E531151A7ACF5400E5B2FF /* KeyLayer-DMajor@2x.png in Resources */,
 				616C1DF11A0D97590020EAA8 /* TieLayer-18Tie@3x.png in Resources */,
 				616C1DC81A0D97590020EAA8 /* ChordLayer-EighthDown@2x.png in Resources */,
+				00B36F591AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png in Resources */,
 				61E531451A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@2x.png in Resources */,
 				61E531391A7ACF5400E5B2FF /* KeyLayer-BFlatMajor@2x.png in Resources */,
 				000868841A683B5300BAA13D /* WordsLayer-Dyanmics@3x.png in Resources */,
@@ -3603,6 +3620,7 @@
 				616C1DA21A0D97590020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png in Resources */,
 				611621681AA6681B0051C869 /* MeasureLayer-StemDirections@2x.png in Resources */,
 				616C1DF71A0D97590020EAA8 /* TieLayer-50TieBelow@3x.png in Resources */,
+				00B36F531AA92439009368E1 /* MeasureLayer-StemExtensions.png in Resources */,
 				000868A91A68456C00BAA13D /* ImageLayer-Segno.png in Resources */,
 				61E530F11A7ACF5400E5B2FF /* KeyLayer-GMajor@2x.png in Resources */,
 				005DA5D81A7FEECE003B41AC /* slurs.xml in Resources */,
