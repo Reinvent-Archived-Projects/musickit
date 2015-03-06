@@ -9,15 +9,15 @@ using namespace mxml;
 
 + (NSString*)headImageNameForNote:(const dom::Note&)note {
     switch (note.type().value()) {
-        case dom::Note::TYPE_HALF:
+        case dom::Note::Type::Half:
             return @"half-head";
 
-        case dom::Note::TYPE_WHOLE:
+        case dom::Note::Type::Whole:
             return @"whole-head";
 
-        case dom::Note::TYPE_BREVE:
-        case dom::Note::TYPE_LONG:
-        case dom::Note::TYPE_MAXIMA:
+        case dom::Note::Type::Breve:
+        case dom::Note::Type::Long:
+        case dom::Note::Type::Maxima:
             return @"breve-head";
 
         default:

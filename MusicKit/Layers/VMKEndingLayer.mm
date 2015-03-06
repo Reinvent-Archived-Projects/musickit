@@ -46,7 +46,7 @@ static const CGFloat kLineWidth = 1;
     fillRect.size.height = kLineWidth;
     CGContextFillRect(ctx, VMKRoundRect(fillRect));
 
-    if (geom->stopEnding().type() == mxml::dom::Ending::kStop) {
+    if (geom->stopEnding().type() == mxml::dom::Ending::Type::Stop) {
         fillRect.origin.x = size.width - kLineWidth;
         fillRect.size.width = kLineWidth;
         fillRect.size.height = size.height;

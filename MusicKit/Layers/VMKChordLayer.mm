@@ -136,18 +136,18 @@ using namespace mxml;
 
     NSString* imageName;
     switch (geom->articulation().type()) {
-        case Articulation::ACCENT:
+        case Articulation::Type::Accent:
             imageName = @"accent";
             break;
-        case Articulation::SPICCATO:
+        case Articulation::Type::Spiccato:
             imageName = @"spiccato";
             break;
 
-        case Articulation::STACCATISSIMO:
+        case Articulation::Type::Staccatissimo:
             imageName = @"staccatissimo";
             break;
 
-        case Articulation::STACCATO:
+        case Articulation::Type::Staccato:
             imageName = @"dot";
             break;
 
@@ -158,7 +158,7 @@ using namespace mxml;
         return;
 
     VMKScoreElementImageLayer* layer = [[VMKScoreElementImageLayer alloc] initWithImageName:imageName geometry:geom];
-    if (geom->stem() == dom::kStemUp)
+    if (geom->stem() == dom::Stem::Up)
         layer.affineTransform = CGAffineTransformMakeScale(1, -1);
     [_otherLayers addObject:layer];
     [self addSublayer:layer];
@@ -168,7 +168,7 @@ using namespace mxml;
     using mxml::dom::Fermata;
     NSString* imageName = @"fermata";
     VMKScoreElementImageLayer* layer = [[VMKScoreElementImageLayer alloc] initWithImageName:imageName geometry:geom];
-    if (geom->fermata().type() == Fermata::TYPE_INVERTED)
+    if (geom->fermata().type() == Fermata::Type::Inverted)
         layer.affineTransform = CGAffineTransformMakeScale(1, -1);
     [_otherLayers addObject:layer];
     [self addSublayer:layer];
@@ -196,11 +196,11 @@ using namespace mxml;
 
     CGPoint offset = self.bounds.origin;
     CGRect stemRect = CGRectZero;
-    if (stemGeometry->stemDirection() == dom::kStemUp) {
+    if (stemGeometry->stemDirection() == dom::Stem::Up) {
         stemRect.origin.y = offset.y;
         stemRect.origin.x = (x + NoteGeometry::kQuarterWidth/2 - kStemWidth);
         stemRect.size.height = maxy - offset.y - kStemOffset;
-    } else if (stemGeometry->stemDirection() == dom::kStemDown) {
+    } else if (stemGeometry->stemDirection() == dom::Stem::Down) {
         stemRect.origin.y = miny + kStemOffset;
         stemRect.origin.x = (x - NoteGeometry::kQuarterWidth/2);
         stemRect.size.height = self.preferredFrameSize.height - (miny - offset.y + kStemOffset);

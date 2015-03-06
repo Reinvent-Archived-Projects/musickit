@@ -30,7 +30,7 @@ using namespace mxml::dom;
 }
 
 - (void)test18Tie {
-    TieGeometry geom({0, 10}, {18, 10}, kPlacementAbove);
+    TieGeometry geom({0, 10}, {18, 10}, Placement::Above);
     VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
@@ -39,7 +39,7 @@ using namespace mxml::dom;
 }
 
 - (void)test50Tie {
-    TieGeometry geom({0, 10}, {50, 10}, kPlacementAbove);
+    TieGeometry geom({0, 10}, {50, 10}, Placement::Above);
     VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
@@ -48,7 +48,7 @@ using namespace mxml::dom;
 }
 
 - (void)test50TieBelow {
-    TieGeometry geom({0, 10}, {50, 10}, kPlacementBelow);
+    TieGeometry geom({0, 10}, {50, 10}, Placement::Below);
     VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
@@ -57,7 +57,7 @@ using namespace mxml::dom;
 }
 
 - (void)testAngledDown {
-    TieGeometry geom({0, 10}, {50, 30}, kPlacementAbove);
+    TieGeometry geom({0, 10}, {50, 30}, Placement::Above);
     VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
@@ -66,7 +66,7 @@ using namespace mxml::dom;
 }
 
 - (void)testAngledDownBelow {
-    TieGeometry geom({0, 10}, {50, 30}, kPlacementBelow);
+    TieGeometry geom({0, 10}, {50, 30}, Placement::Below);
     VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
@@ -75,7 +75,7 @@ using namespace mxml::dom;
 }
 
 - (void)testAngledUp {
-    TieGeometry geom({0, 30}, {50, 10}, kPlacementAbove);
+    TieGeometry geom({0, 30}, {50, 10}, Placement::Above);
     VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
@@ -84,7 +84,7 @@ using namespace mxml::dom;
 }
 
 - (void)testAngledUpBelow {
-    TieGeometry geom({0, 30}, {50, 10}, kPlacementBelow);
+    TieGeometry geom({0, 30}, {50, 10}, Placement::Below);
     VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
@@ -93,7 +93,7 @@ using namespace mxml::dom;
 }
 
 - (void)test100Tie {
-    TieGeometry geom({0, 10}, {100, 10}, kPlacementAbove);
+    TieGeometry geom({0, 10}, {100, 10}, Placement::Above);
     VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
@@ -102,7 +102,7 @@ using namespace mxml::dom;
 }
 
 - (void)test1000Tie {
-    TieGeometry geom({0, 10}, {1000, 10}, kPlacementAbove);
+    TieGeometry geom({0, 10}, {1000, 10}, Placement::Above);
     VMKTieLayer* layer = [[VMKTieLayer alloc] initWithTieGeometry:&geom];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
@@ -115,14 +115,14 @@ using namespace mxml::dom;
     auto time = dom::time_t{};
 
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_E, 4);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::E, 4);
 
         auto slur = std::unique_ptr<dom::Slur>(new Slur{});
         slur->setType(dom::kStart);
 
         auto articulation = std::unique_ptr<dom::Articulation>(new Articulation{});
-        articulation->setType(dom::Articulation::ACCENT);
+        articulation->setType(dom::Articulation::Type::Accent);
 
         auto notations = std::unique_ptr<dom::Notations>(new Notations{});
         notations->addSlur(std::move(slur));
@@ -130,22 +130,22 @@ using namespace mxml::dom;
         note->setNotations(std::move(notations));
     }
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_A, 4);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::A, 4);
     }
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_G, 4);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::G, 4);
     }
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_F, 4);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::F, 4);
 
         auto slur = std::unique_ptr<dom::Slur>(new Slur{});
         slur->setType(dom::kStop);
 
         auto articulation = std::unique_ptr<dom::Articulation>(new Articulation{});
-        articulation->setType(dom::Articulation::STACCATO);
+        articulation->setType(dom::Articulation::Type::Staccato);
 
         auto notations = std::unique_ptr<dom::Notations>(new Notations{});
         notations->addSlur(std::move(slur));
@@ -168,14 +168,14 @@ using namespace mxml::dom;
     auto time = dom::time_t{};
 
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_B, 4);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::B, 4);
 
         auto slur = std::unique_ptr<dom::Slur>(new Slur{});
         slur->setType(dom::kStart);
 
         auto articulation = std::unique_ptr<dom::Articulation>(new Articulation{});
-        articulation->setType(dom::Articulation::ACCENT);
+        articulation->setType(dom::Articulation::Type::Accent);
 
         auto notations = std::unique_ptr<dom::Notations>(new Notations{});
         notations->addSlur(std::move(slur));
@@ -183,22 +183,22 @@ using namespace mxml::dom;
         note->setNotations(std::move(notations));
     }
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_E, 5);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::E, 5);
     }
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_D, 5);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::D, 5);
     }
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_C, 5);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::C, 5);
 
         auto slur = std::unique_ptr<dom::Slur>(new Slur{});
         slur->setType(dom::kStop);
 
         auto articulation = std::unique_ptr<dom::Articulation>(new Articulation{});
-        articulation->setType(dom::Articulation::STACCATO);
+        articulation->setType(dom::Articulation::Type::Staccato);
 
         auto notations = std::unique_ptr<dom::Notations>(new Notations{});
         notations->addSlur(std::move(slur));
@@ -221,8 +221,8 @@ using namespace mxml::dom;
     auto time = dom::time_t{};
 
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_E, 4);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::E, 4);
 
         auto slur = std::unique_ptr<dom::Slur>(new Slur{});
         slur->setType(dom::kStart);
@@ -232,12 +232,12 @@ using namespace mxml::dom;
         note->setNotations(std::move(notations));
     }
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_B, 4);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::B, 4);
     }
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_E, 5);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::E, 5);
 
         auto slur = std::unique_ptr<dom::Slur>(new Slur{});
         slur->setType(dom::kStop);
@@ -262,8 +262,8 @@ using namespace mxml::dom;
     auto time = dom::time_t{};
 
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_E, 5);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::E, 5);
 
         auto slur = std::unique_ptr<dom::Slur>(new Slur{});
         slur->setType(dom::kStart);
@@ -273,12 +273,12 @@ using namespace mxml::dom;
         note->setNotations(std::move(notations));
     }
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_B, 4);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::B, 4);
     }
     {
-        auto note = builder->addNote(self.measure, mxml::dom::Note::TYPE_QUARTER, time++, 1);
-        builder->setPitch(note, mxml::dom::Pitch::STEP_E, 4);
+        auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
+        builder->setPitch(note, mxml::dom::Pitch::Step::E, 4);
 
         auto slur = std::unique_ptr<dom::Slur>(new Slur{});
         slur->setType(dom::kStop);

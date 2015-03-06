@@ -62,9 +62,9 @@ using mxml::dom::Beam;
         for (int bi = 0; bi < nbeams; bi += 1) {
             if (bi < chord1->chord().beams().size()) {
                 const auto& beam = chord1->chord().beams()[bi];
-                if (beam->type() == Beam::kTypeBegin || beam->type() == Beam::kTypeContinue) {
+                if (beam->type() == Beam::Type::Begin || beam->type() == Beam::Type::Continue) {
                     [self drawBeamFrom:bb to:be inContext:ctx];
-                } else if (beam->type() == Beam::kTypeForwardHook) {
+                } else if (beam->type() == Beam::Type::ForwardHook) {
                     be.x = bb.x + BeamGeometry::kHookLength;
                     be.y = bb.y - slope * (bb.x - be.x);
                     [self drawBeamFrom:bb to:be inContext:ctx];
@@ -72,14 +72,14 @@ using mxml::dom::Beam;
             }
             if (bi < chord2->chord().beams().size()) {
                 const auto& beam = chord2->chord().beams()[bi];
-                if (beam->type() == Beam::kTypeBackwardHook) {
+                if (beam->type() == Beam::Type::BackwardHook) {
                     bb.x = be.x - BeamGeometry::kHookLength;
                     bb.y = be.y - slope * (be.x - bb.x);
                     [self drawBeamFrom:bb to:be inContext:ctx];
                 }
             }
 
-            if (beamGeom->placement() == mxml::dom::kPlacementBelow) {
+            if (beamGeom->placement() == mxml::dom::Placement::Below) {
                 bb.y += BeamGeometry::kBeamLineWidth + BeamGeometry::kBeamLineSpacing;
                 be.y += BeamGeometry::kBeamLineWidth + BeamGeometry::kBeamLineSpacing;
             } else {

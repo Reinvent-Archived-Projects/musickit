@@ -12,7 +12,7 @@ static const CGFloat kHorizontalSpacing = 0;
 @implementation VMKTimeSignatureLayer
 
 + (VMKImage*)imageForSymbol:(dom::Time::Symbol)symbol withColor:(VMKColor*)color {
-    if (symbol == dom::Time::SYMBOL_COMMON)
+    if (symbol == dom::Time::Symbol::Common)
         return [[VMKImageStore sharedInstance] imageNamed:@"common" withColor:color];
     return nil;
 }

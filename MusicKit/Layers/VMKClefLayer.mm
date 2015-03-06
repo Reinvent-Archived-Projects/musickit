@@ -9,8 +9,8 @@ using namespace mxml;
 
 + (NSString*)imageNameForSign:(dom::Clef::Sign)sign {
     switch (sign) {
-        case dom::Clef::SIGN_G: return @"treble-clef";
-        case dom::Clef::SIGN_F: return @"bass-clef";
+        case dom::Clef::Sign::G: return @"treble-clef";
+        case dom::Clef::Sign::F: return @"bass-clef";
         default: return nil;
     }
 }

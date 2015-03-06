@@ -82,7 +82,7 @@ static const CGFloat kEndsControlsOutterX = 0.0286;
     CGContextTranslateCTM(ctx, -bounds.origin.x, -bounds.origin.y);
     CGContextRotateCTM(ctx, angle);
 
-    if (self.tieGeometry->placement().value() == mxml::dom::kPlacementBelow) {
+    if (self.tieGeometry->placement().value() == mxml::dom::Placement::Below) {
         CGContextTranslateCTM(ctx, 0, curveHeight/2);
         CGContextScaleCTM(ctx, 1, -1);
         CGContextTranslateCTM(ctx, 0, -curveHeight/2);

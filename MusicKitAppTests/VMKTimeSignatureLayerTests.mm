@@ -13,7 +13,7 @@
 
 - (void)testCommonTime {
     mxml::dom::Time time;
-    time.setSymbol(mxml::dom::Time::SYMBOL_COMMON);
+    time.setSymbol(mxml::dom::Time::Symbol::Common);
     
     mxml::TimeSignatureGeometry geom(time);
     VMKTimeSignatureLayer* layer = [[VMKTimeSignatureLayer alloc] initWithTimeSignatureGeometry:&geom];

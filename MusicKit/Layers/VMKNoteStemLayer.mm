@@ -10,26 +10,26 @@ using namespace mxml::dom;
 + (NSString*)stemImageNameForNote:(const mxml::dom::Note&)note direction:(mxml::dom::Stem)stemDirection {
     NSString* name;
     switch (note.type().value()) {
-        case Note::TYPE_1024TH:
-        case Note::TYPE_512TH:
-        case Note::TYPE_256TH:
-        case Note::TYPE_128TH:
+        case Note::Type::_1024th:
+        case Note::Type::_512th:
+        case Note::Type::_256th:
+        case Note::Type::_128th:
             name = @"128th"; break;
 
-        case Note::TYPE_64TH:
+        case Note::Type::_64th:
             name = @"64th"; break;
 
-        case Note::TYPE_32ND:
+        case Note::Type::_32nd:
             name = @"32nd"; break;
 
-        case Note::TYPE_16TH:
+        case Note::Type::_16th:
             name = @"16th"; break;
 
-        case Note::TYPE_EIGHTH:
+        case Note::Type::Eighth:
             name = @"eighth"; break;
 
-        case Note::TYPE_QUARTER:
-        case Note::TYPE_HALF:
+        case Note::Type::Quarter:
+        case Note::Type::Half:
             name = @"quarter"; break;
 
         default:
@@ -39,9 +39,9 @@ using namespace mxml::dom;
         return nil;
 
     NSString* dir = nil;
-    if (stemDirection == kStemUp)
+    if (stemDirection == Stem::Up)
         dir = @"up";
-    else if (stemDirection == kStemDown)
+    else if (stemDirection == Stem::Down)
         dir = @"down";
     if (dir == nil)
         return nil;
@@ -53,9 +53,9 @@ using namespace mxml::dom;
     NSString* name = @"quarter";
 
     NSString* dir = nil;
-    if (stemDirection == kStemUp)
+    if (stemDirection == Stem::Up)
         dir = @"up";
-    else if (stemDirection == kStemDown)
+    else if (stemDirection == Stem::Down)
         dir = @"down";
     if (dir == nil)
         return nil;

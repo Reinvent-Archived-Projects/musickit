@@ -57,49 +57,49 @@ static const CGFloat kLineSpacing = 2;
 
     const BarlineGeometry* barlineGeom = static_cast<const BarlineGeometry*>(self.geometry);
     switch (barlineGeom->barline().style()) {
-        case Barline::REGULAR:
-        case Barline::TICK:
-        case Barline::SHORT:
+        case Barline::Style::Regular:
+        case Barline::Style::Tick:
+        case Barline::Style::Short:
             CGContextFillRect(ctx, CGRectMake(0, 0, kLightLineWidth, height));
             break;
 
-        case Barline::DOTTED: {
+        case Barline::Style::Dotted: {
             CGFloat lengths[] = {1, 2};
             CGContextSetLineDash(ctx, 0, lengths, 2);
             CGContextFillRect(ctx, CGRectMake(0, 0, kLightLineWidth, height));
         } break;
 
-        case Barline::DASHED: {
+        case Barline::Style::Dashed: {
             CGFloat lengths[] = {2, 2};
             CGContextSetLineDash(ctx, 0, lengths, 2);
             CGContextFillRect(ctx, CGRectMake(0, 0, kLightLineWidth, height));
         } break;
 
-        case Barline::HEAVY:
+        case Barline::Style::Heavy:
             CGContextFillRect(ctx, CGRectMake(0, 0, kHeavyLineWidth, height));
             break;
 
-        case Barline::LIGHT_LIGHT:
+        case Barline::Style::LightLight:
             CGContextFillRect(ctx, CGRectMake(0, 0, kLightLineWidth, height));
             CGContextFillRect(ctx, CGRectMake((kLightLineWidth + kLineSpacing), 0, kLightLineWidth, height));
             break;
 
-        case Barline::LIGHT_HEAVY:
+        case Barline::Style::LightHeavy:
             CGContextFillRect(ctx, CGRectMake(0, 0, kLightLineWidth, height));
             CGContextFillRect(ctx, CGRectMake((kLightLineWidth + kLineSpacing), 0, kHeavyLineWidth, height));
             break;
 
-        case Barline::HEAVY_LIGHT:
+        case Barline::Style::HeavyLight:
             CGContextFillRect(ctx, CGRectMake(0, 0, kHeavyLineWidth, height));
             CGContextFillRect(ctx, CGRectMake((kHeavyLineWidth + kLineSpacing), 0, kLightLineWidth, height));
             break;
 
-        case Barline::HEAVY_HEAVY:
+        case Barline::Style::HeavyHeavy:
             CGContextFillRect(ctx, CGRectMake(0, 0, kHeavyLineWidth, height));
             CGContextFillRect(ctx, CGRectMake((kHeavyLineWidth + kLineSpacing), 0, kHeavyLineWidth, height));
             break;
 
-        case Barline::NONE:
+        case Barline::Style::None:
             break;
     }
 }
@@ -113,7 +113,7 @@ static const CGFloat kLineSpacing = 2;
 
     const BarlineGeometry* barlineGeom = self.barlineGeometry;
     const auto& repeat = barlineGeom->barline().repeat();
-    if (repeat->direction() == dom::Repeat::DIRECTION_FORWARD) {
+    if (repeat->direction() == dom::Repeat::Direction::Forward) {
         CGContextFillRect(ctx, CGRectMake(offset, 0, kHeavyLineWidth, height));
         offset += (kHeavyLineWidth + kLineSpacing);
         CGContextFillRect(ctx, CGRectMake(offset, 0, kLightLineWidth, height));

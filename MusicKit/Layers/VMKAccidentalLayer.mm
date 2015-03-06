@@ -10,28 +10,17 @@
 
 + (NSArray*)imagesForAccidental:(int)alter withColor:(VMKColor*)color {
     VMKImageStore* imageStore = [VMKImageStore sharedInstance];
-
-    switch (alter) {
-        case mxml::dom::Accidental::kTypeSharp:
-            return @[ [imageStore imageNamed:@"sharp" withColor:color] ];
-
-        case mxml::dom::Accidental::kTypeFlat:
-            return @[ [imageStore imageNamed:@"flat" withColor:color] ];
-
-        case mxml::dom::Accidental::kTypeNatural:
-            return @[ [imageStore imageNamed:@"natural" withColor:color] ];
-
-        case mxml::dom::Accidental::kTypeDoubleSharp:
-            return @[ [imageStore imageNamed:@"double-sharp" withColor:color] ];
-
-        case mxml::dom::Accidental::kTypeDoubleFlat: {
-            VMKImage* image = [imageStore imageNamed:@"flat" withColor:color];
-            return @[ image, image ];
-        }
-
-        default:
-            return nil;
+    if (alter == 2) {
+        VMKImage* image = [imageStore imageNamed:@"flat" withColor:color];
+        return @[ image, image ];
     }
+
+    auto type = mxml::dom::Accidental::Type::byAlter(alter);
+    if (!type)
+        return nil;
+
+    NSString* imageName = [NSString stringWithUTF8String:type->name];
+    return @[ [imageStore imageNamed:imageName withColor:color] ];
 }
 
 + (CGSize)sizeForImages:(NSArray*)images {

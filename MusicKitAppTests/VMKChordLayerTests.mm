@@ -25,17 +25,17 @@ using namespace mxml::dom;
 - (void)testEighth {
     auto chord = self.builder->addChord(self.measure);
 
-    auto note1 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
-    self.builder->setPitch(note1, Pitch::STEP_B, 4);
+    auto note1 = self.builder->addNote(chord, Note::Type::Eighth);
+    self.builder->setPitch(note1, Pitch::Step::B, 4);
 
-    auto note2 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
-    self.builder->setPitch(note2, Pitch::STEP_G, 4);
+    auto note2 = self.builder->addNote(chord, Note::Type::Eighth);
+    self.builder->setPitch(note2, Pitch::Step::G, 4);
 
-    auto note3 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
-    self.builder->setPitch(note3, Pitch::STEP_F, 3);
+    auto note3 = self.builder->addNote(chord, Note::Type::Eighth);
+    self.builder->setPitch(note3, Pitch::Step::F, 3);
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score, ScoreProperties::kLayoutTypeScroll);
+    ScoreProperties properties(*score, ScoreProperties::LayoutType::Scroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometryFactory factory(properties, metrics);
@@ -53,18 +53,18 @@ using namespace mxml::dom;
 
 - (void)testEighthDown {
     auto chord = self.builder->addChord(self.measure);
-    auto note1 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
-    self.builder->setPitch(note1, Pitch::STEP_B, 4);
-    note1->setStem(kStemDown);
+    auto note1 = self.builder->addNote(chord, Note::Type::Eighth);
+    self.builder->setPitch(note1, Pitch::Step::B, 4);
+    note1->setStem(Stem::Down);
 
-    auto note2 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
-    self.builder->setPitch(note2, Pitch::STEP_G, 4);
+    auto note2 = self.builder->addNote(chord, Note::Type::Eighth);
+    self.builder->setPitch(note2, Pitch::Step::G, 4);
 
-    auto note3 = self.builder->addNote(chord, Note::TYPE_EIGHTH);
-    self.builder->setPitch(note3, Pitch::STEP_F, 3);
+    auto note3 = self.builder->addNote(chord, Note::Type::Eighth);
+    self.builder->setPitch(note3, Pitch::Step::F, 3);
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
+    ScoreProperties properties(*score, mxml::ScoreProperties::LayoutType::Scroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometryFactory factory(properties, metrics);
@@ -82,17 +82,17 @@ using namespace mxml::dom;
 
 - (void)test128th {
     auto chord = self.builder->addChord(self.measure);
-    auto note1 = self.builder->addNote(chord, Note::TYPE_128TH);
-    self.builder->setPitch(note1, Pitch::STEP_B, 4);
+    auto note1 = self.builder->addNote(chord, Note::Type::_128th);
+    self.builder->setPitch(note1, Pitch::Step::B, 4);
 
-    auto note2 = self.builder->addNote(chord, Note::TYPE_128TH);
-    self.builder->setPitch(note2, Pitch::STEP_G, 4);
+    auto note2 = self.builder->addNote(chord, Note::Type::_128th);
+    self.builder->setPitch(note2, Pitch::Step::G, 4);
 
-    auto note3 = self.builder->addNote(chord, Note::TYPE_128TH);
-    self.builder->setPitch(note3, Pitch::STEP_F, 3);
+    auto note3 = self.builder->addNote(chord, Note::Type::_128th);
+    self.builder->setPitch(note3, Pitch::Step::F, 3);
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
+    ScoreProperties properties(*score, mxml::ScoreProperties::LayoutType::Scroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometryFactory factory(properties, metrics);
@@ -110,11 +110,11 @@ using namespace mxml::dom;
 
 - (void)testWhole {
     auto chord = self.builder->addChord(self.measure);
-    auto note2 = self.builder->addNote(chord, Note::TYPE_WHOLE);
-    self.builder->setPitch(note2, Pitch::STEP_G, 4);
+    auto note2 = self.builder->addNote(chord, Note::Type::Whole);
+    self.builder->setPitch(note2, Pitch::Step::G, 4);
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
+    ScoreProperties properties(*score, mxml::ScoreProperties::LayoutType::Scroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometryFactory factory(properties, metrics);
@@ -132,11 +132,11 @@ using namespace mxml::dom;
 
 - (void)testQuarter {
     auto chord = self.builder->addChord(self.measure);
-    auto note = self.builder->addNote(chord, Note::TYPE_QUARTER);
-    self.builder->setPitch(note, Pitch::STEP_G, 4);
+    auto note = self.builder->addNote(chord, Note::Type::Quarter);
+    self.builder->setPitch(note, Pitch::Step::G, 4);
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
+    ScoreProperties properties(*score, mxml::ScoreProperties::LayoutType::Scroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometryFactory factory(properties, metrics);
@@ -155,14 +155,14 @@ using namespace mxml::dom;
 - (void)testDisplaceSideways {
     auto chord = self.builder->addChord(self.measure);
 
-    auto note1 = self.builder->addNote(chord, Note::TYPE_HALF);
-    self.builder->setPitch(note1, Pitch::STEP_F, 4);
+    auto note1 = self.builder->addNote(chord, Note::Type::Half);
+    self.builder->setPitch(note1, Pitch::Step::F, 4);
 
-    auto note2 = self.builder->addNote(chord, Note::TYPE_HALF);
-    self.builder->setPitch(note2, Pitch::STEP_G, 4);
+    auto note2 = self.builder->addNote(chord, Note::Type::Half);
+    self.builder->setPitch(note2, Pitch::Step::G, 4);
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
+    ScoreProperties properties(*score, mxml::ScoreProperties::LayoutType::Scroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometryFactory factory(properties, metrics);
@@ -180,14 +180,14 @@ using namespace mxml::dom;
 
 - (void)testDot {
     auto chord = self.builder->addChord(self.measure);
-    auto note = self.builder->addNote(chord, Note::TYPE_QUARTER);
-    self.builder->setPitch(note, Pitch::STEP_G, 4);
+    auto note = self.builder->addNote(chord, Note::Type::Quarter);
+    self.builder->setPitch(note, Pitch::Step::G, 4);
     
     auto placement = std::unique_ptr<EmptyPlacement>(new EmptyPlacement{});
     note->setDot(std::move(placement));
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
+    ScoreProperties properties(*score, mxml::ScoreProperties::LayoutType::Scroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometryFactory factory(properties, metrics);
@@ -201,14 +201,14 @@ using namespace mxml::dom;
 
 - (void)testAccidental {
     auto chord = self.builder->addChord(self.measure);
-    auto note = self.builder->addNote(chord, Note::TYPE_QUARTER);
-    self.builder->setPitch(note, Pitch::STEP_G, 4);
+    auto note = self.builder->addNote(chord, Note::Type::Quarter);
+    self.builder->setPitch(note, Pitch::Step::G, 4);
     
-    auto accidential = std::unique_ptr<Accidental>(new Accidental{Accidental::kTypeSharp});
+    auto accidential = std::unique_ptr<Accidental>(new Accidental{Accidental::Type::Sharp});
     note->setAccidental(std::move(accidential));
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
+    ScoreProperties properties(*score, mxml::ScoreProperties::LayoutType::Scroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometryFactory factory(properties, metrics);
@@ -222,17 +222,17 @@ using namespace mxml::dom;
 
 - (void)testAccent {
     auto chord = self.builder->addChord(self.measure);
-    auto note = self.builder->addNote(chord, Note::TYPE_QUARTER);
-    self.builder->setPitch(note, Pitch::STEP_G, 4);
+    auto note = self.builder->addNote(chord, Note::Type::Quarter);
+    self.builder->setPitch(note, Pitch::Step::G, 4);
     
-    auto articulation = std::unique_ptr<Articulation>(new Articulation{Articulation::ACCENT});
+    auto articulation = std::unique_ptr<Articulation>(new Articulation{Articulation::Type::Accent});
     
     auto notations = std::unique_ptr<Notations>(new Notations{});
     notations->addArticulation(std::move(articulation));
     note->setNotations(std::move(notations));
 
     auto score = self.builder->build();
-    ScoreProperties properties(*score, mxml::ScoreProperties::kLayoutTypeScroll);
+    ScoreProperties properties(*score, mxml::ScoreProperties::LayoutType::Scroll);
     ScrollMetrics metrics(*score, properties, 0);
 
     mxml::ChordGeometryFactory factory(properties, metrics);
