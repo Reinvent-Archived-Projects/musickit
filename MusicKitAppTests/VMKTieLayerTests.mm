@@ -125,9 +125,9 @@ using namespace mxml::dom;
         articulation->setType(dom::Articulation::Type::Accent);
 
         auto notations = std::unique_ptr<dom::Notations>(new Notations{});
-        notations->addSlur(std::move(slur));
-        notations->addArticulation(std::move(articulation));
-        note->setNotations(std::move(notations));
+        notations->slurs.push_back(std::move(slur));
+        notations->articulations.push_back(std::move(articulation));
+        note->notations = std::move(notations);
     }
     {
         auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
@@ -148,9 +148,9 @@ using namespace mxml::dom;
         articulation->setType(dom::Articulation::Type::Staccato);
 
         auto notations = std::unique_ptr<dom::Notations>(new Notations{});
-        notations->addSlur(std::move(slur));
-        notations->addArticulation(std::move(articulation));
-        note->setNotations(std::move(notations));
+        notations->slurs.push_back(std::move(slur));
+        notations->articulations.push_back(std::move(articulation));
+        note->notations = std::move(notations);
     }
 
     auto score = builder->build();
@@ -178,9 +178,9 @@ using namespace mxml::dom;
         articulation->setType(dom::Articulation::Type::Accent);
 
         auto notations = std::unique_ptr<dom::Notations>(new Notations{});
-        notations->addSlur(std::move(slur));
-        notations->addArticulation(std::move(articulation));
-        note->setNotations(std::move(notations));
+        notations->slurs.push_back(std::move(slur));
+        notations->articulations.push_back(std::move(articulation));
+        note->notations = std::move(notations);
     }
     {
         auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
@@ -201,9 +201,9 @@ using namespace mxml::dom;
         articulation->setType(dom::Articulation::Type::Staccato);
 
         auto notations = std::unique_ptr<dom::Notations>(new Notations{});
-        notations->addSlur(std::move(slur));
-        notations->addArticulation(std::move(articulation));
-        note->setNotations(std::move(notations));
+        notations->slurs.push_back(std::move(slur));
+        notations->articulations.push_back(std::move(articulation));
+        note->notations = std::move(notations);
     }
 
     auto score = builder->build();
@@ -228,8 +228,8 @@ using namespace mxml::dom;
         slur->setType(dom::kStart);
 
         auto notations = std::unique_ptr<dom::Notations>(new Notations{});
-        notations->addSlur(std::move(slur));
-        note->setNotations(std::move(notations));
+        notations->slurs.push_back(std::move(slur));
+        note->notations = std::move(notations);
     }
     {
         auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
@@ -243,8 +243,8 @@ using namespace mxml::dom;
         slur->setType(dom::kStop);
 
         auto notations = std::unique_ptr<dom::Notations>(new Notations{});
-        notations->addSlur(std::move(slur));
-        note->setNotations(std::move(notations));
+        notations->slurs.push_back(std::move(slur));
+        note->notations = std::move(notations);
     }
 
     auto score = builder->build();
@@ -269,8 +269,8 @@ using namespace mxml::dom;
         slur->setType(dom::kStart);
 
         auto notations = std::unique_ptr<dom::Notations>(new Notations{});
-        notations->addSlur(std::move(slur));
-        note->setNotations(std::move(notations));
+        notations->slurs.push_back(std::move(slur));
+        note->notations = std::move(notations);
     }
     {
         auto note = builder->addNote(self.measure, mxml::dom::Note::Type::Quarter, time++, 1);
@@ -284,8 +284,8 @@ using namespace mxml::dom;
         slur->setType(dom::kStop);
 
         auto notations = std::unique_ptr<dom::Notations>(new Notations{});
-        notations->addSlur(std::move(slur));
-        note->setNotations(std::move(notations));
+        notations->slurs.push_back(std::move(slur));
+        note->notations = std::move(notations);
     }
 
     auto score = builder->build();

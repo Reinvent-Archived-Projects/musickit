@@ -233,7 +233,7 @@ using namespace mxml::dom;
     note2->setStem(Stem::Down);
     
     auto accidental = std::unique_ptr<Accidental>(new Accidental{Accidental::Type::Sharp});
-    note2->setAccidental(std::move(accidental));
+    note2->accidental = std::move(accidental);
 
     auto score = self.builder->build();
 

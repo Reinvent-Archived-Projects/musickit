@@ -133,8 +133,6 @@
 		00A90B701A79907000D971B3 /* ScrollScoreLayout-Accidentals2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A90B651A79907000D971B3 /* ScrollScoreLayout-Accidentals2@2x.png */; };
 		00A90B711A79907000D971B3 /* ScrollScoreLayout-Accidentals2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A90B661A79907000D971B3 /* ScrollScoreLayout-Accidentals2@3x.png */; };
 		00A90B721A79907000D971B3 /* ScrollScoreLayout-Accidentals2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A90B661A79907000D971B3 /* ScrollScoreLayout-Accidentals2@3x.png */; };
-		00B34FFA1A5B464000198F4A /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
-		00B34FFB1A5B464000198F4A /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
 		00B34FFC1A5B464000198F4A /* Metrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B34FF51A5B464000198F4A /* Metrics.h */; };
 		00B34FFD1A5B464000198F4A /* Metrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B34FF51A5B464000198F4A /* Metrics.h */; };
 		00B36F521AA92439009368E1 /* MeasureLayer-StemExtensions.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B36F511AA92439009368E1 /* MeasureLayer-StemExtensions.png */; };
@@ -243,7 +241,6 @@
 		610DCF0F1A094B5500BEEBFD /* EventFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDDE1A094A0E00BEEBFD /* EventFactory.cpp */; };
 		610DCF101A094B5500BEEBFD /* EventSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE01A094A0E00BEEBFD /* EventSequence.cpp */; };
 		610DCF111A094B5500BEEBFD /* SpanCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE701A094A0E00BEEBFD /* SpanCollection.cpp */; };
-		610DCF121A094B5500BEEBFD /* SpanFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */; };
 		610DCF5E1A09A08E00BEEBFD /* VMKScoreElementLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF5C1A09A08E00BEEBFD /* VMKScoreElementLayer.h */; };
 		610DCF5F1A09A08E00BEEBFD /* VMKScoreElementLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DCF5D1A09A08E00BEEBFD /* VMKScoreElementLayer.mm */; };
 		610DCF631A09ACED00BEEBFD /* VMKAccidentalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF611A09ACED00BEEBFD /* VMKAccidentalLayer.h */; };
@@ -317,7 +314,6 @@
 		614057D61A5CBD49005224C9 /* Key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614057D21A5CBD49005224C9 /* Key.cpp */; };
 		614057D71A5CBD49005224C9 /* Key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614057D21A5CBD49005224C9 /* Key.cpp */; };
 		614057D81A5CBD49005224C9 /* Key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614057D21A5CBD49005224C9 /* Key.cpp */; };
-		614057DA1A5CC54E005224C9 /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B34FF41A5B464000198F4A /* Metrics.cpp */; };
 		616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */; };
 		616C1A8E1A0A970F0020EAA8 /* VMKChordLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */; };
 		616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */; };
@@ -420,7 +416,6 @@
 		616C1B311A0C05A80020EAA8 /* EventFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDDE1A094A0E00BEEBFD /* EventFactory.cpp */; };
 		616C1B321A0C05A80020EAA8 /* EventSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE01A094A0E00BEEBFD /* EventSequence.cpp */; };
 		616C1B331A0C05A80020EAA8 /* SpanCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE701A094A0E00BEEBFD /* SpanCollection.cpp */; };
-		616C1B341A0C05A80020EAA8 /* SpanFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */; };
 		616C1B351A0C05B10020EAA8 /* VMKGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B6F1A082562003AE7A7 /* VMKGeometry.mm */; };
 		616C1B361A0C05B50020EAA8 /* VMKScoreElementLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DCF5D1A09A08E00BEEBFD /* VMKScoreElementLayer.mm */; };
 		616C1B371A0C05B50020EAA8 /* VMKScoreElementImageLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A941A0A99600020EAA8 /* VMKScoreElementImageLayer.mm */; };
@@ -803,7 +798,6 @@
 		618C6CBD1A13E7E0008314B2 /* EventFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDDE1A094A0E00BEEBFD /* EventFactory.cpp */; };
 		618C6CBE1A13E7E0008314B2 /* EventSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDE01A094A0E00BEEBFD /* EventSequence.cpp */; };
 		618C6CBF1A13E7E0008314B2 /* SpanCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE701A094A0E00BEEBFD /* SpanCollection.cpp */; };
-		618C6CC01A13E7E0008314B2 /* SpanFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */; };
 		61947F441A9E60C50032977B /* WordsLayer-DontCropSlanted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61947F431A9E60C50032977B /* WordsLayer-DontCropSlanted@2x.png */; };
 		61947F451A9E60C50032977B /* WordsLayer-DontCropSlanted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61947F431A9E60C50032977B /* WordsLayer-DontCropSlanted@2x.png */; };
 		61947F471A9E632A0032977B /* WordsLayer-DontCropSlanted.png in Resources */ = {isa = PBXBuildFile; fileRef = 61947F461A9E632A0032977B /* WordsLayer-DontCropSlanted.png */; };
@@ -852,6 +846,56 @@
 		61A81C181AAA298200E230A6 /* Accidental.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C171AAA298200E230A6 /* Accidental.cpp */; };
 		61A81C191AAA298200E230A6 /* Accidental.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C171AAA298200E230A6 /* Accidental.cpp */; };
 		61A81C1A1AAA298200E230A6 /* Accidental.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C171AAA298200E230A6 /* Accidental.cpp */; };
+		61A81C311AAA801C00E230A6 /* Notations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C2F1AAA801C00E230A6 /* Notations.cpp */; };
+		61A81C321AAA801C00E230A6 /* Notations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C2F1AAA801C00E230A6 /* Notations.cpp */; };
+		61A81C331AAA801C00E230A6 /* Notations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C2F1AAA801C00E230A6 /* Notations.cpp */; };
+		61A81C341AAA801C00E230A6 /* Tuplet.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C301AAA801C00E230A6 /* Tuplet.h */; };
+		61A81C351AAA801C00E230A6 /* Tuplet.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C301AAA801C00E230A6 /* Tuplet.h */; };
+		61A81C381AAA802700E230A6 /* TupletHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C361AAA802700E230A6 /* TupletHandler.cpp */; };
+		61A81C391AAA802700E230A6 /* TupletHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C361AAA802700E230A6 /* TupletHandler.cpp */; };
+		61A81C3A1AAA802700E230A6 /* TupletHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C361AAA802700E230A6 /* TupletHandler.cpp */; };
+		61A81C3B1AAA802700E230A6 /* TupletHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C371AAA802700E230A6 /* TupletHandler.h */; };
+		61A81C3C1AAA802700E230A6 /* TupletHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C371AAA802700E230A6 /* TupletHandler.h */; };
+		61A81C5A1AAE312200E230A6 /* MeasureGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C581AAE312200E230A6 /* MeasureGeometryFactory.cpp */; };
+		61A81C5B1AAE312200E230A6 /* MeasureGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C581AAE312200E230A6 /* MeasureGeometryFactory.cpp */; };
+		61A81C5C1AAE312200E230A6 /* MeasureGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C581AAE312200E230A6 /* MeasureGeometryFactory.cpp */; };
+		61A81C5D1AAE312200E230A6 /* MeasureGeometryFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C591AAE312200E230A6 /* MeasureGeometryFactory.h */; };
+		61A81C5E1AAE312200E230A6 /* MeasureGeometryFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C591AAE312200E230A6 /* MeasureGeometryFactory.h */; };
+		61A81C611AAE312D00E230A6 /* TupletGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C5F1AAE312D00E230A6 /* TupletGeometry.cpp */; };
+		61A81C621AAE312D00E230A6 /* TupletGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C5F1AAE312D00E230A6 /* TupletGeometry.cpp */; };
+		61A81C631AAE312D00E230A6 /* TupletGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C5F1AAE312D00E230A6 /* TupletGeometry.cpp */; };
+		61A81C641AAE312D00E230A6 /* TupletGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C601AAE312D00E230A6 /* TupletGeometry.h */; };
+		61A81C651AAE312D00E230A6 /* TupletGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C601AAE312D00E230A6 /* TupletGeometry.h */; };
+		61A81C681AAE316400E230A6 /* VMKTupletLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C661AAE316400E230A6 /* VMKTupletLayer.h */; };
+		61A81C691AAE316400E230A6 /* VMKTupletLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C661AAE316400E230A6 /* VMKTupletLayer.h */; };
+		61A81C6A1AAE316400E230A6 /* VMKTupletLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C671AAE316400E230A6 /* VMKTupletLayer.mm */; };
+		61A81C6B1AAE316400E230A6 /* VMKTupletLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C671AAE316400E230A6 /* VMKTupletLayer.mm */; };
+		61A81C6C1AAE316400E230A6 /* VMKTupletLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C671AAE316400E230A6 /* VMKTupletLayer.mm */; };
+		61A81C821AAE4C7800E230A6 /* VMKTupletLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C811AAE4C7800E230A6 /* VMKTupletLayerTests.mm */; };
+		61A81C831AAE4C7800E230A6 /* VMKTupletLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C811AAE4C7800E230A6 /* VMKTupletLayerTests.mm */; };
+		61A81C851AAE4DEC00E230A6 /* TimeModification.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C841AAE4DEC00E230A6 /* TimeModification.h */; };
+		61A81C861AAE4DEC00E230A6 /* TimeModification.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C841AAE4DEC00E230A6 /* TimeModification.h */; };
+		61A81C891AAE4DF700E230A6 /* TimeModificationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C871AAE4DF700E230A6 /* TimeModificationHandler.cpp */; };
+		61A81C8A1AAE4DF700E230A6 /* TimeModificationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C871AAE4DF700E230A6 /* TimeModificationHandler.cpp */; };
+		61A81C8B1AAE4DF700E230A6 /* TimeModificationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C871AAE4DF700E230A6 /* TimeModificationHandler.cpp */; };
+		61A81C8C1AAE4DF700E230A6 /* TimeModificationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C881AAE4DF700E230A6 /* TimeModificationHandler.h */; };
+		61A81C8D1AAE4DF700E230A6 /* TimeModificationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C881AAE4DF700E230A6 /* TimeModificationHandler.h */; };
+		61A81C921AAE4E1900E230A6 /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C8E1AAE4E1900E230A6 /* Metrics.cpp */; };
+		61A81C931AAE4E1900E230A6 /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C8E1AAE4E1900E230A6 /* Metrics.cpp */; };
+		61A81C941AAE4E1900E230A6 /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C8E1AAE4E1900E230A6 /* Metrics.cpp */; };
+		61A81C951AAE4E1900E230A6 /* Span.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C8F1AAE4E1900E230A6 /* Span.h */; };
+		61A81C961AAE4E1900E230A6 /* Span.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C8F1AAE4E1900E230A6 /* Span.h */; };
+		61A81C971AAE4E1900E230A6 /* SpanFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C901AAE4E1900E230A6 /* SpanFactory.cpp */; };
+		61A81C981AAE4E1900E230A6 /* SpanFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C901AAE4E1900E230A6 /* SpanFactory.cpp */; };
+		61A81C991AAE4E1900E230A6 /* SpanFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C901AAE4E1900E230A6 /* SpanFactory.cpp */; };
+		61A81C9A1AAE4E1900E230A6 /* StreamOperators.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C911AAE4E1900E230A6 /* StreamOperators.h */; };
+		61A81C9B1AAE4E1900E230A6 /* StreamOperators.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C911AAE4E1900E230A6 /* StreamOperators.h */; };
+		61A81CA11AAE59D800E230A6 /* TupletLayer-Tuplet.png in Resources */ = {isa = PBXBuildFile; fileRef = 61A81C9F1AAE59D800E230A6 /* TupletLayer-Tuplet.png */; };
+		61A81CA21AAE59D800E230A6 /* TupletLayer-Tuplet.png in Resources */ = {isa = PBXBuildFile; fileRef = 61A81C9F1AAE59D800E230A6 /* TupletLayer-Tuplet.png */; };
+		61A81CA31AAE59D800E230A6 /* TupletLayer-Tuplet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61A81CA01AAE59D800E230A6 /* TupletLayer-Tuplet@2x.png */; };
+		61A81CA41AAE59D800E230A6 /* TupletLayer-Tuplet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61A81CA01AAE59D800E230A6 /* TupletLayer-Tuplet@2x.png */; };
+		61A81CA61AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61A81CA51AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png */; };
+		61A81CA71AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61A81CA51AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png */; };
 		61B89FA21AA5312E00F7DD9C /* Algorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B89F9F1AA5312E00F7DD9C /* Algorithm.h */; };
 		61B89FA31AA5312E00F7DD9C /* Algorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B89F9F1AA5312E00F7DD9C /* Algorithm.h */; };
 		61B89FA41AA5312E00F7DD9C /* EqualityConstraintSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61B89FA01AA5312E00F7DD9C /* EqualityConstraintSolver.cpp */; };
@@ -1225,7 +1269,6 @@
 		00A90B641A79907000D971B3 /* ScrollScoreLayout-Accidentals2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Accidentals2.png"; sourceTree = "<group>"; };
 		00A90B651A79907000D971B3 /* ScrollScoreLayout-Accidentals2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Accidentals2@2x.png"; sourceTree = "<group>"; };
 		00A90B661A79907000D971B3 /* ScrollScoreLayout-Accidentals2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Accidentals2@3x.png"; sourceTree = "<group>"; };
-		00B34FF41A5B464000198F4A /* Metrics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Metrics.cpp; sourceTree = "<group>"; };
 		00B34FF51A5B464000198F4A /* Metrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metrics.h; sourceTree = "<group>"; };
 		00B36F511AA92439009368E1 /* MeasureLayer-StemExtensions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-StemExtensions.png"; sourceTree = "<group>"; };
 		00B36F541AA9258F009368E1 /* MeasureLayer-StemExtensions@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-StemExtensions@2x.png"; sourceTree = "<group>"; };
@@ -1459,10 +1502,8 @@
 		610DCE6C1A094A0E00BEEBFD /* TurnHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TurnHandler.h; sourceTree = "<group>"; };
 		610DCE6D1A094A0E00BEEBFD /* UnpitchedHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UnpitchedHandler.cpp; sourceTree = "<group>"; };
 		610DCE6E1A094A0E00BEEBFD /* UnpitchedHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnpitchedHandler.h; sourceTree = "<group>"; };
-		610DCE6F1A094A0E00BEEBFD /* Span.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Span.h; sourceTree = "<group>"; };
 		610DCE701A094A0E00BEEBFD /* SpanCollection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpanCollection.cpp; sourceTree = "<group>"; };
 		610DCE711A094A0E00BEEBFD /* SpanCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpanCollection.h; sourceTree = "<group>"; };
-		610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpanFactory.cpp; sourceTree = "<group>"; };
 		610DCE731A094A0E00BEEBFD /* SpanFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpanFactory.h; sourceTree = "<group>"; };
 		610DCF5C1A09A08E00BEEBFD /* VMKScoreElementLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKScoreElementLayer.h; sourceTree = "<group>"; };
 		610DCF5D1A09A08E00BEEBFD /* VMKScoreElementLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKScoreElementLayer.mm; sourceTree = "<group>"; };
@@ -1707,6 +1748,27 @@
 		61A2B78B1A8EA14600C1EE2A /* TimeSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeSequence.cpp; sourceTree = "<group>"; };
 		61A2B78C1A8EA14600C1EE2A /* TimeSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSequence.h; sourceTree = "<group>"; };
 		61A81C171AAA298200E230A6 /* Accidental.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Accidental.cpp; path = Submodules/mxml/src/mxml/dom/Accidental.cpp; sourceTree = SOURCE_ROOT; };
+		61A81C2F1AAA801C00E230A6 /* Notations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Notations.cpp; path = Submodules/mxml/src/mxml/dom/Notations.cpp; sourceTree = SOURCE_ROOT; };
+		61A81C301AAA801C00E230A6 /* Tuplet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tuplet.h; path = Submodules/mxml/src/mxml/dom/Tuplet.h; sourceTree = SOURCE_ROOT; };
+		61A81C361AAA802700E230A6 /* TupletHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TupletHandler.cpp; path = Submodules/mxml/src/mxml/parsing/TupletHandler.cpp; sourceTree = SOURCE_ROOT; };
+		61A81C371AAA802700E230A6 /* TupletHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TupletHandler.h; path = Submodules/mxml/src/mxml/parsing/TupletHandler.h; sourceTree = SOURCE_ROOT; };
+		61A81C581AAE312200E230A6 /* MeasureGeometryFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeasureGeometryFactory.cpp; sourceTree = "<group>"; };
+		61A81C591AAE312200E230A6 /* MeasureGeometryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureGeometryFactory.h; sourceTree = "<group>"; };
+		61A81C5F1AAE312D00E230A6 /* TupletGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TupletGeometry.cpp; path = Submodules/mxml/src/mxml/geometry/TupletGeometry.cpp; sourceTree = SOURCE_ROOT; };
+		61A81C601AAE312D00E230A6 /* TupletGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TupletGeometry.h; path = Submodules/mxml/src/mxml/geometry/TupletGeometry.h; sourceTree = SOURCE_ROOT; };
+		61A81C661AAE316400E230A6 /* VMKTupletLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTupletLayer.h; sourceTree = "<group>"; };
+		61A81C671AAE316400E230A6 /* VMKTupletLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKTupletLayer.mm; sourceTree = "<group>"; };
+		61A81C811AAE4C7800E230A6 /* VMKTupletLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKTupletLayerTests.mm; sourceTree = "<group>"; };
+		61A81C841AAE4DEC00E230A6 /* TimeModification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeModification.h; path = Submodules/mxml/src/mxml/dom/TimeModification.h; sourceTree = SOURCE_ROOT; };
+		61A81C871AAE4DF700E230A6 /* TimeModificationHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TimeModificationHandler.cpp; path = Submodules/mxml/src/mxml/parsing/TimeModificationHandler.cpp; sourceTree = SOURCE_ROOT; };
+		61A81C881AAE4DF700E230A6 /* TimeModificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeModificationHandler.h; path = Submodules/mxml/src/mxml/parsing/TimeModificationHandler.h; sourceTree = SOURCE_ROOT; };
+		61A81C8E1AAE4E1900E230A6 /* Metrics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Metrics.cpp; path = Submodules/mxml/src/mxml/Metrics.cpp; sourceTree = SOURCE_ROOT; };
+		61A81C8F1AAE4E1900E230A6 /* Span.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Span.h; path = Submodules/mxml/src/mxml/Span.h; sourceTree = SOURCE_ROOT; };
+		61A81C901AAE4E1900E230A6 /* SpanFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpanFactory.cpp; path = Submodules/mxml/src/mxml/SpanFactory.cpp; sourceTree = SOURCE_ROOT; };
+		61A81C911AAE4E1900E230A6 /* StreamOperators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StreamOperators.h; path = Submodules/mxml/src/mxml/StreamOperators.h; sourceTree = SOURCE_ROOT; };
+		61A81C9F1AAE59D800E230A6 /* TupletLayer-Tuplet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TupletLayer-Tuplet.png"; sourceTree = "<group>"; };
+		61A81CA01AAE59D800E230A6 /* TupletLayer-Tuplet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TupletLayer-Tuplet@2x.png"; sourceTree = "<group>"; };
+		61A81CA51AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TupletLayer-Tuplet@3x.png"; sourceTree = "<group>"; };
 		61B89F9F1AA5312E00F7DD9C /* Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Algorithm.h; path = Submodules/mxml/src/mxml/Algorithm.h; sourceTree = SOURCE_ROOT; };
 		61B89FA01AA5312E00F7DD9C /* EqualityConstraintSolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EqualityConstraintSolver.cpp; path = Submodules/mxml/src/mxml/EqualityConstraintSolver.cpp; sourceTree = SOURCE_ROOT; };
 		61B89FA11AA5312E00F7DD9C /* EqualityConstraintSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EqualityConstraintSolver.h; path = Submodules/mxml/src/mxml/EqualityConstraintSolver.h; sourceTree = SOURCE_ROOT; };
@@ -1966,6 +2028,7 @@
 				610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */,
 				610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */,
 				000868761A6835D600BAA13D /* VMKWordsLayerTests.mm */,
+				61A81C811AAE4C7800E230A6 /* VMKTupletLayerTests.mm */,
 			);
 			path = MusicKitAppTests;
 			sourceTree = "<group>";
@@ -2175,6 +2238,9 @@
 				616C1C441A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits.png */,
 				616C1C451A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png */,
 				616C1C851A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png */,
+				61A81C9F1AAE59D800E230A6 /* TupletLayer-Tuplet.png */,
+				61A81CA01AAE59D800E230A6 /* TupletLayer-Tuplet@2x.png */,
+				61A81CA51AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png */,
 				61947F461A9E632A0032977B /* WordsLayer-DontCropSlanted.png */,
 				61947F431A9E60C50032977B /* WordsLayer-DontCropSlanted@2x.png */,
 				61947F491A9E718A0032977B /* WordsLayer-DontCropSlanted@3x.png */,
@@ -2252,7 +2318,7 @@
 				61C850341A684F5300031100 /* Jump.h */,
 				61239A7E1A673B5B00B3F0A3 /* JumpFactory.cpp */,
 				61239A7F1A673B5B00B3F0A3 /* JumpFactory.h */,
-				00B34FF41A5B464000198F4A /* Metrics.cpp */,
+				61A81C8E1AAE4E1900E230A6 /* Metrics.cpp */,
 				00B34FF51A5B464000198F4A /* Metrics.h */,
 				61C850331A684F5300031100 /* Loop.h */,
 				61C850311A684F5300031100 /* LoopFactory.h */,
@@ -2273,13 +2339,14 @@
 				61239A711A65FFB100B3F0A3 /* ScoreBuilder.cpp */,
 				61239A651A64B4F000B3F0A3 /* ScoreProperties.h */,
 				61239A661A64B4F000B3F0A3 /* ScoreProperties.cpp */,
-				610DCE6F1A094A0E00BEEBFD /* Span.h */,
+				61A81C8F1AAE4E1900E230A6 /* Span.h */,
 				610DCE701A094A0E00BEEBFD /* SpanCollection.cpp */,
 				610DCE711A094A0E00BEEBFD /* SpanCollection.h */,
-				610DCE721A094A0E00BEEBFD /* SpanFactory.cpp */,
+				61A81C901AAE4E1900E230A6 /* SpanFactory.cpp */,
 				610DCE731A094A0E00BEEBFD /* SpanFactory.h */,
 				61D0DFB61A44D11600EA6574 /* StringUtility.h */,
 				61D0DFB71A44D11600EA6574 /* StringUtility.cpp */,
+				61A81C911AAE4E1900E230A6 /* StreamOperators.h */,
 			);
 			path = mxml;
 			sourceTree = "<group>";
@@ -2287,8 +2354,8 @@
 		610DCDA61A094A0E00BEEBFD /* dom */ = {
 			isa = PBXGroup;
 			children = (
-				610DCDA71A094A0E00BEEBFD /* Accidental.h */,
 				61A81C171AAA298200E230A6 /* Accidental.cpp */,
+				610DCDA71A094A0E00BEEBFD /* Accidental.h */,
 				610DCDA91A094A0E00BEEBFD /* Articulation.h */,
 				00E7B48A1A8155EB00B949FC /* Attributes.cpp */,
 				610DCDAA1A094A0E00BEEBFD /* Attributes.h */,
@@ -2317,6 +2384,7 @@
 				610DCDBF1A094A0E00BEEBFD /* Measure.h */,
 				610DCDC01A094A0E00BEEBFD /* Mordent.h */,
 				610DCDC11A094A0E00BEEBFD /* Node.h */,
+				61A81C2F1AAA801C00E230A6 /* Notations.cpp */,
 				610DCDC21A094A0E00BEEBFD /* Notations.h */,
 				610DCDC31A094A0E00BEEBFD /* Note.cpp */,
 				610DCDC41A094A0E00BEEBFD /* Note.h */,
@@ -2345,6 +2413,8 @@
 				610DCDD51A094A0E00BEEBFD /* Tied.h */,
 				610DCDD61A094A0E00BEEBFD /* Time.h */,
 				610DCDD71A094A0E00BEEBFD /* TimedNode.h */,
+				61A81C841AAE4DEC00E230A6 /* TimeModification.h */,
+				61A81C301AAA801C00E230A6 /* Tuplet.h */,
 				610DCDD81A094A0E00BEEBFD /* Turn.h */,
 				610DCDD91A094A0E00BEEBFD /* Types.h */,
 				610DCDDA1A094A0E00BEEBFD /* Unpitched.h */,
@@ -2420,6 +2490,8 @@
 				610DCE181A094A0E00BEEBFD /* TieGeometry.h */,
 				610DCE1B1A094A0E00BEEBFD /* TimeSignatureGeometry.cpp */,
 				610DCE1C1A094A0E00BEEBFD /* TimeSignatureGeometry.h */,
+				61A81C5F1AAE312D00E230A6 /* TupletGeometry.cpp */,
+				61A81C601AAE312D00E230A6 /* TupletGeometry.h */,
 				00094EFF1A67482E0053C615 /* WordsGeometry.cpp */,
 				00094F001A67482E0053C615 /* WordsGeometry.h */,
 			);
@@ -2526,6 +2598,10 @@
 				610DCE681A094A0E00BEEBFD /* TieHandler.h */,
 				610DCE691A094A0E00BEEBFD /* TimeHandler.cpp */,
 				610DCE6A1A094A0E00BEEBFD /* TimeHandler.h */,
+				61A81C871AAE4DF700E230A6 /* TimeModificationHandler.cpp */,
+				61A81C881AAE4DF700E230A6 /* TimeModificationHandler.h */,
+				61A81C361AAA802700E230A6 /* TupletHandler.cpp */,
+				61A81C371AAA802700E230A6 /* TupletHandler.h */,
 				610DCE6B1A094A0E00BEEBFD /* TurnHandler.cpp */,
 				610DCE6C1A094A0E00BEEBFD /* TurnHandler.h */,
 				61F072FF1A703596002CA9CA /* TypeFactories.cpp */,
@@ -2583,6 +2659,8 @@
 				616C1ABD1A0B054C0020EAA8 /* VMKTieLayer.mm */,
 				616C1AC01A0B06280020EAA8 /* VMKTimeSignatureLayer.h */,
 				616C1AC11A0B06280020EAA8 /* VMKTimeSignatureLayer.mm */,
+				61A81C661AAE316400E230A6 /* VMKTupletLayer.h */,
+				61A81C671AAE316400E230A6 /* VMKTupletLayer.mm */,
 				616C1AC41A0BFE2C0020EAA8 /* VMKWedgeLayer.h */,
 				616C1AC51A0BFE2C0020EAA8 /* VMKWedgeLayer.mm */,
 				000868681A68344500BAA13D /* VMKWordsLayer.h */,
@@ -2776,6 +2854,8 @@
 				61F073D61A71D3BF002CA9CA /* EndingGeometryFactory.h */,
 				61F073D71A71D3BF002CA9CA /* LyricGeometryFactory.cpp */,
 				61F073D81A71D3BF002CA9CA /* LyricGeometryFactory.h */,
+				61A81C581AAE312200E230A6 /* MeasureGeometryFactory.cpp */,
+				61A81C591AAE312200E230A6 /* MeasureGeometryFactory.h */,
 				61F073D91A71D3BF002CA9CA /* OrnamentGeometryFactory.cpp */,
 				61F073DA1A71D3BF002CA9CA /* OrnamentGeometryFactory.h */,
 				61F073DB1A71D3BF002CA9CA /* PartGeometryFactory.cpp */,
@@ -2825,6 +2905,7 @@
 				61F073911A718D8E002CA9CA /* PageMetrics.h in Headers */,
 				618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */,
 				61E530B11A78667200E5B2FF /* VMKScrollScoreDataSource.h in Headers */,
+				61A81C3B1AAA802700E230A6 /* TupletHandler.h in Headers */,
 				61C850761A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */,
 				00094F021A67482E0053C615 /* WordsGeometry.h in Headers */,
 				616C1B931A0C4D790020EAA8 /* VMKOrnamentView.h in Headers */,
@@ -2836,6 +2917,8 @@
 				0022AE1F1A70833700139992 /* VerticalResolver.h in Headers */,
 				61F072FA1A703583002CA9CA /* PageLayout.h in Headers */,
 				61F0738C1A718D8E002CA9CA /* ScrollMetrics.h in Headers */,
+				61A81C341AAA801C00E230A6 /* Tuplet.h in Headers */,
+				61A81C8C1AAE4DF700E230A6 /* TimeModificationHandler.h in Headers */,
 				61F0733C1A703596002CA9CA /* GenericNode.h in Headers */,
 				616C1A9E1A0AA24E0020EAA8 /* VMKEndingLayer.h in Headers */,
 				61E530AF1A78667200E5B2FF /* VMKScrollScoreLayout.h in Headers */,
@@ -2856,6 +2939,7 @@
 				61F074361A72DD8C002CA9CA /* VMKPageScoreDataSource.h in Headers */,
 				616C1B4E1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */,
 				61F0732D1A703596002CA9CA /* PageMarginsHandler.h in Headers */,
+				61A81C5D1AAE312200E230A6 /* MeasureGeometryFactory.h in Headers */,
 				61239A721A65FFB100B3F0A3 /* ScoreBuilder.h in Headers */,
 				618641511A09B0B900FAE9C9 /* VMKBarlineLayer.h in Headers */,
 				61402B2A1A08251D003AE7A7 /* MusicKit.h in Headers */,
@@ -2865,13 +2949,16 @@
 				616C1AA61A0AACE50020EAA8 /* VMKLyricLayer.h in Headers */,
 				61A2B79B1A8EA14600C1EE2A /* DivisionsSequence.h in Headers */,
 				616C1B611A0C0E310020EAA8 /* VMKCursorView.h in Headers */,
+				61A81C951AAE4E1900E230A6 /* Span.h in Headers */,
 				61F073411A703596002CA9CA /* FormattedTextHandler.h in Headers */,
 				61F073F81A71D3BF002CA9CA /* OrnamentGeometryFactory.h in Headers */,
 				61F072F61A703583002CA9CA /* Position.h in Headers */,
+				61A81C681AAE316400E230A6 /* VMKTupletLayer.h in Headers */,
 				61F0743A1A72DDB9002CA9CA /* VMKPageScoreLayout.h in Headers */,
 				619AC7A61AA4E41B005DFBED /* StemDirectionResolver.h in Headers */,
 				616C1B891A0C2DEA0020EAA8 /* VMKWedgeView.h in Headers */,
 				61239A671A64B4F000B3F0A3 /* ScoreProperties.h in Headers */,
+				61A81C851AAE4DEC00E230A6 /* TimeModification.h in Headers */,
 				61F073321A703596002CA9CA /* PageLayoutHandler.h in Headers */,
 				61F072FC1A703583002CA9CA /* FormattedText.h in Headers */,
 				61A2B7971A8EA14600C1EE2A /* ClefSequence.h in Headers */,
@@ -2907,6 +2994,7 @@
 				61C850351A684F5300031100 /* LoopFactory.h in Headers */,
 				616C1AAE1A0B01300020EAA8 /* VMKNoteHeadLayer.h in Headers */,
 				61D0DFB81A44D11600EA6574 /* StringUtility.h in Headers */,
+				61A81C9A1AAE4E1900E230A6 /* StreamOperators.h in Headers */,
 				61B89FA71AA5312E00F7DD9C /* EqualityConstraintSolver.h in Headers */,
 				616C1AB21A0B01BB0020EAA8 /* VMKNoteStemLayer.h in Headers */,
 				0022AE1A1A70833700139992 /* HorizontalResolver.h in Headers */,
@@ -2914,6 +3002,7 @@
 				61B89FA21AA5312E00F7DD9C /* Algorithm.h in Headers */,
 				61F073EE1A71D3BF002CA9CA /* EndingGeometryFactory.h in Headers */,
 				00094F0E1A6748710053C615 /* VMKWordsView.h in Headers */,
+				61A81C641AAE312D00E230A6 /* TupletGeometry.h in Headers */,
 				616C1B851A0C2DDB0020EAA8 /* VMKTieView.h in Headers */,
 				610DCF631A09ACED00BEEBFD /* VMKAccidentalLayer.h in Headers */,
 				61A2B78F1A8EA14600C1EE2A /* AlterSequence.h in Headers */,
@@ -2933,10 +3022,13 @@
 				61F073421A703596002CA9CA /* FormattedTextHandler.h in Headers */,
 				61F073EF1A71D3BF002CA9CA /* EndingGeometryFactory.h in Headers */,
 				61A2B79C1A8EA14600C1EE2A /* DivisionsSequence.h in Headers */,
+				61A81C961AAE4E1900E230A6 /* Span.h in Headers */,
 				61D0DFB91A44D11600EA6574 /* StringUtility.h in Headers */,
 				61B89FA31AA5312E00F7DD9C /* Algorithm.h in Headers */,
+				61A81C9B1AAE4E1900E230A6 /* StreamOperators.h in Headers */,
 				61F072F71A703583002CA9CA /* Position.h in Headers */,
 				61F0731F1A703596002CA9CA /* SystemLayoutHandler.h in Headers */,
+				61A81C691AAE316400E230A6 /* VMKTupletLayer.h in Headers */,
 				0008686B1A68344500BAA13D /* VMKWordsLayer.h in Headers */,
 				61C850361A684F5300031100 /* LoopFactory.h in Headers */,
 				616C1B4F1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */,
@@ -2954,6 +3046,7 @@
 				61F0733D1A703596002CA9CA /* GenericNode.h in Headers */,
 				61A2B7921A8EA14600C1EE2A /* AttributeSequence.h in Headers */,
 				61F073381A703596002CA9CA /* GenericNodeHandler.h in Headers */,
+				61A81C351AAA801C00E230A6 /* Tuplet.h in Headers */,
 				61A2B7A41A8EA14600C1EE2A /* TimeSequence.h in Headers */,
 				61A2B7A01A8EA14600C1EE2A /* KeySequence.h in Headers */,
 				61C8503B1A684F5300031100 /* Loop.h in Headers */,
@@ -2971,15 +3064,18 @@
 				61F073471A703596002CA9CA /* AppearanceHandler.h in Headers */,
 				61F072FD1A703583002CA9CA /* FormattedText.h in Headers */,
 				61F073291A703596002CA9CA /* PositionFactory.h in Headers */,
+				61A81C5E1AAE312200E230A6 /* MeasureGeometryFactory.h in Headers */,
 				61A2B7981A8EA14600C1EE2A /* ClefSequence.h in Headers */,
 				0022AE1B1A70833700139992 /* HorizontalResolver.h in Headers */,
 				61D0DFC11A44D13900EA6574 /* PlacementGeometry.h in Headers */,
 				61C850661A6D977E00031100 /* OctaveShiftGeometry.h in Headers */,
+				61A81C8D1AAE4DF700E230A6 /* TimeModificationHandler.h in Headers */,
 				00B34FFD1A5B464000198F4A /* Metrics.h in Headers */,
 				00094F0F1A6748710053C615 /* VMKWordsView.h in Headers */,
 				61F073331A703596002CA9CA /* PageLayoutHandler.h in Headers */,
 				61F072F91A703583002CA9CA /* PageMargins.h in Headers */,
 				616C1B8E1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */,
+				61A81C651AAE312D00E230A6 /* TupletGeometry.h in Headers */,
 				61C8507E1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */,
 				61F074491A730EEB002CA9CA /* VMKPartLayer.h in Headers */,
 				61A2B7941A8EA14600C1EE2A /* AttributeSequence.hh in Headers */,
@@ -2989,6 +3085,8 @@
 				61F0731A1A703596002CA9CA /* SystemMarginsHandler.h in Headers */,
 				61239A731A65FFB100B3F0A3 /* ScoreBuilder.h in Headers */,
 				61F072F51A703583002CA9CA /* SystemLayout.h in Headers */,
+				61A81C3C1AAA802700E230A6 /* TupletHandler.h in Headers */,
+				61A81C861AAE4DEC00E230A6 /* TimeModification.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3251,6 +3349,7 @@
 				616C1D1E1A0D81550020EAA8 /* BeamLayer-OneBeam@3x.png in Resources */,
 				61E5310C1A7ACF5400E5B2FF /* KeyLayer-EFlatMajor@3x.png in Resources */,
 				002F98761A9E5F540009A8F0 /* MeasureLayerFile-RepeatAccidentals.png in Resources */,
+				61A81CA31AAE59D800E230A6 /* TupletLayer-Tuplet@2x.png in Resources */,
 				61E531421A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@3x.png in Resources */,
 				000868B31A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */,
 				616C1CC21A0D81550020EAA8 /* ChordLayer-Quarter.png in Resources */,
@@ -3266,6 +3365,7 @@
 				616C1CE41A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png in Resources */,
 				001EAAEE1A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png in Resources */,
 				616C1D481A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png in Resources */,
+				61A81CA61AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png in Resources */,
 				61E5310A1A7ACF5400E5B2FF /* KeyLayer-EMajor.png in Resources */,
 				61E5313A1A7ACF5400E5B2FF /* KeyLayer-BFlatMajor.png in Resources */,
 				611621851AA8D9D90051C869 /* TieLayer-SlurPlacementUp@2x.png in Resources */,
@@ -3297,6 +3397,7 @@
 				002F98701A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png in Resources */,
 				616C1D0C1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png in Resources */,
 				616C1D301A0D81550020EAA8 /* ChordLayer-EighthDown@3x.png in Resources */,
+				61A81CA11AAE59D800E230A6 /* TupletLayer-Tuplet.png in Resources */,
 				616C1CBC1A0D81550020EAA8 /* ChordLayer-Whole@2x.png in Resources */,
 				611621831AA8D9D90051C869 /* TieLayer-SlurPlacementUp.png in Resources */,
 				000868AC1A68456C00BAA13D /* ImageLayer-Segno@3x.png in Resources */,
@@ -3493,6 +3594,7 @@
 				61E5310D1A7ACF5400E5B2FF /* KeyLayer-EFlatMajor@3x.png in Resources */,
 				61E531431A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@3x.png in Resources */,
 				002F98771A9E5F540009A8F0 /* MeasureLayerFile-RepeatAccidentals.png in Resources */,
+				61A81CA41AAE59D800E230A6 /* TupletLayer-Tuplet@2x.png in Resources */,
 				000868B41A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */,
 				616C1DA51A0D97590020EAA8 /* BeamLayer-BackwardHook@3x.png in Resources */,
 				61E5313F1A7ACF5400E5B2FF /* KeyLayer-AMajor@2x.png in Resources */,
@@ -3508,6 +3610,7 @@
 				616C1E021A0D97590020EAA8 /* TieLayer-AngledDownBelow@2x.png in Resources */,
 				001EAAEF1A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png in Resources */,
 				61E5310B1A7ACF5400E5B2FF /* KeyLayer-EMajor.png in Resources */,
+				61A81CA71AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png in Resources */,
 				61E5313B1A7ACF5400E5B2FF /* KeyLayer-BFlatMajor.png in Resources */,
 				616C1DA31A0D97590020EAA8 /* BeamLayer-BackwardHook.png in Resources */,
 				611621861AA8D9D90051C869 /* TieLayer-SlurPlacementUp@2x.png in Resources */,
@@ -3539,6 +3642,7 @@
 				002F98711A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png in Resources */,
 				616C1DEF1A0D97590020EAA8 /* TieLayer-18Tie.png in Resources */,
 				616C1E091A0D97590020EAA8 /* TieLayer-AngledUpBelow@3x.png in Resources */,
+				61A81CA21AAE59D800E230A6 /* TupletLayer-Tuplet.png in Resources */,
 				000868AD1A68456C00BAA13D /* ImageLayer-Segno@3x.png in Resources */,
 				611621841AA8D9D90051C869 /* TieLayer-SlurPlacementUp.png in Resources */,
 				616C1DA91A0D97590020EAA8 /* BeamLayer-FourBeams.png in Resources */,
@@ -3724,6 +3828,7 @@
 				610DC66E1A08322800BEEBFD /* VMKChordLayerTests.mm in Sources */,
 				610DC66F1A08322800BEEBFD /* VMKLayerTestCase.mm in Sources */,
 				610DC66B1A08322800BEEBFD /* VMKScrollScoreLayoutTests.mm in Sources */,
+				61A81C821AAE4C7800E230A6 /* VMKTupletLayerTests.mm in Sources */,
 				001EAAF11A82CCED0097AE0D /* VMKSystemLayerTests.mm in Sources */,
 				610DC6691A08322800BEEBFD /* VMKMeasureLayerTests.mm in Sources */,
 				610DC6681A08322800BEEBFD /* VMKClefLayerTests.mm in Sources */,
@@ -3740,32 +3845,34 @@
 				610DCEF61A094B5100BEEBFD /* IdentificationHandler.cpp in Sources */,
 				610DCF0A1A094B5100BEEBFD /* TieHandler.cpp in Sources */,
 				000868731A68346400BAA13D /* VMKImageView.mm in Sources */,
+				61A81C891AAE4DF700E230A6 /* TimeModificationHandler.cpp in Sources */,
 				610DCEE91A094B5100BEEBFD /* BackupHandler.cpp in Sources */,
 				616C1B8F1A0C4B860020EAA8 /* VMKOrnamentLayer.mm in Sources */,
 				61402BA91A082562003AE7A7 /* VMKGeometry.mm in Sources */,
 				610DCF641A09ACED00BEEBFD /* VMKAccidentalLayer.mm in Sources */,
 				610DCF091A094B5100BEEBFD /* TiedHandler.cpp in Sources */,
 				610DCECA1A094B4800BEEBFD /* Measure.cpp in Sources */,
-				00B34FFA1A5B464000198F4A /* Metrics.cpp in Sources */,
 				610DCEEF1A094B5100BEEBFD /* DefaultsHandler.cpp in Sources */,
 				610DCEC51A094B4500BEEBFD /* IntegerHandler.cpp in Sources */,
 				00094F071A6748460053C615 /* SegnoGeometry.cpp in Sources */,
 				61C850371A684F5300031100 /* LoopFactory.cpp in Sources */,
+				61A81C311AAA801C00E230A6 /* Notations.cpp in Sources */,
 				610DCF001A094B5100BEEBFD /* PrintHandler.cpp in Sources */,
 				616C1A8E1A0A970F0020EAA8 /* VMKChordLayer.mm in Sources */,
 				61F0732A1A703596002CA9CA /* PositionFactory.cpp in Sources */,
 				61C850731A6D97A500031100 /* VMKOctaveShiftLayer.mm in Sources */,
 				61A2B7991A8EA14600C1EE2A /* DivisionsSequence.cpp in Sources */,
 				61F073251A703596002CA9CA /* SystemDividersHandler.cpp in Sources */,
+				61A81C611AAE312D00E230A6 /* TupletGeometry.cpp in Sources */,
 				616C1AA31A0AA89B0020EAA8 /* VMKKeyLayer.mm in Sources */,
 				610DCEEC1A094B5100BEEBFD /* ClefHandler.cpp in Sources */,
 				616C1C1A1A0D61ED0020EAA8 /* VMKImage.mm in Sources */,
 				61B89FA41AA5312E00F7DD9C /* EqualityConstraintSolver.cpp in Sources */,
 				61A2B7A11A8EA14600C1EE2A /* TimeSequence.cpp in Sources */,
-				610DCF121A094B5500BEEBFD /* SpanFactory.cpp in Sources */,
 				61F073EB1A71D3BF002CA9CA /* EndingGeometryFactory.cpp in Sources */,
 				610DCF071A094B5100BEEBFD /* StaffLayoutHandler.cpp in Sources */,
 				610DCEC81A094B4500BEEBFD /* StringHandler.cpp in Sources */,
+				61A81C6A1AAE316400E230A6 /* VMKTupletLayer.mm in Sources */,
 				610DCF0B1A094B5100BEEBFD /* TimeHandler.cpp in Sources */,
 				61F0738E1A718D8E002CA9CA /* ScrollMetrics.cpp in Sources */,
 				61C850671A6D977E00031100 /* OctaveShiftGeometry.cpp in Sources */,
@@ -3839,6 +3946,7 @@
 				61E530AE1A78667200E5B2FF /* VMKScrollScoreLayout.mm in Sources */,
 				616C1B6E1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m in Sources */,
 				61A2B79D1A8EA14600C1EE2A /* KeySequence.cpp in Sources */,
+				61A81C381AAA802700E230A6 /* TupletHandler.cpp in Sources */,
 				616C1B7E1A0C2D8F0020EAA8 /* VMKLyricView.mm in Sources */,
 				610DCF021A094B5100BEEBFD /* RestHandler.cpp in Sources */,
 				610DCEDC1A094B4C00BEEBFD /* OrnamentsGeometry.cpp in Sources */,
@@ -3851,11 +3959,13 @@
 				610DCEF21A094B5100BEEBFD /* EmptyPlacementHandler.cpp in Sources */,
 				61F073E31A71D3BF002CA9CA /* SystemGeometry.cpp in Sources */,
 				610DCEDD1A094B4C00BEEBFD /* PartGeometry.cpp in Sources */,
+				61A81C5A1AAE312200E230A6 /* MeasureGeometryFactory.cpp in Sources */,
 				610DCEC41A094B4500BEEBFD /* DoubleHandler.cpp in Sources */,
 				610DCEE11A094B4C00BEEBFD /* SpanDirectionGeometry.cpp in Sources */,
 				616C1A961A0A99600020EAA8 /* VMKScoreElementImageLayer.mm in Sources */,
 				61F0733E1A703596002CA9CA /* GenericNode.cpp in Sources */,
 				610DCF051A094B5100BEEBFD /* SlurHandler.cpp in Sources */,
+				61A81C971AAE4E1900E230A6 /* SpanFactory.cpp in Sources */,
 				618641521A09B0B900FAE9C9 /* VMKBarlineLayer.mm in Sources */,
 				610DCF111A094B5500BEEBFD /* SpanCollection.cpp in Sources */,
 				610DCEEA1A094B5100BEEBFD /* BarlineHandler.cpp in Sources */,
@@ -3893,6 +4003,7 @@
 				61F073E61A71D3BF002CA9CA /* DirectionGeometryFactory.cpp in Sources */,
 				610DCED41A094B4C00BEEBFD /* DotGeometry.cpp in Sources */,
 				61F074371A72DD8C002CA9CA /* VMKPageScoreDataSource.mm in Sources */,
+				61A81C921AAE4E1900E230A6 /* Metrics.cpp in Sources */,
 				610DCEF91A094B5100BEEBFD /* MeasureHandler.cpp in Sources */,
 				610DCEDE1A094B4C00BEEBFD /* PedalGeometry.cpp in Sources */,
 				61239A691A64B4F000B3F0A3 /* ScoreProperties.cpp in Sources */,
@@ -3925,6 +4036,7 @@
 				616C1B0E1A0C05A40020EAA8 /* ClefHandler.cpp in Sources */,
 				616C1AF31A0C059E0020EAA8 /* ChordGeometry.cpp in Sources */,
 				616C1AFD1A0C059E0020EAA8 /* NoteGeometry.cpp in Sources */,
+				61A81C621AAE312D00E230A6 /* TupletGeometry.cpp in Sources */,
 				616C1B1B1A0C05A40020EAA8 /* MeasureHandler.cpp in Sources */,
 				616C1B3C1A0C05B50020EAA8 /* VMKClefLayer.mm in Sources */,
 				61239A6A1A64B4F000B3F0A3 /* ScoreProperties.cpp in Sources */,
@@ -3940,7 +4052,6 @@
 				616C1B231A0C05A40020EAA8 /* RepeatHandler.cpp in Sources */,
 				616C1B0C1A0C05A40020EAA8 /* BarlineHandler.cpp in Sources */,
 				616C1B351A0C05B10020EAA8 /* VMKGeometry.mm in Sources */,
-				00B34FFB1A5B464000198F4A /* Metrics.cpp in Sources */,
 				616C1B191A0C05A40020EAA8 /* KeyHandler.cpp in Sources */,
 				616C1B111A0C05A40020EAA8 /* DefaultsHandler.cpp in Sources */,
 				61F0742D1A72DD3E002CA9CA /* ScrollScoreGeometry.cpp in Sources */,
@@ -3955,6 +4066,7 @@
 				616C1B311A0C05A80020EAA8 /* EventFactory.cpp in Sources */,
 				616C1B0B1A0C05A40020EAA8 /* BackupHandler.cpp in Sources */,
 				61F073941A718D8E002CA9CA /* PageMetrics.cpp in Sources */,
+				61A81C931AAE4E1900E230A6 /* Metrics.cpp in Sources */,
 				00094F081A6748460053C615 /* SegnoGeometry.cpp in Sources */,
 				61239A751A65FFB100B3F0A3 /* ScoreBuilder.cpp in Sources */,
 				61F073441A703596002CA9CA /* FormattedTextHandler.cpp in Sources */,
@@ -3966,9 +4078,11 @@
 				616C1B321A0C05A80020EAA8 /* EventSequence.cpp in Sources */,
 				61F0732B1A703596002CA9CA /* PositionFactory.cpp in Sources */,
 				61B89FA51AA5312E00F7DD9C /* EqualityConstraintSolver.cpp in Sources */,
+				61A81C8A1AAE4DF700E230A6 /* TimeModificationHandler.cpp in Sources */,
 				61F073211A703596002CA9CA /* SystemLayoutHandler.cpp in Sources */,
 				616C1AE71A0C05980020EAA8 /* IntegerHandler.cpp in Sources */,
 				61F0738F1A718D8E002CA9CA /* ScrollMetrics.cpp in Sources */,
+				61A81C981AAE4E1900E230A6 /* SpanFactory.cpp in Sources */,
 				61A81C191AAA298200E230A6 /* Accidental.cpp in Sources */,
 				616C1B011A0C059E0020EAA8 /* RestGeometry.cpp in Sources */,
 				61F074321A72DD3E002CA9CA /* PageScoreGeometry.cpp in Sources */,
@@ -4025,14 +4139,15 @@
 				61D0DFBB1A44D11600EA6574 /* StringUtility.cpp in Sources */,
 				616C1B171A0C05A40020EAA8 /* ForwardHandler.cpp in Sources */,
 				616C1B3B1A0C05B50020EAA8 /* VMKChordLayer.mm in Sources */,
-				616C1B341A0C05A80020EAA8 /* SpanFactory.cpp in Sources */,
 				614057D41A5CBD49005224C9 /* Pitch.cpp in Sources */,
+				61A81C321AAA801C00E230A6 /* Notations.cpp in Sources */,
 				616C1B401A0C05B50020EAA8 /* VMKLyricLayer.mm in Sources */,
 				61A2B7961A8EA14600C1EE2A /* ClefSequence.cpp in Sources */,
 				616C1B1E1A0C05A40020EAA8 /* NoteHandler.cpp in Sources */,
 				0022AE181A70833700139992 /* HorizontalResolver.cpp in Sources */,
 				616C1AEB1A0C059B0020EAA8 /* Identification.cpp in Sources */,
 				616C1B141A0C05A40020EAA8 /* EmptyPlacementHandler.cpp in Sources */,
+				61A81C6B1AAE316400E230A6 /* VMKTupletLayer.mm in Sources */,
 				616C1AED1A0C059B0020EAA8 /* Note.cpp in Sources */,
 				61F0744B1A730EEB002CA9CA /* VMKPartLayer.mm in Sources */,
 				619AC7991AA125BB005DFBED /* ChordGeometryFactory.cpp in Sources */,
@@ -4053,12 +4168,14 @@
 				61F073E71A71D3BF002CA9CA /* DirectionGeometryFactory.cpp in Sources */,
 				61C850681A6D977E00031100 /* OctaveShiftGeometry.cpp in Sources */,
 				61F073261A703596002CA9CA /* SystemDividersHandler.cpp in Sources */,
+				61A81C391AAA802700E230A6 /* TupletHandler.cpp in Sources */,
 				616C1B441A0C05B50020EAA8 /* VMKPedalLayer.mm in Sources */,
 				616C1AEF1A0C059E0020EAA8 /* AccidentalGeometry.cpp in Sources */,
 				61F073F11A71D3BF002CA9CA /* LyricGeometryFactory.cpp in Sources */,
 				616C1AFB1A0C059E0020EAA8 /* LyricGeometry.cpp in Sources */,
 				00094F031A6748350053C615 /* WordsGeometry.cpp in Sources */,
 				616C1B361A0C05B50020EAA8 /* VMKScoreElementLayer.mm in Sources */,
+				61A81C5B1AAE312200E230A6 /* MeasureGeometryFactory.cpp in Sources */,
 				61A2B79E1A8EA14600C1EE2A /* KeySequence.cpp in Sources */,
 				000868A01A68443000BAA13D /* CodaGeometry.cpp in Sources */,
 				616C1B031A0C059E0020EAA8 /* SpanDirectionGeometry.cpp in Sources */,
@@ -4089,6 +4206,7 @@
 				000868A41A68447300BAA13D /* VMKImageLayerTests.mm in Sources */,
 				616C1E141A0D97700020EAA8 /* VMKBeamLayerTests.mm in Sources */,
 				616C1E1E1A0D97BD0020EAA8 /* AIImageCompare.m in Sources */,
+				61A81C831AAE4C7800E230A6 /* VMKTupletLayerTests.mm in Sources */,
 				616C1E181A0D97700020EAA8 /* VMKChordLayerTests.mm in Sources */,
 				000868781A6835D600BAA13D /* VMKWordsLayerTests.mm in Sources */,
 				616C1E111A0D97700020EAA8 /* VMKAdHocScoreTestCase.mm in Sources */,
@@ -4112,8 +4230,10 @@
 				618C6C8C1A13E7D6008314B2 /* PedalGeometry.cpp in Sources */,
 				618C6C5B1A13E795008314B2 /* VMKImageStore.m in Sources */,
 				61C850391A684F5300031100 /* LoopFactory.cpp in Sources */,
+				61A81C5C1AAE312200E230A6 /* MeasureGeometryFactory.cpp in Sources */,
 				618C6C651A13E7A1008314B2 /* VMKEndingLayer.mm in Sources */,
 				618C6CB51A13E7DC008314B2 /* StaffLayoutHandler.cpp in Sources */,
+				61A81C331AAA801C00E230A6 /* Notations.cpp in Sources */,
 				618C6CA51A13E7DC008314B2 /* KeyHandler.cpp in Sources */,
 				618C6CAB1A13E7DC008314B2 /* OrnamentsHandler.cpp in Sources */,
 				618C6CA91A13E7DC008314B2 /* NotationsHandler.cpp in Sources */,
@@ -4131,6 +4251,7 @@
 				618C6C831A13E7D6008314B2 /* EndingGeometry.cpp in Sources */,
 				618C6CA31A13E7DC008314B2 /* ForwardHandler.cpp in Sources */,
 				618C6C6A1A13E7A1008314B2 /* VMKNoteStemLayer.mm in Sources */,
+				61A81C6C1AAE316400E230A6 /* VMKTupletLayer.mm in Sources */,
 				618C6C851A13E7D6008314B2 /* Geometry.cpp in Sources */,
 				61F073311A703596002CA9CA /* PageMarginsHandler.cpp in Sources */,
 				618C6C5E1A13E7A1008314B2 /* VMKAccidentalLayer.mm in Sources */,
@@ -4138,10 +4259,12 @@
 				618C6C701A13E7A1008314B2 /* VMKWedgeLayer.mm in Sources */,
 				618C6CBE1A13E7E0008314B2 /* EventSequence.cpp in Sources */,
 				618C6CA61A13E7DC008314B2 /* LyricHandler.cpp in Sources */,
+				61A81C991AAE4E1900E230A6 /* SpanFactory.cpp in Sources */,
 				61A81C1A1AAA298200E230A6 /* Accidental.cpp in Sources */,
 				618C6C681A13E7A1008314B2 /* VMKMeasureLayer.mm in Sources */,
 				618C6CB31A13E7DC008314B2 /* SlurHandler.cpp in Sources */,
 				61A2B7A91A8EBB4E00C1EE2A /* TimeSequence.cpp in Sources */,
+				61A81C631AAE312D00E230A6 /* TupletGeometry.cpp in Sources */,
 				0022AE191A70833700139992 /* HorizontalResolver.cpp in Sources */,
 				618C6CBA1A13E7DC008314B2 /* TurnHandler.cpp in Sources */,
 				61F0744C1A730EEB002CA9CA /* VMKPartLayer.mm in Sources */,
@@ -4220,17 +4343,17 @@
 				618C6CAC1A13E7DC008314B2 /* PartHandler.cpp in Sources */,
 				614057D51A5CBD49005224C9 /* Pitch.cpp in Sources */,
 				61F073181A703596002CA9CA /* TypeFactories.cpp in Sources */,
-				618C6CC01A13E7E0008314B2 /* SpanFactory.cpp in Sources */,
 				618C6C601A13E7A1008314B2 /* VMKBeamLayer.mm in Sources */,
+				61A81C3A1AAA802700E230A6 /* TupletHandler.cpp in Sources */,
 				61239A6B1A64B4F000B3F0A3 /* ScoreProperties.cpp in Sources */,
 				61239A761A65FFB100B3F0A3 /* ScoreBuilder.cpp in Sources */,
 				619AC7A51AA4E41B005DFBED /* StemDirectionResolver.cpp in Sources */,
 				618C6C9D1A13E7DC008314B2 /* DefaultsHandler.cpp in Sources */,
 				61F073E51A71D3BF002CA9CA /* SystemGeometry.cpp in Sources */,
+				61A81C8B1AAE4DF700E230A6 /* TimeModificationHandler.cpp in Sources */,
 				618C6C9E1A13E7DC008314B2 /* DirectionHandler.cpp in Sources */,
 				618C6C691A13E7A1008314B2 /* VMKNoteHeadLayer.mm in Sources */,
 				618C6C891A13E7D6008314B2 /* NoteGeometry.cpp in Sources */,
-				614057DA1A5CC54E005224C9 /* Metrics.cpp in Sources */,
 				618C6CBF1A13E7E0008314B2 /* SpanCollection.cpp in Sources */,
 				618C6C991A13E7DC008314B2 /* BeamHandler.cpp in Sources */,
 				618C6CB71A13E7DC008314B2 /* TiedHandler.cpp in Sources */,
@@ -4239,6 +4362,7 @@
 				618C6CA21A13E7DC008314B2 /* FermataHandler.cpp in Sources */,
 				61A2B7A61A8EBB4E00C1EE2A /* ClefSequence.cpp in Sources */,
 				618C6C911A13E7D6008314B2 /* StemGeometry.cpp in Sources */,
+				61A81C941AAE4E1900E230A6 /* Metrics.cpp in Sources */,
 				618C6C5D1A13E7A1008314B2 /* VMKScoreElementImageLayer.mm in Sources */,
 				618C6C731A13E7CF008314B2 /* IntegerHandler.cpp in Sources */,
 				618C6C621A13E7A1008314B2 /* VMKChordLayer.mm in Sources */,

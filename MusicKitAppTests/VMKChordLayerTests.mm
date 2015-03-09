@@ -184,7 +184,7 @@ using namespace mxml::dom;
     self.builder->setPitch(note, Pitch::Step::G, 4);
     
     auto placement = std::unique_ptr<EmptyPlacement>(new EmptyPlacement{});
-    note->setDot(std::move(placement));
+    note->dot = std::move(placement);
 
     auto score = self.builder->build();
     ScoreProperties properties(*score, mxml::ScoreProperties::LayoutType::Scroll);
@@ -205,7 +205,7 @@ using namespace mxml::dom;
     self.builder->setPitch(note, Pitch::Step::G, 4);
     
     auto accidential = std::unique_ptr<Accidental>(new Accidental{Accidental::Type::Sharp});
-    note->setAccidental(std::move(accidential));
+    note->accidental = std::move(accidential);
 
     auto score = self.builder->build();
     ScoreProperties properties(*score, mxml::ScoreProperties::LayoutType::Scroll);
@@ -228,8 +228,8 @@ using namespace mxml::dom;
     auto articulation = std::unique_ptr<Articulation>(new Articulation{Articulation::Type::Accent});
     
     auto notations = std::unique_ptr<Notations>(new Notations{});
-    notations->addArticulation(std::move(articulation));
-    note->setNotations(std::move(notations));
+    notations->articulations.push_back(std::move(articulation));
+    note->notations = std::move(notations);
 
     auto score = self.builder->build();
     ScoreProperties properties(*score, mxml::ScoreProperties::LayoutType::Scroll);

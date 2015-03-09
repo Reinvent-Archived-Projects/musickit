@@ -11,6 +11,7 @@
 #import "VMKNoteHeadLayer.h"
 #import "VMKTieLayer.h"
 #import "VMKTimeSignatureLayer.h"
+#import "VMKTupletLayer.h"
 #import "VMKRestLayer.h"
 
 #include <mxml/Metrics.h>
@@ -20,6 +21,7 @@
 #include <mxml/geometry/ClefGeometry.h>
 #include <mxml/geometry/KeyGeometry.h>
 #include <mxml/geometry/TimeSignatureGeometry.h>
+#include <mxml/geometry/TupletGeometry.h>
 
 #include <iterator>
 #include <limits>
@@ -174,6 +176,11 @@ const CGFloat VMKBarLineWidth = 1;
             VMKRestLayer* layer = [self reusableLayerOfClass:[VMKRestLayer class]];
             [self configureView:layer];
             layer.geometry = rest;
+            [_elementLayers addObject:layer];
+        } else if (const TupletGeometry* tuplet = dynamic_cast<const TupletGeometry*>(geom.get())) {
+            VMKTupletLayer* layer = [self reusableLayerOfClass:[VMKTupletLayer class]];
+            [self configureView:layer];
+            layer.geometry = tuplet;
             [_elementLayers addObject:layer];
         }
     }

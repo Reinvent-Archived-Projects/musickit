@@ -43,7 +43,7 @@
 }
 
 - (void)load:(NSString*)path {
-    mxml::ScoreHandler handler;
+    mxml::parsing::ScoreHandler handler;
     std::ifstream is([path UTF8String]);
     lxml::parse(is, [path UTF8String], handler);
     _score = handler.result();
