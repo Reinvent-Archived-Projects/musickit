@@ -88,4 +88,14 @@
     }];
 }
 
+- (void)testSlurs {
+    NSBundle* bundle = [NSBundle bundleForClass:[self class]];
+    NSString* path = [bundle pathForResource:@"slurs" ofType:@"xml"];
+    [self load:path];
+
+    [self calculateRenderingErrors:self.collectionView.layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
+}
+
 @end

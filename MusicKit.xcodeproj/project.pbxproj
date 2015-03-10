@@ -146,6 +146,12 @@
 		00E7B48B1A8155EB00B949FC /* Attributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B48A1A8155EB00B949FC /* Attributes.cpp */; };
 		00E7B48C1A8155EB00B949FC /* Attributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B48A1A8155EB00B949FC /* Attributes.cpp */; };
 		00E7B48D1A8155F400B949FC /* Attributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B48A1A8155EB00B949FC /* Attributes.cpp */; };
+		00EFC3AB1AAF6558000C1D5B /* PageScoreLayout-Slurs.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFC3AA1AAF6558000C1D5B /* PageScoreLayout-Slurs.png */; };
+		00EFC3AC1AAF6558000C1D5B /* PageScoreLayout-Slurs.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFC3AA1AAF6558000C1D5B /* PageScoreLayout-Slurs.png */; };
+		00EFC3AF1AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFC3AD1AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png */; };
+		00EFC3B01AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFC3AD1AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png */; };
+		00EFC3B11AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFC3AE1AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png */; };
+		00EFC3B21AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFC3AE1AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png */; };
 		610DC5991A082FF000BEEBFD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DC5981A082FF000BEEBFD /* libxml2.dylib */; };
 		610DC5A61A0831DF00BEEBFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5A51A0831DF00BEEBFD /* main.m */; };
 		610DC5A91A0831DF00BEEBFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5A81A0831DF00BEEBFD /* AppDelegate.m */; };
@@ -1275,6 +1281,9 @@
 		00B36F571AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MeasureLayer-StemExtensions@3x.png"; sourceTree = "<group>"; };
 		00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = kiss_the_rain.xml; sourceTree = "<group>"; };
 		00E7B48A1A8155EB00B949FC /* Attributes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Attributes.cpp; path = Submodules/mxml/src/mxml/dom/Attributes.cpp; sourceTree = SOURCE_ROOT; };
+		00EFC3AA1AAF6558000C1D5B /* PageScoreLayout-Slurs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PageScoreLayout-Slurs.png"; sourceTree = "<group>"; };
+		00EFC3AD1AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PageScoreLayout-Slurs@2x.png"; sourceTree = "<group>"; };
+		00EFC3AE1AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PageScoreLayout-Slurs@3x.png"; sourceTree = "<group>"; };
 		2398D1FF5BFE82C3AC02E2F5 /* Pods-PreviewGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreviewGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator.release.xcconfig"; sourceTree = "<group>"; };
 		610DC5981A082FF000BEEBFD /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		610DC5A11A0831DF00BEEBFD /* MusicKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2172,6 +2181,9 @@
 				001EAAE71A82B7850097AE0D /* PageScoreLayout-AttributesFail.png */,
 				001EAAE81A82B7850097AE0D /* PageScoreLayout-AttributesFail@2x.png */,
 				001EAAE91A82B7850097AE0D /* PageScoreLayout-AttributesFail@3x.png */,
+				00EFC3AA1AAF6558000C1D5B /* PageScoreLayout-Slurs.png */,
+				00EFC3AD1AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png */,
+				00EFC3AE1AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png */,
 				00A90B611A79907000D971B3 /* ScrollScoreLayout-Accidentals.png */,
 				00A90B621A79907000D971B3 /* ScrollScoreLayout-Accidentals@2x.png */,
 				00A90B631A79907000D971B3 /* ScrollScoreLayout-Accidentals@3x.png */,
@@ -3310,6 +3322,7 @@
 				616C1CF61A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes.png in Resources */,
 				61E530EE1A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png in Resources */,
 				0008687F1A683B5300BAA13D /* WordsLayer-Dyanmics.png in Resources */,
+				00EFC3AF1AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png in Resources */,
 				61E530FA1A7ACF5400E5B2FF /* KeyLayer-FSharpMajor@3x.png in Resources */,
 				616C1CC41A0D81550020EAA8 /* ChordLayer-Quarter@2x.png in Resources */,
 				616C1C961A0D81550020EAA8 /* TieLayer-50Tie.png in Resources */,
@@ -3408,6 +3421,7 @@
 				616C1D0A1A0D81550020EAA8 /* MeasureLayer-WithClefs.png in Resources */,
 				616C1CE61A0D81550020EAA8 /* BeamLayer-BackwardHook.png in Resources */,
 				61E531401A7ACF5400E5B2FF /* KeyLayer-AMajor.png in Resources */,
+				00EFC3AB1AAF6558000C1D5B /* PageScoreLayout-Slurs.png in Resources */,
 				616C1D421A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png in Resources */,
 				6118ADA61A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png in Resources */,
 				6116217B1AA7DF690051C869 /* TieLayer-SlurPlacementDown.png in Resources */,
@@ -3473,6 +3487,7 @@
 				61E5312E1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor.png in Resources */,
 				616C1D081A0D81550020EAA8 /* MeasureLayer-Empty@2x.png in Resources */,
 				61E531301A7ACF5400E5B2FF /* KeyLayer-BMajor@3x.png in Resources */,
+				00EFC3B11AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png in Resources */,
 				61E531181A7ACF5400E5B2FF /* KeyLayer-DFlatMajor@3x.png in Resources */,
 				000868871A683B5300BAA13D /* WordsLayer-Words@2x.png in Resources */,
 				616C1E251A1173300020EAA8 /* ScrollScoreLayout-Slurs.png in Resources */,
@@ -3555,6 +3570,7 @@
 				616C1DFB1A0D97590020EAA8 /* TieLayer-1000Tie.png in Resources */,
 				61E530EF1A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png in Resources */,
 				000868801A683B5300BAA13D /* WordsLayer-Dyanmics.png in Resources */,
+				00EFC3B01AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png in Resources */,
 				61E530FB1A7ACF5400E5B2FF /* KeyLayer-FSharpMajor@3x.png in Resources */,
 				616C1DAA1A0D97590020EAA8 /* BeamLayer-FourBeams@2x.png in Resources */,
 				616C1DA81A0D97590020EAA8 /* BeamLayer-ForwardHook@3x.png in Resources */,
@@ -3653,6 +3669,7 @@
 				616C1DA11A0D97590020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png in Resources */,
 				61E531411A7ACF5400E5B2FF /* KeyLayer-AMajor.png in Resources */,
 				616C1DF01A0D97590020EAA8 /* TieLayer-18Tie@2x.png in Resources */,
+				00EFC3AC1AAF6558000C1D5B /* PageScoreLayout-Slurs.png in Resources */,
 				616C1DC31A0D97590020EAA8 /* ChordLayer-Dot@3x.png in Resources */,
 				6118ADA71A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png in Resources */,
 				6116217C1AA7DF690051C869 /* TieLayer-SlurPlacementDown.png in Resources */,
@@ -3718,6 +3735,7 @@
 				61E5312F1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor.png in Resources */,
 				616C1E261A1173300020EAA8 /* ScrollScoreLayout-Slurs.png in Resources */,
 				61E531311A7ACF5400E5B2FF /* KeyLayer-BMajor@3x.png in Resources */,
+				00EFC3B21AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png in Resources */,
 				61E531191A7ACF5400E5B2FF /* KeyLayer-DFlatMajor@3x.png in Resources */,
 				000868881A683B5300BAA13D /* WordsLayer-Words@2x.png in Resources */,
 				616C1DF61A0D97590020EAA8 /* TieLayer-50TieBelow@2x.png in Resources */,
