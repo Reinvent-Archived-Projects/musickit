@@ -105,7 +105,7 @@ std::unique_ptr<mxml::dom::Score> loadMXL(NSString* filePath) {
         NSString* xmlPath = [destPath stringByAppendingPathComponent:xmlFile];
         std::ifstream is([xmlPath UTF8String]);
 
-        mxml::ScoreHandler handler;
+        mxml::parsing::ScoreHandler handler;
         lxml::parse(is, [filename UTF8String], handler);
         return handler.result();
     } catch (mxml::dom::InvalidDataError& error) {
@@ -115,7 +115,7 @@ std::unique_ptr<mxml::dom::Score> loadMXL(NSString* filePath) {
 }
 
 std::unique_ptr<mxml::dom::Score> loadXML(NSString* filePath) {
-    mxml::ScoreHandler handler;
+    mxml::parsing::ScoreHandler handler;
     std::ifstream is([filePath UTF8String]);
     lxml::parse(is, [filePath UTF8String], handler);
     return handler.result();
