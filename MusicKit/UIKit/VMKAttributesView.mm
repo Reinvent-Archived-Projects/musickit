@@ -211,6 +211,7 @@ static const CGFloat kGapWidth = 10;
     if (_offset != offset) {
         _offset = offset;
         _updateGeometries = YES;
+        [self setNeedsLayout];
     }
 }
 
