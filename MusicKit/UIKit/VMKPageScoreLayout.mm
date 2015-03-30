@@ -81,8 +81,8 @@ static const CGFloat kBottomPadding = 40;
     frame.size.width = kCursorWidth;
 
     std::size_t systemIndex = 0;
-    if (self.cursorEvent && _scoreGeometry)
-        systemIndex = _scoreGeometry->scoreProperties().systemIndex(self.cursorEvent->measureIndex());
+    if (_scoreGeometry)
+        systemIndex = _scoreGeometry->scoreProperties().systemIndex(_cursorMeasureIndex);
 
     auto& systemGeometries = _scoreGeometry->systemGeometries();
     if (systemIndex >= systemGeometries.size())
@@ -103,13 +103,11 @@ static const CGFloat kBottomPadding = 40;
 
 - (NSArray*)layoutAttributesForMeasureCursors {
     NSMutableArray* attributesArray = [NSMutableArray array];
-    if (!self.cursorEvent || !_scoreGeometry)
+    if (!_scoreGeometry)
         return nullptr;
 
     const auto& scoreProperties = _scoreGeometry->scoreProperties();
-    const auto& event = *self.cursorEvent;
-    const auto measureIndex = event.measureIndex();
-    const auto systemIndex = scoreProperties.systemIndex(measureIndex);
+    const auto systemIndex = scoreProperties.systemIndex(_cursorMeasureIndex);
     const auto range = scoreProperties.measureRange(systemIndex);
     const auto systemGeometry = _scoreGeometry->systemGeometries()[systemIndex];
 
@@ -118,7 +116,7 @@ static const CGFloat kBottomPadding = 40;
         const auto staves = scoreProperties.staves(partIndex);
 
         auto partGeometry = systemGeometry->partGeometries()[partIndex];
-        auto measureGeometry = partGeometry->measureGeometries()[measureIndex - range.first];
+        auto measureGeometry = partGeometry->measureGeometries()[_cursorMeasureIndex - range.first];
 
         for (int staff = 1; staff <= staves; staff += 1) {
             CGRect frame = CGRectFromRect(partGeometry->convertToGeometry(measureGeometry->frame(), _scoreGeometry));
@@ -188,15 +186,10 @@ static const CGFloat kBottomPadding = 40;
 - (CGPoint)cursorNoteLocation {
     if (!_scoreGeometry)
         return CGPointZero;
-
-    if (!self.cursorEvent)
-        return CGPointFromPoint(_scoreGeometry->origin());
-
-    const auto& event = *self.cursorEvent;
     const auto& scoreProperties = _scoreGeometry->scoreProperties();
     const auto& spans = _scoreGeometry->spans();
 
-    auto it = spans.closest(event.measureIndex(), event.measureTime(), typeid(mxml::dom::Note));
+    auto it = spans.closest(_cursorMeasureIndex, _cursorMeasureTime, typeid(mxml::dom::Note));
     if (it != spans.end()) {
         auto& span = *it;
         auto systemIndex = scoreProperties.systemIndex(span.measureIndex());

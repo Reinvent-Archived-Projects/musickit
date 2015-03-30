@@ -3,7 +3,6 @@
 #import <UIKit/UIKit.h>
 #import "VMKCursorView.h"
 
-#include <mxml/EventSequence.h>
 #include <mxml/geometry/PageScoreGeometry.h>
 
 
@@ -15,7 +14,8 @@
 @property(nonatomic) CGFloat headerHeight;
 
 @property(nonatomic) VMKCursorStyle cursorStyle;
-@property(nonatomic) const mxml::Event* cursorEvent;
+@property(nonatomic) std::size_t cursorMeasureIndex;
+@property(nonatomic) mxml::dom::time_t cursorMeasureTime;
 
 @property(nonatomic, readonly) CGPoint cursorLocation;
 

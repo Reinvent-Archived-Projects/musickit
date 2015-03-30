@@ -122,13 +122,9 @@ static const CGFloat VMCursorWidth = 16;
 }
 
 - (CGFloat)cursorLocation {
-    if (!self.cursorEvent)
-        return 0;
-
-    const auto& event = *self.cursorEvent;
     const auto& spans = _scoreGeometry->spans();
 
-    auto it = spans.closest(event.measureIndex(), event.measureTime(), typeid(mxml::dom::Note));
+    auto it = spans.closest(_cursorMeasureIndex, _cursorMeasureTime, typeid(mxml::dom::Note));
     if (it != spans.end()) {
         const auto& span = *it;
         return span.start() + span.eventOffset();
@@ -139,19 +135,15 @@ static const CGFloat VMCursorWidth = 16;
 
 - (NSArray*)layoutAttributesForMeasureCursors {
     NSMutableArray* attributesArray = [NSMutableArray array];
-    if (!self.cursorEvent)
-        return nullptr;
 
-    const auto& event = *self.cursorEvent;
     const auto& scoreProperties = _scoreGeometry->scoreProperties();
-    const auto measureIndex = event.measureIndex();
 
     NSUInteger item = 0;
     for (std::size_t partIndex = 0; partIndex < scoreProperties.partCount(); partIndex += 1) {
         const auto staves = scoreProperties.staves(partIndex);
 
         auto partGeometry = _scoreGeometry->partGeometries()[partIndex];
-        auto measureGeometry = partGeometry->measureGeometries()[measureIndex];
+        auto measureGeometry = partGeometry->measureGeometries()[_cursorMeasureIndex];
 
         for (int staff = 1; staff <= staves; staff += 1) {
             CGRect frame = CGRectFromRect(partGeometry->convertToGeometry(measureGeometry->frame(), _scoreGeometry));
