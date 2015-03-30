@@ -45,4 +45,15 @@
     }];
 }
 
+- (void)testCollidingWholeRests {
+    auto score = [self loadScore:@"prelude_and_fugue_4"];
+    auto scoreGeometry = std::unique_ptr<mxml::PageScoreGeometry>(new mxml::PageScoreGeometry(*score, 728));
+    auto systemGeometry = scoreGeometry->systemGeometries().at(31);
+    VMKSystemLayer *layer = [[VMKSystemLayer alloc] initWithGeometry:systemGeometry];
+
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+    }];
+}
+
 @end

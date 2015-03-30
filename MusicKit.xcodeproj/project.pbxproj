@@ -698,6 +698,14 @@
 		616C1E301A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E2D1A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png */; };
 		616C1E311A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E2E1A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png */; };
 		616C1E321A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E2E1A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png */; };
+		617DC6B11ACA12A80019E841 /* prelude_and_fugue_4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 617DC6B01ACA12A80019E841 /* prelude_and_fugue_4.xml */; };
+		617DC6B21ACA12A80019E841 /* prelude_and_fugue_4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 617DC6B01ACA12A80019E841 /* prelude_and_fugue_4.xml */; };
+		617DC6B61ACA15C20019E841 /* SystemLayer-CollidingWholeRests@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 617DC6B31ACA15C20019E841 /* SystemLayer-CollidingWholeRests@3x.png */; };
+		617DC6B71ACA15C20019E841 /* SystemLayer-CollidingWholeRests@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 617DC6B31ACA15C20019E841 /* SystemLayer-CollidingWholeRests@3x.png */; };
+		617DC6B81ACA15C20019E841 /* SystemLayer-CollidingWholeRests.png in Resources */ = {isa = PBXBuildFile; fileRef = 617DC6B41ACA15C20019E841 /* SystemLayer-CollidingWholeRests.png */; };
+		617DC6B91ACA15C20019E841 /* SystemLayer-CollidingWholeRests.png in Resources */ = {isa = PBXBuildFile; fileRef = 617DC6B41ACA15C20019E841 /* SystemLayer-CollidingWholeRests.png */; };
+		617DC6BA1ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 617DC6B51ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png */; };
+		617DC6BB1ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 617DC6B51ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png */; };
 		618641511A09B0B900FAE9C9 /* VMKBarlineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6186414F1A09B0B900FAE9C9 /* VMKBarlineLayer.h */; };
 		618641521A09B0B900FAE9C9 /* VMKBarlineLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618641501A09B0B900FAE9C9 /* VMKBarlineLayer.mm */; };
 		618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */; };
@@ -1728,6 +1736,10 @@
 		616C1E241A1173300020EAA8 /* ScrollScoreLayout-Endings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Endings.png"; sourceTree = "<group>"; };
 		616C1E2D1A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Endings@3x.png"; sourceTree = "<group>"; };
 		616C1E2E1A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Slurs@3x.png"; sourceTree = "<group>"; };
+		617DC6B01ACA12A80019E841 /* prelude_and_fugue_4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = prelude_and_fugue_4.xml; sourceTree = "<group>"; };
+		617DC6B31ACA15C20019E841 /* SystemLayer-CollidingWholeRests@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-CollidingWholeRests@3x.png"; sourceTree = "<group>"; };
+		617DC6B41ACA15C20019E841 /* SystemLayer-CollidingWholeRests.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-CollidingWholeRests.png"; sourceTree = "<group>"; };
+		617DC6B51ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-CollidingWholeRests@2x.png"; sourceTree = "<group>"; };
 		6186414F1A09B0B900FAE9C9 /* VMKBarlineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKBarlineLayer.h; sourceTree = "<group>"; };
 		618641501A09B0B900FAE9C9 /* VMKBarlineLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKBarlineLayer.mm; sourceTree = "<group>"; };
 		618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKBeamLayer.h; sourceTree = "<group>"; };
@@ -2196,6 +2208,9 @@
 				616C1E211A1173300020EAA8 /* ScrollScoreLayout-Slurs.png */,
 				616C1E231A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png */,
 				616C1E2E1A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png */,
+				617DC6B41ACA15C20019E841 /* SystemLayer-CollidingWholeRests.png */,
+				617DC6B51ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png */,
+				617DC6B31ACA15C20019E841 /* SystemLayer-CollidingWholeRests@3x.png */,
 				6118AD981A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart.png */,
 				6118AD991A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png */,
 				6118AD9A1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@3x.png */,
@@ -2266,6 +2281,7 @@
 				005DA5DA1A7FEEE0003B41AC /* accidentals2.xml */,
 				005DA5DF1A7FEF09003B41AC /* endings.xml */,
 				00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */,
+				617DC6B01ACA12A80019E841 /* prelude_and_fugue_4.xml */,
 				005DA5D61A7FEECE003B41AC /* slurs.xml */,
 				0005C0FE1A7C381500B60619 /* system_attributes.xml */,
 				001EAAF31A82CD4C0097AE0D /* system.xml */,
@@ -3358,6 +3374,7 @@
 				616C1E2B1A1173300020EAA8 /* ScrollScoreLayout-Endings.png in Resources */,
 				616C1CBA1A0D81550020EAA8 /* ChordLayer-EighthDown@2x.png in Resources */,
 				616C1D521A0D81550020EAA8 /* TieLayer-AngledUp@3x.png in Resources */,
+				617DC6B81ACA15C20019E841 /* SystemLayer-CollidingWholeRests.png in Resources */,
 				616C1D2A1A0D81550020EAA8 /* ChordLayer-DisplaceSideways@3x.png in Resources */,
 				616C1D1E1A0D81550020EAA8 /* BeamLayer-OneBeam@3x.png in Resources */,
 				61E5310C1A7ACF5400E5B2FF /* KeyLayer-EFlatMajor@3x.png in Resources */,
@@ -3380,7 +3397,9 @@
 				616C1D481A0D81550020EAA8 /* TieLayer-50TieBelow@3x.png in Resources */,
 				61A81CA61AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png in Resources */,
 				61E5310A1A7ACF5400E5B2FF /* KeyLayer-EMajor.png in Resources */,
+				617DC6B61ACA15C20019E841 /* SystemLayer-CollidingWholeRests@3x.png in Resources */,
 				61E5313A1A7ACF5400E5B2FF /* KeyLayer-BFlatMajor.png in Resources */,
+				617DC6BA1ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png in Resources */,
 				611621851AA8D9D90051C869 /* TieLayer-SlurPlacementUp@2x.png in Resources */,
 				616C1CE21A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png in Resources */,
 				61E531121A7ACF5400E5B2FF /* KeyLayer-DMajor@3x.png in Resources */,
@@ -3459,6 +3478,7 @@
 				616C1CFA1A0D81550020EAA8 /* BeamLayer-TwoBeams.png in Resources */,
 				00B36F581AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png in Resources */,
 				616C1C881A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png in Resources */,
+				617DC6B11ACA12A80019E841 /* prelude_and_fugue_4.xml in Resources */,
 				61E531441A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@2x.png in Resources */,
 				61E531381A7ACF5400E5B2FF /* KeyLayer-BFlatMajor@2x.png in Resources */,
 				000868831A683B5300BAA13D /* WordsLayer-Dyanmics@3x.png in Resources */,
@@ -3606,6 +3626,7 @@
 				616C1E2C1A1173300020EAA8 /* ScrollScoreLayout-Endings.png in Resources */,
 				616C1DB01A0D97590020EAA8 /* BeamLayer-OneBeamThreeNotes@2x.png in Resources */,
 				616C1DE21A0D97590020EAA8 /* MeasureLayer-Empty@3x.png in Resources */,
+				617DC6B91ACA15C20019E841 /* SystemLayer-CollidingWholeRests.png in Resources */,
 				616C1DC61A0D97590020EAA8 /* ChordLayer-Eighth@3x.png in Resources */,
 				61E5310D1A7ACF5400E5B2FF /* KeyLayer-EFlatMajor@3x.png in Resources */,
 				61E531431A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@3x.png in Resources */,
@@ -3628,7 +3649,9 @@
 				61E5310B1A7ACF5400E5B2FF /* KeyLayer-EMajor.png in Resources */,
 				61A81CA71AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png in Resources */,
 				61E5313B1A7ACF5400E5B2FF /* KeyLayer-BFlatMajor.png in Resources */,
+				617DC6B71ACA15C20019E841 /* SystemLayer-CollidingWholeRests@3x.png in Resources */,
 				616C1DA31A0D97590020EAA8 /* BeamLayer-BackwardHook.png in Resources */,
+				617DC6BB1ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png in Resources */,
 				611621861AA8D9D90051C869 /* TieLayer-SlurPlacementUp@2x.png in Resources */,
 				61E531131A7ACF5400E5B2FF /* KeyLayer-DMajor@3x.png in Resources */,
 				616C1DB91A0D97590020EAA8 /* ChordLayer-Accent@2x.png in Resources */,
@@ -3707,6 +3730,7 @@
 				616C1DC81A0D97590020EAA8 /* ChordLayer-EighthDown@2x.png in Resources */,
 				00B36F591AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png in Resources */,
 				61E531451A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@2x.png in Resources */,
+				617DC6B21ACA12A80019E841 /* prelude_and_fugue_4.xml in Resources */,
 				61E531391A7ACF5400E5B2FF /* KeyLayer-BFlatMajor@2x.png in Resources */,
 				000868841A683B5300BAA13D /* WordsLayer-Dyanmics@3x.png in Resources */,
 				616C1DA41A0D97590020EAA8 /* BeamLayer-BackwardHook@2x.png in Resources */,
