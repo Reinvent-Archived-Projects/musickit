@@ -10,7 +10,7 @@
 
 + (NSArray*)imagesForAccidental:(int)alter withColor:(VMKColor*)color {
     VMKImageStore* imageStore = [VMKImageStore sharedInstance];
-    if (alter == 2) {
+    if (alter == -2) {
         VMKImage* image = [imageStore imageNamed:@"flat" withColor:color];
         return @[ image, image ];
     }
