@@ -1,11 +1,15 @@
 //  Copyright (c) 2015 Venture Media Labs. All rights reserved.
 
 #import "VMKAdHocScoreTestCase.h"
+#import "VMKFileScoreTestCase.h"
+
 #import "VMKPartLayer.h"
+#import "VMKSystemLayer.h"
 #import "VMKTieLayer.h"
 
 #include <mxml/dom/Tuplet.h>
 #include <mxml/geometry/PartGeometry.h>
+#include <mxml/geometry/PageScoreGeometry.h>
 #include <mxml/geometry/ScrollScoreGeometry.h>
 #include <mxml/geometry/factories/TieGeometryFactory.h>
 
@@ -73,6 +77,25 @@ using namespace mxml;
 #else
         XCTAssertLessThanOrEqual(errors.alphaError, 0.0001);
 #endif
+    }];
+}
+
+@end
+
+@interface VMKTupletLayerFileTests : VMKFileScoreTestCase
+
+@end
+
+@implementation VMKTupletLayerFileTests
+
+- (void)testRepeatTuplets {
+    auto score = [self loadScore:@"dont_forget_me"];
+    auto scoreGeometry = std::unique_ptr<mxml::PageScoreGeometry>(new mxml::PageScoreGeometry(*score, 728));
+    auto systemGeometry = scoreGeometry->systemGeometries().at(7);
+    VMKSystemLayer *layer = [[VMKSystemLayer alloc] initWithGeometry:systemGeometry];
+
+    [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+        XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
     }];
 }
 

@@ -152,6 +152,14 @@
 		00EFC3B01AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFC3AD1AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png */; };
 		00EFC3B11AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFC3AE1AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png */; };
 		00EFC3B21AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFC3AE1AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png */; };
+		00FC792B1ACB580B00C4261F /* dont_forget_me.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792A1ACB580B00C4261F /* dont_forget_me.xml */; };
+		00FC792C1ACB580B00C4261F /* dont_forget_me.xml in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792A1ACB580B00C4261F /* dont_forget_me.xml */; };
+		00FC79301ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792D1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets.png */; };
+		00FC79311ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792D1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets.png */; };
+		00FC79321ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792E1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png */; };
+		00FC79331ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792E1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png */; };
+		00FC79341ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792F1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png */; };
+		00FC79351ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792F1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png */; };
 		610DC5991A082FF000BEEBFD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DC5981A082FF000BEEBFD /* libxml2.dylib */; };
 		610DC5A61A0831DF00BEEBFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5A51A0831DF00BEEBFD /* main.m */; };
 		610DC5A91A0831DF00BEEBFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DC5A81A0831DF00BEEBFD /* AppDelegate.m */; };
@@ -1292,6 +1300,10 @@
 		00EFC3AA1AAF6558000C1D5B /* PageScoreLayout-Slurs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PageScoreLayout-Slurs.png"; sourceTree = "<group>"; };
 		00EFC3AD1AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PageScoreLayout-Slurs@2x.png"; sourceTree = "<group>"; };
 		00EFC3AE1AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PageScoreLayout-Slurs@3x.png"; sourceTree = "<group>"; };
+		00FC792A1ACB580B00C4261F /* dont_forget_me.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dont_forget_me.xml; sourceTree = "<group>"; };
+		00FC792D1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TupletLayerFile-RepeatTuplets.png"; sourceTree = "<group>"; };
+		00FC792E1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TupletLayerFile-RepeatTuplets@2x.png"; sourceTree = "<group>"; };
+		00FC792F1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TupletLayerFile-RepeatTuplets@3x.png"; sourceTree = "<group>"; };
 		2398D1FF5BFE82C3AC02E2F5 /* Pods-PreviewGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreviewGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator.release.xcconfig"; sourceTree = "<group>"; };
 		610DC5981A082FF000BEEBFD /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		610DC5A11A0831DF00BEEBFD /* MusicKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2268,6 +2280,9 @@
 				61A81C9F1AAE59D800E230A6 /* TupletLayer-Tuplet.png */,
 				61A81CA01AAE59D800E230A6 /* TupletLayer-Tuplet@2x.png */,
 				61A81CA51AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png */,
+				00FC792D1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets.png */,
+				00FC792E1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png */,
+				00FC792F1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png */,
 				61947F461A9E632A0032977B /* WordsLayer-DontCropSlanted.png */,
 				61947F431A9E60C50032977B /* WordsLayer-DontCropSlanted@2x.png */,
 				61947F491A9E718A0032977B /* WordsLayer-DontCropSlanted@3x.png */,
@@ -2279,6 +2294,7 @@
 				0008687E1A683B5300BAA13D /* WordsLayer-Words@3x.png */,
 				005DA5D91A7FEEE0003B41AC /* accidentals.xml */,
 				005DA5DA1A7FEEE0003B41AC /* accidentals2.xml */,
+				00FC792A1ACB580B00C4261F /* dont_forget_me.xml */,
 				005DA5DF1A7FEF09003B41AC /* endings.xml */,
 				00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */,
 				617DC6B01ACA12A80019E841 /* prelude_and_fugue_4.xml */,
@@ -3357,6 +3373,7 @@
 				616C1D321A0D81550020EAA8 /* ChordLayer-Quarter@3x.png in Resources */,
 				00A90B6F1A79907000D971B3 /* ScrollScoreLayout-Accidentals2@2x.png in Resources */,
 				616C1C981A0D81550020EAA8 /* TieLayer-50Tie@2x.png in Resources */,
+				00FC79341ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png in Resources */,
 				000868851A683B5300BAA13D /* WordsLayer-Words.png in Resources */,
 				616C1CD61A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits.png in Resources */,
 				616C1D4C1A0D81550020EAA8 /* TieLayer-1000Tie@3x.png in Resources */,
@@ -3427,6 +3444,7 @@
 				001E81091A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png in Resources */,
 				61E531001A7ACF5400E5B2FF /* KeyLayer-FMajor@3x.png in Resources */,
 				002F98701A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png in Resources */,
+				00FC79301ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets.png in Resources */,
 				616C1D0C1A0D81550020EAA8 /* MeasureLayer-WithClefs@2x.png in Resources */,
 				616C1D301A0D81550020EAA8 /* ChordLayer-EighthDown@3x.png in Resources */,
 				61A81CA11AAE59D800E230A6 /* TupletLayer-Tuplet.png in Resources */,
@@ -3473,6 +3491,7 @@
 				616C1D261A0D81550020EAA8 /* ChordLayer-Accent@3x.png in Resources */,
 				616C1C9C1A0D81550020EAA8 /* TieLayer-50TieBelow@2x.png in Resources */,
 				616C1CB01A0D81550020EAA8 /* TieLayer-AngledUp@2x.png in Resources */,
+				00FC792B1ACB580B00C4261F /* dont_forget_me.xml in Resources */,
 				616C1E2F1A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png in Resources */,
 				61E531141A7ACF5400E5B2FF /* KeyLayer-DMajor@2x.png in Resources */,
 				616C1CFA1A0D81550020EAA8 /* BeamLayer-TwoBeams.png in Resources */,
@@ -3493,6 +3512,7 @@
 				616C1CAA1A0D81550020EAA8 /* TieLayer-AngledDownBelow.png in Resources */,
 				616C1C8E1A0D81550020EAA8 /* NoteLayer-Whole@2x.png in Resources */,
 				6116216D1AA669760051C869 /* MeasureLayer-StemDirections@3x.png in Resources */,
+				00FC79321ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png in Resources */,
 				616C1CEA1A0D81550020EAA8 /* BeamLayer-ForwardHook.png in Resources */,
 				000868B51A6845B800BAA13D /* ImageLayer-Coda@3x.png in Resources */,
 				0005C0FF1A7C381500B60619 /* system_attributes.xml in Resources */,
@@ -3609,6 +3629,7 @@
 				616C1DA61A0D97590020EAA8 /* BeamLayer-ForwardHook.png in Resources */,
 				00A90B701A79907000D971B3 /* ScrollScoreLayout-Accidentals2@2x.png in Resources */,
 				616C1DB31A0D97590020EAA8 /* BeamLayer-TwoBeams@2x.png in Resources */,
+				00FC79351ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png in Resources */,
 				000868861A683B5300BAA13D /* WordsLayer-Words.png in Resources */,
 				616C1DE71A0D97590020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png in Resources */,
 				616C1DCC1A0D97590020EAA8 /* ChordLayer-Quarter@3x.png in Resources */,
@@ -3679,6 +3700,7 @@
 				001E810A1A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png in Resources */,
 				616C1E041A0D97590020EAA8 /* TieLayer-AngledUp.png in Resources */,
 				002F98711A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png in Resources */,
+				00FC79311ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets.png in Resources */,
 				616C1DEF1A0D97590020EAA8 /* TieLayer-18Tie.png in Resources */,
 				616C1E091A0D97590020EAA8 /* TieLayer-AngledUpBelow@3x.png in Resources */,
 				61A81CA21AAE59D800E230A6 /* TupletLayer-Tuplet.png in Resources */,
@@ -3725,6 +3747,7 @@
 				616C1E301A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png in Resources */,
 				616C1E071A0D97590020EAA8 /* TieLayer-AngledUpBelow.png in Resources */,
 				616C1E0C1A0D97590020EAA8 /* TimeSignatureLayer-CommonTime@3x.png in Resources */,
+				00FC792C1ACB580B00C4261F /* dont_forget_me.xml in Resources */,
 				61E531151A7ACF5400E5B2FF /* KeyLayer-DMajor@2x.png in Resources */,
 				616C1DF11A0D97590020EAA8 /* TieLayer-18Tie@3x.png in Resources */,
 				616C1DC81A0D97590020EAA8 /* ChordLayer-EighthDown@2x.png in Resources */,
@@ -3745,6 +3768,7 @@
 				616C1E0A1A0D97590020EAA8 /* TimeSignatureLayer-CommonTime.png in Resources */,
 				616C1DC11A0D97590020EAA8 /* ChordLayer-Dot.png in Resources */,
 				6116216E1AA669760051C869 /* MeasureLayer-StemDirections@3x.png in Resources */,
+				00FC79331ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png in Resources */,
 				616C1DF21A0D97590020EAA8 /* TieLayer-50Tie.png in Resources */,
 				000868B61A6845B800BAA13D /* ImageLayer-Coda@3x.png in Resources */,
 				0005C1001A7C381500B60619 /* system_attributes.xml in Resources */,
