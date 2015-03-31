@@ -95,7 +95,11 @@ using namespace mxml;
     VMKSystemLayer *layer = [[VMKSystemLayer alloc] initWithGeometry:systemGeometry];
 
     [self calculateRenderingErrors:layer forSelector:_cmd testBlock:^(VMKRenderingErrors errors) {
+#if TARGET_OS_IPHONE
         XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
+#else
+        XCTAssertLessThanOrEqual(errors.alphaError, 0.0001);
+#endif
     }];
 }
 
