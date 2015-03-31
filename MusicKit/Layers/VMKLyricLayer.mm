@@ -50,7 +50,7 @@
 
     const mxml::dom::Lyric& lyric = self.lyricGeometry->lyric();
     _textLayer.font = (CFTypeRef)@"Baskerville";
-    _textLayer.fontSize = 20;
+    _textLayer.fontSize = 18;
 
     NSString* string  = [NSString stringWithUTF8String:lyric.text().c_str()];
 
