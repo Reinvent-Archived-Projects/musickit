@@ -64,7 +64,10 @@
         CGRect lineRect;
 
         lineRect.origin.x = 0;
-        lineRect.origin.y = CGRectGetMidY(bounds);
+        if (geom->placement() == mxml::dom::Placement::Above)
+            lineRect.origin.y = CGRectGetMidY(bounds);
+        else
+            lineRect.origin.y = 0;
         lineRect.size.width = kLineWidth;
         lineRect.size.height = CGRectGetHeight(bounds)/2;
         CGContextFillRect(ctx, VMKRoundRect(lineRect));
@@ -73,6 +76,7 @@
         CGContextFillRect(ctx, VMKRoundRect(lineRect));
 
         lineRect.origin.x = 0;
+        lineRect.origin.y = CGRectGetMidY(bounds);
         lineRect.size.width = CGRectGetMinX(textBounds) - 4;
         lineRect.size.height = kLineWidth;
         CGContextFillRect(ctx, VMKRoundRect(lineRect));
