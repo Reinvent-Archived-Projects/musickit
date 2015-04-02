@@ -75,7 +75,7 @@ using namespace mxml;
 #if TARGET_OS_IPHONE
         XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
 #else
-        XCTAssertLessThanOrEqual(errors.alphaError, 0.0001);
+        XCTAssertLessThanOrEqual(errors.alphaError, 0.001);
 #endif
     }];
 }
@@ -98,7 +98,7 @@ using namespace mxml;
 #if TARGET_OS_IPHONE
         XCTAssertLessThanOrEqual(errors.maximumError, kMaximumError);
 #else
-        XCTAssertLessThanOrEqual(errors.alphaError, 0.0001);
+        XCTAssertLessThanOrEqual(errors.alphaError, 0.001);
 #endif
     }];
 }
