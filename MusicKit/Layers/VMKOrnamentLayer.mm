@@ -14,7 +14,11 @@
     } else if (ornaments.mordent().get()) {
         return @"mordent";
     } else if (ornaments.invertedMordent().get()) {
-        return @"inverted-mordent";
+        if (ornaments.invertedMordent().get()->isLong()) {
+            return @"long-mordent";
+        } else {
+            return @"inverted-mordent";
+        }
     }
     return nil;
 }
