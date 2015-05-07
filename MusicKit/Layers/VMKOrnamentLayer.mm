@@ -32,7 +32,7 @@
 }
 
 - (void)setGeometry:(const mxml::Geometry *)geometry {
-    const mxml::OrnamentsGeometry* ornamentsGeometry = self.ornamentsGeometry;
+    auto ornamentsGeometry = static_cast<const mxml::OrnamentsGeometry*>(geometry);
     if (ornamentsGeometry)
         self.imageName = [self.class imageNameForOrnaments:ornamentsGeometry->ornaments()];
     else
