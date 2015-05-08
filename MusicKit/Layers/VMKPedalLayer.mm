@@ -39,16 +39,20 @@ using namespace mxml;
 
     CGFloat width = geom->stopLocation().x - geom->startLocation().x;
     VMKImage* pedImage = [[VMKImageStore sharedInstance] imageNamed:@"ped" withColor:self.foregroundColor];
-    [pedImage drawInRect:CGRectMake(0, 0, pedImage.size.width, pedImage.size.height)];
 
     if (pedal.line()) {
-        CGContextMoveToPoint(ctx, pedImage.size.width, pedImage.size.height - lineWidth-2);
+        CGContextMoveToPoint(ctx, 0, pedImage.size.height - lineWidth-2);
+        if (!geom->isContinuation()) {
+            CGContextAddLineToPoint(ctx, 0, pedImage.size.height/2);
+            CGContextMoveToPoint(ctx, 0, pedImage.size.height - lineWidth-2);
+        }
         CGContextAddLineToPoint(ctx, width - lineWidth/2, pedImage.size.height - lineWidth-2);
         if (geom->stopDirection())
             CGContextAddLineToPoint(ctx, width - lineWidth/2, pedImage.size.height/2);
     }
 
     if (pedal.sign()) {
+        [pedImage drawInRect:CGRectMake(0, 0, pedImage.size.width, pedImage.size.height)];
         VMKImage* starImage = [[VMKImageStore sharedInstance] imageNamed:@"star" withColor:self.foregroundColor];
         CGPoint point = CGPointMake(self.bounds.size.width - starImage.size.width, 0);
         [starImage drawInRect:CGRectMake(point.x, point.y, starImage.size.width, starImage.size.height)];

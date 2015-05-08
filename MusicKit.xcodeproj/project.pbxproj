@@ -1186,6 +1186,33 @@
 		61F0744A1A730EEB002CA9CA /* VMKPartLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074471A730EEB002CA9CA /* VMKPartLayer.mm */; };
 		61F0744B1A730EEB002CA9CA /* VMKPartLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074471A730EEB002CA9CA /* VMKPartLayer.mm */; };
 		61F0744C1A730EEB002CA9CA /* VMKPartLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074471A730EEB002CA9CA /* VMKPartLayer.mm */; };
+		8CC3621F1AFD233300F41DC0 /* VMKPedalLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3621E1AFD233300F41DC0 /* VMKPedalLayerTests.mm */; };
+		8CC362201AFD233300F41DC0 /* VMKPedalLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3621E1AFD233300F41DC0 /* VMKPedalLayerTests.mm */; };
+		8CC362211AFD233800F41DC0 /* VMKOrnamentLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8CD1C9FC1AF9A83B005C2203 /* VMKOrnamentLayerTests.mm */; };
+		8CC3622E1AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362221AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop.png */; };
+		8CC3622F1AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362221AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop.png */; };
+		8CC362301AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362231AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@2x.png */; };
+		8CC362311AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362231AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@2x.png */; };
+		8CC362321AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362241AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@3x.png */; };
+		8CC362331AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362241AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@3x.png */; };
+		8CC362341AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362251AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop.png */; };
+		8CC362351AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362251AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop.png */; };
+		8CC362361AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362261AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@2x.png */; };
+		8CC362371AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362261AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@2x.png */; };
+		8CC362381AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362271AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@3x.png */; };
+		8CC362391AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362271AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@3x.png */; };
+		8CC3623A1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362281AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop.png */; };
+		8CC3623B1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362281AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop.png */; };
+		8CC3623C1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362291AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@2x.png */; };
+		8CC3623D1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC362291AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@2x.png */; };
+		8CC3623E1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3622A1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@3x.png */; };
+		8CC3623F1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3622A1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@3x.png */; };
+		8CC362401AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3622B1AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop.png */; };
+		8CC362411AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3622B1AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop.png */; };
+		8CC362421AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3622C1AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@2x.png */; };
+		8CC362431AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3622C1AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@2x.png */; };
+		8CC362441AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3622D1AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@3x.png */; };
+		8CC362451AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3622D1AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@3x.png */; };
 		8CD1C9FD1AF9A83B005C2203 /* VMKOrnamentLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8CD1C9FC1AF9A83B005C2203 /* VMKOrnamentLayerTests.mm */; };
 		8CF686A41AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF686831AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort.png */; };
 		8CF686A51AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF686831AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort.png */; };
@@ -1959,6 +1986,19 @@
 		736F0E8822E3E82A82593CC0 /* libPods-PreviewGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PreviewGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		777972E87AE26FF9CF8EE309 /* Pods-PreviewGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreviewGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator.debug.xcconfig"; sourceTree = "<group>"; };
 		80D97B40F18B7EFC550962E5 /* libPods-MusicKitAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicKitAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC3621E1AFD233300F41DC0 /* VMKPedalLayerTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKPedalLayerTests.mm; sourceTree = "<group>"; };
+		8CC362221AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PedalLayer-PedalLineContinueStop.png"; sourceTree = "<group>"; };
+		8CC362231AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PedalLayer-PedalLineContinueStop@2x.png"; sourceTree = "<group>"; };
+		8CC362241AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PedalLayer-PedalLineContinueStop@3x.png"; sourceTree = "<group>"; };
+		8CC362251AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PedalLayer-PedalLineStartStop.png"; sourceTree = "<group>"; };
+		8CC362261AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PedalLayer-PedalLineStartStop@2x.png"; sourceTree = "<group>"; };
+		8CC362271AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PedalLayer-PedalLineStartStop@3x.png"; sourceTree = "<group>"; };
+		8CC362281AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PedalLayer-PedalSignContinueStop.png"; sourceTree = "<group>"; };
+		8CC362291AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PedalLayer-PedalSignContinueStop@2x.png"; sourceTree = "<group>"; };
+		8CC3622A1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PedalLayer-PedalSignContinueStop@3x.png"; sourceTree = "<group>"; };
+		8CC3622B1AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PedalLayer-PedalSignStartStop.png"; sourceTree = "<group>"; };
+		8CC3622C1AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PedalLayer-PedalSignStartStop@2x.png"; sourceTree = "<group>"; };
+		8CC3622D1AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PedalLayer-PedalSignStartStop@3x.png"; sourceTree = "<group>"; };
 		8CD1C9FC1AF9A83B005C2203 /* VMKOrnamentLayerTests.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = VMKOrnamentLayerTests.mm; sourceTree = "<group>"; };
 		8CF686831AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-InvertedMordentShort.png"; sourceTree = "<group>"; };
 		8CF686841AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-InvertedMordentShort@2x.png"; sourceTree = "<group>"; };
@@ -1972,7 +2012,6 @@
 		8CF686951AFB28AA00D112B8 /* OrnamentLayer-TrillBelow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-TrillBelow.png"; sourceTree = "<group>"; };
 		8CF686961AFB28AA00D112B8 /* OrnamentLayer-TrillBelow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-TrillBelow@2x.png"; sourceTree = "<group>"; };
 		8CF686971AFB28AA00D112B8 /* OrnamentLayer-TrillBelow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-TrillBelow@3x.png"; sourceTree = "<group>"; };
-		8CF686DD1AFBD35A00D112B8 /* VMKPedalLayerTests.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = VMKPedalLayerTests.mm; sourceTree = "<group>"; };
 		D28BA6C0D7D850D4E794B2FB /* libPods-MusicKitOSXAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicKitOSXAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -2080,28 +2119,29 @@
 		610DC5BC1A0831DF00BEEBFD /* MusicKitAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				610DC5BD1A0831DF00BEEBFD /* Supporting Files */,
 				610DC5CC1A08322800BEEBFD /* resources */,
-				610DC61C1A08322800BEEBFD /* VMKLayerTestCase.h */,
-				610DC61D1A08322800BEEBFD /* VMKLayerTestCase.mm */,
+				610DC5BD1A0831DF00BEEBFD /* Supporting Files */,
 				610DC5CA1A08322800BEEBFD /* VMKAdHocScoreTestCase.h */,
 				610DC5CB1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm */,
-				002F98681A9E59C60009A8F0 /* VMKFileScoreTestCase.h */,
-				8CD1C9FC1AF9A83B005C2203 /* VMKOrnamentLayerTests.mm */,
-				002F98691A9E59C60009A8F0 /* VMKFileScoreTestCase.mm */,
 				610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */,
 				610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */,
 				610DC6151A08322800BEEBFD /* VMKClefLayerTests.mm */,
+				002F98681A9E59C60009A8F0 /* VMKFileScoreTestCase.h */,
+				002F98691A9E59C60009A8F0 /* VMKFileScoreTestCase.mm */,
 				000868A21A68447300BAA13D /* VMKImageLayerTests.mm */,
 				61E530BE1A7ACBC500E5B2FF /* VMKKeyLayerTests.mm */,
+				610DC61C1A08322800BEEBFD /* VMKLayerTestCase.h */,
+				610DC61D1A08322800BEEBFD /* VMKLayerTestCase.mm */,
+				610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */,
+				8CD1C9FC1AF9A83B005C2203 /* VMKOrnamentLayerTests.mm */,
 				0005C1051A7C3C4900B60619 /* VMKPageScoreLayoutTests.mm */,
+				8CC3621E1AFD233300F41DC0 /* VMKPedalLayerTests.mm */,
 				610DC6181A08322800BEEBFD /* VMKScrollScoreLayoutTests.mm */,
 				001EAAF01A82CCED0097AE0D /* VMKSystemLayerTests.mm */,
-				610DC6161A08322800BEEBFD /* VMKMeasureLayerTests.mm */,
 				610DC6191A08322800BEEBFD /* VMKTieLayerTests.mm */,
 				610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */,
-				000868761A6835D600BAA13D /* VMKWordsLayerTests.mm */,
 				61A81C811AAE4C7800E230A6 /* VMKTupletLayerTests.mm */,
+				000868761A6835D600BAA13D /* VMKWordsLayerTests.mm */,
 			);
 			path = MusicKitAppTests;
 			sourceTree = "<group>";
@@ -2117,6 +2157,8 @@
 		610DC5CC1A08322800BEEBFD /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				005DA5D91A7FEEE0003B41AC /* accidentals.xml */,
+				005DA5DA1A7FEEE0003B41AC /* accidentals2.xml */,
 				616C1C4A1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png */,
 				616C1C4B1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png */,
 				616C1C641A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png */,
@@ -2168,6 +2210,8 @@
 				616C1C1C1A0D81550020EAA8 /* ClefLayer-Treble.png */,
 				616C1C1E1A0D81550020EAA8 /* ClefLayer-Treble@2x.png */,
 				616C1C741A0D81550020EAA8 /* ClefLayer-Treble@3x.png */,
+				00FC792A1ACB580B00C4261F /* dont_forget_me.xml */,
+				005DA5DF1A7FEF09003B41AC /* endings.xml */,
 				000868AE1A6845B800BAA13D /* ImageLayer-Coda.png */,
 				000868AF1A6845B800BAA13D /* ImageLayer-Coda@2x.png */,
 				000868B01A6845B800BAA13D /* ImageLayer-Coda@3x.png */,
@@ -2216,6 +2260,7 @@
 				61E530C31A7ACF5400E5B2FF /* KeyLayer-GMajor.png */,
 				61E530C21A7ACF5400E5B2FF /* KeyLayer-GMajor@2x.png */,
 				61E530C11A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png */,
+				00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */,
 				616C1C5C1A0D81550020EAA8 /* MeasureLayer-Empty.png */,
 				616C1C5D1A0D81550020EAA8 /* MeasureLayer-Empty@2x.png */,
 				616C1C771A0D81550020EAA8 /* MeasureLayer-Empty@3x.png */,
@@ -2260,6 +2305,19 @@
 				00EFC3AA1AAF6558000C1D5B /* PageScoreLayout-Slurs.png */,
 				00EFC3AD1AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png */,
 				00EFC3AE1AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png */,
+				8CC362221AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop.png */,
+				8CC362231AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@2x.png */,
+				8CC362241AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@3x.png */,
+				8CC362251AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop.png */,
+				8CC362261AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@2x.png */,
+				8CC362271AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@3x.png */,
+				8CC362281AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop.png */,
+				8CC362291AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@2x.png */,
+				8CC3622A1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@3x.png */,
+				8CC3622B1AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop.png */,
+				8CC3622C1AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@2x.png */,
+				8CC3622D1AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@3x.png */,
+				617DC6B01ACA12A80019E841 /* prelude_and_fugue_4.xml */,
 				00A90B611A79907000D971B3 /* ScrollScoreLayout-Accidentals.png */,
 				00A90B621A79907000D971B3 /* ScrollScoreLayout-Accidentals@2x.png */,
 				00A90B631A79907000D971B3 /* ScrollScoreLayout-Accidentals@3x.png */,
@@ -2272,6 +2330,9 @@
 				616C1E211A1173300020EAA8 /* ScrollScoreLayout-Slurs.png */,
 				616C1E231A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png */,
 				616C1E2E1A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png */,
+				005DA5D61A7FEECE003B41AC /* slurs.xml */,
+				0005C0FE1A7C381500B60619 /* system_attributes.xml */,
+				001EAAF31A82CD4C0097AE0D /* system.xml */,
 				617DC6B41ACA15C20019E841 /* SystemLayer-CollidingWholeRests.png */,
 				617DC6B51ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png */,
 				617DC6B31ACA15C20019E841 /* SystemLayer-CollidingWholeRests@3x.png */,
@@ -2344,15 +2405,6 @@
 				0008687C1A683B5300BAA13D /* WordsLayer-Words.png */,
 				0008687D1A683B5300BAA13D /* WordsLayer-Words@2x.png */,
 				0008687E1A683B5300BAA13D /* WordsLayer-Words@3x.png */,
-				005DA5D91A7FEEE0003B41AC /* accidentals.xml */,
-				005DA5DA1A7FEEE0003B41AC /* accidentals2.xml */,
-				00FC792A1ACB580B00C4261F /* dont_forget_me.xml */,
-				005DA5DF1A7FEF09003B41AC /* endings.xml */,
-				00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */,
-				617DC6B01ACA12A80019E841 /* prelude_and_fugue_4.xml */,
-				005DA5D61A7FEECE003B41AC /* slurs.xml */,
-				0005C0FE1A7C381500B60619 /* system_attributes.xml */,
-				001EAAF31A82CD4C0097AE0D /* system.xml */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -3457,11 +3509,13 @@
 				61E531421A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@3x.png in Resources */,
 				000868B31A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */,
 				616C1CC21A0D81550020EAA8 /* ChordLayer-Quarter.png in Resources */,
+				8CC3623A1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop.png in Resources */,
 				61E5313E1A7ACF5400E5B2FF /* KeyLayer-AMajor@2x.png in Resources */,
 				616C1CA01A0D81550020EAA8 /* TieLayer-100Tie@2x.png in Resources */,
 				616C1CCA1A0D81550020EAA8 /* ChordLayer-DisplaceSideways.png in Resources */,
 				616C1E271A1173300020EAA8 /* ScrollScoreLayout-Endings@2x.png in Resources */,
 				61E5310E1A7ACF5400E5B2FF /* KeyLayer-EFlatMajor@2x.png in Resources */,
+				8CC362341AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop.png in Resources */,
 				61947F441A9E60C50032977B /* WordsLayer-DontCropSlanted@2x.png in Resources */,
 				6116216A1AA668F10051C869 /* MeasureLayer-StemDirections.png in Resources */,
 				616C1D101A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures@2x.png in Resources */,
@@ -3482,9 +3536,12 @@
 				001EAAEA1A82B7850097AE0D /* PageScoreLayout-AttributesFail.png in Resources */,
 				61E531041A7ACF5400E5B2FF /* KeyLayer-FMajor.png in Resources */,
 				001EAAF41A82CD4C0097AE0D /* system.xml in Resources */,
+				8CC362421AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@2x.png in Resources */,
 				00A90B691A79907000D971B3 /* ScrollScoreLayout-Accidentals@2x.png in Resources */,
 				61E5312C1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@2x.png in Resources */,
+				8CC362361AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@2x.png in Resources */,
 				616C1D2E1A0D81550020EAA8 /* ChordLayer-Eighth@3x.png in Resources */,
+				8CC362401AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop.png in Resources */,
 				610DC67C1A08330700BEEBFD /* Symbols.xcassets in Resources */,
 				8CF686C81AFB28AA00D112B8 /* OrnamentLayer-TrillBelow.png in Resources */,
 				616C1D0E1A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png in Resources */,
@@ -3495,10 +3552,12 @@
 				616C1D341A0D81550020EAA8 /* ChordLayer-Whole@3x.png in Resources */,
 				00A90B6B1A79907000D971B3 /* ScrollScoreLayout-Accidentals@3x.png in Resources */,
 				001EAAFB1A82D26D0097AE0D /* SystemLayer-System@2x.png in Resources */,
+				8CC362441AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@3x.png in Resources */,
 				611621901AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp.png in Resources */,
 				616C1D4E1A0D81550020EAA8 /* TieLayer-AngledDown@3x.png in Resources */,
 				616C1D441A0D81550020EAA8 /* TieLayer-18Tie@3x.png in Resources */,
 				616C1CA41A0D81550020EAA8 /* TieLayer-1000Tie@2x.png in Resources */,
+				8CC3623C1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@2x.png in Resources */,
 				001E81091A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png in Resources */,
 				61E531001A7ACF5400E5B2FF /* KeyLayer-FMajor@3x.png in Resources */,
 				002F98701A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png in Resources */,
@@ -3518,6 +3577,7 @@
 				8CF686A81AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort@3x.png in Resources */,
 				61E531401A7ACF5400E5B2FF /* KeyLayer-AMajor.png in Resources */,
 				00EFC3AB1AAF6558000C1D5B /* PageScoreLayout-Slurs.png in Resources */,
+				8CC362321AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@3x.png in Resources */,
 				616C1D421A0D81550020EAA8 /* MeasureLayer-WithTimeSignatures@3x.png in Resources */,
 				6118ADA61A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png in Resources */,
 				6116217B1AA7DF690051C869 /* TieLayer-SlurPlacementDown.png in Resources */,
@@ -3547,6 +3607,8 @@
 				61E5311A1A7ACF5400E5B2FF /* KeyLayer-DFlatMajor@2x.png in Resources */,
 				616C1CB21A0D81550020EAA8 /* TieLayer-AngledUpBelow.png in Resources */,
 				6118ADA01A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png in Resources */,
+				8CC362301AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@2x.png in Resources */,
+				8CC3623E1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@3x.png in Resources */,
 				61E5312A1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@3x.png in Resources */,
 				61E531021A7ACF5400E5B2FF /* KeyLayer-FMajor@2x.png in Resources */,
 				001EAAF91A82D26D0097AE0D /* SystemLayer-System.png in Resources */,
@@ -3555,6 +3617,7 @@
 				616C1CB01A0D81550020EAA8 /* TieLayer-AngledUp@2x.png in Resources */,
 				00FC792B1ACB580B00C4261F /* dont_forget_me.xml in Resources */,
 				616C1E2F1A117D0B0020EAA8 /* ScrollScoreLayout-Endings@3x.png in Resources */,
+				8CC362381AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@3x.png in Resources */,
 				61E531141A7ACF5400E5B2FF /* KeyLayer-DMajor@2x.png in Resources */,
 				616C1CFA1A0D81550020EAA8 /* BeamLayer-TwoBeams.png in Resources */,
 				00B36F581AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png in Resources */,
@@ -3622,6 +3685,7 @@
 				00A90B6D1A79907000D971B3 /* ScrollScoreLayout-Accidentals2.png in Resources */,
 				61E530F41A7ACF5400E5B2FF /* KeyLayer-GFlatMajor@3x.png in Resources */,
 				616C1C9A1A0D81550020EAA8 /* TieLayer-50TieBelow.png in Resources */,
+				8CC3622E1AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop.png in Resources */,
 				000868AA1A68456C00BAA13D /* ImageLayer-Segno@2x.png in Resources */,
 				611621961AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown.png in Resources */,
 				61947F471A9E632A0032977B /* WordsLayer-DontCropSlanted.png in Resources */,
@@ -3725,11 +3789,13 @@
 				000868B41A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */,
 				616C1DA51A0D97590020EAA8 /* BeamLayer-BackwardHook@3x.png in Resources */,
 				61E5313F1A7ACF5400E5B2FF /* KeyLayer-AMajor@2x.png in Resources */,
+				8CC3623B1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop.png in Resources */,
 				616C1DB21A0D97590020EAA8 /* BeamLayer-TwoBeams.png in Resources */,
 				616C1E281A1173300020EAA8 /* ScrollScoreLayout-Endings@2x.png in Resources */,
 				616C1DB61A0D97590020EAA8 /* ChordLayer-128th@2x.png in Resources */,
 				61E5310F1A7ACF5400E5B2FF /* KeyLayer-EFlatMajor@2x.png in Resources */,
 				616C1E011A0D97590020EAA8 /* TieLayer-AngledDownBelow.png in Resources */,
+				8CC362351AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop.png in Resources */,
 				61947F451A9E60C50032977B /* WordsLayer-DontCropSlanted@2x.png in Resources */,
 				6116216B1AA668F10051C869 /* MeasureLayer-StemDirections.png in Resources */,
 				616C1DE41A0D97590020EAA8 /* MeasureLayer-WithClefs@2x.png in Resources */,
@@ -3750,9 +3816,12 @@
 				001EAAEB1A82B7850097AE0D /* PageScoreLayout-AttributesFail.png in Resources */,
 				00A90B6A1A79907000D971B3 /* ScrollScoreLayout-Accidentals@2x.png in Resources */,
 				001EAAF51A82CD4C0097AE0D /* system.xml in Resources */,
+				8CC362431AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@2x.png in Resources */,
 				61E5312D1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@2x.png in Resources */,
 				616C1DE31A0D97590020EAA8 /* MeasureLayer-WithClefs.png in Resources */,
+				8CC362371AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@2x.png in Resources */,
 				616C1E0F1A0D97590020EAA8 /* TimeSignatureLayer-VerticalDigits@3x.png in Resources */,
+				8CC362411AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop.png in Resources */,
 				616C1DB11A0D97590020EAA8 /* BeamLayer-OneBeamThreeNotes@3x.png in Resources */,
 				8CF686C91AFB28AA00D112B8 /* OrnamentLayer-TrillBelow.png in Resources */,
 				616C1DCD1A0D97590020EAA8 /* ChordLayer-Whole.png in Resources */,
@@ -3763,10 +3832,12 @@
 				00A90B6C1A79907000D971B3 /* ScrollScoreLayout-Accidentals@3x.png in Resources */,
 				616C1DFE1A0D97590020EAA8 /* TieLayer-AngledDown.png in Resources */,
 				001EAAFC1A82D26D0097AE0D /* SystemLayer-System@2x.png in Resources */,
+				8CC362451AFD58B500F41DC0 /* PedalLayer-PedalSignStartStop@3x.png in Resources */,
 				611621911AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp.png in Resources */,
 				616C1DBB1A0D97590020EAA8 /* ChordLayer-Accidental.png in Resources */,
 				616C1DEC1A0D97590020EAA8 /* NoteLayer-Whole.png in Resources */,
 				61E531011A7ACF5400E5B2FF /* KeyLayer-FMajor@3x.png in Resources */,
+				8CC3623D1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@2x.png in Resources */,
 				001E810A1A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png in Resources */,
 				616C1E041A0D97590020EAA8 /* TieLayer-AngledUp.png in Resources */,
 				002F98711A9E5E6F0009A8F0 /* MeasureLayerFile-RepeatAccidentals@2x.png in Resources */,
@@ -3786,6 +3857,7 @@
 				8CF686A91AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort@3x.png in Resources */,
 				616C1DF01A0D97590020EAA8 /* TieLayer-18Tie@2x.png in Resources */,
 				00EFC3AC1AAF6558000C1D5B /* PageScoreLayout-Slurs.png in Resources */,
+				8CC362331AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@3x.png in Resources */,
 				616C1DC31A0D97590020EAA8 /* ChordLayer-Dot@3x.png in Resources */,
 				6118ADA71A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png in Resources */,
 				6116217C1AA7DF690051C869 /* TieLayer-SlurPlacementDown.png in Resources */,
@@ -3815,6 +3887,8 @@
 				616C1DCF1A0D97590020EAA8 /* ChordLayer-Whole@3x.png in Resources */,
 				61E5312B1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@3x.png in Resources */,
 				6118ADA11A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png in Resources */,
+				8CC362311AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop@2x.png in Resources */,
+				8CC3623F1AFD58B500F41DC0 /* PedalLayer-PedalSignContinueStop@3x.png in Resources */,
 				61E531031A7ACF5400E5B2FF /* KeyLayer-FMajor@2x.png in Resources */,
 				616C1DBE1A0D97590020EAA8 /* ChordLayer-DisplaceSideways.png in Resources */,
 				001EAAFA1A82D26D0097AE0D /* SystemLayer-System.png in Resources */,
@@ -3823,6 +3897,7 @@
 				616C1E0C1A0D97590020EAA8 /* TimeSignatureLayer-CommonTime@3x.png in Resources */,
 				00FC792C1ACB580B00C4261F /* dont_forget_me.xml in Resources */,
 				61E531151A7ACF5400E5B2FF /* KeyLayer-DMajor@2x.png in Resources */,
+				8CC362391AFD58B500F41DC0 /* PedalLayer-PedalLineStartStop@3x.png in Resources */,
 				616C1DF11A0D97590020EAA8 /* TieLayer-18Tie@3x.png in Resources */,
 				616C1DC81A0D97590020EAA8 /* ChordLayer-EighthDown@2x.png in Resources */,
 				00B36F591AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png in Resources */,
@@ -3890,6 +3965,7 @@
 				00A90B6E1A79907000D971B3 /* ScrollScoreLayout-Accidentals2.png in Resources */,
 				61E530F51A7ACF5400E5B2FF /* KeyLayer-GFlatMajor@3x.png in Resources */,
 				616C1DAE1A0D97590020EAA8 /* BeamLayer-OneBeam@3x.png in Resources */,
+				8CC3622F1AFD58B500F41DC0 /* PedalLayer-PedalLineContinueStop.png in Resources */,
 				000868AB1A68456C00BAA13D /* ImageLayer-Segno@2x.png in Resources */,
 				611621971AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown.png in Resources */,
 				61947F481A9E632A0032977B /* WordsLayer-DontCropSlanted.png in Resources */,
@@ -3963,6 +4039,7 @@
 				610DCE741A094A1700BEEBFD /* AIImageCompare.m in Sources */,
 				0005C1061A7C3C4900B60619 /* VMKPageScoreLayoutTests.mm in Sources */,
 				000868A31A68447300BAA13D /* VMKImageLayerTests.mm in Sources */,
+				8CC3621F1AFD233300F41DC0 /* VMKPedalLayerTests.mm in Sources */,
 				8CD1C9FD1AF9A83B005C2203 /* VMKOrnamentLayerTests.mm in Sources */,
 				610DC66A1A08322800BEEBFD /* VMKBeamLayerTests.mm in Sources */,
 				610DC66D1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm in Sources */,
@@ -4341,6 +4418,7 @@
 			files = (
 				002F986B1A9E59C60009A8F0 /* VMKFileScoreTestCase.mm in Sources */,
 				616C1E121A0D97700020EAA8 /* VMKClefLayerTests.mm in Sources */,
+				8CC362211AFD233800F41DC0 /* VMKOrnamentLayerTests.mm in Sources */,
 				616C1E171A0D97700020EAA8 /* VMKTimeSignatureLayerTests.mm in Sources */,
 				61149B5C1A83043800EB0C0F /* VMKKeyLayerTests.mm in Sources */,
 				616C1E131A0D97700020EAA8 /* VMKMeasureLayerTests.mm in Sources */,
@@ -4350,6 +4428,7 @@
 				616C1E141A0D97700020EAA8 /* VMKBeamLayerTests.mm in Sources */,
 				616C1E1E1A0D97BD0020EAA8 /* AIImageCompare.m in Sources */,
 				61A81C831AAE4C7800E230A6 /* VMKTupletLayerTests.mm in Sources */,
+				8CC362201AFD233300F41DC0 /* VMKPedalLayerTests.mm in Sources */,
 				616C1E181A0D97700020EAA8 /* VMKChordLayerTests.mm in Sources */,
 				000868781A6835D600BAA13D /* VMKWordsLayerTests.mm in Sources */,
 				616C1E111A0D97700020EAA8 /* VMKAdHocScoreTestCase.mm in Sources */,
