@@ -5,6 +5,7 @@
 *.pbxuser
 xcuserdata/
 *.xccheckout
+*.xcscmblueprint
 
 # build output
 build/
