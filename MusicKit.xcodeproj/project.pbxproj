@@ -922,6 +922,24 @@
 		61E531451A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530EC1A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@2x.png */; };
 		61E531461A7ACF5400E5B2FF /* KeyLayer-AFlatMajor.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530ED1A7ACF5400E5B2FF /* KeyLayer-AFlatMajor.png */; };
 		61E531471A7ACF5400E5B2FF /* KeyLayer-AFlatMajor.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530ED1A7ACF5400E5B2FF /* KeyLayer-AFlatMajor.png */; };
+		61E6D42F1CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D41D1CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong.png */; };
+		61E6D4301CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D41E1CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong@2x.png */; };
+		61E6D4311CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D41F1CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong@3x.png */; };
+		61E6D4321CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D4201CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash.png */; };
+		61E6D4331CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D4211CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash@2x.png */; };
+		61E6D4341CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D4221CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash@3x.png */; };
+		61E6D4351CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D4231CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash.png */; };
+		61E6D4361CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D4241CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash@2x.png */; };
+		61E6D4371CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D4251CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash@3x.png */; };
+		61E6D4381CE63F3F001AC7E7 /* OrnamentLayer-MordentLong.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D4261CE63F3F001AC7E7 /* OrnamentLayer-MordentLong.png */; };
+		61E6D4391CE63F3F001AC7E7 /* OrnamentLayer-MordentLong@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D4271CE63F3F001AC7E7 /* OrnamentLayer-MordentLong@2x.png */; };
+		61E6D43A1CE63F3F001AC7E7 /* OrnamentLayer-MordentLong@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D4281CE63F3F001AC7E7 /* OrnamentLayer-MordentLong@3x.png */; };
+		61E6D43B1CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D4291CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash.png */; };
+		61E6D43C1CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D42A1CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash@2x.png */; };
+		61E6D43D1CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D42B1CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash@3x.png */; };
+		61E6D43E1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D42C1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash.png */; };
+		61E6D43F1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D42D1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@2x.png */; };
+		61E6D4401CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D42E1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@3x.png */; };
 		61F074361A72DD8C002CA9CA /* VMKPageScoreDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074341A72DD8C002CA9CA /* VMKPageScoreDataSource.h */; };
 		61F074371A72DD8C002CA9CA /* VMKPageScoreDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074351A72DD8C002CA9CA /* VMKPageScoreDataSource.mm */; };
 		61F0743A1A72DDB9002CA9CA /* VMKPageScoreLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074381A72DDB9002CA9CA /* VMKPageScoreLayout.h */; };
@@ -1717,6 +1735,24 @@
 		61E530EB1A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyLayer-AFlatMajor@3x.png"; sourceTree = "<group>"; };
 		61E530EC1A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyLayer-AFlatMajor@2x.png"; sourceTree = "<group>"; };
 		61E530ED1A7ACF5400E5B2FF /* KeyLayer-AFlatMajor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyLayer-AFlatMajor.png"; sourceTree = "<group>"; };
+		61E6D41D1CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-InvertedMordentLong.png"; sourceTree = "<group>"; };
+		61E6D41E1CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-InvertedMordentLong@2x.png"; sourceTree = "<group>"; };
+		61E6D41F1CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-InvertedMordentLong@3x.png"; sourceTree = "<group>"; };
+		61E6D4201CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-InvertedTurnNoSlash.png"; sourceTree = "<group>"; };
+		61E6D4211CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-InvertedTurnNoSlash@2x.png"; sourceTree = "<group>"; };
+		61E6D4221CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-InvertedTurnNoSlash@3x.png"; sourceTree = "<group>"; };
+		61E6D4231CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-InvertedTurnSlash.png"; sourceTree = "<group>"; };
+		61E6D4241CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-InvertedTurnSlash@2x.png"; sourceTree = "<group>"; };
+		61E6D4251CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-InvertedTurnSlash@3x.png"; sourceTree = "<group>"; };
+		61E6D4261CE63F3F001AC7E7 /* OrnamentLayer-MordentLong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-MordentLong.png"; sourceTree = "<group>"; };
+		61E6D4271CE63F3F001AC7E7 /* OrnamentLayer-MordentLong@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-MordentLong@2x.png"; sourceTree = "<group>"; };
+		61E6D4281CE63F3F001AC7E7 /* OrnamentLayer-MordentLong@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-MordentLong@3x.png"; sourceTree = "<group>"; };
+		61E6D4291CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-TurnNoSlash.png"; sourceTree = "<group>"; };
+		61E6D42A1CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-TurnNoSlash@2x.png"; sourceTree = "<group>"; };
+		61E6D42B1CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-TurnNoSlash@3x.png"; sourceTree = "<group>"; };
+		61E6D42C1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-TurnSlash.png"; sourceTree = "<group>"; };
+		61E6D42D1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-TurnSlash@2x.png"; sourceTree = "<group>"; };
+		61E6D42E1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrnamentLayer-TurnSlash@3x.png"; sourceTree = "<group>"; };
 		61F074341A72DD8C002CA9CA /* VMKPageScoreDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKPageScoreDataSource.h; sourceTree = "<group>"; };
 		61F074351A72DD8C002CA9CA /* VMKPageScoreDataSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKPageScoreDataSource.mm; sourceTree = "<group>"; };
 		61F074381A72DDB9002CA9CA /* VMKPageScoreLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKPageScoreLayout.h; sourceTree = "<group>"; };
@@ -2233,6 +2269,8 @@
 		610DC5CC1A08322800BEEBFD /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				005DA5D91A7FEEE0003B41AC /* accidentals.xml */,
+				005DA5DA1A7FEEE0003B41AC /* accidentals2.xml */,
 				616C1C4A1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet.png */,
 				616C1C4B1A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@2x.png */,
 				616C1C641A0D81550020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png */,
@@ -2284,6 +2322,8 @@
 				616C1C1C1A0D81550020EAA8 /* ClefLayer-Treble.png */,
 				616C1C1E1A0D81550020EAA8 /* ClefLayer-Treble@2x.png */,
 				616C1C741A0D81550020EAA8 /* ClefLayer-Treble@3x.png */,
+				00FC792A1ACB580B00C4261F /* dont_forget_me.xml */,
+				005DA5DF1A7FEF09003B41AC /* endings.xml */,
 				000868AE1A6845B800BAA13D /* ImageLayer-Coda.png */,
 				000868AF1A6845B800BAA13D /* ImageLayer-Coda@2x.png */,
 				000868B01A6845B800BAA13D /* ImageLayer-Coda@3x.png */,
@@ -2332,6 +2372,7 @@
 				61E530C31A7ACF5400E5B2FF /* KeyLayer-GMajor.png */,
 				61E530C21A7ACF5400E5B2FF /* KeyLayer-GMajor@2x.png */,
 				61E530C11A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png */,
+				00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */,
 				616C1C5C1A0D81550020EAA8 /* MeasureLayer-Empty.png */,
 				616C1C5D1A0D81550020EAA8 /* MeasureLayer-Empty@2x.png */,
 				616C1C771A0D81550020EAA8 /* MeasureLayer-Empty@3x.png */,
@@ -2355,9 +2396,21 @@
 				002F98721A9E5EDE0009A8F0 /* MeasureLayerFile-RepeatAccidentals@3x.png */,
 				616C1C211A0D81550020EAA8 /* NoteLayer-Whole.png */,
 				616C1C201A0D81550020EAA8 /* NoteLayer-Whole@2x.png */,
+				61E6D41D1CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong.png */,
+				61E6D41E1CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong@2x.png */,
+				61E6D41F1CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong@3x.png */,
 				8CF686831AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort.png */,
 				8CF686841AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort@2x.png */,
 				8CF686851AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort@3x.png */,
+				61E6D4201CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash.png */,
+				61E6D4211CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash@2x.png */,
+				61E6D4221CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash@3x.png */,
+				61E6D4231CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash.png */,
+				61E6D4241CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash@2x.png */,
+				61E6D4251CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash@3x.png */,
+				61E6D4261CE63F3F001AC7E7 /* OrnamentLayer-MordentLong.png */,
+				61E6D4271CE63F3F001AC7E7 /* OrnamentLayer-MordentLong@2x.png */,
+				61E6D4281CE63F3F001AC7E7 /* OrnamentLayer-MordentLong@3x.png */,
 				8CF6868F1AFB28AA00D112B8 /* OrnamentLayer-MordentShort.png */,
 				8CF686901AFB28AA00D112B8 /* OrnamentLayer-MordentShort@2x.png */,
 				8CF686911AFB28AA00D112B8 /* OrnamentLayer-MordentShort@3x.png */,
@@ -2367,6 +2420,12 @@
 				8CF686951AFB28AA00D112B8 /* OrnamentLayer-TrillBelow.png */,
 				8CF686961AFB28AA00D112B8 /* OrnamentLayer-TrillBelow@2x.png */,
 				8CF686971AFB28AA00D112B8 /* OrnamentLayer-TrillBelow@3x.png */,
+				61E6D4291CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash.png */,
+				61E6D42A1CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash@2x.png */,
+				61E6D42B1CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash@3x.png */,
+				61E6D42C1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash.png */,
+				61E6D42D1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@2x.png */,
+				61E6D42E1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@3x.png */,
 				001E81051A7FF6AA00784D9D /* PageScoreLayout-Attributes.png */,
 				005DA5E21A7FEFD3003B41AC /* PageScoreLayout-Attributes@2x.png */,
 				001E81081A7FF6B100784D9D /* PageScoreLayout-Attributes@3x.png */,
@@ -2376,6 +2435,7 @@
 				00EFC3AA1AAF6558000C1D5B /* PageScoreLayout-Slurs.png */,
 				00EFC3AD1AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png */,
 				00EFC3AE1AAF68A9000C1D5B /* PageScoreLayout-Slurs@3x.png */,
+				617DC6B01ACA12A80019E841 /* prelude_and_fugue_4.xml */,
 				00A90B611A79907000D971B3 /* ScrollScoreLayout-Accidentals.png */,
 				00A90B621A79907000D971B3 /* ScrollScoreLayout-Accidentals@2x.png */,
 				00A90B631A79907000D971B3 /* ScrollScoreLayout-Accidentals@3x.png */,
@@ -2388,6 +2448,9 @@
 				616C1E211A1173300020EAA8 /* ScrollScoreLayout-Slurs.png */,
 				616C1E231A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png */,
 				616C1E2E1A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png */,
+				005DA5D61A7FEECE003B41AC /* slurs.xml */,
+				0005C0FE1A7C381500B60619 /* system_attributes.xml */,
+				001EAAF31A82CD4C0097AE0D /* system.xml */,
 				617DC6B41ACA15C20019E841 /* SystemLayer-CollidingWholeRests.png */,
 				617DC6B51ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png */,
 				617DC6B31ACA15C20019E841 /* SystemLayer-CollidingWholeRests@3x.png */,
@@ -2460,15 +2523,6 @@
 				0008687C1A683B5300BAA13D /* WordsLayer-Words.png */,
 				0008687D1A683B5300BAA13D /* WordsLayer-Words@2x.png */,
 				0008687E1A683B5300BAA13D /* WordsLayer-Words@3x.png */,
-				005DA5D91A7FEEE0003B41AC /* accidentals.xml */,
-				005DA5DA1A7FEEE0003B41AC /* accidentals2.xml */,
-				00FC792A1ACB580B00C4261F /* dont_forget_me.xml */,
-				005DA5DF1A7FEF09003B41AC /* endings.xml */,
-				00BF50C11A9BA1E900B18BCD /* kiss_the_rain.xml */,
-				617DC6B01ACA12A80019E841 /* prelude_and_fugue_4.xml */,
-				005DA5D61A7FEECE003B41AC /* slurs.xml */,
-				0005C0FE1A7C381500B60619 /* system_attributes.xml */,
-				001EAAF31A82CD4C0097AE0D /* system.xml */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -3072,13 +3126,16 @@
 				616C1CF61A0D81550020EAA8 /* BeamLayer-OneBeamThreeNotes.png in Resources */,
 				61E530EE1A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png in Resources */,
 				0008687F1A683B5300BAA13D /* WordsLayer-Dyanmics.png in Resources */,
+				61E6D4341CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash@3x.png in Resources */,
 				00EFC3AF1AAF68A9000C1D5B /* PageScoreLayout-Slurs@2x.png in Resources */,
 				61E530FA1A7ACF5400E5B2FF /* KeyLayer-FSharpMajor@3x.png in Resources */,
 				616C1CC41A0D81550020EAA8 /* ChordLayer-Quarter@2x.png in Resources */,
 				616C1C961A0D81550020EAA8 /* TieLayer-50Tie.png in Resources */,
 				8CF686A61AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort@2x.png in Resources */,
 				611621881AA8DA1E0051C869 /* TieLayer-SlurPlacementUp@3x.png in Resources */,
+				61E6D43B1CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash.png in Resources */,
 				616C1D221A0D81550020EAA8 /* BeamLayer-TwoBeams@3x.png in Resources */,
+				61E6D4331CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash@2x.png in Resources */,
 				8CF686A41AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort.png in Resources */,
 				616C1CFC1A0D81550020EAA8 /* BeamLayer-TwoBeams@2x.png in Resources */,
 				616C1CEC1A0D81550020EAA8 /* BeamLayer-ForwardHook@2x.png in Resources */,
@@ -3098,6 +3155,7 @@
 				00FC79341ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png in Resources */,
 				000868851A683B5300BAA13D /* WordsLayer-Words.png in Resources */,
 				616C1CD61A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits.png in Resources */,
+				61E6D4381CE63F3F001AC7E7 /* OrnamentLayer-MordentLong.png in Resources */,
 				616C1D4C1A0D81550020EAA8 /* TieLayer-1000Tie@3x.png in Resources */,
 				616C1CC01A0D81550020EAA8 /* ChordLayer-Accidental@2x.png in Resources */,
 				616C1E291A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png in Resources */,
@@ -3120,12 +3178,14 @@
 				61E5310C1A7ACF5400E5B2FF /* KeyLayer-EFlatMajor@3x.png in Resources */,
 				002F98761A9E5F540009A8F0 /* MeasureLayerFile-RepeatAccidentals.png in Resources */,
 				61A81CA31AAE59D800E230A6 /* TupletLayer-Tuplet@2x.png in Resources */,
+				61E6D4311CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong@3x.png in Resources */,
 				61E531421A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@3x.png in Resources */,
 				000868B31A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */,
 				616C1CC21A0D81550020EAA8 /* ChordLayer-Quarter.png in Resources */,
 				61E5313E1A7ACF5400E5B2FF /* KeyLayer-AMajor@2x.png in Resources */,
 				616C1CA01A0D81550020EAA8 /* TieLayer-100Tie@2x.png in Resources */,
 				616C1CCA1A0D81550020EAA8 /* ChordLayer-DisplaceSideways.png in Resources */,
+				61E6D4391CE63F3F001AC7E7 /* OrnamentLayer-MordentLong@2x.png in Resources */,
 				616C1E271A1173300020EAA8 /* ScrollScoreLayout-Endings@2x.png in Resources */,
 				61E5310E1A7ACF5400E5B2FF /* KeyLayer-EFlatMajor@2x.png in Resources */,
 				61947F441A9E60C50032977B /* WordsLayer-DontCropSlanted@2x.png in Resources */,
@@ -3156,6 +3216,7 @@
 				616C1D0E1A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png in Resources */,
 				616C1D061A0D81550020EAA8 /* MeasureLayer-Empty.png in Resources */,
 				6118ADA41A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop.png in Resources */,
+				61E6D4351CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash.png in Resources */,
 				61E530F61A7ACF5400E5B2FF /* KeyLayer-GFlatMajor@2x.png in Resources */,
 				616C1CC61A0D81550020EAA8 /* ChordLayer-128th.png in Resources */,
 				616C1D341A0D81550020EAA8 /* ChordLayer-Whole@3x.png in Resources */,
@@ -3181,6 +3242,7 @@
 				61E5311E1A7ACF5400E5B2FF /* KeyLayer-CSharpMajor@3x.png in Resources */,
 				616C1D0A1A0D81550020EAA8 /* MeasureLayer-WithClefs.png in Resources */,
 				616C1CE61A0D81550020EAA8 /* BeamLayer-BackwardHook.png in Resources */,
+				61E6D4361CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash@2x.png in Resources */,
 				8CF686A81AFB28AA00D112B8 /* OrnamentLayer-InvertedMordentShort@3x.png in Resources */,
 				61E531401A7ACF5400E5B2FF /* KeyLayer-AMajor.png in Resources */,
 				00EFC3AB1AAF6558000C1D5B /* PageScoreLayout-Slurs.png in Resources */,
@@ -3195,8 +3257,10 @@
 				616C1E311A117D0B0020EAA8 /* ScrollScoreLayout-Slurs@3x.png in Resources */,
 				616C1CB41A0D81550020EAA8 /* TieLayer-AngledUpBelow@2x.png in Resources */,
 				61E531061A7ACF5400E5B2FF /* KeyLayer-EMajor@3x.png in Resources */,
+				61E6D43F1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@2x.png in Resources */,
 				005DA5DB1A7FEEE0003B41AC /* accidentals.xml in Resources */,
 				616C1D501A0D81550020EAA8 /* TieLayer-AngledDownBelow@3x.png in Resources */,
+				61E6D43E1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash.png in Resources */,
 				61E5313C1A7ACF5400E5B2FF /* KeyLayer-AMajor@3x.png in Resources */,
 				6118ADA81A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png in Resources */,
 				616C1CD41A0D81550020EAA8 /* ChordLayer-Eighth@2x.png in Resources */,
@@ -3208,8 +3272,10 @@
 				611621981AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@2x.png in Resources */,
 				001EAAFD1A82D26D0097AE0D /* SystemLayer-System@3x.png in Resources */,
 				616C1CD81A0D81550020EAA8 /* TimeSignatureLayer-VerticalDigits@2x.png in Resources */,
+				61E6D4301CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong@2x.png in Resources */,
 				005DA5E01A7FEF09003B41AC /* endings.xml in Resources */,
 				616C1C941A0D81550020EAA8 /* TieLayer-18Tie@2x.png in Resources */,
+				61E6D43A1CE63F3F001AC7E7 /* OrnamentLayer-MordentLong@3x.png in Resources */,
 				61E5311A1A7ACF5400E5B2FF /* KeyLayer-DFlatMajor@2x.png in Resources */,
 				616C1CB21A0D81550020EAA8 /* TieLayer-AngledUpBelow.png in Resources */,
 				6118ADA01A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStart@2x.png in Resources */,
@@ -3224,6 +3290,7 @@
 				61E531141A7ACF5400E5B2FF /* KeyLayer-DMajor@2x.png in Resources */,
 				616C1CFA1A0D81550020EAA8 /* BeamLayer-TwoBeams.png in Resources */,
 				00B36F581AA925CD009368E1 /* MeasureLayer-StemExtensions@3x.png in Resources */,
+				61E6D42F1CE63F3F001AC7E7 /* OrnamentLayer-InvertedMordentLong.png in Resources */,
 				616C1C881A0D81550020EAA8 /* TimeSignatureLayer-CommonTime.png in Resources */,
 				617DC6B11ACA12A80019E841 /* prelude_and_fugue_4.xml in Resources */,
 				61E531441A7ACF5400E5B2FF /* KeyLayer-AFlatMajor@2x.png in Resources */,
@@ -3241,6 +3308,7 @@
 				8CF686BC1AFB28AA00D112B8 /* OrnamentLayer-MordentShort.png in Resources */,
 				616C1C8E1A0D81550020EAA8 /* NoteLayer-Whole@2x.png in Resources */,
 				6116216D1AA669760051C869 /* MeasureLayer-StemDirections@3x.png in Resources */,
+				61E6D43D1CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash@3x.png in Resources */,
 				00FC79321ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png in Resources */,
 				616C1CEA1A0D81550020EAA8 /* BeamLayer-ForwardHook.png in Resources */,
 				000868B51A6845B800BAA13D /* ImageLayer-Coda@3x.png in Resources */,
@@ -3248,6 +3316,7 @@
 				6116219A1AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown@3x.png in Resources */,
 				61E531321A7ACF5400E5B2FF /* KeyLayer-BMajor@2x.png in Resources */,
 				005DA5E31A7FEFD3003B41AC /* PageScoreLayout-Attributes@2x.png in Resources */,
+				61E6D4401CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@3x.png in Resources */,
 				61E530F81A7ACF5400E5B2FF /* KeyLayer-GFlatMajor.png in Resources */,
 				616C1CA61A0D81550020EAA8 /* TieLayer-AngledDown.png in Resources */,
 				002F98731A9E5EDE0009A8F0 /* MeasureLayerFile-RepeatAccidentals@3x.png in Resources */,
@@ -3278,6 +3347,7 @@
 				616C1D281A0D81550020EAA8 /* ChordLayer-Accidental@3x.png in Resources */,
 				616C1CAC1A0D81550020EAA8 /* TieLayer-AngledDownBelow@2x.png in Resources */,
 				611621921AA8E09D0051C869 /* TieLayer-SlurPlacementDownUp@2x.png in Resources */,
+				61E6D4371CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnSlash@3x.png in Resources */,
 				6116217F1AA7DF690051C869 /* TieLayer-SlurPlacementDown@3x.png in Resources */,
 				61E530F21A7ACF5400E5B2FF /* KeyLayer-GMajor.png in Resources */,
 				616C1CE81A0D81550020EAA8 /* BeamLayer-BackwardHook@2x.png in Resources */,
@@ -3288,12 +3358,14 @@
 				00A90B6D1A79907000D971B3 /* ScrollScoreLayout-Accidentals2.png in Resources */,
 				61E530F41A7ACF5400E5B2FF /* KeyLayer-GFlatMajor@3x.png in Resources */,
 				616C1C9A1A0D81550020EAA8 /* TieLayer-50TieBelow.png in Resources */,
+				61E6D4321CE63F3F001AC7E7 /* OrnamentLayer-InvertedTurnNoSlash.png in Resources */,
 				000868AA1A68456C00BAA13D /* ImageLayer-Segno@2x.png in Resources */,
 				611621961AA8E09D0051C869 /* TieLayer-SlurPlacementUpDown.png in Resources */,
 				61947F471A9E632A0032977B /* WordsLayer-DontCropSlanted.png in Resources */,
 				61E531081A7ACF5400E5B2FF /* KeyLayer-EMajor@2x.png in Resources */,
 				616C1C861A0D81550020EAA8 /* ClefLayer-Treble.png in Resources */,
 				000868811A683B5300BAA13D /* WordsLayer-Dyanmics@2x.png in Resources */,
+				61E6D43C1CE63F3F001AC7E7 /* OrnamentLayer-TurnNoSlash@2x.png in Resources */,
 				616C1CEE1A0D81550020EAA8 /* BeamLayer-FourBeams.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
