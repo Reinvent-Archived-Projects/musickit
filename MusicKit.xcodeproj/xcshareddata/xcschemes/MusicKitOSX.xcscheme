@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "616C1D911A0D97490020EAA8"
-               BuildableName = "MusicKitOSXAppTests.xctest"
-               BlueprintName = "MusicKitOSXAppTests"
+               BuildableName = "MusicKitTests-OSX.xctest"
+               BlueprintName = "MusicKitTests-OSX"
                ReferencedContainer = "container:MusicKit.xcodeproj">
             </BuildableReference>
          </TestableReference>

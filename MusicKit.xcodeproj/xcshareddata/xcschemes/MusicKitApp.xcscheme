@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "610DC5B81A0831DF00BEEBFD"
-               BuildableName = "MusicKitAppTests.xctest"
-               BlueprintName = "MusicKitAppTests"
+               BuildableName = "MusicKitTests-iOS.xctest"
+               BlueprintName = "MusicKitTests-iOS"
                ReferencedContainer = "container:MusicKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "610DC5B81A0831DF00BEEBFD"
-               BuildableName = "MusicKitAppTests.xctest"
-               BlueprintName = "MusicKitAppTests"
+               BuildableName = "MusicKitTests-iOS.xctest"
+               BlueprintName = "MusicKitTests-iOS"
                ReferencedContainer = "container:MusicKit.xcodeproj">
             </BuildableReference>
          </TestableReference>

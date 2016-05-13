@@ -413,8 +413,6 @@
 		610DC66F1A08322800BEEBFD /* VMKLayerTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61D1A08322800BEEBFD /* VMKLayerTestCase.mm */; };
 		610DC6731A08329A00BEEBFD /* MusicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61402B241A08251D003AE7A7 /* MusicKit.framework */; };
 		610DC67A1A0832E700BEEBFD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 610DC5981A082FF000BEEBFD /* libxml2.dylib */; };
-		610DC67B1A08330700BEEBFD /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61402C591A082661003AE7A7 /* Symbols.xcassets */; };
-		610DC67C1A08330700BEEBFD /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61402C591A082661003AE7A7 /* Symbols.xcassets */; };
 		610DC67E1A08342900BEEBFD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610DC67D1A08342900BEEBFD /* Media.xcassets */; };
 		610DCE741A094A1700BEEBFD /* AIImageCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD931A094A0E00BEEBFD /* AIImageCompare.m */; };
 		610DCEC41A094B4500BEEBFD /* DoubleHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD961A094A0E00BEEBFD /* DoubleHandler.cpp */; };
@@ -474,6 +472,11 @@
 		61402BA91A082562003AE7A7 /* VMKGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B6F1A082562003AE7A7 /* VMKGeometry.mm */; };
 		61402BAF1A082562003AE7A7 /* VMKImageStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B751A082562003AE7A7 /* VMKImageStore.h */; };
 		61402BB01A082562003AE7A7 /* VMKImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 61402B761A082562003AE7A7 /* VMKImageStore.m */; };
+		614CA7861CE64666009F1E20 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614CA7841CE64666009F1E20 /* Symbols.xcassets */; };
+		614CA7871CE64673009F1E20 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614CA7841CE64666009F1E20 /* Symbols.xcassets */; };
+		614CA7881CE64684009F1E20 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614CA7841CE64666009F1E20 /* Symbols.xcassets */; };
+		614CA7891CE64685009F1E20 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614CA7841CE64666009F1E20 /* Symbols.xcassets */; };
+		614CA78A1CE64685009F1E20 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614CA7841CE64666009F1E20 /* Symbols.xcassets */; };
 		616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */; };
 		616C1A8E1A0A970F0020EAA8 /* VMKChordLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */; };
 		616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */; };
@@ -767,8 +770,6 @@
 		616C1E141A0D97700020EAA8 /* VMKBeamLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC6171A08322800BEEBFD /* VMKBeamLayerTests.mm */; };
 		616C1E171A0D97700020EAA8 /* VMKTimeSignatureLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61A1A08322800BEEBFD /* VMKTimeSignatureLayerTests.mm */; };
 		616C1E181A0D97700020EAA8 /* VMKChordLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DC61B1A08322800BEEBFD /* VMKChordLayerTests.mm */; };
-		616C1E191A0D977E0020EAA8 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61402C591A082661003AE7A7 /* Symbols.xcassets */; };
-		616C1E1A1A0D977F0020EAA8 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61402C591A082661003AE7A7 /* Symbols.xcassets */; };
 		616C1E1B1A0D97940020EAA8 /* MusicKitOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616C1ACD1A0C055E0020EAA8 /* MusicKitOSX.framework */; };
 		616C1E1E1A0D97BD0020EAA8 /* AIImageCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD931A094A0E00BEEBFD /* AIImageCompare.m */; };
 		616C1E251A1173300020EAA8 /* ScrollScoreLayout-Slurs.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C1E211A1173300020EAA8 /* ScrollScoreLayout-Slurs.png */; };
@@ -795,7 +796,6 @@
 		618641521A09B0B900FAE9C9 /* VMKBarlineLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618641501A09B0B900FAE9C9 /* VMKBarlineLayer.mm */; };
 		618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */; };
 		618641561A09B23C00FAE9C9 /* VMKBeamLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618641541A09B23C00FAE9C9 /* VMKBeamLayer.mm */; };
-		618C6C4D1A13DCC8008314B2 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61402C591A082661003AE7A7 /* Symbols.xcassets */; };
 		618C6C4E1A13DCE4008314B2 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618C6BE01A119BFA008314B2 /* main.mm */; };
 		618C6C531A13DFC5008314B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618C6C521A13DFC5008314B2 /* QuartzCore.framework */; };
 		618C6C541A13DFD8008314B2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618C6BE81A119E71008314B2 /* AppKit.framework */; };
@@ -1420,7 +1420,7 @@
 		610DC5A81A0831DF00BEEBFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		610DC5AE1A0831DF00BEEBFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		610DC5B31A0831DF00BEEBFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		610DC5B91A0831DF00BEEBFD /* MusicKitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicKitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		610DC5B91A0831DF00BEEBFD /* MusicKitTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MusicKitTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		610DC5BE1A0831DF00BEEBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		610DC5CA1A08322800BEEBFD /* VMKAdHocScoreTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKAdHocScoreTestCase.h; sourceTree = "<group>"; };
 		610DC5CB1A08322800BEEBFD /* VMKAdHocScoreTestCase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKAdHocScoreTestCase.mm; sourceTree = "<group>"; };
@@ -1479,13 +1479,13 @@
 		6118AD9C1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStop@2x.png"; sourceTree = "<group>"; };
 		6118AD9D1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStop@3x.png"; sourceTree = "<group>"; };
 		61402B241A08251D003AE7A7 /* MusicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MusicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		61402B281A08251D003AE7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61402B291A08251D003AE7A7 /* MusicKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicKit.h; sourceTree = "<group>"; };
 		61402B6E1A082562003AE7A7 /* VMKGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKGeometry.h; sourceTree = "<group>"; };
 		61402B6F1A082562003AE7A7 /* VMKGeometry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKGeometry.mm; sourceTree = "<group>"; };
 		61402B751A082562003AE7A7 /* VMKImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKImageStore.h; sourceTree = "<group>"; };
 		61402B761A082562003AE7A7 /* VMKImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKImageStore.m; sourceTree = "<group>"; };
-		61402C591A082661003AE7A7 /* Symbols.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Symbols.xcassets; sourceTree = "<group>"; };
+		614CA7831CE64666009F1E20 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		614CA7841CE64666009F1E20 /* Symbols.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Symbols.xcassets; sourceTree = "<group>"; };
 		616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKChordLayer.h; sourceTree = "<group>"; };
 		616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKChordLayer.mm; sourceTree = "<group>"; };
 		616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKClefLayer.h; sourceTree = "<group>"; };
@@ -1650,8 +1650,7 @@
 		616C1D861A0D97490020EAA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		616C1D871A0D97490020EAA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		616C1D891A0D97490020EAA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		616C1D921A0D97490020EAA8 /* MusicKitOSXAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicKitOSXAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		616C1D971A0D97490020EAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		616C1D921A0D97490020EAA8 /* MusicKitTests-OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MusicKitTests-OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		616C1E211A1173300020EAA8 /* ScrollScoreLayout-Slurs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Slurs.png"; sourceTree = "<group>"; };
 		616C1E221A1173300020EAA8 /* ScrollScoreLayout-Endings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Endings@2x.png"; sourceTree = "<group>"; };
 		616C1E231A1173300020EAA8 /* ScrollScoreLayout-Slurs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollScoreLayout-Slurs@2x.png"; sourceTree = "<group>"; };
@@ -2229,10 +2228,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		610DC5BC1A0831DF00BEEBFD /* MusicKitAppTests */ = {
+		610DC5BC1A0831DF00BEEBFD /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				610DC5BD1A0831DF00BEEBFD /* Supporting Files */,
+				610DC5BE1A0831DF00BEEBFD /* Info.plist */,
 				610DC5CC1A08322800BEEBFD /* resources */,
 				610DC61C1A08322800BEEBFD /* VMKLayerTestCase.h */,
 				610DC61D1A08322800BEEBFD /* VMKLayerTestCase.mm */,
@@ -2255,15 +2254,7 @@
 				000868761A6835D600BAA13D /* VMKWordsLayerTests.mm */,
 				61A81C811AAE4C7800E230A6 /* VMKTupletLayerTests.mm */,
 			);
-			path = MusicKitAppTests;
-			sourceTree = "<group>";
-		};
-		610DC5BD1A0831DF00BEEBFD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				610DC5BE1A0831DF00BEEBFD /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		610DC5CC1A08322800BEEBFD /* resources */ = {
@@ -2530,10 +2521,6 @@
 		610DCD901A094A0E00BEEBFD /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				618C6C521A13DFC5008314B2 /* QuartzCore.framework */,
-				618C6BE81A119E71008314B2 /* AppKit.framework */,
-				616C1B4A1A0C0B800020EAA8 /* libxml2.dylib */,
-				610DC5981A082FF000BEEBFD /* libxml2.dylib */,
 				610DCD911A094A0E00BEEBFD /* AIImageCompare */,
 				610DCD941A094A0E00BEEBFD /* lxml */,
 				610AFEC21CE3B6AC002271A7 /* mxml */,
@@ -2633,14 +2620,14 @@
 		61402B1A1A08251D003AE7A7 = {
 			isa = PBXGroup;
 			children = (
-				610DCD901A094A0E00BEEBFD /* Libraries */,
-				61402B261A08251D003AE7A7 /* MusicKit */,
-				610DC5A21A0831DF00BEEBFD /* MusicKitApp */,
-				610DC5BC1A0831DF00BEEBFD /* MusicKitAppTests */,
-				616C1D7E1A0D97490020EAA8 /* MusicKitOSXApp */,
-				616C1D951A0D97490020EAA8 /* MusicKitOSXAppTests */,
+				61402B261A08251D003AE7A7 /* Sources */,
+				614CA7821CE64666009F1E20 /* Resources */,
+				610DC5BC1A0831DF00BEEBFD /* Tests */,
 				618C6C2E1A13DC76008314B2 /* PreviewGenerator */,
+				610DC5A21A0831DF00BEEBFD /* MusicKitApp */,
+				616C1D7E1A0D97490020EAA8 /* MusicKitOSXApp */,
 				61402B251A08251D003AE7A7 /* Products */,
+				610DCD901A094A0E00BEEBFD /* Libraries */,
 				7BCBC8F925895208AAAC5413 /* Frameworks */,
 				F24CAE47E09589653660E64B /* Pods */,
 			);
@@ -2651,16 +2638,16 @@
 			children = (
 				61402B241A08251D003AE7A7 /* MusicKit.framework */,
 				610DC5A11A0831DF00BEEBFD /* MusicKitApp.app */,
-				610DC5B91A0831DF00BEEBFD /* MusicKitAppTests.xctest */,
+				610DC5B91A0831DF00BEEBFD /* MusicKitTests-iOS.xctest */,
 				616C1ACD1A0C055E0020EAA8 /* MusicKitOSX.framework */,
 				616C1D7D1A0D97490020EAA8 /* MusicKitOSXApp.app */,
-				616C1D921A0D97490020EAA8 /* MusicKitOSXAppTests.xctest */,
+				616C1D921A0D97490020EAA8 /* MusicKitTests-OSX.xctest */,
 				618C6C2D1A13DC76008314B2 /* PreviewGenerator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		61402B261A08251D003AE7A7 /* MusicKit */ = {
+		61402B261A08251D003AE7A7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				61402B291A08251D003AE7A7 /* MusicKit.h */,
@@ -2672,19 +2659,18 @@
 				61402B751A082562003AE7A7 /* VMKImageStore.h */,
 				61402B761A082562003AE7A7 /* VMKImageStore.m */,
 				610DCF571A099C0900BEEBFD /* Layers */,
-				61402B271A08251D003AE7A7 /* Supporting Files */,
 				616C1B521A0C0E310020EAA8 /* UIKit */,
-				61402C591A082661003AE7A7 /* Symbols.xcassets */,
 			);
-			path = MusicKit;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		61402B271A08251D003AE7A7 /* Supporting Files */ = {
+		614CA7821CE64666009F1E20 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				61402B281A08251D003AE7A7 /* Info.plist */,
+				614CA7831CE64666009F1E20 /* Info.plist */,
+				614CA7841CE64666009F1E20 /* Symbols.xcassets */,
 			);
-			name = "Supporting Files";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		616C1B521A0C0E310020EAA8 /* UIKit */ = {
@@ -2755,22 +2741,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		616C1D951A0D97490020EAA8 /* MusicKitOSXAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				616C1D961A0D97490020EAA8 /* Supporting Files */,
-			);
-			path = MusicKitOSXAppTests;
-			sourceTree = "<group>";
-		};
-		616C1D961A0D97490020EAA8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				616C1D971A0D97490020EAA8 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		618C6C2E1A13DC76008314B2 /* PreviewGenerator */ = {
 			isa = PBXGroup;
 			children = (
@@ -2787,6 +2757,10 @@
 		7BCBC8F925895208AAAC5413 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				618C6C521A13DFC5008314B2 /* QuartzCore.framework */,
+				618C6BE81A119E71008314B2 /* AppKit.framework */,
+				616C1B4A1A0C0B800020EAA8 /* libxml2.dylib */,
+				610DC5981A082FF000BEEBFD /* libxml2.dylib */,
 				0054E8F61A72D7C8007FBC3E /* libPods-PreviewGenerator.a */,
 				04978BB939C5B560ED000B1B /* libPods-PreviewGenerator.a */,
 			);
@@ -2923,9 +2897,9 @@
 			productReference = 610DC5A11A0831DF00BEEBFD /* MusicKitApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		610DC5B81A0831DF00BEEBFD /* MusicKitAppTests */ = {
+		610DC5B81A0831DF00BEEBFD /* MusicKitTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 610DC5C41A0831DF00BEEBFD /* Build configuration list for PBXNativeTarget "MusicKitAppTests" */;
+			buildConfigurationList = 610DC5C41A0831DF00BEEBFD /* Build configuration list for PBXNativeTarget "MusicKitTests-iOS" */;
 			buildPhases = (
 				610DC5B51A0831DF00BEEBFD /* Sources */,
 				610DC5B61A0831DF00BEEBFD /* Frameworks */,
@@ -2937,9 +2911,9 @@
 				610DC6781A0832D500BEEBFD /* PBXTargetDependency */,
 				610DC5BB1A0831DF00BEEBFD /* PBXTargetDependency */,
 			);
-			name = MusicKitAppTests;
+			name = "MusicKitTests-iOS";
 			productName = MusicKitAppTests;
-			productReference = 610DC5B91A0831DF00BEEBFD /* MusicKitAppTests.xctest */;
+			productReference = 610DC5B91A0831DF00BEEBFD /* MusicKitTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		61402B231A08251D003AE7A7 /* MusicKit */ = {
@@ -2995,9 +2969,9 @@
 			productReference = 616C1D7D1A0D97490020EAA8 /* MusicKitOSXApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		616C1D911A0D97490020EAA8 /* MusicKitOSXAppTests */ = {
+		616C1D911A0D97490020EAA8 /* MusicKitTests-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 616C1D9D1A0D97490020EAA8 /* Build configuration list for PBXNativeTarget "MusicKitOSXAppTests" */;
+			buildConfigurationList = 616C1D9D1A0D97490020EAA8 /* Build configuration list for PBXNativeTarget "MusicKitTests-OSX" */;
 			buildPhases = (
 				616C1D8E1A0D97490020EAA8 /* Sources */,
 				616C1D8F1A0D97490020EAA8 /* Frameworks */,
@@ -3009,9 +2983,9 @@
 				616C1E1D1A0D979C0020EAA8 /* PBXTargetDependency */,
 				616C1D941A0D97490020EAA8 /* PBXTargetDependency */,
 			);
-			name = MusicKitOSXAppTests;
+			name = "MusicKitTests-OSX";
 			productName = MusicKitOSXAppTests;
-			productReference = 616C1D921A0D97490020EAA8 /* MusicKitOSXAppTests.xctest */;
+			productReference = 616C1D921A0D97490020EAA8 /* MusicKitTests-OSX.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		618C6C2C1A13DC76008314B2 /* PreviewGenerator */ = {
@@ -3087,10 +3061,10 @@
 			targets = (
 				61402B231A08251D003AE7A7 /* MusicKit */,
 				610DC5A01A0831DF00BEEBFD /* MusicKitApp */,
-				610DC5B81A0831DF00BEEBFD /* MusicKitAppTests */,
+				610DC5B81A0831DF00BEEBFD /* MusicKitTests-iOS */,
 				616C1ACC1A0C055E0020EAA8 /* MusicKitOSX */,
 				616C1D7C1A0D97490020EAA8 /* MusicKitOSXApp */,
-				616C1D911A0D97490020EAA8 /* MusicKitOSXAppTests */,
+				616C1D911A0D97490020EAA8 /* MusicKitTests-OSX */,
 				618C6C2C1A13DC76008314B2 /* PreviewGenerator */,
 			);
 		};
@@ -3102,7 +3076,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				610DC5AF1A0831DF00BEEBFD /* Main.storyboard in Resources */,
-				610DC67B1A08330700BEEBFD /* Symbols.xcassets in Resources */,
 				610DC67E1A08342900BEEBFD /* Media.xcassets in Resources */,
 				610DC5B41A0831DF00BEEBFD /* LaunchScreen.xib in Resources */,
 			);
@@ -3209,9 +3182,9 @@
 				61E531041A7ACF5400E5B2FF /* KeyLayer-FMajor.png in Resources */,
 				001EAAF41A82CD4C0097AE0D /* system.xml in Resources */,
 				00A90B691A79907000D971B3 /* ScrollScoreLayout-Accidentals@2x.png in Resources */,
+				614CA7881CE64684009F1E20 /* Symbols.xcassets in Resources */,
 				61E5312C1A7ACF5400E5B2FF /* KeyLayer-CFlatMajor@2x.png in Resources */,
 				616C1D2E1A0D81550020EAA8 /* ChordLayer-Eighth@3x.png in Resources */,
-				610DC67C1A08330700BEEBFD /* Symbols.xcassets in Resources */,
 				8CF686C81AFB28AA00D112B8 /* OrnamentLayer-TrillBelow.png in Resources */,
 				616C1D0E1A0D81550020EAA8 /* MeasureLayer-WithClefsAndTimeSignatures.png in Resources */,
 				616C1D061A0D81550020EAA8 /* MeasureLayer-Empty.png in Resources */,
@@ -3374,6 +3347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614CA7861CE64666009F1E20 /* Symbols.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3381,6 +3355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614CA7871CE64673009F1E20 /* Symbols.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3389,7 +3364,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				616C1D8A1A0D97490020EAA8 /* Images.xcassets in Resources */,
-				616C1E191A0D977E0020EAA8 /* Symbols.xcassets in Resources */,
 				61D667B01A40C7D40044A00B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3570,6 +3544,7 @@
 				000868841A683B5300BAA13D /* WordsLayer-Dyanmics@3x.png in Resources */,
 				616C1DA41A0D97590020EAA8 /* BeamLayer-BackwardHook@2x.png in Resources */,
 				616C1DFF1A0D97590020EAA8 /* TieLayer-AngledDown@2x.png in Resources */,
+				614CA7891CE64685009F1E20 /* Symbols.xcassets in Resources */,
 				616C1E0B1A0D97590020EAA8 /* TimeSignatureLayer-CommonTime@2x.png in Resources */,
 				616C1DC51A0D97590020EAA8 /* ChordLayer-Eighth@2x.png in Resources */,
 				616C1DCA1A0D97590020EAA8 /* ChordLayer-Quarter.png in Resources */,
@@ -3601,7 +3576,6 @@
 				000868881A683B5300BAA13D /* WordsLayer-Words@2x.png in Resources */,
 				616C1DF61A0D97590020EAA8 /* TieLayer-50TieBelow@2x.png in Resources */,
 				616C1DED1A0D97590020EAA8 /* NoteLayer-Whole@2x.png in Resources */,
-				616C1E1A1A0D977F0020EAA8 /* Symbols.xcassets in Resources */,
 				616C1DEA1A0D97590020EAA8 /* MeasureLayer-WithTimeSignatures@2x.png in Resources */,
 				616C1DA21A0D97590020EAA8 /* BeamLayer-AccidentalInBeamedSet@3x.png in Resources */,
 				611621681AA6681B0051C869 /* MeasureLayer-StemDirections@2x.png in Resources */,
@@ -3643,7 +3617,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A3E46A1A2E57BF00B2A6C8 /* Images.xcassets in Resources */,
-				618C6C4D1A13DCC8008314B2 /* Symbols.xcassets in Resources */,
+				614CA78A1CE64685009F1E20 /* Symbols.xcassets in Resources */,
 				61D667B21A40C8390044A00B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4214,11 +4188,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MusicKitAppTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.venturemedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4234,7 +4204,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MusicKitAppTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.venturemedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4348,7 +4318,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MusicKit/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.venturemedia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -4367,7 +4337,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MusicKit/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.venturemedia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -4391,7 +4361,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MusicKit/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -4414,7 +4384,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = MusicKit/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -4472,11 +4442,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MusicKitOSXAppTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.venturemedia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -4497,7 +4463,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MusicKitOSXAppTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.venturemedia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -4578,7 +4544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		610DC5C41A0831DF00BEEBFD /* Build configuration list for PBXNativeTarget "MusicKitAppTests" */ = {
+		610DC5C41A0831DF00BEEBFD /* Build configuration list for PBXNativeTarget "MusicKitTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				610DC5C51A0831DF00BEEBFD /* Debug */,
@@ -4623,7 +4589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		616C1D9D1A0D97490020EAA8 /* Build configuration list for PBXNativeTarget "MusicKitOSXAppTests" */ = {
+		616C1D9D1A0D97490020EAA8 /* Build configuration list for PBXNativeTarget "MusicKitTests-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				616C1D9E1A0D97490020EAA8 /* Debug */,
