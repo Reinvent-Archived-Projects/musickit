@@ -1,10 +1,8 @@
+// Copyright © 2016 Venture Media Labs.
 //
-//  main.m
-//  MusicKitOSXApp
-//
-//  Created by Alejandro Isaza on 2014-11-07.
-//  Copyright (c) 2014 Venture Media Labs. All rights reserved.
-//
+// This file is part of MusicKit. The full MusicKit copyright notice, including
+// terms governing use, modification, and redistribution, is contained in the
+// file LICENSE at the root of the source code distribution tree.
 
 #import <Cocoa/Cocoa.h>
 
