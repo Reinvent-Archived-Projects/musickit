@@ -63,7 +63,7 @@ CG_EXTERN VMKImage* VMKRenderImage(CGSize size, void (^block)(CGContextRef))   {
     CGFloat closestWidth = smallestSize.width;
     NSImageRep* closestRep;
     for (NSImageRep* rep in self.representations) {
-        if (!closestRep || abs(rep.pixelsWide - targetSize.width) < abs(rep.pixelsWide - closestWidth)) {
+        if (!closestRep || std::abs(rep.pixelsWide - targetSize.width) < std::abs(rep.pixelsWide - closestWidth)) {
             closestWidth = rep.pixelsWide;
             closestRep = rep;
         }
