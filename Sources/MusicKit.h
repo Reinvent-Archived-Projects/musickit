@@ -18,41 +18,41 @@ FOUNDATION_EXPORT const unsigned char MusicKitVersionString[];
 #import <MusicKit/VMKImage.h>
 #import <MusicKit/VMKImageStore.h>
 
-#import <MusicKit/Layers/VMKAccidentalLayer.h>
-#import <MusicKit/Layers/VMKBarlineLayer.h>
-#import <MusicKit/Layers/VMKBeamLayer.h>
-#import <MusicKit/Layers/VMKBraceLayer.h>
-#import <MusicKit/Layers/VMKChordLayer.h>
-#import <MusicKit/Layers/VMKClefLayer.h>
-#import <MusicKit/Layers/VMKEndingLayer.h>
-#import <MusicKit/Layers/VMKKeyLayer.h>
-#import <MusicKit/Layers/VMKLyricLayer.h>
-#import <MusicKit/Layers/VMKMeasureLayer.h>
-#import <MusicKit/Layers/VMKNoteHeadLayer.h>
-#import <MusicKit/Layers/VMKNoteStemLayer.h>
-#import <MusicKit/Layers/VMKOrnamentLayer.h>
-#import <MusicKit/Layers/VMKPedalLayer.h>
-#import <MusicKit/Layers/VMKRestLayer.h>
-#import <MusicKit/Layers/VMKScoreElementImageLayer.h>
-#import <MusicKit/Layers/VMKScoreElementLayer.h>
-#import <MusicKit/Layers/VMKTieLayer.h>
-#import <MusicKit/Layers/VMKTimeSignatureLayer.h>
-#import <MusicKit/Layers/VMKWedgeLayer.h>
-#import <MusicKit/Layers/VMKWordsLayer.h>
+#import <MusicKit/VMKAccidentalLayer.h>
+#import <MusicKit/VMKBarlineLayer.h>
+#import <MusicKit/VMKBeamLayer.h>
+#import <MusicKit/VMKBraceLayer.h>
+#import <MusicKit/VMKChordLayer.h>
+#import <MusicKit/VMKClefLayer.h>
+#import <MusicKit/VMKEndingLayer.h>
+#import <MusicKit/VMKKeyLayer.h>
+#import <MusicKit/VMKLyricLayer.h>
+#import <MusicKit/VMKMeasureLayer.h>
+#import <MusicKit/VMKNoteHeadLayer.h>
+#import <MusicKit/VMKNoteStemLayer.h>
+#import <MusicKit/VMKOrnamentLayer.h>
+#import <MusicKit/VMKPedalLayer.h>
+#import <MusicKit/VMKRestLayer.h>
+#import <MusicKit/VMKScoreElementImageLayer.h>
+#import <MusicKit/VMKScoreElementLayer.h>
+#import <MusicKit/VMKTieLayer.h>
+#import <MusicKit/VMKTimeSignatureLayer.h>
+#import <MusicKit/VMKWedgeLayer.h>
+#import <MusicKit/VMKWordsLayer.h>
 
 #import "TargetConditionals.h"
 #if TARGET_OS_IPHONE
     #import <UIKit/UIKit.h>
 
-    #import <MusicKit/UIKit/NSIndexPath+VMKScoreAdditions.h>
-    #import <MusicKit/UIKit/VMKAttributesView.h>
-    #import <MusicKit/UIKit/VMKCursorView.h>
-    #import <MusicKit/UIKit/VMKMeasureView.h>
-    #import <MusicKit/UIKit/VMKScoreElementContainerView.h>
-    #import <MusicKit/UIKit/VMKScrollScoreLayout.h>
-    #import <MusicKit/UIKit/VMKScrollScoreDataSource.h>
-    #import <MusicKit/UIKit/VMKPageScoreLayout.h>
-    #import <MusicKit/UIKit/VMKPageScoreDataSource.h>
+    #import <MusicKit/NSIndexPath+VMKScoreAdditions.h>
+    #import <MusicKit/VMKAttributesView.h>
+    #import <MusicKit/VMKCursorView.h>
+    #import <MusicKit/VMKMeasureView.h>
+    #import <MusicKit/VMKScoreElementContainerView.h>
+    #import <MusicKit/VMKScrollScoreLayout.h>
+    #import <MusicKit/VMKScrollScoreDataSource.h>
+    #import <MusicKit/VMKPageScoreLayout.h>
+    #import <MusicKit/VMKPageScoreDataSource.h>
 #else
     #import <AppKit/AppKit.h>
 #endif

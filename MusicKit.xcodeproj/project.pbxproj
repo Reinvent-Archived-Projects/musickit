@@ -10,12 +10,11 @@
 		0005C0FF1A7C381500B60619 /* system_attributes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0005C0FE1A7C381500B60619 /* system_attributes.xml */; };
 		0005C1001A7C381500B60619 /* system_attributes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0005C0FE1A7C381500B60619 /* system_attributes.xml */; };
 		0005C1061A7C3C4900B60619 /* VMKPageScoreLayoutTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0005C1051A7C3C4900B60619 /* VMKPageScoreLayoutTests.mm */; };
-		0008686A1A68344500BAA13D /* VMKWordsLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 000868681A68344500BAA13D /* VMKWordsLayer.h */; };
-		0008686B1A68344500BAA13D /* VMKWordsLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 000868681A68344500BAA13D /* VMKWordsLayer.h */; };
+		0008686A1A68344500BAA13D /* VMKWordsLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 000868681A68344500BAA13D /* VMKWordsLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0008686B1A68344500BAA13D /* VMKWordsLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 000868681A68344500BAA13D /* VMKWordsLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0008686C1A68344500BAA13D /* VMKWordsLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000868691A68344500BAA13D /* VMKWordsLayer.mm */; };
 		0008686D1A68344500BAA13D /* VMKWordsLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000868691A68344500BAA13D /* VMKWordsLayer.mm */; };
-		000868711A68346400BAA13D /* VMKImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0008686F1A68346400BAA13D /* VMKImageView.h */; };
-		000868721A68346400BAA13D /* VMKImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0008686F1A68346400BAA13D /* VMKImageView.h */; };
+		000868711A68346400BAA13D /* VMKImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0008686F1A68346400BAA13D /* VMKImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		000868731A68346400BAA13D /* VMKImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000868701A68346400BAA13D /* VMKImageView.mm */; };
 		000868771A6835D600BAA13D /* VMKWordsLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000868761A6835D600BAA13D /* VMKWordsLayerTests.mm */; };
 		000868781A6835D600BAA13D /* VMKWordsLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000868761A6835D600BAA13D /* VMKWordsLayerTests.mm */; };
@@ -45,8 +44,7 @@
 		000868B41A6845B800BAA13D /* ImageLayer-Coda@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868AF1A6845B800BAA13D /* ImageLayer-Coda@2x.png */; };
 		000868B51A6845B800BAA13D /* ImageLayer-Coda@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868B01A6845B800BAA13D /* ImageLayer-Coda@3x.png */; };
 		000868B61A6845B800BAA13D /* ImageLayer-Coda@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000868B01A6845B800BAA13D /* ImageLayer-Coda@3x.png */; };
-		00094F0E1A6748710053C615 /* VMKWordsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00094F0C1A6748710053C615 /* VMKWordsView.h */; };
-		00094F0F1A6748710053C615 /* VMKWordsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00094F0C1A6748710053C615 /* VMKWordsView.h */; };
+		00094F0E1A6748710053C615 /* VMKWordsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00094F0C1A6748710053C615 /* VMKWordsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00094F101A6748710053C615 /* VMKWordsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00094F0D1A6748710053C615 /* VMKWordsView.mm */; };
 		001E81061A7FF6AA00784D9D /* PageScoreLayout-Attributes.png in Resources */ = {isa = PBXBuildFile; fileRef = 001E81051A7FF6AA00784D9D /* PageScoreLayout-Attributes.png */; };
 		001E81071A7FF6AA00784D9D /* PageScoreLayout-Attributes.png in Resources */ = {isa = PBXBuildFile; fileRef = 001E81051A7FF6AA00784D9D /* PageScoreLayout-Attributes.png */; };
@@ -160,53 +158,53 @@
 		610A007A1CE3B6AC002271A7 /* StemDirectionResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF451CE3B6AC002271A7 /* StemDirectionResolver.cpp */; };
 		610A007C1CE3B6AC002271A7 /* TieGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF471CE3B6AC002271A7 /* TieGeometryFactory.cpp */; };
 		610A007E1CE3B6AC002271A7 /* FermataGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF491CE3B6AC002271A7 /* FermataGeometry.cpp */; };
-		610A007F1CE3B6AC002271A7 /* FermataGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF4A1CE3B6AC002271A7 /* FermataGeometry.h */; };
+		610A007F1CE3B6AC002271A7 /* FermataGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF4A1CE3B6AC002271A7 /* FermataGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00801CE3B6AC002271A7 /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF4B1CE3B6AC002271A7 /* Geometry.cpp */; };
-		610A00811CE3B6AC002271A7 /* Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF4C1CE3B6AC002271A7 /* Geometry.h */; };
+		610A00811CE3B6AC002271A7 /* Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF4C1CE3B6AC002271A7 /* Geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00821CE3B6AC002271A7 /* KeyGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF4D1CE3B6AC002271A7 /* KeyGeometry.cpp */; };
-		610A00831CE3B6AC002271A7 /* KeyGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF4E1CE3B6AC002271A7 /* KeyGeometry.h */; };
-		610A00841CE3B6AC002271A7 /* LineSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF4F1CE3B6AC002271A7 /* LineSegment.h */; };
+		610A00831CE3B6AC002271A7 /* KeyGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF4E1CE3B6AC002271A7 /* KeyGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		610A00841CE3B6AC002271A7 /* LineSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF4F1CE3B6AC002271A7 /* LineSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00851CE3B6AC002271A7 /* LyricGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF501CE3B6AC002271A7 /* LyricGeometry.cpp */; };
-		610A00861CE3B6AC002271A7 /* LyricGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF511CE3B6AC002271A7 /* LyricGeometry.h */; };
-		610A00871CE3B6AC002271A7 /* MeasureElementGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF521CE3B6AC002271A7 /* MeasureElementGeometry.h */; };
+		610A00861CE3B6AC002271A7 /* LyricGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF511CE3B6AC002271A7 /* LyricGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		610A00871CE3B6AC002271A7 /* MeasureElementGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF521CE3B6AC002271A7 /* MeasureElementGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00881CE3B6AC002271A7 /* MeasureGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF531CE3B6AC002271A7 /* MeasureGeometry.cpp */; };
-		610A00891CE3B6AC002271A7 /* MeasureGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF541CE3B6AC002271A7 /* MeasureGeometry.h */; };
+		610A00891CE3B6AC002271A7 /* MeasureGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF541CE3B6AC002271A7 /* MeasureGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A008A1CE3B6AC002271A7 /* NoteGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF551CE3B6AC002271A7 /* NoteGeometry.cpp */; };
-		610A008B1CE3B6AC002271A7 /* NoteGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF561CE3B6AC002271A7 /* NoteGeometry.h */; };
+		610A008B1CE3B6AC002271A7 /* NoteGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF561CE3B6AC002271A7 /* NoteGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A008C1CE3B6AC002271A7 /* OctaveShiftGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF571CE3B6AC002271A7 /* OctaveShiftGeometry.cpp */; };
-		610A008D1CE3B6AC002271A7 /* OctaveShiftGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF581CE3B6AC002271A7 /* OctaveShiftGeometry.h */; };
+		610A008D1CE3B6AC002271A7 /* OctaveShiftGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF581CE3B6AC002271A7 /* OctaveShiftGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A008E1CE3B6AC002271A7 /* OrnamentsGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF591CE3B6AC002271A7 /* OrnamentsGeometry.cpp */; };
-		610A008F1CE3B6AC002271A7 /* OrnamentsGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF5A1CE3B6AC002271A7 /* OrnamentsGeometry.h */; };
+		610A008F1CE3B6AC002271A7 /* OrnamentsGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF5A1CE3B6AC002271A7 /* OrnamentsGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00901CE3B6AC002271A7 /* PageScoreGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF5B1CE3B6AC002271A7 /* PageScoreGeometry.cpp */; };
-		610A00911CE3B6AC002271A7 /* PageScoreGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF5C1CE3B6AC002271A7 /* PageScoreGeometry.h */; };
+		610A00911CE3B6AC002271A7 /* PageScoreGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF5C1CE3B6AC002271A7 /* PageScoreGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00921CE3B6AC002271A7 /* PartGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF5D1CE3B6AC002271A7 /* PartGeometry.cpp */; };
-		610A00931CE3B6AC002271A7 /* PartGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF5E1CE3B6AC002271A7 /* PartGeometry.h */; };
+		610A00931CE3B6AC002271A7 /* PartGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF5E1CE3B6AC002271A7 /* PartGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00941CE3B6AC002271A7 /* PedalGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF5F1CE3B6AC002271A7 /* PedalGeometry.cpp */; };
-		610A00951CE3B6AC002271A7 /* PedalGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF601CE3B6AC002271A7 /* PedalGeometry.h */; };
-		610A00961CE3B6AC002271A7 /* PlacementGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF611CE3B6AC002271A7 /* PlacementGeometry.h */; };
-		610A00971CE3B6AC002271A7 /* Point.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF621CE3B6AC002271A7 /* Point.h */; };
-		610A00981CE3B6AC002271A7 /* Rect.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF631CE3B6AC002271A7 /* Rect.h */; };
+		610A00951CE3B6AC002271A7 /* PedalGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF601CE3B6AC002271A7 /* PedalGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		610A00961CE3B6AC002271A7 /* PlacementGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF611CE3B6AC002271A7 /* PlacementGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		610A00971CE3B6AC002271A7 /* Point.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF621CE3B6AC002271A7 /* Point.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		610A00981CE3B6AC002271A7 /* Rect.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF631CE3B6AC002271A7 /* Rect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00991CE3B6AC002271A7 /* RestGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF641CE3B6AC002271A7 /* RestGeometry.cpp */; };
-		610A009A1CE3B6AC002271A7 /* RestGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF651CE3B6AC002271A7 /* RestGeometry.h */; };
+		610A009A1CE3B6AC002271A7 /* RestGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF651CE3B6AC002271A7 /* RestGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A009B1CE3B6AC002271A7 /* ScrollScoreGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF661CE3B6AC002271A7 /* ScrollScoreGeometry.cpp */; };
-		610A009C1CE3B6AC002271A7 /* ScrollScoreGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF671CE3B6AC002271A7 /* ScrollScoreGeometry.h */; };
+		610A009C1CE3B6AC002271A7 /* ScrollScoreGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF671CE3B6AC002271A7 /* ScrollScoreGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A009D1CE3B6AC002271A7 /* SegnoGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF681CE3B6AC002271A7 /* SegnoGeometry.cpp */; };
-		610A009E1CE3B6AC002271A7 /* SegnoGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF691CE3B6AC002271A7 /* SegnoGeometry.h */; };
-		610A009F1CE3B6AC002271A7 /* Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF6A1CE3B6AC002271A7 /* Size.h */; };
+		610A009E1CE3B6AC002271A7 /* SegnoGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF691CE3B6AC002271A7 /* SegnoGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		610A009F1CE3B6AC002271A7 /* Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF6A1CE3B6AC002271A7 /* Size.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00A01CE3B6AC002271A7 /* SpanDirectionGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF6B1CE3B6AC002271A7 /* SpanDirectionGeometry.cpp */; };
-		610A00A11CE3B6AC002271A7 /* SpanDirectionGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF6C1CE3B6AC002271A7 /* SpanDirectionGeometry.h */; };
+		610A00A11CE3B6AC002271A7 /* SpanDirectionGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF6C1CE3B6AC002271A7 /* SpanDirectionGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00A21CE3B6AC002271A7 /* StemGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF6D1CE3B6AC002271A7 /* StemGeometry.cpp */; };
-		610A00A31CE3B6AC002271A7 /* StemGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF6E1CE3B6AC002271A7 /* StemGeometry.h */; };
+		610A00A31CE3B6AC002271A7 /* StemGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF6E1CE3B6AC002271A7 /* StemGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00A41CE3B6AC002271A7 /* SystemGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF6F1CE3B6AC002271A7 /* SystemGeometry.cpp */; };
-		610A00A51CE3B6AC002271A7 /* SystemGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF701CE3B6AC002271A7 /* SystemGeometry.h */; };
+		610A00A51CE3B6AC002271A7 /* SystemGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF701CE3B6AC002271A7 /* SystemGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00A61CE3B6AC002271A7 /* TieGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF711CE3B6AC002271A7 /* TieGeometry.cpp */; };
-		610A00A71CE3B6AC002271A7 /* TieGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF721CE3B6AC002271A7 /* TieGeometry.h */; };
+		610A00A71CE3B6AC002271A7 /* TieGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF721CE3B6AC002271A7 /* TieGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00A81CE3B6AC002271A7 /* TimeSignatureGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF731CE3B6AC002271A7 /* TimeSignatureGeometry.cpp */; };
-		610A00A91CE3B6AC002271A7 /* TimeSignatureGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF741CE3B6AC002271A7 /* TimeSignatureGeometry.h */; };
+		610A00A91CE3B6AC002271A7 /* TimeSignatureGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF741CE3B6AC002271A7 /* TimeSignatureGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00AA1CE3B6AC002271A7 /* TupletGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF751CE3B6AC002271A7 /* TupletGeometry.cpp */; };
-		610A00AB1CE3B6AC002271A7 /* TupletGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF761CE3B6AC002271A7 /* TupletGeometry.h */; };
+		610A00AB1CE3B6AC002271A7 /* TupletGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF761CE3B6AC002271A7 /* TupletGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00AC1CE3B6AC002271A7 /* WordsGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF771CE3B6AC002271A7 /* WordsGeometry.cpp */; };
-		610A00AD1CE3B6AC002271A7 /* WordsGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF781CE3B6AC002271A7 /* WordsGeometry.h */; };
+		610A00AD1CE3B6AC002271A7 /* WordsGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF781CE3B6AC002271A7 /* WordsGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00AF1CE3B6AC002271A7 /* JumpFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF7A1CE3B6AC002271A7 /* JumpFactory.cpp */; };
 		610A00B21CE3B6AC002271A7 /* LoopFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF7D1CE3B6AC002271A7 /* LoopFactory.cpp */; };
 		610A00B41CE3B6AC002271A7 /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF7F1CE3B6AC002271A7 /* Metrics.cpp */; };
@@ -420,9 +418,9 @@
 		610DCEC61A094B4500BEEBFD /* lxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD9B1A094A0E00BEEBFD /* lxml.cpp */; };
 		610DCEC71A094B4500BEEBFD /* RootRecursiveHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDA01A094A0E00BEEBFD /* RootRecursiveHandler.cpp */; };
 		610DCEC81A094B4500BEEBFD /* StringHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCDA31A094A0E00BEEBFD /* StringHandler.cpp */; };
-		610DCF5E1A09A08E00BEEBFD /* VMKScoreElementLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF5C1A09A08E00BEEBFD /* VMKScoreElementLayer.h */; };
+		610DCF5E1A09A08E00BEEBFD /* VMKScoreElementLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF5C1A09A08E00BEEBFD /* VMKScoreElementLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610DCF5F1A09A08E00BEEBFD /* VMKScoreElementLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DCF5D1A09A08E00BEEBFD /* VMKScoreElementLayer.mm */; };
-		610DCF631A09ACED00BEEBFD /* VMKAccidentalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF611A09ACED00BEEBFD /* VMKAccidentalLayer.h */; };
+		610DCF631A09ACED00BEEBFD /* VMKAccidentalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF611A09ACED00BEEBFD /* VMKAccidentalLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610DCF641A09ACED00BEEBFD /* VMKAccidentalLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 610DCF621A09ACED00BEEBFD /* VMKAccidentalLayer.mm */; };
 		61149B5C1A83043800EB0C0F /* VMKKeyLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61E530BE1A7ACBC500E5B2FF /* VMKKeyLayerTests.mm */; };
 		611621671AA6681B0051C869 /* MeasureLayer-StemDirections@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 611621661AA6681B0051C869 /* MeasureLayer-StemDirections@2x.png */; };
@@ -468,42 +466,42 @@
 		6118ADA81A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9D1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png */; };
 		6118ADA91A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9D1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png */; };
 		61402B2A1A08251D003AE7A7 /* MusicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B291A08251D003AE7A7 /* MusicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61402BA81A082562003AE7A7 /* VMKGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B6E1A082562003AE7A7 /* VMKGeometry.h */; };
+		61402BA81A082562003AE7A7 /* VMKGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B6E1A082562003AE7A7 /* VMKGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61402BA91A082562003AE7A7 /* VMKGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B6F1A082562003AE7A7 /* VMKGeometry.mm */; };
-		61402BAF1A082562003AE7A7 /* VMKImageStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B751A082562003AE7A7 /* VMKImageStore.h */; };
+		61402BAF1A082562003AE7A7 /* VMKImageStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B751A082562003AE7A7 /* VMKImageStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61402BB01A082562003AE7A7 /* VMKImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 61402B761A082562003AE7A7 /* VMKImageStore.m */; };
 		614CA7861CE64666009F1E20 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614CA7841CE64666009F1E20 /* Symbols.xcassets */; };
 		614CA7871CE64673009F1E20 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614CA7841CE64666009F1E20 /* Symbols.xcassets */; };
 		614CA7881CE64684009F1E20 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614CA7841CE64666009F1E20 /* Symbols.xcassets */; };
 		614CA7891CE64685009F1E20 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614CA7841CE64666009F1E20 /* Symbols.xcassets */; };
 		614CA78A1CE64685009F1E20 /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614CA7841CE64666009F1E20 /* Symbols.xcassets */; };
-		616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */; };
+		616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1A8E1A0A970F0020EAA8 /* VMKChordLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A8C1A0A970F0020EAA8 /* VMKChordLayer.mm */; };
-		616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */; };
+		616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1A921A0A98B70020EAA8 /* VMKClefLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A901A0A98B70020EAA8 /* VMKClefLayer.mm */; };
-		616C1A951A0A99600020EAA8 /* VMKScoreElementImageLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A931A0A99600020EAA8 /* VMKScoreElementImageLayer.h */; };
+		616C1A951A0A99600020EAA8 /* VMKScoreElementImageLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A931A0A99600020EAA8 /* VMKScoreElementImageLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1A961A0A99600020EAA8 /* VMKScoreElementImageLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A941A0A99600020EAA8 /* VMKScoreElementImageLayer.mm */; };
-		616C1A9E1A0AA24E0020EAA8 /* VMKEndingLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A9C1A0AA24E0020EAA8 /* VMKEndingLayer.h */; };
+		616C1A9E1A0AA24E0020EAA8 /* VMKEndingLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A9C1A0AA24E0020EAA8 /* VMKEndingLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1A9F1A0AA24E0020EAA8 /* VMKEndingLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1A9D1A0AA24E0020EAA8 /* VMKEndingLayer.mm */; };
-		616C1AA21A0AA89B0020EAA8 /* VMKKeyLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AA01A0AA89B0020EAA8 /* VMKKeyLayer.h */; };
+		616C1AA21A0AA89B0020EAA8 /* VMKKeyLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AA01A0AA89B0020EAA8 /* VMKKeyLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1AA31A0AA89B0020EAA8 /* VMKKeyLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AA11A0AA89B0020EAA8 /* VMKKeyLayer.mm */; };
-		616C1AA61A0AACE50020EAA8 /* VMKLyricLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AA41A0AACE50020EAA8 /* VMKLyricLayer.h */; };
+		616C1AA61A0AACE50020EAA8 /* VMKLyricLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AA41A0AACE50020EAA8 /* VMKLyricLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1AA71A0AACE50020EAA8 /* VMKLyricLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AA51A0AACE50020EAA8 /* VMKLyricLayer.mm */; };
-		616C1AAA1A0AF9960020EAA8 /* VMKMeasureLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AA81A0AF9960020EAA8 /* VMKMeasureLayer.h */; };
+		616C1AAA1A0AF9960020EAA8 /* VMKMeasureLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AA81A0AF9960020EAA8 /* VMKMeasureLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1AAB1A0AF9960020EAA8 /* VMKMeasureLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AA91A0AF9960020EAA8 /* VMKMeasureLayer.mm */; };
-		616C1AAE1A0B01300020EAA8 /* VMKNoteHeadLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AAC1A0B01300020EAA8 /* VMKNoteHeadLayer.h */; };
+		616C1AAE1A0B01300020EAA8 /* VMKNoteHeadLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AAC1A0B01300020EAA8 /* VMKNoteHeadLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1AAF1A0B01300020EAA8 /* VMKNoteHeadLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AAD1A0B01300020EAA8 /* VMKNoteHeadLayer.mm */; };
-		616C1AB21A0B01BB0020EAA8 /* VMKNoteStemLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AB01A0B01BB0020EAA8 /* VMKNoteStemLayer.h */; };
+		616C1AB21A0B01BB0020EAA8 /* VMKNoteStemLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AB01A0B01BB0020EAA8 /* VMKNoteStemLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1AB31A0B01BB0020EAA8 /* VMKNoteStemLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AB11A0B01BB0020EAA8 /* VMKNoteStemLayer.mm */; };
-		616C1AB61A0B030B0020EAA8 /* VMKPedalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AB41A0B030B0020EAA8 /* VMKPedalLayer.h */; };
+		616C1AB61A0B030B0020EAA8 /* VMKPedalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AB41A0B030B0020EAA8 /* VMKPedalLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1AB71A0B030B0020EAA8 /* VMKPedalLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AB51A0B030B0020EAA8 /* VMKPedalLayer.mm */; };
-		616C1ABA1A0B03A30020EAA8 /* VMKRestLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AB81A0B03A30020EAA8 /* VMKRestLayer.h */; };
+		616C1ABA1A0B03A30020EAA8 /* VMKRestLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AB81A0B03A30020EAA8 /* VMKRestLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1ABB1A0B03A30020EAA8 /* VMKRestLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AB91A0B03A30020EAA8 /* VMKRestLayer.mm */; };
-		616C1ABE1A0B054C0020EAA8 /* VMKTieLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1ABC1A0B054C0020EAA8 /* VMKTieLayer.h */; };
+		616C1ABE1A0B054C0020EAA8 /* VMKTieLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1ABC1A0B054C0020EAA8 /* VMKTieLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1ABF1A0B054C0020EAA8 /* VMKTieLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1ABD1A0B054C0020EAA8 /* VMKTieLayer.mm */; };
-		616C1AC21A0B06280020EAA8 /* VMKTimeSignatureLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AC01A0B06280020EAA8 /* VMKTimeSignatureLayer.h */; };
+		616C1AC21A0B06280020EAA8 /* VMKTimeSignatureLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AC01A0B06280020EAA8 /* VMKTimeSignatureLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1AC31A0B06280020EAA8 /* VMKTimeSignatureLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AC11A0B06280020EAA8 /* VMKTimeSignatureLayer.mm */; };
-		616C1AC61A0BFE2C0020EAA8 /* VMKWedgeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AC41A0BFE2C0020EAA8 /* VMKWedgeLayer.h */; };
+		616C1AC61A0BFE2C0020EAA8 /* VMKWedgeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AC41A0BFE2C0020EAA8 /* VMKWedgeLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1AC71A0BFE2C0020EAA8 /* VMKWedgeLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AC51A0BFE2C0020EAA8 /* VMKWedgeLayer.mm */; };
 		616C1AE61A0C05980020EAA8 /* DoubleHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD961A094A0E00BEEBFD /* DoubleHandler.cpp */; };
 		616C1AE71A0C05980020EAA8 /* IntegerHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD981A094A0E00BEEBFD /* IntegerHandler.cpp */; };
@@ -531,35 +529,35 @@
 		616C1B481A0C05B50020EAA8 /* VMKWedgeLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1AC51A0BFE2C0020EAA8 /* VMKWedgeLayer.mm */; };
 		616C1B491A0C05C20020EAA8 /* VMKImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 61402B761A082562003AE7A7 /* VMKImageStore.m */; };
 		616C1B4B1A0C0B800020EAA8 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 616C1B4A1A0C0B800020EAA8 /* libxml2.dylib */; };
-		616C1B4E1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B4C1A0C0D0B0020EAA8 /* VMKBraceLayer.h */; };
-		616C1B4F1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B4C1A0C0D0B0020EAA8 /* VMKBraceLayer.h */; };
+		616C1B4E1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B4C1A0C0D0B0020EAA8 /* VMKBraceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		616C1B4F1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B4C1A0C0D0B0020EAA8 /* VMKBraceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B501A0C0D0B0020EAA8 /* VMKBraceLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B4D1A0C0D0B0020EAA8 /* VMKBraceLayer.mm */; };
 		616C1B511A0C0D0B0020EAA8 /* VMKBraceLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B4D1A0C0D0B0020EAA8 /* VMKBraceLayer.mm */; };
-		616C1B5D1A0C0E310020EAA8 /* VMKAttributesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B531A0C0E310020EAA8 /* VMKAttributesView.h */; };
+		616C1B5D1A0C0E310020EAA8 /* VMKAttributesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B531A0C0E310020EAA8 /* VMKAttributesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B5E1A0C0E310020EAA8 /* VMKAttributesView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B541A0C0E310020EAA8 /* VMKAttributesView.mm */; };
-		616C1B611A0C0E310020EAA8 /* VMKCursorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B571A0C0E310020EAA8 /* VMKCursorView.h */; };
+		616C1B611A0C0E310020EAA8 /* VMKCursorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B571A0C0E310020EAA8 /* VMKCursorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B621A0C0E310020EAA8 /* VMKCursorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B581A0C0E310020EAA8 /* VMKCursorView.m */; };
-		616C1B631A0C0E310020EAA8 /* VMKMeasureView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B591A0C0E310020EAA8 /* VMKMeasureView.h */; };
+		616C1B631A0C0E310020EAA8 /* VMKMeasureView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B591A0C0E310020EAA8 /* VMKMeasureView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B641A0C0E310020EAA8 /* VMKMeasureView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B5A1A0C0E310020EAA8 /* VMKMeasureView.mm */; };
-		616C1B651A0C0E310020EAA8 /* VMKScoreElementContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B5B1A0C0E310020EAA8 /* VMKScoreElementContainerView.h */; };
+		616C1B651A0C0E310020EAA8 /* VMKScoreElementContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B5B1A0C0E310020EAA8 /* VMKScoreElementContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B661A0C0E310020EAA8 /* VMKScoreElementContainerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B5C1A0C0E310020EAA8 /* VMKScoreElementContainerView.mm */; };
-		616C1B6D1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B671A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h */; };
+		616C1B6D1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B671A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B6E1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B681A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.m */; };
-		616C1B791A0C2D7A0020EAA8 /* VMKEndingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B771A0C2D7A0020EAA8 /* VMKEndingView.h */; };
+		616C1B791A0C2D7A0020EAA8 /* VMKEndingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B771A0C2D7A0020EAA8 /* VMKEndingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B7A1A0C2D7A0020EAA8 /* VMKEndingView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B781A0C2D7A0020EAA8 /* VMKEndingView.mm */; };
-		616C1B7D1A0C2D8F0020EAA8 /* VMKLyricView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B7B1A0C2D8F0020EAA8 /* VMKLyricView.h */; };
+		616C1B7D1A0C2D8F0020EAA8 /* VMKLyricView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B7B1A0C2D8F0020EAA8 /* VMKLyricView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B7E1A0C2D8F0020EAA8 /* VMKLyricView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B7C1A0C2D8F0020EAA8 /* VMKLyricView.mm */; };
-		616C1B811A0C2DA40020EAA8 /* VMKPedalView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B7F1A0C2DA40020EAA8 /* VMKPedalView.h */; };
+		616C1B811A0C2DA40020EAA8 /* VMKPedalView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B7F1A0C2DA40020EAA8 /* VMKPedalView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B821A0C2DA40020EAA8 /* VMKPedalView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B801A0C2DA40020EAA8 /* VMKPedalView.mm */; };
-		616C1B851A0C2DDB0020EAA8 /* VMKTieView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B831A0C2DDB0020EAA8 /* VMKTieView.h */; };
+		616C1B851A0C2DDB0020EAA8 /* VMKTieView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B831A0C2DDB0020EAA8 /* VMKTieView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B861A0C2DDB0020EAA8 /* VMKTieView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B841A0C2DDB0020EAA8 /* VMKTieView.mm */; };
-		616C1B891A0C2DEA0020EAA8 /* VMKWedgeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B871A0C2DEA0020EAA8 /* VMKWedgeView.h */; };
+		616C1B891A0C2DEA0020EAA8 /* VMKWedgeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B871A0C2DEA0020EAA8 /* VMKWedgeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B8A1A0C2DEA0020EAA8 /* VMKWedgeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B881A0C2DEA0020EAA8 /* VMKWedgeView.mm */; };
-		616C1B8D1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B8B1A0C4B860020EAA8 /* VMKOrnamentLayer.h */; };
-		616C1B8E1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B8B1A0C4B860020EAA8 /* VMKOrnamentLayer.h */; };
+		616C1B8D1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B8B1A0C4B860020EAA8 /* VMKOrnamentLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		616C1B8E1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B8B1A0C4B860020EAA8 /* VMKOrnamentLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B8F1A0C4B860020EAA8 /* VMKOrnamentLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B8C1A0C4B860020EAA8 /* VMKOrnamentLayer.mm */; };
 		616C1B901A0C4B860020EAA8 /* VMKOrnamentLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B8C1A0C4B860020EAA8 /* VMKOrnamentLayer.mm */; };
-		616C1B931A0C4D790020EAA8 /* VMKOrnamentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B911A0C4D790020EAA8 /* VMKOrnamentView.h */; };
+		616C1B931A0C4D790020EAA8 /* VMKOrnamentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1B911A0C4D790020EAA8 /* VMKOrnamentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616C1B941A0C4D790020EAA8 /* VMKOrnamentView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1B921A0C4D790020EAA8 /* VMKOrnamentView.mm */; };
 		616C1C1A1A0D61ED0020EAA8 /* VMKImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1C191A0D61ED0020EAA8 /* VMKImage.mm */; };
 		616C1C1B1A0D61ED0020EAA8 /* VMKImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 616C1C191A0D61ED0020EAA8 /* VMKImage.mm */; };
@@ -792,9 +790,9 @@
 		617DC6B91ACA15C20019E841 /* SystemLayer-CollidingWholeRests.png in Resources */ = {isa = PBXBuildFile; fileRef = 617DC6B41ACA15C20019E841 /* SystemLayer-CollidingWholeRests.png */; };
 		617DC6BA1ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 617DC6B51ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png */; };
 		617DC6BB1ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 617DC6B51ACA15C20019E841 /* SystemLayer-CollidingWholeRests@2x.png */; };
-		618641511A09B0B900FAE9C9 /* VMKBarlineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6186414F1A09B0B900FAE9C9 /* VMKBarlineLayer.h */; };
+		618641511A09B0B900FAE9C9 /* VMKBarlineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6186414F1A09B0B900FAE9C9 /* VMKBarlineLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		618641521A09B0B900FAE9C9 /* VMKBarlineLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618641501A09B0B900FAE9C9 /* VMKBarlineLayer.mm */; };
-		618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */; };
+		618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		618641561A09B23C00FAE9C9 /* VMKBeamLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618641541A09B23C00FAE9C9 /* VMKBeamLayer.mm */; };
 		618C6C4E1A13DCE4008314B2 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 618C6BE01A119BFA008314B2 /* main.mm */; };
 		618C6C531A13DFC5008314B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618C6C521A13DFC5008314B2 /* QuartzCore.framework */; };
@@ -811,8 +809,8 @@
 		61947F481A9E632A0032977B /* WordsLayer-DontCropSlanted.png in Resources */ = {isa = PBXBuildFile; fileRef = 61947F461A9E632A0032977B /* WordsLayer-DontCropSlanted.png */; };
 		61947F4A1A9E718A0032977B /* WordsLayer-DontCropSlanted@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61947F491A9E718A0032977B /* WordsLayer-DontCropSlanted@3x.png */; };
 		61947F4B1A9E718A0032977B /* WordsLayer-DontCropSlanted@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61947F491A9E718A0032977B /* WordsLayer-DontCropSlanted@3x.png */; };
-		61A81C681AAE316400E230A6 /* VMKTupletLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C661AAE316400E230A6 /* VMKTupletLayer.h */; };
-		61A81C691AAE316400E230A6 /* VMKTupletLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C661AAE316400E230A6 /* VMKTupletLayer.h */; };
+		61A81C681AAE316400E230A6 /* VMKTupletLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C661AAE316400E230A6 /* VMKTupletLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61A81C691AAE316400E230A6 /* VMKTupletLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A81C661AAE316400E230A6 /* VMKTupletLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61A81C6A1AAE316400E230A6 /* VMKTupletLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C671AAE316400E230A6 /* VMKTupletLayer.mm */; };
 		61A81C6B1AAE316400E230A6 /* VMKTupletLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C671AAE316400E230A6 /* VMKTupletLayer.mm */; };
 		61A81C821AAE4C7800E230A6 /* VMKTupletLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61A81C811AAE4C7800E230A6 /* VMKTupletLayerTests.mm */; };
@@ -825,18 +823,17 @@
 		61A81CA71AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61A81CA51AAE5C5100E230A6 /* TupletLayer-Tuplet@3x.png */; };
 		61C850731A6D97A500031100 /* VMKOctaveShiftLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61C850711A6D97A500031100 /* VMKOctaveShiftLayer.mm */; };
 		61C850741A6D97A500031100 /* VMKOctaveShiftLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61C850711A6D97A500031100 /* VMKOctaveShiftLayer.mm */; };
-		61C850761A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850721A6D97A500031100 /* VMKOctaveShiftLayer.h */; };
-		61C850771A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850721A6D97A500031100 /* VMKOctaveShiftLayer.h */; };
+		61C850761A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850721A6D97A500031100 /* VMKOctaveShiftLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61C850771A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850721A6D97A500031100 /* VMKOctaveShiftLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61C8507A1A6D97B900031100 /* VMKOctaveShiftView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61C850781A6D97B900031100 /* VMKOctaveShiftView.mm */; };
-		61C8507D1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850791A6D97B900031100 /* VMKOctaveShiftView.h */; };
-		61C8507E1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850791A6D97B900031100 /* VMKOctaveShiftView.h */; };
+		61C8507D1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C850791A6D97B900031100 /* VMKOctaveShiftView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61D667811A3F67B80044A00B /* VMKScoreRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61D667801A3F67B80044A00B /* VMKScoreRenderer.mm */; };
 		61D667B01A40C7D40044A00B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D667AF1A40C7D40044A00B /* MainMenu.xib */; };
 		61D667B21A40C8390044A00B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D667B11A40C8390044A00B /* MainMenu.xib */; };
 		61E530AE1A78667200E5B2FF /* VMKScrollScoreLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61E530AA1A78667200E5B2FF /* VMKScrollScoreLayout.mm */; };
-		61E530AF1A78667200E5B2FF /* VMKScrollScoreLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E530AB1A78667200E5B2FF /* VMKScrollScoreLayout.h */; };
+		61E530AF1A78667200E5B2FF /* VMKScrollScoreLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E530AB1A78667200E5B2FF /* VMKScrollScoreLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61E530B01A78667200E5B2FF /* VMKScrollScoreDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61E530AC1A78667200E5B2FF /* VMKScrollScoreDataSource.mm */; };
-		61E530B11A78667200E5B2FF /* VMKScrollScoreDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E530AD1A78667200E5B2FF /* VMKScrollScoreDataSource.h */; };
+		61E530B11A78667200E5B2FF /* VMKScrollScoreDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E530AD1A78667200E5B2FF /* VMKScrollScoreDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61E530BF1A7ACBC500E5B2FF /* VMKKeyLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61E530BE1A7ACBC500E5B2FF /* VMKKeyLayerTests.mm */; };
 		61E530EE1A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530C11A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png */; };
 		61E530EF1A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E530C11A7ACF5400E5B2FF /* KeyLayer-GMajor@3x.png */; };
@@ -940,17 +937,17 @@
 		61E6D43E1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D42C1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash.png */; };
 		61E6D43F1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D42D1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@2x.png */; };
 		61E6D4401CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E6D42E1CE63F3F001AC7E7 /* OrnamentLayer-TurnSlash@3x.png */; };
-		61F074361A72DD8C002CA9CA /* VMKPageScoreDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074341A72DD8C002CA9CA /* VMKPageScoreDataSource.h */; };
+		61F074361A72DD8C002CA9CA /* VMKPageScoreDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074341A72DD8C002CA9CA /* VMKPageScoreDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61F074371A72DD8C002CA9CA /* VMKPageScoreDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074351A72DD8C002CA9CA /* VMKPageScoreDataSource.mm */; };
-		61F0743A1A72DDB9002CA9CA /* VMKPageScoreLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074381A72DDB9002CA9CA /* VMKPageScoreLayout.h */; };
+		61F0743A1A72DDB9002CA9CA /* VMKPageScoreLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074381A72DDB9002CA9CA /* VMKPageScoreLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61F0743B1A72DDB9002CA9CA /* VMKPageScoreLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074391A72DDB9002CA9CA /* VMKPageScoreLayout.mm */; };
-		61F0743E1A730D71002CA9CA /* VMKSystemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F0743C1A730D71002CA9CA /* VMKSystemView.h */; };
+		61F0743E1A730D71002CA9CA /* VMKSystemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F0743C1A730D71002CA9CA /* VMKSystemView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61F0743F1A730D71002CA9CA /* VMKSystemView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F0743D1A730D71002CA9CA /* VMKSystemView.mm */; };
-		61F074421A730E0C002CA9CA /* VMKSystemLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074401A730E0C002CA9CA /* VMKSystemLayer.h */; };
+		61F074421A730E0C002CA9CA /* VMKSystemLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074401A730E0C002CA9CA /* VMKSystemLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61F074431A730E0C002CA9CA /* VMKSystemLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074411A730E0C002CA9CA /* VMKSystemLayer.mm */; };
 		61F074441A730E18002CA9CA /* VMKSystemLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074411A730E0C002CA9CA /* VMKSystemLayer.mm */; };
-		61F074481A730EEB002CA9CA /* VMKPartLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074461A730EEB002CA9CA /* VMKPartLayer.h */; };
-		61F074491A730EEB002CA9CA /* VMKPartLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074461A730EEB002CA9CA /* VMKPartLayer.h */; };
+		61F074481A730EEB002CA9CA /* VMKPartLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074461A730EEB002CA9CA /* VMKPartLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61F074491A730EEB002CA9CA /* VMKPartLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074461A730EEB002CA9CA /* VMKPartLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61F0744A1A730EEB002CA9CA /* VMKPartLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074471A730EEB002CA9CA /* VMKPartLayer.mm */; };
 		61F0744B1A730EEB002CA9CA /* VMKPartLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61F074471A730EEB002CA9CA /* VMKPartLayer.mm */; };
 		8CD1C9FD1AF9A83B005C2203 /* VMKOrnamentLayerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8CD1C9FC1AF9A83B005C2203 /* VMKOrnamentLayerTests.mm */; };
@@ -978,6 +975,32 @@
 		8CF686CB1AFB28AA00D112B8 /* OrnamentLayer-TrillBelow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF686961AFB28AA00D112B8 /* OrnamentLayer-TrillBelow@2x.png */; };
 		8CF686CC1AFB28AA00D112B8 /* OrnamentLayer-TrillBelow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF686971AFB28AA00D112B8 /* OrnamentLayer-TrillBelow@3x.png */; };
 		8CF686CD1AFB28AA00D112B8 /* OrnamentLayer-TrillBelow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF686971AFB28AA00D112B8 /* OrnamentLayer-TrillBelow@3x.png */; };
+		A9E5EBA91DAF479C00ACE913 /* MusicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B291A08251D003AE7A7 /* MusicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBAA1DAF479C00ACE913 /* VMKColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF601A09A46900BEEBFD /* VMKColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBAB1DAF479C00ACE913 /* VMKImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A971A0A9BDA0020EAA8 /* VMKImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBAC1DAF479C00ACE913 /* VMKGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B6E1A082562003AE7A7 /* VMKGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBAD1DAF479C00ACE913 /* VMKImageStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B751A082562003AE7A7 /* VMKImageStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBAE1DAF479D00ACE913 /* VMKColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF601A09A46900BEEBFD /* VMKColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBAF1DAF479D00ACE913 /* VMKImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A971A0A9BDA0020EAA8 /* VMKImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBB01DAF47A800ACE913 /* VMKAccidentalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF611A09ACED00BEEBFD /* VMKAccidentalLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBB11DAF47A800ACE913 /* VMKBarlineLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6186414F1A09B0B900FAE9C9 /* VMKBarlineLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBB21DAF47A800ACE913 /* VMKBeamLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 618641531A09B23C00FAE9C9 /* VMKBeamLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBB31DAF47A800ACE913 /* VMKChordLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8B1A0A970F0020EAA8 /* VMKChordLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBB41DAF47A800ACE913 /* VMKClefLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A8F1A0A98B70020EAA8 /* VMKClefLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBB51DAF47A800ACE913 /* VMKEndingLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A9C1A0AA24E0020EAA8 /* VMKEndingLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBB61DAF47A800ACE913 /* VMKKeyLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AA01A0AA89B0020EAA8 /* VMKKeyLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBB71DAF47A800ACE913 /* VMKLyricLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AA41A0AACE50020EAA8 /* VMKLyricLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBB81DAF47A800ACE913 /* VMKMeasureLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AA81A0AF9960020EAA8 /* VMKMeasureLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBB91DAF47A800ACE913 /* VMKNoteHeadLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AAC1A0B01300020EAA8 /* VMKNoteHeadLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBBA1DAF47A800ACE913 /* VMKNoteStemLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AB01A0B01BB0020EAA8 /* VMKNoteStemLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBBB1DAF47A800ACE913 /* VMKPedalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AB41A0B030B0020EAA8 /* VMKPedalLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBBC1DAF47A800ACE913 /* VMKRestLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AB81A0B03A30020EAA8 /* VMKRestLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBBD1DAF47A800ACE913 /* VMKScoreElementImageLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1A931A0A99600020EAA8 /* VMKScoreElementImageLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBBE1DAF47A800ACE913 /* VMKScoreElementLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 610DCF5C1A09A08E00BEEBFD /* VMKScoreElementLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBBF1DAF47A800ACE913 /* VMKSystemLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F074401A730E0C002CA9CA /* VMKSystemLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBC01DAF47A800ACE913 /* VMKTieLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1ABC1A0B054C0020EAA8 /* VMKTieLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBC11DAF47A800ACE913 /* VMKTimeSignatureLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AC01A0B06280020EAA8 /* VMKTimeSignatureLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E5EBC21DAF47A800ACE913 /* VMKWedgeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 616C1AC41A0BFE2C0020EAA8 /* VMKWedgeLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F30D5B6DD23CB5B396B8293C /* libPods-PreviewGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04978BB939C5B560ED000B1B /* libPods-PreviewGenerator.a */; };
 /* End PBXBuildFile section */
 
@@ -2799,6 +2822,7 @@
 				616C1AC21A0B06280020EAA8 /* VMKTimeSignatureLayer.h in Headers */,
 				616C1ABA1A0B03A30020EAA8 /* VMKRestLayer.h in Headers */,
 				610A00861CE3B6AC002271A7 /* LyricGeometry.h in Headers */,
+				A9E5EBAE1DAF479D00ACE913 /* VMKColor.h in Headers */,
 				610A008B1CE3B6AC002271A7 /* NoteGeometry.h in Headers */,
 				616C1AC61A0BFE2C0020EAA8 /* VMKWedgeLayer.h in Headers */,
 				616C1A9E1A0AA24E0020EAA8 /* VMKEndingLayer.h in Headers */,
@@ -2839,6 +2863,7 @@
 				610A009A1CE3B6AC002271A7 /* RestGeometry.h in Headers */,
 				616C1B791A0C2D7A0020EAA8 /* VMKEndingView.h in Headers */,
 				610A00971CE3B6AC002271A7 /* Point.h in Headers */,
+				A9E5EBAF1DAF479D00ACE913 /* VMKImage.h in Headers */,
 				616C1ABE1A0B054C0020EAA8 /* VMKTieLayer.h in Headers */,
 				616C1B631A0C0E310020EAA8 /* VMKMeasureView.h in Headers */,
 				616C1B8D1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */,
@@ -2864,15 +2889,36 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E5EBB31DAF47A800ACE913 /* VMKChordLayer.h in Headers */,
 				61A81C691AAE316400E230A6 /* VMKTupletLayer.h in Headers */,
 				0008686B1A68344500BAA13D /* VMKWordsLayer.h in Headers */,
+				A9E5EBB81DAF47A800ACE913 /* VMKMeasureLayer.h in Headers */,
+				A9E5EBBF1DAF47A800ACE913 /* VMKSystemLayer.h in Headers */,
 				616C1B4F1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */,
-				000868721A68346400BAA13D /* VMKImageView.h in Headers */,
+				A9E5EBC21DAF47A800ACE913 /* VMKWedgeLayer.h in Headers */,
+				A9E5EBAD1DAF479C00ACE913 /* VMKImageStore.h in Headers */,
 				61C850771A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */,
-				00094F0F1A6748710053C615 /* VMKWordsView.h in Headers */,
+				A9E5EBBA1DAF47A800ACE913 /* VMKNoteStemLayer.h in Headers */,
+				A9E5EBB41DAF47A800ACE913 /* VMKClefLayer.h in Headers */,
+				A9E5EBB71DAF47A800ACE913 /* VMKLyricLayer.h in Headers */,
 				616C1B8E1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */,
-				61C8507E1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */,
+				A9E5EBBD1DAF47A800ACE913 /* VMKScoreElementImageLayer.h in Headers */,
+				A9E5EBB51DAF47A800ACE913 /* VMKEndingLayer.h in Headers */,
+				A9E5EBAC1DAF479C00ACE913 /* VMKGeometry.h in Headers */,
+				A9E5EBB61DAF47A800ACE913 /* VMKKeyLayer.h in Headers */,
+				A9E5EBBB1DAF47A800ACE913 /* VMKPedalLayer.h in Headers */,
+				A9E5EBBE1DAF47A800ACE913 /* VMKScoreElementLayer.h in Headers */,
+				A9E5EBBC1DAF47A800ACE913 /* VMKRestLayer.h in Headers */,
+				A9E5EBA91DAF479C00ACE913 /* MusicKit.h in Headers */,
+				A9E5EBAA1DAF479C00ACE913 /* VMKColor.h in Headers */,
+				A9E5EBB01DAF47A800ACE913 /* VMKAccidentalLayer.h in Headers */,
+				A9E5EBB21DAF47A800ACE913 /* VMKBeamLayer.h in Headers */,
+				A9E5EBC11DAF47A800ACE913 /* VMKTimeSignatureLayer.h in Headers */,
+				A9E5EBB91DAF47A800ACE913 /* VMKNoteHeadLayer.h in Headers */,
+				A9E5EBAB1DAF479C00ACE913 /* VMKImage.h in Headers */,
 				61F074491A730EEB002CA9CA /* VMKPartLayer.h in Headers */,
+				A9E5EBB11DAF47A800ACE913 /* VMKBarlineLayer.h in Headers */,
+				A9E5EBC01DAF47A800ACE913 /* VMKTieLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2992,12 +3038,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 618C6C471A13DC76008314B2 /* Build configuration list for PBXNativeTarget "PreviewGenerator" */;
 			buildPhases = (
-				26D68DD40FEC07684C65733D /* 📦 Check Pods Manifest.lock */,
+				26D68DD40FEC07684C65733D /* [CP] Check Pods Manifest.lock */,
 				618C6C291A13DC76008314B2 /* Sources */,
 				618C6C2A1A13DC76008314B2 /* Frameworks */,
 				618C6C2B1A13DC76008314B2 /* Resources */,
-				0280D12C21D6E153F50242DB /* 📦 Embed Pods Frameworks */,
-				51FC021A592EAAAB95A0B151 /* 📦 Copy Pods Resources */,
+				0280D12C21D6E153F50242DB /* [CP] Embed Pods Frameworks */,
+				51FC021A592EAAAB95A0B151 /* [CP] Copy Pods Resources */,
 				610A01F01CE3C14C002271A7 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -3016,7 +3062,7 @@
 		61402B1B1A08251D003AE7A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Venture Media Labs";
 				TargetAttributes = {
 					610DC5A01A0831DF00BEEBFD = {
@@ -3625,14 +3671,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0280D12C21D6E153F50242DB /* 📦 Embed Pods Frameworks */ = {
+		0280D12C21D6E153F50242DB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3640,29 +3686,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		26D68DD40FEC07684C65733D /* 📦 Check Pods Manifest.lock */ = {
+		26D68DD40FEC07684C65733D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		51FC021A592EAAAB95A0B151 /* 📦 Copy Pods Resources */ = {
+		51FC021A592EAAAB95A0B151 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4161,7 +4207,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = MusicKitApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.venturemedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4173,7 +4219,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MusicKitApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.venturemedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4225,8 +4271,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -4236,6 +4284,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -4253,7 +4302,7 @@
 					/usr/include/libxml2,
 					"$(SRCROOT)/Libraries",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -4277,8 +4326,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -4287,6 +4338,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -4298,7 +4350,7 @@
 					/usr/include/libxml2,
 					"$(SRCROOT)/Libraries",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4314,6 +4366,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -4333,6 +4386,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -4350,7 +4404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -4376,7 +4430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
