@@ -4,6 +4,17 @@
 
 MusicKit is an iOS/MacOS X framework for rendering sheet music. It depends on [mxml](https://github.com/venturemedia/mxml) for loading and laying out MusicXML files.
 
+## Setup
+
+After cloning fetch all dependencies:
+
+```shell
+git submodule update --init --recursive
+pod install
+```
+
+See PreviewGenerator for an quick example on how to use.
+
 ---
 
 ## License
