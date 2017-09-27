@@ -5,10 +5,10 @@
 // file LICENSE at the root of the source code distribution tree.
 
 //! Project version number for MusicKit.
-FOUNDATION_EXPORT double MusicKitVersionNumber;
+extern double MusicKitVersionNumber;
 
 //! Project version string for MusicKit.
-FOUNDATION_EXPORT const unsigned char MusicKitVersionString[];
+extern const unsigned char MusicKitVersionString[];
 
 #import <CoreGraphics/CoreGraphics.h>
 #import <QuartzCore/QuartzCore.h>
