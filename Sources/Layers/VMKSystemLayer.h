@@ -13,5 +13,6 @@
 - (instancetype)initWithSystemGeometry:(const mxml::SystemGeometry*)systemGeometry;
 
 @property(nonatomic) const mxml::SystemGeometry* systemGeometry;
+@property(nonatomic, strong) NSArray* noteColors;
 
 @end

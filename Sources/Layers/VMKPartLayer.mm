@@ -28,6 +28,7 @@
 @property(nonatomic, strong) NSMutableSet* reusableMeasureLayers;
 @property(nonatomic, strong) NSMutableArray* directionLayers;
 @property(nonatomic, strong) NSMutableArray* tieLayers;
+@property(nonatomic, strong) NSArray* noteColors;
 
 @end
 
@@ -36,6 +37,12 @@
 
 - (instancetype)initWithPartGeometry:(const mxml::PartGeometry*)partGeometry {
     return [super initWithGeometry:partGeometry];
+}
+
+- (instancetype)initWithPartGeometry:(const mxml::PartGeometry*)partGeometry noteColors:(NSArray *)noteColors {
+    self = [super initWithGeometry:partGeometry];
+    self.noteColors = noteColors;
+    return self;
 }
 
 - (void)setup {
@@ -60,6 +67,14 @@
 
     for (VMKMeasureLayer* layer in self.measureLayers)
         layer.inactiveForegroundColor = foregroundColor;
+}
+
+- (void)setNoteColors:(NSArray *)noteColors {
+    int i = 0;
+    for (VMKMeasureLayer* layer in self.measureLayers) {
+        layer.noteColors = noteColors[i];
+        i++;
+    }
 }
 
 - (const mxml::PartGeometry*)partGeometry {

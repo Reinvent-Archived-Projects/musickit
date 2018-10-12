@@ -11,6 +11,7 @@
 @interface VMKPartLayer : VMKScoreElementLayer
 
 - (instancetype)initWithPartGeometry:(const mxml::PartGeometry*)partGeometry;
+- (instancetype)initWithPartGeometry:(const mxml::PartGeometry*)partGeometry noteColors:(NSArray *)noteColors;
 
 @property(nonatomic) const mxml::PartGeometry* partGeometry;
 

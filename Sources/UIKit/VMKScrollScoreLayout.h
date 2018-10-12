@@ -9,8 +9,10 @@
 
 #include <mxml/geometry/ScrollScoreGeometry.h>
 
-
 @interface VMKScrollScoreLayout : UICollectionViewLayout
+
+- (NSArray*)noteTimeForPoint:(CGPoint)point withScale:(CGFloat)scale;
+- (CGPoint)pointForMeasureIndex:(int)measureIndex measureTime:(float)measureTime;
 
 @property(nonatomic) const mxml::ScrollScoreGeometry* scoreGeometry;
 @property(nonatomic) CGFloat minHeight;

@@ -48,4 +48,8 @@
     self.systemLayer.systemGeometry = systemGeometry;
 }
 
+- (void)setNoteColors:(NSArray *)noteColors {
+    self.systemLayer.noteColors = noteColors;
+}
+
 @end

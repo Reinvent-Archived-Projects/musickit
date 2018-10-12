@@ -80,10 +80,16 @@ using namespace mxml;
 - (void)setActiveForegroundColor:(VMKColor*)foregroundColor {
     [super setActiveForegroundColor:foregroundColor];
     for (VMKNoteHeadLayer* layer in _noteHeadLayers)
-        layer.activeForegroundColor = foregroundColor;
+//        layer.activeForegroundColor = foregroundColor;
     for (VMKScoreElementLayer* layer in _otherLayers)
         layer.activeForegroundColor = foregroundColor;
     _noteStemLayer.activeForegroundColor = foregroundColor;
+}
+
+- (void)setNoteHeadColor:(VMKColor*)noteHeadColor {
+    for (int i = 0; i < _noteHeadLayers.count; i++) {
+        ((VMKNoteHeadLayer *)_noteHeadLayers[i]).activeForegroundColor = noteHeadColor;
+    }
 }
 
 - (void)setInactiveForegroundColor:(VMKColor*)foregroundColor {

@@ -83,7 +83,7 @@
             [self.reusablePartLayers removeObject:layer];
             layer.partGeometry = geometry;
         } else {
-            layer = [[VMKPartLayer alloc] initWithPartGeometry:geometry];
+            layer = [[VMKPartLayer alloc] initWithPartGeometry:geometry noteColors:self.noteColors];
             [self addSublayer:layer];
         }
 

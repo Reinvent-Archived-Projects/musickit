@@ -19,7 +19,6 @@ using namespace mxml;
 
 static const CGFloat VMCursorWidth = 16;
 
-
 @implementation VMKScrollScoreLayout {
     CGFloat _topOffset;
 }
@@ -27,12 +26,73 @@ static const CGFloat VMCursorWidth = 16;
 - (void)setScoreGeometry:(const mxml::ScrollScoreGeometry *)geometry {
     _scoreGeometry = geometry;
     if (_scoreGeometry)
-        _topOffset = (_minHeight - _scoreGeometry->size().height)/2;
+        _topOffset = 16;
+//        _topOffset = 0;
     [self invalidateLayout];
 }
 
 - (void)prepareLayout {
     [super prepareLayout];
+}
+
+- (NSArray*)noteTimeForPoint:(CGPoint)point withScale:(CGFloat)scale {
+    auto partGeometry = _scoreGeometry->partGeometries()[0];
+    const auto measureCount = partGeometry->measureGeometries().size();
+    
+    // Find the measure that contains this point.
+    for (NSUInteger measureIndex = 0; measureIndex < measureCount; measureIndex++) {
+        auto measureGeometry = partGeometry->measureGeometries()[measureIndex];
+        
+        CGFloat x = measureGeometry->location().x * scale;
+        CGFloat y = (measureGeometry->location().y + _scoreGeometry->location().y) * scale;
+        CGFloat width = measureGeometry->size().width * scale;
+        CGFloat height = _scoreGeometry->size().height * scale;
+        CGRect measureFrame = CGRectMake(x, y, width, height);
+        
+        if (CGRectContainsPoint(measureFrame, point)) {
+            // Found measure containing point. Find the span closest to this point.
+            CGFloat minSpanDistance = CGFLOAT_MAX;
+            NSUInteger minSpanIndex = 0;
+            
+            const auto spanCount = measureGeometry->spans().spans().size();
+            for (NSUInteger spanIndex = 0; spanIndex < spanCount; spanIndex++) {
+                auto span = measureGeometry->spans().spans()[spanIndex];
+                
+                CGFloat x = span.start() * scale;
+                CGFloat width = span.width() * scale;
+                CGFloat midX = x + (width / 2);
+                CGFloat distance = abs(midX - point.x);
+                
+                if (distance < minSpanDistance) {
+                    minSpanDistance = distance;
+                    minSpanIndex = spanIndex;
+                }
+            }
+            
+            // Return the measure and time of the closest span.
+            auto closestSpan = measureGeometry->spans().spans()[minSpanIndex];
+            auto divisions = _scoreGeometry->scoreProperties().divisionsPerBeat(measureIndex);
+            float time = closestSpan.time() / (float)divisions;
+            return @[[NSNumber numberWithInteger:closestSpan.measureIndex()], [NSNumber numberWithFloat:time]];
+        }
+    }
+    
+    return @[[NSNumber numberWithInt:-1]];
+}
+
+- (CGPoint)pointForMeasureIndex:(int)measureIndex measureTime:(float)measureTime {
+    auto divisions = _scoreGeometry->scoreProperties().divisionsPerBeat(measureIndex);
+    int time = (int)((float)divisions * measureTime);
+    const auto& spans = _scoreGeometry->spans();
+    auto it = spans.closest(measureIndex, time, typeid(mxml::dom::Note));
+    if (it != spans.end()) {
+        const auto& span = *it;
+        const CGFloat x = span.start() + span.eventOffset();
+        const CGFloat y = _scoreGeometry->size().height / 2;
+        return CGPointMake(x, y);
+    }
+
+    return CGPointMake(0, 0);
 }
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {

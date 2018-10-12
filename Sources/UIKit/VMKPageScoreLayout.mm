@@ -7,12 +7,10 @@
 #import "VMKPageScoreLayout.h"
 #import "VMKGeometry.h"
 
-
 using namespace mxml;
 
 static const CGFloat kCursorWidth = 16;
-static const CGFloat kBottomPadding = 40;
-
+static const CGFloat kBottomPadding = 0;
 
 @implementation VMKPageScoreLayout
 
@@ -31,6 +29,35 @@ static const CGFloat kBottomPadding = 40;
 - (void)setScoreGeometry:(const mxml::PageScoreGeometry*)scoreGeometry {
     _scoreGeometry = scoreGeometry;
     [self invalidateLayout];
+}
+
+- (int)measureIndexForPoint:(CGPoint)point {
+    int index = 0;
+    
+    const auto systemCount = _scoreGeometry->systemGeometries().size();
+    for (NSUInteger systemIndex = 0; systemIndex < systemCount; systemIndex += 1) {
+        auto systemGeometry = _scoreGeometry->systemGeometries()[systemIndex];
+        auto partGeometry = systemGeometry->partGeometries()[0];
+        
+        const auto measureCount = partGeometry->measureGeometries().size();
+        for (NSUInteger measureIndex = 0; measureIndex < measureCount; measureIndex++) {
+            auto measureGeometry = partGeometry->measureGeometries()[measureIndex];
+            
+            CGFloat x = measureGeometry->location().x * self.scale;
+            CGFloat y = (measureGeometry->location().y + systemGeometry->location().y) * self.scale;
+            CGFloat width = measureGeometry->size().width * self.scale;
+            CGFloat height = systemGeometry->size().height * self.scale;
+            CGRect measureFrame = CGRectMake(x, y, width, height);
+            
+            if (CGRectContainsPoint(measureFrame, point)) {
+                return index;
+            }
+                
+            index++;
+        }
+    }
+    
+    return -1;
 }
 
 - (NSArray*)layoutAttributesForElementsInRect:(CGRect)rect {

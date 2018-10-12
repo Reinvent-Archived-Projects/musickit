@@ -16,5 +16,6 @@ extern const CGFloat VMKBarLineWidth;
 - (instancetype)initWithMeasure:(const mxml::MeasureGeometry*)measureGeom;
 
 @property(nonatomic) const mxml::MeasureGeometry* measureGeometry;
+@property(nonatomic, strong) NSArray<VMKColor *>* noteColors;
 
 @end
