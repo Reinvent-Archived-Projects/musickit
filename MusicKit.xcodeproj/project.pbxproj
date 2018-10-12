@@ -119,8 +119,11 @@
 		00FC79331ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792E1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png */; };
 		00FC79341ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792F1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png */; };
 		00FC79351ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792F1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png */; };
-		4C50C4CD1EA3E5F20025950A /* MusicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61402B241A08251D003AE7A7 /* MusicKit.framework */; };
-		4C50C4CE1EA3E5F20025950A /* MusicKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61402B241A08251D003AE7A7 /* MusicKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4CC6AC391ECDE99500215733 /* MusicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61402B241A08251D003AE7A7 /* MusicKit.framework */; };
+		4CC6AC3A1ECDE99500215733 /* MusicKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61402B241A08251D003AE7A7 /* MusicKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4CD0D17B1EB37D9F00C83AA2 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD0D1791EB37D6800C83AA2 /* libxml2.2.dylib */; };
+		4CD0D18A1EB39F0000C83AA2 /* MusicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B291A08251D003AE7A7 /* MusicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CD0D1F11EB3B4C900C83AA2 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0D1F01EB3B4C900C83AA2 /* ViewController.mm */; };
 		610A00021CE3B6AC002271A7 /* ClefSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFEC91CE3B6AC002271A7 /* ClefSequence.cpp */; };
 		610A00041CE3B6AC002271A7 /* DivisionsSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFECB1CE3B6AC002271A7 /* DivisionsSequence.cpp */; };
 		610A00061CE3B6AC002271A7 /* KeySequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFECD1CE3B6AC002271A7 /* KeySequence.cpp */; };
@@ -160,53 +163,26 @@
 		610A007A1CE3B6AC002271A7 /* StemDirectionResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF451CE3B6AC002271A7 /* StemDirectionResolver.cpp */; };
 		610A007C1CE3B6AC002271A7 /* TieGeometryFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF471CE3B6AC002271A7 /* TieGeometryFactory.cpp */; };
 		610A007E1CE3B6AC002271A7 /* FermataGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF491CE3B6AC002271A7 /* FermataGeometry.cpp */; };
-		610A007F1CE3B6AC002271A7 /* FermataGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF4A1CE3B6AC002271A7 /* FermataGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00801CE3B6AC002271A7 /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF4B1CE3B6AC002271A7 /* Geometry.cpp */; };
-		610A00811CE3B6AC002271A7 /* Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF4C1CE3B6AC002271A7 /* Geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00821CE3B6AC002271A7 /* KeyGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF4D1CE3B6AC002271A7 /* KeyGeometry.cpp */; };
-		610A00831CE3B6AC002271A7 /* KeyGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF4E1CE3B6AC002271A7 /* KeyGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		610A00841CE3B6AC002271A7 /* LineSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF4F1CE3B6AC002271A7 /* LineSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00851CE3B6AC002271A7 /* LyricGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF501CE3B6AC002271A7 /* LyricGeometry.cpp */; };
-		610A00861CE3B6AC002271A7 /* LyricGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF511CE3B6AC002271A7 /* LyricGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		610A00871CE3B6AC002271A7 /* MeasureElementGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF521CE3B6AC002271A7 /* MeasureElementGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00881CE3B6AC002271A7 /* MeasureGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF531CE3B6AC002271A7 /* MeasureGeometry.cpp */; };
-		610A00891CE3B6AC002271A7 /* MeasureGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF541CE3B6AC002271A7 /* MeasureGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A008A1CE3B6AC002271A7 /* NoteGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF551CE3B6AC002271A7 /* NoteGeometry.cpp */; };
-		610A008B1CE3B6AC002271A7 /* NoteGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF561CE3B6AC002271A7 /* NoteGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A008C1CE3B6AC002271A7 /* OctaveShiftGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF571CE3B6AC002271A7 /* OctaveShiftGeometry.cpp */; };
-		610A008D1CE3B6AC002271A7 /* OctaveShiftGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF581CE3B6AC002271A7 /* OctaveShiftGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A008E1CE3B6AC002271A7 /* OrnamentsGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF591CE3B6AC002271A7 /* OrnamentsGeometry.cpp */; };
-		610A008F1CE3B6AC002271A7 /* OrnamentsGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF5A1CE3B6AC002271A7 /* OrnamentsGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00901CE3B6AC002271A7 /* PageScoreGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF5B1CE3B6AC002271A7 /* PageScoreGeometry.cpp */; };
-		610A00911CE3B6AC002271A7 /* PageScoreGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF5C1CE3B6AC002271A7 /* PageScoreGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00921CE3B6AC002271A7 /* PartGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF5D1CE3B6AC002271A7 /* PartGeometry.cpp */; };
-		610A00931CE3B6AC002271A7 /* PartGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF5E1CE3B6AC002271A7 /* PartGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00941CE3B6AC002271A7 /* PedalGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF5F1CE3B6AC002271A7 /* PedalGeometry.cpp */; };
-		610A00951CE3B6AC002271A7 /* PedalGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF601CE3B6AC002271A7 /* PedalGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		610A00961CE3B6AC002271A7 /* PlacementGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF611CE3B6AC002271A7 /* PlacementGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		610A00971CE3B6AC002271A7 /* Point.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF621CE3B6AC002271A7 /* Point.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		610A00981CE3B6AC002271A7 /* Rect.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF631CE3B6AC002271A7 /* Rect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00991CE3B6AC002271A7 /* RestGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF641CE3B6AC002271A7 /* RestGeometry.cpp */; };
-		610A009A1CE3B6AC002271A7 /* RestGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF651CE3B6AC002271A7 /* RestGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A009B1CE3B6AC002271A7 /* ScrollScoreGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF661CE3B6AC002271A7 /* ScrollScoreGeometry.cpp */; };
-		610A009C1CE3B6AC002271A7 /* ScrollScoreGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF671CE3B6AC002271A7 /* ScrollScoreGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A009D1CE3B6AC002271A7 /* SegnoGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF681CE3B6AC002271A7 /* SegnoGeometry.cpp */; };
-		610A009E1CE3B6AC002271A7 /* SegnoGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF691CE3B6AC002271A7 /* SegnoGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		610A009F1CE3B6AC002271A7 /* Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF6A1CE3B6AC002271A7 /* Size.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00A01CE3B6AC002271A7 /* SpanDirectionGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF6B1CE3B6AC002271A7 /* SpanDirectionGeometry.cpp */; };
-		610A00A11CE3B6AC002271A7 /* SpanDirectionGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF6C1CE3B6AC002271A7 /* SpanDirectionGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00A21CE3B6AC002271A7 /* StemGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF6D1CE3B6AC002271A7 /* StemGeometry.cpp */; };
-		610A00A31CE3B6AC002271A7 /* StemGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF6E1CE3B6AC002271A7 /* StemGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00A41CE3B6AC002271A7 /* SystemGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF6F1CE3B6AC002271A7 /* SystemGeometry.cpp */; };
-		610A00A51CE3B6AC002271A7 /* SystemGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF701CE3B6AC002271A7 /* SystemGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00A61CE3B6AC002271A7 /* TieGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF711CE3B6AC002271A7 /* TieGeometry.cpp */; };
-		610A00A71CE3B6AC002271A7 /* TieGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF721CE3B6AC002271A7 /* TieGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00A81CE3B6AC002271A7 /* TimeSignatureGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF731CE3B6AC002271A7 /* TimeSignatureGeometry.cpp */; };
-		610A00A91CE3B6AC002271A7 /* TimeSignatureGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF741CE3B6AC002271A7 /* TimeSignatureGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00AA1CE3B6AC002271A7 /* TupletGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF751CE3B6AC002271A7 /* TupletGeometry.cpp */; };
-		610A00AB1CE3B6AC002271A7 /* TupletGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF761CE3B6AC002271A7 /* TupletGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00AC1CE3B6AC002271A7 /* WordsGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF771CE3B6AC002271A7 /* WordsGeometry.cpp */; };
-		610A00AD1CE3B6AC002271A7 /* WordsGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 610AFF781CE3B6AC002271A7 /* WordsGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610A00AF1CE3B6AC002271A7 /* JumpFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF7A1CE3B6AC002271A7 /* JumpFactory.cpp */; };
 		610A00B21CE3B6AC002271A7 /* LoopFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF7D1CE3B6AC002271A7 /* LoopFactory.cpp */; };
 		610A00B41CE3B6AC002271A7 /* Metrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610AFF7F1CE3B6AC002271A7 /* Metrics.cpp */; };
@@ -466,7 +442,6 @@
 		6118ADA71A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9C1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png */; };
 		6118ADA81A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9D1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png */; };
 		6118ADA91A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118AD9D1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png */; };
-		61402B2A1A08251D003AE7A7 /* MusicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B291A08251D003AE7A7 /* MusicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61402BA81A082562003AE7A7 /* VMKGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B6E1A082562003AE7A7 /* VMKGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61402BA91A082562003AE7A7 /* VMKGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 61402B6F1A082562003AE7A7 /* VMKGeometry.mm */; };
 		61402BAF1A082562003AE7A7 /* VMKImageStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 61402B751A082562003AE7A7 /* VMKImageStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1006,13 +981,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4C50C4CF1EA3E5F20025950A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 61402B1B1A08251D003AE7A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 61402B231A08251D003AE7A7;
-			remoteInfo = MusicKit;
-		};
 		610A01EE1CE3C14C002271A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 61402B1B1A08251D003AE7A7 /* Project object */;
@@ -1026,6 +994,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 610DC5A01A0831DF00BEEBFD;
 			remoteInfo = MusicKitApp;
+		};
+		610DC5C71A0831EC00BEEBFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61402B1B1A08251D003AE7A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61402B231A08251D003AE7A7;
+			remoteInfo = MusicKit;
 		};
 		610DC6771A0832D500BEEBFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1051,13 +1026,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4C50C4D11EA3E5F20025950A /* Embed Frameworks */ = {
+		4CC6AC3B1ECDE99500215733 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4C50C4CE1EA3E5F20025950A /* MusicKit.framework in Embed Frameworks */,
+				4CC6AC3A1ECDE99500215733 /* MusicKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1139,6 +1114,10 @@
 		00FC792F1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TupletLayerFile-RepeatTuplets@3x.png"; sourceTree = "<group>"; };
 		04978BB939C5B560ED000B1B /* libPods-PreviewGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PreviewGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F2BE49DBAEAA03A4A78F490 /* Pods-PreviewGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreviewGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PreviewGenerator/Pods-PreviewGenerator.debug.xcconfig"; sourceTree = "<group>"; };
+		4CD0D1771EB37CAA00C83AA2 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		4CD0D1791EB37D6800C83AA2 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = ../../../../usr/lib/libxml2.2.dylib; sourceTree = "<group>"; };
+		4CD0D1EF1EB3B4C900C83AA2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4CD0D1F01EB3B4C900C83AA2 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		610AFEC31CE3B6AC002271A7 /* Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Algorithm.h; sourceTree = "<group>"; };
 		610AFEC51CE3B6AC002271A7 /* AlterSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AlterSequence.cpp; sourceTree = "<group>"; };
 		610AFEC61CE3B6AC002271A7 /* AlterSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlterSequence.h; sourceTree = "<group>"; };
@@ -1294,14 +1273,14 @@
 		610AFF601CE3B6AC002271A7 /* PedalGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PedalGeometry.h; sourceTree = "<group>"; };
 		610AFF611CE3B6AC002271A7 /* PlacementGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacementGeometry.h; sourceTree = "<group>"; };
 		610AFF621CE3B6AC002271A7 /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
-		610AFF631CE3B6AC002271A7 /* Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
+		610AFF631CE3B6AC002271A7 /* Rect.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Rect.h; sourceTree = "<group>"; };
 		610AFF641CE3B6AC002271A7 /* RestGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RestGeometry.cpp; sourceTree = "<group>"; };
 		610AFF651CE3B6AC002271A7 /* RestGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestGeometry.h; sourceTree = "<group>"; };
 		610AFF661CE3B6AC002271A7 /* ScrollScoreGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScrollScoreGeometry.cpp; sourceTree = "<group>"; };
 		610AFF671CE3B6AC002271A7 /* ScrollScoreGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollScoreGeometry.h; sourceTree = "<group>"; };
 		610AFF681CE3B6AC002271A7 /* SegnoGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SegnoGeometry.cpp; sourceTree = "<group>"; };
 		610AFF691CE3B6AC002271A7 /* SegnoGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegnoGeometry.h; sourceTree = "<group>"; };
-		610AFF6A1CE3B6AC002271A7 /* Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Size.h; sourceTree = "<group>"; };
+		610AFF6A1CE3B6AC002271A7 /* Size.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Size.h; sourceTree = "<group>"; };
 		610AFF6B1CE3B6AC002271A7 /* SpanDirectionGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpanDirectionGeometry.cpp; sourceTree = "<group>"; };
 		610AFF6C1CE3B6AC002271A7 /* SpanDirectionGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpanDirectionGeometry.h; sourceTree = "<group>"; };
 		610AFF6D1CE3B6AC002271A7 /* StemGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StemGeometry.cpp; sourceTree = "<group>"; };
@@ -1514,8 +1493,8 @@
 		6118AD9C1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStop@2x.png"; sourceTree = "<group>"; };
 		6118AD9D1A97FD6300EA7127 /* SystemLayer-OctaveShiftMultipleSystemsStop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemLayer-OctaveShiftMultipleSystemsStop@3x.png"; sourceTree = "<group>"; };
 		61402B241A08251D003AE7A7 /* MusicKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MusicKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		61402B291A08251D003AE7A7 /* MusicKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicKit.h; sourceTree = "<group>"; };
-		61402B6E1A082562003AE7A7 /* VMKGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKGeometry.h; sourceTree = "<group>"; };
+		61402B291A08251D003AE7A7 /* MusicKit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = MusicKit.h; sourceTree = "<group>"; };
+		61402B6E1A082562003AE7A7 /* VMKGeometry.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = VMKGeometry.h; sourceTree = "<group>"; };
 		61402B6F1A082562003AE7A7 /* VMKGeometry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VMKGeometry.mm; sourceTree = "<group>"; };
 		61402B751A082562003AE7A7 /* VMKImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKImageStore.h; sourceTree = "<group>"; };
 		61402B761A082562003AE7A7 /* VMKImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKImageStore.m; sourceTree = "<group>"; };
@@ -1818,7 +1797,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C50C4CD1EA3E5F20025950A /* MusicKit.framework in Frameworks */,
+				4CD0D17B1EB37D9F00C83AA2 /* libxml2.2.dylib in Frameworks */,
+				4CC6AC391ECDE99500215733 /* MusicKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2246,6 +2226,8 @@
 			children = (
 				610DC5A71A0831DF00BEEBFD /* AppDelegate.h */,
 				610DC5A81A0831DF00BEEBFD /* AppDelegate.m */,
+				4CD0D1EF1EB3B4C900C83AA2 /* ViewController.h */,
+				4CD0D1F01EB3B4C900C83AA2 /* ViewController.mm */,
 				610DC5AD1A0831DF00BEEBFD /* Main.storyboard */,
 				610DC5B21A0831DF00BEEBFD /* LaunchScreen.xib */,
 				610DC5A31A0831DF00BEEBFD /* Supporting Files */,
@@ -2792,6 +2774,8 @@
 		7BCBC8F925895208AAAC5413 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CD0D1791EB37D6800C83AA2 /* libxml2.2.dylib */,
+				4CD0D1771EB37CAA00C83AA2 /* libxml2.tbd */,
 				618C6C521A13DFC5008314B2 /* QuartzCore.framework */,
 				618C6BE81A119E71008314B2 /* AppKit.framework */,
 				616C1B4A1A0C0B800020EAA8 /* libxml2.dylib */,
@@ -2818,72 +2802,48 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610A00AD1CE3B6AC002271A7 /* WordsGeometry.h in Headers */,
+				4CD0D18A1EB39F0000C83AA2 /* MusicKit.h in Headers */,
 				616C1A8D1A0A970F0020EAA8 /* VMKChordLayer.h in Headers */,
 				61C8507D1A6D97B900031100 /* VMKOctaveShiftView.h in Headers */,
 				618641551A09B23C00FAE9C9 /* VMKBeamLayer.h in Headers */,
-				610A00AB1CE3B6AC002271A7 /* TupletGeometry.h in Headers */,
-				610A00951CE3B6AC002271A7 /* PedalGeometry.h in Headers */,
 				61E530B11A78667200E5B2FF /* VMKScrollScoreDataSource.h in Headers */,
 				61C850761A6D97A500031100 /* VMKOctaveShiftLayer.h in Headers */,
 				616C1B931A0C4D790020EAA8 /* VMKOrnamentView.h in Headers */,
-				610A00981CE3B6AC002271A7 /* Rect.h in Headers */,
 				616C1AAA1A0AF9960020EAA8 /* VMKMeasureLayer.h in Headers */,
-				610A00811CE3B6AC002271A7 /* Geometry.h in Headers */,
-				610A00891CE3B6AC002271A7 /* MeasureGeometry.h in Headers */,
 				616C1AC21A0B06280020EAA8 /* VMKTimeSignatureLayer.h in Headers */,
 				616C1ABA1A0B03A30020EAA8 /* VMKRestLayer.h in Headers */,
-				610A00861CE3B6AC002271A7 /* LyricGeometry.h in Headers */,
 				A9E5EBAE1DAF479D00ACE913 /* VMKColor.h in Headers */,
-				610A008B1CE3B6AC002271A7 /* NoteGeometry.h in Headers */,
 				616C1AC61A0BFE2C0020EAA8 /* VMKWedgeLayer.h in Headers */,
 				616C1A9E1A0AA24E0020EAA8 /* VMKEndingLayer.h in Headers */,
 				61E530AF1A78667200E5B2FF /* VMKScrollScoreLayout.h in Headers */,
 				61F0743E1A730D71002CA9CA /* VMKSystemView.h in Headers */,
 				61F074481A730EEB002CA9CA /* VMKPartLayer.h in Headers */,
-				610A00A31CE3B6AC002271A7 /* StemGeometry.h in Headers */,
 				616C1B6D1A0C2B490020EAA8 /* NSIndexPath+VMKScoreAdditions.h in Headers */,
-				610A007F1CE3B6AC002271A7 /* FermataGeometry.h in Headers */,
-				610A00961CE3B6AC002271A7 /* PlacementGeometry.h in Headers */,
 				616C1A911A0A98B70020EAA8 /* VMKClefLayer.h in Headers */,
 				61F074361A72DD8C002CA9CA /* VMKPageScoreDataSource.h in Headers */,
 				616C1B4E1A0C0D0B0020EAA8 /* VMKBraceLayer.h in Headers */,
 				618641511A09B0B900FAE9C9 /* VMKBarlineLayer.h in Headers */,
-				61402B2A1A08251D003AE7A7 /* MusicKit.h in Headers */,
 				616C1A951A0A99600020EAA8 /* VMKScoreElementImageLayer.h in Headers */,
-				610A00931CE3B6AC002271A7 /* PartGeometry.h in Headers */,
 				616C1AA61A0AACE50020EAA8 /* VMKLyricLayer.h in Headers */,
 				616C1B611A0C0E310020EAA8 /* VMKCursorView.h in Headers */,
 				61A81C681AAE316400E230A6 /* VMKTupletLayer.h in Headers */,
 				61F0743A1A72DDB9002CA9CA /* VMKPageScoreLayout.h in Headers */,
 				616C1B891A0C2DEA0020EAA8 /* VMKWedgeView.h in Headers */,
 				616C1AA21A0AA89B0020EAA8 /* VMKKeyLayer.h in Headers */,
-				610A00A71CE3B6AC002271A7 /* TieGeometry.h in Headers */,
 				616C1B7D1A0C2D8F0020EAA8 /* VMKLyricView.h in Headers */,
 				61F074421A730E0C002CA9CA /* VMKSystemLayer.h in Headers */,
 				616C1B5D1A0C0E310020EAA8 /* VMKAttributesView.h in Headers */,
 				616C1AB61A0B030B0020EAA8 /* VMKPedalLayer.h in Headers */,
 				0008686A1A68344500BAA13D /* VMKWordsLayer.h in Headers */,
-				610A00A91CE3B6AC002271A7 /* TimeSignatureGeometry.h in Headers */,
-				610A009E1CE3B6AC002271A7 /* SegnoGeometry.h in Headers */,
 				61402BAF1A082562003AE7A7 /* VMKImageStore.h in Headers */,
-				610A00911CE3B6AC002271A7 /* PageScoreGeometry.h in Headers */,
-				610A00831CE3B6AC002271A7 /* KeyGeometry.h in Headers */,
 				616C1B651A0C0E310020EAA8 /* VMKScoreElementContainerView.h in Headers */,
-				610A00A51CE3B6AC002271A7 /* SystemGeometry.h in Headers */,
 				61402BA81A082562003AE7A7 /* VMKGeometry.h in Headers */,
-				610A009A1CE3B6AC002271A7 /* RestGeometry.h in Headers */,
 				616C1B791A0C2D7A0020EAA8 /* VMKEndingView.h in Headers */,
-				610A00971CE3B6AC002271A7 /* Point.h in Headers */,
 				A9E5EBAF1DAF479D00ACE913 /* VMKImage.h in Headers */,
 				616C1ABE1A0B054C0020EAA8 /* VMKTieLayer.h in Headers */,
 				616C1B631A0C0E310020EAA8 /* VMKMeasureView.h in Headers */,
 				616C1B8D1A0C4B860020EAA8 /* VMKOrnamentLayer.h in Headers */,
-				610A009F1CE3B6AC002271A7 /* Size.h in Headers */,
 				616C1AAE1A0B01300020EAA8 /* VMKNoteHeadLayer.h in Headers */,
-				610A008D1CE3B6AC002271A7 /* OctaveShiftGeometry.h in Headers */,
-				610A00A11CE3B6AC002271A7 /* SpanDirectionGeometry.h in Headers */,
-				610A00841CE3B6AC002271A7 /* LineSegment.h in Headers */,
 				616C1AB21A0B01BB0020EAA8 /* VMKNoteStemLayer.h in Headers */,
 				616C1B811A0C2DA40020EAA8 /* VMKPedalView.h in Headers */,
 				00094F0E1A6748710053C615 /* VMKWordsView.h in Headers */,
@@ -2891,9 +2851,6 @@
 				610DCF631A09ACED00BEEBFD /* VMKAccidentalLayer.h in Headers */,
 				610DCF5E1A09A08E00BEEBFD /* VMKScoreElementLayer.h in Headers */,
 				000868711A68346400BAA13D /* VMKImageView.h in Headers */,
-				610A008F1CE3B6AC002271A7 /* OrnamentsGeometry.h in Headers */,
-				610A00871CE3B6AC002271A7 /* MeasureElementGeometry.h in Headers */,
-				610A009C1CE3B6AC002271A7 /* ScrollScoreGeometry.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2944,12 +2901,12 @@
 				610DC59D1A0831DF00BEEBFD /* Sources */,
 				610DC59E1A0831DF00BEEBFD /* Frameworks */,
 				610DC59F1A0831DF00BEEBFD /* Resources */,
-				4C50C4D11EA3E5F20025950A /* Embed Frameworks */,
+				4CC6AC3B1ECDE99500215733 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4C50C4D01EA3E5F20025950A /* PBXTargetDependency */,
+				610DC5C81A0831EC00BEEBFD /* PBXTargetDependency */,
 			);
 			name = MusicKitApp;
 			productName = MusicKitApp;
@@ -3075,22 +3032,22 @@
 		61402B1B1A08251D003AE7A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Venture Media Labs";
 				TargetAttributes = {
 					610DC5A01A0831DF00BEEBFD = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = M24FQVR7AD;
+						DevelopmentTeam = 4577TKRJ5X;
 						ProvisioningStyle = Automatic;
 					};
 					610DC5B81A0831DF00BEEBFD = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = M24FQVR7AD;
 						TestTargetID = 610DC5A01A0831DF00BEEBFD;
 					};
 					61402B231A08251D003AE7A7 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = M24FQVR7AD;
+						DevelopmentTeam = 4577TKRJ5X;
+						ProvisioningStyle = Automatic;
 					};
 					616C1ACC1A0C055E0020EAA8 = {
 						CreatedOnToolsVersion = 6.1;
@@ -3713,7 +3670,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		51FC021A592EAAAB95A0B151 /* [CP] Copy Pods Resources */ = {
@@ -3738,6 +3695,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD0D1F11EB3B4C900C83AA2 /* ViewController.mm in Sources */,
 				610DC5A91A0831DF00BEEBFD /* AppDelegate.m in Sources */,
 				610DC5A61A0831DF00BEEBFD /* main.m in Sources */,
 			);
@@ -4161,11 +4119,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4C50C4D01EA3E5F20025950A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 61402B231A08251D003AE7A7 /* MusicKit */;
-			targetProxy = 4C50C4CF1EA3E5F20025950A /* PBXContainerItemProxy */;
-		};
 		610A01EF1CE3C14C002271A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 616C1ACC1A0C055E0020EAA8 /* MusicKitOSX */;
@@ -4175,6 +4128,11 @@
 			isa = PBXTargetDependency;
 			target = 610DC5A01A0831DF00BEEBFD /* MusicKitApp */;
 			targetProxy = 610DC5BA1A0831DF00BEEBFD /* PBXContainerItemProxy */;
+		};
+		610DC5C81A0831EC00BEEBFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61402B231A08251D003AE7A7 /* MusicKit */;
+			targetProxy = 610DC5C71A0831EC00BEEBFD /* PBXContainerItemProxy */;
 		};
 		610DC6781A0832D500BEEBFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4217,19 +4175,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = M24FQVR7AD;
+				DEVELOPMENT_TEAM = 4577TKRJ5X;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"$(SRCROOT)/Libraries",
+					"$(SRCROOT)",
+				);
 				INFOPLIST_FILE = MusicKitApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.venturemedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -4237,15 +4203,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = M24FQVR7AD;
+				DEVELOPMENT_TEAM = 4577TKRJ5X;
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = MusicKitApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.venturemedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -4253,7 +4222,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = M24FQVR7AD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -4270,7 +4238,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = M24FQVR7AD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -4291,14 +4258,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -4346,14 +4321,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -4389,41 +4372,51 @@
 		61402B3B1A08251D003AE7A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = M24FQVR7AD;
+				DEVELOPMENT_TEAM = 4577TKRJ5X;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.venturemedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		61402B3C1A08251D003AE7A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = M24FQVR7AD;
+				DEVELOPMENT_TEAM = 4577TKRJ5X;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.venturemedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -4567,7 +4560,6 @@
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					/usr/include/libxml2,
 					"$(SRCROOT)/Libraries",
 					"$(SRCROOT)",
@@ -4595,7 +4587,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					/usr/include/libxml2,
 					"$(SRCROOT)/Libraries",
 					"$(SRCROOT)",

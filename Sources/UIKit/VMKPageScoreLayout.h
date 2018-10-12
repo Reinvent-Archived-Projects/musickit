@@ -9,8 +9,9 @@
 
 #include <mxml/geometry/PageScoreGeometry.h>
 
-
 @interface VMKPageScoreLayout : UICollectionViewLayout
+
+- (int)measureIndexForPoint:(CGPoint)point;
 
 @property(nonatomic) const mxml::PageScoreGeometry* scoreGeometry;
 

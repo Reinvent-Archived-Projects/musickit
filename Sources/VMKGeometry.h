@@ -5,9 +5,9 @@
 // file LICENSE at the root of the source code distribution tree.
 
 #import <CoreGraphics/CoreGraphics.h>
+#include <mxml/geometry/Rect.h>
 #include <mxml/geometry/Point.h>
 #include <mxml/geometry/Size.h>
-#include <mxml/geometry/Rect.h>
 
 CG_INLINE CGPoint CGPointFromPoint(const mxml::Point& point) {
     return CGPointMake(point.x, point.y);

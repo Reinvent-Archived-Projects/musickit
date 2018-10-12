@@ -85,8 +85,11 @@ const CGFloat VMKBarLineWidth = 1;
 - (void)setActiveForegroundColor:(VMKColor*)foregroundColor {
     [super setActiveForegroundColor:foregroundColor];
 
-    for (VMKScoreElementLayer* view in _elementLayers)
-        view.activeForegroundColor = foregroundColor;
+    for (VMKScoreElementLayer* view in _elementLayers) {
+        if (![view isKindOfClass:[VMKRestLayer class]]) {
+            view.activeForegroundColor = foregroundColor;
+        }
+    }
 
     _numberLayer.foregroundColor = self.foregroundColor.CGColor;
 }
@@ -98,6 +101,21 @@ const CGFloat VMKBarLineWidth = 1;
         view.inactiveForegroundColor = foregroundColor;
 
     _numberLayer.foregroundColor = self.foregroundColor.CGColor;
+}
+
+- (void)setNoteColors:(NSArray<UIColor *> *)noteColors {
+    int i = 0;
+    for (VMKScoreElementLayer* view in _elementLayers) {
+        if ([view isKindOfClass:[VMKChordLayer class]] && i < noteColors.count) {
+            ((VMKChordLayer *)view).noteHeadColor = noteColors[i];
+            i++;
+        }
+        
+        if ([view isKindOfClass:[VMKRestLayer class]] && i < noteColors.count) {
+            ((VMKRestLayer *)view).activeForegroundColor = noteColors[i];
+            i++;
+        }
+    }
 }
 
 - (const mxml::MeasureGeometry*)measureGeometry {

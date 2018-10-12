@@ -4,11 +4,13 @@
 // terms governing use, modification, and redistribution, is contained in the
 // file LICENSE at the root of the source code distribution tree.
 
+#import <Foundation/Foundation.h>
+
 //! Project version number for MusicKit.
-extern double MusicKitVersionNumber;
+FOUNDATION_EXPORT double MusicKitVersionNumber;
 
 //! Project version string for MusicKit.
-extern const unsigned char MusicKitVersionString[];
+FOUNDATION_EXPORT const unsigned char MusicKitVersionString[];
 
 #import <CoreGraphics/CoreGraphics.h>
 #import <QuartzCore/QuartzCore.h>

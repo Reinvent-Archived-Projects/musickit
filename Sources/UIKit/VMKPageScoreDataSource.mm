@@ -14,12 +14,12 @@ NSString* const VMKSystemReuseIdentifier = @"System";
 NSString* const VMKSystemCursorReuseIdentifier = @"Cursor";
 NSString* const VMKPageHeaderReuseIdentifier = @"Header";
 
-
 @implementation VMKPageScoreDataSource
 
 - (instancetype)init {
     self = [super init];
     self.foregroundColor = [UIColor blackColor];
+    self.noteColors = [[NSArray alloc] init];
     self.scale = 1;
     return self;
 }
@@ -69,6 +69,13 @@ NSString* const VMKPageHeaderReuseIdentifier = @"Header";
 
     const SystemGeometry* systemGeometry = _scoreGeometry->systemGeometries()[indexPath.item];
     systemView.foregroundColor = self.foregroundColor;
+    
+    int startMeasureIndex = (int)systemGeometry->partGeometries()[0]->measureGeometries()[0]->measure().index();
+    int count = (int)systemGeometry->partGeometries()[0]->measureGeometries().size();
+    if (self.noteColors.count >= startMeasureIndex + count) {
+        systemView.noteColors = [self.noteColors subarrayWithRange:NSMakeRange(startMeasureIndex, count)];
+    }
+    
     systemView.systemGeometry = systemGeometry;
 
     CGRect frame = systemView.frame;
@@ -90,7 +97,7 @@ NSString* const VMKPageHeaderReuseIdentifier = @"Header";
     } else {
         view = (VMKCursorView*)[cell.contentView.subviews firstObject];
     }
-    view.opacity = self.cursorOpacity;
+    view.opacity = 0.15;
     view.cursorStyle = self.cursorStyle;
     view.color = self.cursorColor;
     
