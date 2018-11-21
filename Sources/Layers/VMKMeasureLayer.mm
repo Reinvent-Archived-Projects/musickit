@@ -103,7 +103,7 @@ const CGFloat VMKBarLineWidth = 1;
     _numberLayer.foregroundColor = self.foregroundColor.CGColor;
 }
 
-- (void)setNoteColors:(NSArray<UIColor *> *)noteColors {
+- (void)setNoteColors:(NSArray<VMKColor *> *)noteColors {
     int i = 0;
     for (VMKScoreElementLayer* view in _elementLayers) {
         if ([view isKindOfClass:[VMKChordLayer class]] && i < noteColors.count) {
