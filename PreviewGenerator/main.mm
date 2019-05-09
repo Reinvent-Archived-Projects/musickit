@@ -158,10 +158,10 @@ bool renderScore(NSString* path, NSString* output) {
 
 void openInPreview(NSString* output) {
     NSWorkspace* workspace = [NSWorkspace sharedWorkspace];
-    NSURL* url = [NSURL fileURLWithPath:[workspace fullPathForApplication:@"Preview"]];
-    NSArray *arguments = [NSArray arrayWithObjects:output, nil];
-    [workspace launchApplicationAtURL:url
-                              options:0
-                        configuration:[NSDictionary dictionaryWithObject:arguments forKey:NSWorkspaceLaunchConfigurationArguments]
-                                error:nil];
+    NSURL* url = [NSURL fileURLWithPath: [workspace fullPathForApplication: @"Preview"]];
+    NSDictionary *configuration = @{ NSWorkspaceLaunchConfigurationArguments: @[output] };
+    [workspace launchApplicationAtURL: url
+                              options: NSWorkspaceLaunchDefault
+                        configuration: configuration
+                                error: nil];
 }
