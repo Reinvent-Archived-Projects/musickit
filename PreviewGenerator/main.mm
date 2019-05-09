@@ -57,7 +57,7 @@ int process(int argc, const char * argv[]) {
             output = argument;
     }
 
-    if (!input || !output) {
+    if (!input && !output) {
         printUsage(argc, argv);
         return 1;
     }
