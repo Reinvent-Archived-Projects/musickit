@@ -148,7 +148,7 @@ bool renderScore(NSString* path, NSString* output) {
     if (!rep)
         return false;
 
-    NSData* data = [rep representationUsingType:NSPNGFileType properties:nil];
+    NSData* data = [rep representationUsingType:NSPNGFileType properties:@{}];
     [data writeToFile:output atomically:YES];
 
     //openInPreview(output);
