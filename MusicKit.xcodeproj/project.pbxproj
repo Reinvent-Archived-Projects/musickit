@@ -119,6 +119,7 @@
 		00FC79331ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792E1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@2x.png */; };
 		00FC79341ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792F1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png */; };
 		00FC79351ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FC792F1ACB5C7A00C4261F /* TupletLayerFile-RepeatTuplets@3x.png */; };
+		359A4F0D2284F62B008E930E /* Symbols.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614CA7841CE64666009F1E20 /* Symbols.xcassets */; };
 		4CC6AC391ECDE99500215733 /* MusicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61402B241A08251D003AE7A7 /* MusicKit.framework */; };
 		4CC6AC3A1ECDE99500215733 /* MusicKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61402B241A08251D003AE7A7 /* MusicKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CD0D17B1EB37D9F00C83AA2 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD0D1791EB37D6800C83AA2 /* libxml2.2.dylib */; };
@@ -3094,6 +3095,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				610DC5AF1A0831DF00BEEBFD /* Main.storyboard in Resources */,
+				359A4F0D2284F62B008E930E /* Symbols.xcassets in Resources */,
 				610DC67E1A08342900BEEBFD /* Media.xcassets in Resources */,
 				610DC5B41A0831DF00BEEBFD /* LaunchScreen.xib in Resources */,
 			);
